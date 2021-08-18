@@ -26,8 +26,8 @@ module.exports = {
           position: 'right',
           label: 'Getting started',
         },
-      {to: 'docs/Features', label: 'Features', position: 'right'},
       {to: 'docs/Config', label: 'Config', position: 'right'},
+      {to: 'docs/Features', label: 'Features', position: 'right'},
         {
           href: 'https://github.com/NvChad/NvChad',
           label: 'GitHub',

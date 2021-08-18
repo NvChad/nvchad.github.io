@@ -1,0 +1,16 @@
+export default {
+  '024fcf5e': [() => import(/* webpackChunkName: '024fcf5e' */ "@site/docs/Getting started/Post Install.md"), "@site/docs/Getting started/Post Install.md", require.resolveWeak("@site/docs/Getting started/Post Install.md")],
+  '0e7fe889': [() => import(/* webpackChunkName: '0e7fe889' */ "@site/docs/Config.md"), "@site/docs/Config.md", require.resolveWeak("@site/docs/Config.md")],
+  '1533b009': [() => import(/* webpackChunkName: '1533b009' */ "@site/docs/Getting started/Setup.md"), "@site/docs/Getting started/Setup.md", require.resolveWeak("@site/docs/Getting started/Setup.md")],
+  '17896441': [() => import(/* webpackChunkName: '17896441' */ "@theme/DocItem"), "@theme/DocItem", require.resolveWeak("@theme/DocItem")],
+  '1be78505': [() => import(/* webpackChunkName: '1be78505' */ "@theme/DocPage"), "@theme/DocPage", require.resolveWeak("@theme/DocPage")],
+  '1f391b9e': [() => import(/* webpackChunkName: '1f391b9e' */ "@theme/MDXPage"), "@theme/MDXPage", require.resolveWeak("@theme/MDXPage")],
+  '393be207': [() => import(/* webpackChunkName: '393be207' */ "@site/src/pages/markdown-page.md"), "@site/src/pages/markdown-page.md", require.resolveWeak("@site/src/pages/markdown-page.md")],
+  '47ae9fab': [() => import(/* webpackChunkName: '47ae9fab' */ "@site/docs/Contribute.md"), "@site/docs/Contribute.md", require.resolveWeak("@site/docs/Contribute.md")],
+  '59d01857': [() => import(/* webpackChunkName: '59d01857' */ "@site/docs/Getting started/Learn lua.md"), "@site/docs/Getting started/Learn lua.md", require.resolveWeak("@site/docs/Getting started/Learn lua.md")],
+  '5e9f5e1a': [() => import(/* webpackChunkName: '5e9f5e1a' */ "@generated/docusaurus.config"), "@generated/docusaurus.config", require.resolveWeak("@generated/docusaurus.config")],
+  '935f2afb': [() => import(/* webpackChunkName: '935f2afb' */ "~docs/default/version-current-metadata-prop-751.json"), "~docs/default/version-current-metadata-prop-751.json", require.resolveWeak("~docs/default/version-current-metadata-prop-751.json")],
+  'bf77eb6d': [() => import(/* webpackChunkName: 'bf77eb6d' */ "@site/docs/Features.md"), "@site/docs/Features.md", require.resolveWeak("@site/docs/Features.md")],
+  'c4f5d8e4': [() => import(/* webpackChunkName: 'c4f5d8e4' */ "@site/src/pages/index.js"), "@site/src/pages/index.js", require.resolveWeak("@site/src/pages/index.js")],
+  'd807c5c3': [() => import(/* webpackChunkName: 'd807c5c3' */ "@site/docs/Acknowledgements.md"), "@site/docs/Acknowledgements.md", require.resolveWeak("@site/docs/Acknowledgements.md")],
+  'f5454b9a': [() => import(/* webpackChunkName: 'f5454b9a' */ "@site/docs/Support.md"), "@site/docs/Support.md", require.resolveWeak("@site/docs/Support.md")],};

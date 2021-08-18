@@ -1,0 +1,261 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "loadedVersions": [
+        {
+          "versionName": "current",
+          "versionLabel": "Next",
+          "versionPath": "/docs",
+          "versionBanner": "none",
+          "isLast": true,
+          "routePriority": -1,
+          "sidebarFilePath": "/home/sid/site/sidebars.js",
+          "contentPath": "/home/sid/site/docs",
+          "contentPathLocalized": "/home/sid/site/i18n/en/docusaurus-plugin-content-docs/current",
+          "mainDocId": "Getting started/Setup",
+          "sidebars": {
+            "mySidebar": [
+              {
+                "type": "category",
+                "label": "Getting started",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "Getting started/Setup"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Getting started/Post Install"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Getting started/Learn lua"
+                  }
+                ],
+                "collapsible": true,
+                "collapsed": true
+              },
+              {
+                "type": "doc",
+                "label": "Config",
+                "id": "Config"
+              },
+              {
+                "type": "doc",
+                "label": "Features",
+                "id": "Features"
+              },
+              {
+                "type": "doc",
+                "label": "Support",
+                "id": "Support"
+              },
+              {
+                "type": "doc",
+                "label": "Features",
+                "id": "Features"
+              },
+              {
+                "type": "doc",
+                "label": "Acknowledgements",
+                "id": "Acknowledgements"
+              }
+            ]
+          },
+          "docs": [
+            {
+              "unversionedId": "Acknowledgements",
+              "id": "Acknowledgements",
+              "isDocsHomePage": false,
+              "title": "Acknowledgements",
+              "description": "",
+              "source": "@site/docs/Acknowledgements.md",
+              "sourceDirName": ".",
+              "slug": "/Acknowledgements",
+              "permalink": "/docs/Acknowledgements",
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "mySidebar",
+              "previous": {
+                "title": "Features",
+                "permalink": "/docs/Features"
+              }
+            },
+            {
+              "unversionedId": "Config",
+              "id": "Config",
+              "isDocsHomePage": false,
+              "title": "Config",
+              "description": "Structure",
+              "source": "@site/docs/Config.md",
+              "sourceDirName": ".",
+              "slug": "/Config",
+              "permalink": "/docs/Config",
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "mySidebar",
+              "previous": {
+                "title": "Learn lua",
+                "permalink": "/docs/Getting started/Learn lua"
+              },
+              "next": {
+                "title": "Features",
+                "permalink": "/docs/Features"
+              }
+            },
+            {
+              "unversionedId": "Contribute",
+              "id": "Contribute",
+              "isDocsHomePage": false,
+              "title": "Contribute",
+              "description": "To contribute, the biggest thing you need is your own fork & stylua",
+              "source": "@site/docs/Contribute.md",
+              "sourceDirName": ".",
+              "slug": "/Contribute",
+              "permalink": "/docs/Contribute",
+              "version": "current",
+              "frontMatter": {}
+            },
+            {
+              "unversionedId": "Features",
+              "id": "Features",
+              "isDocsHomePage": false,
+              "title": "Features",
+              "description": "`",
+              "source": "@site/docs/Features.md",
+              "sourceDirName": ".",
+              "slug": "/Features",
+              "permalink": "/docs/Features",
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "mySidebar",
+              "previous": {
+                "title": "Config",
+                "permalink": "/docs/Config"
+              },
+              "next": {
+                "title": "Support",
+                "permalink": "/docs/Support"
+              }
+            },
+            {
+              "unversionedId": "Getting started/Learn lua",
+              "id": "Getting started/Learn lua",
+              "isDocsHomePage": false,
+              "title": "Learn lua",
+              "description": "- ( Note : This is a very basic lua tutorial to get you familiar with NvChad config)",
+              "source": "@site/docs/Getting started/Learn lua.md",
+              "sourceDirName": "Getting started",
+              "slug": "/Getting started/Learn lua",
+              "permalink": "/docs/Getting started/Learn lua",
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "mySidebar",
+              "previous": {
+                "title": "Post Install",
+                "permalink": "/docs/Getting started/Post Install"
+              },
+              "next": {
+                "title": "Config",
+                "permalink": "/docs/Config"
+              }
+            },
+            {
+              "unversionedId": "Getting started/Post Install",
+              "id": "Getting started/Post Install",
+              "isDocsHomePage": false,
+              "title": "Post Install",
+              "description": "- Some things must be done after the installation.",
+              "source": "@site/docs/Getting started/Post Install.md",
+              "sourceDirName": "Getting started",
+              "slug": "/Getting started/Post Install",
+              "permalink": "/docs/Getting started/Post Install",
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "mySidebar",
+              "previous": {
+                "title": "Setup",
+                "permalink": "/docs/Getting started/Setup"
+              },
+              "next": {
+                "title": "Learn lua",
+                "permalink": "/docs/Getting started/Learn lua"
+              }
+            },
+            {
+              "unversionedId": "Getting started/Setup",
+              "id": "Getting started/Setup",
+              "isDocsHomePage": false,
+              "title": "Setup",
+              "description": "Pre-requisites",
+              "source": "@site/docs/Getting started/Setup.md",
+              "sourceDirName": "Getting started",
+              "slug": "/Getting started/Setup",
+              "permalink": "/docs/Getting started/Setup",
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "mySidebar",
+              "next": {
+                "title": "Post Install",
+                "permalink": "/docs/Getting started/Post Install"
+              }
+            },
+            {
+              "unversionedId": "Support",
+              "id": "Support",
+              "isDocsHomePage": false,
+              "title": "Support",
+              "description": "- LunarVim",
+              "source": "@site/docs/Support.md",
+              "sourceDirName": ".",
+              "slug": "/Support",
+              "permalink": "/docs/Support",
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "mySidebar",
+              "previous": {
+                "title": "Features",
+                "permalink": "/docs/Features"
+              },
+              "next": {
+                "title": "Features",
+                "permalink": "/docs/Features"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "docusaurus-plugin-content-blog": {
+    "default": {
+      "blogPosts": [],
+      "blogListPaginated": [],
+      "blogTags": {},
+      "blogTagsListPath": null
+    }
+  },
+  "docusaurus-plugin-content-pages": {
+    "default": [
+      {
+        "type": "jsx",
+        "permalink": "/",
+        "source": "@site/src/pages/index.js"
+      },
+      {
+        "type": "mdx",
+        "permalink": "/markdown-page",
+        "source": "@site/src/pages/markdown-page.md"
+      }
+    ]
+  },
+  "docusaurus-plugin-debug": {
+    "default": null
+  },
+  "docusaurus-theme-classic": {
+    "default": null
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "unversionedId": "Getting started/Setup",
+  "id": "Getting started/Setup",
+  "isDocsHomePage": false,
+  "title": "Setup",
+  "description": "Pre-requisites",
+  "source": "@site/docs/Getting started/Setup.md",
+  "sourceDirName": "Getting started",
+  "slug": "/Getting started/Setup",
+  "permalink": "/docs/Getting started/Setup",
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "mySidebar",
+  "next": {
+    "title": "Post Install",
+    "permalink": "/docs/Getting started/Post Install"
+  }
+}

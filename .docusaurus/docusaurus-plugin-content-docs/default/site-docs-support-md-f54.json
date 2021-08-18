@@ -1,0 +1,22 @@
+{
+  "unversionedId": "Support",
+  "id": "Support",
+  "isDocsHomePage": false,
+  "title": "Support",
+  "description": "- LunarVim",
+  "source": "@site/docs/Support.md",
+  "sourceDirName": ".",
+  "slug": "/Support",
+  "permalink": "/docs/Support",
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "Features",
+    "permalink": "/docs/Features"
+  },
+  "next": {
+    "title": "Features",
+    "permalink": "/docs/Features"
+  }
+}

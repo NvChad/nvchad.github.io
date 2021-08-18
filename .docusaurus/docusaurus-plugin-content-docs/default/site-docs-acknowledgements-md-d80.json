@@ -1,0 +1,18 @@
+{
+  "unversionedId": "Acknowledgements",
+  "id": "Acknowledgements",
+  "isDocsHomePage": false,
+  "title": "Acknowledgements",
+  "description": "",
+  "source": "@site/docs/Acknowledgements.md",
+  "sourceDirName": ".",
+  "slug": "/Acknowledgements",
+  "permalink": "/docs/Acknowledgements",
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "Features",
+    "permalink": "/docs/Features"
+  }
+}

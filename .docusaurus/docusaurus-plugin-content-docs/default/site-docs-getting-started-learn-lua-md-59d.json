@@ -1,0 +1,22 @@
+{
+  "unversionedId": "Getting started/Learn lua",
+  "id": "Getting started/Learn lua",
+  "isDocsHomePage": false,
+  "title": "Learn lua",
+  "description": "- ( Note : This is a very basic lua tutorial to get you familiar with NvChad config)",
+  "source": "@site/docs/Getting started/Learn lua.md",
+  "sourceDirName": "Getting started",
+  "slug": "/Getting started/Learn lua",
+  "permalink": "/docs/Getting started/Learn lua",
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "Post Install",
+    "permalink": "/docs/Getting started/Post Install"
+  },
+  "next": {
+    "title": "Config",
+    "permalink": "/docs/Config"
+  }
+}

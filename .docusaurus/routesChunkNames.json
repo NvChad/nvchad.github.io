@@ -1,0 +1,46 @@
+{
+  "/-deb": {
+    "component": "c4f5d8e4",
+    "config": "5e9f5e1a"
+  },
+  "/markdown-page-be1": {
+    "component": "1f391b9e",
+    "content": "393be207"
+  },
+  "/docs-3c8": {
+    "component": "1be78505",
+    "versionMetadata": "935f2afb"
+  },
+  "/docs/Acknowledgements-55c": {
+    "component": "17896441",
+    "content": "d807c5c3"
+  },
+  "/docs/Config-d96": {
+    "component": "17896441",
+    "content": "0e7fe889"
+  },
+  "/docs/Contribute-723": {
+    "component": "17896441",
+    "content": "47ae9fab"
+  },
+  "/docs/Features-9be": {
+    "component": "17896441",
+    "content": "bf77eb6d"
+  },
+  "/docs/Getting started/Learn lua-c95": {
+    "component": "17896441",
+    "content": "59d01857"
+  },
+  "/docs/Getting started/Post Install-1dd": {
+    "component": "17896441",
+    "content": "024fcf5e"
+  },
+  "/docs/Getting started/Setup-384": {
+    "component": "17896441",
+    "content": "1533b009"
+  },
+  "/docs/Support-154": {
+    "component": "17896441",
+    "content": "f5454b9a"
+  }
+}
