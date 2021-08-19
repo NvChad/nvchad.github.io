@@ -8,6 +8,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 /* You can override the default Infima variables here. */
 :root {
+  --doc-sidebar-width: 240px !important;
   font-family: 'Inter', sans-serif;
 --ifm-color-primary: #3578e5;
 --ifm-color-primary-dark: #1d68e1;
@@ -28,6 +29,10 @@
 
 html[data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: #2E3440;
+}
+
+.menu__list-item{
+  width: 239px !important;
 }
 
 :root .navbar__title {
