@@ -52,8 +52,8 @@
               },
               {
                 "type": "doc",
-                "label": "Features",
-                "id": "Features"
+                "label": "Contribute",
+                "id": "Contribute"
               },
               {
                 "type": "doc",
@@ -68,7 +68,7 @@
               "id": "Acknowledgements",
               "isDocsHomePage": false,
               "title": "Acknowledgements",
-              "description": "",
+              "description": "The NvChad team would love to acknowledge many projects which made this possible.",
               "source": "@site/docs/Acknowledgements.md",
               "sourceDirName": ".",
               "slug": "/Acknowledgements",
@@ -77,8 +77,8 @@
               "frontMatter": {},
               "sidebar": "mySidebar",
               "previous": {
-                "title": "Features",
-                "permalink": "/docs/Features"
+                "title": "Contribute",
+                "permalink": "/docs/Contribute"
               }
             },
             {
@@ -114,7 +114,16 @@
               "slug": "/Contribute",
               "permalink": "/docs/Contribute",
               "version": "current",
-              "frontMatter": {}
+              "frontMatter": {},
+              "sidebar": "mySidebar",
+              "previous": {
+                "title": "Support",
+                "permalink": "/docs/Support"
+              },
+              "next": {
+                "title": "Acknowledgements",
+                "permalink": "/docs/Acknowledgements"
+              }
             },
             {
               "unversionedId": "Features",
@@ -208,7 +217,7 @@
               "id": "Support",
               "isDocsHomePage": false,
               "title": "Support",
-              "description": "- LunarVim",
+              "description": "- Basic debugging",
               "source": "@site/docs/Support.md",
               "sourceDirName": ".",
               "slug": "/Support",
@@ -221,8 +230,8 @@
                 "permalink": "/docs/Features"
               },
               "next": {
-                "title": "Features",
-                "permalink": "/docs/Features"
+                "title": "Contribute",
+                "permalink": "/docs/Contribute"
               }
             }
           ]

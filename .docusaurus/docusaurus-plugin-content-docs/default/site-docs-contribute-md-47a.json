@@ -9,5 +9,14 @@
   "slug": "/Contribute",
   "permalink": "/docs/Contribute",
   "version": "current",
-  "frontMatter": {}
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "Support",
+    "permalink": "/docs/Support"
+  },
+  "next": {
+    "title": "Acknowledgements",
+    "permalink": "/docs/Acknowledgements"
+  }
 }

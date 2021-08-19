@@ -15,7 +15,7 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs','3c8'),
+    component: ComponentCreator('/docs','f4a'),
     routes: [
       {
         path: '/docs/Acknowledgements',
@@ -31,8 +31,9 @@ export default [
       },
       {
         path: '/docs/Contribute',
-        component: ComponentCreator('/docs/Contribute','723'),
-        exact: true
+        component: ComponentCreator('/docs/Contribute','22b'),
+        exact: true,
+        'sidebar': "mySidebar"
       },
       {
         path: '/docs/Features',
