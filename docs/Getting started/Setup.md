@@ -31,12 +31,6 @@ nvim +PackerSync
 
 ```
 
-### Debugging
-
-```shell
-rm -r ~/.config/nvim/plugin/
-```
-
 ### Uninstall
 
 ```shell
