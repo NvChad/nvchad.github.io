@@ -21,7 +21,7 @@ mv ~/.config/nvim ~/.config/Nvim.backup
 Then do : 
 
 ``` shell 
-git clone https://github.com/NvChad/NvChad.git ~/.config/nvim
+git clone https://github.com/NvChad/NvChad ~/.config/nvim
 nvim +PackerSync
 ```
 
