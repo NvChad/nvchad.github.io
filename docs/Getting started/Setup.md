@@ -28,6 +28,7 @@ nvim +PackerSync
 ### Update
 
 ```
+WIP  ( Will be done by today )
 
 ```
 
