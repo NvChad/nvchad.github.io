@@ -26,8 +26,8 @@ module.exports = {
     },
     {
       type: "doc",
-      label: "Features",
-      id: "Features",
+      label: "Contribute",
+      id: "Contribute",
     },
     {
       type: "doc",

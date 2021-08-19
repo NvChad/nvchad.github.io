@@ -1,3 +1,0 @@
-- LunarVim
-- Doom emacs
-- Doom-nvim
