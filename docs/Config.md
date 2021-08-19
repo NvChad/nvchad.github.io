@@ -59,8 +59,8 @@ project
 |  <SHIFT> + x        | close current buffer                            | (hides a terminal)    |
 |  <TAB>              | cycle in bufferline (next)                      |                       |
 |  <SHIFT> + <TAB>    | cycle in bufferline (previous)                  |                       |
-|  <CNTL> + n         | open NvimTree explorer                          | `<ENTER>` to select   |
-|  <SPCAE> + u + k    | view key mappings                               |                       |
+|  <CTRL> + n         | open NvimTree explorer                          | `<ENTER>` to select   |
+|  <SPACE> + u + k    | view key mappings                               |                       |
 |  <SPACE> + /        | toggle commenting a line                        |                       |
 |  <SPACE> + f + f    | pick a file                                     | Telescope picker      |
 |  <SPACE> + g + s    | git status                                      | Telescope picker      |
