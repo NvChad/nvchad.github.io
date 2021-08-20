@@ -4,10 +4,15 @@ sidebar_position: 1
 
 ## Pre-requisites 
 
+- [Neovim 0.5](https://neovim.io/)
+- [Use a Nerd Font](https://www.nerdfonts.com/) in your terminal.
 - Terminal supporting true colors ( most already do ).
-- Use a Nerd Font in your terminal.
-- Neovim 0.5
-- ```git``` ``` Node.js```
+- ```git```
+
+#### Semi-optional dependencies
+
+- ```node``` *Node.js* is required for many Language Servers (LSPs)
+- ```ripgrep``` is required for grep searching with *Telescope*
 
 ### Install
 
@@ -28,7 +33,9 @@ nvim +PackerSync
 ### Update
 
 ```
+<leader> + uu
 
+(leader is the space key)
 ```
 
 ### Uninstall

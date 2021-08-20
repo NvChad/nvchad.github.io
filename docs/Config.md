@@ -50,7 +50,11 @@ project
 
 - themes.lua , terms.lua ( telescope/_extensions dir) and utils.lua (lua dir) 
 
-## Notable mappings
+## Mappings
+
+To see all of the mappings, read the `/lua/chadrc.lua` file, alternatively...
+
+### Some notable mappings are
 ```
 | Key mapping         |  Action                                         |  Note                 |
 |---------------------|-------------------------------------------------|-----------------------|
@@ -59,8 +63,8 @@ project
 |  <SHIFT> + x        | close current buffer                            | (hides a terminal)    |
 |  <TAB>              | cycle in bufferline (next)                      |                       |
 |  <SHIFT> + <TAB>    | cycle in bufferline (previous)                  |                       |
-|  <CNTL> + n         | open NvimTree explorer                          | `<ENTER>` to select   |
-|  <SPCAE> + u + k    | view key mappings                               |                       |
+|  <CTRL> + n         | open NvimTree explorer                          | `<ENTER>` to select   |
+|  <SPACE> + u + k    | view key mappings                               |                       |
 |  <SPACE> + /        | toggle commenting a line                        |                       |
 |  <SPACE> + f + f    | pick a file                                     | Telescope picker      |
 |  <SPACE> + g + s    | git status                                      | Telescope picker      |

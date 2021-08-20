@@ -2,6 +2,8 @@
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
+This site is still WIP , if someone's good with react then can help with the homepage :<
+
 ## Installation
 
 ```console
