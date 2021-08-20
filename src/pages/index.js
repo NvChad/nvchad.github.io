@@ -5,21 +5,26 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '../components/HomepageFeatures';
+import banner_img from "./main.png"
+import "../css/index.css"; 
+import logo from "./logo.png";
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <header>
       <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
+        <div className = "banner_left">
+          <img id="banner_title" src = {logo}/>  
           <Link
-            className="button button--secondary button--lg installBtn"
+            className="button button--secondary button--lg installBtn banner_btn"
             to="/docs/Getting started/Setup">
                Install v1.0 
           </Link>
         </div>
+       <div className = "banner">
+          <img src={banner_img} id="banner_id" height = "600px" width = "100%"/>
+        </div>  
       </div>
     </header>
   );

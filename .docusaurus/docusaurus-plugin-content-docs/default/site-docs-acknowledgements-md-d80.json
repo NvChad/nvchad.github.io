@@ -3,7 +3,7 @@
   "id": "Acknowledgements",
   "isDocsHomePage": false,
   "title": "Acknowledgements",
-  "description": "",
+  "description": "The NvChad team would love to acknowledge many projects which made this possible.",
   "source": "@site/docs/Acknowledgements.md",
   "sourceDirName": ".",
   "slug": "/Acknowledgements",
@@ -12,7 +12,7 @@
   "frontMatter": {},
   "sidebar": "mySidebar",
   "previous": {
-    "title": "Features",
-    "permalink": "/docs/Features"
+    "title": "Contribute",
+    "permalink": "/docs/Contribute"
   }
 }

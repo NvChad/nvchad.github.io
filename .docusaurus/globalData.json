@@ -22,7 +22,8 @@
             },
             {
               "id": "Contribute",
-              "path": "/docs/Contribute"
+              "path": "/docs/Contribute",
+              "sidebar": "mySidebar"
             },
             {
               "id": "Features",

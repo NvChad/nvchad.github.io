@@ -3,7 +3,7 @@
   "id": "Support",
   "isDocsHomePage": false,
   "title": "Support",
-  "description": "- LunarVim",
+  "description": "- Basic debugging",
   "source": "@site/docs/Support.md",
   "sourceDirName": ".",
   "slug": "/Support",
@@ -16,7 +16,7 @@
     "permalink": "/docs/Features"
   },
   "next": {
-    "title": "Features",
-    "permalink": "/docs/Features"
+    "title": "Contribute",
+    "permalink": "/docs/Contribute"
   }
 }

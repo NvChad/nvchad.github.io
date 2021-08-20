@@ -1,0 +1,75 @@
+:root{
+  --bg-color: white;
+}
+
+header{
+  display: grid;
+  place-items: center; 
+  height: 90vh;
+}
+
+.container{
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.banner_left{
+  align-items: center;
+  text-align: center;
+  margin-bottom: 300px;
+  display: flex;
+  margin-right: 60px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+#banner_title{
+  max-width: 130%;
+  width: 1400px
+}
+
+.banner{
+    border-radius: 0.8rem;
+}
+.banner{
+
+  width: 180vw;
+}
+
+
+#banner_id{
+  right: 0;
+  border: 1px solid transparent;
+  border-radius: 0.8rem;
+    box-shadow:0 4px 20px 16px rgb(0 0 0 / 20%), 0 6px 20px 2px rgb(0 0 0 / 19%); 
+}
+
+html[data-theme='dark'] .navbar{
+  background-color: #1e222a;
+}
+
+html[data-theme='dark'] .container{
+  background-color: #0a0e16; 
+} 
+
+html[data-theme='dark'] body{
+  background-color: #0a0e16; 
+} 
+
+
+html[data-theme='dark'] .banner_text{
+    color: white;
+}
+
+html[data-theme='dark'] .navbar__title{
+  color: white;
+}
+
+.banner_btn{
+  margin-top: 18px;
+  position: absolute;
+  bottom: 35%;
+}

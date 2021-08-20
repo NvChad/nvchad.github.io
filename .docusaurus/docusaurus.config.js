@@ -322,10 +322,10 @@ export default {
       "@docusaurus/preset-classic",
       {
         "docs": {
-          "sidebarPath": "/home/sid/site/sidebars.js"
+          "sidebarPath": "/home/neeraj/Desktop/nvchad-site/site/sidebars.js"
         },
         "theme": {
-          "customCss": "/home/sid/site/src/css/custom.css"
+          "customCss": "/home/neeraj/Desktop/nvchad-site/site/src/css/custom.css"
         }
       }
     ]
