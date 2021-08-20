@@ -27,7 +27,7 @@ Then do :
 
 ``` shell 
 git clone https://github.com/NvChad/NvChad ~/.config/nvim
- nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
+nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
 ```
 
 ### Update
