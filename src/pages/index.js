@@ -23,7 +23,7 @@ function HomepageHeader() {
           </Link>
         </div>
        <div className = "banner">
-          <img src={banner_img} id="banner_id" height = "600px" width = "100%"/>
+          <img src={banner_img} id="banner_nvchad" height = "600px" width = "100%"/>
         </div>  
       </div>
     </header>

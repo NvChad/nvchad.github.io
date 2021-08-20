@@ -28,7 +28,7 @@ header{
 
 #banner_title{
   max-width: 130%;
-  width: 1400px
+  width: 140vh;
 }
 
 .banner{
@@ -40,7 +40,7 @@ header{
 }
 
 
-#banner_id{
+#banner_nvchad{
   right: 0;
   border: 1px solid transparent;
   border-radius: 0.8rem;
@@ -71,5 +71,5 @@ html[data-theme='dark'] .navbar__title{
 .banner_btn{
   margin-top: 18px;
   position: absolute;
-  bottom: 35%;
+  top: 60vh;
 }
