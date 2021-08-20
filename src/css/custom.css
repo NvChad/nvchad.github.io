@@ -31,6 +31,10 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: #2E3440;
 }
 
+html[data-theme='dark']{
+  --ifm-background-color: #0a0e16 !important;
+}
+
 .menu__list-item{
   width: 239px !important;
 }

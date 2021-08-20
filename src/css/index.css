@@ -1,0 +1,123 @@
+:root{
+  --bg-color: white;
+}
+
+
+
+.container{
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+}
+
+.banner_left{
+  align-items: center;
+  text-align: center;
+  margin-bottom: 300px;
+  display: flex;
+  margin-right: 60px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+#banner_title{
+  max-width: 130%;
+  width: 140vh;
+}
+
+.banner{
+  border-radius: 0.8rem;
+  width: 180vw;
+}
+
+
+#banner_nvchad{
+  height: 60vh;
+  width: 60vw;
+  right: 0;
+  border: 1px solid transparent;
+  border-radius: 0.8rem;
+    box-shadow:0 4px 20px 16px rgb(0 0 0 / 20%), 0 6px 20px 2px rgb(0 0 0 / 19%); 
+}
+
+html[data-theme='dark'] .navbar{
+  background-color: #1e222a;
+}
+
+html[data-theme='dark'] .container{
+  background-color: #0a0e16; 
+} 
+
+html[data-theme='dark'] body{
+  background-color: #0a0e16; 
+} 
+
+
+html[data-theme='dark'] .banner_text{
+    color: white;
+}
+
+html[data-theme='dark'] .navbar__title{
+  color: white;
+}
+
+.banner_btn{
+  margin-top: 8vh;
+  position: absolute;
+  top: 60vh;
+}
+
+@media only screen and (max-width: 1414px) {
+ #banner_nvchad{
+    height: 55vh;
+    width: 55vw;
+  } 
+  #banner_title{
+    width: 90vh;
+  }
+  .banner_btn{
+    margin:0;
+    position: absolute;
+    top: 53vh;
+  }
+}
+
+@media only screen and (max-width: 1190px) {
+  #banner_nvchad{
+    height: 50vh;
+    width: 52vw;
+  }
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .container{
+    margin: 8px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  #banner_nvchad{
+    width:90%;
+    margin: 0 6vh;
+    height: 76vh;
+  }
+  #banner_title{
+    display: none;
+  }
+  .banner_btn{
+    position: static;
+    margin: 1vh 20vh;
+
+  }
+  .banner_left{
+    margin-right: 0;
+    flex-direction: column;
+    width: 100%;
+  }
+  .banner{
+    width: auto;
+    height: auto;
+  }
+}
