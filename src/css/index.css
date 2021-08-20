@@ -2,11 +2,7 @@
   --bg-color: white;
 }
 
-header{
-  display: grid;
-  place-items: center; 
-  height: 90vh;
-}
+
 
 .container{
   margin-top: 5%;

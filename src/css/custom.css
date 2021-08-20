@@ -8,6 +8,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 /* You can override the default Infima variables here. */
 :root {
+  --ifm-background-color: #0a0e16 !important;
   --doc-sidebar-width: 240px !important;
   font-family: 'Inter', sans-serif;
 --ifm-color-primary: #3578e5;
