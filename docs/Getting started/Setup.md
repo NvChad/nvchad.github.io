@@ -4,7 +4,7 @@ sidebar_position: 1
 
 ## Pre-requisites 
 
-- [Neovim 0.5](https://neovim.io/)
+- [Neovim 0.5](https://github.com/neovim/neovim)
 - [Use a Nerd Font](https://www.nerdfonts.com/) in your terminal.
 - Terminal supporting true colors ( most already do ).
 - ```git```
@@ -42,6 +42,6 @@ nvim +PackerSync
 
 ```shell
 rm -rf ~/.config/cache/nvim
-rm -rf ~/.config/config/nvim
+rm -rf ~/.config/nvim
 rm -rf ~/.local/share/nvim
 ```
