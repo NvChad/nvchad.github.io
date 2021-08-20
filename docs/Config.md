@@ -50,7 +50,11 @@ project
 
 - themes.lua , terms.lua ( telescope/_extensions dir) and utils.lua (lua dir) 
 
-## Notable mappings
+## Mappings
+
+To see all of the mappings, read the `/lua/chadrc.lua` file, alternatively...
+
+### Some notable mappings are
 ```
 | Key mapping         |  Action  |  Note  |
 |---------------------|--------------------------------------------------------------------| 
