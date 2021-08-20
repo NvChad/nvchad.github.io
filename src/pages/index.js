@@ -14,7 +14,7 @@ function HomepageHeader() {
         <img className="banner__left--logo" src={logo} />
         <Link
           className="button button--secondary button--lg banner__left--btn"
-          to="/docs/Getting started/Setup"
+          to="/getting-started/setup"
         >
           Install v1.0
         </Link>
