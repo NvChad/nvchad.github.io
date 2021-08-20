@@ -55,14 +55,3 @@ h1, h2, h3, h4{
    color:white
 }
 
-.installBtn {
-  color: #2E3440;
-  background-color: #C0E4FE;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  transition: .3s;
-}
-
-.installBtn:hover {
-  color: #C0E4FE;
-  background-color: #2E3440;
-}

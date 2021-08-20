@@ -1,32 +1,26 @@
 import React from 'react';
-import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import styles from './index.module.css';
 import HomepageFeatures from '../components/HomepageFeatures';
 import banner_img from "./main.png"
 import "../css/index.css"; 
 import logo from "./logo.png";
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
   return (
-    <div className = "header">
-      <div className="container">
-        <div className = "banner">
-          <img src={banner_img} id="banner_nvchad" height = "600px" width = "100%"/>
-        </div>  
-        <div className = "banner_left">
-          <img id="banner_title" src = {logo}/>  
-          <Link
-            className="button button--secondary button--lg installBtn banner_btn"
-            to="/docs/Getting started/Setup">
-               Install v1.0 
-          </Link>
-        </div>
-
+    <div className="container">
+      <div className="banner__left">
+        <img class="banner__left--logo" src={logo}/>  
+        <Link
+          className="button button--secondary button--lg banner__left--btn"
+          to="/docs/Getting started/Setup">
+             Install v1.0 
+        </Link>
       </div>
+      <div className="banner__right">
+        <img src={banner_img} class="banner__right--screenshot" />
+      </div>  
     </div>
   );
 }
