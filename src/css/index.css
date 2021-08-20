@@ -11,7 +11,7 @@ header{
 .container{
   margin-top: 5%;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: space-evenly;
 }
 
@@ -32,15 +32,14 @@ header{
 }
 
 .banner{
-    border-radius: 0.8rem;
-}
-.banner{
-
+  border-radius: 0.8rem;
   width: 180vw;
 }
 
 
 #banner_nvchad{
+  height: 60vh;
+  width: 60vw;
   right: 0;
   border: 1px solid transparent;
   border-radius: 0.8rem;
@@ -69,7 +68,60 @@ html[data-theme='dark'] .navbar__title{
 }
 
 .banner_btn{
-  margin-top: 18px;
+  margin-top: 8vh;
   position: absolute;
   top: 60vh;
+}
+
+@media only screen and (max-width: 1414px) {
+ #banner_nvchad{
+    height: 55vh;
+    width: 55vw;
+  } 
+  #banner_title{
+    width: 90vh;
+  }
+  .banner_btn{
+    margin:0;
+    position: absolute;
+    top: 53vh;
+  }
+}
+
+@media only screen and (max-width: 1190px) {
+  #banner_nvchad{
+    height: 50vh;
+    width: 52vw;
+  }
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .container{
+    margin: 8px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  #banner_nvchad{
+    width:90%;
+    margin: 0 6vh;
+    height: 76vh;
+  }
+  #banner_title{
+    display: none;
+  }
+  .banner_btn{
+    position: static;
+    margin: 1vh 20vh;
+
+  }
+  .banner_left{
+    margin-right: 0;
+    flex-direction: column;
+    width: 100%;
+  }
+  .banner{
+    width: auto;
+    height: auto;
+  }
 }

@@ -12,8 +12,11 @@ import logo from "./logo.png";
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header>
+    <div className = "header">
       <div className="container">
+        <div className = "banner">
+          <img src={banner_img} id="banner_nvchad" height = "600px" width = "100%"/>
+        </div>  
         <div className = "banner_left">
           <img id="banner_title" src = {logo}/>  
           <Link
@@ -22,11 +25,9 @@ function HomepageHeader() {
                Install v1.0 
           </Link>
         </div>
-       <div className = "banner">
-          <img src={banner_img} id="banner_nvchad" height = "600px" width = "100%"/>
-        </div>  
+
       </div>
-    </header>
+    </div>
   );
 }
 
