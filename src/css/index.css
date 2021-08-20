@@ -1,7 +1,3 @@
-:root{
-  --bg-color: white;
-}
-
 .container{
   margin-top: 50px;
   display: flex;
@@ -19,6 +15,7 @@
   width: 100%;
   height: auto;
   object-fit: cover;
+  animation: hero-fadeIn 1s;
 
   border-radius: 1rem;
   box-shadow: 0 4px 20px 16px rgb(0 0 0 / 20%), 0 6px 20px 2px rgb(0 0 0 / 19%); 
@@ -51,6 +48,10 @@
   background-color: #2E3440;
 }
 
+@keyframes hero-fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
 
 html[data-theme='dark'] .navbar{
   background-color: #1e222a;

@@ -5,7 +5,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 module.exports = {
   title: 'NvChad',
   tagline: 'Neovim with lua is cool',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://nvchat.netlify.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -16,18 +16,25 @@ module.exports = {
     navbar: {
       title: 'NvChad',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'NvChad Logo',
         src: 'img/logo.svg',
       },
       items: [
         {
-          type: 'doc',
-          docId: 'Getting started/Setup',
+          to: 'getting-started/setup',
           position: 'right',
-          label: 'Getting started',
+          label: 'Getting Started',
         },
-      {to: 'docs/Config', label: 'Config', position: 'right'},
-      {to: 'docs/Features', label: 'Features', position: 'right'},
+        {
+          to: 'config', 
+          label: 'Config', 
+          position: 'right'
+        },
+        {
+          to: 'features', 
+          label: 'Features', 
+          position: 'right'
+        },
         {
           href: 'https://github.com/NvChad/NvChad',
           label: 'GitHub',
@@ -46,6 +53,7 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
+          routeBasePath: "/",
           sidebarPath: require.resolve('./sidebars.js'),
         },
         theme: {

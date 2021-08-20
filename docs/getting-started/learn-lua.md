@@ -1,4 +1,9 @@
-- ( Note : This is a very basic lua tutorial to get you familiar with NvChad config)
+---
+id: learn-lua
+title: Learning Lua
+---
+
+> Note: This is a very basic lua tutorial to get you familiar with NvChad config
 
 ## Printing
 ```lua
@@ -187,8 +192,8 @@ hi
 hi
 ```
 
-
 ## Tables
+
 ```lua
 -- basic table
 local colors = { "red", "green", "blue" }
@@ -202,7 +207,9 @@ for i=1, #colors do
   print(colors[i])
 end
 ```
+
 **Two Dimensional Table**
+
 ```lua
 --tables within tables
 local data = {
@@ -214,6 +221,7 @@ for i = 1, #data do
   print(data[i][1] .. " is " .. data[i][2] .. " years old")
 end
 ```
+
 ## Modules
 
 Include code other files

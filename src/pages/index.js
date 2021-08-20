@@ -11,7 +11,7 @@ function HomepageHeader() {
   return (
     <div className="container">
       <div className="banner__left">
-        <img class="banner__left--logo" src={logo}/>  
+        <img className="banner__left--logo" src={logo}/>  
         <Link
           className="button button--secondary button--lg banner__left--btn"
           to="/docs/Getting started/Setup">
@@ -19,7 +19,7 @@ function HomepageHeader() {
         </Link>
       </div>
       <div className="banner__right">
-        <img src={banner_img} class="banner__right--screenshot" />
+        <img src={banner_img} className="banner__right--screenshot" />
       </div>  
     </div>
   );

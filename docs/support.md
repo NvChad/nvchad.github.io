@@ -1,3 +1,8 @@
+---
+id: support
+title: Support
+---
+
 - Basic debugging
 -- Check the Packer log
 ```
