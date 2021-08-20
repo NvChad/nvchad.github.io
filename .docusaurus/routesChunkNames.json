@@ -1,46 +1,68 @@
 {
   "/-deb": {
-    "component": "c4f5d8e4",
-    "config": "5e9f5e1a"
+    "component": "component---site-src-pages-index-jsc-4-f-f99",
+    "config": "config---5-e-9-4f3"
+  },
+  "/__docusaurus/debug-3d6": {
+    "component": "component---theme-debug-config-23-a-2ff"
+  },
+  "/__docusaurus/debug/config-914": {
+    "component": "component---theme-debug-config-23-a-2ff"
+  },
+  "/__docusaurus/debug/content-c28": {
+    "component": "component---theme-debug-contentba-8-ce7",
+    "allContent": "allContent---docusaurus-debug-content-246-9aa"
+  },
+  "/__docusaurus/debug/globalData-3cf": {
+    "component": "component---theme-debug-global-dataede-0fa"
+  },
+  "/__docusaurus/debug/metadata-31b": {
+    "component": "component---theme-debug-site-metadata-68-e-3d4"
+  },
+  "/__docusaurus/debug/registry-0da": {
+    "component": "component---theme-debug-registry-679-501"
+  },
+  "/__docusaurus/debug/routes-244": {
+    "component": "component---theme-debug-routes-946-699"
   },
   "/markdown-page-be1": {
-    "component": "1f391b9e",
-    "content": "393be207"
+    "component": "component---theme-mdx-page-1-f-3-b90",
+    "content": "content---markdown-page-393-028"
   },
   "/docs-f4a": {
-    "component": "1be78505",
-    "versionMetadata": "935f2afb"
+    "component": "component---theme-doc-page-1-be-9be",
+    "versionMetadata": "versionMetadata---docs-935-398"
   },
   "/docs/Acknowledgements-55c": {
-    "component": "17896441",
-    "content": "d807c5c3"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-acknowledgementsd-80-7bc"
   },
   "/docs/Config-d96": {
-    "component": "17896441",
-    "content": "0e7fe889"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-config-0-e-7-c38"
   },
   "/docs/Contribute-22b": {
-    "component": "17896441",
-    "content": "47ae9fab"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-contribute-47-a-9e0"
   },
   "/docs/Features-9be": {
-    "component": "17896441",
-    "content": "bf77eb6d"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-featuresbf-7-37f"
   },
   "/docs/Getting started/Learn lua-c95": {
-    "component": "17896441",
-    "content": "59d01857"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-getting-started-learn-lua-59-d-765"
   },
   "/docs/Getting started/Post Install-1dd": {
-    "component": "17896441",
-    "content": "024fcf5e"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-getting-started-post-install-024-e5d"
   },
   "/docs/Getting started/Setup-384": {
-    "component": "17896441",
-    "content": "1533b009"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-getting-started-setup-153-3ed"
   },
   "/docs/Support-154": {
-    "component": "17896441",
-    "content": "f5454b9a"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-supportf-54-661"
   }
 }
