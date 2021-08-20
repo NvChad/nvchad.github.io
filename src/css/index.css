@@ -1,9 +1,8 @@
-.container{
+.container {
   margin-top: 50px;
   display: flex;
   justify-content: space-between;
 }
-
 
 .banner__right {
   flex: 2;
@@ -18,7 +17,7 @@
   animation: hero-fadeIn 1s;
 
   border-radius: 1rem;
-  box-shadow: 0 4px 20px 16px rgb(0 0 0 / 20%), 0 6px 20px 2px rgb(0 0 0 / 19%); 
+  box-shadow: 0 4px 20px 16px rgb(0 0 0 / 20%), 0 6px 20px 2px rgb(0 0 0 / 19%);
 }
 
 .banner__left {
@@ -39,37 +38,41 @@
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   transition: all 250ms ease-in-out;
 
-  color: #2E3440;
-  background-color: #C0E4FE;
+  color: #2e3440;
+  background-color: #c0e4fe;
 }
 
 .banner__left--btn:hover {
-  color: #C0E4FE;
-  background-color: #2E3440;
+  color: #c0e4fe;
+  background-color: #2e3440;
 }
 
 @keyframes hero-fadeIn {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-html[data-theme='dark'] .navbar{
+html[data-theme="dark"] .navbar {
   background-color: #1e222a;
 }
 
-html[data-theme='dark'] .container{
-  background-color: #0a0e16; 
-} 
-
-html[data-theme='dark'] body{
-  background-color: #0a0e16; 
-} 
-
-html[data-theme='dark'] .banner_text{
-    color: white;
+html[data-theme="dark"] .container {
+  background-color: #0a0e16;
 }
 
-html[data-theme='dark'] .navbar__title{
+html[data-theme="dark"] body {
+  background-color: #0a0e16;
+}
+
+html[data-theme="dark"] .banner_text {
+  color: white;
+}
+
+html[data-theme="dark"] .navbar__title {
   color: white;
 }
 
@@ -84,5 +87,3 @@ html[data-theme='dark'] .navbar__title{
     display: none;
   }
 }
-
-

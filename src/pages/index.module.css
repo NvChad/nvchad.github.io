@@ -14,7 +14,7 @@
 }
 
 .button button--secondary button--lg {
-    background-color: blue;
+  background-color: blue;
 }
 
 @media screen and (max-width: 966px) {

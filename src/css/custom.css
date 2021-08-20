@@ -5,11 +5,11 @@
  * work well for content-centric websites.
  */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
 /* You can override the default Infima variables here. */
 :root {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   --doc-sidebar-width: 240px !important;
   --ifm-color-primary: #3578e5;
   --ifm-color-primary-dark: #1d68e1;
@@ -22,36 +22,38 @@
 }
 
 :root .navbar__title {
-  color: #2E3440;
+  color: #2e3440;
   margin-left: 4px;
   font-size: x-large;
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Inter', sans-serif;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Inter", sans-serif;
   color: var(--ifm-color-secondary-contrast-foreground);
 }
 
 .hero__title {
-   color: white;
+  color: white;
 }
 
 .docusaurus-highlight-code-line {
-  background-color: #2E3440;
+  background-color: #2e3440;
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
 }
 
-html[data-theme='dark'] .docusaurus-highlight-code-line {
-  background-color: #2E3440;
+html[data-theme="dark"] .docusaurus-highlight-code-line {
+  background-color: #2e3440;
 }
 
-html[data-theme='dark']{
+html[data-theme="dark"] {
   --ifm-background-color: #0a0e16 !important;
 }
 
-.menu__list-item{
+.menu__list-item {
   width: 239px !important;
 }
-
