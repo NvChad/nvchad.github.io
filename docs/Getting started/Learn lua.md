@@ -72,7 +72,7 @@ print(isAlive) -- false
 -- number comparisions
 local age = 10
 
-if age < 18 then
+if age > 18 then
   print("over 18") -- this will not be executed
 end
 
