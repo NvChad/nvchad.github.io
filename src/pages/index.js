@@ -3,7 +3,7 @@ import Layout from "@theme/Layout"
 import Link from "@docusaurus/Link"
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext"
 import bannerImg from "./main.png"
-import "../css/index.css"
+import "./index.css"
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext()
@@ -12,7 +12,7 @@ export default function Home() {
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />"
     >
-      <main>
+      <main className="wrapper">
         <div className="container home-wrapper">
           <div className="banner__left">
             <img className="banner__left--logo" src="/img/logo.svg" />
