@@ -1,3 +1,8 @@
+---
+id: acknowledgements
+title: Acknowledgements
+---
+
 The NvChad team would love to acknowledge many projects which made this possible.
 
 Thank you

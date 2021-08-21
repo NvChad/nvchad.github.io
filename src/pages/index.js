@@ -1,46 +1,33 @@
-import React from 'react';
-import clsx from 'clsx';
-import Layout from '@theme/Layout';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import styles from './index.module.css';
-import HomepageFeatures from '../components/HomepageFeatures';
-import banner_img from "./main.png"
-import "../css/index.css"; 
-import logo from "./logo.png";
-
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <div className = "header">
-      <div className="container">
-        <div className = "banner">
-          <img src={banner_img} id="banner_nvchad" height = "600px" width = "100%"/>
-        </div>  
-        <div className = "banner_left">
-          <img id="banner_title" src = {logo}/>  
-          <Link
-            className="button button--secondary button--lg installBtn banner_btn"
-            to="/docs/Getting started/Setup">
-               Install v1.0 
-          </Link>
-        </div>
-
-      </div>
-    </div>
-  );
-}
+import React from "react"
+import Layout from "@theme/Layout"
+import Link from "@docusaurus/Link"
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext"
+import bannerImg from "./main.png"
+import "../css/index.css"
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext()
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
+      description="Description will go into a meta tag in <head />"
+    >
       <main>
-        <HomepageFeatures />
+        <div className="container home-wrapper">
+          <div className="banner__left">
+            <img className="banner__left--logo" src="/img/logo.svg" />
+            <Link
+              className="button button--secondary button--lg banner__left--btn"
+              to="/getting-started/setup"
+            >
+              Install v1.0
+            </Link>
+          </div>
+          <div className="banner__right">
+            <img src={bannerImg} className="banner__right--screenshot" />
+          </div>
+        </div>
       </main>
     </Layout>
-  );
+  )
 }

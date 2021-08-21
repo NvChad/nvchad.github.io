@@ -1,5 +1,11 @@
+---
+id: support
+title: Support
+---
+
 ## Basic debugging
  + Check the Packer log
+
 ```
 less ~/.cache/nvim/packer.nvim.log
 ```

@@ -5,64 +5,51 @@
  * work well for content-centric websites.
  */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
 /* You can override the default Infima variables here. */
 :root {
+  font-family: "Inter", sans-serif;
   --doc-sidebar-width: 240px !important;
-  font-family: 'Inter', sans-serif;
---ifm-color-primary: #3578e5;
---ifm-color-primary-dark: #1d68e1;
---ifm-color-primary-darker: #1b62d4;
---ifm-color-primary-darkest: #1751af;
---ifm-color-primary-light: #4e89e8;
---ifm-color-primary-lighter: #5a91ea;
---ifm-color-primary-lightest: #80aaef;
+  --ifm-color-primary: #3578e5;
+  --ifm-color-primary-dark: #1d68e1;
+  --ifm-color-primary-darker: #1b62d4;
+  --ifm-color-primary-darkest: #1751af;
+  --ifm-color-primary-light: #4e89e8;
+  --ifm-color-primary-lighter: #5a91ea;
+  --ifm-color-primary-lightest: #80aaef;
   --ifm-code-font-size: 95%;
 }
 
+:root .navbar__title {
+  color: #2e3440;
+  margin-left: 4px;
+  font-size: 1.75rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Inter", sans-serif;
+  color: var(--ifm-color-secondary-contrast-foreground);
+}
+
+.hero__title {
+  color: white;
+}
+
 .docusaurus-highlight-code-line {
-  background-color: #2E3440;
+  background-color: #2e3440;
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
 }
 
-html[data-theme='dark'] .docusaurus-highlight-code-line {
-  background-color: #2E3440;
+html[data-theme="dark"] .docusaurus-highlight-code-line {
+  background-color: #2e3440;
 }
 
-html[data-theme='dark']{
+html[data-theme="dark"] {
   --ifm-background-color: #0a0e16 !important;
-}
-
-.menu__list-item{
-  width: 239px !important;
-}
-
-:root .navbar__title {
-  color: #2E3440;
-  margin-left: 4px;
-  font-family: 'Inter', sans-serif;
-  font-size: x-large;
-}
-
-h1, h2, h3, h4{
-  color: #2E3440;
-  font-family: 'Inter', sans-serif;
-}
-
-.hero__title {
-   color:white
-}
-
-.installBtn {
-  color: #2E3440;
-  background-color: #C0E4FE;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  transition: .3s;
-}
-
-.installBtn:hover {
-  color: #C0E4FE;
-  background-color: #2E3440;
 }

@@ -1,3 +1,9 @@
+---
+id: contribute
+title: Contribute
+---
+
+
 To contribute, the biggest thing you need is your own fork & `stylua`
 - [Stylua](https://github.com/JohnnyMorganz/StyLua)
 - [Github forking](https://docs.github.com/en/get-started/quickstart/fork-a-repo)

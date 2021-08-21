@@ -1,3 +1,8 @@
+---
+id: config
+title: Config
+---
+
 ## Structure
 ```
 project

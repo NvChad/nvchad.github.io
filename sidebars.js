@@ -1,38 +1,18 @@
 module.exports = {
-  mySidebar: [
+  docs: [
     {
       type: "category",
-      label: "Getting started",
+      label: "Getting Started",
       items: [
-        "Getting started/Setup",
-        "Getting started/Post Install",
-        "Getting started/Learn lua",
+        "getting-started/setup",
+        "getting-started/post-install",
+        "getting-started/learn-lua",
       ],
     },
-    {
-      type: "doc",
-      label: "Config",
-      id: "Config",
-    },
-    {
-      type: "doc",
-      label: "Features",
-      id: "Features",
-    },
-    {
-      type: "doc",
-      label: "Support",
-      id: "Support",
-    },
-    {
-      type: "doc",
-      label: "Contribute",
-      id: "Contribute",
-    },
-    {
-      type: "doc",
-      label: "Acknowledgements",
-      id: "Acknowledgements",
-    },
+    'config',
+    'features',
+    'support',
+    'contribute',
+    'acknowledgements'
   ],
 };

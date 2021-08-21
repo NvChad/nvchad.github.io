@@ -1,3 +1,8 @@
+---
+id: post-install
+title: Post Install
+---
+
 - Some things can be done after the installation.
 
 ### Install a LSP server
