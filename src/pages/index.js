@@ -9,7 +9,7 @@ import logo from "./logo.png"
 
 function HomepageHeader() {
   return (
-    <div className="container">
+    <div className="container home-wrapper">
       <div className="banner__left">
         <img className="banner__left--logo" src={logo} />
         <Link

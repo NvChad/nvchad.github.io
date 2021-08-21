@@ -24,7 +24,7 @@
 :root .navbar__title {
   color: #2e3440;
   margin-left: 4px;
-  font-size: x-large;
+  font-size: 1.75rem;
 }
 
 h1,
@@ -52,8 +52,4 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 
 html[data-theme="dark"] {
   --ifm-background-color: #0a0e16 !important;
-}
-
-.menu__list-item {
-  width: 239px !important;
 }
