@@ -13,6 +13,9 @@ module.exports = {
   organizationName: "NvChad", // Usually your GitHub org/user name.
   projectName: "NvChad", // Usually your repo name.
   themeConfig: {
+    colorMode: {
+      respectPrefersColorScheme: true,
+    },
     navbar: {
       title: "NvChad",
       logo: {
