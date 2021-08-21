@@ -1,25 +1,21 @@
-# Website
+# NvChad Docs
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+[Docusaurus](https://docusaurus.io) based documentation page for [NvChad](https://github.com/nvchad/nvchad)!
 
-This site is still WIP , if someone's good with react then can help with the homepage :<
+## 🏗 Getting Started
 
-## Installation
+To get a local version of the site up and running, you must do the following.
 
-```console
-yarn install
-```
+1. Clone the repository `$ git clone https://github.com/nvchad/site.git`
+2. Install the dependencies `$ cd site && yarn`
+3. Launch the dev server `$ yarn start`
 
-## Local Development
+You should then have a local development environment up and running at [`http://localhost:3000`](http://localhost:3000)!
 
-```console
-yarn start
-```
+## 👷 Contributions
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+All contributions are welcome, but please stick to the `prettier` settings!
 
-## Build
+## 📝 License
 
-```console
-yarn build
-```
+MIT
