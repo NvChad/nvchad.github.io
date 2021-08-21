@@ -8,7 +8,6 @@ sidebar_position: 1
 - [Use a Nerd Font](https://www.nerdfonts.com/) in your terminal.
 - Terminal supporting true colors ( most already do ).
 - ```git```
-- ```Packer```
 
 #### Semi-optional dependencies
 
