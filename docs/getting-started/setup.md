@@ -44,6 +44,6 @@ nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
 
 ```shell
 rm -rf ~/.config/cache/nvim
-rm -rf ~/.config/config/nvim
+rm -rf ~/.config/nvim
 rm -rf ~/.local/share/nvim
 ```
