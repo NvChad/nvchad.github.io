@@ -28,7 +28,7 @@
   object-fit: cover;
   animation: hero-fadeIn 1s;
 
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   box-shadow: 0 4px 20px 16px rgb(0 0 0 / 20%), 0 6px 20px 2px rgb(0 0 0 / 19%);
 }
 
