@@ -60,17 +60,17 @@ NvChad comes with the following file / folder structure.
 
 Some important files that you may want to take a look at and/or adjust to your liking include:
 
-- `/lua/chadrc.lua`: This is the main config file for users options, themes, disabling plugins etc.
-- `/lua/colors/init.lua`: Loads syntax theme (base16 plugin) and highlights.
-- `/lua/colors/highlights.lua`: All the highlights are defined here.
-- `/lua/default_config.lua`: Copy of the default config (do not modify this).
-- `/lua/core/mappings.lua`: All mappings are defined here. 
-- `/lua/core/options.lua`: All options are defined here.
-- `/lua/plugins/packerInit.lua`:  Packer's config.
-- `/lua/plugins/config/*.lua`: Configs of various plugins (plugins having small configs).
+- `/lua/chadrc.lua` - This is the main config file for users options, themes, disabling plugins etc.
+- `/lua/colors/init.lua` - Loads syntax theme (base16 plugin) and highlights.
+- `/lua/colors/highlights.lua` - All the highlights are defined here.
+- `/lua/core/mappings.lua` - All mappings are defined here. 
+- `/lua/core/options.lua` - All options are defined here.
+- `/lua/plugins/packerInit.lua` -  Packer's config.
+- `/lua/plugins/config/*.lua` - Configs of various plugins (plugins having small configs).
 
 Please do not modify the following files!
 - `/lua/core/utils.lua`
+- `/lua/default_config.lua`
 
 ## Mappings
 
@@ -100,7 +100,7 @@ For example, to change the autosave feature, change the variable `autosave`.
 ```shell
 M.options = {
    ...
-    autosave = true,
+   autosave = true,
    ...
 }
 ```
