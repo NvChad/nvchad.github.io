@@ -76,20 +76,22 @@ Please do not modify the following files!
 
 To see some of the common mappings, check out the `/lua/chadrc.lua` file. 
 
-Alternatively, some notable mappings are:
+You can view and search through all of the mappings and shortcuts via the `cheatsheet` plugin while inside NeoVim with `<leader> + dk` to bring up the default mappings and `<leader> + uk` for the user mappings.
+
+Some notable default mappings include:
 
 | Key mapping         |  Action                                |  Note                 |
 |---------------------|----------------------------------------|-----------------------|
 |  `jk`                 | ESC to normal mode                   |                       |
-|  `<SHIFT> + t`        | open a new buffer                      |                       |
-|  `<SPACE> + x`        | close current buffer                   | (hides a terminal)    |
-|  `<TAB>`              | cycle in bufferline (next)             |                       |
-|  `<SHIFT> + <TAB>`    | cycle in bufferline (previous)         |                       |
-|  `<CTRL> + n`         | open NvimTree explorer                 | `<ENTER>` to select   |
-|  `<SPACE> + u + k`    | view key mappings                      |                       |
-|  `<SPACE> + /`        | toggle commenting a line               |                       |
-|  `<SPACE> + f + f`    | find a file                            | Telescope picker      |
-|  `<SPACE> + g + s`    | git status                             | Telescope picker      |
+|  `<SHIFT> + t`        | open a new buffer                    |                       |
+|  `<SPACE> + x`        | close current buffer                 | (hides a terminal)    |
+|  `<TAB>`              | cycle in bufferline (next)           |                       |
+|  `<SHIFT> + <TAB>`    | cycle in bufferline (previous)       |                       |
+|  `<CTRL> + n`         | open NvimTree explorer               | `<ENTER>` to select   |
+|  `<SPACE> + u + k`    | view key mappings                    |                       |
+|  `<SPACE> + /`        | toggle commenting a line             |                       |
+|  `<SPACE> + f + f`    | find a file                          | Telescope picker      |
+|  `<SPACE> + g + s`    | git status                           | Telescope picker      |
 
 ## Configuration
 
