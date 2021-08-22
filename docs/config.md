@@ -78,21 +78,18 @@ To see some of the common mappings, check out the `/lua/chadrc.lua` file.
 
 Alternatively, some notable mappings are:
 
-```markdown
-| Key mapping         |  Action                                         |  Note                 |
-|---------------------|-------------------------------------------------|-----------------------|
-|  jk                 | <ESC> to normal mode                            |                       |
-|  <SHIFT> + t        | open a new buffer                               |                       |
-|  <SHIFT> + x        | close current buffer                            | (hides a terminal)    |
-|  <TAB>              | cycle in bufferline (next)                      |                       |
-|  <SHIFT> + <TAB>    | cycle in bufferline (previous)                  |                       |
-|  <CTRL> + n         | open NvimTree explorer                          | `<ENTER>` to select   |
-|  <SPACE> + u + k    | view key mappings                               |                       |
-|  <SPACE> + /        | toggle commenting a line                        |                       |
-|  <SPACE> + f + f    | pick a file                                     | Telescope picker      |
-|  <SPACE> + g + s    | git status                                      | Telescope picker      |
-|-----------------------------------------------------------------------------------------------|
-```
+| Key mapping         |  Action                                |  Note                 |
+|---------------------|----------------------------------------|-----------------------|
+|  `jk`                 | ESC to normal mode                   |                       |
+|  `<SHIFT> + t`        | open a new buffer                      |                       |
+|  `<SPACE> + x`        | close current buffer                   | (hides a terminal)    |
+|  `<TAB>`              | cycle in bufferline (next)             |                       |
+|  `<SHIFT> + <TAB>`    | cycle in bufferline (previous)         |                       |
+|  `<CTRL> + n`         | open NvimTree explorer                 | `<ENTER>` to select   |
+|  `<SPACE> + u + k`    | view key mappings                      |                       |
+|  `<SPACE> + /`        | toggle commenting a line               |                       |
+|  `<SPACE> + f + f`    | find a file                            | Telescope picker      |
+|  `<SPACE> + g + s`    | git status                             | Telescope picker      |
 
 ## Configuration
 
