@@ -39,15 +39,12 @@ nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
 
 - Install mingw
 
- ```ps
+```
 ps>choco install mingw
 
 (install packer)
 - git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data\site\pack\packer\start\packer.nvim"
-
-(clone nvchad repo)
 - git clone https://github.com/siduck76/NvChad
-
 - go to  ~/AppData/Local/nvim
 - copy nvchad's init.lua and lua folder in the nvim folder 
 - nvim +PackerSync
