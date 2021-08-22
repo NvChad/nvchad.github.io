@@ -4,63 +4,81 @@ title: Config
 ---
 
 ## Structure
+
+NvChad comes with the following file / folder structure.
+
+```tree
+├── init.lua
+├── LICENSE
+├── lua
+│   ├── chadrc.lua
+│   ├── colors
+│   │   ├── highlights.lua
+│   │   ├── init.lua
+│   │   └── themes
+│   │       ├── chadracula.lua
+│   │       ├── everforest.lua
+│   │       ├── gruvchad.lua
+│   │       ├── javacafe.lua
+│   │       ├── mountain.lua
+│   │       ├── norchad.lua
+│   │       ├── onedark.lua
+│   │       ├── one-light.lua
+│   │       ├── tokyonight.lua
+│   │       └── tomorrow-night.lua
+│   ├── core
+│   │   ├── autocmds.lua
+│   │   ├── init.lua
+│   │   ├── mappings.lua
+│   │   ├── options.lua
+│   │   └── utils.lua
+│   ├── default_config.lua
+│   └── plugins
+│       ├── configs
+│       │   ├── autopairs.lua
+│       │   ├── autosave.lua
+│       │   ├── bufferline.lua
+│       │   ├── chadsheet.lua
+│       │   ├── compe.lua
+│       │   ├── dashboard.lua
+│       │   ├── gitsigns.lua
+│       │   ├── icons.lua
+│       │   ├── lspconfig.lua
+│       │   ├── luasnip.lua
+│       │   ├── nvimtree.lua
+│       │   ├── others.lua
+│       │   ├── statusline.lua
+│       │   ├── telescope.lua
+│       │   ├── treesitter.lua
+│       │   └── zenmode.lua
+│       ├── init.lua
+│       └── packerInit.lua
+├── plugin
+│   └── packer_compiled.lua
+└── README.md
 ```
-project
-│   README.md
-│   init.lua 
-│
-└───lua
-│   │   chadrc.lua              
-|   |   default_config.lua      
-|   |   mappings.lua            
-|   |   options.lua             
-|   |   packerInit.lua          
-|   |   pluginList.lua          
-|   |   utils.lua               
-|   |   theme.lua
-|   |   highlights.lua
-|   |   
-│   └───plugins
-│   |       autopairs.lua
-│   |       autosave.lua
-│   |       ...
-|   |       others.lua          
-|   |       ...                
-|   |
-│   └───themes
-│   |   │   onedark.lua        
-│   |   │   gruvchad.lua
-|   |   |   ...                
-│   │
-│   └───telescope
-│       └───_extensions
-|           |   themes.lua     
-|           |   terms.lua      
-│   
-└───plugin                     
-    │   packer_compiled.lua    (packer compiles the whole config here) 
-```
 
-- theme.lua : Loads syntax theme ( base16 plugin) and highlights.
-- highlights.lua : All the highlights are defined here.
-- chadrc.lua : The main config file for users options, themes, disabling plugins etc.
-- default_config.lua : Default config (Do not modify this).
-- mappings.lua : All mappings are defined here. 
-- options.lua : All options are defined here.
-- packerInit.lua :  Packer's config 
-- pluginList.lua : List of all plugins. 
-- others.lua : Configs of various plugins ( plugins having small configs)
+Some important files that you may want to take a look at and/or adjust to your liking include:
 
-(Files not to modify)
+- `/lua/chadrc.lua`: This is the main config file for users options, themes, disabling plugins etc.
+- `/lua/colors/init.lua`: Loads syntax theme (base16 plugin) and highlights.
+- `/lua/colors/highlights.lua`: All the highlights are defined here.
+- `/lua/default_config.lua`: Copy of the default config (do not modify this).
+- `/lua/core/mappings.lua`: All mappings are defined here. 
+- `/lua/core/options.lua`: All options are defined here.
+- `/lua/plugins/packerInit.lua`:  Packer's config.
+- `/lua/plugins/config/*.lua`: Configs of various plugins (plugins having small configs).
 
-- themes.lua , terms.lua ( telescope/_extensions dir) and utils.lua (lua dir) 
+Please do not modify the following files!
+- `/lua/core/utils.lua`
 
 ## Mappings
 
-To see all of the mappings, read the `/lua/chadrc.lua` file, alternatively...
+To see some of the common mappings, check out the `/lua/chadrc.lua` file. 
 
-### Some notable mappings are
-```
+Alternatively, some notable mappings are:
+
+```markdown
 | Key mapping         |  Action                                         |  Note                 |
 |---------------------|-------------------------------------------------|-----------------------|
 |  jk                 | <ESC> to normal mode                            |                       |
@@ -76,11 +94,13 @@ To see all of the mappings, read the `/lua/chadrc.lua` file, alternatively...
 |-----------------------------------------------------------------------------------------------|
 ```
 
-## Configure
-Modify the ```lua/chadrc.lua``` file.
+## Configuration
 
-For example, to change the autosave feature, change the variable (autosave) within `chadrc.lua`
-```
+The primary user adjustable configuration lives in the ```/lua/chadrc.lua``` file.
+
+For example, to change the autosave feature, change the variable `autosave`.
+
+```shell
 M.options = {
    ...
     autosave = true,
@@ -88,3 +108,4 @@ M.options = {
 }
 ```
 
+More advanced configuration options can be found in the `/lua/core/` directory.

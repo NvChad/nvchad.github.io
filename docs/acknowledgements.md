@@ -10,11 +10,11 @@ Thank you
 - Every single plugin's maintainer(s) & community :D
 
 - Other NeoVim configurations
-   - [DoomVim](https://github.com/NTBBloodbath/doom-nvim)
-   - [LunarVim](https://github.com/LunarVim/LunarVim)
-   - [SpaceVim](https://github.com/SpaceVim/SpaceVim)
-   - [StarVim](https://github.com/ashincoder/StarVim)
+  - [DoomVim](https://github.com/NTBBloodbath/doom-nvim)
+  - [LunarVim](https://github.com/LunarVim/LunarVim)
+  - [SpaceVim](https://github.com/SpaceVim/SpaceVim)
+  - [StarVim](https://github.com/ashincoder/StarVim)
 
-- And not in the least.....the open source software movement as a whole
+- Last, but certainly not least, the open source software movement as a whole!
 
-**We sincerely appreciate each and every person who directly & indirectly made this possible, thank you all**
+**We sincerely appreciate each and every person who directly & indirectly made this possible, thank you all!**
