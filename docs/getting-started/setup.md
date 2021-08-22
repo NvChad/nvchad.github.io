@@ -28,9 +28,32 @@ mv ~/.config/nvim ~/.config/Nvim.backup
 Then do : 
 
 ``` shell 
+
+(*Nix systems)
+
 git clone https://github.com/NvChad/NvChad ~/.config/nvim
 nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
 ```
+
+(Windows)
+
+- Install mingw
+
+ ```ps
+ps>choco install mingw
+
+(install packer)
+- git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data\site\pack\packer\start\packer.nvim"
+
+(clone nvchad repo)
+- git clone https://github.com/siduck76/NvChad
+
+- go to  ~/AppData/Local/nvim
+- copy nvchad's init.lua and lua folder in the nvim folder 
+- nvim +PackerSync
+- press enter to skip errors and let it install plugins.
+ ```
+
 
 ### Update
 
