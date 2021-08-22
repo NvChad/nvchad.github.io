@@ -27,7 +27,7 @@ Fast NeoVim statusline plugin written in lua.
 
 Separator styles: `slant`, `round`, `default`, `block`, `arrow`:
 
-![nn](/img/features/galaxyline.png) 
+![galaxyline screenshot](/img/features/galaxyline.png) 
 
 ### [`bufferline.nvim`](https://github.com/akinsho/bufferline.nvim)
 
@@ -80,13 +80,13 @@ Formatting plugin for most languages. Just install a [formatter](https://github.
 
 A file explorer tree for NeoVim written in lua.
 
-![chad](https://raw.githubusercontent.com/siduck76/dotfiles/master/rice%20flex/nvimtree.png)
+![nvim tree](https://raw.githubusercontent.com/siduck76/dotfiles/master/rice%20flex/nvimtree.png)
 
 ### [`nvim-web-devicons`](https://github.com/kyazdani42/nvim-web-devicons)
 
 Lua fork of vim devicons which lets you change colors and edit icons of filetypes.
 
-![devi](/img/features/devi.png) 
+![devicons screenshot](/img/features/devi.png) 
 
 ### [`telescope.nvim`](https://github.com/nvim-telescope/telescope.nvim)
 
@@ -104,13 +104,13 @@ Shows cheatsheet of all NvChad mappings including default vim mappings.
 
 Indentline plugin.
 
-![devi](https://raw.githubusercontent.com/siduck76/dotfiles/master/rice%20flex/blanklineNvim.png) 
+![blankline screenshot](https://raw.githubusercontent.com/siduck76/dotfiles/master/rice%20flex/blanklineNvim.png) 
 
 ### [`truezen.nvim`](https://github.com/Pocco81/TrueZen.nvim)
 
 Focus mode for NeoVim - temporarily hide statusbars, bufferlines, etc.
 
-TODO: Add screnshots here
+![truezen](/img/features/truezen.png) 
 
 ### Misc plugins
 
