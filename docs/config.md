@@ -93,7 +93,9 @@ Alternatively, some notable mappings are:
 
 ## Configuration
 
-The primary user adjustable configuration lives in the ```/lua/chadrc.lua``` file.
+The primary user adjustable configuration lives in the ```/lua/chadrc.lua``` file. There we adjust some common settings you may want to change depending on your preferences.
+
+There is an `M.options` object which contains options you can toggle on/off or adjust the values of yourself.
 
 For example, to change the autosave feature, change the variable `autosave`.
 
@@ -105,4 +107,14 @@ M.options = {
 }
 ```
 
-More advanced configuration options can be found in the `/lua/core/` directory.
+There is also an `M.plugin_status` object which contains a map of plugin names and booleans. Here you can toggle individual plugins on/off if you do not need them.
+
+In addition, theres an object of common shortcuts you can adjust found in `M.mappings` and `M.mappings.plugins` for plugin shortcuts.
+
+### Advanced Configuration
+
+More advanced configuration options can be found in the `/lua/core/` directory. There you will find a file called `options.lua`, for example.
+
+If you take a look in there, you will see the basic NeoVim options we defined in the `chadrc.lua` file imported and mapped to their real `vim.opt` options. Therefore, if you want to add a custom setting to your `chadrc.lua`, you'll need to add the mapping from the chadrc value to the vim `set` value here. Then you can stay organised and manage the setting in your `chadrc.lua`.
+
+If you take a look through the rest of the `/lua/core/*.lua` files, you'll find that most configuration in NvChad works like this. There are most basic settings exposed to the user the `chadrc.lua` file, and then they are imported and mapped to real settings, or remaps, autocmds, etc. in these advanced configuration files.
