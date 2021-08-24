@@ -1,6 +1,6 @@
 ---
 id: detailed-install
-title: detailed install
+title: Installation of neovim
 ---
 
 

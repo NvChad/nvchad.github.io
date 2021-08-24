@@ -1,6 +1,6 @@
 ---
 id: detailed-debugging
-title: adv. debugging 
+title: Adv. debugging 
 ---
 
 ## How to gather fundamental debugging info

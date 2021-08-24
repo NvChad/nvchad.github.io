@@ -17,6 +17,8 @@ module.exports = {
       items: [
         "detailed-info/detailed-install",
         "detailed-info/detailed-debugging",
+        "detailed-info/themes",
+        "detailed-info/lsp"
       ],
     },
     'support',
