@@ -11,6 +11,14 @@ module.exports = {
     },
     'config',
     'features',
+    {
+      type: "category",
+      label: "Detailed Information",
+      items: [
+        "detailed-info/detailed-install",
+        "detailed-info/detailed-debugging",
+      ],
+    },
     'support',
     'contribute',
     'acknowledgements'
