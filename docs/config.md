@@ -5,54 +5,33 @@ title: Config
 
 ## Structure
 
-NvChad comes with the following file / folder structure.
+NvChad comes with the following file / folder structure. [An up-to-date & full tree can be viewed in the repo](https://github.com/NvChad/NvChad/)
 
 ```tree
 ├── init.lua
 ├── LICENSE
 ├── lua
 │   ├── chadrc.lua
-│   ├── colors
-│   │   ├── highlights.lua
-│   │   ├── init.lua
-│   │   └── themes
-│   │       ├── chadracula.lua
-│   │       ├── everforest.lua
-│   │       ├── gruvchad.lua
-│   │       ├── javacafe.lua
-│   │       ├── mountain.lua
-│   │       ├── norchad.lua
-│   │       ├── onedark.lua
-│   │       ├── one-light.lua
-│   │       ├── tokyonight.lua
-│   │       └── tomorrow-night.lua
+│   ├── default_config.lua
 │   ├── core
-│   │   ├── autocmds.lua
 │   │   ├── init.lua
+│   │   ├── autocmds.lua
 │   │   ├── mappings.lua
 │   │   ├── options.lua
 │   │   └── utils.lua
-│   ├── default_config.lua
-│   └── plugins
-│       ├── configs
-│       │   ├── autopairs.lua
-│       │   ├── autosave.lua
-│       │   ├── bufferline.lua
-│       │   ├── chadsheet.lua
-│       │   ├── compe.lua
-│       │   ├── dashboard.lua
-│       │   ├── gitsigns.lua
-│       │   ├── icons.lua
-│       │   ├── lspconfig.lua
-│       │   ├── luasnip.lua
-│       │   ├── nvimtree.lua
-│       │   ├── others.lua
-│       │   ├── statusline.lua
-│       │   ├── telescope.lua
-│       │   ├── treesitter.lua
-│       │   └── zenmode.lua
-│       ├── init.lua
-│       └── packerInit.lua
+│   ├── plugins
+│   │    ├── init.lua
+│   │    ├── packerInit.lua
+│   │    └── configs
+│   │        ├── autopairs.lua
+│   │        ├── others.lua
+│   │        └── <many more plugin configs>
+│   └── colors
+│       ├── init.lua
+│       ├── highlights.lua
+│       └── themes
+│           ├── onedark.lua
+│           └── <many more themes>
 ├── plugin
 │   └── packer_compiled.lua
 └── README.md
@@ -80,18 +59,17 @@ You can view and search through all of the mappings and shortcuts via the `cheat
 
 Some notable default mappings include:
 
-| Key mapping         |  Action                                |  Note                 |
-|---------------------|----------------------------------------|-----------------------|
-|  `jk`                 | ESC to normal mode                   |                       |
-|  `<SHIFT> + t`        | open a new buffer                    |                       |
-|  `<SPACE> + x`        | close current buffer                 | (hides a terminal)    |
-|  `<TAB>`              | cycle in bufferline (next)           |                       |
-|  `<SHIFT> + <TAB>`    | cycle in bufferline (previous)       |                       |
-|  `<CTRL> + n`         | open NvimTree explorer               | `<ENTER>` to select   |
-|  `<SPACE> + u + k`    | view key mappings                    |                       |
-|  `<SPACE> + /`        | toggle commenting a line             |                       |
-|  `<SPACE> + f + f`    | find a file                          | Telescope picker      |
-|  `<SPACE> + g + s`    | git status                           | Telescope picker      |
+| Key mapping           |  Action                                |  Notes                         |
+|-----------------------|----------------------------------------|--------------------------------|
+|  `jk`                 | ESC to normal mode                     |                                |
+|  `<SHIFT> + t`        | open a new buffer                      |                                |
+|  `<SPACE> + x`        | close current buffer                   | (hides a terminal)             |
+|  `<TAB>`              | cycle active buffer in bufferline      | `<SHIFT> + <TAB>` for previous |
+|  `<CTRL> + n`         | open NvimTree explorer                 | `<ENTER>` to select            |
+|  `<SPACE> + u + k`    | view key mappings                      |                                |
+|  `<SPACE> + /`        | toggle commenting a line               |                                |
+|  `<SPACE> + f + f`    | find a file                            | Telescope picker               |
+|  `<SPACE> + g + s`    | git status                             | Telescope picker               |
 
 ## Configuration
 
