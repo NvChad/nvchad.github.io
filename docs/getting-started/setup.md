@@ -8,7 +8,7 @@ sidebar_position: 1
 
 - [Neovim 0.5](https://neovim.io/)
 - [Use a Nerd Font](https://www.nerdfonts.com/) in your terminal.
-- Terminal supporting true colors ( most already do ).
+- Install [material design icon font](https://materialdesignicons.com/) , just download the font and put it in your font dir.
 - `git`
 
 #### Semi-optional dependencies
