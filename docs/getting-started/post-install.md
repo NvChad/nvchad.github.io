@@ -13,6 +13,13 @@ These are highly recommend and a **must do for any new Vimmer**
   ```
   :Tutor
   ```
+- In-built help docs
+  ```
+  :h <cmd>
+  :h autocommand
+  :h nvim.api
+  :h insert
+  ```
 - [Google your issue](https://google.com)
    - Example format query, `neovim how to delete 10 lines`
 :::
