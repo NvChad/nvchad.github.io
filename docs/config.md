@@ -9,43 +9,45 @@ NvChad comes with the following file / folder structure. [An up-to-date & full t
 
 ```tree
 ├── init.lua
-├── LICENSE
 ├── lua
-│   ├── chadrc.lua
-│   ├── default_config.lua
-│   ├── core
-│   │   ├── init.lua
-│   │   ├── autocmds.lua
-│   │   ├── mappings.lua
-│   │   ├── options.lua
-│   │   └── utils.lua
-│   ├── plugins
-│   │    ├── init.lua
-│   │    ├── packerInit.lua
-│   │    └── configs
-│   │        ├── autopairs.lua
-│   │        ├── others.lua
-│   │        └── <many more plugin configs>
-│   └── colors
-│       ├── init.lua
-│       ├── highlights.lua
-│       └── themes
-│           ├── onedark.lua
-│           └── <many more themes>
-├── plugin
-│   └── packer_compiled.lua
-└── README.md
+│   ├── chadrc.lua
+│   ├── default_config.lua
+|   |
+│   ├── core
+│   │   ├── init.lua
+│   │   ├── autocmds.lua
+│   │   ├── mappings.lua
+│   │   ├── options.lua
+│   │   └── utils.lua
+|   |
+│   ├── plugins
+│   │    ├── init.lua
+│   │    ├── packerInit.lua
+│   │    └── configs
+│   │        ├── bufferline.lua
+│   │        ├── others.lua
+│   │        └── <many more plugin configs>
+|   |
+│   └── colors
+│       ├── init.lua
+│       ├── highlights.lua
+│       └── themes
+│           ├── onedark.lua
+│           └── <many more themes>
 ```
 
 Some important files that you may want to take a look at and/or adjust to your liking include:
 
-- `/lua/chadrc.lua` - This is the main config file for users options, themes, disabling plugins etc.
+- `/lua/chadrc.lua` - Main config file for users options, themes, disabling plugins etc.
 - `/lua/colors/init.lua` - Loads syntax theme (base16 plugin) and highlights.
 - `/lua/colors/highlights.lua` - All the highlights are defined here.
 - `/lua/core/mappings.lua` - All mappings are defined here. 
 - `/lua/core/options.lua` - All options are defined here.
-- `/lua/plugins/packerInit.lua` -  Packer's config.
-- `/lua/plugins/config/*.lua` - Configs of various plugins (plugins having small configs).
+- `/lua/plugins/packerInit.lua` - Packer's config.
+- `/lua/plugins/config/*.lua` - Configs of various plugins.
+- `/lua/plugins/config/others.lua` - Configs of various plugins which have small configs (less than 20 lines)
+
+(whenever you run :PackerSync or :PackerCompile , packer will automatically create a plugin folder in ~/.config/nvim , just ignore that and dont touch it)
 
 Please do not modify the following files!
 - `/lua/core/utils.lua`

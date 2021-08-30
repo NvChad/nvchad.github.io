@@ -123,6 +123,6 @@ _(The video shows compe + lsp completions and lsp-signature while completion of 
 - [`nvim-autopairs`](https://github.com/windwp/nvim-autopairs)
 - [`vim-matchup`](https://github.com/andymass/vim-matchup)
 - [`nvim-comment`](https://github.com/terrortylor/nvim-comment)
-- [`autosave.nvim`](https://vimawesome.com/plugin/vim-auto-save)
+- [`autosave.nvim`](https://github.com/Pocco81/AutoSave.nvim)
 - [`neoscroll.nvim`](https://github.com/karb94/neoscroll.nvim)
 - [`vim-fugitive`](https://github.com/tpope/vim-fugitive)
