@@ -5,37 +5,35 @@ title: Config
 
 ## Structure
 
-NvChad comes with the following file / folder structure.
+NvChad comes with the following file / folder structure. [An up-to-date & full tree can be viewed in the repo](https://github.com/NvChad/NvChad/)
 
 ```tree
 ├── init.lua
-│       
 ├── lua
-│   ├── chadrc.lua
-│   ├── default_config.lua
-│   │       
-│   ├── colors
-│   │   ├── highlights.lua
-│   │   ├── init.lua
-│   │   └── themes
-│   │       ├── onedark.lua
-│   │       ├── gruvbox.lua
-│   │       └── and so on  
-│   │         
-│   ├── core
-│   │   ├── autocmds.lua
-│   │   ├── init.lua
-│   │   ├── mappings.lua
-│   │   ├── options.lua
-│   │   └── utils.lua
-│   │   
-│   └── plugins
-│       ├── configs
-│       │   ├── all plugin configs
-│       │   ├── others.lua
-│       │   
-│       ├── init.lua
-│       └── packerInit.lua
+│   ├── chadrc.lua
+│   ├── default_config.lua
+|   |
+│   ├── core
+│   │   ├── init.lua
+│   │   ├── autocmds.lua
+│   │   ├── mappings.lua
+│   │   ├── options.lua
+│   │   └── utils.lua
+|   |
+│   ├── plugins
+│   │    ├── init.lua
+│   │    ├── packerInit.lua
+│   │    └── configs
+│   │        ├── bufferline.lua
+│   │        ├── others.lua
+│   │        └── <many more plugin configs>
+|   |
+│   └── colors
+│       ├── init.lua
+│       ├── highlights.lua
+│       └── themes
+│           ├── onedark.lua
+│           └── <many more themes>
 ```
 
 Some important files that you may want to take a look at and/or adjust to your liking include:
@@ -63,18 +61,17 @@ You can view and search through all of the mappings and shortcuts via the `cheat
 
 Some notable default mappings include:
 
-| Key mapping         |  Action                                |  Note                 |
-|---------------------|----------------------------------------|-----------------------|
-|  `jk`                 | ESC to normal mode                   |                       |
-|  `<SHIFT> + t`        | open a new buffer                    |                       |
-|  `<SPACE> + x`        | close current buffer                 | (hides a terminal)    |
-|  `<TAB>`              | cycle in bufferline (next)           |                       |
-|  `<SHIFT> + <TAB>`    | cycle in bufferline (previous)       |                       |
-|  `<CTRL> + n`         | open NvimTree explorer               | `<ENTER>` to select   |
-|  `<SPACE> + u + k`    | view key mappings                    |                       |
-|  `<SPACE> + /`        | toggle commenting a line             |                       |
-|  `<SPACE> + f + f`    | find a file                          | Telescope picker      |
-|  `<SPACE> + g + s`    | git status                           | Telescope picker      |
+| Key mapping           |  Action                                |  Notes                         |
+|-----------------------|----------------------------------------|--------------------------------|
+|  `jk`                 | ESC to normal mode                     |                                |
+|  `<SHIFT> + t`        | open a new buffer                      |                                |
+|  `<SPACE> + x`        | close current buffer                   | (hides a terminal)             |
+|  `<TAB>`              | cycle active buffer in bufferline      | `<SHIFT> + <TAB>` for previous |
+|  `<CTRL> + n`         | open NvimTree explorer                 | `<ENTER>` to select            |
+|  `<SPACE> + u + k`    | view key mappings                      |                                |
+|  `<SPACE> + /`        | toggle commenting a line               |                                |
+|  `<SPACE> + f + f`    | find a file                            | Telescope picker               |
+|  `<SPACE> + g + s`    | git status                             | Telescope picker               |
 
 ## Configuration
 

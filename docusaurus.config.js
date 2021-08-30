@@ -25,8 +25,8 @@ module.exports = {
       items: [
         {
           to: "getting-started/setup",
-          position: "right",
           label: "Getting Started",
+          position: "right",
         },
         {
           to: "config",
