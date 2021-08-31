@@ -12,16 +12,6 @@ module.exports = {
     "config",
     "features",
     "faq",
-    {
-      type: "category",
-      label: "Detailed Information",
-      items: [
-        "detailed-info/detailed-install",
-        "detailed-info/detailed-debugging",
-        "detailed-info/themes",
-        "detailed-info/lsp",
-      ],
-    },
     "support",
     "contribute",
     "acknowledgements",
