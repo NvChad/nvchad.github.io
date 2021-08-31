@@ -11,6 +11,7 @@ module.exports = {
     },
     'config',
     'features',
+    'faq',
     'support-debugging',
     'contribute',
     'acknowledgements'
