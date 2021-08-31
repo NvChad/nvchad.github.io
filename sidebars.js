@@ -9,11 +9,10 @@ module.exports = {
         "getting-started/learn-lua",
       ],
     },
-    "config",
-    "features",
-    "faq",
-    "support",
-    "contribute",
-    "acknowledgements",
+    'config',
+    'features',
+    'support-debugging',
+    'contribute',
+    'acknowledgements'
   ],
-}
+};
