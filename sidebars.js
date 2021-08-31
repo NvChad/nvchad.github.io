@@ -9,8 +9,9 @@ module.exports = {
         "getting-started/learn-lua",
       ],
     },
-    'config',
-    'features',
+    "config",
+    "features",
+    "faq",
     {
       type: "category",
       label: "Detailed Information",
@@ -18,11 +19,11 @@ module.exports = {
         "detailed-info/detailed-install",
         "detailed-info/detailed-debugging",
         "detailed-info/themes",
-        "detailed-info/lsp"
+        "detailed-info/lsp",
       ],
     },
-    'support',
-    'contribute',
-    'acknowledgements'
+    "support",
+    "contribute",
+    "acknowledgements",
   ],
-};
+}
