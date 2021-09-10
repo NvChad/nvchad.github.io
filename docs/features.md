@@ -92,14 +92,6 @@ NeoVim Treesitter configurations and abstraction layer. We mostly use this for s
 _without / with treesitter:_
 ![treesitter](/img/features/treesitter.png) 
 
-#### [`nvim-lspinstall`](https://github.com/kabouzeid/nvim-lspinstall)
-
-Makes installing lsp servers easy. For example:
-
-  ```
-   :LspInstall css
-  ```
-
 #### [`neoformat`](https://github.com/sbdchd/neoformat)
 
 Formatting plugin for most languages. Just install a [formatter](https://github.com/sbdchd/neoformat#supported-filetypes) for your language and execute `<leader> + fm`.

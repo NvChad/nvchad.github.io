@@ -34,19 +34,16 @@ After the initial installation, we recommend setting up a few things based on yo
 
 The Language Server Protocol (LSP) defines the protocol used between an editor or IDE and a language server that provides language features like auto complete, go to definition, find all references etc. For more information, check out [neovim-lspconfig](https://github.com/neovim/nvim-lspconfig).
 
-For example, to install the LSP Server for `css`, open `nvim` and execute:
+You need to include your language's lsp server name in the chadrc's lspconfig section (M.plugins) :
 
-```shell
-:LspInstall css 
+```
+  lspconfig = {
+      servers = {"html","cssls"},
+   },
 ```
 
-For `typescript`:
-
-```shell
-:LspInstall typescript
-```
-
-For a list of available LSP Server configurations, please check out the [`nvim-lspinstall`](https://github.com/kabouzeid/nvim-lspinstall) docs.
+- The example above shows that I have added html and css lsp server names in the servers table , this will setup lsp for html and css.
+  [Check](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md) to find the exact name of your lsp server. For css it was cssls so   I included it in the servers table.
 
 ## Install Treesitter Parser(s)
 

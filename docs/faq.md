@@ -9,11 +9,6 @@
 - Make sure you have Nvim +0.5 version
 ### How can i add external plugin in NvChad?
 - Just add `use "plugin_author/plugin_name"` to lua/plugins/init.lua and use `:PackerSync` to install that plugin
-### How to install LSP server?
-- Lsp servers that can be installed with :LspInstall https://github.com/kabouzeid/nvim-lspinstall#bundled-installers
-List of all lsp servers available https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md
 ## General
 ### Would lots of plugins in nvchad make it slow?
 - NvChad has like 30 ~ plugins but that doesn't mean those plugins are compromising neovim's speed, snappiness, or making it slow. No matter how many plugins I'd add on NvChad, it wouldn't compromise speed/snappiness/make it slow or whatever since it uses packer.nvim as plugin manager. packer.nvim lets you lazy load plugins i.e. loading plugins on certain events, mappings, sequentially loading them, etc, thus loading them only when needed. I have lazy loaded all the plugins so most plugins aren't loaded by default, hence not affecting neovim's startup/launch time.
-
-
