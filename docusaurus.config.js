@@ -1,5 +1,5 @@
-const lightCodeTheme = require("prism-react-renderer/themes/github")
-const darkCodeTheme = require("prism-react-renderer/themes/dracula")
+const lightCodeTheme = require("prism-react-renderer/themes/github");
+const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
@@ -7,6 +7,7 @@ module.exports = {
   tagline: "Neovim with lua is cool",
   url: "https://nvchat.netlify.app",
   baseUrl: "/",
+  trailingSlash: false,
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
@@ -64,4 +65,4 @@ module.exports = {
       },
     ],
   ],
-}
+};
