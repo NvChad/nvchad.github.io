@@ -5,14 +5,14 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 module.exports = {
   title: "NvChad",
   tagline: "Neovim with lua is cool",
-  url: "https://nvchat.netlify.app",
+  url: "https://nvchad.github.io/",
   baseUrl: "/",
   trailingSlash: false,
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  organizationName: "NvChad", // Usually your GitHub org/user name.
-  projectName: "NvChad", // Usually your repo name.
+  organizationName: "NvChad",
+  projectName: "nvchad.github.io",
   themeConfig: {
     colorMode: {
       respectPrefersColorScheme: true,
