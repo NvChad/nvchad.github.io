@@ -8,18 +8,28 @@ title: Config
 NvChad comes with the following file / folder structure. [An up-to-date & full tree can be viewed in the repo](https://github.com/NvChad/NvChad/)
 
 ```tree
+
 ├── init.lua
+│
 ├── lua
-│   ├── chadrc.lua
-│   ├── default_config.lua
-|   |
+│   ├── colors
+│   │   ├── highlights.lua
+│   │   └── init.lua (i)
+│   │   
 │   ├── core
 │   │   ├── init.lua
 │   │   ├── autocmds.lua
+│   │   ├── custom.lua (i)
+│   │   ├── default_config.lua
+│   │   ├── hooks.lua (i)
 │   │   ├── mappings.lua
 │   │   ├── options.lua
-│   │   └── utils.lua
+│   │   └── utils.lua (i)
 |   |
+│   ├── custom
+│   │   ├── example_chadrc.lua
+│   │   ├── example_init.lua
+│   │   
 │   ├── plugins
 │   │    ├── init.lua
 │   │    ├── packerInit.lua
@@ -27,76 +37,39 @@ NvChad comes with the following file / folder structure. [An up-to-date & full t
 │   │        ├── bufferline.lua
 │   │        ├── others.lua
 │   │        └── <many more plugin configs>
-|   |
-│   └── colors
-│       ├── init.lua
-│       ├── highlights.lua
-│       └── themes
-│           ├── onedark.lua
-│           └── <many more themes>
+
+```
+- The file names in the tree with (i) are meant to be ignored , i.e the user doesnt need to look at them. I assume you have basic lua knowledge and the lua code in those files might fret you or look very complex / scare you from nvchad xD.
+
+## Walkthrough
+
+- Letss goooo!
+
+![chad](https://media.discordapp.net/attachments/610012463907209227/891016498733256774/869951078962196571.png)
+![lessgooo](https://cdn.discordapp.com/attachments/610012463907209227/891011437810577480/863483056531046450.png)
+
+## Init.lua
+
+- So the nvchad config's dir has a lua folder and init.lua file.
+- The init.lua basically loads the core config.
+- You could check there must be a file named "init.lua" in the core folder which makes it easy for us to require it . 
+
+- for example , you have a file called "test.lua" and you want to organize your config structure so you put test.lua in a folder called "chadir", So you gotta require this "test.lua" to load it right? its obvious to do this :
+
+```lua
+require("chadir.test") or require "chadir.test".
+```
+- You could also rename the test.lua as init.lua , and then you just need to do :
+
+```lua 
+require "chadir".
+ -- which calls the init.lua present in the chadir
 ```
 
-Some important files that you may want to take a look at and/or adjust to your liking include:
+- So basically require "core" is loading the init.lua file in the core folder.
+- Since we are also doing error handling , we wrap that up in a pcall.
 
-- `/lua/chadrc.lua` - Main config file for users options, themes, disabling plugins etc.
-- `/lua/colors/init.lua` - Loads syntax theme (base16 plugin) and highlights.
-- `/lua/colors/highlights.lua` - All the highlights are defined here.
-- `/lua/core/mappings.lua` - All mappings are defined here. 
-- `/lua/core/options.lua` - All options are defined here.
-- `/lua/plugins/packerInit.lua` - Packer's config.
-- `/lua/plugins/config/*.lua` - Configs of various plugins.
-- `/lua/plugins/config/others.lua` - Configs of various plugins which have small configs (less than 20 lines)
-
-(whenever you run :PackerSync or :PackerCompile , packer will automatically create a plugin folder in ~/.config/nvim , just ignore that and dont touch it)
-
-Please do not modify the following files!
-- `/lua/core/utils.lua`
-- `/lua/default_config.lua`
-
-## Mappings
-
-To see some of the common mappings, check out the `/lua/chadrc.lua` file. 
-
-You can view and search through all of the mappings and shortcuts via the `cheatsheet` plugin while inside NeoVim with `<leader> + dk` to bring up the default mappings and `<leader> + uk` for the user mappings.
-
-Some notable default mappings include:
-
-| Key mapping           |  Action                                |  Notes                         |
-|-----------------------|----------------------------------------|--------------------------------|
-|  `jk`                 | ESC to normal mode                     |                                |
-|  `<SHIFT> + t`        | open a new buffer                      |                                |
-|  `<SPACE> + x`        | close current buffer                   | (hides a terminal)             |
-|  `<TAB>`              | cycle active buffer in bufferline      | `<SHIFT> + <TAB>` for previous |
-|  `<CTRL> + n`         | open NvimTree explorer                 | `<ENTER>` to select            |
-|  `<SPACE> + u + k`    | view key mappings                      |                                |
-|  `<SPACE> + /`        | toggle commenting a line               |                                |
-|  `<SPACE> + f + f`    | find a file                            | Telescope picker               |
-|  `<SPACE> + g + s`    | git status                             | Telescope picker               |
-
-## Configuration
-
-The primary user adjustable configuration lives in the ```/lua/chadrc.lua``` file. There we adjust some common settings you may want to change depending on your preferences.
-
-There is an `M.options` object which contains options you can toggle on/off or adjust the values of yourself.
-
-For example, to change the autosave feature, change the variable `autosave`.
-
-```shell
-M.options = {
-   ...
-   autosave = true,
-   ...
-}
-```
-
-There is also an `M.plugin_status` object which contains a map of plugin names and booleans. Here you can toggle individual plugins on/off if you do not need them.
-
-In addition, theres an object of common shortcuts you can adjust found in `M.mappings` and `M.mappings.plugins` for plugin shortcuts.
-
-### Advanced Configuration
-
-More advanced configuration options can be found in the `/lua/core/` directory. There you will find a file called `options.lua`, for example.
-
-If you take a look in there, you will see the basic NeoVim options we defined in the `chadrc.lua` file imported and mapped to their real `vim.opt` options. Therefore, if you want to add a custom setting to your `chadrc.lua`, you'll need to add the mapping from the chadrc value to the vim `set` value here. Then you can stay organised and manage the setting in your `chadrc.lua`.
-
-If you take a look through the rest of the `/lua/core/*.lua` files, you'll find that most configuration in NvChad works like this. There are most basic settings exposed to the user the `chadrc.lua` file, and then they are imported and mapped to real settings, or remaps, autocmds, etc. in these advanced configuration files.
+- lets explain this :  local ok, err = pcall(require, module) 
+- pcall("require", "path to module") will show out an error if the module doesnt exist and it'll save a boolean value in "ok" variable.
+- If the ok variable is true then the module will be loaded which is (core in our case) but if its false then the it'll print some error.
+- The loop in the init.lua does the error handling , you dont need to worry about that!
