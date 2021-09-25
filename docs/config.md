@@ -70,6 +70,30 @@ require "chadir".
 - Since we are also doing error handling , we wrap that up in a pcall.
 
 - lets explain this :  local ok, err = pcall(require, module) 
-- pcall("require", "path to module") will show out an error if the module doesnt exist and it'll save a boolean value in "ok" variable.
-- If the ok variable is true then the module will be loaded which is (core in our case) but if its false then the it'll print some error.
-- The loop in the init.lua does the error handling , you dont need to worry about that!
+
+- pcall will run : require module , which is require "core" in our case , only if ok's value is true.
+- pcall returns a boolean value and run the function inside in it , (the require thingy)
+- But for some reason if there's no such module , then pcall will return false and some errors , which are then passed into the "err" variable.
+- Basically if require of the module (core in our case) fails then nvim will show up an error on startup , if not then it'll just run that require thingy.
+
+## Colors
+
+- This dir has two files : init.lua and highlights.lua
+- Themeing is done with the nvim-base16.lua plugin , this is a fork of the original plugin (nvim-base16.lua) made by @norcalli. The original repo was dead for ages so I had to fork it and this plugin's pretty fast in load times , we have stripped down the code , removed outdated stuffs and made it more nvchad specific.
+
+- The init.lua file in the colors dir loads the base16 plugin and loads highlights after it.
+- Previously we loaded themes this way : 
+
+```lua
+local base16 = require 'base16'
+base16(base16.themes("ondark"), true)
+```
+
+- Since the addition of chadrc , we added a variable so (theme_var instead of "onedark") , this variable was defined in chadrc , so changing the theme name directly from chadrc changed the overall theme!
+- But this was a little cumbersome since , a new neovim window had to be opened to check the theme changes.
+
+- We then added a telescope picker for changing themes on the fly :D.
+- So leader + th (leader is the space key) will open a telescope picker and scrolling through the items (themes) in it would temporarily apply theme + preview them in a previewer window of the telescope , pressing enter on the theme name does two things : 
+
+- 1) apply the theme 
+- 2) save the theme's name in the variable of chadrc file.
