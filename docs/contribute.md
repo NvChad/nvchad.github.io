@@ -182,7 +182,7 @@ Use my [tool](https://siduck76.github.io/hex-tools/) to lighten or darken colors
 
 ```
 black = usually your theme bg (this should be the same as base00 in doom-base16.lua)
-barker_black = 6% darker than black
+darker_black = 6% darker than black
 black2 = 6% lighter than black
 
 onebg = 10% lighter than black
