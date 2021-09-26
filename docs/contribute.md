@@ -8,17 +8,27 @@ title: Contribute
 If you wish to contribute to NvChad, you should:
 1. [create a fork on GitHub](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
 2. clone your fork to your machine
-   ```shell
-   $ git clone git@github.com:<YOUR GITHUB USERNAME>/NvChad.git ~/.config/nvim
-   ```
+  - For ssh:
+    ```shell
+    $ git clone git@github.com:<YOUR GITHUB USERNAME>/NvChad.git ~/.config/nvim
+    ```
+  - For https:
+    ```shell
+    $ git clone https://github.com/<YOUR GITHUB USERNAME>/NvChad.git ~/.config/nvim
+    ```
 3. [add a new remote repo to track](https://www.atlassian.com/git/tutorials/git-forks-and-upstreams)
    - this means you can push/pull as normal to your own repo, but also easily track & update from the NvChad repo
-   ```shell
-   $ git remote add upstream git@github.com:NvChad/NvChad.git
-   ```
+    - for ssh:
+       ```shell
+       $ git remote add upstream git@github.com:NvChad/NvChad.git
+       ```
+    - for https:
+       ```shell
+       $ git remote add upstream https://github.com/NvChad/NvChad.git
+       ```  
 4. any time you create a branch to do some work, use 
    ```shell
-   $ git checkout -b dev-myFEAT upstream/main
+   $ git fetch upstream && git checkout -b dev-myFEAT upstream/main
    ```
 5. only use the **--rebase** flag to update your dev branch
    - this means that there are no `Merge NvChad/main into devBranch` commits, which are to be avoided
