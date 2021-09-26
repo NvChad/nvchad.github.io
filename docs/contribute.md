@@ -38,6 +38,11 @@ If you wish to contribute to NvChad, you should:
 
 - But adding specific features like adding config for [wakatime](https://github.com/wakatime/vim-wakatime) etc will be added in this [chad user configs](https://github.com/NvChad/NvChad/wiki/Chad-user-configs). This lets the user select the things only they want ( adding configs from extra configs ).
 
+
+## Format your PR with stylua 
+
+- check the [stylua config](https://github.com/NvChad/NvChad/blob/main/.stylua.toml)
+
 ## How to remove or edit commits from your PR
 > You may have been directed here to remove a commit such as a merge commit: `Merge NvChad/main into devBranch` from your PR
 
@@ -145,3 +150,59 @@ If you wish to contribute to NvChad, you should:
   ```shell
   $ git push origin --force
   ```
+
+
+## How to submit themes?
+
+- check the dirs : hl_themes and themes in [nvim-base16 repo](https://github.com/NvChad/nvim-base16.lua) to get an idea.
+- hl_themes/file.lua manages overall pretty highlight colors of nvchad
+- themes/file-base16.lua manages syntax colors + other highlights colors which havent been defined in nvchad
+
+### Creating the theme (example)
+
+- create a file and name it doom.lua 
+- put this file in the hl_themes dir
+
+Use my [tool](https://siduck76.github.io/hex-tools/) to lighten or darken colors , or some tool which does the same thing.
+
+(Creating highlights theme)
+
+- Copy the structure of other themes in doom.lua
+- Ok now make sure you add appropriate colors!!
+
+```
+black = usually your theme bg (this should be the same as base00 in doom-base16.lua)
+barker_black = 6% darker than black
+black2 = 6% lighter than black
+
+onebg = 10% lighter than black
+oneb2 = 19% lighter than black
+oneb3 = 27% lighter than black
+
+grey = 40% lighter than black (the % here depends so choose the perfect grey!)
+grey_fg = 10% lighter than grey
+grey_fg2 = 20% lighter than grey
+light_grey = 28% lighter than grey
+
+baby_pink = 15% lighter than red or any babypink color you like!
+line = 15% lighter than black 
+
+nord_blue = 13% darker than blue 
+sun = 8% lighter than yellow
+
+statusline_bg = 4% lighter than black
+lightbg = 13% lighter than statusline_bg
+lightbg2 = 7% lighter than statusline_bg
+
+folder_bg = blue color
+```
+
+(Creating base16 theme)
+
+- create a file and name it doom-base16.lua
+- put this file in the themes dir.
+
+- copy the structure from other base16 themes in the themes dir.
+- Follow the [base16 conventions](https://github.com/chriskempson/base16/blob/master/styling.md).
+
+- Now send the PR!!
