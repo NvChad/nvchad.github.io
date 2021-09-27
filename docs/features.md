@@ -117,4 +117,3 @@ _(The video shows compe + lsp completions and lsp-signature while completion of 
 - [`nvim-comment`](https://github.com/terrortylor/nvim-comment)
 - [`autosave.nvim`](https://github.com/Pocco81/AutoSave.nvim)
 - [`neoscroll.nvim`](https://github.com/karb94/neoscroll.nvim)
-- [`vim-fugitive`](https://github.com/tpope/vim-fugitive)
