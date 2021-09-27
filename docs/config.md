@@ -418,4 +418,10 @@ hooks.add("install_plugins", function(use)
 
 (note : the docs will be refined and updated more if there are any inaccuracies)
 
+### Lazy loading 
+
+- We lazy load almost 95% of the plugins so we expect you to lazy load the plugins you've added to reduce startuptime. Dont want users making nvchad slow just because they didnt lazy load plugins they've added!
+
+- Check [packer's readme](https://github.com/wbthomason/packer.nvim#specifying-plugins) for more info!
+
 ![lessgooo](https://cdn.discordapp.com/attachments/610012463907209227/891011437810577480/863483056531046450.png)

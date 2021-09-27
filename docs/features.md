@@ -13,7 +13,7 @@ NvChad comes with many comforts of a modern IDE. All lazy-loaded and built on to
 
 A `use-package` inspired plugin manager for Neovim. Uses native packages, supports Luarocks dependencies, written in Lua, allows for expressive config, lazy loading etc.
 
-#### [`better-escape.vim`](https://github.com/jdhao/better-escape.vim)
+#### [`better-escape.nvim`](https://github.com/max397574/better-escape.nvim)
 
 A plugin for escaping Vim insert mode without lagging.
 
@@ -22,8 +22,8 @@ A plugin for escaping Vim insert mode without lagging.
 
 Fuzzy finding select menu with text and image preview.
 
-![Telescope](https://raw.githubusercontent.com/siduck76/dotfiles/master/rice%20flex/tel.png)
-![Telescope-media](https://raw.githubusercontent.com/siduck76/dotfiles/master/rice%20flex/telmedia.png)
+![Telescope](https://raw.githubusercontent.com/siduck76/dotfiles/all/rice%20flex/tel.png)
+![Telescope-media](https://raw.githubusercontent.com/siduck76/dotfiles/all/rice%20flex/telmedia.png)
 (telescope media works in linux only)
 
 #### [`cheatsheet.nvim`](https://github.com/sudormrfbin/cheatsheet.nvim)
@@ -36,7 +36,7 @@ Shows cheatsheet of all NvChad mappings including default vim mappings.
 
 Top bar bufferline for neovim (can be used for managing buffers and tabs, including close them. It also creates custom clickable buttons on the bufferline.
 
-![bufferline](https://raw.githubusercontent.com/siduck76/dotfiles/master/rice%20flex/bufferline.png)
+![bufferline](https://raw.githubusercontent.com/siduck76/dotfiles/all/rice%20flex/bufferline.png)
 #### [`galaxyline.nvim`](https://github.com/glepnir/galaxyline.nvim)
 
 Fast NeoVim statusline plugin written in lua.
@@ -49,19 +49,19 @@ Separator styles: `slant`, `round`, `default`, `block`, `arrow`:
 
 A file explorer tree for NeoVim written in lua.
 
-![nvim tree](https://raw.githubusercontent.com/siduck76/dotfiles/master/rice%20flex/nvimtree.png)
+![nvim tree](https://raw.githubusercontent.com/siduck76/dotfiles/all/rice%20flex/nvimtree.png)
 
 #### [`blankline`](https://github.com/lukas-reineke/indent-blankline.nvim)
 
 Indentline plugin.
 
-![blankline screenshot](https://raw.githubusercontent.com/siduck76/dotfiles/master/rice%20flex/blanklineNvim.png) 
+![blankline screenshot](https://raw.githubusercontent.com/siduck76/dotfiles/all/rice%20flex/blanklineNvim.png) 
 
 #### [`dashboard-nvim`](https://github.com/glepnir/dashboard-nvim)
 
 Dashboard plugin for NeoVim.
 
-![dashboard](https://raw.githubusercontent.com/siduck76/dotfiles/master/rice%20flex/dashboard-nvim.png)
+![dashboard](https://raw.githubusercontent.com/siduck76/dotfiles/all/rice%20flex/dashboard-nvim.png)
 
 ![devicons screenshot](/img/features/devi.png) 
 
@@ -103,7 +103,7 @@ Formatting plugin for most languages. Just install a [formatter](https://github.
 - [`lsp-signature.nvim`](https://github.com/ray-x/lsp_signature.nvim) -  lsp signature hint when you type
 - [`lspkind.nvim`](https://github.com/onsails/lspkind-nvim) - Adds pictograms to neovim built-in lsp completion items:
 
-![lspkind](https://raw.githubusercontent.com/siduck76/dotfiles/master/rice%20flex/lspkind.png)
+![lspkind](https://raw.githubusercontent.com/siduck76/dotfiles/all/rice%20flex/lspkind.png)
 
 ![lsp](/img/features/lsp.gif) 
 
