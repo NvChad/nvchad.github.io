@@ -251,6 +251,22 @@ config = override_req("nvim_cmp", "plugins.configs.cmp"),
 - In case if thats not added then the function will just make use of "plugins.configs.cmp"
 
 
+## Replace default config of a plugin
+
+- use the default_plugin_config_replace table in chadrc.lua 
+
+- Example : 
+
+```lua
+M.plugins = {
+   default_plugin_config_replace = {
+      lspconfig = "custom.lspconfig",
+   },
+}
+
+-- this will replace lspconfig's default config with the file custom/lspconfig.lua
+-- Make sure you do :PackerCompile or :PackerSync after this since the packer_compiled.vim or packer_compiled.lua present in the ~/.config/nvim/plugin dir needs to update the paths!
+```
 ## How to setup lsp server?
 
 - first check [lspconfig_config.md](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md)
