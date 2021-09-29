@@ -328,14 +328,13 @@ return M
 ```
 
 - Format code : leader fm
-- If you want to change this mapping check this line in your lspconfig : 
+- If you want to change this mapping , check this line in your lspconfig : 
 ```lua
 buf_set_keymap("n", "<space>fm", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts)
 ```
 
 - Check [null-ls builtins](https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md) to get config for your language!
-- Also note that I've added some config of linters and formatters in null-ls so those programs must be installe on my system as well! like prettierd , stylua , eslint_d etc 
-
+- Also note that I've added some config of linters and formatters in null-ls config, so those programs must be installed on my system as well! like prettierd , stylua , shfmt , eslint_d etc 
 
 ## Setup lsp server?
 
