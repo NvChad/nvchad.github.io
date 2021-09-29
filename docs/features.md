@@ -26,10 +26,6 @@ Fuzzy finding select menu with text and image preview.
 ![Telescope-media](https://raw.githubusercontent.com/siduck76/dotfiles/all/rice%20flex/telmedia.png)
 (telescope media works in linux only)
 
-#### [`cheatsheet.nvim`](https://github.com/sudormrfbin/cheatsheet.nvim)
-
-Shows cheatsheet of all NvChad mappings including default vim mappings.
-  
 ### UI plugins
   
 #### [`bufferline.nvim`](https://github.com/akinsho/bufferline.nvim)
@@ -37,13 +33,13 @@ Shows cheatsheet of all NvChad mappings including default vim mappings.
 Top bar bufferline for neovim (can be used for managing buffers and tabs, including close them. It also creates custom clickable buttons on the bufferline.
 
 ![bufferline](https://raw.githubusercontent.com/siduck76/dotfiles/all/rice%20flex/bufferline.png)
-#### [`galaxyline.nvim`](https://github.com/glepnir/galaxyline.nvim)
+#### [`feline.nvim`](https://github.com/famiu/feline.nvim)
 
 Fast NeoVim statusline plugin written in lua.
 
 Separator styles: `slant`, `round`, `default`, `block`, `arrow`:
 
-![galaxyline screenshot](/img/features/galaxyline.png) 
+![feline screenshot](/img/features/galaxyline.png) 
 
 #### [`nvim-tree.lua`](https://github.com/kyazdani42/nvim-tree.lua)
 
