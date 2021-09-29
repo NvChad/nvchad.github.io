@@ -333,9 +333,10 @@ return M
 
 ## Setup lsp server?
 
-- first check [lspconfig_config.md](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md)
+- First check [lspconfig_config.md](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md)
 
-- if your servers are like html ,cssls , tsserver etc then you dont need to add config for it , you can just include their names in the lspconfig's section containing servers table.
+- If you just want to use the default lspconfig for a server then you dont need to add a config for it , you can just include their names in the lspconfig's section containing servers table (chadrc).
+
 - Then install that lspserver, if you get issues like "cmd not executable" in :LspInfo then install those lspservers globally in your system. 
 
 Ive had this issue with some lspservers which were installed by npm ,
@@ -490,7 +491,7 @@ hooks.add("install_plugins", function(use)
 
 - Well, for example you  just create a new file called autochad_cmds.lua in the custom folder and require it in the init.lua file of the custom folder!  BOOOM!!
 
-## Files to edit 
+### Files to edit 
 
 - Only files that are supposed to edit by the user are meant to be in the custom dir, default files in that folder are example_chadrc and example_init which can be just renamed by the user into chadrc.lua and init.lua .
 
@@ -498,7 +499,7 @@ hooks.add("install_plugins", function(use)
 
 (note : the docs will be refined and updated more if there are any inaccuracies)
 
-### Lazy loading 
+## Lazy loading 
 
 - We lazy load almost 95% of the plugins so we expect you to lazy load the plugins you've added to reduce startuptime. Dont want users making nvchad slow just because they didnt lazy load plugins they've added!
 
