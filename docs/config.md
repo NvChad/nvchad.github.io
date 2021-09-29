@@ -267,7 +267,71 @@ M.plugins = {
 -- this will replace lspconfig's default config with the file custom/lspconfig.lua
 -- Make sure you do :PackerCompile or :PackerSync after this since the packer_compiled.vim or packer_compiled.lua present in the ~/.config/nvim/plugin dir needs to update the paths!
 ```
-## How to setup lsp server?
+
+## Setup formatting and linting
+
+- There are many plugins for this , I will use null-ls.nvim in this example!
+
+### Install null-ls
+
+```lua
+ use {
+      "jose-elias-alvarez/null-ls.nvim",
+      after = "nvim-lspconfig",
+      config = function()
+         require("custom.plugin_confs.null-ls").setup()
+      end,
+   }
+
+-- load it after nvim-lspconfig , since we'll use some lspconfig stuff in null-ls config!
+```
+
+### Null-ls config
+
+```lua
+local ok, null_ls = pcall(require, "null-ls")
+
+if not ok then
+   return
+end
+
+local b = null_ls.builtins
+
+local sources = {
+
+   -- JS html css stuff
+   b.formatting.prettierd.with {
+      filetypes = { "html", "json", "markdown", "scss", "css", "javascript", "javascriptreact" },
+   },
+   b.diagnostics.eslint.with {
+      command = "eslint_d",
+   },
+
+   -- Lua
+   b.formatting.stylua,
+   b.diagnostics.luacheck.with { extra_args = { "--global vim" } },
+
+   -- Shell
+   b.formatting.shfmt,
+   b.diagnostics.shellcheck.with { diagnostics_format = "#{m} [#{c}]" },
+}
+
+local M = {}
+M.setup = function(on_attach)
+   null_ls.config {
+      sources = sources,
+   }
+   require("lspconfig")["null-ls"].setup { on_attach = on_attach }
+end
+
+return M
+```
+
+- Check [null-ls builtins](https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md) to get config for your language!
+- Also note that I've added some config of linters and formatters in null-ls so those programs must be installe on my system as well! like prettierd , stylua , eslint_d etc 
+
+
+## Setup lsp server?
 
 - first check [lspconfig_config.md](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md)
 
