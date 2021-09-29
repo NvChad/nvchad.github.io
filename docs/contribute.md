@@ -205,6 +205,8 @@ lightbg = 13% lighter than statusline_bg
 lightbg2 = 7% lighter than statusline_bg
 
 folder_bg = blue color
+
+(note : the above values are mostly approx values so its not compulsory that you have to use those exact numbers , test your theme i.e show it in the PR to get feedback from @siduck76)
 ```
 
 (Creating base16 theme)
@@ -216,3 +218,5 @@ folder_bg = blue color
 - Follow the [base16 conventions](https://github.com/chriskempson/base16/blob/master/styling.md).
 
 - Now send the PR!!
+
+(note : above guide was only for the dark theme! making light themes is tougher and a pain xD , will make doc for it too soon!)
