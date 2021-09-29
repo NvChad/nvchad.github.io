@@ -88,10 +88,6 @@ NeoVim Treesitter configurations and abstraction layer. We mostly use this for s
 _without / with treesitter:_
 ![treesitter](/img/features/treesitter.png) 
 
-#### [`neoformat`](https://github.com/sbdchd/neoformat)
-
-Formatting plugin for most languages. Just install a [formatter](https://github.com/sbdchd/neoformat#supported-filetypes) for your language and execute `<leader> + fm`.
-
 #### Various LSP plugins
 
 - [`nvim-lspconfig`](https://github.com/neovim/nvim-lspconfig) - Used for configuring lsp servers etc
