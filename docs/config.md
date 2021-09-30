@@ -448,7 +448,7 @@ add ~/.node_modules/bin to PATH
 ## Setup lsp-installer
 
 - If you dont like copy pasting configs for your lspservers and installing lspservers manually then try nvim-lspinstalller. 
-- Sample config : (custom/init.lua hooks section for install_plugins)
+- Basic Sample config : (custom/init.lua hooks section for install_plugins)
 
 ```lua
  use {
@@ -464,6 +464,61 @@ add ~/.node_modules/bin to PATH
          end)
       end,
    }
+```
+## advanced config 
+
+- The following config shows how lsp-installer + custom user keybinds (for codeactions) is done in the lspconfig. (custom/plugins/lspconfig) , if this is done then the above config within lsp-installer's use{} section shouldnt be done so only : 
+
+```lua
+ use {
+      "williamboman/nvim-lsp-installer",
+   }
+```
+```lua
+
+local M = {}
+
+M.setup_lsp = function(attach, capabilities)
+   local lsp_installer = require "nvim-lsp-installer"
+
+   lsp_installer.on_server_ready(function(server)
+      local opts = {
+         on_attach = attach,
+         capabilities = capabilities,
+         flags = {
+            debounce_text_changes = 150,
+         },
+         settings = {},
+      }
+     
+      if server.name == "rust_analyzer" then
+         opts.settings = {
+            ["rust-analyzer"] = {
+               experimental = {
+                  procAttrMacros = true,
+               },
+            },
+         }
+
+         opts.on_attach = function(client, bufnr)
+            local function buf_set_keymap(...)
+               vim.api.nvim_buf_set_keymap(bufnr, ...)
+            end
+            
+            -- Run nvchad's attach
+            attach(client, bufnr)
+   
+            -- Use nvim-code-action-menu for code actions for rust
+            buf_set_keymap(bufnr, "n", "<leader>ca", ":CodeActionMenu<CR>", { noremap = true, silent = true })
+            buf_set_keymap(bufnr, "v", "<leader>ca", ":CodeActionMenu<CR>", { noremap = true, silent = true })
+         end
+      end
+
+      server:setup(opts)
+      vim.cmd [[ do User LspAttachBuffers ]]
+   end)
+
+return M
 ```
 
 - Basic [lsp_installer commands](https://github.com/williamboman/nvim-lsp-installer/#commands)
