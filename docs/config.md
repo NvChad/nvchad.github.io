@@ -268,7 +268,7 @@ M.plugins = {
 -- Make sure you do :PackerCompile or :PackerSync after this since the packer_compiled.vim or packer_compiled.lua present in the ~/.config/nvim/plugin dir needs to update the paths!
 ```
 
-## Setup formatting and linting
+## formatting and linting
 
 - There are many plugins for this , I will use null-ls.nvim in this example!
 
@@ -336,7 +336,7 @@ buf_set_keymap("n", "<space>fm", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts)
 - Check [null-ls builtins](https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md) to get config for your language!
 - Also note that I've added some config of linters and formatters in null-ls config, so those programs must be installed on my system as well! like prettierd , stylua , shfmt , eslint_d etc 
 
-## Setup lsp server?
+## Setup lsp server
 
 - Skim through [lspconfig repo](https://github.com/neovim/nvim-lspconfig) to get a general overview of how the config looks/works.
 - Then check [lspconfig_config.md](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md) to make sure your language's lsp server present there.
