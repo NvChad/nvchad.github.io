@@ -29,16 +29,16 @@ echo "alias vim='/home/<YOUR USERNAME>/.local/bin/nvim.appimage'" >>~/.<bashrc o
 
 #### [Using PACMAN on Arch](https://github.com/neovim/neovim/wiki/Installing-Neovim#arch-linux)
 ```shell
-$ sudo pacman -S neovim
+sudo pacman -S neovim
 ```
 
 #### [Using APT on Ubuntu](https://github.com/neovim/neovim/wiki/Installing-Neovim#ubuntu)
 > Note: This doesn't work with Debian
 
 ```shell
-$ sudo add-apt-repository ppa:neovim-ppa/stable
-$ sudo apt-get update
-$ sudo apt-get install neovim
+sudo add-apt-repository ppa:neovim-ppa/stable
+sudo apt-get update
+sudo apt-get install neovim
 ```
 </div>
 </details>
@@ -75,8 +75,8 @@ $ mv ~/.config/nvim ~/.config/NVIM.BAK
 Then install NvChad & it's plugins with:
 
 ```shell 
-$ git clone https://github.com/NvChad/NvChad ~/.config/nvim
-$ nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
+git clone https://github.com/NvChad/NvChad ~/.config/nvim
+nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
 ```
 </TabItem>
 <TabItem value="win">
@@ -84,19 +84,19 @@ $ nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
 ### Windows
 1. Install [`mingw`](http://mingw-w64.org/doku.php) if you don't already have it.
   ```shell
-  $ choco install mingw
+  choco install mingw
   ```
 
 2. Install `packer`
   ```shell
-  $ git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data\site\pack\packer\start\packer.nvim"
-  $ git clone https://github.com/NvChad/NvChad
+  git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data\site\pack\packer\start\packer.nvim"
+  git clone https://github.com/NvChad/NvChad
   ```
 
 3. Go to `~/AppData/Local/nvim`. Copy nvchad's `init.lua` and `lua` folder into the nvim folder.
 4. Then launch `nvim` like so:
   ```shell
-  $ nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
+  nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
   ```
 
 Press enter to skip errors and let it install plugins.
@@ -119,7 +119,7 @@ Uninstalling is as simple as removing the `nvim` configuration directories.
 > Note: it's suggested to backup your config first, consider `mv ~/.config/nvim ~/.config/NVIM.BAK`
 
 ```shell
-$ rm -rf ~/.config/nvim
-$ rm -rf ~/.local/share/nvim
-$ rm -rf ~/.cache/nvim
+rm -rf ~/.config/nvim
+rm -rf ~/.local/share/nvim
+rm -rf ~/.cache/nvim
 ```
