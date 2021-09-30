@@ -165,8 +165,8 @@ If you wish to contribute to NvChad, you should:
 ## How to submit themes?
 
 - check the dirs : hl_themes and themes in [nvim-base16 repo](https://github.com/NvChad/nvim-base16.lua) to get an idea.
-- hl_themes/file.lua manages overall pretty highlight colors of nvchad
-- themes/file-base16.lua manages syntax colors + other highlights colors which havent been defined in nvchad
+- hl_themes/file.lua manages overall pretty highlights and their colors in nvchad , like statusline , nvim-tree , bufferline etc
+- themes/file-base16.lua manages syntax colors + other highlights colors which havent been defined (by colors/highlights.lua file in nvchad config)
 
 ### Creating the theme (example)
 
@@ -178,7 +178,7 @@ Use my [tool](https://siduck76.github.io/hex-tools/) to lighten or darken colors
 (Creating highlights theme)
 
 - Copy the structure of other themes in doom.lua
-- Ok now make sure you add appropriate colors!!
+- Ok now make sure you add appropriate and pretty colors!!
 
 ```
 black = usually your theme bg (this should be the same as base00 in doom-base16.lua)
@@ -204,7 +204,8 @@ statusline_bg = 4% lighter than black
 lightbg = 13% lighter than statusline_bg
 lightbg2 = 7% lighter than statusline_bg
 
-folder_bg = blue color
+pmenu_bg = green color mostly
+folder_bg = blue color mostly i.e the hex value of the blue color you assigned earlier
 
 (note : the above values are mostly approx values so its not compulsory that you have to use those exact numbers , test your theme i.e show it in the PR to get feedback from @siduck76)
 ```
@@ -216,6 +217,7 @@ folder_bg = blue color
 
 - copy the structure from other base16 themes in the themes dir.
 - Follow the [base16 conventions](https://github.com/chriskempson/base16/blob/master/styling.md).
+- make sure the variable names dont have "#" before the hex values i.e base00 = #000000 would be wrong , but base00 = 000000 would be right.
 
 - Now send the PR!!
 
