@@ -445,6 +445,29 @@ npm config set prefix=~/.node_modules
 add ~/.node_modules/bin to PATH 
 ```
 
+## Setup lsp-installer
+
+- If you dont like copy pasting configs for your lspservers and installing lspservers manually then try nvim-lspinstalller. 
+- Sample config : (custom/init.lua hooks section for install_plugins)
+
+```lua
+ use {
+      "williamboman/nvim-lsp-installer",
+      config = function()
+         local lsp_installer = require "nvim-lsp-installer"
+
+         lsp_installer.on_server_ready(function(server)
+            local opts = {}
+
+            server:setup(opts)
+            vim.cmd [[ do User LspAttachBuffers ]]
+         end)
+      end,
+   }
+```
+
+- Basic [lsp_installer commands](https://github.com/williamboman/nvim-lsp-installer/#commands)
+
 ## Basic nvim lua stuffs
 
 -  options
