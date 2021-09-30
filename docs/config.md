@@ -465,7 +465,7 @@ add ~/.node_modules/bin to PATH
       end,
    }
 ```
-## advanced config 
+### advanced config 
 
 - The following config shows how lsp-installer + custom user keybinds (for codeactions) is done in the lspconfig. (custom/plugins/lspconfig) , if this is done then the above config within lsp-installer's use{} section shouldnt be done so only : 
 
