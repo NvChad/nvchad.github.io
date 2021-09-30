@@ -338,51 +338,112 @@ buf_set_keymap("n", "<space>fm", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts)
 
 ## Setup lsp server?
 
-- First check [lspconfig_config.md](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md)
+- Skim through [lspconfig repo](https://github.com/neovim/nvim-lspconfig) to get a general overview of how the config looks/works.
+- Then check [lspconfig_config.md](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md) to make sure your language's lsp server present there.
 
-- If you just want to use the default lspconfig for a server then you dont need to add a config for it , you can just include their names in the lspconfig's section containing servers table (chadrc).
+- Create a file in your custom folder. (I would suggest creating plugins dir in custom folder , so /custom/plugins/lspconfig.lua is the config file for this example).
 
-- Then install that lspserver, if you get issues like "cmd not executable" in :LspInfo then install those lspservers globally in your system. 
+- Enter the file path in the chadrc's lspconfig section :
 
-Ive had this issue with some lspservers which were installed by npm ,
+```lua
+M.plugins = {
+   options = {
+      lspconfig = {
+         setup_lspconf = "",
+      },
+   },
+}
+
+-- so setup_lspconf = "custom.plugins.lspconfig" as per our example
+```
+
+- Your lspconfig must contain these : 
+
+```lua
+local M = {}
+
+M.setup_lsp = function(attach, capabilities)
+   local lspconfig = require "lspconfig"
+
+   lspconfig.lspname.setup {
+      on_attach = attach,
+      capabilities = capabilities,
+   }
+end
+
+return M
+```
+
+- For example if you wanted to setup html lsp : 
+
+```lua
+local M = {}
+
+M.setup_lsp = function(attach, capabilities)
+   local lspconfig = require "lspconfig"
+
+   lspconfig.html.setup {
+      on_attach = attach,
+      capabilities = capabilities,
+   }
+end
+
+return M
+```
+
+- The following file is an example lspconfig file : 
+
+```lua
+local M = {}
+
+M.setup_lsp = function(attach, capabilities)
+   local lspconfig = require "lspconfig"
+
+   -- lspservers with default config
+
+   local servers = { "html", "cssls", "pyright" }
+
+   for _, lsp in ipairs(servers) do
+      lspconfig[lsp].setup {
+         on_attach = attach,
+         capabilities = capabilities,
+         -- root_dir = vim.loop.cwd,
+         flags = {
+            debounce_text_changes = 150,
+         },
+      }
+   end
+end
+
+   -- typescript 
+
+  lspconfig.tsserver.setup {
+      cmd = { "typescript-language-server", "--stdio" },
+      filetypes = {"typescriptreact", "typescript.tsx"},
+      root_dir = root_pattern("package.json", "tsconfig.json")
+    }
+    
+return M
+
+```
+
+- Note : I have used a loop there since I'm just using default lspconfigs there and it looks cleaner that way , without the loop it would've been very ugly , something like this : 
+
+```lua
+  lspconfig.html.setup { my options }
+  lspconfig.cssls.setup { my options }
+  lspconfig.pyright.setup { my options }
+```
+
+- Then install that lspserver, if you get issues like "cmd not executable" in :LspInfo, then install that lspservers globally in your system. 
+
+I've had that same issue with some lspservers which were installed by npm and it got fixed by installing those npm packages globally : 
 
 ```shell
 npm config set prefix=~/.node_modules
 
-add ~/.node_modules/bin to PATH
+add ~/.node_modules/bin to PATH 
 ```
-
-- But there are servers like sumneko_lua , jdtls etc which just dont work with the default config i.e you need to configure stuffs in its lspconfig like setting right path for the lsp's binary in cmd etc
-
-- I would suggest creating a dir called "plugin_confs" in the custom folder to organize your custom config well :)
-
-(For example I needed to add vls)
-
-This is the default config provided by the lspconfig and I change it to : 
-
-```lua
-local vls_root_path = vim.fn.stdpath('cache')..'/lspconfig/vls'
-local vls_binary = vls_root_path.."/cmd/vls/vls"
-
-require'lspconfig'.vls.setup {
-  cmd = {vls_binary},
-}
-```
-
-```lua
-local vls_root_path = '/home/sid/mylsp_servers/vls'
-local vls_binary = vls_root_path.."/vls"
-
-require'lspconfig'.vls.setup {
-  cmd = {vls_binary},
-}
-
--- note : the "/vls" is just the biinary here!
-```
-
-- I would add this in the custom/plugin_confs/lspconfig.lua's last line!
-
-- check [lspconfig repo](https://github.com/neovim/nvim-lspconfig) for getting more info about its config , lspservers default config etc.
 
 ## Basic nvim lua stuffs
 
