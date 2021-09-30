@@ -10,11 +10,11 @@ If you wish to contribute to NvChad, you should:
 2. clone your fork to your machine
   - For ssh:
     ```shell
-    $ git clone git@github.com:<YOUR GITHUB USERNAME>/NvChad.git ~/.config/nvim
+    $ git clone git@github.com:<YOUR GITHUB USERNAME>/NvChad.git ${XDG_CONFIG_HOME:-~/.config}/nvim
     ```
   - For https:
     ```shell
-    $ git clone https://github.com/<YOUR GITHUB USERNAME>/NvChad.git ~/.config/nvim
+    $ git clone https://github.com/<YOUR GITHUB USERNAME>/NvChad.git ${XDG_CONFIG_HOME:-~/.config}/nvim
     ```
 3. [add a new remote repo to track](https://www.atlassian.com/git/tutorials/git-forks-and-upstreams)
    - this means you can push/pull as normal to your own repo, but also easily track & update from the NvChad repo

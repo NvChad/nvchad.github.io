@@ -7,12 +7,12 @@ title: Support & Debugging
 
 - If you have trouble with plugins, your first place to look is the packer log
   ```shell
-  less ~/.cache/nvim/packer.nvim.log
+  less ${XDG_CACHE_HOME:-~/.cache}/nvim/packer.nvim.log
   ```
 
 - If you still can't figure out what's going wrong, you can remove your compiled Packer plugins with:
   ```shell
-  rm -r ~/.config/nvim/plugin`
+  rm -r ${XDG_CONFIG_HOME:-/.config}/nvim/plugin`
   ```
   Then in NeoVim run `:PackerSync` and **restart NeoVim**.
   This will redownload and install all plugins.
@@ -37,7 +37,7 @@ title: Support & Debugging
   ```
 - Get the Packer log
   ```shell
-  $ less ~/.cache/nvim/packer.nvim.log
+  $ less ${XDG_CACHE_HOME:-~/.cache}/nvim/packer.nvim.log
   ```
 
 ## NeoVim debugging options

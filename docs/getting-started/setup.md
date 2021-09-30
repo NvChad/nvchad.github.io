@@ -21,10 +21,10 @@ $ curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appima
 $ chmod u+x nvim.appimage
 $ ./nvim.appimage
 ```
-Then consider moving this to your local/user bin & adding an alias to this
+Then consider moving this to a directory (e.g. ~/.local/bin) & adding an alias to this
 ```shell
 mv ./nvim.appimage ~/.local/bin/
-echo "alias vim='/home/<YOUR USERNAME>/.local/bin/nvim.appimage'" >>~/.<bashrc or zshrc>
+echo "alias vim='/home/$USER/.local/bin/nvim.appimage'" >>~/.<bashrc or zshrc>
 ```
 
 #### [Using PACMAN on Arch](https://github.com/neovim/neovim/wiki/Installing-Neovim#arch-linux)
@@ -56,7 +56,7 @@ sudo apt-get install neovim
 Installation is as easy as cloning the NvChad repository into your NeoVim configuration folder.
 
 
-Next, clone the `NvChad` repository to `~/.config/nvim` & install plugins with:
+Next, clone the `NvChad` repository to `${XDG_CONFIG_HOME:-~/.config}/nvim` & install plugins with:
 
 
 import Tabs from '@theme/Tabs';
@@ -67,15 +67,15 @@ import TabItem from '@theme/TabItem';
 <TabItem value="linux">
 
 ### Linux & MacOS:
-If you already have a `~/.config/nvim` folder, make a backup with:
+If you already have a `${XDG_CONFIG_HOME:-~/.config}/nvim` folder, make a backup with:
 
 ```shell
-$ mv ~/.config/nvim ~/.config/NVIM.BAK
+$ mv ${XDG_CONFIG_HOME:-~/.config}/nvim ${XDG_CONFIG_HOME:-~/.config}/NVIM.BAK
 ```
 Then install NvChad & it's plugins with:
 
 ```shell 
-git clone https://github.com/NvChad/NvChad ~/.config/nvim
+git clone https://github.com/NvChad/NvChad ${XDG_CONFIG_HOME:-~/.config}/nvim
 nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
 ```
 </TabItem>
@@ -119,7 +119,7 @@ Uninstalling is as simple as removing the `nvim` configuration directories.
 > Note: it's suggested to backup your config first, consider `mv ~/.config/nvim ~/.config/NVIM.BAK`
 
 ```shell
-rm -rf ~/.config/nvim
-rm -rf ~/.local/share/nvim
-rm -rf ~/.cache/nvim
+rm -rf ${XDG_CONFIG_HOME:-~/.config}/nvim
+rm -rf ${XDG_DATA_HOME:-~/.local/share}/nvim
+rm -rf ${XDG_CACHE_HOME:-~/.cache}/nvim
 ```
