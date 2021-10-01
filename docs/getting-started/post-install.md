@@ -48,21 +48,6 @@ cp example_init.lua init.lua
 cp example_chadrc.lua chadrc.lua
 ```
 
-## Install LSP Server(s)
-
-The Language Server Protocol (LSP) defines the protocol used between an editor or IDE and a language server that provides language features like auto complete, go to definition, find all references etc. For more information, check out [neovim-lspconfig](https://github.com/neovim/nvim-lspconfig).
-
-You need to include your language's lsp server name in the chadrc's lspconfig section (M.plugins) :
-
-```
-  lspconfig = {
-      servers = {"html","cssls"},
-   },
-```
-
-- The example above shows that I have added html and css lsp server names in the servers table , this will setup lsp for html and css.
-  [Check](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md) to find the exact name of your lsp server. For css it was cssls so   I included it in the servers table.
-
 ## Install Treesitter Parser(s)
 
 The goal of `nvim-treesitter` is to provide basic functionality such as syntax-highlighting for various languages. For more info check out their repository at [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter).
