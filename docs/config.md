@@ -147,11 +147,11 @@ M.ui = {
 M.plugins = {
 
 -- The status section can be used to disable or enable built-in plugins. In this case, we
--- disable the "autosave" plugin (and its config & mappings too), and enable "dashboard".
+-- disable the "nvimtree" plugin (and its config & mappings too), and enable "dashboard".
 
 status = {
   ... 
-  autosave = false, 
+  nvimtree = false, 
   dashboard = true,
   ...
 },
