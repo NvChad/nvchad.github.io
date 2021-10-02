@@ -151,7 +151,7 @@ M.plugins = {
 
 status = {
   ... 
-  nvimtree = false, 
+  nvim_tree = false, 
   dashboard = true,
   ...
 },
