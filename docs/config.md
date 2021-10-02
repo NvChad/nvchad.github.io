@@ -146,13 +146,15 @@ M.ui = {
 -- this part has all the plugins related stuff
 M.plugins = {
 
--- The plugin_status part is meant for enabling/disablinlg default plugins , so in this case autosave to false disables it ( and its config & mappings too)
+-- The status section can be used to disable or enable built-in plugins. In this case, we
+-- disable the "autosave" plugin (and its config & mappings too), and enable "dashboard".
 
-plugin_status = {
-      ... 
-      autosave = false, 
-      ...
- },
+status = {
+  ... 
+  autosave = false, 
+  dashboard = true,
+  ...
+},
 
 
 -- this has plugin options , so in this case enable_git = 0 disables git status on the nvimtree.
