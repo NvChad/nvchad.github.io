@@ -73,12 +73,6 @@ Fastest NeoVim colorizer, colors hex colors, hsl codes and much more!
 
 Lua fork of vim devicons which lets you change colors and edit icons of filetypes.
 
-#### [`truezen.nvim`](https://github.com/Pocco81/TrueZen.nvim)
-
-Focus mode for NeoVim - temporarily hide statusbars, bufferlines, etc.
-
-![truezen](/img/features/truezen.png) 
-
 ### Language Server Plugins
 
 #### [`nvim-treesitter`](https://github.com/nvim-treesitter/nvim-treesitter)
@@ -107,5 +101,3 @@ _(The video shows compe + lsp completions and lsp-signature while completion of 
 - [`nvim-autopairs`](https://github.com/windwp/nvim-autopairs)
 - [`vim-matchup`](https://github.com/andymass/vim-matchup)
 - [`nvim-comment`](https://github.com/terrortylor/nvim-comment)
-- [`autosave.nvim`](https://github.com/Pocco81/AutoSave.nvim)
-- [`neoscroll.nvim`](https://github.com/karb94/neoscroll.nvim)
