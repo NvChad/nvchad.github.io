@@ -5,7 +5,7 @@
 
 ## neoscroll.nvim
 
-- Smooth scrolling neovim plugin
+- Smooth scrolling neovim plugin written in lua
 - [repo](https://github.com/karb94/neoscroll.nvim)
 - config : 
 

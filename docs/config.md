@@ -724,8 +724,6 @@ hooks.add("install_plugins", function(use)
 | focus mode        | space + z + f        |
 | minimalistic mode | space + z + m        | 
 
-
-
 ### Autocmds
 
 - Well, for example you  just create a new file called autochad_cmds.lua in the custom folder and require it in the init.lua file of the custom folder!  BOOOM!!
