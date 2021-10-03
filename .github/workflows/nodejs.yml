@@ -28,4 +28,4 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run build
-    - run: GIT_USER=siduck76 npm run deploy
+    - run: GIT_USER=siduck76 DEPLOYMENT_BRANCH=deployed-site npm run deploy
