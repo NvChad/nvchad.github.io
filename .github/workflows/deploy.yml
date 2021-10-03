@@ -1,50 +1,13 @@
-# .github/workflows/deploy.yml
-
-name: GitHub Pages
-
-on:
-  push:
-    branches:
-      - main
-    paths:
-      - '.github/workflows/deploy.yml'
-      - 'website/**'
-  pull_request:
-
-jobs:
-  deploy:
-    runs-on: ubuntu-20.04
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
-    defaults:
-      run:
-        working-directory: website
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: Setup Node
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-
-      - name: Get yarn cache
-        id: yarn-cache
-        run: echo "::set-output name=dir::$(yarn cache dir)"
-
-      - name: Cache dependencies
-        uses: actions/cache@v2
-        with:
-          path: ${{ steps.yarn-cache.outputs.dir }}
-          key: ${{ runner.os }}-website-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-website-
-
-      - run: yarn install --frozen-lockfile
-      - run: yarn build
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/main' }}
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./website/build
+- name: Docusaurus BuildDeploy Action
+  # You may pin to the exact commit or the version.
+  # uses: redkubes/docusaurus-deploy-action@f81b409203e9562ebbac672e37daa5e8a6193144
+  uses: redkubes/docusaurus-deploy-action@v1
+  with:
+    # source folder
+    source-folder: # optional, default is website
+    # git user name
+    git-user: 
+    # git password (defaults to secrets.GITHUB_TOKEN, which should work if it has default rights)
+    git-password: # optional
+    # git branch to publish to (defaults to gh-pages)
+    deployment-branch: # optional
