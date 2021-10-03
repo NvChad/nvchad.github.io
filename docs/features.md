@@ -85,7 +85,7 @@ _without / with treesitter:_
 #### Various LSP plugins
 
 - [`nvim-lspconfig`](https://github.com/neovim/nvim-lspconfig) - Used for configuring lsp servers etc
-- [`nvim-compe`](https://github.com/hrsh7th/nvim-compe) - completion menu 
+- [`nvim-cmp`](https://github.com/hrsh7th/nvim-cmp) - completion menu 
 - [`lsp-signature.nvim`](https://github.com/ray-x/lsp_signature.nvim) -  lsp signature hint when you type
 - [`lspkind.nvim`](https://github.com/onsails/lspkind-nvim) - Adds pictograms to neovim built-in lsp completion items:
 
