@@ -2,12 +2,11 @@
 
 - Plugins which seem awesome and cool , which enhance the experience while working in neovim and aren't added by default in nvchad will be added here.
 
-
 ## neoscroll.nvim
 
 - Smooth scrolling neovim plugin written in lua
 - [repo](https://github.com/karb94/neoscroll.nvim)
-- config : 
+- config :
 
 ```lua
   use {
@@ -28,7 +27,7 @@
 
 - Auto save files plugin written in lua
 - [repo](https://github.com/Pocco81/AutoSave.nvim)
-- config : 
+- config :
 
 ```lua
    use {
@@ -52,10 +51,11 @@
    end,
 }
 ```
+
 ## Truezen.nvim
 
 - Clean and elegant distraction-free writing for NeoVim.
-- [repo](https://github.com/Pocco81/TrueZen.nvim) 
+- [repo](https://github.com/Pocco81/TrueZen.nvim)
 - config :
 
 ```lua
@@ -71,4 +71,21 @@
           check https://github.com/Pocco81/TrueZen.nvim#setup-configuration (init.lua version)
       end
    }
+```
+
+## filetype.nvim
+
+- A fast and lua alternative to `filetype.vim`. It is ~175x faster than `filetype.vim`
+- [Repo](https://github.com/nathom/filetype.nvim)
+- Config :
+
+```lua
+   use { "nathom/filetype.nvim" }
+```
+
+Add the following to `lua/core/options.lua` :
+
+```lua
+   -- Stop sourcing filetype.vim
+   vim.g.did_load_filetypes = 1
 ```

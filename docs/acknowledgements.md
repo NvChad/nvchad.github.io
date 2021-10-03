@@ -6,10 +6,12 @@ title: Acknowledgements
 The NvChad team would love to acknowledge many projects which made this possible.
 
 Thank you
+
 - [NeoVim](https://github.com/neovim/neovim) & [Vim](https://github.com/vim/vim)
 - Every single plugin's maintainer(s) & community :D
 
 - Other NeoVim configurations
+
   - [DoomVim](https://github.com/NTBBloodbath/doom-nvim)
   - [LunarVim](https://github.com/LunarVim/LunarVim)
   - [SpaceVim](https://github.com/SpaceVim/SpaceVim)

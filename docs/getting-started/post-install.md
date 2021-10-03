@@ -9,6 +9,7 @@ We strongly encourage you to learn how to use NeoVim/Vim, as it's more than a no
 
 :::tip
 These are highly recommend and a **must do for any new Vimmer**
+
 - Vim tutor
   ```
   :Tutor
@@ -21,12 +22,12 @@ These are highly recommend and a **must do for any new Vimmer**
   :h insert
   ```
 - [Google your issue](https://google.com)
-   - Example format query, `neovim how to delete 10 lines`
-:::
+  - Example format query, `neovim how to delete 10 lines`
+    :::
 - [NeoVim quick reference](https://neovim.io/doc/user/quickref.html)
 - Vim movement games
-   - [Vim Adventures](https://vim-adventures.com/)
-   - [Vim Genius](http://www.vimgenius.com/)
+  - [Vim Adventures](https://vim-adventures.com/)
+  - [Vim Genius](http://www.vimgenius.com/)
 
 After the initial installation, we recommend setting up a few things based on your needs.
 
@@ -52,7 +53,7 @@ cp example_chadrc.lua chadrc.lua
 
 The goal of `nvim-treesitter` is to provide basic functionality such as syntax-highlighting for various languages. For more info check out their repository at [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter).
 
-For example, to install the treesitter parser for `css`: 
+For example, to install the treesitter parser for `css`:
 
 ```shell
 :TSInstall css

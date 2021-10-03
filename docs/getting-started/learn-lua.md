@@ -6,11 +6,13 @@ title: Learning Lua
 > Note: This is a very basic lua tutorial to get you familiar with NvChad config
 
 ## Printing
+
 ```lua
 print("Hi")
 ```
 
 ## Comments
+
 ```lua
 -- a comment
 print("hi") -- another comment
@@ -44,6 +46,7 @@ print(level) -- 2
 ```
 
 **Strings**
+
 ```lua
 -- concatenate strings
 local phrase = "I am"
@@ -53,9 +56,10 @@ print(phase .. name) -- I am Sid
 -- strings and numbers
 local name = "NvChad"
 print(name .. "v" .. 1.0) -- NvChad v1.0
-````
+```
 
 **Boolean**
+
 ```lua
 local isAlive = true
 print(isAlive) -- true
@@ -65,6 +69,7 @@ print(isAlive) -- false
 ```
 
 **Comparison Operators**
+
 - == equality
 - < less than
 - \> greater than
@@ -73,6 +78,7 @@ print(isAlive) -- false
 - ~= inequality
 
 ## Conditional Statements
+
 ```lua
 -- number comparisions
 local age = 10
@@ -109,6 +115,7 @@ if name ~= "sid" then
 ```
 
 **Combining Statements**
+
 ```lua
 local age = 22
 
@@ -118,12 +125,13 @@ elseif x == 18 or x > 18 then -- 1 or more are true
   print("over 18")
 end
 
---result: over 18 
+--result: over 18
 ```
 
 **Invert Value**
 
 you can also invert a value with the **not** keyword
+
 ```lua
 local x = 18
 
@@ -133,14 +141,15 @@ end
 ```
 
 ## Functions
+
 ```lua
 function num(a)
   print(a)
 end
 
-or 
+or
 
-local num = function(a) 
+local num = function(a)
   print(a)
 end
 
@@ -159,7 +168,9 @@ end
 ```
 
 ## Scope
+
 Variables have different scopes. Once the end of the scope is reached the values in that scope are no longer accessable
+
 ```lua
 function foo()
   local n = 10
@@ -167,8 +178,11 @@ end
 
 print(n) -- nil , n isnt accessable outside foo()
 ```
+
 ## Loops
+
 Different ways to make a loop
+
 ```lua
 -- while loop
 local i = 0
@@ -186,9 +200,9 @@ for i = 0, 3 do
    i = i + 1
 end
 
--- result 
-hi  
-hi  
+-- result
+hi
+hi
 hi
 ```
 
@@ -225,6 +239,7 @@ end
 ## Modules
 
 Include code other files
+
 ```lua
 require("otherfile")
 ```
