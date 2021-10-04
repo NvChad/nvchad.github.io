@@ -15,7 +15,7 @@ NvChad comes with the following file / folder structure. [An up-to-date & full t
 │   ├── colors
 │   │   ├── highlights.lua
 │   │   └── init.lua (i)
-│   │   
+│   │
 │   ├── core
 │   │   ├── init.lua
 │   │   ├── autocmds.lua
@@ -29,7 +29,7 @@ NvChad comes with the following file / folder structure. [An up-to-date & full t
 │   ├── custom
 │   │   ├── example_chadrc.lua
 │   │   ├── example_init.lua
-│   │   
+│   │
 │   ├── plugins
 │   │    ├── init.lua
 │   │    ├── packerInit.lua
@@ -39,7 +39,8 @@ NvChad comes with the following file / folder structure. [An up-to-date & full t
 │   │        └── <many more plugin configs>
 
 ```
-- The file names in the tree with (i) are meant to be ignored , i.e the user doesnt need to look at them. I assume you have basic lua knowledge  The lua code in those files might fret you or look very complex / scare you from nvchad xD. If you're not familiar with lua's syntax then please check [our basic lua guide](getting-started/learn-lua). Dont worry you just need to skim through it. 
+
+- The file names in the tree with (i) are meant to be ignored , i.e the user doesnt need to look at them. I assume you have basic lua knowledge The lua code in those files might fret you or look very complex / scare you from nvchad xD. If you're not familiar with lua's syntax then please check [our basic lua guide](getting-started/learn-lua). Dont worry you just need to skim through it.
 
 ## Walkthrough
 
@@ -52,16 +53,17 @@ NvChad comes with the following file / folder structure. [An up-to-date & full t
 
 - So the nvchad config's dir has a lua folder and init.lua file.
 - The init.lua basically loads the core config.
-- You could check there must be a file named "init.lua" in the core folder which makes it easy for us to require it . 
+- You could check there must be a file named "init.lua" in the core folder which makes it easy for us to require it .
 
 - for example , you have a file called "test.lua" and you want to organize your config structure so you put test.lua in a folder called "chadir", So you gotta require this "test.lua" to load it right? its obvious to do this :
 
 ```lua
 require("chadir.test") or require "chadir.test".
 ```
+
 - You could also rename the test.lua as init.lua , and then you just need to do :
 
-```lua 
+```lua
 require "chadir".
  -- which calls the init.lua present in the chadir
 ```
@@ -69,7 +71,7 @@ require "chadir".
 - So basically require "core" is loading the init.lua file in the core folder.
 - Since we are also doing error handling , we wrap that up in a pcall.
 
-- lets explain this :  local ok, err = pcall(require, module) 
+- lets explain this : local ok, err = pcall(require, module)
 
 - pcall will run : require module , which is require "core" in our case , only if ok's value is true.
 - pcall returns a boolean value and run the function inside in it , (the require thingy)
@@ -83,7 +85,7 @@ require "chadir".
 
 - The base16 plugin loads the init.lua file.
 - The init.lua file in the colors dir loads the base16 plugin and loads highlights after it.
-- Previously we loaded themes this way : 
+- Previously we loaded themes this way :
 
 ```lua
 local base16 = require 'base16'
@@ -94,23 +96,23 @@ base16(base16.themes("ondark"), true)
 - But this was a little cumbersome since , a new neovim window had to be opened to check the theme changes.
 
 - We then added a telescope picker for changing themes on the fly :D.
-- So leader + th (leader is the space key) will open a telescope picker and scrolling through the items (themes) in it would temporarily apply theme + preview them in a previewer window of the telescope , pressing enter on the theme name does two things : 
+- So leader + th (leader is the space key) will open a telescope picker and scrolling through the items (themes) in it would temporarily apply theme + preview them in a previewer window of the telescope , pressing enter on the theme name does two things :
 
-- 1) apply the theme 
-- 2) save the theme's name in the variable of chadrc file.
+- 1. apply the theme
+- 2. save the theme's name in the variable of chadrc file.
 
 ## Core
 
 - The core folder has several files , some of them which you dont even need to worry checking like : custom.lua hooks.lua utils.lua.
-- The init.lua file in this folder just runs some of the modules i.e files in the core repo , check it yourself! 
+- The init.lua file in this folder just runs some of the modules i.e files in the core repo , check it yourself!
 
 - autocmds.lua : defines some default autocmds of nvchad.
 - default_config.lua : This is an important file , more like a global file which has some default options for everything in nvchad , like themes , mappings , other UI related stuff etc.
-- If you need something to be changed then add that thing from default_config.lua to chadrc.lua (in custom folder). Make sure you copy example_chadrc.lua to chadrc.lua!! 
+- If you need something to be changed then add that thing from default_config.lua to chadrc.lua (in custom folder). Make sure you copy example_chadrc.lua to chadrc.lua!!
 
-- mappings.lua : defines all the default mappings, all mappings are wrapped up into specific functions for example each plugin has its own function for mapping ( ex - M.bufferline in mappings.lua). These functions are put in the "Setup() call" of the plugin in the plugins/init.lua config. 
+- mappings.lua : defines all the default mappings, all mappings are wrapped up into specific functions for example each plugin has its own function for mapping ( ex - M.bufferline in mappings.lua). These functions are put in the "Setup() call" of the plugin in the plugins/init.lua config.
 
-- Those mappings are loaded only if the plugin is loaded! 
+- Those mappings are loaded only if the plugin is loaded!
 
 - The mappings take values from the chadrc ( if anything related to mappings isnt defined here , then the values will be taken from default_config.lua). I'll explain this part later in this section!
 
@@ -118,14 +120,14 @@ base16(base16.themes("ondark"), true)
 
 ## Default config
 
-- This file is core/default_config.lua 
+- This file is core/default_config.lua
 - It contains all the default options for various stuffs in nvchad.
 
 For example :
 
 ```lua
 -- options section contains default options
--- core/options.lua takes values from this part , for example : 
+-- core/options.lua takes values from this part , for example :
 
 M.options = {
    mapleader = " ",
@@ -141,7 +143,7 @@ M.ui = {
 }
 ```
 
-```lua 
+```lua
 
 -- this part has all the plugins related stuff
 M.plugins = {
@@ -150,8 +152,8 @@ M.plugins = {
 -- disable the "nvimtree" plugin (and its config & mappings too), and enable "dashboard".
 
 status = {
-  ... 
-  nvim_tree = false, 
+  ...
+  nvim_tree = false,
   dashboard = true,
   ...
 },
@@ -163,13 +165,13 @@ options  = {
    nvimtree = {
          enable_git = 0,
    },
-  ... 
+  ...
 }
 
 -- this is for replacing default config with your custom config.
  default_plugin_config_replace = {
      nvim_web_devicons = "",
-     feline = "", 
+     feline = "",
      bufferline ="",
      indent_blankline = "",
      nvim_colorizer = "",
@@ -185,7 +187,7 @@ options  = {
      nvim_tree ="",
      telescope = "",
 
-     -- example custom/lspconfig.lua file 
+     -- example custom/lspconfig.lua file
 
      lspconfig = "custom.lspconfig",
   },
@@ -198,11 +200,12 @@ M.mappings.plugins = {} has plugin related mappings
 
 - Ok now you might be wondering how do values from the non existant chadrc file is taken? (chadrc.lua doesnt exist by default , only example_chadrc.lua does).
 - For example if the user doesnt set up the theme in chadrc then nvchad will automatically take value from the default_config.lua (core dir).
-- This happens by: 
+- This happens by:
 
 ```lua
 require("core.utils").load_config()
 ```
+
 - This basically merges the tables in chadrc to default_config , so if the user makes any changes in the chadrc then that change will overwrite the value in default_config!!
 - you could check plugins/configs/nvimtree.lua file , the 2nd line in it and various files like statusline , file-icons etc too!
 
@@ -213,7 +216,7 @@ require("core.utils").load_config()
 - packerInit.lua : this file is used for defining packer's init stuffs , so things like clone_timeout , compile_on_sync etc and other packer related options are mentioned here.
 - init.lua : is basically the packer config , it calls packerInit first and then following with definitions of other plugins + their configs'
 
-- For example to add a plugin , packer uses this format : 
+- For example to add a plugin , packer uses this format :
 
 ```lua
 
@@ -224,7 +227,7 @@ use {
   end
 }
 
--- for example 
+-- for example
 
  use {
        "max397574/better-escape.nvim",
@@ -240,9 +243,9 @@ use {
 
 - configs dir : All default nvchad plugins's configs are stored here!!
 
-- You might've seen this function being used in the (plugins/init.lua) file : 
+- You might've seen this function being used in the (plugins/init.lua) file :
 
-```lua 
+```lua
 config = override_req("nvim_cmp", "plugins.configs.cmp"),
 ```
 
@@ -250,12 +253,11 @@ config = override_req("nvim_cmp", "plugins.configs.cmp"),
 
 - In case if thats not added then the function will just make use of "plugins.configs.cmp"
 
-
 ## Replace default config of a plugin
 
-- use the default_plugin_config_replace table in chadrc.lua 
+- use the default_plugin_config_replace table in chadrc.lua
 
-- Example : 
+- Example :
 
 ```lua
 M.plugins = {
@@ -328,13 +330,14 @@ return M
 ```
 
 - Format code : leader fm
-- If you want to change this mapping , check this line in your lspconfig : 
+- If you want to change this mapping , check this line in your lspconfig :
+
 ```lua
 buf_set_keymap("n", "<space>fm", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts)
 ```
 
 - Check [null-ls builtins](https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md) to get config for your language!
-- Also note that I've added some config of linters and formatters in null-ls config, so those programs must be installed on my system as well! like prettierd , stylua , shfmt , eslint_d etc 
+- Also note that I've added some config of linters and formatters in null-ls config, so those programs must be installed on my system as well! like prettierd , stylua , shfmt , eslint_d etc
 
 ## Setup lsp server
 
@@ -357,7 +360,7 @@ M.plugins = {
 -- so setup_lspconf = "custom.plugins.lspconfig" as per our example
 ```
 
-- Your lspconfig must contain these : 
+- Your lspconfig must contain these :
 
 ```lua
 local M = {}
@@ -374,7 +377,7 @@ end
 return M
 ```
 
-- For example if you wanted to setup html lsp : 
+- For example if you wanted to setup html lsp :
 
 ```lua
 local M = {}
@@ -391,7 +394,7 @@ end
 return M
 ```
 
-- The following file is an example lspconfig file : 
+- The following file is an example lspconfig file :
 
 ```lua
 local M = {}
@@ -415,19 +418,19 @@ M.setup_lsp = function(attach, capabilities)
    end
 end
 
-   -- typescript 
+   -- typescript
 
   lspconfig.tsserver.setup {
       cmd = { "typescript-language-server", "--stdio" },
       filetypes = {"typescriptreact", "typescript.tsx"},
       root_dir = root_pattern("package.json", "tsconfig.json")
     }
-    
+
 return M
 
 ```
 
-- Note : I have used a loop there since I'm just using default lspconfigs there and it looks cleaner that way , without the loop it would've been very ugly , something like this : 
+- Note : I have used a loop there since I'm just using default lspconfigs there and it looks cleaner that way , without the loop it would've been very ugly , something like this :
 
 ```lua
   lspconfig.html.setup { my options }
@@ -435,19 +438,19 @@ return M
   lspconfig.pyright.setup { my options }
 ```
 
-- Then install that lspserver, if you get issues like "cmd not executable" in :LspInfo, then install that lspservers globally in your system. 
+- Then install that lspserver, if you get issues like "cmd not executable" in :LspInfo, then install that lspservers globally in your system.
 
-I've had that same issue with some lspservers which were installed by npm and it got fixed by installing those npm packages globally : 
+I've had that same issue with some lspservers which were installed by npm and it got fixed by installing those npm packages globally :
 
 ```shell
 npm config set prefix=~/.node_modules
 
-add ~/.node_modules/bin to PATH 
+add ~/.node_modules/bin to PATH
 ```
 
 ## Setup lsp-installer
 
-- If you dont like copy pasting configs for your lspservers and installing lspservers manually then try nvim-lspinstalller. 
+- If you dont like copy pasting configs for your lspservers and installing lspservers manually then try nvim-lspinstalller.
 - Basic Sample config : (custom/init.lua hooks section for install_plugins)
 
 ```lua
@@ -465,15 +468,17 @@ add ~/.node_modules/bin to PATH
       end,
    }
 ```
-### advanced config 
 
-- The following config shows how lsp-installer + custom user keybinds (for codeactions) is done in the lspconfig. (custom/plugins/lspconfig) , if this is done then the above config within lsp-installer's use{} section shouldnt be done so only : 
+### advanced config
+
+- The following config shows how lsp-installer + custom user keybinds (for codeactions) is done in the lspconfig. (custom/plugins/lspconfig) , if this is done then the above config within lsp-installer's use{} section shouldnt be done so only :
 
 ```lua
  use {
       "williamboman/nvim-lsp-installer",
    }
 ```
+
 ```lua
 
 local M = {}
@@ -490,7 +495,7 @@ M.setup_lsp = function(attach, capabilities)
          },
          settings = {},
       }
-     
+
       if server.name == "rust_analyzer" then
          opts.settings = {
             ["rust-analyzer"] = {
@@ -504,10 +509,10 @@ M.setup_lsp = function(attach, capabilities)
             local function buf_set_keymap(...)
                vim.api.nvim_buf_set_keymap(bufnr, ...)
             end
-            
+
             -- Run nvchad's attach
             attach(client, bufnr)
-   
+
             -- Use nvim-code-action-menu for code actions for rust
             buf_set_keymap(bufnr, "n", "<leader>ca", ":CodeActionMenu<CR>", { noremap = true, silent = true })
             buf_set_keymap(bufnr, "v", "<leader>ca", ":CodeActionMenu<CR>", { noremap = true, silent = true })
@@ -525,9 +530,9 @@ return M
 
 ## Basic nvim lua stuffs
 
--  options
+- options
 
-vimscript : 
+vimscript :
 
 ```
 set mouse = a
@@ -539,7 +544,7 @@ lua :
 vim.opt.mouse = "a"
 ```
 
--  autocmds / augroups
+- autocmds / augroups
 
 ```lua
 
@@ -554,21 +559,21 @@ vim.cmd([[
 
 - globals
 
-vimscript 
+vimscript
 
 ```
 let g:autosave = true
 ```
 
-lua 
+lua
 
 ```
 vim.g.autosave = true
 ```
 
-- multiline global stuff 
+- multiline global stuff
 
-vimscript 
+vimscript
 
 ```
 let g:nvim_tree_show_icons = {
@@ -577,7 +582,7 @@ let g:nvim_tree_show_icons = {
     \ }
 ```
 
-lua : 
+lua :
 
 ```lua
  vim.g.nvim_tree_show_icons = {
@@ -592,25 +597,25 @@ check [nvim-lua guide](https://github.com/nanotee/nvim-lua-guide) for better exp
 
 - Go to custom folder
 
-- cp example_chadrc.lua chadrc.lua 
-- cp example_init.lua init.lua 
+- cp example_chadrc.lua chadrc.lua
+- cp example_init.lua init.lua
 
 - The chadrc here is for editing nvchad default options etc.
 - The init.lua here will be used for adding new plugins , new plugin configs , replace default plugin configs , adding new mappings.
 
-### Add new plugins 
+### Add new plugins
 
-- Go to init.lua file in custom folder 
+- Go to init.lua file in custom folder
 - uncomment the line hooks.add line containing the "install_plugins" stuff
 
-- example : 
+- example :
 
 ```lua
 
 hooks.add("install_plugins", function(use)
    use {
        "folke/which-key.nvim"
-        event = "something", 
+        event = "something",
         config = function()
             require("custom.plugin_confs.whichkey")
         end
@@ -631,104 +636,103 @@ hooks.add("install_plugins", function(use)
 
 ```
 
-### Default Nvchad mappings 
+### Default Nvchad mappings
 
 #### Non plugin mappings
 
-| Action                | Key          |
-| --------------------- | ------------ |
-| close buffer          | space + x    |  
-| copy whole file       | ctrl + a     | 
-| line number toggle    | space + n    | 
-| new buffer            | shift + t    | 
-| new tab               | ctrl + t + b | 
-| save file             | ctrl + s     | 
-| theme toggler         | space + t + t| 
+| Action             | Key           |
+| ------------------ | ------------- |
+| close buffer       | space + x     |
+| copy whole file    | ctrl + a      |
+| line number toggle | space + n     |
+| new buffer         | shift + t     |
+| new tab            | ctrl + t + b  |
+| save file          | ctrl + s      |
+| theme toggler      | space + t + t |
 
 #### Navigation in insert mode
 
-| Action       | Key     |
-| ------------ | ------- |
-| backward     | ctrl + h|
-| end of line  | ctrl + e|
-| forward      | ctrl + l|
-| next line    | ctrl + k|
-| prev line    | ctrl + j|
-| top of line  | ctrl + a|
+| Action      | Key      |
+| ----------- | -------- |
+| backward    | ctrl + h |
+| end of line | ctrl + e |
+| forward     | ctrl + l |
+| next line   | ctrl + k |
+| prev line   | ctrl + j |
+| top of line | ctrl + a |
 
 #### Better window movement
 
-| Action    | Key     |
-| --------- | ------- |
-| moveLeft  | ctrl + h|
-| moveRight | ctrl + l|
-| moveUp    | ctrl + k|
-| moveDown  | ctrl + j|
+| Action    | Key      |
+| --------- | -------- |
+| moveLeft  | ctrl + h |
+| moveRight | ctrl + l |
+| moveUp    | ctrl + k |
+| moveDown  | ctrl + j |
 
 #### Terminal related mappings
 
-|  Action            | Key          | 
-| ------------------ | ------------ |    
-|  esc termmode      | jk           |
-|  esc hide termmode | JK           |
-|  pick term         | space + W    |
-|  new horizontal    | space + h    |
-|  new vertical      | space + v    |
-|  new window        | space + w    |
-|  update nvchad     | space + u + u|
-
+| Action            | Key           |
+| ----------------- | ------------- |
+| esc termmode      | jk            |
+| esc hide termmode | JK            |
+| pick term         | space + W     |
+| new horizontal    | space + h     |
+| new vertical      | space + v     |
+| new window        | space + w     |
+| update nvchad     | space + u + u |
 
 #### Plugins related mappings
 
-| Action           | Key                   |
-| ---------------- | --------------------- | 
-| BUFFERLINE                               |  
-| next buffer      | tab                   |
-| prev buffer      | shift + tab           | 
-| &nbsp;                                   |
-| COMMENT                                  | 
-|  toggle          | space + /             | 
-| &nbsp;                                   |
-| DASHBOARD                                |
-| bookmarks        | space + b + m         |
-| new file         | space + f + n         | 
-| open             | space + d + b         |
-| session load     | space + l             | 
-| session save     | space + s             | 
-| &nbsp;                                   |
-| BETTER ESCAPE                            |
-| esc insertmode   | jk                    |
-| &nbsp;                                   |
-| FILE TREE/EXPLORER                       |
-| toggle           | ctrl + n              |
-| focus            | space + e             |
-| universal code formatter                 |
-| format           | space + f + m         |
-| &nbsp;                                   |
-|   MULTITOOL FOR FINDING & PICKING THINGS |
-| buffers          | space + f + b         |
-| find files       | space + f + f         |
-| find hiddenfiles | space + f + a         |
-| git commits      | space + c + m         |
-| git status       | space + g + t         |
-| help tags        | space + f + h         |
-| live grep        | space + f + w         |
-| oldfiles         | space + f + o         |
-| themes           | space + t + h         | 
-| &nbsp;                                   |
-|   MEDIA PREVIEWS WITHIN TELESCOPE FINDERS|
-|      media files | space + f + p         |
-| &nbsp;                                   |
-|  DISTRACTION FREE & MINIMALIST UI MODE   |
-| ataraxis mode     | space + z + z        |
-| focus mode        | space + z + f        |
-| minimalistic mode | space + z + m        | 
+| Action                                  | Key           |
+| --------------------------------------- | ------------- |
+| BUFFERLINE                              |
+| next buffer                             | tab           |
+| prev buffer                             | shift + tab   |
+| &nbsp;                                  |
+| COMMENT                                 |
+| toggle                                  | space + /     |
+| &nbsp;                                  |
+| DASHBOARD                               |
+| bookmarks                               | space + b + m |
+| new file                                | space + f + n |
+| open                                    | space + d + b |
+| session load                            | space + l     |
+| session save                            | space + s     |
+| &nbsp;                                  |
+| BETTER ESCAPE                           |
+| esc insertmode                          | jk            |
+| &nbsp;                                  |
+| FILE TREE/EXPLORER                      |
+| toggle                                  | ctrl + n      |
+| focus                                   | space + e     |
+| universal code formatter                |
+| format                                  | space + f + m |
+| &nbsp;                                  |
+| MULTITOOL FOR FINDING & PICKING THINGS  |
+| buffers                                 | space + f + b |
+| find files                              | space + f + f |
+| find hiddenfiles                        | space + f + a |
+| git commits                             | space + c + m |
+| git status                              | space + g + t |
+| help tags                               | space + f + h |
+| live grep                               | space + f + w |
+| oldfiles                                | space + f + o |
+| themes                                  | space + t + h |
+| &nbsp;                                  |
+| MEDIA PREVIEWS WITHIN TELESCOPE FINDERS |
+| media files                             | space + f + p |
+| &nbsp;                                  |
+| DISTRACTION FREE & MINIMALIST UI MODE   |
+| ataraxis mode                           | space + z + z |
+| focus mode                              | space + z + f |
+| minimalistic mode                       | space + z + m |
 
 ### Autocmds
 
-- Well, for example you  just create a new file called autochad_cmds.lua in the custom folder and require it in the init.lua file of the custom folder!  BOOOM!!
+- Well, for example you just create a new file called autochad_cmds.lua in the custom folder and require it in the init.lua file of the custom folder! BOOOM!!
 
-### Files to edit 
+### Files to edit
 
 - Only files that are supposed to edit by the user are meant to be in the custom dir, default files in that folder are example_chadrc and example_init which can be just renamed by the user into chadrc.lua and init.lua .
 
@@ -736,7 +740,7 @@ hooks.add("install_plugins", function(use)
 
 (note : the docs will be refined and updated more if there are any inaccuracies)
 
-## Lazy loading 
+## Lazy loading
 
 - We lazy load almost 95% of the plugins so we expect you to lazy load the plugins you've added to reduce startuptime. Dont want users making nvchad slow just because they didnt lazy load plugins they've added!
 

@@ -6,27 +6,30 @@ title: Contribute
 ## NvChad install for contributors
 
 If you wish to contribute to NvChad, you should:
+
 1. [create a fork on GitHub](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
 2. clone your fork to your machine
-  - For ssh:
-    ```shell
-    $ git clone git@github.com:<YOUR GITHUB USERNAME>/NvChad.git ~/.config/nvim
-    ```
-  - For https:
-    ```shell
-    $ git clone https://github.com/<YOUR GITHUB USERNAME>/NvChad.git ~/.config/nvim
-    ```
+
+- For ssh:
+  ```shell
+  $ git clone git@github.com:<YOUR GITHUB USERNAME>/NvChad.git ~/.config/nvim
+  ```
+- For https:
+  ```shell
+  $ git clone https://github.com/<YOUR GITHUB USERNAME>/NvChad.git ~/.config/nvim
+  ```
+
 3. [add a new remote repo to track](https://www.atlassian.com/git/tutorials/git-forks-and-upstreams)
    - this means you can push/pull as normal to your own repo, but also easily track & update from the NvChad repo
-    - for ssh:
-       ```shell
-       $ git remote add upstream git@github.com:NvChad/NvChad.git
-       ```
-    - for https:
-       ```shell
-       $ git remote add upstream https://github.com/NvChad/NvChad.git
-       ```  
-4. any time you create a branch to do some work, use 
+   - for ssh:
+     ```shell
+     $ git remote add upstream git@github.com:NvChad/NvChad.git
+     ```
+   - for https:
+     ```shell
+     $ git remote add upstream https://github.com/NvChad/NvChad.git
+     ```
+4. any time you create a branch to do some work, use
    ```shell
    $ git fetch upstream && git checkout -b dev-myFEAT upstream/main
    ```
@@ -48,20 +51,22 @@ If you wish to contribute to NvChad, you should:
 
 - But adding specific features like adding config for [wakatime](https://github.com/wakatime/vim-wakatime) etc will be added in this [chad user configs](https://github.com/NvChad/NvChad/wiki/Chad-user-configs). This lets the user select the things only they want ( adding configs from extra configs ).
 
-
-## Format your PR with stylua 
+## Format your PR with stylua
 
 - check the [stylua config](https://github.com/NvChad/NvChad/blob/main/.stylua.toml)
 
 ## How to remove or edit commits from your PR
+
 > You may have been directed here to remove a commit such as a merge commit: `Merge NvChad/main into devBranch` from your PR
 
 > As these commands edit your git history, you may need to **force push** with `git push origin --force`
 
 1. Run the following:
-  ```
-  $ git rebase -i HEAD~<NUMBER OF COMMITS TO GO BACK>
-  ```
+
+```
+$ git rebase -i HEAD~<NUMBER OF COMMITS TO GO BACK>
+```
+
   <details><summary>Example</summary>
   <p>
   
@@ -147,20 +152,22 @@ If you wish to contribute to NvChad, you should:
   </details>
 
 3. If you picked `drop` you are done, if you picked `edit` then edit your files, then run:
-  ```shell
-  $ git add <files>
-  ```
+
+```shell
+$ git add <files>
+```
 
 4. Once you have edited & added your files, run:
-  ```shell
-  $ git rebase --continue
-  ```
+
+```shell
+$ git rebase --continue
+```
 
 5. You will likely need to push using:
-  ```shell
-  $ git push origin --force
-  ```
 
+```shell
+$ git push origin --force
+```
 
 ## How to submit themes?
 
@@ -170,7 +177,7 @@ If you wish to contribute to NvChad, you should:
 
 ### Creating the theme (example)
 
-- create a file and name it doom.lua 
+- create a file and name it doom.lua
 - put this file in the hl_themes dir
 
 Use my [tool](https://siduck76.github.io/hex-tools/) to lighten or darken colors , or some tool which does the same thing.
@@ -195,9 +202,9 @@ grey_fg2 = 20% lighter than grey
 light_grey = 28% lighter than grey
 
 baby_pink = 15% lighter than red or any babypink color you like!
-line = 15% lighter than black 
+line = 15% lighter than black
 
-nord_blue = 13% darker than blue 
+nord_blue = 13% darker than blue
 sun = 8% lighter than yellow
 
 statusline_bg = 4% lighter than black
