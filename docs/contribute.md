@@ -9,27 +9,25 @@ If you wish to contribute to NvChad, you should:
 
 1. [create a fork on GitHub](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
 2. clone your fork to your machine
-
-- For ssh:
-  ```shell
-  $ git clone git@github.com:<YOUR GITHUB USERNAME>/NvChad.git ~/.config/nvim
-  ```
-- For https:
-  ```shell
-  $ git clone https://github.com/<YOUR GITHUB USERNAME>/NvChad.git ~/.config/nvim
-  ```
-
+  - For ssh:
+    ```shell
+    $ git clone git@github.com:<YOUR GITHUB USERNAME>/NvChad.git ~/.config/nvim
+    ```
+  - For https:
+    ```shell
+    $ git clone https://github.com/<YOUR GITHUB USERNAME>/NvChad.git ~/.config/nvim
+    ```
 3. [add a new remote repo to track](https://www.atlassian.com/git/tutorials/git-forks-and-upstreams)
    - this means you can push/pull as normal to your own repo, but also easily track & update from the NvChad repo
-   - for ssh:
-     ```shell
-     $ git remote add upstream git@github.com:NvChad/NvChad.git
-     ```
-   - for https:
-     ```shell
-     $ git remote add upstream https://github.com/NvChad/NvChad.git
-     ```
-4. any time you create a branch to do some work, use
+    - for ssh:
+       ```shell
+       $ git remote add upstream git@github.com:NvChad/NvChad.git
+       ```
+    - for https:
+       ```shell
+       $ git remote add upstream https://github.com/NvChad/NvChad.git
+       ```  
+4. any time you create a branch to do some work, use 
    ```shell
    $ git fetch upstream && git checkout -b dev-myFEAT upstream/main
    ```
@@ -51,22 +49,19 @@ If you wish to contribute to NvChad, you should:
 
 - But adding specific features like adding config for [wakatime](https://github.com/wakatime/vim-wakatime) etc will be added in this [chad user configs](https://github.com/NvChad/NvChad/wiki/Chad-user-configs). This lets the user select the things only they want ( adding configs from extra configs ).
 
-## Format your PR with stylua
+## Format your PR with stylua 
 
 - check the [stylua config](https://github.com/NvChad/NvChad/blob/main/.stylua.toml)
 
 ## How to remove or edit commits from your PR
-
 > You may have been directed here to remove a commit such as a merge commit: `Merge NvChad/main into devBranch` from your PR
 
 > As these commands edit your git history, you may need to **force push** with `git push origin --force`
 
 1. Run the following:
-
-```
-$ git rebase -i HEAD~<NUMBER OF COMMITS TO GO BACK>
-```
-
+  ```
+  $ git rebase -i HEAD~<NUMBER OF COMMITS TO GO BACK>
+  ```
   <details><summary>Example</summary>
   <p>
   
@@ -152,32 +147,30 @@ $ git rebase -i HEAD~<NUMBER OF COMMITS TO GO BACK>
   </details>
 
 3. If you picked `drop` you are done, if you picked `edit` then edit your files, then run:
-
-```shell
-$ git add <files>
-```
+  ```shell
+  $ git add <files>
+  ```
 
 4. Once you have edited & added your files, run:
-
-```shell
-$ git rebase --continue
-```
+  ```shell
+  $ git rebase --continue
+  ```
 
 5. You will likely need to push using:
+  ```shell
+  $ git push origin --force
+  ```
 
-```shell
-$ git push origin --force
-```
 
 ## How to submit themes?
 
 - check the dirs : hl_themes and themes in [nvim-base16 repo](https://github.com/NvChad/nvim-base16.lua) to get an idea.
-- hl_themes/file.lua manages overall pretty highlights and their colors in nvchad , like statusline , nvim-tree , bufferline etc
-- themes/file-base16.lua manages syntax colors + other highlights colors which havent been defined (by colors/highlights.lua file in nvchad config)
+- hl_themes/file.lua manages overall pretty highlight colors of nvchad
+- themes/file-base16.lua manages syntax colors + other highlights colors which havent been defined in nvchad
 
 ### Creating the theme (example)
 
-- create a file and name it doom.lua
+- create a file and name it doom.lua 
 - put this file in the hl_themes dir
 
 Use my [tool](https://siduck76.github.io/hex-tools/) to lighten or darken colors , or some tool which does the same thing.
@@ -185,7 +178,7 @@ Use my [tool](https://siduck76.github.io/hex-tools/) to lighten or darken colors
 (Creating highlights theme)
 
 - Copy the structure of other themes in doom.lua
-- Ok now make sure you add appropriate and pretty colors!!
+- Ok now make sure you add appropriate colors!!
 
 ```
 black = usually your theme bg (this should be the same as base00 in doom-base16.lua)
@@ -202,17 +195,16 @@ grey_fg2 = 20% lighter than grey
 light_grey = 28% lighter than grey
 
 baby_pink = 15% lighter than red or any babypink color you like!
-line = 15% lighter than black
+line = 15% lighter than black 
 
-nord_blue = 13% darker than blue
+nord_blue = 13% darker than blue 
 sun = 8% lighter than yellow
 
 statusline_bg = 4% lighter than black
 lightbg = 13% lighter than statusline_bg
 lightbg2 = 7% lighter than statusline_bg
 
-pmenu_bg = green color mostly
-folder_bg = blue color mostly i.e the hex value of the blue color you assigned earlier
+folder_bg = blue color
 
 (note : the above values are mostly approx values so its not compulsory that you have to use those exact numbers , test your theme i.e show it in the PR to get feedback from @siduck76)
 ```
@@ -224,7 +216,7 @@ folder_bg = blue color mostly i.e the hex value of the blue color you assigned e
 
 - copy the structure from other base16 themes in the themes dir.
 - Follow the [base16 conventions](https://github.com/chriskempson/base16/blob/master/styling.md).
-- make sure the variable names dont have "#" before the hex values i.e base00 = #000000 would be wrong , but base00 = 000000 would be right.
+- Make sure the variable names dont have "#" before the hex values i.e base00 = #000000 would be wrong , but base00 = 000000 would be right.
 
 - Now send the PR!!
 
