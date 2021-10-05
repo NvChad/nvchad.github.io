@@ -416,8 +416,7 @@ M.setup_lsp = function(attach, capabilities)
          },
       }
    end
-end
-
+   
    -- typescript
 
   lspconfig.tsserver.setup {
@@ -425,6 +424,7 @@ end
       filetypes = {"typescriptreact", "typescript.tsx"},
       root_dir = root_pattern("package.json", "tsconfig.json")
     }
+end
 
 return M
 
