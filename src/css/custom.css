@@ -40,18 +40,18 @@ h4 {
 }
 
 .docusaurus-highlight-code-line {
-  background-color: #2e3440;
+  background-color: #282c34;
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
 }
 
 html[data-theme="dark"] .docusaurus-highlight-code-line {
-  background-color: #2e3440;
+  background-color: #282c34;
 }
 
 html[data-theme="dark"] {
-  --ifm-background-color: #0a0e16 !important;
+  --ifm-background-color: #1e222a !important;
 }
 
 .navbar__item.navbar__link[href*="github"] {

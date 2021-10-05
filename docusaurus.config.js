@@ -10,7 +10,7 @@ module.exports = {
   trailingSlash: false,
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "static/img/favicon.ico",
+  favicon: "img/favicon.ico",
   organizationName: "NvChad",
   projectName: "nvchad.github.io",
   themeConfig: {
