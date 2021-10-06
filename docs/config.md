@@ -420,9 +420,11 @@ M.setup_lsp = function(attach, capabilities)
    -- typescript
 
   lspconfig.tsserver.setup {
+      on_attach = attach
+      capabilities = capabilities,
       cmd = { "typescript-language-server", "--stdio" },
-      filetypes = {"typescriptreact", "typescript.tsx"},
-      root_dir = root_pattern("package.json", "tsconfig.json")
+      filetypes = { "javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx" },
+      root_dir = lspconfig.util.root_pattern("package.json", "tsconfig.json")
     }
 end
 
