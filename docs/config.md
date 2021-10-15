@@ -40,7 +40,7 @@ NvChad comes with the following file / folder structure. [An up-to-date & full t
 
 ```
 
-- The file names in the tree with (i) are meant to be ignored , i.e the user doesnt need to look at them. I assume you have basic lua knowledge The lua code in those files might fret you or look very complex / scare you from nvchad xD. If you're not familiar with lua's syntax then please check [our basic lua guide](getting-started/learn-lua). Dont worry you just need to skim through it.
+- The file names in the tree with (i) are meant to be ignored , i.e the user doesnt need to look at them. I assume you have basic lua knowledge The lua code in those files might fret you or look very complex / scare you from NvChad xD. If you're not familiar with lua's syntax then please check [our basic lua guide](getting-started/learn-lua). Don't worry you just need to skim through it.
 
 ## Walkthrough
 
@@ -51,11 +51,11 @@ NvChad comes with the following file / folder structure. [An up-to-date & full t
 
 ## Init.lua
 
-- So the nvchad config's dir has a lua folder and init.lua file.
+- So NvChads's config dir has a lua folder and an init.lua file.
 - The init.lua basically loads the core config.
-- You could check there must be a file named "init.lua" in the core folder which makes it easy for us to require it .
+- You could check there must be a file named "init.lua" in the core folder which makes it easy for us to require it.
 
-- for example , you have a file called "test.lua" and you want to organize your config structure so you put test.lua in a folder called "chadir", So you gotta require this "test.lua" to load it right? its obvious to do this :
+- For example , you have a file called "test.lua" and you want to organize your config structure so you put test.lua in a folder called "chadir". So you gotta require this "test.lua" to load it right? It's obvious to do this :
 
 ```lua
 require("chadir.test") or require "chadir.test".
@@ -71,17 +71,17 @@ require "chadir".
 - So basically require "core" is loading the init.lua file in the core folder.
 - Since we are also doing error handling , we wrap that up in a pcall.
 
-- lets explain this : local ok, err = pcall(require, module)
+- Let's explain this : local ok, err = pcall(require, module)
 
 - pcall will run : require module , which is require "core" in our case , only if ok's value is true.
-- pcall returns a boolean value and run the function inside in it , (the require thingy)
+- pcall returns a boolean value and run the function inside in it , (the require thingy).
 - But for some reason if there's no such module , then pcall will return false and some errors , which are then passed into the "err" variable.
 - Basically if require of the module (core in our case) fails then nvim will show up an error on startup , if not then it'll just run that require thingy.
 
 ## Colors
 
 - This dir has two files : init.lua and highlights.lua
-- Themeing is done with the nvim-base16.lua plugin , this is a fork of the original plugin (nvim-base16.lua) made by @norcalli. The original repo was dead for ages so I had to fork it and this plugin's pretty fast in load times , we have stripped down the code , removed outdated stuffs and made it more nvchad specific.
+- Theming is done with the nvim-base16.lua plugin , this is a fork of the original plugin (nvim-base16.lua) made by @norcalli. The original repo was dead for ages so I had to fork it and this plugin's pretty fast in load times , we have stripped down the code , removed outdated things and made it more NvChad specific.
 
 - The base16 plugin loads the init.lua file.
 - The init.lua file in the colors dir loads the base16 plugin and loads highlights after it.
@@ -92,8 +92,8 @@ local base16 = require 'base16'
 base16(base16.themes("ondark"), true)
 ```
 
-- Since the addition of chadrc , we added a variable so (theme_var instead of "onedark") , this variable was defined in chadrc , so changing the theme name directly from chadrc changed the overall theme!
-- But this was a little cumbersome since , a new neovim window had to be opened to check the theme changes.
+- Since the addition of chadrc , we added a variable (theme_var instead of "onedark") , this variable was defined in chadrc , so changing the theme name directly from chadrc changed the overall theme!
+- But this was a little cumbersome since a new nvim window had to be opened to check the theme changes.
 
 - We then added a telescope picker for changing themes on the fly :D.
 - So leader + th (leader is the space key) will open a telescope picker and scrolling through the items (themes) in it would temporarily apply theme + preview them in a previewer window of the telescope , pressing enter on the theme name does two things :
@@ -103,25 +103,25 @@ base16(base16.themes("ondark"), true)
 
 ## Core
 
-- The core folder has several files , some of them which you dont even need to worry checking like : custom.lua hooks.lua utils.lua.
-- The init.lua file in this folder just runs some of the modules i.e files in the core repo , check it yourself!
+- The core folder has several files , some of them you don't even need to worry checking like : custom.lua hooks.lua utils.lua.
+- The init.lua file in this folder just runs some of the modules i.e files in the core folder , check it yourself!
 
-- autocmds.lua : defines some default autocmds of nvchad.
-- default_config.lua : This is an important file , more like a global file which has some default options for everything in nvchad , like themes , mappings , other UI related stuff etc.
-- If you need something to be changed then add that thing from default_config.lua to chadrc.lua (in custom folder). Make sure you copy example_chadrc.lua to chadrc.lua!!
+- autocmds.lua : Defines some default autocmds in NvChad.
+- default_config.lua : This is an important file , more like a global file which has some default options for everything in NvChad , like themes , mappings , other UI related stuff etc.
+- If you need something to be changed , then add that thing from default_config.lua to chadrc.lua (in custom folder). Make sure you copy example_chadrc.lua to chadrc.lua!!
 
-- mappings.lua : defines all the default mappings, all mappings are wrapped up into specific functions for example each plugin has its own function for mapping ( ex - M.bufferline in mappings.lua). These functions are put in the "Setup() call" of the plugin in the plugins/init.lua config.
+- mappings.lua : Defines all the default mappings, all mappings are wrapped up into specific functions. For example, each plugin has its own function for mapping ( ex - M.bufferline in mappings.lua). These functions are put in the "Setup() call" of the plugin in the plugins/init.lua config.
 
 - Those mappings are loaded only if the plugin is loaded!
 
-- The mappings take values from the chadrc ( if anything related to mappings isnt defined here , then the values will be taken from default_config.lua). I'll explain this part later in this section!
+- The mappings take values from the chadrc ( if anything related to mappings isn't defined here , then the values will be taken from default_config.lua). I'll explain this part later in this section!
 
-- options.lua : defines all default options , again takes value from chadrc or default_config.lua
+- options.lua : Defines all default options , again takes values from chadrc or default_config.lua
 
 ## Default config
 
 - This file is core/default_config.lua
-- It contains all the default options for various stuffs in nvchad.
+- It contains all the default options for various stuffs in NvChad.
 
 For example :
 
@@ -198,8 +198,8 @@ M.mappings.plugins = {} has plugin related mappings
 
 ```
 
-- Ok now you might be wondering how do values from the non existant chadrc file is taken? (chadrc.lua doesnt exist by default , only example_chadrc.lua does).
-- For example if the user doesnt set up the theme in chadrc then nvchad will automatically take value from the default_config.lua (core dir).
+- Ok now you might be wondering how are values from the non existant chadrc file taken? (chadrc.lua doesnt exist by default , only example_chadrc.lua does).
+- For example , if the user doesn't set up the theme in chadrc then NvChad will automatically take value from the default_config.lua (core dir).
 - This happens by:
 
 ```lua
@@ -207,13 +207,13 @@ require("core.utils").load_config()
 ```
 
 - This basically merges the tables in chadrc to default_config , so if the user makes any changes in the chadrc then that change will overwrite the value in default_config!!
-- you could check plugins/configs/nvimtree.lua file , the 2nd line in it and various files like statusline , file-icons etc too!
+- You could check plugins/configs/nvimtree.lua file , the 2nd line in it , and various files like statusline , file-icons etc too!
 
 # Plugins
 
 - The plugins dir contains three files , init.lua , packerInit.lua and the configs dir.
 
-- packerInit.lua : this file is used for defining packer's init stuffs , so things like clone_timeout , compile_on_sync etc and other packer related options are mentioned here.
+- packerInit.lua : this file is used for defining packer's init stuff , so things like clone_timeout , compile_on_sync , etc and other packer related options are mentioned here.
 - init.lua : is basically the packer config , it calls packerInit first and then following with definitions of other plugins + their configs'
 
 - For example to add a plugin , packer uses this format :
@@ -249,13 +249,13 @@ use {
 config = override_req("nvim_cmp", "plugins.configs.cmp"),
 ```
 
-- The override_req function here , checks if the "nvim_cmp" is added in the default_plugin_config_replace in (chadrc.lua) file and if its added , then the function will make packer use that custom config.
+- The override_req function here , checks if the "nvim_cmp" is added in the default_plugin_config_replace in (chadrc.lua) file and if it's added , then the function will make packer use that custom config.
 
-- In case if thats not added then the function will just make use of "plugins.configs.cmp"
+- In case if that's not added then the function will just make use of "plugins.configs.cmp"
 
 ## Replace default config of a plugin
 
-- use the default_plugin_config_replace table in chadrc.lua
+- Use the default_plugin_config_replace table in chadrc.lua
 
 - Example :
 
@@ -267,7 +267,7 @@ M.plugins = {
 }
 
 -- this will replace lspconfig's default config with the file custom/lspconfig.lua
--- Make sure you do :PackerCompile or :PackerSync after this since the packer_compiled.vim or packer_compiled.lua present in the ~/.config/nvim/plugin dir needs to update the paths!
+-- make sure you do :PackerCompile or :PackerSync after this since the packer_compiled.vim or packer_compiled.lua present in the ~/.config/nvim/plugin dir needs to update the paths!
 ```
 
 ## formatting and linting
@@ -285,7 +285,7 @@ M.plugins = {
       end,
    }
 
--- load it after nvim-lspconfig , since we'll use some lspconfig stuff in null-ls config!
+-- load it after nvim-lspconfig , since we'll use some lspconfig stuff in the null-ls config!
 ```
 
 ### Null-ls config
@@ -337,12 +337,12 @@ buf_set_keymap("n", "<space>fm", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts)
 ```
 
 - Check [null-ls builtins](https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md) to get config for your language!
-- Also note that I've added some config of linters and formatters in null-ls config, so those programs must be installed on my system as well! like prettierd , stylua , shfmt , eslint_d etc
+- Also note that I've added some config of linters and formatters in null-ls config, so those programs must be installed on my system as well! Like prettierd , stylua , shfmt , eslint_d , etc.
 
 ## Setup lsp server
 
 - Skim through [lspconfig repo](https://github.com/neovim/nvim-lspconfig) to get a general overview of how the config looks/works.
-- Then check [lspconfig_config.md](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md) to make sure your language's lsp server present there.
+- Then check [lspconfig_config.md](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md) to make sure your language's lsp server is present there.
 
 - Create a file in your custom folder. (I would suggest creating plugins dir in custom folder , so /custom/plugins/lspconfig.lua is the config file for this example).
 
@@ -432,7 +432,7 @@ return M
 
 ```
 
-- Note : I have used a loop there since I'm just using default lspconfigs there and it looks cleaner that way , without the loop it would've been very ugly , something like this :
+- Note : I have used a loop there since I'm just using default lspconfigs and it looks cleaner that way , without the loop it would've been very ugly , something like this :
 
 ```lua
   lspconfig.html.setup { my options }
@@ -442,7 +442,7 @@ return M
 
 - Then install that lspserver, if you get issues like "cmd not executable" in :LspInfo, then install that lspservers globally in your system.
 
-I've had that same issue with some lspservers which were installed by npm and it got fixed by installing those npm packages globally :
+- I've had that same issue with some lspservers which were installed by npm and it got fixed by installing those npm packages globally :
 
 ```shell
 npm config set prefix=~/.node_modules
@@ -452,7 +452,7 @@ add ~/.node_modules/bin to PATH
 
 ## Setup lsp-installer
 
-- If you dont like copy pasting configs for your lspservers and installing lspservers manually then try nvim-lspinstalller.
+- If you don't like copy pasting configs for your lspservers and installing lspservers manually , then try nvim-lspinstalller.
 - Basic Sample config : (custom/init.lua hooks section for install_plugins)
 
 ```lua
@@ -473,7 +473,7 @@ add ~/.node_modules/bin to PATH
 
 ### advanced config
 
-- The following config shows how lsp-installer + custom user keybinds (for codeactions) is done in the lspconfig. (custom/plugins/lspconfig) , if this is done then the above config within lsp-installer's use{} section shouldnt be done so only :
+- The following config shows how lsp-installer + custom user keybinds (for codeactions) is done in the lspconfig. (custom/plugins/lspconfig) , if this is done then the above config within lsp-installer's use{} section shouldn't be done so only :
 
 ```lua
  use {
@@ -608,7 +608,7 @@ check [nvim-lua guide](https://github.com/nanotee/nvim-lua-guide) for better exp
 ### Add new plugins
 
 - Go to init.lua file in custom folder
-- uncomment the line hooks.add line containing the "install_plugins" stuff
+- Uncomment the line hooks.add line containing the "install_plugins" stuff
 
 - example :
 
@@ -736,15 +736,15 @@ hooks.add("install_plugins", function(use)
 
 ### Files to edit
 
-- Only files that are supposed to edit by the user are meant to be in the custom dir, default files in that folder are example_chadrc and example_init which can be just renamed by the user into chadrc.lua and init.lua .
+- Only files that are supposed to edited by the user are meant to be in the custom dir, default files in that folder are example_chadrc and example_init which can be just renamed by the user into chadrc.lua and init.lua .
 
-- The rest of the files outside the custom folder will get overwritten by the update so dont put your config there!! Just put it in the custom folder.
+- The rest of the files outside the custom folder will get overwritten by the update so don't put your config there!! Just put it in the custom folder.
 
-(note : the docs will be refined and updated more if there are any inaccuracies)
+(note : The docs will be refined and updated more if there are any inaccuracies)
 
 ## Lazy loading
 
-- We lazy load almost 95% of the plugins so we expect you to lazy load the plugins you've added to reduce startuptime. Dont want users making nvchad slow just because they didnt lazy load plugins they've added!
+- We lazy load almost 95% of the plugins, so we expect you to lazy load the plugins you've added to reduce startuptime. Don't want users making NvChad slow just because they didn't lazy load plugins they've added!
 
 - Check [packer's readme](https://github.com/wbthomason/packer.nvim#specifying-plugins) for more info!
 

@@ -20,9 +20,9 @@ sidebar_position: 1
 This should work across all Linux distros.
 
 ```shell
-$ curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
-$ chmod u+x nvim.appimage
-$ ./nvim.appimage
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+chmod u+x nvim.appimage
+./nvim.appimage
 ```
 
 Then consider moving this to your local/user bin & adding an alias to this
@@ -69,7 +69,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs
-defaultValue="linux" values={[ {label: 'Linux & Macintosh', value: 'linux'}, {label: 'Windows', value: 'win'} ]}>
+defaultValue="linux" values={[ {label: 'Linux & MacOS', value: 'linux'}, {label: 'Windows', value: 'win'} ]}>
 <TabItem value="linux">
 
 ### Linux & MacOS:
@@ -77,7 +77,7 @@ defaultValue="linux" values={[ {label: 'Linux & Macintosh', value: 'linux'}, {la
 If you already have a `~/.config/nvim` folder, make a backup with:
 
 ```shell
-$ mv ~/.config/nvim ~/.config/NVIM.BAK
+mv ~/.config/nvim ~/.config/NVIM.BAK
 ```
 
 Then install NvChad & it's plugins with:
