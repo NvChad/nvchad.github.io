@@ -516,14 +516,15 @@ M.setup_lsp = function(attach, capabilities)
             attach(client, bufnr)
 
             -- Use nvim-code-action-menu for code actions for rust
-            buf_set_keymap(bufnr, "n", "<leader>ca", ":CodeActionMenu<CR>", { noremap = true, silent = true })
-            buf_set_keymap(bufnr, "v", "<leader>ca", ":CodeActionMenu<CR>", { noremap = true, silent = true })
+            buf_set_keymap(bufnr, "n", "<leader>ca", "lua vim.lsp.buf.range_code_action()<CR>", { noremap = true, silent = true })
+            buf_set_keymap(bufnr, "v", "<leader>ca", "lua vim.lsp.buf.range_code_action()<CR>", { noremap = true, silent = true })
          end
       end
 
       server:setup(opts)
       vim.cmd [[ do User LspAttachBuffers ]]
    end)
+end
 
 return M
 ```
