@@ -30,7 +30,7 @@ module.exports = {
           position: "right",
         },
         {
-          to: "config",
+          to: "config/walkthrough",
           label: "Config",
           position: "right",
         },

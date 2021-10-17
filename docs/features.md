@@ -3,7 +3,7 @@ id: features
 title: Features
 ---
 
-NvChad comes with many comforts of a modern IDE. All lazy-loaded and built on top of NeoVim's fantastic lua integration!
+NvChad comes with many comforts of a modern IDE. All lazy-loaded and built on top of NeoVim's fantastic lua integration while still looking very beautiful!
 
 ## Plugins
 
@@ -91,9 +91,8 @@ _without / with treesitter:_
 
 ![lspkind](https://raw.githubusercontent.com/siduck76/dotfiles/all/rice%20flex/lspkind.png)
 
-![lsp](/img/features/lsp.gif)
-
-_(The video shows compe + lsp completions and lsp-signature while completion of functions and lsp diagnostics in the editor as well as on the statusline)_
+<!-- ![lsp](/img/features/lsp.gif) -->
+<!-- _(The video shows compe + lsp completions and lsp-signature while completion of functions and lsp diagnostics in the editor as well as on the statusline)_ -->
 
 ### Misc plugins
 

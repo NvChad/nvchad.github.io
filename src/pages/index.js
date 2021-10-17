@@ -7,7 +7,7 @@ import "./index.css"
 
 export default function Home() {
   return (
-    <Layout description="Description will go into a meta tag in <head />">
+    <Layout description="An attempt to make neovim cli as functional as an IDE while being very beautiful,blazing fast">
       <main className="wrapper">
         <div className="container home-wrapper">
           <div className="banner__left">
