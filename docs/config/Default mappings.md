@@ -8,7 +8,7 @@
 | new buffer         | shift + t     |
 | new tab            | ctrl + t + b  |
 | save file          | ctrl + s      |
-| theme toggler      | space + t + t |
+| theme toggler      | space + t + h |
 
 ### Navigation in insert mode
 
