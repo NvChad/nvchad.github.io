@@ -7,7 +7,7 @@ import "./index.css"
 
 export default function Home() {
   return (
-    <Layout description="An attempt to make neovim cli as functional as an IDE while being very beautiful,blazing fast">
+    <Layout description="An attempt to make neovim cli as functional as an IDE while being very beautiful, blazing fast">
       <main className="wrapper">
         <div className="container home-wrapper">
           <div className="banner__left">
