@@ -11,7 +11,11 @@ export default function Home() {
       <main className="wrapper">
         <div className="container home-wrapper">
           <div className="banner__left">
-            <img className="banner__left--logo" src="/img/logo.svg" />
+            <img
+              className="banner__left--logo"
+              src="/img/logo.svg"
+              alt="NvChad logo"
+            />
             <Link
               className="button button--secondary button--lg banner__left--btn"
               to="/getting-started/setup"
@@ -20,7 +24,11 @@ export default function Home() {
             </Link>
           </div>
           <div className="banner__right">
-            <img src={bannerImg} className="banner__right--screenshot" />
+            <img
+              src={bannerImg}
+              className="banner__right--screenshot"
+              alt="NvChad example screenshot"
+            />
           </div>
         </div>
       </main>
