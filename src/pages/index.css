@@ -68,16 +68,12 @@
   }
 }
 
+html[data-theme="dark"] {
+  background-color: #0a0e16;
+}
+
 html[data-theme="dark"] .navbar {
   background-color: #1e222a;
-}
-
-html[data-theme="dark"] .home-wrapper {
-  background-color: #0a0e16;
-}
-
-html[data-theme="dark"] body {
-  background-color: #0a0e16;
 }
 
 html[data-theme="dark"] .banner_text {
