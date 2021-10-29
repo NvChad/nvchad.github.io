@@ -61,7 +61,6 @@
 ```lua
    use {
       "Pocco81/TrueZen.nvim",
-      disable = not status.truezen,
       cmd = {
          "TZAtaraxis",
          "TZMinimalist",
