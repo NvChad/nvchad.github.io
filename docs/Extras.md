@@ -61,14 +61,13 @@
 ```lua
    use {
       "Pocco81/TrueZen.nvim",
-      disable = not status.truezen,
       cmd = {
          "TZAtaraxis",
          "TZMinimalist",
          "TZFocus",
       },
       config = function()
-          check https://github.com/Pocco81/TrueZen.nvim#setup-configuration (init.lua version)
+          -- check https://github.com/Pocco81/TrueZen.nvim#setup-configuration (init.lua version)
       end
    }
 ```
