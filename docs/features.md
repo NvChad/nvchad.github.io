@@ -21,8 +21,8 @@ A plugin for escaping Vim insert mode without lagging.
 
 Fuzzy finding select menu with text and image preview.
 
-![Telescope](https://raw.githubusercontent.com/siduck76/dotfiles/all/rice%20flex/tel.png)
-![Telescope-media](https://raw.githubusercontent.com/siduck76/dotfiles/all/rice%20flex/telmedia.png)
+![Telescope](https://raw.githubusercontent.com/siduck/dotfiles/all/rice%20flex/tel.png)
+![Telescope-media](https://raw.githubusercontent.com/siduck/dotfiles/all/rice%20flex/telmedia.png)
 (telescope media works in linux only)
 
 ### UI plugins
@@ -31,7 +31,7 @@ Fuzzy finding select menu with text and image preview.
 
 Top bar bufferline for neovim (can be used for managing buffers and tabs, including close them. It also creates custom clickable buttons on the bufferline.
 
-![bufferline](https://raw.githubusercontent.com/siduck76/dotfiles/all/rice%20flex/bufferline.png)
+![bufferline](https://raw.githubusercontent.com/siduck/dotfiles/all/rice%20flex/bufferline.png)
 
 #### [`feline.nvim`](https://github.com/famiu/feline.nvim)
 
@@ -45,19 +45,19 @@ Separator styles: `slant`, `round`, `default`, `block`, `arrow`:
 
 A file explorer tree for NeoVim written in lua.
 
-![nvim tree](https://raw.githubusercontent.com/siduck76/dotfiles/all/rice%20flex/nvimtree.png)
+![nvim tree](https://raw.githubusercontent.com/siduck/dotfiles/all/rice%20flex/nvimtree.png)
 
 #### [`blankline`](https://github.com/lukas-reineke/indent-blankline.nvim)
 
 Indentline plugin.
 
-![blankline screenshot](https://raw.githubusercontent.com/siduck76/dotfiles/all/rice%20flex/blanklineNvim.png)
+![blankline screenshot](https://raw.githubusercontent.com/siduck/dotfiles/all/rice%20flex/blanklineNvim.png)
 
 #### [`dashboard-nvim`](https://github.com/glepnir/dashboard-nvim)
 
 Dashboard plugin for NeoVim.
 
-![dashboard](https://raw.githubusercontent.com/siduck76/dotfiles/all/rice%20flex/dashboard-nvim.png)
+![dashboard](https://raw.githubusercontent.com/siduck/dotfiles/all/rice%20flex/dashboard-nvim.png)
 
 ![devicons screenshot](/img/features/devi.png)
 
@@ -89,7 +89,7 @@ _without / with treesitter:_
 - [`lsp-signature.nvim`](https://github.com/ray-x/lsp_signature.nvim) - lsp signature hint when you type
 - [`lspkind.nvim`](https://github.com/onsails/lspkind-nvim) - Adds pictograms to neovim built-in lsp completion items:
 
-![lspkind](https://raw.githubusercontent.com/siduck76/dotfiles/all/rice%20flex/lspkind.png)
+![lspkind](https://raw.githubusercontent.com/siduck/dotfiles/all/rice%20flex/lspkind.png)
 
 <!-- ![lsp](/img/features/lsp.gif) -->
 <!-- _(The video shows compe + lsp completions and lsp-signature while completion of functions and lsp diagnostics in the editor as well as on the statusline)_ -->

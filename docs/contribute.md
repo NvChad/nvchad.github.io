@@ -173,7 +173,7 @@ If you wish to contribute to NvChad, you should:
 - create a file and name it doom.lua 
 - put this file in the hl_themes dir
 
-Use my [tool](https://siduck76.github.io/hex-tools/) to lighten or darken colors , or some tool which does the same thing.
+Use my [tool](https://siduck.github.io/hex-tools/) to lighten or darken colors , or some tool which does the same thing.
 
 (Creating highlights theme)
 
@@ -206,7 +206,7 @@ lightbg2 = 7% lighter than statusline_bg
 
 folder_bg = blue color
 
-(note : the above values are mostly approx values so its not compulsory that you have to use those exact numbers , test your theme i.e show it in the PR to get feedback from @siduck76)
+(note : the above values are mostly approx values so its not compulsory that you have to use those exact numbers , test your theme i.e show it in the PR to get feedback from @siduck)
 ```
 
 (Creating base16 theme)
