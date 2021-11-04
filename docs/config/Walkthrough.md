@@ -1,3 +1,5 @@
+- (NOTE : Make sure you know basic lua , if not then [check](https://nvchad.github.io/getting-started/learn-lua) ).
+
 ## Structure
 
 NvChad comes with the following file / folder structure. [An up-to-date & full tree can be viewed in the repo](https://github.com/NvChad/NvChad/)
@@ -64,14 +66,20 @@ require "chadir".
 ```
 
 - So basically require "core" is loading the init.lua file in the core folder.
-- Since we are also doing error handling , we wrap that up in a pcall.
-
+- pcall is usually used for error handling. check [https://www.lua.org/pil/8.4.html](lua docs) for more info.
 - Let's explain this : local ok, err = pcall(require, module)
+- pcall will run : require module which basically imports that module, which is require "core" in our case.
+- pcall returns a boolean value and runs the function inside in it , (the require thingy).
+- if the file exists , then the pcall thing above will return 2 values , true and true.
+- But for some reason if there's no such module , then pcall will return false and some errors. ok will be set to false and the err variable will be set to the errors produced by pcall.
 
-- pcall will run : require module , which is require "core" in our case , only if ok's value is true.
-- pcall returns a boolean value and run the function inside in it , (the require thingy).
-- But for some reason if there's no such module , then pcall will return false and some errors , which are then passed into the "err" variable.
-- Basically if require of the module (core in our case) fails then nvim will show up an error on startup , if not then it'll just run that require thingy.
+- Basic example for setting assign values to multiple vars at the same time
+```lua
+local a, b = 1, 2
+print(a,b)
+
+// 1  2 
+```
 
 ## Colors
 
