@@ -16,7 +16,7 @@
 
 ### Null-ls config
 
-(NOTE : the below config is my personal one! So use it as a reference or check null-ls docs)
+- NOTE : The below config is my personal one! So use it as a reference or check null-ls docs
 
 ```lua
 local ok, null_ls = pcall(require, "null-ls")
