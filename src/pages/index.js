@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "@theme/Layout"
 import Link from "@docusaurus/Link"
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext"
 import bannerImg from "./main.png"
 import "./index.css"
 
