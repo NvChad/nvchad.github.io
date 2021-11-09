@@ -58,6 +58,32 @@ hooks.add("install_plugins", function(use)
 
 ```
 
+### Override default highlights 
+
+- Add a path to the 'hl_override' option in the UI section of chadrc.
+
+```
+M.ui = {
+   hl_override = "custom.highlights",
+}
+```
+- NOTE : The above path is just an example , which will mean that your highlights file is /custom/highlights.lua.
+- highlights file might contain this.
+ 
+```
+local colors = require("colors").get()
+
+local fg = require("core.utils").fg
+local fg_bg = require("core.utils").fg_bg
+local bg = require("core.utils").bg
+
+fg("Normal", colors.red) 
+
+-- If you dont want to require the above stuffs then you could just do : 
+
+vim.cmd("hi Normal guifg=#yourhexcolor") 
+```
+
 ### Autocmds
 
 - Well, for example you just create a new file called autochad_cmds.lua in the custom folder and require it in the init.lua file of the custom folder! BOOOM!!
@@ -68,8 +94,6 @@ hooks.add("install_plugins", function(use)
 
 - The rest of the files outside the custom folder will get overwritten by the update so don't put your config there!! Just put it in the custom folder.
 
-(note : The docs will be refined and updated more if there are any inaccuracies)
-
 ## Lazy loading
 
 - We lazy load almost 95% of the plugins, so we expect you to lazy load the plugins you've added to reduce startuptime. Don't want users making NvChad slow just because they didn't lazy load plugins they've added!
@@ -77,3 +101,6 @@ hooks.add("install_plugins", function(use)
 - Check [packer's readme](https://github.com/wbthomason/packer.nvim#specifying-plugins) for more info!
 
 ![lessgooo](https://cdn.discordapp.com/attachments/610012463907209227/891011437810577480/863483056531046450.png)
+
+
+(note : Please open out an issue on the repo if you find any inaccuracies in the docs!)
