@@ -1,7 +1,7 @@
 ## Setup lsp server
 
 - Skim through [lspconfig repo](https://github.com/neovim/nvim-lspconfig) to get a general overview of how the config looks/works.
-- Then check [lspconfig_config.md](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md) to make sure your language's lsp server is present there.
+- Then check [server_configurations.md](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md) to make sure your language's lsp server is present there.
 
 - Create a file in your custom folder. (I would suggest creating plugins dir in custom folder , so /custom/plugins/lspconfig.lua is the config file for this example).
 
