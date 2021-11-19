@@ -16,12 +16,6 @@ html[data-theme="dark"] .navbar__item.navbar__link[href*="github"]:before {
   background-image: url("/img/brand-github-inverted.svg");
 }
 
-/* code line */
-
-html[data-theme="dark"] .docusaurus-highlight-code-line {
-  background-color: #1e222a;
-}
-
 /* home banner */
 
 html[data-theme="dark"] .banner_text {

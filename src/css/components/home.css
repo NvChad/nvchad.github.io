@@ -26,8 +26,6 @@
   width: 100%;
   height: auto;
   object-fit: cover;
-  animation: slide-in 0.5s forwards;
-  -webkit-animation: slide-in 0.5s forwards;
   border-radius: 0.5rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
@@ -67,17 +65,5 @@
   }
   .banner_logo {
     display: none;
-  }
-}
-
-@keyframes slide-in {
-  100% {
-    transform: translateX(0%);
-  }
-}
-
-@-webkit-keyframes slide-in {
-  100% {
-    -webkit-transform: translateX(0%);
   }
 }

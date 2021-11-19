@@ -39,11 +39,8 @@ h4 {
   color: white;
 }
 
-.docusaurus-highlight-code-line {
-  background-color: white;
-  display: block;
-  margin: 0 calc(-1 * var(--ifm-pre-padding));
-  padding: 0 var(--ifm-pre-padding);
+.prism-code {
+  background-color: #1e222a !important;
 }
 
 .navbar__item.navbar__link[href*="github"] {
