@@ -62,7 +62,7 @@ hooks.add("install_plugins", function(use)
 
 - Add a path to the 'hl_override' option in the UI section of chadrc.
 
-```
+```lua
 M.ui = {
    hl_override = "custom.highlights",
 }
@@ -70,7 +70,7 @@ M.ui = {
 - NOTE : The above path is just an example , which will mean that your highlights file is /custom/highlights.lua.
 - highlights file might contain this.
  
-```
+```lua
 local colors = require("colors").get()
 
 local fg = require("core.utils").fg

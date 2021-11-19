@@ -1,5 +1,4 @@
-const lightCodeTheme = require("prism-react-renderer/themes/github")
-const darkCodeTheme = require("prism-react-renderer/themes/dracula")
+const codeTheme = require("prism-react-renderer/themes/palenight")
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
@@ -18,7 +17,7 @@ module.exports = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: "NvChad",
+      title: "Nvchad",
       logo: {
         alt: "NvChad Logo",
         src: "img/logo.svg",
@@ -46,8 +45,8 @@ module.exports = {
       ],
     },
     prism: {
-      lightTheme: require("prism-react-renderer/themes/duotoneDark"),
-      darkTheme: require("prism-react-renderer/themes/duotoneDark"),
+      theme: codeTheme,
+      darkTheme: codeTheme,
       additionalLanguages: ["lua"],
     },
   },
@@ -60,7 +59,7 @@ module.exports = {
           sidebarPath: require.resolve("./sidebars.js"),
         },
         theme: {
-          customCss: require.resolve("./src/css/custom.css"),
+          customCss: require.resolve("./src/css/style.css"),
         },
       },
     ],

@@ -5,13 +5,13 @@
  * and scoped locally.
  */
 
-.wrapper {
+.homepage {
   height: calc(100vh - 60px);
   display: grid;
   place-items: center;
 }
 
-.home-wrapper {
+.banner {
   display: flex;
   justify-content: space-between;
 }
@@ -26,72 +26,58 @@
   width: 100%;
   height: auto;
   object-fit: cover;
-  animation: hero-fadeIn 1s;
-
+  animation: slide-in 0.5s forwards;
+  -webkit-animation: slide-in 0.5s forwards;
   border-radius: 0.5rem;
-  box-shadow: 0 4px 20px 16px rgb(0 0 0 / 20%), 0 6px 20px 2px rgb(0 0 0 / 19%);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
-.banner__left {
+.banner_left {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
 
-.banner__left--logo {
+.banner_logo {
   width: 100%;
   padding: 2rem;
 }
 
-.banner__left--btn {
+.install_btn {
   width: 50%;
   margin: 0 auto;
-
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   transition: all 250ms ease-in-out;
-
   color: #2e3440;
   background-color: #c0e4fe;
 }
 
-.banner__left--btn:hover {
+.install_btn:hover {
   color: #c0e4fe;
   background-color: #2e3440;
 }
 
-@keyframes hero-fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-html[data-theme="dark"] {
-  background-color: #0a0e16;
-}
-
-html[data-theme="dark"] .navbar {
-  background-color: #1e222a;
-}
-
-html[data-theme="dark"] .banner_text {
-  color: white;
-}
-
-html[data-theme="dark"] .navbar__title {
-  color: white;
-}
-
 @media only screen and (max-width: 1024px) {
-  .home-wrapper {
+  .banner {
     flex-direction: column-reverse;
   }
-  .banner__left--btn {
+  .install_btn {
     margin-top: 50px;
   }
-  .banner__left--logo {
+  .banner_logo {
     display: none;
+  }
+}
+
+@keyframes slide-in {
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes slide-in {
+  100% {
+    -webkit-transform: translateX(0%);
   }
 }

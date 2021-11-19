@@ -10,7 +10,7 @@
 /* You can override the default Infima variables here. */
 :root {
   font-family: "Inter", sans-serif;
-  --doc-sidebar-width: 240px !important;
+  --doc-sidebar-width: 250px !important;
   --ifm-color-primary: #3578e5;
   --ifm-color-primary-dark: #1d68e1;
   --ifm-color-primary-darker: #1b62d4;
@@ -40,18 +40,10 @@ h4 {
 }
 
 .docusaurus-highlight-code-line {
-  background-color: #282c34;
+  background-color: white;
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
-}
-
-html[data-theme="dark"] .docusaurus-highlight-code-line {
-  background-color: #282c34;
-}
-
-html[data-theme="dark"] {
-  --ifm-background-color: #1e222a !important;
 }
 
 .navbar__item.navbar__link[href*="github"] {
@@ -66,8 +58,4 @@ html[data-theme="dark"] {
   height: 1.5rem;
   background-image: url("/img/brand-github.svg");
   background-repeat: no-repeat;
-}
-
-html[data-theme="dark"] .navbar__item.navbar__link[href*="github"]:before {
-  background-image: url("/img/brand-github-inverted.svg");
 }
