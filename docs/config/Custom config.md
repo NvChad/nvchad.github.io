@@ -1,9 +1,8 @@
 ## How to make my own config?
 
+- check the examples dir and copy its files
 - Go to custom folder
-
-- cp example_chadrc.lua chadrc.lua
-- cp example_init.lua init.lua
+- create files : init.lua and chadrc.lua
 
 - The chadrc here is for editing nvchad default options etc.
 - The init.lua here will be used for adding new plugins , new plugin configs , replace default plugin configs , adding new mappings.
@@ -33,29 +32,28 @@ M.plugins = {
 - example :
 
 ```lua
+local hooks = require "core.hooks"
 
 hooks.add("install_plugins", function(use)
    use {
        "folke/which-key.nvim"
         event = "something",
         config = function()
-            require("custom.plugin_confs.whichkey")
+           path of config file within custom dir  or add the config here itself
         end
     }
  end)
 
--- so the path of the config here basically is in the custom/plugin_confs/whichkey.lua
+-- the above snippet is just an example
 ```
 
 ### Add new mappings
 
 ```lua
-
  hooks.add("setup_mappings", function(map)
     map("n", "<leader>cc", "dd", opt) -- example to delete the buffer
     .... many more mappings ....
  end)
-
 ```
 
 ### Override default highlights 
@@ -101,6 +99,5 @@ vim.cmd("hi Normal guifg=#yourhexcolor")
 - Check [packer's readme](https://github.com/wbthomason/packer.nvim#specifying-plugins) for more info!
 
 ![lessgooo](https://cdn.discordapp.com/attachments/610012463907209227/891011437810577480/863483056531046450.png)
-
 
 (note : Please open out an issue on the repo if you find any inaccuracies in the docs!)
