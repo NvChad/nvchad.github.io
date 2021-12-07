@@ -76,15 +76,27 @@
 
 - A fast and lua alternative to `filetype.vim`. It is ~175x faster than `filetype.vim`
 - [Repo](https://github.com/nathom/filetype.nvim)
-- Config :
+- config :
 
 ```lua
    use { "nathom/filetype.nvim" }
 ```
 
-Add the following to `lua/core/options.lua` :
+Add the following to `lua/custom/init.lua` :
 
 ```lua
    -- Stop sourcing filetype.vim
    vim.g.did_load_filetypes = 1
+```
+
+## stablize.nvim
+
+- Neovim plugin to stabilize window open/close events
+- config : 
+
+```lua
+   use {
+	"luukvbaal/stabilize.nvim",
+	config = function() require("stabilize").setup() end
+   }
 ```
