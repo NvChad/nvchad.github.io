@@ -89,7 +89,7 @@ Add the following to `lua/custom/init.lua` :
    vim.g.did_load_filetypes = 1
 ```
 
-## stablize.nvim
+## stabilize.nvim
 
 - Neovim plugin to stabilize window open/close events
 - config : 
