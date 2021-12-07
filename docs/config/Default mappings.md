@@ -9,6 +9,7 @@
 | new tab            | ctrl + t + b  |
 | save file          | ctrl + s      |
 | theme toggler      | space + t + h |
+| cheatsheet         | space + c + h |
 
 ### Navigation in insert mode
 
