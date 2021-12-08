@@ -1,10 +1,8 @@
 ## How to make my own config?
 
-- check the examples dir and copy its files
-- Go to custom folder
-- create files : init.lua and chadrc.lua
-
-- The chadrc here is for editing nvchad default options etc.
+- Create custom dir in lua/
+- Copy the examples dir files in this custom dir. 
+- The chadrc.lua here is for editing nvchad default options etc.
 - The init.lua here will be used for adding new plugins , new plugin configs , replace default plugin configs , adding new mappings.
 
 ## Replace default config of a plugin
