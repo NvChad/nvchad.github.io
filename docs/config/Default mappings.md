@@ -18,8 +18,8 @@
 | backward    | ctrl + h |
 | end of line | ctrl + e |
 | forward     | ctrl + l |
-| next line   | ctrl + k |
-| prev line   | ctrl + j |
+| next line   | ctrl + j |
+| prev line   | ctrl + k |
 | top of line | ctrl + a |
 
 ### Better window movement
