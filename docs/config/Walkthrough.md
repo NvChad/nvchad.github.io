@@ -24,8 +24,9 @@ NvChad comes with the following file / folder structure. [An up-to-date & full t
 │   │   └── utils.lua (i)
 |   |
 │   ├── custom
-│   │   ├── example_chadrc.lua
-│   │   ├── example_init.lua
+│   │   ├── chadrc.lua
+│   │   ├── init.lua
+│   │   ├── more files
 │   │
 │   ├── plugins
 │   │    ├── init.lua
@@ -74,11 +75,12 @@ require "chadir".
 - But for some reason if there's no such module , then pcall will return false and some errors. ok will be set to false and the err variable will be set to the errors produced by pcall.
 
 - Basic example for setting assign values to multiple vars at the same time
+
 ```lua
 local a, b = 1, 2
 print(a,b)
 
-// 1  2 
+// 1  2
 ```
 
 ## Colors
