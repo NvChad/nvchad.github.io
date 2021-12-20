@@ -166,6 +166,9 @@ M.setup_lsp = function(attach, capabilities)
                experimental = {
                   procAttrMacros = true,
                },
+               checkOnSave = {
+						command = "clippy",
+					},
             },
          }
 
@@ -178,8 +181,12 @@ M.setup_lsp = function(attach, capabilities)
             attach(client, bufnr)
 
             -- Use nvim-code-action-menu for code actions for rust
-            buf_set_keymap(bufnr, "n", "<leader>ca", "lua vim.lsp.buf.range_code_action()<CR>", { noremap = true, silent = true })
-            buf_set_keymap(bufnr, "v", "<leader>ca", "lua vim.lsp.buf.range_code_action()<CR>", { noremap = true, silent = true })
+            buf_set_keymap("n", "<leader>ca", "lua vim.lsp.buf.range_code_action()<CR>", { noremap = true, silent = true })
+            
+            -- autoformat on save
+            if client.resolved_capabilities.document_formatting then
+					vim.cmd("autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()")
+				end
          end
       end
 
