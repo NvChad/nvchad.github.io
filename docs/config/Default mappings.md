@@ -88,3 +88,6 @@
 | ataraxis mode                           | space + z + z |
 | focus mode                              | space + z + f |
 | minimalistic mode                       | space + z + m |
+
+
+- Note: conflict of the NeoVim digraph mapping, such as <C - k> , . with an insert mode mapping
