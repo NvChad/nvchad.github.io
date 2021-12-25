@@ -38,7 +38,7 @@ NvChad comes with the following file / folder structure. [An up-to-date & full t
 
 ```
 
-- The file names in the tree with (i) are meant to be ignored , i.e the user doesnt need to look at them. I assume you have basic lua knowledge The lua code in those files might fret you or look very complex / scare you from NvChad xD. If you're not familiar with lua's syntax then please check [our basic lua guide](getting-started/learn-lua). Don't worry you just need to skim through it.
+- The file names in the tree with (i) are meant to be ignored , i.e the user doesnt need to look at them. I assume you have basic lua knowledge The lua code in those files might fret you or look very complex / scare you from NvChad xD.
 
 ## Walkthrough
 
