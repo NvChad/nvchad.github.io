@@ -220,4 +220,5 @@ folder_bg = blue color
 
 - Now send the PR!!
 
+(note : if your theme requires changes to be done by siduck's side then the theme name will have 'chad' in it)
 (note : above guide was only for the dark theme! making light themes is tougher and a pain xD , will make doc for it too soon!)
