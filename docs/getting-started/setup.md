@@ -6,7 +6,9 @@ sidebar_position: 1
 
 ## Pre-requisites
 
-- [Neovim 0.6.0+ install page](https://github.com/neovim/neovim/wiki/Installing-Neovim)
+- [Neovim 0.6.0 install page](https://github.com/neovim/neovim/releases/tag/v0.6.0)
+
+(note : use the stable 0.6v from the releases only, not nightly! )
 
 <details><summary>Some NeoVim installation options</summary>
 <div>
