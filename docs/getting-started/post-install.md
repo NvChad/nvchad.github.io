@@ -40,13 +40,14 @@ In order to set any custom options, you must use the `lua/custom/` directory. Th
 
 ---
 
-NvChad provides `example_init.lua` & `example_chadrc.lua` inside of the `custom` folder.
+NvChad provides `example_init.lua` & `example_chadrc.lua` inside of the `examples` folder.
 
 To start setting up NvChad to your needs, copy these template files:
 
 ```
-cp example_init.lua init.lua
-cp example_chadrc.lua chadrc.lua
+mkdir lua/custom
+cp examples/example_init.lua lua/custom/init.lua
+cp examples/example_chadrc.lua lua/custom/chadrc.lua
 ```
 
 ## Install Treesitter Parser(s)
