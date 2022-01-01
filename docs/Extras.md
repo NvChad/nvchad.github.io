@@ -133,4 +133,5 @@ Add the following to `lua/custom/init.lua` :
 - note: This works with ueberzug only which is xorg dependant so it wont work on wayland. And it wont work on other OS's either! But you can implement kitty graphics protocol support or icat support for this plugin as a PR.
 
 - screenshot: 
-<img src="https://raw.githubusercontent.com/siduck/dotfiles/all/rice%20flex/telmedia.png"><hr>
+
+<img src="https://raw.githubusercontent.com/siduck/dotfiles/all/rice%20flex/telmedia.png"/>
