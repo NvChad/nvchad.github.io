@@ -22,8 +22,6 @@ A plugin for escaping Vim insert mode without lagging.
 Fuzzy finding select menu with text and image preview.
 
 ![Telescope](https://raw.githubusercontent.com/siduck/dotfiles/all/rice%20flex/tel.png)
-![Telescope-media](https://raw.githubusercontent.com/siduck/dotfiles/all/rice%20flex/telmedia.png)
-(telescope media works in linux only)
 
 ### UI plugins
 

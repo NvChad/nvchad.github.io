@@ -100,3 +100,37 @@ Add the following to `lua/custom/init.lua` :
 	config = function() require("stabilize").setup() end
    }
 ```
+
+## telescope-media-files.nvim
+
+- Telescope extension to preview media files using Ueberzug
+- config : 
+
+```lua
+   use {
+      "nvim-telescope/telescope-media-files.nvim",
+      after = "telescope.nvim",
+      config = function()
+         require("telescope").setup {
+            extensions = {
+               media_files = {
+                  filetypes = { "png", "webp", "jpg", "jpeg" },
+                  find_cmd = "rg", -- find command (defaults to `fd`)
+               },
+            },
+         }
+         require("telescope").load_extension "media_files"
+      end,
+   }
+```
+
+- command : 
+
+```vim
+:Telescope media_files 
+```
+
+- note: This works with ueberzug only which is xorg dependant so it wont work on wayland. And it wont work on other OS's either! But you can implement kitty graphics protocol support or icat support for this plugin as a PR.
+
+- screenshot: 
+<img src="https://raw.githubusercontent.com/siduck/dotfiles/all/rice%20flex/telmedia.png"><hr>
