@@ -104,6 +104,7 @@ Add the following to `lua/custom/init.lua` :
 ## telescope-media-files.nvim
 
 - Telescope extension to preview media files using Ueberzug
+- dependencies : ueberzug , ripgrep or fd
 - config : 
 
 ```lua
