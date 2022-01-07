@@ -113,7 +113,7 @@ add ~/.node_modules/bin to PATH
 ## lsp-installer
 
 - If you don't like copy pasting configs for your lspservers and installing lspservers manually , then try nvim-lspinstalller.
-- Basic Sample config : (custom/init.lua hooks section for install_plugins)
+- Basic Sample config:
 
 ### Basic config
 ```lua

@@ -16,9 +16,8 @@ NvChad comes with the following file / folder structure. [An up-to-date & full t
 │   ├── core
 │   │   ├── init.lua
 │   │   ├── autocmds.lua
-│   │   ├── custom.lua (i)
 │   │   ├── default_config.lua
-│   │   ├── hooks.lua (i)
+│   │   ├── customPlugins.lua (i)
 │   │   ├── mappings.lua
 │   │   ├── options.lua
 │   │   └── utils.lua (i)
@@ -108,7 +107,7 @@ base16(base16.themes("ondark"), true)
 
 ## Core
 
-- The core folder has several files , some of them you don't even need to worry checking like : custom.lua hooks.lua utils.lua.
+- The core folder has several files , some of them you don't even need to worry checking like : customPlugins.lua utils.lua.
 - The init.lua file in this folder just runs some of the modules i.e files in the core folder , check it yourself!
 
 - autocmds.lua : Defines some default autocmds in NvChad.

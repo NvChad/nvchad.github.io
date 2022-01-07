@@ -25,8 +25,6 @@ M.plugins = {
 ### Add new plugins
 
 - Go to init.lua file in custom folder
-- Uncomment the line hooks.add line containing the "install_plugins" stuff
-
 - example :
 
 ```lua
