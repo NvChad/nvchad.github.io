@@ -50,7 +50,6 @@ customPlugins.add(function(use)
 
     map("n", "<leader>cc", ":Telescope <CR>")
     map("n", "<leader>q", ":q <CR>")
- end)
 ```
 
 ### Override default highlights 
