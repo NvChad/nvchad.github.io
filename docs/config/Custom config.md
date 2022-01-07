@@ -30,14 +30,14 @@ M.plugins = {
 - example :
 
 ```lua
-local hooks = require "core.hooks"
+local customPlugins = require "core.customPlugins"
 
-hooks.add("install_plugins", function(use)
+customPlugins.add(function(use)
    use {
        "folke/which-key.nvim"
         event = "something",
         config = function()
-           path of config file within custom dir  or add the config here itself
+           path of config file within custom dir or add the config here itself
         end
     }
  end)
@@ -48,9 +48,10 @@ hooks.add("install_plugins", function(use)
 ### Add new mappings
 
 ```lua
- hooks.add("setup_mappings", function(map)
-    map("n", "<leader>cc", "dd", opt) -- example to delete the buffer
-    .... many more mappings ....
+    local map = require("core.utils").map
+
+    map("n", "<leader>cc", ":Telescope <CR>")
+    map("n", "<leader>q", ":q <CR>")
  end)
 ```
 
