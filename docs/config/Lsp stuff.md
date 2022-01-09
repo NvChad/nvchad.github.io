@@ -120,7 +120,7 @@ add ~/.node_modules/bin to PATH
    }
 ```
 
--- The below snippet must be your custom lspconfig! (that setup_lspconf variable in chadrc)
+note: The below snippet must be your custom lspconfig! (that setup_lspconf variable in chadrc)
 
 ```lua
 local M = {}
