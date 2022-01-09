@@ -84,8 +84,7 @@ M.setup_lsp = function(attach, capabilities)
       end,
    }
 
--- the above tsserver config will remvoe the tsserver's inbuilt formatting 
--- since I use null-ls with denofmt for formatting ts/js stuff.
+-- the above tsserver lspconfig will remvoe the tsserver's inbuilt formatting,since I use null-ls with denofmt for formatting ts/js.
 end
 
 return M
@@ -113,23 +112,38 @@ add ~/.node_modules/bin to PATH
 ## lsp-installer
 
 - If you don't like copy pasting configs for your lspservers and installing lspservers manually , then try nvim-lspinstalller.
-- Basic Sample config:
 
 ### Basic config
 ```lua
  use {
       "williamboman/nvim-lsp-installer",
-      config = function()
-         local lsp_installer = require "nvim-lsp-installer"
-
-         lsp_installer.on_server_ready(function(server)
-            local opts = {}
-
-            server:setup(opts)
-            vim.cmd [[ do User LspAttachBuffers ]]
-         end)
-      end,
    }
+```
+
+-- The below snippet must be your custom lspconfig! (that setup_lspconf variable in chadrc)
+
+```lua
+local M = {}
+
+M.setup_lsp = function(attach, capabilities)
+   local lsp_installer = require "nvim-lsp-installer"
+
+   lsp_installer.on_server_ready(function(server)
+      local opts = {
+         on_attach = attach,
+         capabilities = capabilities,
+         flags = {
+            debounce_text_changes = 150,
+         },
+         settings = {},
+      }
+
+      server:setup(opts)
+      vim.cmd [[ do User LspAttachBuffers ]]
+   end)
+end
+
+return M
 ```
 
 ### Advanced config
@@ -167,8 +181,8 @@ M.setup_lsp = function(attach, capabilities)
                   procAttrMacros = true,
                },
                checkOnSave = {
-						command = "clippy",
-					},
+	        	command = "clippy",
+	       },
             },
          }
 
@@ -185,8 +199,8 @@ M.setup_lsp = function(attach, capabilities)
             
             -- autoformat on save
             if client.resolved_capabilities.document_formatting then
-					vim.cmd("autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()")
-				end
+	       	vim.cmd("autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()")
+	    end
          end
       end
 
