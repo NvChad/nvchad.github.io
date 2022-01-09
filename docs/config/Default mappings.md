@@ -80,10 +80,7 @@
 | live grep                               | space + f + w |
 | oldfiles                                | space + f + o |
 | themes                                  | space + t + h |
-| &nbsp;                                  |
-| MEDIA PREVIEWS WITHIN TELESCOPE FINDERS |
-| media files                             | space + f + p |
-| &nbsp;                                  |
+| &nbsp;                                  |                          |
 | DISTRACTION FREE & MINIMALIST UI MODE   |
 | ataraxis mode                           | space + z + z |
 | focus mode                              | space + z + f |
