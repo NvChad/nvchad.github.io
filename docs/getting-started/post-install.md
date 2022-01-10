@@ -46,8 +46,8 @@ To start setting up NvChad to your needs, copy these template files:
 
 ```
 mkdir lua/custom
-cp examples/example_init.lua lua/custom/init.lua
-cp examples/example_chadrc.lua lua/custom/chadrc.lua
+cp examples/init.lua lua/custom/init.lua
+cp examples/chadrc.lua lua/custom/chadrc.lua
 ```
 
 ## Install Treesitter Parser(s)
