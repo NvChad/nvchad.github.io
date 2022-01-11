@@ -8,7 +8,7 @@ sidebar_position: 1
 
 - [Neovim 0.6.1 install page](https://github.com/neovim/neovim/releases/tag/v0.6.1)
 
-(note : use the stable 0.6v from the releases only i.e the same version if packaged in your distro will stil work, dont use nightly! )
+(note : use the stable 0.6v from the releases only i.e the same version if packaged in your distro will work too, dont use nightly! )
 
 - [Use a Nerd Font](https://www.nerdfonts.com/) in your terminal emulator.
 
