@@ -130,8 +130,7 @@ Add the following to `lua/custom/init.lua` :
 ```vim
 :Telescope media_files 
 ```
-
-- note: This works with ueberzug only which is xorg dependant so it wont work on wayland. And it wont work on other OS's either! But you can implement kitty graphics protocol support or icat support for this plugin as a PR.
+- note: This works only on linux and that too mostly Xorg since ueberzug depends on xorg, if you use wayland then its not going to work mostly but it works with [st](https://github.com/siduck/st) (knowing that xwayland is running in the bg) 
 
 - screenshot: 
 

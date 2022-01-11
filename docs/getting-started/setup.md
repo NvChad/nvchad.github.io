@@ -8,58 +8,9 @@ sidebar_position: 1
 
 - [Neovim 0.6.1 install page](https://github.com/neovim/neovim/releases/tag/v0.6.1)
 
-(note : use the stable 0.6v from the releases only, not nightly! )
-
-<details><summary>Some NeoVim installation options</summary>
-<div>
-
-### NeoVim installation options
-
-> Note: This is a summary of [NeoVim's installation page](https://github.com/neovim/neovim/wiki/Installing-Neovim)
-
-#### [With an appimage](https://github.com/neovim/neovim/wiki/Installing-Neovim#appimage-universal-linux-package)
-
-This should work across all Linux distros.
-
-```shell
-curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
-chmod u+x nvim.appimage
-./nvim.appimage
-```
-
-Then consider moving this to your local/user bin & adding an alias to this
-
-```shell
-mv ./nvim.appimage ~/.local/bin/
-echo "alias vim='/home/<YOUR USERNAME>/.local/bin/nvim.appimage'" >>~/.<bashrc or zshrc>
-```
-
-#### [Using PACMAN on Arch](https://github.com/neovim/neovim/wiki/Installing-Neovim#arch-linux)
-
-```shell
-sudo pacman -S neovim
-```
-
-#### [Using APT on Ubuntu](https://github.com/neovim/neovim/wiki/Installing-Neovim#ubuntu)
-
-> Note: This doesn't work with Debian
-
-```shell
-sudo add-apt-repository ppa:neovim-ppa/stable
-sudo apt-get update
-sudo apt-get install neovim
-```
-
-</div>
-</details>
+(note : use the stable 0.6v from the releases only i.e the same version if packaged in your distro will stil work, dont use nightly! )
 
 - [Use a Nerd Font](https://www.nerdfonts.com/) in your terminal emulator.
-- `git` & other basic Linux CLI tools
-
-### Semi-optional dependencies
-
-- `node` **Node.js** is required for many Language Servers (LSPs)
-- [`ripgrep`](https://github.com/BurntSushi/ripgrep) is required for grep searching with _Telescope_
 
 ## Install
 
@@ -85,7 +36,7 @@ mv ~/.config/nvim ~/.config/NVIM.BAK
 Then install NvChad & it's plugins with:
 
 ```shell
-git clone https://github.com/NvChad/NvChad ~/.config/nvim
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
 nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
 ```
 
@@ -104,7 +55,7 @@ choco install mingw
 
 ```shell
 git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data\site\pack\packer\start\packer.nvim"
-git clone https://github.com/NvChad/NvChad
+git clone https://github.com/NvChad/NvChad --depth 1
 ```
 
 3. Go to `~/AppData/Local/nvim`. Copy nvchad's `init.lua` and `lua` folder into the nvim folder.
