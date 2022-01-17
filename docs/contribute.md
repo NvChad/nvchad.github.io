@@ -165,8 +165,8 @@ If you wish to contribute to NvChad, you should:
 ## How to submit themes?
 
 - check the dirs : hl_themes and themes in [nvim-base16 repo](https://github.com/NvChad/nvim-base16.lua) to get an idea.
-- hl_themes/file.lua manages overall pretty highlight colors of nvchad
-- themes/file-base16.lua manages syntax colors + other highlights colors which havent been defined in nvchad
+- hl_themes/file.lua colors are used by plugin highlights like UI stuff (like statusline, icon colors etc)
+- themes/file-base16.lua colors are used for syntax highlighting 
 
 ### Creating the theme (example)
 
