@@ -5,7 +5,7 @@
 - The chadrc.lua here is for editing nvchad default options etc.
 - The init.lua here will be used for adding new plugins , new plugin configs , replace default plugin configs , adding new mappings.
 
-## Replace default config of a plugin
+### Replace default config of a plugin
 
 - Use the default_plugin_config_replace table in chadrc.lua
 
@@ -22,7 +22,9 @@ M.plugins = {
 -- make sure you do :PackerCompile or :PackerSync after this since the packer_compiled.vim or packer_compiled.lua present in the ~/.config/nvim/plugin dir needs to update the paths!
 ```
 
-## Override default config of a plugin
+### Override default config of a plugin
+
+- Note : check 'default' table in your plugin's config and override a valid table in that default table.
 
 ```lua
 M.plugins = {
@@ -51,7 +53,7 @@ M.plugins = {
 }
 ```
 
-```
+```lua
 -- /lua/custom/plugins/configs.lua file
 
 local M = {}
