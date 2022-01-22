@@ -22,6 +22,58 @@ M.plugins = {
 -- make sure you do :PackerCompile or :PackerSync after this since the packer_compiled.vim or packer_compiled.lua present in the ~/.config/nvim/plugin dir needs to update the paths!
 ```
 
+## Override default config of a plugin
+
+```lua
+M.plugins = {
+   default_plugin_config_replace = {
+      nvim_treesitter = {
+        ensure_installed = {
+          "html",
+          "css",
+       },
+     }
+   }
+}
+```
+
+- Note : the word 'nvim_treesitter' is taken from the override function from /lua/plugins/init.lua's treesitter 'use' table.
+- The above method might get clutted if you override many plugin configs, so below is a basic example to keep it clean : 
+
+```lua
+local pluginConfs = require "custom.plugins.configs"
+
+M.plugins = {
+   default_plugin_config_replace = {
+      nvim_treesitter = pluginConfigs.treesitter,
+      nvim_tree = pluginConfigs.nvimtree,
+   },
+}
+```
+
+```
+-- /lua/custom/plugins/configs.lua file
+
+local M = {}
+
+M.treesitter = {
+   ensure_installed = {
+      "lua",
+      "html",
+      "css",
+   },
+}
+
+M.nvimtree = {
+   view = {
+      side = "right",
+      width = 20,
+   },
+}
+
+return M
+```
+
 ### Add new plugins
 
 - Go to init.lua file in custom folder
