@@ -1,9 +1,39 @@
-## How to make my own config?
+## Make your own config :
 
-- Create custom dir in lua/
+- Create custom folder in lua/
 - Copy the examples dir files in this custom dir. 
-- The chadrc.lua here is for editing nvchad default options etc.
-- The init.lua here will be used for adding new plugins , new plugin configs , replace default plugin configs , adding new mappings.
+- The chadrc.lua here is for editing nvchad default options which are mentioned in lua/core/default_config.lua
+- The init.lua here will be used for adding new plugins , new plugin configs , replace default plugin configs , adding new mappings. It just behaves like the init.lua in ~/.config/nvim 
+- check siduck's [custom config](https://github.com/siduck/dotfiles/tree/master/nvchad/custom) as an reference!
+
+### Add plugins
+
+- Go to init.lua file in custom folder
+- example :
+
+```lua
+local customPlugins = require "core.customPlugins"
+
+customPlugins.add(function(use)
+   use {
+       "folke/which-key.nvim"
+        event = "something",
+        config = function()
+        --  path of config file in custom dir or add the config here itself
+        end
+    }
+ end)
+
+-- the above snippet is just an example
+```
+### Add mappings
+
+```lua
+    local map = require("core.utils").map
+
+    map("n", "<leader>cc", ":Telescope <CR>")
+    map("n", "<leader>q", ":q <CR>")
+```
 
 ### Replace default config of a plugin
 
@@ -14,12 +44,14 @@
 ```lua
 M.plugins = {
    default_plugin_config_replace = {
-      lspconfig = "custom.lspconfig",
+      bufferline = "custom.bufferline",
    },
 }
 
--- this will replace lspconfig's default config with the file custom/lspconfig.lua
--- make sure you do :PackerCompile or :PackerSync after this since the packer_compiled.vim or packer_compiled.lua present in the ~/.config/nvim/plugin dir needs to update the paths!
+-- NOTE: The 'bufferline' variable there is taken from the first argument here 
+--  config = override_req("bufferline", "plugins.configs.bufferline", "setup")
+-- you will find that in the packer's bufferline use function
+-- make sure you do :PackerCompile or :PackerSync after this since the packer_compiled.lua present needs to update 
 ```
 
 ### Override default config of a plugin
@@ -40,7 +72,7 @@ M.plugins = {
 ```
 
 - Note : the word 'nvim_treesitter' is taken from the override function from /lua/plugins/init.lua's treesitter 'use' table.
-- The above method might get clutted if you override many plugin configs, so below is a basic example to keep it clean : 
+- The above method might get messy if you override many plugin configs, so below is a basic example to keep it clean : 
 
 ```lua
 local pluginConfs = require "custom.plugins.configs"
@@ -79,36 +111,6 @@ M.nvimtree = {
 return M
 ```
 
-### Add new plugins
-
-- Go to init.lua file in custom folder
-- example :
-
-```lua
-local customPlugins = require "core.customPlugins"
-
-customPlugins.add(function(use)
-   use {
-       "folke/which-key.nvim"
-        event = "something",
-        config = function()
-           path of config file within custom dir or add the config here itself
-        end
-    }
- end)
-
--- the above snippet is just an example
-```
-
-### Add new mappings
-
-```lua
-    local map = require("core.utils").map
-
-    map("n", "<leader>cc", ":Telescope <CR>")
-    map("n", "<leader>q", ":q <CR>")
-```
-
 ### Override default highlights 
 
 - Add a path to the 'hl_override' option in the UI section of chadrc.
@@ -145,7 +147,7 @@ vim.cmd("hi Normal guifg=#yourhexcolor")
 
 - The rest of the files outside the custom folder will get overwritten by the update so don't put your config there!! Just put it in the custom folder.
 
-## Lazy loading
+### Lazy loading
 
 - We lazy load almost 95% of the plugins, so we expect you to lazy load the plugins you've added to reduce startuptime. Don't want users making NvChad slow just because they didn't lazy load plugins they've added!
 
