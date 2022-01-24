@@ -111,4 +111,60 @@ end
 ```
 
 - Now install your lsp server! :LspInstall html
+
+## Only lspconfig
+
+### Install
+
+```lua
+use {
+      "neovim/nvim-lspconfig",
+      module = "lspconfig",
+
+      config = function()
+         require "custom.plugins.lspconfig"
+      end,
+
+      -- lazy load!
+      setup = function()
+         require("core.utils").packer_lazy_load "nvim-lspconfig"
+         vim.defer_fn(function()
+            vim.cmd 'if &ft == "packer" | echo "" | else | silent! e %'
+         end, 0)
+      end,
+      opt = true,
+}
+```
+
+### Config
+
+```lua
+require("plugins.configs.others").lsp_handlers()
+
+local function on_attach(_, bufnr)
+   local function buf_set_option(...)
+      vim.api.nvim_buf_set_option(bufnr, ...)
+   end
+
+   -- Enable completion triggered by <c-x><c-o>
+   buf_set_option("omnifunc", "v:lua.vim.lsp.omnifunc")
+   require("core.mappings").lspconfig()
+end
+
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+local lspconfig = require "lspconfig"
+
+-- lspservers with default config
+local servers = { "html", "cssls" }
+
+for _, lsp in ipairs(servers) do
+   lspconfig[lsp].setup {
+      on_attach = on_attach,
+      capabilities = capabilities,
+      flags = {
+         debounce_text_changes = 150,
+      },
+   }
+end
+```
 - Check siduck's [lspconfig](https://github.com/siduck/dotfiles/blob/master/nvchad/custom/plugins/lspconfig.lua) for reference 
