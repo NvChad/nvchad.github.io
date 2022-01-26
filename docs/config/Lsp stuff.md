@@ -11,49 +11,15 @@
 M.plugins = {
    options = {
       lspconfig = {
-         setup_lspconf = "",
+         setup_lspconf = "custom.plugins.lspconfig",
       },
    },
 }
 
--- so setup_lspconf = "custom.plugins.lspconfig" as per our example
+-- so setup_lspconf = any file but that should be in custom dir!
 ```
 
-- Your lspconfig must contain these :
-
-```lua
-local M = {}
-
-M.setup_lsp = function(attach, capabilities)
-   local lspconfig = require "lspconfig"
-
-   lspconfig.lspname.setup {
-      on_attach = attach,
-      capabilities = capabilities,
-   }
-end
-
-return M
-```
-
-- For example if you wanted to setup html lsp :
-
-```lua
-local M = {}
-
-M.setup_lsp = function(attach, capabilities)
-   local lspconfig = require "lspconfig"
-
-   lspconfig.html.setup {
-      on_attach = attach,
-      capabilities = capabilities,
-   }
-end
-
-return M
-```
-
-- The following file is an example lspconfig file :
+- The following file is an example lspconfig file 
 
 ```lua
 local M = {}
@@ -62,8 +28,7 @@ M.setup_lsp = function(attach, capabilities)
    local lspconfig = require "lspconfig"
 
    -- lspservers with default config
-
-   local servers = { "html", "cssls", "pyright" }
+   local servers = { "html", "cssls", "clangd" }
 
    for _, lsp in ipairs(servers) do
       lspconfig[lsp].setup {
@@ -74,38 +39,9 @@ M.setup_lsp = function(attach, capabilities)
          },
       }
    end
-   
-   -- typescript
-
- lspconfig.tsserver.setup {
-      on_attach = function(client, bufnr)
-         client.resolved_capabilities.document_formatting = false
-         vim.api.nvim_buf_set_keymap(bufnr, "n", "<space>fm", "<cmd>lua vim.lsp.buf.formatting()<CR>", {})
-      end,
-   }
-
--- the above tsserver lspconfig will remvoe the tsserver's inbuilt formatting,since I use null-ls with denofmt for formatting ts/js.
 end
 
 return M
-```
-
-- Note : I have used a loop there since I'm just using default lspconfigs and it looks cleaner that way , without the loop it would've been very ugly , something like this :
-
-```lua
-  lspconfig.html.setup { my options }
-  lspconfig.cssls.setup { my options }
-  lspconfig.pyright.setup { my options }
-```
-
-- Then install that lspserver, if you get issues like "cmd not executable" in :LspInfo, then install that lspservers globally in your system.
-
-- I've had that same issue with some lspservers which were installed by npm and it got fixed by installing those npm packages globally :
-
-```shell
-npm config set prefix=~/.node_modules
-
-add ~/.node_modules/bin to PATH
 ```
 
 ## lsp-installer
@@ -116,7 +52,7 @@ add ~/.node_modules/bin to PATH
 ```lua
  use {
       "williamboman/nvim-lsp-installer",
-   }
+  }
 ```
 
 note: The below snippet must be your custom lspconfig! (that setup_lspconf variable in chadrc)
