@@ -1,170 +1,164 @@
+## Setup lsp server
+
 - Skim through [lspconfig repo](https://github.com/neovim/nvim-lspconfig) to get a general overview of how the config looks/works.
-- Basic [lsp_installer commands](https://github.com/williamboman/nvim-lsp-installer/#commands)
 - Then check [server_configurations.md](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md) to make sure your language's lsp server is present there.
 
-## Install plugins
-- plugins used :  nvim-lspconfig, nvim-lsp-installer , lsp-signature.nvim 
+- Create a file in your custom folder. (I would suggest creating plugins dir in custom folder , so /custom/plugins/lspconfig.lua is the config file for this example).
+
+- Enter the file path in the chadrc's lspconfig section :
 
 ```lua
- use {
-      "williamboman/nvim-lsp-installer",
-      config = function()
-         require "custom.plugins.lspconfig"
-      end,
-
-      -- lazy load!
-      setup = function()
-         require("core.utils").packer_lazy_load "nvim-lsp-installer"
-         -- reload the current file so lsp actually starts for it
-         vim.defer_fn(function()
-            vim.cmd 'if &ft == "packer" | echo "" | else | silent! e %'
-         end, 0)
-      end,
-      opt = true,
-   }
-
-   use {
-      "neovim/nvim-lspconfig",
-      module = "lspconfig",
-      after = "nvim-lsp-installer",
-   }
-
-   use {
-      "ray-x/lsp_signature.nvim",
-      after = "nvim-lspconfig",
-      config = function()
-         require "custom.plugins.signature"
-      end,
-   }
-```
-
-## Configs
-
-- custom/plugins/lspconfig.lua be like 
-
-```lua
-require("plugins.configs.others").lsp_handlers()
-
-local function on_attach(_, bufnr)
-   local function buf_set_option(...)
-      vim.api.nvim_buf_set_option(bufnr, ...)
-   end
-
-   -- Enable completion triggered by <c-x><c-o>
-   buf_set_option("omnifunc", "v:lua.vim.lsp.omnifunc")
-   require("core.mappings").lspconfig()
-end
-
-local capabilities = vim.lsp.protocol.make_client_capabilities()
-local lsp_installer = require "nvim-lsp-installer"
-
-lsp_installer.settings {
-   ui = {
-      icons = {
-         server_installed = "﫟",
-         server_pending = "",
-         server_uninstalled = "✗",
+M.plugins = {
+   options = {
+      lspconfig = {
+         setup_lspconf = "",
       },
    },
 }
 
-lsp_installer.on_server_ready(function(server)
-   -- server options, so default options for all servers
-   local opts = {
-      on_attach = on_attach,
-      capabilities = capabilities,
-      flags = {
-         debounce_text_changes = 150,
-      },
-      settings = {},
-   }
-
-   server:setup(opts)
-   vim.cmd [[ do User LspAttachBuffers ]]
-end)
+-- so setup_lspconf = "custom.plugins.lspconfig" as per our example
 ```
 
-- custom/plugins/signature.lua be like 
+- Your lspconfig must contain these :
 
 ```lua
-local present, lspsignature = pcall(require, "lsp_signature")
+local M = {}
 
-if present then
-   lspsignature.setup {
-      bind = true,
-      doc_lines = 0,
-      floating_window = true,
-      fix_pos = true,
-      hint_enable = true,
-      hint_prefix = " ",
-      hint_scheme = "String",
-      hi_parameter = "Search",
-      max_height = 22,
-      max_width = 120,
-      handler_opts = {
-         border = "single", -- double, single, shadow, none
-      },
-      zindex = 200,
-      padding = "",
+M.setup_lsp = function(attach, capabilities)
+   local lspconfig = require "lspconfig"
+
+   lspconfig.lspname.setup {
+      on_attach = attach,
+      capabilities = capabilities,
    }
 end
+
+return M
 ```
 
-- Now install your lsp server! :LspInstall html
-
-## Only lspconfig
-
-### Install
+- For example if you wanted to setup html lsp :
 
 ```lua
-use {
-      "neovim/nvim-lspconfig",
-      module = "lspconfig",
+local M = {}
 
-      config = function()
-         require "custom.plugins.lspconfig"
-      end,
+M.setup_lsp = function(attach, capabilities)
+   local lspconfig = require "lspconfig"
 
-      -- lazy load!
-      setup = function()
-         require("core.utils").packer_lazy_load "nvim-lspconfig"
-         vim.defer_fn(function()
-            vim.cmd 'if &ft == "packer" | echo "" | else | silent! e %'
-         end, 0)
-      end,
-      opt = true,
-}
+   lspconfig.html.setup {
+      on_attach = attach,
+      capabilities = capabilities,
+   }
+end
+
+return M
 ```
 
-### Config
+- The following file is an example lspconfig file :
 
 ```lua
-require("plugins.configs.others").lsp_handlers()
+local M = {}
 
-local function on_attach(_, bufnr)
-   local function buf_set_option(...)
-      vim.api.nvim_buf_set_option(bufnr, ...)
+M.setup_lsp = function(attach, capabilities)
+   local lspconfig = require "lspconfig"
+
+   -- lspservers with default config
+
+   local servers = { "html", "cssls", "pyright" }
+
+   for _, lsp in ipairs(servers) do
+      lspconfig[lsp].setup {
+         on_attach = attach,
+         capabilities = capabilities,
+         flags = {
+            debounce_text_changes = 150,
+         },
+      }
    end
+   
+   -- typescript
 
-   -- Enable completion triggered by <c-x><c-o>
-   buf_set_option("omnifunc", "v:lua.vim.lsp.omnifunc")
-   require("core.mappings").lspconfig()
+ lspconfig.tsserver.setup {
+      on_attach = function(client, bufnr)
+         client.resolved_capabilities.document_formatting = false
+         vim.api.nvim_buf_set_keymap(bufnr, "n", "<space>fm", "<cmd>lua vim.lsp.buf.formatting()<CR>", {})
+      end,
+   }
+
+-- the above tsserver lspconfig will remvoe the tsserver's inbuilt formatting,since I use null-ls with denofmt for formatting ts/js.
 end
 
-local capabilities = vim.lsp.protocol.make_client_capabilities()
-local lspconfig = require "lspconfig"
+return M
+```
 
--- lspservers with default config
-local servers = { "html", "cssls" }
+- Note : I have used a loop there since I'm just using default lspconfigs and it looks cleaner that way , without the loop it would've been very ugly , something like this :
 
-for _, lsp in ipairs(servers) do
-   lspconfig[lsp].setup {
-      on_attach = on_attach,
-      capabilities = capabilities,
-      flags = {
-         debounce_text_changes = 150,
+```lua
+  lspconfig.html.setup { my options }
+  lspconfig.cssls.setup { my options }
+  lspconfig.pyright.setup { my options }
+```
+
+- Then install that lspserver, if you get issues like "cmd not executable" in :LspInfo, then install that lspservers globally in your system.
+
+- I've had that same issue with some lspservers which were installed by npm and it got fixed by installing those npm packages globally :
+
+```shell
+npm config set prefix=~/.node_modules
+
+add ~/.node_modules/bin to PATH
+```
+
+## lsp-installer
+
+- If you don't like copy pasting configs for your lspservers and installing lspservers manually , then try nvim-lspinstalller.
+
+### Basic config
+```lua
+ use {
+      "williamboman/nvim-lsp-installer",
+   }
+```
+
+note: The below snippet must be your custom lspconfig! (that setup_lspconf variable in chadrc)
+
+```lua
+local M = {}
+
+M.setup_lsp = function(attach, capabilities)
+   local lsp_installer = require "nvim-lsp-installer"
+
+   lsp_installer.settings {
+      ui = {
+         icons = {
+            server_installed = "﫟" ,
+            server_pending = "",
+            server_uninstalled = "✗",
+         },
       },
    }
+
+   lsp_installer.on_server_ready(function(server)
+      local opts = {
+         on_attach = attach,
+         capabilities = capabilities,
+         flags = {
+            debounce_text_changes = 150,
+         },
+         settings = {},
+      }
+
+      -- basic example to edit lsp server's options, disabling tsserver's inbuilt formatter
+      if server.name == 'tsserver' then 
+        opts.on_attach = function(client, bufnr)
+           client.resolved_capabilities.document_formatting = false
+           vim.api.nvim_buf_set_keymap(bufnr, "n", "<space>fm", "<cmd>lua vim.lsp.buf.formatting()<CR>", {})
+         end,
+      end
+      
+      server:setup(opts)
+      vim.cmd [[ do User LspAttachBuffers ]]
+   end)
 end
+
+return M
 ```
-- Check siduck's [lspconfig](https://github.com/siduck/dotfiles/blob/master/nvchad/custom/plugins/lspconfig.lua) for reference 
