@@ -12,6 +12,10 @@ sidebar_position: 1
 
 - [Use a Nerd Font](https://www.nerdfonts.com/) in your terminal emulator.
 
+### Semi-optional 
+
+- [`ripgrep`](https://github.com/BurntSushi/ripgrep) is required for grep searching with _Telescope_
+
 ## Install
 
 Installation is as easy as cloning the NvChad repository into your NeoVim configuration folder.
