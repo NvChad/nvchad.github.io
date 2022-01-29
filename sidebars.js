@@ -17,7 +17,6 @@ module.exports = {
         "config/Nvim lua stuff",
         "config/Custom config",
         "config/Lsp stuff",
-        "config/Autocompletion",
         "config/Format & lint",
       ],
     },
