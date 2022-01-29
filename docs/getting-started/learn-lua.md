@@ -14,8 +14,8 @@ print("Hi")
 ## Comments
 
 ```lua
--- a comment
-print("hi") -- another comment
+-- A comment
+print("Hi") -- another comment
 ```
 
 ## Variables
@@ -31,7 +31,7 @@ local a = nil --no value or invalid value
 **Numbers**
 
 ```lua
--- examples
+-- Examples
 local a = 1
 local b = 2
 
@@ -48,14 +48,14 @@ print(level) -- 2
 **Strings**
 
 ```lua
--- concatenate strings
+-- Concatenate strings
 local phrase = "I am"
 local name = "Sid"
-print(phase .. name) -- I am Sid
+print(phase .. " " .. name) -- I am Sid
 
--- strings and numbers
+-- Strings and numbers
 local name = "NvChad"
-print(name .. "v" .. 1.0) -- NvChad v1.0
+print(name .. " v" .. 1.0) -- NvChad v1.0
 ```
 
 **Boolean**
@@ -80,7 +80,7 @@ print(isAlive) -- false
 ## Conditional Statements
 
 ```lua
--- number comparisions
+-- Number comparisons
 local age = 10
 
 if age > 18 then
@@ -100,18 +100,19 @@ end
 ```
 
 ```lua
--- boolean comparision
+-- Boolean comparison
 local isAlive = true
 
 if isAlive then
     print("Be grateful!")
 end
 
--- string comparisions
+-- String comparisons
 local name = "sid"
 
 if name ~= "sid" then
   print("not sid")
+end
 ```
 
 **Combining Statements**
@@ -125,7 +126,7 @@ elseif x == 18 or x > 18 then -- 1 or more are true
   print("over 18")
 end
 
---result: over 18
+-- result: over 18
 ```
 
 **Invert Value**
@@ -161,7 +162,7 @@ num(5)
 ```lua
 -- multiple parameters
 
-function sum(a + b)
+function sum(a, b)
   local result = a + b
   print(result)
 end
@@ -176,7 +177,7 @@ function foo()
   local n = 10
 end
 
-print(n) -- nil , n isnt accessable outside foo()
+print(n) -- nil , n isn't accessible outside foo()
 ```
 
 ## Loops
@@ -194,7 +195,7 @@ end
 
 OR
 
---for loop
+-- for loop
 for i = 0, 3 do
    print("hi")
    i = i + 1
@@ -209,15 +210,15 @@ hi
 ## Tables
 
 ```lua
--- basic table
+-- Basic table
 local colors = { "red", "green", "blue" }
 
-print(colors[1]) --red
-print(colors[2]) --green
-print(colors[3]) --blue
+print(colors[1]) -- red
+print(colors[2]) -- green
+print(colors[3]) -- blue
 
--- use a loop to iterate though the table
-for i=1, #colors do
+-- Use a loop to iterate though the table
+for i = 1, #colors do
   print(colors[i])
 end
 ```
@@ -225,7 +226,7 @@ end
 **Two Dimensional Table**
 
 ```lua
---tables within tables
+-- Tables within tables
 local data = {
     { "billy", 12 },
     { "john", 20 },
@@ -238,7 +239,7 @@ end
 
 ## Modules
 
-Include code other files
+Include code from other files
 
 ```lua
 require("otherfile")
