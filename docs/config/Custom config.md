@@ -11,7 +11,7 @@
 - Go to custom folder
 
 ```lua
--- /lua/custom/plugins
+-- /lua/custom/plugins/init.lua
 return {
    { "elkowar/yuck.vim", ft = "yuck" },
    { "ellisonleao/glow.nvim", cmd = "Glow" },
