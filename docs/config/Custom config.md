@@ -1,31 +1,33 @@
 ## Make your own config :
 
 - Create custom folder in lua/
-- Copy the examples dir files in this custom dir. 
+- Copy the examples dir files in this custom dir.
 - The chadrc.lua here is for editing nvchad default options which are mentioned in lua/core/default_config.lua
-- The init.lua here will be used for adding new plugins , new plugin configs , replace default plugin configs , adding new mappings. It just behaves like the init.lua in ~/.config/nvim 
+- The init.lua here will be used for adding new plugins , new plugin configs , replace default plugin configs , adding new mappings. It just behaves like the init.lua in ~/.config/nvim
 - check siduck's [custom config](https://github.com/siduck/dotfiles/tree/master/nvchad/custom) as an reference!
 
 ### Add plugins
 
-- Go to init.lua file in custom folder
-- example :
+- Go to custom folder
 
 ```lua
-local customPlugins = require "core.customPlugins"
-
-customPlugins.add(function(use)
-   use {
-       "folke/which-key.nvim"
-        event = "something",
-        config = function()
-        --  path of config file in custom dir or add the config here itself
-        end
-    }
- end)
-
--- the above snippet is just an example
+-- /lua/custom/plugins
+return {
+   { "elkowar/yuck.vim", ft = "yuck" },
+   { "ellisonleao/glow.nvim", cmd = "Glow" },
+}
+-- just an example!
 ```
+
+```lua
+-- chadrc
+local userPlugins = require "custom.plugins" -- path to table
+
+M.plugins = {
+   install = userPlugins
+}
+```
+
 ### Add mappings
 
 ```lua
@@ -48,10 +50,10 @@ M.plugins = {
    },
 }
 
--- NOTE: The 'bufferline' variable there is taken from the first argument here 
+-- NOTE: The 'bufferline' variable there is taken from the first argument here
 --  config = override_req("bufferline", "plugins.configs.bufferline", "setup")
 -- you will find that in the packer's bufferline use function
--- make sure you do :PackerCompile or :PackerSync after this since the packer_compiled.lua present needs to update 
+-- make sure you do :PackerCompile or :PackerSync after this since the packer_compiled.lua present needs to update
 ```
 
 ### Override default config of a plugin
@@ -72,7 +74,7 @@ M.plugins = {
 ```
 
 - Note : the word 'nvim_treesitter' is taken from the override function from /lua/plugins/init.lua's treesitter 'use' table.
-- The above method might get messy if you override many plugin configs, so below is a basic example to keep it clean : 
+- The above method might get messy if you override many plugin configs, so below is a basic example to keep it clean :
 
 ```lua
 local pluginConfs = require "custom.plugins.configs"
@@ -111,7 +113,7 @@ M.nvimtree = {
 return M
 ```
 
-### Override default highlights 
+### Override default highlights
 
 - Add a path to the 'hl_override' option in the UI section of chadrc.
 
@@ -120,9 +122,10 @@ M.ui = {
    hl_override = "custom.highlights",
 }
 ```
+
 - NOTE : The above path is just an example , which will mean that your highlights file is /custom/highlights.lua.
 - highlights file might contain this.
- 
+
 ```lua
 local colors = require("colors").get()
 
@@ -130,11 +133,11 @@ local fg = require("core.utils").fg
 local fg_bg = require("core.utils").fg_bg
 local bg = require("core.utils").bg
 
-fg("Normal", colors.red) 
+fg("Normal", colors.red)
 
--- If you dont want to require the above stuffs then you could just do : 
+-- If you dont want to require the above stuffs then you could just do :
 
-vim.cmd("hi Normal guifg=#yourhexcolor") 
+vim.cmd("hi Normal guifg=#yourhexcolor")
 ```
 
 ### Autocmds

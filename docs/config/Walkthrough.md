@@ -17,7 +17,6 @@ NvChad comes with the following file / folder structure. [An up-to-date & full t
 │   ├── core
 │   │   ├── autocmds.lua
 │   │   ├── default_config.lua
-│   │   ├── customPlugins.lua (i)
 │   │   ├── mappings.lua
 │   │   ├── options.lua
 │   │   └── utils.lua (i)
@@ -25,7 +24,7 @@ NvChad comes with the following file / folder structure. [An up-to-date & full t
 │   ├── custom
 │   │   ├── chadrc.lua
 │   │   ├── init.lua
-│   │   ├── more files
+│   │   ├── more files, dirs
 │   │
 │   ├── plugins
 │   │    ├── init.lua
