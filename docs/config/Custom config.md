@@ -81,8 +81,8 @@ local pluginConfs = require "custom.plugins.configs"
 
 M.plugins = {
    default_plugin_config_replace = {
-      nvim_treesitter = pluginConfigs.treesitter,
-      nvim_tree = pluginConfigs.nvimtree,
+      nvim_treesitter = pluginConfs.treesitter,
+      nvim_tree = pluginConfs.nvimtree,
    },
 }
 ```
