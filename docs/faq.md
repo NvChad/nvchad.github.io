@@ -4,15 +4,15 @@
 
 ### How to change theme of NvChad?
 
-- Press `<leader> + th`, then select your theme and press enter, restart nvim and done 👍. (<leader> is <space> by default)
+- Press `<leader> + th`, then select your theme and press enter, restart nvim and done 👍. (`<leader>` is `<space>` by default)
 
 ### How can I update NvChad?
 
-- Press `<leader> + uu`, to update NvChad. (<leader> is <space> by default)
+- Press `<leader> + uu`, to update NvChad. (`<leader>` is `<space>` by default)
 
 ### How can I check default mappings of NvChad?
 
-- Press `<leader> + ch`, to see the cheatsheet. (<leader> is <space> by default)
+- Press `<leader> + ch`, to see the cheatsheet. (`<leader>` is `<space>` by default)
 
 ### My icons aren't working, what should I do?
 
