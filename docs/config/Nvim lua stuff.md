@@ -1,13 +1,13 @@
-### load a file 
+### Load a file 
 
-- suppose file is ~/.config/nvim/lua/core/chad.lua
-- note that lua dir in your nvim config is already in the runtime!
+- Suppose file is ~/.config/nvim/lua/core/chad.lua
+- Note that lua dir in your nvim config is already in the runtime!
 
 ```lua
 require 'core.chad'
 ```
 
-- if you rename that chad.lua to init.lua 
+- If you rename that chad.lua to init.lua 
 
 ```lua
 require 'core'
@@ -20,7 +20,7 @@ vimscript:
 set mouse = a
 ```
 
-lua :
+lua:
 ```lua
 vim.opt.mouse = "a"
 ```
@@ -39,7 +39,7 @@ vim.cmd([[
 
 ### globals
 
-vimscript :
+vimscript:
 
 ```
 let g:autosave = true
