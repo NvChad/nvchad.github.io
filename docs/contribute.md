@@ -7,8 +7,8 @@ title: Contribute
 
 If you wish to contribute to NvChad, you should:
 
-1. [create a fork on GitHub](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
-2. clone your fork to your machine
+1. [Create a fork on GitHub](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
+2. Clone your fork to your machine
   - For ssh:
     ```shell
     $ git clone git@github.com:<YOUR GITHUB USERNAME>/NvChad.git ~/.config/nvim
@@ -17,22 +17,22 @@ If you wish to contribute to NvChad, you should:
     ```shell
     $ git clone https://github.com/<YOUR GITHUB USERNAME>/NvChad.git ~/.config/nvim
     ```
-3. [add a new remote repo to track](https://www.atlassian.com/git/tutorials/git-forks-and-upstreams)
-   - this means you can push/pull as normal to your own repo, but also easily track & update from the NvChad repo
-    - for ssh:
+3. [Add a new remote repo to track](https://www.atlassian.com/git/tutorials/git-forks-and-upstreams)
+   - This means you can push/pull as normal to your own repo, but also easily track & update from the NvChad repo
+    - For ssh:
        ```shell
        $ git remote add upstream git@github.com:NvChad/NvChad.git
        ```
-    - for https:
+    - For https:
        ```shell
        $ git remote add upstream https://github.com/NvChad/NvChad.git
        ```  
-4. any time you create a branch to do some work, use 
+4. Any time you create a branch to do some work, use 
    ```shell
    $ git fetch upstream && git checkout -b dev-myFEAT upstream/main
    ```
-5. only use the **--rebase** flag to update your dev branch
-   - this means that there are no `Merge NvChad/main into devBranch` commits, which are to be avoided
+5. Only use the **--rebase** flag to update your dev branch
+   - This means that there are no `Merge NvChad/main into devBranch` commits, which are to be avoided
    ```shell
    $ git pull upstream --rebase
    ```
@@ -43,15 +43,15 @@ If you wish to contribute to NvChad, you should:
 
 - We are open to all PRs, but may decline some for a myriad of reasons. Though don't be discouraged! We'll still be open to discussions.
 
-- PR's are always welcomed however NvChad aims to be less bloated. So PR's regarding existing plugin's enhancement and creating new features with existing plugins itself ( without adding a new plugin), bug fixes and corrections are more encouraged.
+- PR's are always welcomed however NvChad aims to be less bloated. So PR's regarding existing plugin's enhancement and creating new features with existing plugins itself (without adding a new plugin), bug fixes and corrections are more encouraged.
 
-- NvChad wont keep adding more and more features (like adding new plugins most likely) as requested if they feel unneeded and arent usable by the majority!! If you think the plugin you want to be added is very useful and many NvChaders would find it useful, then such feature's PR is welcomed!
+- NvChad won't keep adding more and more features (like adding new plugins) as requested if they feel unneeded and aren't usable by the majority!! If you think the plugin you want to be added is very useful and many NvChaders would find it useful, then such feature's PR is welcomed!
 
-- But adding specific features like adding config for [wakatime](https://github.com/wakatime/vim-wakatime) etc will be added in this [chad user configs](https://github.com/NvChad/NvChad/wiki/Chad-user-configs). This lets the user select the things only they want ( adding configs from extra configs ).
+- But adding specific features like adding config for [wakatime](https://github.com/wakatime/vim-wakatime) etc will be added in this [chad user configs](https://github.com/NvChad/NvChad/wiki/Chad-user-configs). This lets the user select the things only they want (adding configs from extra configs).
 
 ## Format your PR with stylua 
 
-- check the [stylua config](https://github.com/NvChad/NvChad/blob/main/.stylua.toml)
+- Check the [stylua config](https://github.com/NvChad/NvChad/blob/main/.stylua.toml)
 
 ## How to remove or edit commits from your PR
 > You may have been directed here to remove a commit such as a merge commit: `Merge NvChad/main into devBranch` from your PR
@@ -164,14 +164,14 @@ If you wish to contribute to NvChad, you should:
 
 ## How to submit themes?
 
-- check the dirs : hl_themes and themes in [nvim-base16 repo](https://github.com/NvChad/nvim-base16.lua) to get an idea.
+- Check the dirs : hl_themes and themes in [nvim-base16 repo](https://github.com/NvChad/nvim-base16.lua) to get an idea.
 - hl_themes/file.lua colors are used by plugin highlights like UI stuff (like statusline, icon colors etc)
 - themes/file-base16.lua colors are used for syntax highlighting 
 
 ### Creating the theme (example)
 
-- create a file and name it doom.lua 
-- put this file in the hl_themes dir
+- Create a file and name it doom.lua 
+- Put this file in the hl_themes dir
 
 Use my [tool](https://siduck.github.io/hex-tools/) to lighten or darken colors , or some tool which does the same thing.
 
@@ -211,14 +211,14 @@ folder_bg = blue color
 
 (Creating base16 theme)
 
-- create a file and name it doom-base16.lua
-- put this file in the themes dir.
+- Create a file and name it doom-base16.lua
+- Put this file in the themes dir.
 
-- copy the structure from other base16 themes in the themes dir.
+- Copy the structure from other base16 themes in the themes dir.
 - Follow the [base16 conventions](https://github.com/chriskempson/base16/blob/master/styling.md).
 - Make sure the variable names dont have "#" before the hex values i.e base00 = #000000 would be wrong , but base00 = 000000 would be right.
 
 - Now send the PR!!
 
-(note : if your theme requires changes to be done by siduck's side then the theme name will have 'chad' in it)
-(note : above guide was only for the dark theme! making light themes is tougher and a pain xD , will make doc for it too soon!)
+(Note : if your theme requires changes to be done by siduck's side then the theme name will have `chad` in it)
+(Note : above guide was only for the dark theme! making light themes is tougher and a pain xD , will make doc for it too soon!)

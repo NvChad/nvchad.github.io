@@ -55,6 +55,6 @@ end
 return M
 ```
 
-- Format code : leader fm
+- Format code : `<leader> + fm`
 - Check [null-ls builtins](https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md) to get config for your language!
 - Also note that in the above example I've added some config of linters and formatters in null-ls config, so those programs must be installed on my system as well! Like prettierd , stylua , shfmt , eslint_d etc.

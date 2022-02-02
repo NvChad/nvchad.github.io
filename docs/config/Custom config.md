@@ -1,10 +1,10 @@
 ## Make your own config :
 
 - Create custom folder in lua/
-- Copy the examples dir files in this custom dir.
-- The chadrc.lua here is for editing nvchad default options which are mentioned in lua/core/default_config.lua
+- Copy the /examples dir files in this custom dir.
+- The chadrc.lua here is for editing NvChad default options which are mentioned in lua/core/default_config.lua
 - The init.lua here will be used for adding new plugins , new plugin configs , replace default plugin configs , adding new mappings. It just behaves like the init.lua in ~/.config/nvim
-- check siduck's [custom config](https://github.com/siduck/dotfiles/tree/master/nvchad/custom) as an reference!
+- Check siduck's [custom config](https://github.com/siduck/dotfiles/tree/master/nvchad/custom) as an reference!
 
 ### Add plugins
 
@@ -20,7 +20,7 @@ return {
 ```
 
 ```lua
--- chadrc
+-- /lua/custom/chadrc.lua
 local userPlugins = require "custom.plugins" -- path to table
 
 M.plugins = {
@@ -115,7 +115,7 @@ return M
 
 ### Override default highlights
 
-- Add a path to the 'hl_override' option in the UI section of chadrc.
+- Add a path to the 'hl_override' option in the UI section of chadrc.lua.
 
 ```lua
 M.ui = {
@@ -142,20 +142,20 @@ vim.cmd("hi Normal guifg=#yourhexcolor")
 
 ### Autocmds
 
-- Well, for example you just create a new file called autochad_cmds.lua in the custom folder and require it in the init.lua file of the custom folder! BOOOM!!
+- Well, for example you just create a new file called autochad_cmds.lua in the lua/custom folder and require it in lua/custom/init.lua! BOOOM!!
 
 ### Files to edit
 
-- Only files that are supposed to edited by the user are meant to be in the custom dir, default files in that folder are example_chadrc and example_init which can be just renamed by the user into chadrc.lua and init.lua .
+- Only files that are supposed to edited by the user are meant to be in the /lua/custom/ , example files can be copied from /examples/.
 
-- The rest of the files outside the custom folder will get overwritten by the update so don't put your config there!! Just put it in the custom folder.
+- The rest of the files outside the custom folder will get overwritten when updated using `<leader> + uu` , so don't put your config there!! Just put it in the /lua/custom/ folder.
 
 ### Lazy loading
 
-- We lazy load almost 95% of the plugins, so we expect you to lazy load the plugins you've added to reduce startuptime. Don't want users making NvChad slow just because they didn't lazy load plugins they've added!
+- We lazy load almost 95% of the plugins, so we expect you to lazy load the plugins you've added to reduce startuptime. We don't want users making NvChad slow just because they didn't lazy load plugins they've added!
 
 - Check [packer's readme](https://github.com/wbthomason/packer.nvim#specifying-plugins) for more info!
 
 ![lessgooo](https://cdn.discordapp.com/attachments/610012463907209227/891011437810577480/863483056531046450.png)
 
-(note : Please open out an issue on the repo if you find any inaccuracies in the docs!)
+(Note : Please open out an [issue](https://github.com/NvChad/nvchad.github.io/issues) on the repo if you find any inaccuracies in the docs!)

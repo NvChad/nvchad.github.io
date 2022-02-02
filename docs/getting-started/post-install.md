@@ -18,7 +18,7 @@ These are highly recommend and a **must do for any new Vimmer**
   ```
   :h <cmd>
   :h autocommand
-  :h nvim.api
+  :h vim.api
   :h insert
   ```
 - [Google your issue](https://google.com)
@@ -40,7 +40,7 @@ In order to set any custom options, you must use the `lua/custom/` directory. Th
 
 ---
 
-NvChad provides `example_init.lua` & `example_chadrc.lua` inside of the `examples` folder.
+NvChad provides `init.lua` & `chadrc.lua` inside of the `examples` folder.
 
 To start setting up NvChad to your needs, copy these template files:
 
