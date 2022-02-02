@@ -23,7 +23,7 @@
 }
 ```
 
-## autosave.nvim
+## AutoSave.nvim
 
 - Auto save files plugin written in lua
 - [repo](https://github.com/Pocco81/AutoSave.nvim)
@@ -52,7 +52,7 @@
 }
 ```
 
-## Truezen.nvim
+## TrueZen.nvim
 
 - Clean and elegant distraction-free writing for NeoVim.
 - [repo](https://github.com/Pocco81/TrueZen.nvim)
@@ -75,7 +75,7 @@
 ## filetype.nvim
 
 - A fast and lua alternative to `filetype.vim`. It is ~175x faster than `filetype.vim`
-- [Repo](https://github.com/nathom/filetype.nvim)
+- [repo](https://github.com/nathom/filetype.nvim)
 - config :
 
 ```lua
@@ -91,7 +91,8 @@ Add the following to `lua/custom/init.lua` :
 
 ## stabilize.nvim
 
-- Neovim plugin to stabilize window open/close events
+- NeoVim plugin to stabilize window open/close events
+- [repo](https://github.com/luukvbaal/stabilize.nvim)
 - config : 
 
 ```lua
@@ -104,7 +105,7 @@ Add the following to `lua/custom/init.lua` :
 ## telescope-media-files.nvim
 
 - Telescope extension to preview media files using Ueberzug
-- dependencies : ueberzug , ripgrep or fd
+- Dependencies : `ueberzug` , `ripgrep` or `fd`
 - config : 
 
 ```lua
@@ -130,7 +131,7 @@ Add the following to `lua/custom/init.lua` :
 ```vim
 :Telescope media_files 
 ```
-- note: This works only on linux and that too mostly Xorg since ueberzug depends on xorg, if you use wayland then its not going to work mostly but it works with [st](https://github.com/siduck/st) (knowing that xwayland is running in the bg) 
+- Note: This works only on linux and that too mostly xorg since ueberzug depends on xorg, if you use wayland then its not going to work mostly but it works with [st](https://github.com/siduck/st) (knowing that xwayland is running in the bg) 
 
 - screenshot: 
 
