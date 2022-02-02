@@ -50,12 +50,12 @@ NvChad comes with the following file / folder structure. [An up-to-date & full t
 
 - NvChads's config has a lua dir and init.lua.
 - The init.lua basically loads the core config and custom config.
-- pcall is usually used for error handling. check [lua docs](https://www.lua.org/pil/8.4.html) for more info.
+- pcall is usually used for error handling . Check [lua docs](https://www.lua.org/pil/8.4.html) for more info.
 
 ## Themes
 
 - First copy examples/chadrc.lua to lua/custom/chadrc.lua , make sure it has the theme table
-- `<leader> + th` (<leader> is <space> in our config)
+- `<leader> + th` (`<leader>` is `<space>` in our config)
 
 ## Mappings
 
