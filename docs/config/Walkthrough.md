@@ -78,7 +78,7 @@ M.mappings.plugins = {} has plugin related mappings
 # Plugins
 
 - The lua/plugins dir contains three files , init.lua , packerInit.lua and the configs dir.
-- packerInitlua : this file is used for defining packer's init stuff , so things like clone_timeout , compile_on_sync , etc and other packer related options are mentioned [here](https://github.com/wbthomason/packer.nvim/blob/master/doc/packer.txt).
+- packerInit.lua : this file is used for defining packer's init stuff , so things like clone_timeout , compile_on_sync , etc and other packer related options are mentioned [here](https://github.com/wbthomason/packer.nvim/blob/master/doc/packer.txt).
 - init.lua : is basically the packer config , it calls packerInit first and then following with definitions of other plugins + their configs'
 - For example to add a plugin , packer uses this format :
 
