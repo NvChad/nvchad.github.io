@@ -1,9 +1,9 @@
-- (NOTE : Make sure you know basic lua , if not then [check](https://nvchad.github.io/getting-started/learn-lua) ).
+- (NOTE : Make sure you know basic lua , if not then [check](https://nvchad.github.io/getting-started/learn-lua)).
 - Make sure that you read sections in config (in the sidebar of this site) orderwise.
 
 ## Structure
 
-NvChad comes with the following file / folder structure. [An up-to-date & full tree can be viewed in the repo](https://github.com/NvChad/NvChad/)
+NvChad comes with the following file / folder structure. [An up-to-date & full tree can be viewed in the repo](https://github.com/NvChad/NvChad/).
 
 ```tree
 
@@ -20,11 +20,6 @@ NvChad comes with the following file / folder structure. [An up-to-date & full t
 │   │   ├── mappings.lua
 │   │   ├── options.lua
 │   │   └── utils.lua (i)
-|   |
-│   ├── custom
-│   │   ├── chadrc.lua
-│   │   ├── init.lua
-│   │   ├── more files, dirs
 │   │
 │   ├── plugins
 │   │    ├── init.lua
@@ -32,11 +27,17 @@ NvChad comes with the following file / folder structure. [An up-to-date & full t
 │   │    └── configs
 │   │        ├── bufferline.lua
 │   │        ├── others.lua
-│   │        └── <many more plugin configs>
+│   │        └── many more plugin configs
+|   |
+│   ├── custom *
+│   │   ├── chadrc.lua
+│   │   ├── init.lua
+│   │   ├── more files, dirs
 
 ```
 
-- The file names in the tree with (i) are meant to be ignored , i.e the user doesnt need to look at them. I assume you have basic lua knowledge The lua code in those files might fret you or look very complex / scare you from NvChad xD.
+- The file names in the tree with (i) are meant to be ignored , i.e the user doesn't need to look at them. I assume you have basic lua knowledge . The lua code in those files might fret you or look very complex / scare you from NvChad xD.
+- (*) : custom dir has to be created by the user. 
 
 ## Walkthrough
 
@@ -49,21 +50,21 @@ NvChad comes with the following file / folder structure. [An up-to-date & full t
 
 - NvChads's config has a lua dir and init.lua.
 - The init.lua basically loads the core config and custom config.
-- pcall is usually used for error handling. check [https://www.lua.org/pil/8.4.html](lua docs) for more info.
+- pcall is usually used for error handling. check [lua docs](https://www.lua.org/pil/8.4.html) for more info.
 
 ## Themes
 
-- First copy example chadrc in lua/custom/, make sure it has the theme table
-- leader + th (leader is space in our config)
+- First copy examples/chadrc.lua to lua/custom/chadrc.lua , make sure it has the theme table
+- `<leader> + th` (<leader> is <space> in our config)
 
 ## Mappings
 
-- leader + ch 
+- `<leader> + ch` 
 
 ## Default general options
 
-- This file is core/default_config.lua
-- The table below contain all the default options for various stuffs in NvChad.
+- This file is lua/core/default_config.lua
+- The table below contains all the default options for various stuff in NvChad.
 
 For example :
 
@@ -77,7 +78,7 @@ M.mappings.plugins = {} has plugin related mappings
 # Plugins
 
 - The lua/plugins dir contains three files , init.lua , packerInit.lua and the configs dir.
-- packerInit: this file is used for defining packer's init stuff , so things like clone_timeout , compile_on_sync , etc and other packer related options are mentioned here.
+- packerInitlua : this file is used for defining packer's init stuff , so things like clone_timeout , compile_on_sync , etc and other packer related options are mentioned [here](https://github.com/wbthomason/packer.nvim/blob/master/doc/packer.txt).
 - init.lua : is basically the packer config , it calls packerInit first and then following with definitions of other plugins + their configs'
 - For example to add a plugin , packer uses this format :
 
@@ -97,4 +98,4 @@ use {
     end
 }
 ```
-- configs dir : most default plugins's configs are stored here!!
+- configs dir : most default plugins' configs are stored here!!
