@@ -140,6 +140,33 @@ fg("Normal", colors.red)
 vim.cmd("hi Normal guifg=#yourhexcolor")
 ```
 
+### Remove / Redefine plugins  
+
+- Sometimes you want to totally change the packer definition config of a plugin , for example this : 
+
+```lua
+  {
+    "plugin name",
+    -- more options here like config,setup
+    -- after, cmd etc!
+  }
+```
+
+- So in order to remove that plugin, add plugin's name in  default_plugin_remove of plugins table in chadrc. Example :
+
+```lua
+M.plugins = {
+   default_plugin_remove = {
+       "akinsho/bufferline.nvim",
+       "norcalli/nvim-colorizer.lua",
+       "neovim/nvim-lspconfig",
+      
+   },
+}
+```
+- There's a function which takes the values in the above table and remove those plugins from the default plugin table (in lua/plugins/init.lua).
+- And then you can re-define (i.e install) that plugin in your custom dir's chadrc.
+
 ### Autocmds
 
 - Well, for example you just create a new file called autochad_cmds.lua in the lua/custom folder and require it in lua/custom/init.lua! BOOOM!!
