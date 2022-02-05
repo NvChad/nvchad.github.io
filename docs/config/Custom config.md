@@ -160,7 +160,6 @@ M.plugins = {
        "akinsho/bufferline.nvim",
        "norcalli/nvim-colorizer.lua",
        "neovim/nvim-lspconfig",
-      
    },
 }
 ```
