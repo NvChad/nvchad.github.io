@@ -59,10 +59,10 @@ choco install mingw
 
 ```shell
 git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data\site\pack\packer\start\packer.nvim"
-git clone https://github.com/NvChad/NvChad --depth 1
+git clone https://github.com/NvChad/NvChad nvim --depth 1
 ```
 
-3. Go to `~/AppData/Local/nvim`. Copy nvchad's `init.lua` and `lua` folder into the nvim folder.
+3. Copy the nvim dir to `~/AppData/Local/`.
 4. Then launch `nvim` like so:
 
 ```shell
