@@ -9,6 +9,7 @@
 ### Add plugins
 
 - Go to custom folder
+- make sure that every plugin definition is wrapped into a table.
 
 ```lua
 -- /lua/custom/plugins/init.lua
