@@ -47,17 +47,23 @@ return M
 ## lsp-installer
 
 - If you don't like copy pasting configs for your lspservers and installing lspservers manually , then try nvim-lspinstalller.
+(Make sure you install lsp-installer, you should know how to add plugins in nvchad!)
 
 ### Basic config
-```lua
- use {
-      "williamboman/nvim-lsp-installer",
-  }
-```
 
 note: The below snippet must be your custom lspconfig! (that setup_lspconf variable in chadrc)
 
 ```lua
+M.options = {
+  lspconfig = {
+    setup_lspconf = "custom.configs.lspconfig", -- or any path
+  }
+}
+```
+
+```lua
+-- custom.configs.lspconfig file 
+
 local M = {}
 
 M.setup_lsp = function(attach, capabilities)
