@@ -38,6 +38,34 @@ M.plugins = {
     map("n", "<leader>q", ":q <CR>")
 ```
 
+### Use default mapping for another command 
+
+```lua 
+
+-- Just an example! (chadrc boiii)
+local map = require("core.utils").map
+
+-- leader + e is used for nvimtree focus so disable it
+M.mappings = {
+   plugins = {
+      nvimtree = {
+         focus = "",
+      },
+   },
+}
+
+-- Leader + e => opens telescope
+M.plugins = {
+   default_plugin_config_replace = {
+      telescope = {
+         on_setup = function()
+            map("n", "<leader>e", ":Telescope<CR>")
+         end,
+      },
+   },
+}
+```
+
 ### Replace default config of a plugin
 
 - Use the default_plugin_config_replace table in chadrc.lua
