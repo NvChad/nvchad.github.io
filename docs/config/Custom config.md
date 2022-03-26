@@ -169,6 +169,54 @@ fg("Normal", colors.red)
 vim.cmd("hi Normal guifg=#yourhexcolor")
 ```
 
+### Custom theme
+
+Many popular themes are integrated perfectly by default (check them by <kbd>\<Leader\></kbd>+<kbd>t</kbd>+<kbd>h</kbd> or `:Telescope themes`).
+If your favorite one is not covered, you could get it by the followings:
+
+#### Recommended
+
+Make a [PR](https://nvchad.github.io/contribute#how-to-submit-themes) or open an [issue](https://github.com/NvChad/NvChad/issues) for the theme on Github.
+
+#### Manually
+
+* add themes as plugins:
+
+```lua
+--  custom/plugins/inited.lua
+
+return {
+	{ "local/path/to/mytheme" }, -- local
+	{ "Iron-E/nvim-highlite" }, -- remote
+}
+```
+
+* add colors file in format of [this](https://github.com/NvChad/nvim-base16.lua/blob/master/lua/hl_themes/aquarium.lua) for ui stuffs:
+
+```lua
+-- custom/colors.lua
+
+return {
+	white = "#ced4df",
+	darker_black = "#1a1a24",
+	black = "#20202A", --  nvim bg
+	...
+}
+```
+
+* set colors and theme in `chadrc.lua`:
+
+```lua
+-- custom/chadrc.lua
+
+M.ui = {
+  theme = "mytheme",
+  -- theme = "highlite",
+  colors = "custom.colors",
+}
+```
+(*Note*, the compatibility of a custom theme with NvChad is not guaranteed, and potential highlighting issues should be fixed by yourself in `hl_override` or somewhere else)
+
 ### Remove / Redefine plugins  
 
 - Sometimes you want to totally change the packer definition config of a plugin , for example this : 
