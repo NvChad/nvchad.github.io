@@ -11,7 +11,6 @@
 ```lua
   use {
       "karb94/neoscroll.nvim",
-       opt = true,
        config = function()
           require("neoscroll").setup()
        end,
