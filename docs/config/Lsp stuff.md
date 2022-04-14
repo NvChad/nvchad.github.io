@@ -54,9 +54,11 @@ return M
 note: The below snippet must be your custom lspconfig! (that setup_lspconf variable in chadrc)
 
 ```lua
-M.options = {
-  lspconfig = {
-    setup_lspconf = "custom.configs.lspconfig", -- or any path
+M.plugins = {
+  options = {
+     lspconfig = {
+       setup_lspconf = "custom.configs.lspconfig", -- or any path
+     }
   }
 }
 ```
