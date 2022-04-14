@@ -55,8 +55,10 @@ note: The below snippet must be your custom lspconfig! (that setup_lspconf varia
 
 ```lua
 M.options = {
-  lspconfig = {
-    setup_lspconf = "custom.configs.lspconfig", -- or any path
+  options = {
+     lspconfig = {
+       setup_lspconf = "custom.configs.lspconfig", -- or any path
+     }
   }
 }
 ```
