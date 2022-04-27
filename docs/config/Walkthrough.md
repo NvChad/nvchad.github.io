@@ -36,8 +36,8 @@ NvChad comes with the following file / folder structure. [An up-to-date & full t
 
 ```
 
-- The file names in the tree with (i) are meant to be ignored , i.e the user doesn't need to look at them. I assume you have basic lua knowledge . The lua code in those files might fret you or look very complex / scare you from NvChad xD.
-- (*) : custom dir has to be created by the user. 
+- The file names in the tree with (i) are meant to be ignored , i.e the user doesn't need to look at them as the lua code in those files might fret you or look very complex / scare you from NvChad xD.
+- (note) : custom dir has to be created by the user. 
 
 ## Walkthrough
 
@@ -55,11 +55,11 @@ NvChad comes with the following file / folder structure. [An up-to-date & full t
 ## Themes
 
 - First copy examples/chadrc.lua to lua/custom/chadrc.lua , make sure it has the theme table
-- `<leader> + th` (`<leader>` is `<space>` in our config)
+- `<leader> + th`   (`<leader>` is `<space>` in our config)
 
 ## Mappings
 
-- `<leader> + ch` 
+- `:Telescope keymaps` 
 
 ## Default general options
 
@@ -73,24 +73,31 @@ M.options = {}
 M.ui = {}
 M.plugins = {}
 M.mappings = {} has general mappings
-M.mappings.plugins = {} has plugin related mappings
 ```
 # Plugins
 
-- The lua/plugins dir contains three files , init.lua , packerInit.lua and the configs dir.
-- packerInit.lua : this file is used for defining packer's init stuff , so things like clone_timeout , compile_on_sync , etc and other packer related options are mentioned [here](https://github.com/wbthomason/packer.nvim/blob/master/doc/packer.txt).
-- init.lua : is basically the packer config , it calls packerInit first and then following with definitions of other plugins + their configs'
+- The lua/plugins dir contains three files, init.lua, packerInit.lua.
+- packerInit.lua : this file is used for defining packer's init stuff, so things like clone_timeout , compile_on_sync , etc and other packer related options are mentioned [here](https://github.com/wbthomason/packer.nvim/blob/master/doc/packer.txt).
+- init.lua : is basically the packer config listing various plugins, it calls packerInit first and then following with definitions of other plugins + their configs'
 - For example to add a plugin , packer uses this format :
 
 ```lua
-use {
-  "org or username/reponame",
+
+["org or username/reponame"] {
   config = function()
     path to config ( require it)
   end
 }
 
 -- example
+ ["max397574/better-escape.nvim"] {
+    config = function()
+       require("plugins.configs.better_escape")
+    end
+}
+
+-- packer's original way of defining plugins : 
+
  use {
    "max397574/better-escape.nvim",
     config = function()
@@ -98,4 +105,3 @@ use {
     end
 }
 ```
-- configs dir : most default plugins' configs are stored here!!

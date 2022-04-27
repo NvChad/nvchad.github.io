@@ -2,97 +2,121 @@
 
 - Create custom folder in lua/
 - Copy the /examples dir files in this custom dir.
-- The chadrc.lua here is for editing NvChad default options which are mentioned in lua/core/default_config.lua
-- The init.lua here will be used for adding new plugins , new plugin configs , replace default plugin configs , adding new mappings. It just behaves like the init.lua in ~/.config/nvim
 - Check siduck's [custom config](https://github.com/siduck/dotfiles/tree/master/nvchad/custom) as an reference!
+- Below are just examples bruhh
 
 ### Add plugins
 
-- Go to custom folder
-- make sure that every plugin definition is wrapped into a table.
-
 ```lua
--- /lua/custom/plugins/init.lua
+-- custom/plugins/init.lua
+
 return {
-   { "elkowar/yuck.vim", ft = "yuck" },
-   { "ellisonleao/glow.nvim", cmd = "Glow" },
+
+   ["elkowar/yuck.vim"] = { ft = "yuck" }
+
+    ["NvChad/nvterm"] = {
+      config = function()
+         require "plugins.configs.nvterm"
+      end,
+   },
 }
--- just an example!
 ```
 
+-  you can use a table too or just link the path of your table to organize config clean!
+
 ```lua
--- /lua/custom/chadrc.lua
-local userPlugins = require "custom.plugins" -- path to table
+-- chadrc.lua
+
+local userPlugins = require "custom.plugins"
 
 M.plugins = {
-   install = userPlugins
+   user = userPlugins
 }
 ```
 
-### Add mappings
+### Mappings
+
+#### Add mappings
+
+- custom/init.lua or any file in custom dir (then load it in custom/init.lua)
 
 ```lua
-    local map = require("core.utils").map
+local map = require("core.utils").map
 
-    map("n", "<leader>cc", ":Telescope <CR>")
-    map("n", "<leader>q", ":q <CR>")
+map("n", "<leader>cc", ":Telescope <CR>")
+map("n", "<leader>q", ":q <CR>")
 ```
 
-### Use default mapping for another command 
+#### Change non plugin mapping 
+
+- For example to change :
+
+```lua
+map("n", "<C-s>", "<cmd> :w <CR>") -- (check mappings.lua first)
+```
 
 ```lua 
-
--- Just an example! (chadrc boiii)
 local map = require("core.utils").map
 
 -- leader + e is used for nvimtree focus so disable it
 M.mappings = {
-   plugins = {
-      nvimtree = {
-         focus = "",
-      },
-   },
-}
-
--- Leader + e => opens telescope
-M.plugins = {
-   default_plugin_config_replace = {
-      telescope = {
-         on_setup = function()
-            map("n", "<leader>e", ":Telescope<CR>")
-         end,
-      },
+      misc = function()
+         map("n", "<leader>ss", "<cmd> :w <CR>")
+      end
    },
 }
 ```
+
+#### Change plugin mappings
+
+- For example to change :
+
+```lua
+map("n", "<leader>th", "<cmd> :Telescope themes <CR>")
+```
+
+```lua 
+local map = require("core.utils").map
+
+-- leader + e is used for nvimtree focus so disable it
+M.plugins = {
+  user = {
+       ["nvim-telescope/telescope.nvim"] = {
+          setup = function()
+             map("n", "<leader>ts", "<cmd> :Telescope themes <CR>")
+          end
+     }
+  }
+}
+```
+
+- Note: In the above example you can just make this change in your custom/plugins/init.lua itself! (the user table here is very useful)
 
 ### Replace default config of a plugin
 
 - Use the default_plugin_config_replace table in chadrc.lua
 
-- Example :
-
 ```lua
 M.plugins = {
-   default_plugin_config_replace = {
-      bufferline = "custom.bufferline",
+   user = {
+      ["NvChad/nvterm"] = {
+         config = function()
+           require "custom.nvterm"  
+         end
+       }
    },
 }
-
--- NOTE: The 'bufferline' variable there is taken from the first argument here
---  config = override_req("bufferline", "plugins.configs.bufferline", "setup")
--- you will find that in the packer's bufferline use function
--- make sure you do :PackerCompile or :PackerSync after this since the packer_compiled.lua present needs to update
 ```
+- Do :PackerSync
 
 ### Override default config of a plugin
 
-- Note : check 'default' table in your plugin's config and override a valid table in that default table.
+- This feature comes useful when you want to change one thing from default config of a plugin but not copy paste the whole config!
 
 ```lua
 M.plugins = {
-   default_plugin_config_replace = {
-      nvim_treesitter = {
+   override = {
+      ["nvim-treesitter/nvim-treesitter"] = {
         ensure_installed = {
           "html",
           "css",
@@ -110,14 +134,14 @@ local pluginConfs = require "custom.plugins.configs"
 
 M.plugins = {
    default_plugin_config_replace = {
-      nvim_treesitter = pluginConfs.treesitter,
-      nvim_tree = pluginConfs.nvimtree,
+      ["nvim-treesitter/nvim-treesitter"] = pluginConfs.treesitter,
+      ["kyazdani42/nvim-tree.lua"] = pluginConfs.nvimtree,
    },
 }
 ```
 
 ```lua
--- /lua/custom/plugins/configs.lua file
+-- custom/plugins/configs.lua file
 
 local M = {}
 
@@ -217,41 +241,68 @@ M.ui = {
 ```
 (*Note*, the compatibility of a custom theme with NvChad is not guaranteed, and potential highlighting issues should be fixed by yourself in `hl_override` or somewhere else)
 
-### Remove / Redefine plugins  
-
-- Sometimes you want to totally change the packer definition config of a plugin , for example this : 
-
-```lua
-  {
-    "plugin name",
-    -- more options here like config,setup
-    -- after, cmd etc!
-  }
-```
-
-- So in order to remove that plugin, add plugin's name in  default_plugin_remove of plugins table in chadrc. Example :
+### Remove plugins 
 
 ```lua
 M.plugins = {
-   default_plugin_remove = {
-       "akinsho/bufferline.nvim",
-       "norcalli/nvim-colorizer.lua",
-       "neovim/nvim-lspconfig",
-   },
+  user = {
+      ["andymass/vim-matchup"] = {
+          disable = true
+       }
+   }
 }
 ```
-- There's a function which takes the values in the above table and remove those plugins from the default plugin table (in lua/plugins/init.lua).
-- And then you can re-define (i.e install) that plugin in your custom dir's chadrc.
+- Do :PackerSync
+
+
+### Modify plugin definition options
+
+- For example this is nvimtree's definition 
+
+```lua
+ ["kyazdani42/nvim-tree.lua"] = {
+      cmd = { "NvimTreeToggle", "NvimTreeFocus" },
+
+      setup = function()
+         require("core.mappings").nvimtree()
+      end,
+
+      config = function()
+         require "plugins.configs.nvimtree"
+      end,
+ }
+```
+
+- Now to change cmd, setup or any option defined in it : 
+
+
+```lua
+
+M.plugins = {
+  user = {
+      ["kyazdani42/nvim-tree.lua"] = {
+      cmd = { "abc"},
+
+      setup = function()
+         require("core.mappings").yourfile
+      end,
+
+      config = function()
+        your stuff!
+      end,
+   }
+} }
+```
+- Do :PackerSync
 
 ### Autocmds
 
-- Well, for example you just create a new file called autochad_cmds.lua in the lua/custom folder and require it in lua/custom/init.lua! BOOOM!!
+- for example you can create a new file called autochad_cmds.lua in the lua/custom folder and require it in lua/custom/init.lua! or just define autocmds in custom/init.lua
 
 ### Files to edit
 
-- Only files that are supposed to edited by the user are meant to be in the /lua/custom/ , example files can be copied from /examples/.
-
-- The rest of the files outside the custom folder will get overwritten when updated using `<leader> + uu` , so don't put your config there!! Just put it in the /lua/custom/ folder.
+- Only edit files in custom dir, dont touch anything outside it.
+- The rest of the files outside the custom folder will get overwritten when updated using `<leader> + uu` .
 
 ### Lazy loading
 
