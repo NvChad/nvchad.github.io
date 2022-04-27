@@ -7,32 +7,19 @@
 
 ### Change default options
 
-- For example to change cmdheight
-
-- file method :
-
 ```lua
--- chadrc
-
 M.options = {
-   path = "custom.options"
+   user = function()
+      vim.opt.number = false
+   end,
 }
 
+-- or just load the module with your options
 
--- custom.options 
-vim.opt.cmdheight = 5
-```
-- function method :
-
-```lua
 M.options = {
-   path = {"custom", "options"} 
-
-   -- argument 1 is the path to the file
-   -- argument 2 is the function name
-
-   -- soo require("custom").options()
-   -- noting that the options function exists in lua/custom/init.lua
+   user = function()
+       require("custom.myoptions")
+   end,
 }
 ```
 
