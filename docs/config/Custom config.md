@@ -54,7 +54,7 @@ M.plugins = {
 
 ### Mappings
 
-#### Add mappings
+#### Add new mappings
 
 - custom/init.lua or any file in custom dir (then load it in custom/init.lua)
 
@@ -70,18 +70,18 @@ map("n", "<leader>q", ":q <CR>")
 - For example to change :
 
 ```lua
-map("n", "<C-s>", "<cmd> :w <CR>") -- (check mappings.lua first)
+map("n", "<C-s>", "<cmd> :w <CR>") -- (check core.mappings.lua first)
 ```
 
 ```lua 
-local map = require("core.utils").map
-
--- leader + e is used for nvimtree focus so disable it
 M.mappings = {
-      misc = function()
-         map("n", "<leader>ss", "<cmd> :w <CR>")
-      end
-   },
+   misc = function()
+      local map = require("core.utils").map
+      map("n", "<leader>ss", "<cmd> :w <CR>")
+
+      -- or just load your module
+      -- require("custom.my_mappings")
+   end,
 }
 ```
 
@@ -94,15 +94,18 @@ map("n", "<leader>th", "<cmd> :Telescope themes <CR>")
 ```
 
 ```lua 
-local map = require("core.utils").map
-
 -- leader + e is used for nvimtree focus so disable it
 M.plugins = {
   user = {
-       ["nvim-telescope/telescope.nvim"] = {
-          setup = function()
-             map("n", "<leader>ts", "<cmd> :Telescope themes <CR>")
-          end
+     ["nvim-telescope/telescope.nvim"] = {
+      setup = function()
+         -- load default mappings first
+         require("core.mappings").telescope()
+
+         -- then load your mappings
+         local map = require("core.utils").map
+         map("n", "<leader>ts", "<cmd> :Telescope themes <CR>")
+      end,
      }
   }
 }
