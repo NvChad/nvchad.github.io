@@ -5,6 +5,37 @@
 - Check siduck's [custom config](https://github.com/siduck/dotfiles/tree/master/nvchad/custom) as an reference!
 - Below are just examples bruhh
 
+### Change default options
+
+- For example to change cmdheight
+
+- file method :
+
+```lua
+-- chadrc
+
+M.options = {
+   path = "custom.options"
+}
+
+
+-- custom.options 
+vim.opt.cmdheight = 5
+```
+- function method :
+
+```lua
+M.options = {
+   path = {"custom", "options"} 
+
+   -- argument 1 is the path to the file
+   -- argument 2 is the function name
+
+   -- soo require("custom").options()
+   -- noting that the options function exists in lua/custom/init.lua
+}
+```
+
 ### Add plugins
 
 ```lua
