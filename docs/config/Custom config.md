@@ -94,7 +94,6 @@ map("n", "<leader>th", "<cmd> :Telescope themes <CR>")
 ```
 
 ```lua 
--- leader + e is used for nvimtree focus so disable it
 M.plugins = {
   user = {
      ["nvim-telescope/telescope.nvim"] = {
