@@ -83,14 +83,14 @@ M.mappings = {} has general mappings
 
 ```lua
 
-["org or username/reponame"] {
+["org or username/reponame"] = {
   config = function()
     path to config ( require it)
   end
 }
 
 -- example
- ["max397574/better-escape.nvim"] {
+ ["max397574/better-escape.nvim"] = {
     config = function()
        require("plugins.configs.better_escape")
     end
