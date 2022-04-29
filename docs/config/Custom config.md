@@ -266,10 +266,9 @@ M.ui = {
 
 ```lua
 M.plugins = {
-  user = {
-      ["andymass/vim-matchup"] = {
-          disable = true
-       }
+  remove  {
+      "andymass/vim-matchup",
+      "NvChad/nvterm"
    }
 }
 ```
