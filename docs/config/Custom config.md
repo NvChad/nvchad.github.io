@@ -153,7 +153,7 @@ M.plugins = {
 local pluginConfs = require "custom.plugins.configs"
 
 M.plugins = {
-   default_plugin_config_replace = {
+   override = {
       ["nvim-treesitter/nvim-treesitter"] = pluginConfs.treesitter,
       ["kyazdani42/nvim-tree.lua"] = pluginConfs.nvimtree,
    },
