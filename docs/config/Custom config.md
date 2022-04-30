@@ -312,6 +312,25 @@ M.plugins = {
 ```
 - Do :PackerSync
 
+
+### Enable dashboard 
+
+```lua
+local M = {}
+
+M.plugins = {
+   user = {
+      ["goolord/alpha-nvim"] = {
+         disable = false,
+      },
+   },
+}
+
+return M
+```
+- Do :PackerSync
+- The above is an example, its better to put alpha in your custom plugins list table which is most probably in another file if you like organizing stuff
+
 ### Autocmds
 
 - for example you can create a new file called autochad_cmds.lua in the lua/custom folder and require it in lua/custom/init.lua! or just define autocmds in custom/init.lua
