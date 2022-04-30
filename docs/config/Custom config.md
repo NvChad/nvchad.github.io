@@ -188,6 +188,8 @@ return M
 
 ### Override default highlights
 
+- (NOTE: This method can also be used to add)
+
 - Add a path to the 'hl_override' option in the UI section of chadrc.lua.
 
 ```lua
