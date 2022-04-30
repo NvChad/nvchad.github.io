@@ -44,6 +44,35 @@ end
 return M
 ```
 
+### Overriding `on_attach`
+
+You can override the default `on_attach` for example to change the server capabilities:
+
+```lua
+M.setup_lsp = function(attach, capabilities)
+   -- [...]
+
+   for _, lsp in ipairs(servers) do
+      lspconfig[lsp].setup {
+         on_attach = function(client, bufnr)
+            attach(client, bufnr)
+            -- change gopls server capabilities
+            if lsp == "gopls" then
+               client.resolved_capabilities.document_formatting = true
+               client.resolved_capabilities.document_range_formatting = true
+            end
+         end,
+         capabilities = capabilities,
+         flags = {
+            debounce_text_changes = 150,
+         },
+      }
+   end
+end
+```
+
+Make sure you pass `bufnr` to the `attach` function.
+
 ## lsp-installer
 
 - If you don't like copy pasting configs for your lspservers and installing lspservers manually , then try nvim-lspinstalller.
