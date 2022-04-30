@@ -9,8 +9,7 @@
 - config :
 
 ```lua
-  use {
-      "karb94/neoscroll.nvim",
+  ["karb94/neoscroll.nvim"] = {
        config = function()
           require("neoscroll").setup()
        end,
@@ -29,8 +28,7 @@
 - config :
 
 ```lua
-   use {
-   "Pocco81/AutoSave.nvim",
+["Pocco81/AutoSave.nvim"] = {
    config = function()
       local autosave = require "autosave"
 
@@ -58,8 +56,7 @@
 - config :
 
 ```lua
-   use {
-      "Pocco81/TrueZen.nvim",
+["Pocco81/TrueZen.nvim"] = {
       cmd = {
          "TZAtaraxis",
          "TZMinimalist",
@@ -71,23 +68,6 @@
    }
 ```
 
-## filetype.nvim
-
-- A fast and lua alternative to `filetype.vim`. It is ~175x faster than `filetype.vim`
-- [repo](https://github.com/nathom/filetype.nvim)
-- config :
-
-```lua
-   use { "nathom/filetype.nvim" }
-```
-
-Add the following to `lua/custom/init.lua` :
-
-```lua
-   -- Stop sourcing filetype.vim
-   vim.g.did_load_filetypes = 1
-```
-
 ## stabilize.nvim
 
 - NeoVim plugin to stabilize window open/close events
@@ -95,10 +75,11 @@ Add the following to `lua/custom/init.lua` :
 - config : 
 
 ```lua
-   use {
-	"luukvbaal/stabilize.nvim",
-	config = function() require("stabilize").setup() end
-   }
+ ["luukvbaal/stabilize.nvim"] = {
+	config = function() 
+            require("stabilize").setup()
+        end
+  }
 ```
 
 ## telescope-media-files.nvim
@@ -108,8 +89,7 @@ Add the following to `lua/custom/init.lua` :
 - config : 
 
 ```lua
-   use {
-      "nvim-telescope/telescope-media-files.nvim",
+ ["nvim-telescope/telescope-media-files.nvim"] = {
       after = "telescope.nvim",
       config = function()
          require("telescope").setup {
@@ -122,7 +102,7 @@ Add the following to `lua/custom/init.lua` :
          }
          require("telescope").load_extension "media_files"
       end,
-   }
+  }
 ```
 
 - command : 
