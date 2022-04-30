@@ -331,6 +331,23 @@ return M
 - Do :PackerSync
 - The above is an example, its better to put alpha in your custom plugins list table which is most probably in another file if you like organizing stuff
 
+### Packer Snapshot
+
+- Lets run :PackerSnapshot stable_chad (this command creates new snapshots)
+- my chadrc could look like this
+
+```lua
+M.plugins = {
+   options = {
+      packer = {
+         snapshot = "stable_chad",
+      },
+   },
+}
+```
+- In case there's a breaking change, I can just do :PackerSnapshotRollback stable_chad and wait for 1-2 minutes
+- Lets delete that snapshot, :PackerSnapshotDelete stable_chad 
+
 ### Autocmds
 
 - for example you can create a new file called autochad_cmds.lua in the lua/custom folder and require it in lua/custom/init.lua! or just define autocmds in custom/init.lua
