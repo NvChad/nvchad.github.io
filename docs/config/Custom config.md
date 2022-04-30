@@ -333,7 +333,7 @@ return M
 
 ### Packer Snapshot
 
-- Lets run ```:PackerSnapshot stable_chad```(this command creates new snapshots)
+- Lets run ```:PackerSnapshot stable_chad``` (this command creates new snapshots)
 - my chadrc could look like this
 
 ```lua
@@ -346,7 +346,7 @@ M.plugins = {
 }
 ```
 - In case there's a breaking change, I can just do ```:PackerSnapshotRollback stable_chad``` and wait for 1-2 minutes
-- Lets delete that snapshot, ```PackerSnapshotDelete stable_chad``` 
+- To delete that snapshot, ```PackerSnapshotDelete stable_chad``` 
 
 ### Autocmds
 
