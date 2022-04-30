@@ -203,15 +203,11 @@ M.ui = {
 
 ```lua
 local colors = require("colors").get()
-
 local fg = require("core.utils").fg
-local fg_bg = require("core.utils").fg_bg
-local bg = require("core.utils").bg
 
 fg("Normal", colors.red)
 
 -- If you dont want to require the above stuffs then you could just do :
-
 vim.cmd("hi Normal guifg=#yourhexcolor")
 ```
 
