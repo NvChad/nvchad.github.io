@@ -84,18 +84,18 @@ print(isAlive) -- false
 local age = 10
 
 if age > 18 then
-  print("over 18") -- this will not be executed
+    print("over 18") -- this will not be executed
 end
 
 -- elseif and else
 age = 20
 
 if age > 18 then
-  print("over 18")
+    print("over 18")
 elseif age == 18 then
-  print("18 huh")
+    print("18 huh")
 else
-  print("kiddo")
+    print("kiddo")
 end
 ```
 
@@ -111,7 +111,7 @@ end
 local name = "sid"
 
 if name ~= "sid" then
-  print("not sid")
+    print("not sid")
 end
 ```
 
@@ -121,9 +121,9 @@ end
 local age = 22
 
 if age == 10 and x > 0 then -- both should be true
-  print("kiddo!")
+    print("kiddo!")
 elseif x == 18 or x > 18 then -- 1 or more are true
-  print("over 18")
+    print("over 18")
 end
 
 -- result: over 18
@@ -137,7 +137,7 @@ you can also invert a value with the **not** keyword
 local x = 18
 
 if not x == 18 then
-  print("kiddo!")
+    print("kiddo!")
 end
 ```
 
@@ -145,13 +145,13 @@ end
 
 ```lua
 function num(a)
-  print(a)
+    print(a)
 end
 
 or
 
 local num = function(a)
-  print(a)
+    print(a)
 end
 
 num(5)
@@ -163,8 +163,8 @@ num(5)
 -- multiple parameters
 
 function sum(a, b)
-  local result = a + b
-  print(result)
+    local result = a + b
+    print(result)
 end
 ```
 
@@ -174,7 +174,7 @@ Variables have different scopes. Once the end of the scope is reached the values
 
 ```lua
 function foo()
-  local n = 10
+    local n = 10
 end
 
 print(n) -- nil , n isn't accessible outside foo()
@@ -189,16 +189,16 @@ Different ways to make a loop
 local i = 0
 
 while i <= 3 do
-   print("hi")
-   i = i + 1
+    print("hi")
+    i = i + 1
 end
 
 OR
 
 -- for loop
 for i = 0, 3 do
-   print("hi")
-   i = i + 1
+    print("hi")
+    i = i + 1
 end
 
 -- result
@@ -219,7 +219,7 @@ print(colors[3]) -- blue
 
 -- Use a loop to iterate though the table
 for i = 1, #colors do
-  print(colors[i])
+    print(colors[i])
 end
 ```
 
@@ -233,7 +233,7 @@ local data = {
 }
 
 for i = 1, #data do
-  print(data[i][1] .. " is " .. data[i][2] .. " years old")
+    print(data[i][1] .. " is " .. data[i][2] .. " years old")
 end
 ```
 

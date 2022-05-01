@@ -9,9 +9,9 @@
 
 ```lua
 local swapBoolean = function()
-   local c = vim.api.nvim_get_current_line()
-   local subs = c:match "true" and c:gsub("true", "false") or c:gsub("false", "true")
+    local c = vim.api.nvim_get_current_line()
+    local subs = c:match "true" and c:gsub("true", "false") or c:gsub("false", "true")
 
-   vim.api.nvim_set_current_line(subs)
- end
+    vim.api.nvim_set_current_line(subs)
+end
 ```

@@ -82,26 +82,25 @@ M.mappings = {} has general mappings
 - For example to add a plugin , packer uses this format :
 
 ```lua
-
 ["org or username/reponame"] = {
-  config = function()
-    path to config ( require it)
-  end
+    config = function()
+        path to config ( require it)
+    end
 }
 
 -- example
- ["max397574/better-escape.nvim"] = {
+["max397574/better-escape.nvim"] = {
     config = function()
-       require("plugins.configs.better_escape")
+        require("plugins.configs.better_escape")
     end
 }
 
 -- packer's original way of defining plugins : 
 
- use {
-   "max397574/better-escape.nvim",
+use {
+    "max397574/better-escape.nvim",
     config = function()
-       require("plugins.configs.better_escape")
+        require("plugins.configs.better_escape")
     end
 }
 ```

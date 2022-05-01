@@ -9,11 +9,11 @@
 
 ```lua
 M.plugins = {
-   options = {
-      lspconfig = {
-         setup_lspconf = "custom.plugins.lspconfig",
-      },
-   },
+    options = {
+        lspconfig = {
+            setup_lspconf = "custom.plugins.lspconfig",
+        },
+    },
 }
 
 -- so setup_lspconf = any file but that should be in custom dir!
@@ -25,17 +25,17 @@ M.plugins = {
 local M = {}
 
 M.setup_lsp = function(attach, capabilities)
-   local lspconfig = require "lspconfig"
+    local lspconfig = require "lspconfig"
 
-   -- lspservers with default config
-   local servers = { "html", "cssls", "clangd" }
+    -- lspservers with default config
+    local servers = { "html", "cssls", "clangd" }
 
-   for _, lsp in ipairs(servers) do
-      lspconfig[lsp].setup {
-         on_attach = attach,
-         capabilities = capabilities,
-      }
-   end
+    for _, lsp in ipairs(servers) do
+        lspconfig[lsp].setup {
+            on_attach = attach,
+            capabilities = capabilities,
+        }
+    end
 end
 
 return M
@@ -47,21 +47,21 @@ You can override the default `on_attach` for example to change the server capabi
 
 ```lua
 M.setup_lsp = function(attach, capabilities)
-   -- [...]
+    -- [...]
 
-   for _, lsp in ipairs(servers) do
-      lspconfig[lsp].setup {
-         on_attach = function(client, bufnr)
-            attach(client, bufnr)
-            -- change gopls server capabilities
-            if lsp == "gopls" then
-               client.resolved_capabilities.document_formatting = true
-               client.resolved_capabilities.document_range_formatting = true
-            end
-         end,
-         capabilities = capabilities,
-      }
-   end
+    for _, lsp in ipairs(servers) do
+        lspconfig[lsp].setup {
+            on_attach = function(client, bufnr)
+                attach(client, bufnr)
+                -- change gopls server capabilities
+                if lsp == "gopls" then
+                    client.resolved_capabilities.document_formatting = true
+                    client.resolved_capabilities.document_range_formatting = true
+                end
+            end,
+            capabilities = capabilities,
+        }
+    end
 end
 ```
 
@@ -78,11 +78,11 @@ note: The below snippet must be your custom lspconfig! (that setup_lspconf varia
 
 ```lua
 M.plugins = {
-  options = {
-     lspconfig = {
-       setup_lspconf = "custom.configs.lspconfig", -- or any path
-     }
-  }
+    options = {
+        lspconfig = {
+            setup_lspconf = "custom.configs.lspconfig", -- or any path
+        }
+    }
 }
 ```
 
@@ -92,28 +92,28 @@ M.plugins = {
 local M = {}
 
 M.setup_lsp = function(attach, capabilities)
-   local lsp_installer = require "nvim-lsp-installer"
+    local lsp_installer = require "nvim-lsp-installer"
 
-   lsp_installer.settings {
-      ui = {
-         icons = {
-            server_installed = "﫟" ,
-            server_pending = "",
-            server_uninstalled = "✗",
-         },
-      },
-   }
+    lsp_installer.settings {
+        ui = {
+            icons = {
+                server_installed = "﫟" ,
+                server_pending = "",
+                server_uninstalled = "✗",
+            },
+        },
+    }
 
-   lsp_installer.on_server_ready(function(server)
-      local opts = {
-         on_attach = attach,
-         capabilities = capabilities,
-         settings = {},
-      }
+    lsp_installer.on_server_ready(function(server)
+        local opts = {
+            on_attach = attach,
+            capabilities = capabilities,
+            settings = {},
+          }
 
-      server:setup(opts)
-      vim.cmd [[ do User LspAttachBuffers ]]
-   end)
+        server:setup(opts)
+        vim.cmd [[ do User LspAttachBuffers ]]
+    end)
 end
 
 return M

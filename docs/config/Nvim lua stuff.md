@@ -32,8 +32,8 @@ vim.cmd "augroup stuff"
 
 --  multiline  :
 vim.cmd([[
-  stuff
-  stuff
+    stuff
+    stuff
 ]])
 ```
 
@@ -64,10 +64,10 @@ let g:nvim_tree_show_icons = {
 lua:
 
 ```lua
- vim.g.nvim_tree_show_icons = {
-     git = 1,
-     folders = 0,
-  }
+vim.g.nvim_tree_show_icons = {
+    git = 1,
+    folders = 0,
+}
 ```
 
 check [nvim-lua guide](https://github.com/nanotee/nvim-lua-guide) for better explanation and more info!

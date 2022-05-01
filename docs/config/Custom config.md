@@ -9,17 +9,17 @@
 
 ```lua
 M.options = {
-   user = function()
-      vim.opt.number = false
-   end,
+    user = function()
+        vim.opt.number = false
+    end,
 }
 
 -- or just load the module with your options
 
 M.options = {
-   user = function()
-       require("custom.myoptions")
-   end,
+    user = function()
+        require("custom.myoptions")
+    end,
 }
 ```
 
@@ -30,13 +30,13 @@ M.options = {
 
 return {
 
-   ["elkowar/yuck.vim"] = { ft = "yuck" }
+    ["elkowar/yuck.vim"] = { ft = "yuck" },
 
     ["NvChad/nvterm"] = {
-      config = function()
-         require "plugins.configs.nvterm"
-      end,
-   },
+        config = function()
+            require "plugins.configs.nvterm"
+        end,
+    },
 }
 ```
 
@@ -48,7 +48,7 @@ return {
 local userPlugins = require "custom.plugins"
 
 M.plugins = {
-   user = userPlugins
+    user = userPlugins
 }
 ```
 
@@ -75,13 +75,13 @@ map("n", "<C-s>", "<cmd> :w <CR>") -- (check core.mappings.lua first)
 
 ```lua 
 M.mappings = {
-   misc = function()
-      local map = require("core.utils").map
-      map("n", "<leader>ss", "<cmd> :w <CR>")
+    misc = function()
+        local map = require("core.utils").map
+        map("n", "<leader>ss", "<cmd> :w <CR>")
 
-      -- or just load your module
-      -- require("custom.my_mappings")
-   end,
+        -- or just load your module
+        -- require("custom.my_mappings")
+    end,
 }
 ```
 
@@ -95,18 +95,18 @@ map("n", "<leader>th", "<cmd> :Telescope themes <CR>")
 
 ```lua 
 M.plugins = {
-  user = {
-     ["nvim-telescope/telescope.nvim"] = {
-      setup = function()
-         -- load default mappings first
-         require("core.mappings").telescope()
+    user = {
+        ["nvim-telescope/telescope.nvim"] = {
+            setup = function()
+                -- load default mappings first
+                require("core.mappings").telescope()
 
-         -- then load your mappings
-         local map = require("core.utils").map
-         map("n", "<leader>ts", "<cmd> :Telescope themes <CR>")
-      end,
-     }
-  }
+                -- then load your mappings
+                local map = require("core.utils").map
+                map("n", "<leader>ts", "<cmd> :Telescope themes <CR>")
+            end,
+        }
+    }
 }
 ```
 
@@ -118,13 +118,13 @@ M.plugins = {
 
 ```lua
 M.plugins = {
-   user = {
-      ["NvChad/nvterm"] = {
-         config = function()
-           require "custom.nvterm"  
-         end
-       }
-   },
+    user = {
+        ["NvChad/nvterm"] = {
+            config = function()
+                require "custom.nvterm"  
+            end
+        }
+    },
 }
 ```
 - Do :PackerSync
@@ -135,14 +135,14 @@ M.plugins = {
 
 ```lua
 M.plugins = {
-   override = {
-      ["nvim-treesitter/nvim-treesitter"] = {
-        ensure_installed = {
-          "html",
-          "css",
-       },
-     }
-   }
+    override = {
+        ["nvim-treesitter/nvim-treesitter"] = {
+            ensure_installed = {
+                "html",
+                "css",
+            },
+        }
+    }
 }
 ```
 
@@ -153,10 +153,10 @@ M.plugins = {
 local pluginConfs = require "custom.plugins.configs"
 
 M.plugins = {
-   override = {
-      ["nvim-treesitter/nvim-treesitter"] = pluginConfs.treesitter,
-      ["kyazdani42/nvim-tree.lua"] = pluginConfs.nvimtree,
-   },
+    override = {
+        ["nvim-treesitter/nvim-treesitter"] = pluginConfs.treesitter,
+        ["kyazdani42/nvim-tree.lua"] = pluginConfs.nvimtree,
+    },
 }
 ```
 
@@ -166,21 +166,21 @@ M.plugins = {
 local M = {}
 
 M.treesitter = {
-   ensure_installed = {
-      "lua",
-      "html",
-      "css",
-   },
+    ensure_installed = {
+        "lua",
+        "html",
+        "css",
+    },
 }
 
 M.nvimtree = {
-   git = {
-      enable = true,
-   },
-   view = {
-      side = "right",
-      width = 20,
-   },
+    git = {
+        enable = true,
+    },
+    view = {
+        side = "right",
+        width = 20,
+    },
 }
 
 return M
@@ -194,7 +194,7 @@ return M
 
 ```lua
 M.ui = {
-   hl_override = "custom.highlights",
+    hl_override = "custom.highlights",
 }
 ```
 
@@ -225,11 +225,11 @@ Make a [PR](https://nvchad.github.io/contribute#how-to-submit-themes) or open an
 * add themes as plugins:
 
 ```lua
---  custom/plugins/inited.lua
+-- custom/plugins/inited.lua
 
 return {
-	{ "local/path/to/mytheme" }, -- local
-	{ "Iron-E/nvim-highlite" }, -- remote
+    { "local/path/to/mytheme" }, -- local
+    { "Iron-E/nvim-highlite" }, -- remote
 }
 ```
 
@@ -252,9 +252,9 @@ return {
 -- custom/chadrc.lua
 
 M.ui = {
-  theme = "mytheme",
-  -- theme = "highlite",
-  colors = "custom.colors",
+    theme = "mytheme",
+    -- theme = "highlite",
+    colors = "custom.colors",
 }
 ```
 (*Note*, the compatibility of a custom theme with NvChad is not guaranteed, and potential highlighting issues should be fixed by yourself in `hl_override` or somewhere else)
@@ -263,10 +263,10 @@ M.ui = {
 
 ```lua
 M.plugins = {
-  remove  {
-      "andymass/vim-matchup",
-      "NvChad/nvterm"
-   }
+    remove  {
+        "andymass/vim-matchup",
+        "NvChad/nvterm"
+    }
 }
 ```
 - Do :PackerSync
@@ -277,38 +277,38 @@ M.plugins = {
 - For example this is nvimtree's definition 
 
 ```lua
- ["kyazdani42/nvim-tree.lua"] = {
-      cmd = { "NvimTreeToggle", "NvimTreeFocus" },
+["kyazdani42/nvim-tree.lua"] = {
+    cmd = { "NvimTreeToggle", "NvimTreeFocus" },
 
-      setup = function()
-         require("core.mappings").nvimtree()
-      end,
+    setup = function()
+        require("core.mappings").nvimtree()
+    end,
 
-      config = function()
-         require "plugins.configs.nvimtree"
-      end,
- }
+    config = function()
+        require "plugins.configs.nvimtree"
+    end,
+}
 ```
 
 - Now to change cmd, setup or any option defined in it : 
 
 
 ```lua
-
 M.plugins = {
-  user = {
-      ["kyazdani42/nvim-tree.lua"] = {
-      cmd = { "abc"},
+    user = {
+        ["kyazdani42/nvim-tree.lua"] = {
+            cmd = { "abc"},
 
-      setup = function()
-         require("core.mappings").yourfile
-      end,
+            setup = function()
+                require("core.mappings").yourfile
+            end,
 
-      config = function()
-        your stuff!
-      end,
-   }
-} }
+            config = function()
+                your stuff!
+            end,
+        }
+    }
+}
 ```
 - Do :PackerSync
 
@@ -319,11 +319,11 @@ M.plugins = {
 local M = {}
 
 M.plugins = {
-   user = {
-      ["goolord/alpha-nvim"] = {
-         disable = false,
-      },
-   },
+    user = {
+        ["goolord/alpha-nvim"] = {
+            disable = false,
+        },
+    },
 }
 
 return M
@@ -338,11 +338,11 @@ return M
 
 ```lua
 M.plugins = {
-   options = {
-      packer = {
-         snapshot = "stable_chad",
-      },
-   },
+    options = {
+        packer = {
+            snapshot = "stable_chad",
+        },
+    },
 }
 ```
 - In case there's a breaking change, I can just do ```:PackerSnapshotRollback stable_chad``` and wait for 1-2 minutes
