@@ -188,27 +188,43 @@ return M
 
 ### Override default highlights
 
-- (NOTE: This method can also be used to add)
-
-- Add a path to the 'hl_override' option in the UI section of chadrc.lua.
+- (NOTE: This method can also be used to add your own highlight groups too)
+- Make sure you use a valid hl group! 
 
 ```lua
 M.ui = {
-   hl_override = "custom.highlights",
+   hl_override = {
+      --override default highlights
+      Pmenu = { bg = "#ffffff" },
+
+      MyHighlightGroup = {
+         fg = "abc", 
+         bg = "xyz"
+      }
+   },
 }
 ```
 
-- NOTE : The above path is just an example , which will mean that your highlights file is /custom/highlights.lua.
-- highlights file might contain this.
+- You can even use the path of the table in hl_override table (make sure u load it in variable before) like : 
 
 ```lua
-local colors = require("colors").get()
-local fg = require("core.utils").fg
+-- custom.highlights
+return   {
+      Pmenu = { bg = "#ffffff" },
+      MyHighlightGroup = {
+         fg = "abc", 
+         bg = "xyz"
+      }
+}
+```
 
-fg("Normal", colors.red)
+```lua
+-- chadrc
+local my_highlights = require("custom.highlights")
 
--- If you dont want to require the above stuffs then you could just do :
-vim.cmd("hi Normal guifg=#yourhexcolor")
+M.ui = {
+   hl_override = my_highlights
+}
 ```
 
 ### Custom theme
