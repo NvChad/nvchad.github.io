@@ -186,12 +186,70 @@ M.nvimtree = {
 return M
 ```
 
+### Local themes 
+
+- Default themes are in our nvim-base16 repo's hl_themes dir
+- Any nvchad theme structure be like : 
+
+```lua
+-- siduck.lua = theme name 
+local M = {}
+
+M.base_30 = {
+    -- my colors
+}
+
+M.base_16 = {
+    -- my base16 colors
+}
+
+return M
+```
+- Make sure to use the exact variable names!
+
+- Then put your theme file in /custom/themes dir , ex : custom/themes/siduck.lua
+
+```lua
+M.ui = {
+   theme = "siduck",
+}
+```
+
+- NOTE: The telescope theme switcher is still WIP so u have to add theme name in chadrc manually for now.
+
+### Override specific colors in themes
+
+```lua
+M.ui = {
+
+   changed_themes = {
+      onedark = {
+         base_16 = {
+            base00 = "#mycol",
+         },
+         base_30 = {
+            red = "#mycol",
+            white = "#mycol",
+         },
+      },
+
+      nord = {
+         -- and so on!
+      },
+   },
+}
+```
+
 ### Override default highlights
 
 - (NOTE: This method can also be used to add your own highlight groups too)
 - Make sure you use a valid hl group! 
 
 ```lua
+-- local colors = require("custom.colors").base_30
+-- make sure to copy paste your theme color from base16 repo manually to this file ;(
+-- avoid the line with M = require("....")
+
 M.ui = {
    hl_override = {
       --override default highlights
@@ -204,6 +262,7 @@ M.ui = {
    },
 }
 ```
+- NOTE: check our base16 repo's integration section to know the default hl groups used
 
 - You can even use the path of the table in hl_override table (make sure u load it in variable before) like : 
 
