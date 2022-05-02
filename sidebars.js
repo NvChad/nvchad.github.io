@@ -19,6 +19,7 @@ module.exports = {
         "config/Custom config",
         "config/Lsp stuff",
         "config/Format & lint",
+        "config/Tricks"
       ],
     },
     "features",
