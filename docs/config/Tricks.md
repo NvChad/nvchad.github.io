@@ -17,7 +17,7 @@ local swapBoolean = function()
 ```
 ## Simple rename function
 
-- This function uses `vim.lsp.buf.rename` to rename variable
+-- This function uses `vim.lsp.buf.rename` to rename variable
 
 ```lua
 M.rename = function()
