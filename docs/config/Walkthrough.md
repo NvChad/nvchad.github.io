@@ -10,9 +10,6 @@ NvChad comes with the following file / folder structure. [An up-to-date & full t
 ├── init.lua
 │
 ├── lua
-│   ├── colors
-│   │   ├── highlights.lua
-│   │   └── init.lua (i)
 │   │
 │   ├── core
 │   │   ├── autocmds.lua
