@@ -14,9 +14,9 @@ module.exports = {
       label: "Config",
       items: [
         "config/Walkthrough",
-        "config/Mappings",
         "config/Nvim lua stuff",
         "config/Custom config",
+        "config/Mappings",
         "config/Lsp stuff",
         "config/Format & lint",
         "config/Tricks"
