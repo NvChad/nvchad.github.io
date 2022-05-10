@@ -59,7 +59,7 @@ M.plugins = {
 - custom/init.lua or any file in custom dir (then load it in custom/init.lua)
 
 ```lua
-local map = require("core.utils").map
+local map = nvchad.map
 
 map("n", "<leader>cc", ":Telescope <CR>")
 map("n", "<leader>q", ":q <CR>")
@@ -76,7 +76,7 @@ map("n", "<C-s>", "<cmd> :w <CR>") -- (check core.mappings.lua first)
 ```lua 
 M.mappings = {
    misc = function()
-      local map = require("core.utils").map
+      local map = nvchad.map
       map("n", "<leader>ss", "<cmd> :w <CR>")
 
       -- or just load your module
@@ -102,7 +102,7 @@ M.plugins = {
          require("core.mappings").telescope()
 
          -- then load your mappings
-         local map = require("core.utils").map
+         local map = nvchad.map
          map("n", "<leader>ts", "<cmd> :Telescope themes <CR>")
       end,
      }
