@@ -338,10 +338,10 @@ M.ui = {
 
 ```lua
 M.plugins = {
-  remove  {
+  remove = {
       "andymass/vim-matchup",
-      "NvChad/nvterm"
-   }
+      "NvChad/nvterm",
+   },
 }
 ```
 - Do :PackerSync
