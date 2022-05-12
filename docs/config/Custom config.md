@@ -146,10 +146,9 @@ return {
 ````lua
 -- chadrc.lua
 
-local userPlugins = require "custom.plugins"
 
 M.plugins = {
-   user = userPlugins
+   user = require "custom.plugins"
 }
 
 ### Replace default config of a plugin
