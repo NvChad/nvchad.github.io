@@ -4,6 +4,19 @@ title: Setup
 sidebar_position: 1
 ---
 
+## Try NvChad in a Docker container
+
+This will leave your current Neovim configuration untouched. Once you exit Neovim, the image is deleted.
+
+```zsh
+  docker run -w /root -it --rm alpine:edge sh -uelic '
+    apk add git nodejs neovim ripgrep alpine-sdk --update
+    git clone https://github.com/NvChad/NvChad ~/.config/nvim
+    nvim -c "autocmd User PackerComplete quitall" -c "PackerSync"
+    nvim
+    '
+```
+
 ## Pre-requisites
 
 - [Neovim 0.7.0 install page](https://github.com/neovim/neovim/releases/tag/v0.7.0)
