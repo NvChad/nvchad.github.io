@@ -23,6 +23,107 @@ M.options = {
 }
 ```
 
+### Mappings
+
+- Mappings are present in a table which is ( core.mappings file )
+- Go and check the mapping structure in ( core.mappings )
+- This file's linked with `M.mappings` field in ( default_config.lua ) so the user can override mappings straight from chadrc itself
+
+#### Mapping format
+
+```lua
+ ["keys"] = {"action", "icon  mapping description"}
+
+ -- example :
+
+ ["<C-n>"] = {"<cmd> NvimTreeToggle <CR>", "Toggle nvimtree"}
+
+ ["<C-s>"] = { "<cmd> w <CR>", "﬚  save file" },
+
+ ["<leader>uu"] = { "<cmd> :NvChadUpdate <CR>", "  update nvchad" },
+
+ -- can use lua functions too
+ ["<leader>tt"] = {
+     function()
+        require("base46").toggle_theme()
+     end,
+        "   toggle theme",
+   },
+```
+
+- Mapping description is required as we need it for registering in whichkey
+- NOTE : As per the above example, you can use lua functions in the mappings to call lua modules etc
+- Its always better to use an icon at the beginning of the mapping mapping description + 2 or 3 spaces after the icon.
+- Find the icons from https://www.nerdfonts.com/cheat-sheet
+- This helps gives a good visual look in the whichkey popup and makes it easier to read. But the icon is still optional
+
+#### Mappings table structure
+
+- This is the mappings structure of core.mappings & your mappings file
+
+```lua
+local M = {}
+
+M.abc = {
+
+  n = {
+     ["<C-n>"] = {"<cmd> NvimTreeToggle <CR>", "Toggle nvimtree"}
+  }
+
+  i = {
+    -- more keys!
+  }
+}
+
+M.xyz = {
+  -- stuff
+}
+
+return M
+```
+
+- The abc, xyz stuff above can be named anything like a plugin's name etc.
+- n, i, v, are the mode names i.e normal, insert, visual
+- Make sure to maintain the table structure from core.mappings 
+
+#### Override default mappings
+
+- lets override nvimtree's mappings
+
+```lua
+-- chadrc
+M.mappings = require "custom.mappings"
+
+-- the above path can be any file in custom dir, just an example!
+```
+
+```lua
+-- custom.mappings
+
+local M = {}
+
+M.nvimtree = {
+   n = {
+      ["<leader>ah"] = { "<cmd> NvimTreeToggle <CR>", "   toggle nvimtree" },
+
+      ["<C-n>"] = "", -- to disable Ctrl n keys!
+   },
+}
+
+```
+
+- Check [siduck's config](https://github.com/siduck/dotfiles/blob/master/nvchad/custom/mappings.lua) for reference
+- The same way you can add your mappings :)
+
+#### Mapping with which-key disabled
+
+- The method's just the same but in this you dont have to write the mappings description!
+- Also put this into your custom.init.lua file l
+
+```lua
+ nvchad.no_WhichKey_map()
+```
+
 ### Add plugins
 
 ```lua
@@ -40,9 +141,9 @@ return {
 }
 ```
 
--  you can use a table too or just link the path of your table to organize config clean!
+- you can use a table too or just link the path of your table to organize config clean!
 
-```lua
+````lua
 -- chadrc.lua
 
 local userPlugins = require "custom.plugins"
@@ -50,67 +151,6 @@ local userPlugins = require "custom.plugins"
 M.plugins = {
    user = userPlugins
 }
-```
-
-### Mappings
-
-#### Add new mappings
-
-- custom/init.lua or any file in custom dir (then load it in custom/init.lua)
-
-```lua
-local map = nvchad.map
-
-map("n", "<leader>cc", ":Telescope <CR>")
-map("n", "<leader>q", ":q <CR>")
-```
-
-#### Change non plugin mapping 
-
-- For example to change :
-
-```lua
-map("n", "<C-s>", "<cmd> :w <CR>") -- (check core.mappings.lua first)
-```
-
-```lua 
-M.mappings = {
-   misc = function()
-      local map = nvchad.map
-      map("n", "<leader>ss", "<cmd> :w <CR>")
-
-      -- or just load your module
-      -- require("custom.my_mappings")
-   end,
-}
-```
-
-#### Change plugin mappings
-
-- For example to change :
-
-```lua
-map("n", "<leader>th", "<cmd> :Telescope themes <CR>")
-```
-
-```lua 
-M.plugins = {
-  user = {
-     ["nvim-telescope/telescope.nvim"] = {
-      setup = function()
-         -- load default mappings first
-         require("core.mappings").telescope()
-
-         -- then load your mappings
-         local map = nvchad.map
-         map("n", "<leader>ts", "<cmd> :Telescope themes <CR>")
-      end,
-     }
-  }
-}
-```
-
-- Note: In the above example you can just make this change in your custom/plugins/init.lua itself! (the user table here is very useful)
 
 ### Replace default config of a plugin
 
@@ -121,12 +161,13 @@ M.plugins = {
    user = {
       ["NvChad/nvterm"] = {
          config = function()
-           require "custom.nvterm"  
+           require "custom.nvterm"
          end
        }
    },
 }
-```
+````
+
 - Do :PackerSync
 
 ### Override default config of a plugin
@@ -186,13 +227,13 @@ M.nvimtree = {
 return M
 ```
 
-### Local themes 
+### Local themes
 
 - Default themes are in our nvim-base16 repo's hl_themes dir
-- Any nvchad theme structure be like : 
+- Any nvchad theme structure be like :
 
 ```lua
--- siduck.lua = theme name 
+-- siduck.lua = theme name
 local M = {}
 
 M.base_30 = {
@@ -205,6 +246,7 @@ M.base_16 = {
 
 return M
 ```
+
 - Make sure to use the exact variable names!
 
 - Then put your theme file in /custom/themes dir , ex : custom/themes/siduck.lua
@@ -243,7 +285,7 @@ M.ui = {
 ### Override default highlights
 
 - (NOTE: This method can also be used to add your own highlight groups too)
-- Make sure you use a valid hl group! 
+- Make sure you use a valid hl group!
 
 ```lua
 -- local colors = require("custom.colors").base_30
@@ -256,22 +298,23 @@ M.ui = {
       Pmenu = { bg = "#ffffff" },
 
       MyHighlightGroup = {
-         fg = "abc", 
+         fg = "abc",
          bg = "xyz"
       }
    },
 }
 ```
+
 - NOTE: check our base16 repo's integration section to know the default hl groups used
 
-- You can even use the path of the table in hl_override table (make sure u load it in variable before) like : 
+- You can even use the path of the table in hl_override table (make sure u load it in variable before) like :
 
 ```lua
 -- custom.highlights
 return   {
       Pmenu = { bg = "#ffffff" },
       MyHighlightGroup = {
-         fg = "abc", 
+         fg = "abc",
          bg = "xyz"
       }
 }
@@ -297,7 +340,7 @@ Make a [PR](https://nvchad.github.io/contribute#how-to-submit-themes) or open an
 
 #### Manually
 
-* add themes as plugins:
+- add themes as plugins:
 
 ```lua
 --  custom/plugins/inited.lua
@@ -308,7 +351,7 @@ return {
 }
 ```
 
-* add colors file in format of [this](https://github.com/NvChad/nvim-base16.lua/blob/master/lua/hl_themes/aquarium.lua) for ui stuffs:
+- add colors file in format of [this](https://github.com/NvChad/nvim-base16.lua/blob/master/lua/hl_themes/aquarium.lua) for ui stuffs:
 
 ```lua
 -- custom/colors.lua
@@ -321,7 +364,7 @@ return {
 }
 ```
 
-* set colors and theme in `chadrc.lua`:
+- set colors and theme in `chadrc.lua`:
 
 ```lua
 -- custom/chadrc.lua
@@ -332,9 +375,10 @@ M.ui = {
   colors = "custom.colors",
 }
 ```
-(*Note*, the compatibility of a custom theme with NvChad is not guaranteed, and potential highlighting issues should be fixed by yourself in `hl_override` or somewhere else)
 
-### Remove plugins 
+(_Note_, the compatibility of a custom theme with NvChad is not guaranteed, and potential highlighting issues should be fixed by yourself in `hl_override` or somewhere else)
+
+### Remove plugins
 
 ```lua
 M.plugins = {
@@ -344,12 +388,12 @@ M.plugins = {
    },
 }
 ```
-- Do :PackerSync
 
+- Do :PackerSync
 
 ### Modify plugin definition options
 
-- For example this is nvimtree's definition 
+- For example this is nvimtree's definition
 
 ```lua
  ["kyazdani42/nvim-tree.lua"] = {
@@ -365,8 +409,7 @@ M.plugins = {
  }
 ```
 
-- Now to change cmd, setup or any option defined in it : 
-
+- Now to change cmd, setup or any option defined in it :
 
 ```lua
 
@@ -385,10 +428,10 @@ M.plugins = {
    }
 } }
 ```
+
 - Do :PackerSync
 
-
-### Enable dashboard 
+### Enable dashboard
 
 ```lua
 local M = {}
@@ -403,25 +446,28 @@ M.plugins = {
 
 return M
 ```
+
 - Do :PackerSync
 - The above is an example, its better to put alpha in your custom plugins list table which is most probably in another file if you like organizing stuff
 
 ### Packer Snapshot
 
-- Lets run ```:PackerSnapshot stable_chad``` (this command creates new snapshots)
+- Lets run `:PackerSnapshot stable_chad` (this command creates new snapshots)
 - my chadrc could look like this
 
 ```lua
 M.plugins = {
-   options = {
-      packer = {
-         snapshot = "stable_chad",
-      },
-   },
+
+  override = {
+      ["wbthomason/packer.nvim"] = {
+          snapshot = "stable_chad",
+       }
+   }
 }
 ```
-- In case there's a breaking change, I can just do ```:PackerSnapshotRollback stable_chad``` and wait for 1-2 minutes
-- To delete that snapshot, ```PackerSnapshotDelete stable_chad``` 
+
+- In case there's a breaking change, I can just do `:PackerSnapshotRollback stable_chad` and wait for 1-2 minutes
+- To delete that snapshot, `PackerSnapshotDelete stable_chad`
 
 ### Autocmds
 
