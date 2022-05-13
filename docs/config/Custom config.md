@@ -143,13 +143,14 @@ return {
 
 - you can use a table too or just link the path of your table to organize config clean!
 
-````lua
+```lua
 -- chadrc.lua
 
 
 M.plugins = {
    user = require "custom.plugins"
 }
+```
 
 ### Replace default config of a plugin
 
