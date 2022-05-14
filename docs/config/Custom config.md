@@ -314,7 +314,8 @@ M.ui = {
 - This method can also be used to add your own highlight groups too
 - Make sure you use a valid highlight group!
 - check your theme at : 
-```~/.local/share/nvim/site/pack/packer/opt/base46/lua/hl_themes
+```shell
+~/.local/share/nvim/site/pack/packer/opt/base46/lua/hl_themes
 ```
 - Over there, in your theme file ex : onedark.lua, only the variables from base_30 can be used in overriding your custom highlight groups. 
 - You can even use hex colors in fg/bg field but its preferred to use variable names ex : blue, darker_black, one_bg etc from your theme file as it'll integrate better.
