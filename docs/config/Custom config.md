@@ -64,6 +64,14 @@ M.options = {
 ```lua
 local M = {}
 
+-- add this table only when you want to disable default keys
+M.disabled = {
+  n = {
+      ["<leader>h"] = "",
+      ["<C-s>"] = ""
+  }
+},
+
 M.abc = {
 
   n = {
@@ -126,11 +134,9 @@ M.nvimtree = {
    mode_opts = { silent = false }, -- this is completely optional
    n = {
       ["<leader>ah"] = { "<cmd> NvimTreeToggle <CR>", "   toggle nvimtree" },
-
-      ["<C-n>"] = "", -- to disable Ctrl n keys!
+      ["<C-n>"] = { "<cmd> Telescope <CR>", "open telescope" },
    },
 }
-
 ```
 
 - Check [siduck's config](https://github.com/siduck/dotfiles/blob/master/nvchad/custom/mappings.lua) for reference
