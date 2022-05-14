@@ -311,29 +311,30 @@ M.ui = {
 
 ### Override default highlights
 
-- (NOTE: This method can also be used to add your own highlight groups too)
-- Make sure you use a valid hl group!
+- This method can also be used to add your own highlight groups too
+- Make sure you use a valid highlight group!
+- check your theme at : 
+```~/.local/share/nvim/site/pack/packer/opt/base46/lua/hl_themes
+```
+- Over there, in your theme file ex : onedark.lua, only the variables from base_30 can be used in overriding your custom highlight groups. 
+- You can even use hex colors in fg/bg field but its preferred to use variable names ex : blue, darker_black, one_bg etc from your theme file as it'll integrate better.
+- So no need to import a color table etc
 
 ```lua
--- local colors = require("custom.colors").base_30
--- make sure to copy paste your theme color from base16 repo manually to this file ;(
--- avoid the line with M = require("....")
-
 M.ui = {
    hl_override = {
       --override default highlights
-      Pmenu = { bg = "#ffffff" },
+      Pmenu = { bg = "white" },
 
       MyHighlightGroup = {
-         fg = "abc",
-         bg = "xyz"
+         fg = "red",
+         bg = "darker_black"
       }
    },
 }
 ```
 
 - NOTE: check our base16 repo's integration section to know the default hl groups used
-
 - You can even use the path of the table in hl_override table (make sure u load it in variable before) like :
 
 ```lua
@@ -341,8 +342,8 @@ M.ui = {
 return   {
       Pmenu = { bg = "#ffffff" },
       MyHighlightGroup = {
-         fg = "abc",
-         bg = "xyz"
+         fg = "blue",
+         bg = "grey"
       }
 }
 ```
