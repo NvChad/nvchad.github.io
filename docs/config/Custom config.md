@@ -97,12 +97,33 @@ M.mappings = require "custom.mappings"
 -- the above path can be any file in custom dir, just an example!
 ```
 
+You can also define custom `mode_opts` for each mapping block. These are the default values:
+```lua
+-- IMPORTANT: `mode_opts` will apply to all key mappings in `M.<PLUGIN>`
+{
+  buffer = nil, -- Global mappings. Specify a buffer number for buffer local mappings
+  silent = true, -- use `silent` when creating keymaps
+  noremap = true, -- use `noremap` when creating keymaps
+  nowait = false, -- use `nowait` when creating keymaps
+
+  -- all standard key binding opts are supported 
+}
+```
+You only need to add values to `mode_opts` that you want to add or change from the default. If
+you don't want to alter the default values you don't have to add `mode_opts` to the table at
+all.
+
+**NOTE:** If you only want some key maps for an extension to have a specified set of `mode_opts`,
+simply create another `M.<PLUGIN>` block for the same extension (e.g. `M.nvimtree_2`) and define
+the new `mode_opts`.
+
 ```lua
 -- custom.mappings
 
 local M = {}
 
 M.nvimtree = {
+   mode_opts = { silent = false }, -- this is completely optional
    n = {
       ["<leader>ah"] = { "<cmd> NvimTreeToggle <CR>", "   toggle nvimtree" },
 
