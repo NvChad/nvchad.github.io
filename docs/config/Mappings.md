@@ -22,8 +22,7 @@
 ## Misc
 
 - `C + s` - save
-- `S + t` - new buffer
-- `C + tb` - new tab
+- `S + b` - new buffer
 - `leader + n` - toggle number line
 - `leader + rn` - toggle relative number line
 
