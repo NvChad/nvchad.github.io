@@ -12,7 +12,6 @@ This will leave your current Neovim configuration untouched. Once you exit Neovi
   docker run -w /root -it --rm alpine:edge sh -uelic '
     apk add git nodejs neovim ripgrep alpine-sdk --update
     git clone https://github.com/NvChad/NvChad ~/.config/nvim
-    nvim -c "autocmd User PackerComplete quitall" -c "PackerSync"
     nvim
     '
 ```
@@ -39,8 +38,7 @@ defaultValue="linux" values={[ {label: 'Linux & MacOS', value: 'linux'}, {label:
 Clone NvChad & install it's plugins:
 
 ```shell
-git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
-nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
 ```
 
 </TabItem>
@@ -60,10 +58,10 @@ git clone https://github.com/NvChad/NvChad nvim --depth 1
 ```
 
 3. Copy the nvim dir to `~/AppData/Local/`
-4. Then launch `nvim` like so:
+4. Then launch `nvim`:
 
 ```shell
-nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
+nvim
 ```
 </TabItem>
 </Tabs>
