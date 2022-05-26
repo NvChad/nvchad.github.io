@@ -28,43 +28,19 @@ This will leave your current Neovim configuration untouched. Once you exit Neovi
 
 ## Install
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
-<Tabs
-defaultValue="linux" values={[ {label: 'Linux & MacOS', value: 'linux'}, {label: 'Windows', value: 'win'} ]}>
-<TabItem value="linux">
-
-Clone NvChad & install it's plugins:
+### Linux / macos (UNIX)
 
 ```shell
-git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 ; nvim
 ```
-
-</TabItem>
-<TabItem value="win">
-
-1. Install [`mingw`](http://mingw-w64.org/doku.php) if you don't already have it.
+### Windows
 
 ```shell
-choco install mingw
+git clone https://github.com/NvChad/NvChad $HOME\AppData\Local\nvim --depth 1 ; nvim
 ```
 
-2. Install `packer`
 
-```shell
-git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data\site\pack\packer\start\packer.nvim"
-git clone https://github.com/NvChad/NvChad nvim --depth 1
-```
-
-3. Copy the nvim dir to `~/AppData/Local/`
-4. Then launch `nvim`:
-
-```shell
-nvim
-```
-</TabItem>
-</Tabs>
+(Note: windows users must have  [`mingw`](http://mingw-w64.org/doku.php) installed & set on path))
 
 ## Update
 
