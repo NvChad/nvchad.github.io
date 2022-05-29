@@ -23,7 +23,6 @@ module.exports = {
       ],
     },
     "features",
-    "Extras",
     "faq",
     "support-debugging",
     "contribute",
