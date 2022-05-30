@@ -55,11 +55,15 @@
 ```lua
 -- general format
 
- ["keys"] = {"action", "icon  mapping description"}
+-- opts here is completely optional
+
+ ["keys"] = {"action", "icon  mapping description", opts = {}},
+ ["keys"] = {"action",  opts = {}}, -- non whichkey users
+
 
  -- examples
 
- ["<C-n>"] = {"<cmd> NvimTreeToggle <CR>", "Toggle nvimtree"}
+ ["<C-n>"] = {"<cmd> NvimTreeToggle <CR>", "Toggle nvimtree", opts = {}},
 
  ["<C-s>"] = { "<cmd> w <CR>", "﬚  save file" },
 
@@ -98,8 +102,14 @@ M.disabled = {
 M.abc = {
 
   n = {
-     ["<C-n>"] = {"<cmd> NvimTreeToggle <CR>", "Toggle nvimtree"}
+     ["<C-n>"] = {"<cmd> Telescope <CR>", "Open Telescope"}
   }
+
+ -- non which key users
+  n = {
+     ["<C-n>"] = {"<cmd> Telescope <CR>"}
+  }
+
 
   i = {
     -- more keys!
@@ -117,7 +127,7 @@ return M
 - n, i, v, are the mode names, i.e., normal, insert, visual
 - Be sure to maintain a table structure similar to core.mappings 
 
-## Override default mappings
+## Override default mappings & create mappings
 
 - lets override nvimtree's mappings
 
@@ -128,35 +138,14 @@ M.mappings = require "custom.mappings"
 -- the above path can be any file in custom dir, just an example!
 ```
 
-You can also define custom `mode_opts` for each mapping block. These are the default values:
-```lua
--- IMPORTANT: `mode_opts` will apply to all key mappings in `M.<PLUGIN>`
-{
-  buffer = nil, -- Global mappings. Specify a buffer number for buffer local mappings
-  silent = true, -- use `silent` when creating keymaps
-  noremap = true, -- use `noremap` when creating keymaps
-  nowait = false, -- use `nowait` when creating keymaps
-
-  -- all standard key binding opts are supported 
-}
-```
-You only need to add values to `mode_opts` that you want to add or change from the default. If
-you don't want to alter the default values you don't have to add `mode_opts` to the table at
-all.
-
-**NOTE:** If you only want some key maps for an extension to have a specified set of `mode_opts`,
-simply create another `M.<PLUGIN>` block for the same extension (e.g. `M.nvimtree_2`) and define
-the new `mode_opts`.
-
 ```lua
 -- custom.mappings
 
 local M = {}
 
 M.nvimtree = {
-   mode_opts = { silent = false }, -- this is completely optional
    n = {
-      ["<leader>ah"] = { "<cmd> NvimTreeToggle <CR>", "   toggle nvimtree" },
+      ["<leader>ff"] = { "<cmd> NvimTreeToggle <CR>", "   toggle nvimtree" },
       ["<C-n>"] = { "<cmd> Telescope <CR>", "open telescope" },
    },
 }
@@ -168,10 +157,8 @@ M.nvimtree = {
 ## Mapping with which-key disabled
 
 - The method's just the same but in this you dont have to write the mappings description!
-- Also put this into your custom.init.lua file l
+- Also put this into your custom.init.lua file :
 
 ```lua
- nvchad.no_WhichKey_map()
+ require("core.utils").load_mappings()
 ```
-
-
