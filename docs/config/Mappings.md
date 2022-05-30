@@ -84,6 +84,23 @@
   - Best practice: place icons before the textual description, separated by 2-3 spaces
   - Tip: [Find icons to copy/paste at https://www.nerdfonts.com/cheat-sheet](https://www.nerdfonts.com/cheat-sheet)
 
+
+### Default opts values
+
+
+```lua
+{
+  buffer = nil, -- Global mappings. Specify a buffer number for buffer local mappings
+  silent = true, 
+  noremap = true,
+  nowait = false,
+
+  -- all standard key binding opts are supported 
+}
+```
+
+- Note : This is completely optional
+
 ## Mappings table structure
 
 - This is the mappings structure of core.mappings and your mappings file
