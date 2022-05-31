@@ -2,7 +2,7 @@
 
 - Create custom folder in lua/
 - Copy the /examples dir files in this custom dir.
-- Check siduck's [custom config](https://github.com/siduck/dotfiles/tree/master/nvchad/custom) as an reference!
+- Check siduck's [custom config](https://github.com/siduck/dotfiles/tree/master/nvchad) as a reference!
 - Below are just examples bruhh
 
 ### Change default options
