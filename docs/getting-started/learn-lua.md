@@ -51,7 +51,7 @@ print(level) -- 2
 -- Concatenate strings
 local phrase = "I am"
 local name = "Sid"
-print(phase .. " " .. name) -- I am Sid
+print(phrase .. " " .. name) -- I am Sid
 
 -- Strings and numbers
 local name = "NvChad"
