@@ -1,7 +1,3 @@
----
-id: post-install
-title: Post Install
----
 
 ## If you're new to NeoVim/Vim
 

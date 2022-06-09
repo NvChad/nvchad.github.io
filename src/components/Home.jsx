@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "@theme/Layout"
 import Link from "@docusaurus/Link"
-import bannerImg from "../../static/img/main.png"
+import bannerImg from "../../static/img/screenshots/main.png"
 
 import "../css/components/home.css"
 

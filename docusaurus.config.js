@@ -1,4 +1,4 @@
-const codeTheme = require("prism-react-renderer/themes/palenight")
+const codeTheme = require("prism-react-renderer/themes/palenight");
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
@@ -57,6 +57,7 @@ module.exports = {
         docs: {
           routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.js"),
+          sidebarCollapsible: false,
         },
         theme: {
           customCss: require.resolve("./src/css/style.css"),
@@ -64,4 +65,4 @@ module.exports = {
       },
     ],
   ],
-}
+};

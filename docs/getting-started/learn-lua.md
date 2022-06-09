@@ -1,8 +1,3 @@
----
-id: learn-lua
-title: Learning Lua
----
-
 > Note: This is a very basic lua tutorial to get you familiar with NvChad config
 
 ## Printing

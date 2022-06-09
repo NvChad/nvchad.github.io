@@ -19,7 +19,7 @@ A plugin for escaping Vim insert mode without lagging.
 
 #### [`telescope.nvim`](https://github.com/nvim-telescope/telescope.nvim)
 
-Fuzzy finding select menu with text and image preview.
+Fuzzy finding select menu with text.
 
 ![Telescope](https://raw.githubusercontent.com/siduck/dotfiles/all/rice%20flex/tel.png)
 
@@ -31,13 +31,16 @@ Top bar bufferline for neovim (can be used for managing buffers and tabs, includ
 
 ![bufferline](https://raw.githubusercontent.com/siduck/dotfiles/all/rice%20flex/bufferline.png)
 
-#### [`feline.nvim`](https://github.com/famiu/feline.nvim)
+#### [`NvChad's statusline written from scratch`](https://github.com/NvChad/NvChad/blob/main/lua/ui/statusline.lua)
 
 Fast NeoVim statusline plugin written in lua.
 
 Separator styles: `slant`, `round`, `default`, `block`, `arrow`:
 
-![feline screenshot](/img/features/galaxyline.png)
+![statusline ](/img/features/statusline.png)
+![statusline modes](/img/features/statusline_modes.png)
+
+- NOTE : (statusline looks different based on the themes, the above screenshot is from the onedark theme)
 
 #### [`nvim-tree.lua`](https://github.com/kyazdani42/nvim-tree.lua)
 
@@ -55,9 +58,7 @@ Indentline plugin.
 
 Dashboard plugin for NeoVim.
 
-![dashboard](https://raw.githubusercontent.com/siduck/dotfiles/all/rice%20flex/dashboard-nvim.png)
-
-![devicons screenshot](/img/features/devi.png)
+![dashboard](/img/screenshots/dashboard.png)
 
 #### [`nvim-base16.lua`](https://github.com/norcalli/nvim-base16.lua)
 
@@ -71,14 +72,13 @@ Fastest NeoVim colorizer, colors hex colors, hsl codes and much more!
 
 Lua fork of vim devicons which lets you change colors and edit icons of filetypes.
 
+
+### [`nvim-treesitter`](https://github.com/nvim-treesitter/nvim-treesitter)
+
+NeoVim Treesitter configurations and abstraction layer. We mostly use this for syntax highlighting. The pretty syntax highlighting you see in all of our screenshots has gotten possible due to treesitter
+
 ### Language Server Plugins
 
-#### [`nvim-treesitter`](https://github.com/nvim-treesitter/nvim-treesitter)
-
-NeoVim Treesitter configurations and abstraction layer. We mostly use this for syntax highlighting.
-
-_without / with treesitter:_
-![treesitter](/img/features/treesitter.png)
 
 #### Various LSP plugins
 
@@ -96,5 +96,4 @@ _without / with treesitter:_
 
 - [`gitsigns.nvim`](https://github.com/lewis6991/gitsigns.nvim)
 - [`nvim-autopairs`](https://github.com/windwp/nvim-autopairs)
-- [`vim-matchup`](https://github.com/andymass/vim-matchup)
-- [`nvim-comment`](https://github.com/terrortylor/nvim-comment)
+- [`comment.nvim`](https://github.com/numToStr/Comment.nvim)
