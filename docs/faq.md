@@ -11,10 +11,6 @@
 
 - Press `<leader> + uu`, to update NvChad. (`<leader>` is `<space>` by default)
 
-### How can I check default mappings of NvChad?
-
-- Press `<leader> + ch`, to see the cheatsheet. (`<leader>` is `<space>` by default)
-
 ### My icons aren't working, what should I do?
 
 - It's probably because you aren't using correct font, download and install any font from [Nerd Fonts](https://www.nerdfonts.com/font-downloads) and set that font to your terminal and your icons will work fine 👍.
