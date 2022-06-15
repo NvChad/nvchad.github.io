@@ -65,7 +65,7 @@ M.plugins = {
        }
    },
 }
-````
+```
 
 - Do :PackerSync
 
@@ -181,15 +181,16 @@ M.ui = {
 }
 ```
 
-### Override default highlights
+### Add & Override default highlights
 
-- This method can also be used to add your own highlight groups too
-- Make sure you use a valid highlight group!
-- check your theme at : 
+- Make sure the highlight group you use is defined in the base46 repo
+- check your theme at :
+
 ```shell
 ~/.local/share/nvim/site/pack/packer/opt/base46/lua/hl_themes
 ```
-- Over there, in your theme file ex : onedark.lua, only the variables from base_30 can be used in overriding your custom highlight groups. 
+
+- Over there, in your theme file ex : onedark.lua, only the variables from base_30 can be used in overriding your custom highlight groups.
 - You can even use hex colors in fg/bg field but its preferred to use variable names ex : blue, darker_black, one_bg etc from your theme file as it'll integrate better.
 - So no need to import a color table etc
 
@@ -198,11 +199,6 @@ M.ui = {
    hl_override = {
       --override default highlights
       Pmenu = { bg = "white" },
-
-      MyHighlightGroup = {
-         fg = "red",
-         bg = "darker_black"
-      }
    },
 }
 ```
@@ -214,10 +210,6 @@ M.ui = {
 -- custom.highlights
 return   {
       Pmenu = { bg = "#ffffff" },
-      MyHighlightGroup = {
-         fg = "blue",
-         bg = "grey"
-      }
 }
 ```
 
@@ -229,6 +221,8 @@ M.ui = {
    hl_override = my_highlights
 }
 ```
+
+- The same method as above can be used to add new highlight groups (which arent present in the base46 repo) but use the "hl_add" instead of "hl_override" table
 
 ### Remove plugins
 
