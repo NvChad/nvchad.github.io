@@ -29,10 +29,9 @@ M.options = {
 -- custom/plugins/init.lua
 
 return {
-
-   ["elkowar/yuck.vim"] = { ft = "yuck" }
-
-    ["NvChad/nvterm"] = {
+   ["elkowar/yuck.vim"] = { ft = "yuck" },
+   ["editorconfig/editorconfig-vim"] = {},
+   ["NvChad/nvterm"] = {
       config = function()
          require "plugins.configs.nvterm"
       end,
