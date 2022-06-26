@@ -20,6 +20,7 @@ NvChad comes with the following file / folder structure. [An up-to-date & full t
 │   │
 │   ├── plugins
 │   │    ├── init.lua
+│   │    ├── packerInit.lua
 │   │    └── configs
 │   │        ├── bufferline.lua
 │   │        ├── others.lua
@@ -33,7 +34,7 @@ NvChad comes with the following file / folder structure. [An up-to-date & full t
 ```
 
 - The file names in the tree with (i) are meant to be ignored , i.e the user doesn't need to look at them as the lua code in those files might fret you or look very complex / scare you from NvChad xD.
-- (note) : custom dir has to be created by the user.
+- (note) : custom dir has to be created by the user. 
 
 ## Walkthrough
 
@@ -51,11 +52,11 @@ NvChad comes with the following file / folder structure. [An up-to-date & full t
 ## Themes
 
 - First copy examples/chadrc.lua to lua/custom/chadrc.lua , make sure it has the theme table
-- `<leader> + th` (`<leader>` is `<space>` in our config)
+- `<leader> + th`   (`<leader>` is `<space>` in our config)
 
 ## Mappings
 
-- `:Telescope keymaps`
+- `:Telescope keymaps` 
 
 ## Default general options
 
@@ -70,10 +71,11 @@ M.ui = {}
 M.plugins = {}
 M.mappings = {} has general mappings
 ```
-
 # Plugins
 
-- init.lua : is basically the packer config listing various plugins and their configs
+- The lua/plugins dir contains three files, init.lua, packerInit.lua.
+- packerInit.lua : this file is used for defining packer's init stuff, so things like clone_timeout , compile_on_sync , etc and other packer related options are mentioned [here](https://github.com/wbthomason/packer.nvim/blob/master/doc/packer.txt).
+- init.lua : is basically the packer config listing various plugins, it calls packerInit first and then following with definitions of other plugins + their configs'
 - For example to add a plugin , packer uses this format :
 
 ```lua
@@ -91,7 +93,7 @@ M.mappings = {} has general mappings
     end
 }
 
--- packer's original way of defining plugins :
+-- packer's original way of defining plugins : 
 
  use {
    "max397574/better-escape.nvim",

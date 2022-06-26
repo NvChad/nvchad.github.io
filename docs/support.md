@@ -1,6 +1,6 @@
 ---
-id: support-debugging
-title: Support & Debugging
+id: debugging-config
+title: Debugging config
 ---
 
 ## Basic Debugging

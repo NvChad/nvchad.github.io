@@ -1,0 +1,51 @@
+[data-theme="light"] {
+  --fg: #1e222a;
+  --bg: #fff;
+  --border: #f8f8f8;
+  --prismBg: #2e3440;
+  --shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  --navbar_shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --navbar_shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  --github: url("/icons/github.svg");
+  --telegram: url("/icons/telegram.svg");
+  --discord: url("/icons/discord.svg");
+  --matrix: url("/icons/matrix.svg");
+
+  --featuresH3: #1e222a;
+  --ifm-color-primary: #7f87e0;
+  --banner_gradient: linear-gradient(
+    -225deg,
+    #5271c4 0%,
+    #b19fff 48%,
+    #eca1fe 100%
+  );
+}
+
+[data-theme="dark"] {
+  --fg: white;
+  --bg: #191d25;
+  --border: #282c34;
+  --prismBg: #1e252c;
+  --shadow: none;
+  --navbar_shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  --github: url("/icons/github-inverted.svg");
+  --telegram: url("/icons/telegram-inverted.svg");
+  --discord: url("/icons/discord-inverted.svg");
+  --matrix: url("/icons/matrix-inverted.svg");
+
+  --ifm-color-primary: #ff6e80;
+  --featuresH3: #ff6e80;
+
+  --banner_gradient: linear-gradient(
+    to right,
+    #ff8177 0%,
+    #ff867a 0%,
+    #ff8c7f 21%,
+    #f99185 52%,
+    #cf556c 78%,
+    #b12a5b 100%
+  );
+}
+

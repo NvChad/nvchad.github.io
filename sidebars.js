@@ -2,11 +2,11 @@ module.exports = {
   docs: [
     {
       type: "category",
-      label: "Getting Started",
+      label: "Quickstart",
       items: [
-        "getting-started/setup",
-        "getting-started/post-install",
-        "getting-started/learn-lua",
+        "quickstart/install",
+        "quickstart/post-install",
+        "quickstart/learn-lua",
       ],
     },
     {
@@ -23,9 +23,8 @@ module.exports = {
       ],
     },
     "features",
-    "faq",
-    "support-debugging",
+    "debugging-config",
     "contribute",
-    "acknowledgements",
+    "credits",
   ],
 }
