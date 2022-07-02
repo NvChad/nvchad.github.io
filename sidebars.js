@@ -1,5 +1,5 @@
-module.exports = {
-  docs: [
+const sidebars = {
+  config: [
     {
       type: "category",
       label: "Quickstart",
@@ -27,4 +27,10 @@ module.exports = {
     "contribute",
     "credits",
   ],
+
+  testside: [
+    "themes/themelist"
+  ]
 }
+
+module.exports = sidebars

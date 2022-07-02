@@ -25,16 +25,19 @@ module.exports = {
           to: "quickstart/install",
           label: "Docs",
           position: "left",
+          sidebarId: 'config'
         },
         {
           to: "Features",
           label: "Features",
           position: "left",
+          sidebarId: 'config'
         },
         {
-          to: "Features",
+          to: "themes/themelist",
           label: "Themes",
           position: "left",
+          sidebarId: 'testside'
         },
         {
           href: "https://github.com/NvChad/NvChad",

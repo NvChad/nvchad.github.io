@@ -26,6 +26,7 @@ h4 {
   background-color: var(--prismBg) !important;
 }
 
+/* navbar community link icons */
 .navbar__item.navbar__link[href*="github"] {
   padding: 0 1.3rem 0 0;
   display: flex;
@@ -102,4 +103,9 @@ h4 {
 *::-webkit-scrollbar-thumb {
   background-color: var(--ifm-color-primary);
   border-radius: 5px;
+}
+
+/* misc */
+img {
+  border-radius: .5rem;
 }

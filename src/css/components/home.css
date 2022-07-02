@@ -53,7 +53,8 @@ body {
 }
 
 aside {
-  padding: 1rem 0;
+  margin: 5rem;
+  padding-top: 1rem;
 }
 
 .navbar__inner,
@@ -82,10 +83,6 @@ aside {
 
 .menu__list {
   margin-right: 1rem;
-}
-
-.sidebar_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocSidebar-Desktop-styles-module {
-  border-right: 2px solid var(--border);
 }
 
 .theme-doc-markdown,
