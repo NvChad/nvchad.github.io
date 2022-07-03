@@ -5,8 +5,20 @@ title: Themes
 
 # Themes
 
+(Note: This list is WIP)
+
 ## Dark 
 
 ### Onedark 
 
-![tabufline1](/img/themes/onedark.png)
+![onedark theme](/img/themes/onedark.png)
+
+### Aquarium 
+
+![aquarium theme](/img/themes/aquarium.png)
+
+### Ayu-dark 
+
+![ayu-dark theme](/img/themes/ayu-dark.png)
+
+## light
