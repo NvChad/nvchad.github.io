@@ -81,6 +81,10 @@ aside {
   padding: 0 5rem;
 }
 
+aside {
+  margin: 0rem;
+}
+
 .menu__list {
   margin-right: 1rem;
 }
