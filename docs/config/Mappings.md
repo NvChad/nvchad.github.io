@@ -9,7 +9,7 @@
 ## Navigate in insert mode
 
 - `C + h/j/k/l` - move cursor
-- `C + a` - beginning of the line
+- `C + b` - beginning of the line
 - `C + e` -  end of the line
 
 ## Switch windows 
