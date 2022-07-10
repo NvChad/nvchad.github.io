@@ -31,12 +31,12 @@ This will leave your current Neovim configuration untouched. Once you exit Neovi
 ### Linux/macos (UNIX)
 
 ```bash
-git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 ; nvim
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
 ```
 ### Windows
 
 ```bash
-git clone https://github.com/NvChad/NvChad $HOME\AppData\Local\nvim --depth 1 ; nvim
+git clone https://github.com/NvChad/NvChad $HOME\AppData\Local\nvim --depth 1 && nvim
 ```
 (Note: windows users must have  [`mingw`](http://mingw-w64.org/doku.php) installed & set on path)
 
