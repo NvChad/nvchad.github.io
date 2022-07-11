@@ -106,6 +106,7 @@
 - This is the mappings structure of core.mappings and your mappings file
 
 ```lua
+-- n , i , t etc will be the mode names so i = insert mode and so on
 local M = {}
 
 -- add this table only when you want to disable default keys
