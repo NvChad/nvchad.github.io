@@ -81,10 +81,6 @@ aside {
   padding: 0 5rem;
 }
 
-aside {
-  margin: 0rem;
-}
-
 .menu__list {
   margin-right: 1rem;
 }
@@ -179,6 +175,11 @@ aside {
 }
 
 @media screen and (max-width: 1456px) {
+   
+aside {
+  margin: 0rem;
+}
+
   .docPage_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocPage-styles-module,
   .navbar__inner {
     padding: 0;
