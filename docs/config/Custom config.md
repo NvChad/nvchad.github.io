@@ -135,6 +135,14 @@ return M
 {
   statusline = {
       separator_style = "default", -- default/round/block/arrow
+
+     -- or 
+     -- custom separators
+     -- separator_style = {
+     --    left = " ",
+     --    right = "",
+     --  },
+
       overriden_modules = nil,
    },
 
