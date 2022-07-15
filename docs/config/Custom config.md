@@ -128,7 +128,7 @@ return M
 
 ### Statusline & tabufline 
 
-- We use our own (plugin)[https://github.com/NvChad/ui] for statusline & tabufline and it has certain options
+- We use our own [plugin](https://github.com/NvChad/ui) for statusline & tabufline and it has certain options
 - Default config : ( you must know that every plugin's default config is just a table kinda)
 
 ```lua
