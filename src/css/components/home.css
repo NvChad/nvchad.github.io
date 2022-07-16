@@ -164,10 +164,6 @@ aside {
   justify-content: center;
 }
 
-.try_btn {
-  gap: 0.3rem;
-}
-
 .banner_btn:hover {
   color: #c0e4fe;
   background-color: #2e3440;

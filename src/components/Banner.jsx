@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "@docusaurus/Link";
-import { ArrowCircleDown } from "phosphor-react";
 
 function BannerText() {
   return (
@@ -19,7 +18,7 @@ function BannerText() {
           style={{ textDecoration: "none" }}
         >
           <button className="banner_btn">
-            <ArrowCircleDown size={23} />
+           <img src="/icons/install.svg" />
             Install
           </button>
         </Link>
@@ -28,9 +27,9 @@ function BannerText() {
           to="/quickstart/install#try-in-docker-container"
           style={{ textDecoration: "none" }}
         >
-          <button className="banner_btn try_btn">
+          <button className="banner_btn">
             <img src="/icons/docker.svg" />
-            Test
+            Docker
           </button>
         </Link>
       </div>

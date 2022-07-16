@@ -21,7 +21,7 @@ Fuzzy finding select menu with text.
 
 ### UI plugins
 
-#### [tabufline - NvChad's tab+bufferline](https://github.com/akinsho/bufferline.nvim)
+#### [tabufline - NvChad's tab+bufferline](https://github.com/NvChad/ui)
 
 ![tabufline1](/img/features/tabufline1.png)
 ![tabufline2](/img/features/tabufline1.png)
@@ -31,7 +31,7 @@ Top bar tab+buffer line for neovim (can be used for managing buffers and tabs, c
 
 ![bufferline](https://raw.githubusercontent.com/siduck/dotfiles/all/rice%20flex/bufferline.png)
 
-#### [`NvChad's statusline written from scratch`](https://github.com/NvChad/NvChad/blob/main/lua/ui/statusline.lua)
+#### [`NvChad's statusline written from scratch`](https://github.com/NvChad/ui)
 
 Fast NeoVim statusline plugin written in lua.
 
