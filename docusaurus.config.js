@@ -37,7 +37,7 @@ module.exports = {
           to: "themes/themelist",
           label: "Themes",
           position: "left",
-          sidebarId: 'testside'
+          sidebarId: 'themesPage'
         },
         {
           href: "https://github.com/NvChad/NvChad",

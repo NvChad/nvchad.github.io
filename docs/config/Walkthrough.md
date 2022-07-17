@@ -1,40 +1,36 @@
-- (NOTE : Make sure you know basic lua , if not then [check](https://nvchad.github.io/getting-started/learn-lua)).
+- NOTE : Make sure you know basic lua , if not then [check](/quickstart/learn-lua).
 - Make sure that you read sections in config (in the sidebar of this site) orderwise.
 
 ## Structure
 
-NvChad comes with the following file / folder structure. [An up-to-date & full tree can be viewed in the repo](https://github.com/NvChad/NvChad/).
-
-```tree
+```lua
 
 ├── init.lua
 │
 ├── lua
 │   │
 │   ├── core
-│   │   ├── autocmds.lua
 │   │   ├── default_config.lua
 │   │   ├── mappings.lua
 │   │   ├── options.lua
-│   │   └── utils.lua (i)
+│   │   ├── packer.lua  -- (bootstrap packer & installs plugins)
+│   │   ├── utils.lua  -- (core util functions) (i)
+│   │   └── init.lua  -- (autocmds)
 │   │
 │   ├── plugins
-│   │    ├── init.lua
-│   │    ├── packerInit.lua
+│   │    ├── init.lua -- (default plugin list)
 │   │    └── configs
-│   │        ├── bufferline.lua
-│   │        ├── others.lua
+│   │        ├── cmp.lua
+│   │        ├── others.lu -- (list of small configs of plugins)
 │   │        └── many more plugin configs
 |   |
 │   ├── custom *
-│   │   ├── chadrc.lua
-│   │   ├── init.lua
+│   │   ├── chadrc.lua -- (overrides default_config)
+│   │   ├── init.lua -- (runs after main init.lua file)
 │   │   ├── more files, dirs
-
 ```
 
-- The file names in the tree with (i) are meant to be ignored , i.e the user doesn't need to look at them as the lua code in those files might fret you or look very complex / scare you from NvChad xD.
-- (note) : custom dir has to be created by the user. 
+-  Note : custom dir is created by user
 
 ## Walkthrough
 
@@ -43,62 +39,22 @@ NvChad comes with the following file / folder structure. [An up-to-date & full t
 ![chad](https://media.discordapp.net/attachments/610012463907209227/891016498733256774/869951078962196571.png)
 ![lessgooo](https://cdn.discordapp.com/attachments/610012463907209227/891011437810577480/863483056531046450.png)
 
-## Init.lua
-
-- NvChads's config has a lua dir and init.lua.
-- The init.lua basically loads the core config and custom config.
-- pcall is usually used for error handling . Check [lua docs](https://www.lua.org/pil/8.4.html) for more info.
-
 ## Themes
 
-- First copy examples/chadrc.lua to lua/custom/chadrc.lua , make sure it has the theme table
 - `<leader> + th`   (`<leader>` is `<space>` in our config)
 
 ## Mappings
 
 - `:Telescope keymaps` 
 
-## Default general options
+## Default settings
 
 - This file is lua/core/default_config.lua
-- The table below contains all the default options for various stuff in NvChad.
-
-For example :
 
 ```lua
-M.options = {}
+-- Table fields in default_config.lua
+M.options = {} 
 M.ui = {}
 M.plugins = {}
-M.mappings = {} has general mappings
-```
-# Plugins
-
-- The lua/plugins dir contains three files, init.lua, packerInit.lua.
-- packerInit.lua : this file is used for defining packer's init stuff, so things like clone_timeout , compile_on_sync , etc and other packer related options are mentioned [here](https://github.com/wbthomason/packer.nvim/blob/master/doc/packer.txt).
-- init.lua : is basically the packer config listing various plugins, it calls packerInit first and then following with definitions of other plugins + their configs'
-- For example to add a plugin , packer uses this format :
-
-```lua
-
-["org or username/reponame"] = {
-  config = function()
-    path to config ( require it)
-  end
-}
-
--- example
- ["max397574/better-escape.nvim"] = {
-    config = function()
-       require("plugins.configs.better_escape")
-    end
-}
-
--- packer's original way of defining plugins : 
-
- use {
-   "max397574/better-escape.nvim",
-    config = function()
-       require("plugins.configs.better_escape")
-    end
-}
+M.mappings = {} 
 ```

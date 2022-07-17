@@ -18,7 +18,8 @@ This will leave your current Neovim configuration untouched. Once you exit Neovi
 
 ## Pre-requisites
 
-- [Neovim 0.7.0](https://github.com/neovim/neovim/releases/tag/v0.7.0)
+- You should be an existing vim user or keen to learn nvim + nvchad (through these docs)
+- [Neovim 0.7.2](https://github.com/neovim/neovim/releases/tag/v0.7.2)
 - If neovim's very old for your OS then consider trying this [neovim version manager](https://github.com/MordechaiHadad/bob)
 - [Use a Nerd Font](https://www.nerdfonts.com/) in your terminal emulator.
 
@@ -28,7 +29,7 @@ This will leave your current Neovim configuration untouched. Once you exit Neovi
 
 ## Install
 
-### Linux/macos (UNIX)
+### Linux / Macos (UNIX)
 
 ```bash
 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim

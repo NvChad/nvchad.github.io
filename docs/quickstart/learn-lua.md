@@ -1,3 +1,8 @@
+---
+id: learn-lua
+title: Learn Lua 
+---
+
 ## Print
 
 ```lua
@@ -11,7 +16,7 @@ print("Hi")
 print("Hi") -- comment
 
 --[[
- multiline 
+ multi-line 
  comment
 ]]
 ```
@@ -20,6 +25,7 @@ print("Hi") -- comment
 
 ```lua
 -- Different types
+
 local x = 10 -- number
 local name = "sid" -- string
 local isAlive = true -- boolean
@@ -29,7 +35,6 @@ local a = nil --no value or invalid value
 **Numbers**
 
 ```lua
--- Examples
 local a = 1
 local b = 2
 
@@ -38,9 +43,9 @@ print(a + b) -- 3
 
 ```lua
 -- increment
-local level = 1
-level = level + 1
-print(level) -- 2
+local n = 1
+n = n + 1
+print(n) -- 2
 ```
 
 **Strings**
@@ -141,25 +146,24 @@ end
 ## Functions
 
 ```lua
-local function num(a)
+local function print_num(a)
   print(a)
 end
 
 or
 
-local num = function(a)
+local print_num = function(a)
   print(a)
 end
 
-num(5) -- prints 5 
+print_num(5) -- prints 5 
 ```
 
 ```lua
 -- multiple parameters
 
 function sum(a, b)
-  local result = a + b
-  print(result)
+  return a + b
 end
 ```
 
@@ -197,7 +201,7 @@ for i = 0, 3 do
 end
 ```
 ```
--- prints
+-- Both print "hi" 3 times
 hi
 hi
 hi
@@ -205,41 +209,29 @@ hi
 
 ## Tables
 
+- Tables can be used to store complex data.
+- Types of tables : 
+
+### Arrays (lists)
+
+- Items within these can be accessed by "index"
+
 ```lua
--- Basic table
 local colors = { "red", "green", "blue" }
 
 print(colors[1]) -- red
 print(colors[2]) -- green
 print(colors[3]) -- blue
 
--- Use a loop to iterate though the table
+-- Different ways to loop through lists
+-- #colors is the length of the table, #tablename is the syntax
+
 for i = 1, #colors do
   print(colors[i])
 end
-```
 
-**Two Dimensional Table**
-
-```lua
--- Tables within tables
-local data = {
-    { "billy", 12 },
-    { "john", 20 },
-}
-
-for i = 1, #data do
-  print(data[i][1] .. " is " .. data[i][2] .. " years old")
-end
-```
-### Loop through tables  
-
-#### Ipairs 
-
-```lua
-local names = { "sid", "tim", "lee" }
-
-for index, value in ipairs(names) do
+-- ipairs 
+for index, value in ipairs(colors) do
    print(names[index])
    -- or
    print(value)
@@ -251,26 +243,55 @@ for _, value in ipairs(names) do
 end
 ```
 
-#### Pairs
+### Dictionaries
 
-```lua
-local details = {
+- These contain keys and values
+
+```lua 
+local info = { 
    name = "sid",
    age = 20,
-   distro = "void linux",
+   isAlive = true
 }
 
+-- both print sid
+prrint(info["name"])
+print(info.name)
+
+-- Loop by pairs
 for key, value in pairs(details) do
-   print(key .. value)
+   print(key .. " " .. value)
 end
+
+-- prints name sid, age 20 etc
+```
+
+### **Nested Tables**
+
+```lua
+-- Nested lists
+local data = {
+    { "Sid", 20 },
+    { "Tim", 90 },
+}
+
+for i = 1, #data do
+  print(data[i][1] .. " is " .. data[i][2] .. " years old")
+end
+
+-- Nested dictionaries
+local data = {
+    sid = { age = 20 },
+    time = { age = 90 },
+}
 ```
 
 ## Modules
 
-Include code from other files
+Import code from other files
 
 ```lua
-require("otherfile")
+require("path")
 ```
 
 - Credits - [Lua-Beginners-Guide](https://github.com/pohka/Lua-Beginners-Guide)

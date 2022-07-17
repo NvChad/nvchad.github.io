@@ -29,6 +29,7 @@ title: Debugging config
 
 - [Search the GitHub issue list](https://github.com/NvChad/NvChad/issues?q=is%3Aissue)
 - Then [log an issue, be sure to provide **all prompted information**](https://github.com/NvChad/NvChad/issues/new/choose)
+- If its a plugin issue then make sure you familiar with the lazyloading of default nvchad plugins as that plugin might depend on the default plugin which is lazyloaded.
 
 ## How to gather fundamental debugging info for GitHub issues
 

@@ -18,6 +18,7 @@ Thank you
 - We sincerely appreciate each and every person who directly & indirectly made this possible, thank you all!
 
 These people have been very helpful at times to @siduck
+- [ii14](https://github.com/ii14)
 - [tamton-aquib](https://github.com/tamton-aquib)
 - [max397574](https://github.com/max397574)
 - [vhyrro](https://github.com/vhyrro)

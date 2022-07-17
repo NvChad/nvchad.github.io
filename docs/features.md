@@ -21,7 +21,7 @@ Fuzzy finding select menu with text.
 
 ### UI plugins
 
-#### [tabufline - NvChad's tab+bufferline](https://github.com/NvChad/ui)
+#### [Tabufline - NvChad's tab+bufferline](https://github.com/NvChad/ui)
 
 ![tabufline1](/img/features/tabufline1.png)
 ![tabufline2](/img/features/tabufline1.png)
@@ -76,17 +76,11 @@ Lua fork of vim devicons which lets you change colors and edit icons of filetype
 
 NeoVim Treesitter configurations and abstraction layer. We mostly use this for syntax highlighting. The pretty syntax highlighting you see in all of our screenshots has gotten possible due to treesitter
 
-### Language Server Plugins
-
-#### Various LSP plugins
-
-- [`nvim-lspconfig`](https://github.com/neovim/nvim-lspconfig) - Used for configuring lsp servers etc
 - [`nvim-cmp`](https://github.com/hrsh7th/nvim-cmp) - completion menu
 
-![lspkind](https://raw.githubusercontent.com/siduck/dotfiles/all/rice%20flex/lspkind.png)
-
-### Misc plugins
+### Other plugins
 
 - [`gitsigns.nvim`](https://github.com/lewis6991/gitsigns.nvim)
 - [`nvim-autopairs`](https://github.com/windwp/nvim-autopairs)
 - [`comment.nvim`](https://github.com/numToStr/Comment.nvim)
+- [`nvim-lspconfig`](https://github.com/neovim/nvim-lspconfig) - Used for configuring lsp servers etc

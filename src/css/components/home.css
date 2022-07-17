@@ -162,6 +162,7 @@ aside {
   display: flex;
   gap: 1rem;
   justify-content: center;
+  margin-bottom: 0.5rem;
 }
 
 .banner_btn:hover {

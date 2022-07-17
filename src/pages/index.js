@@ -9,6 +9,8 @@ import Features from "../components/Features";
 import Banner from "../components/Banner";
 import Description from "../components/Description";
 
+// Home page
+
 function Home() {
   return (
     <Layout description="An attempt to make neovim cli as functional as an IDE while being very beautiful, blazing fast">

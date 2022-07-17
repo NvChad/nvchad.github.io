@@ -1,3 +1,7 @@
+---
+id: post-install
+title: Post Install
+---
 
 ## If you're new to NeoVim/Vim
 
@@ -27,17 +31,14 @@ After the initial installation, we recommend setting up a few things based on yo
 
 ## Setup your custom config
 
-- NvChad gitignores the `lua/custom` dir so when nvchad update doesnt mess this dir, it's preserved and all of your changes are supposed to be done within this dir only
+- NvChad updates wont overwite `lua/custom` dir as its gitignored, all of the user changes must be done in this dir only
 
 - `custom/init.lua` gets loaded at the end in the main init.lua file, add your commands, autocmds here etc
-- `custom/chadrc.lua` is used to override `core/default_config.lua` and basically control whole of nvchad, you only need to include values that you wish to change from the default file
-- It can be used to override & add vim options, mappings, plugin management etc
-
+- `custom/chadrc.lua` is used to override `core/default_config.lua` and basically control whole of nvchad, you have to maintain the table structure of `default_config.lua`
 ---
 
 NvChad provides `init.lua` & `chadrc.lua` inside of the `examples` folder.
-
-To start setting up NvChad to your needs, copy these template files:
+- Copy the default files
 
 ```
 mkdir lua/custom
