@@ -38,8 +38,8 @@ const FeatureList = [
     imgSrc: "/logos/update.png",
     description: (
       <>
-        Builtin update mechanism to stay update with the latest changes &
-        preserves user configs and stable.
+        Built-in update mechanism to stay up to date with the latest changes &
+        preserve user configs.
       </>
     ),
   },
