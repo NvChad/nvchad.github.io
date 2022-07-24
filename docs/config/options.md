@@ -7,22 +7,8 @@ title: Options
 
 ### Override default options
 
-- Note : The same method can be used to add new options
-```lua
-M.options = {
-   user = function()
-      vim.opt.number = false
-   end,
-}
-
--- or just load the module with your options
-
-M.options = {
-   user = function()
-       require("custom.myoptions")
-   end,
-}
-```
+- Put them in `custom/init.lua`
+- New options can put in the same file too 
 
 ### Autocmds & Globals
 

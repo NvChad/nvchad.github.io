@@ -27,8 +27,8 @@ const FeatureList = [
     imgSrc: "/logos/cogs.png",
     description: (
       <>
-        The defaults can be disabled & overriden! Build your own config on the
-        top of NvChad while still using its features
+       Built-in update mechanism to stay up to date with the latest changes &
+       preserve user configs.
       </>
     ),
   },

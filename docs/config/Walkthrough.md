@@ -53,7 +53,6 @@
 
 ```lua
 -- Table fields in default_config.lua
-M.options = {} 
 M.ui = {}
 M.plugins = {}
 M.mappings = {} 
