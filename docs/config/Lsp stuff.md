@@ -31,10 +31,41 @@ for _, lsp in ipairs(servers) do
 end
 ```
 
-## lsp-installer
+## Mason.nvim
+
+- Mason.nvim plugin in nvchad is mainly used to install lspservers, formatters, linters, debug adapters. 
 
 ```
-:LspInstall clangd 
+:MasonInstall html-lsp 
 ```
 
-- We've enabled automatic installation in lsp-installer config, meaning that you dont have to run LspInstall anymore. Any lsp server you configure in your custom lspconfig file, lsp-installer will detect it and install the lsp server automatically!
+- Run `:Mason` command to open Mason.nvim's floating window and there you can install, update, uninstall etc the available packages ( i.e lspservers, linters, formatters etc)
+- Press i on the package name in the list to install it.
+- Its better to list all your requireed packages and put them into your mason override config.
+- Find exact names of your package from `:Mason` window
+- This is an example of siduck's config :D
+
+```lua
+ ["williamboman/mason"] = {
+      ensure_installed = {
+        -- lua stuff
+        "lua-language-server",
+        "stylua",
+
+        -- web dev
+        "css-lsp",
+        "html-lsp",
+        "typescript-language-server",
+        "deno",
+        "emmet-ls",
+        "json-lsp",
+
+        -- shell
+        "shfmt",
+        "shellcheck",
+      },
+    },
+```
+
+- Once this is done, then reopen nvim and run `:MasonInstallAll` command. This will install the listed packages in `ensure_installed` field of mason.nvim config.
+- Btw that `MasonInstallAll` command is a custom nvchad command and not really from any of mason.nvim's original commands. 
