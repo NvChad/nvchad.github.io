@@ -46,7 +46,7 @@ end
 - This is an example of siduck's config :D
 
 ```lua
- ["williamboman/mason"] = {
+ ["williamboman/mason.nvim"] = {
       ensure_installed = {
         -- lua stuff
         "lua-language-server",
