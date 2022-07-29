@@ -95,6 +95,7 @@ return M
 
 - `abc` and `xyz` above are arbitrary; they could, for example, be a plugin's name
 - Be sure to maintain a table structure similar to core.mappings 
+- Mappings will be automatically loaded. You don't need to load them manually.
 
 ## Override default mappings
 
