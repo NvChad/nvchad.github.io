@@ -185,7 +185,7 @@ Different ways to make a loop
 
 ### While 
 ```lua
-local i = 0
+local i = 1
 
 while i <= 3 do
    print("hi")
@@ -195,7 +195,7 @@ end
 
 ### For
 ```
-for i = 0, 3 do
+for i = 1, 3 do
    print("hi")
    i = i + 1
 end
@@ -232,13 +232,13 @@ end
 
 -- ipairs 
 for index, value in ipairs(colors) do
-   print(names[index])
+   print(colors[index])
    -- or
    print(value)
 end
 
 -- If you dont use index or value here then you can replace it with _ 
-for _, value in ipairs(names) do
+for _, value in ipairs(colors) do
    print(value)
 end
 ```
@@ -259,8 +259,8 @@ prrint(info["name"])
 print(info.name)
 
 -- Loop by pairs
-for key, value in pairs(details) do
-   print(key .. " " .. value)
+for key, value in pairs(info) do
+   print(key .. " " .. tostring(value))
 end
 
 -- prints name sid, age 20 etc
