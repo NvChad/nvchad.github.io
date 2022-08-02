@@ -22,7 +22,7 @@
  ["<leader>uu"] = { "<cmd> :NvChadUpdate <CR>", "  update nvchad" },
 
  [";"] = { ":", "enter cmdline", opts = { nowait = true } },
- ["jk"] = { "<ESC>", "escape insert mode" , opts { nowait = true }},
+ ["jk"] = { "<ESC>", "escape insert mode" , opts = { nowait = true }},
 
  -- example with lua function
  ["<leader>tt"] = {
