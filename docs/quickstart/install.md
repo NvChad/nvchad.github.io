@@ -22,6 +22,7 @@ This will leave your current Neovim configuration untouched. Once you exit Neovi
 - [Neovim 0.7.2](https://github.com/neovim/neovim/releases/tag/v0.7.2)
 - If neovim's very old for your OS then consider trying this [neovim version manager](https://github.com/MordechaiHadad/bob)
 - [Use a Nerd Font](https://www.nerdfonts.com/) in your terminal emulator.
+- Make sure to delete this folder `~/.local/share/nvim` on linux/Macos or `~\AppData\Local\nvim` and `~\AppData\Local\nvim-data` on windows
 
 ### Semi-optional 
 
