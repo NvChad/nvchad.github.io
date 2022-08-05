@@ -5,7 +5,7 @@
 
 ```lua
 -- we are just modifying lspconfig's packer definition table
--- put this in your custom plugins section
+-- put this in your custom plugins section i.e M.plugins.user field 
 
 ["neovim/nvim-lspconfig"] = {
     config = function()
