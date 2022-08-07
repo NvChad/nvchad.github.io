@@ -54,7 +54,7 @@ Indentline plugin.
 
 ![blankline screenshot](https://raw.githubusercontent.com/siduck/dotfiles/all/rice%20flex/blanklineNvim.png)
 
-#### [`dashboard-nvim`](https://github.com/goolord/alpha-nvim)
+#### [`alpha-nvim`](https://github.com/goolord/alpha-nvim)
 
 Dashboard plugin for NeoVim.
 
