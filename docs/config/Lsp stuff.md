@@ -30,6 +30,7 @@ for _, lsp in ipairs(servers) do
   }
 end
 ```
+- Open nvim and run `:PackerCompile`
 
 ## Mason.nvim
 

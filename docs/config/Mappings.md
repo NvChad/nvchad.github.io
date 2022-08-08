@@ -35,8 +35,8 @@
 
 - The mapping description is required for `WhichKey`, do non-whichkey users can skip it
 - Icons are visually appealing and help readability, but they are optional
-  - So you can place icons before the textual description, separated by 2-3 spaces
-  - [Find icons to copy/paste at nerdfonts website](https://www.nerdfonts.com/cheat-sheet)
+- So you can place icons before the textual description, separated by 2-3 spaces
+- [Find icons to copy/paste at nerdfonts website](https://www.nerdfonts.com/cheat-sheet)
 
 ### Default opts values
 
