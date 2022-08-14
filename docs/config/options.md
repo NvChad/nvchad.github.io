@@ -3,8 +3,6 @@ id: options
 title: Options
 ---
 
-(Note: You should add these in chadrc )
-
 ### Override default options
 
 - Put them in `custom/init.lua`
