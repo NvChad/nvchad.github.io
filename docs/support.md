@@ -14,7 +14,7 @@ title: Debugging config
 - If you still can't figure out what's going wrong, you can remove your compiled Packer plugins with:
 
   ```shell
-  rm -r ~/.config/nvim/plugin`
+  rm -r ~/.config/nvim/plugin
   ```
 
   Then in NeoVim run `:PackerSync` and **restart NeoVim**.
