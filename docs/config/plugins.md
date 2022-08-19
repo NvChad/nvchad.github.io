@@ -194,6 +194,22 @@ M.plugins = {
 -- now run :PackerSync
 ```
 
+### Enable which-key
+
+- You can enable which-key.nvim also.
+
+```lua
+M.plugins = {
+   user = {
+      ["folke/which-key.nvim"] = {
+         disable = false,
+      },
+   },
+}
+
+-- now run :PackerSync
+```
+
 
 ### Remove plugins
 
