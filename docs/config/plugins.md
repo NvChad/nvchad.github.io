@@ -28,6 +28,12 @@ title: Plugins
 ## Install, Remove plugins & Override them
 
 ```lua
+-- chadrc
+M.plugins = require "custom.plugins"
+```
+
+```lua
+-- custom/plugins/init.lua
 M.plugins = {
 
   -- Install plugin
