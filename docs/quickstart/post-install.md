@@ -45,6 +45,7 @@ mkdir lua/custom
 cp examples/init.lua lua/custom/init.lua
 cp examples/chadrc.lua lua/custom/chadrc.lua
 ```
+- [Minimal custom config](https://github.com/NvChad/example_config) (this is a good starting point and can be taken as an example)
 
 ## Install Treesitter Parsers
 
