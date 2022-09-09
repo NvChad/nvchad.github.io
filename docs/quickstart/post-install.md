@@ -37,15 +37,8 @@ After the initial installation, we recommend setting up a few things based on yo
 - `custom/chadrc.lua` is used to override `core/default_config.lua` and basically control whole of nvchad, you have to maintain the table structure of `default_config.lua`
 ---
 
-NvChad provides `init.lua` & `chadrc.lua` inside of the `examples` folder.
-- Copy the default files
-
-```
-mkdir lua/custom
-cp examples/init.lua lua/custom/init.lua
-cp examples/chadrc.lua lua/custom/chadrc.lua
-```
 - [Minimal custom config](https://github.com/NvChad/example_config) (this is a good starting point and can be taken as an example)
+- You can use this as your initial custom dir (delete .git folder from it)
 
 ## Install Treesitter Parsers
 
