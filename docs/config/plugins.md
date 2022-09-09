@@ -3,207 +3,66 @@ id: plugins
 title: Plugins
 ---
 
-### Plugin Definition
+## Plugin definition
 
-- Nvchad uses packer.nvim underhood but the syntax is different & better
-- This shows how a plugin definition syntax looks like in packer.nvim and nvchad, below are some examples
-
-#### Packer's way to define plugins
-
-```lua
-   use { "NvChad/nvterm" }, -- without any options
-
-   -- with more options
-   use {
-      "NvChad/nvterm"
-      module = "nvterm",
-      config = function()
-         require "plugins.configs.nvterm"
-      end,
-   },
-```
-
-#### NvChad's way to define plugins
+- What is a plugin definition? Its a term we use to define plugins so packer could use & install them.
+- Our way of defining plugin is slightly different and better than packer's way
+- Example : 
 
 ```lua
-   ["NvChad/nvterm"] = {}, -- without any options
+  -- packer's original syntax
+  use {
+    "Pocco81/TrueZen.nvim",
+     cmd = "abc"
+  }
 
-   -- with more options
-   ["NvChad/nvterm"] = {
-      module = "nvterm",
-      config = function()
-         require "plugins.configs.nvterm"
-      end,
-   },
+  -- NvChad's syntax
+  ["Pocco81/TrueZen.nvim"] = {
+    cmd = "abc"
+  },
+
+  -- if you dont wish to have any plugin definition options
+  ["Pocco81/TrueZen.nvim"] = {}
 ```
 
-### Add plugins
-
-- Install new plugins
-
-```lua
--- chadrc.lua
-
-M.plugins = {
-   user = require "custom.plugins"
-}
-```
-- You can use a table too or just link the path of your table to organize config clean!
-
-```lua
--- custom/plugins/init.lua has to return a table
--- THe plugin name is github user or organization name/reponame
-
-return {
-
-   ["elkowar/yuck.vim"] = { ft = "yuck" },
-
-   ["max397574/better-escape.nvim"] = {
-      event = "InsertEnter",
-      config = function()
-         require("better_escape").setup()
-      end,
-   },
-}
-```
-### Override default config of a plugin
-
-- This feature comes useful when you want to change one thing from default config's options of a plugin but not copy paste the whole config!
+## Install, Remove plugins & Override them
 
 ```lua
 M.plugins = {
-   override = {
-      ["nvim-treesitter/nvim-treesitter"] = {
-        ensure_installed = {
-          "html",
-          "css",
-       },
-     }
-   }
-}
-```
 
-- Take the exact plugin name from `plugins/init.lua`
-- The above method might get messy if you override many plugin configs, so below is a basic example to keep it clean :
+  -- Install plugin
+  ["Pocco81/TrueZen.nvim"] = {},
 
-```lua
-local pluginConfs = require "custom.plugins.configs"
+  -- Override plugin definition options
+  ["goolord/alpha-nvim"] = {
+    disable = false,
+    cmd = "Alpha",
+  },
 
-M.plugins = {
-   override = {
-      ["nvim-treesitter/nvim-treesitter"] = pluginConfs.treesitter,
-      ["kyazdani42/nvim-tree.lua"] = pluginConfs.nvimtree,
-   },
-}
-```
-
-```lua
--- custom/plugins/configs.lua file
-
-local M = {}
-
-M.treesitter = {
-   ensure_installed = {
-      "lua",
-      "html",
-      "css",
-   },
-}
-
-M.nvimtree = {
-   git = {
-      enable = true,
-   },
-   view = {
-      side = "right",
-      width = 20,
-   },
-}
-
--- you cant directly call a module in chadrc thats related to the default config 
--- Thats because most probably that module is lazyloaded
--- In this case its 'cmp', we have lazyloaded it by default
--- So you need to make this override field a function, instead of a table 
--- And the function needs to return a table!
-
-M.cmp = function()
-   local cmp = require 'cmp' 
-
-   return {
-      mapping = {
-         ["<C-d>"] = cmp.mapping.scroll_docs(-8),
+  -- Override plugin config
+  ["williamboman/mason.nvim"] = {
+    override_options = {
+          ensure_installed = { "html-lsp", "clangd" }
       }
-    }
-end
+  },
+   
+   -- Override plugin config if it has a module called
+   -- If you wish to call a module, which is 'cmp' in this case
+   ["hrsh7th/nvim-cmp"] = {
+    override_options = function()
+      local cmp = require "cmp"
 
-return M
-```
+      return {
+        mapping = {
+          ["<C-d>"] = cmp.mapping.scroll_docs(-8),
+        },
+      }
+    end,
+  },
 
-
-- Do :PackerSync
-
-### Modify plugin definition options
-
-- For example this is nvimtree's definition
-
-```lua
- ["kyazdani42/nvim-tree.lua"] = {
-      cmd = { "NvimTreeToggle", "NvimTreeFocus" },
-
-      setup = function()
-         require("core.mappings").nvimtree()
-      end,
-
-      config = function()
-         require "plugins.configs.nvimtree"
-      end,
- }
-```
-- And we want to change the values in config, setup , cmd etc
-- So put that plugin definition in the custom plugins section ( the place where you define new plugins to install them)
-
-```lua
-
-M.plugins = {
-  user = {
-      ["kyazdani42/nvim-tree.lua"] = {
-      cmd = { "abc" },
-      config = function()
-          require "custom.plugins.nvimtree"
-      end,
-   }
-} 
-
--- This will change cmd, config values from default plugin definition
--- So the setup value isnt changed, look close!
-```
-
-### Enable dashboard
-
-- You can enable alpha.nvim i.e dashboard plugin the same way.
-
-```lua
-M.plugins = {
-   user = {
-      ["goolord/alpha-nvim"] = {
-         disable = false,
-      },
-   },
+  -- remove plugin
+  ["neovim/nvim-lspconfig"] = false
 }
-
--- now run :PackerSync
 ```
 
-
-### Remove plugins
-
-```lua
-M.plugins = {
-  remove = {
-      "andymass/vim-matchup",
-      "NvChad/nvterm",
-   },
-}
-
--- now run :PackerSync
-```
+- NOTE : THe override_options will override the default plugin config's options, so you dont have to re-write the whole default plugin config but just write the things you want to change ( override )

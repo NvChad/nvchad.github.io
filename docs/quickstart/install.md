@@ -18,9 +18,8 @@ This will leave your current Neovim configuration untouched. Once you exit Neovi
 
 ## Pre-requisites
 
-- You should be an existing vim user or keen to learn nvim + nvchad (through these docs)
-- [Neovim 0.7.2](https://github.com/neovim/neovim/releases/tag/v0.7.2)
-- If neovim's very old for your OS then consider trying this [neovim version manager](https://github.com/MordechaiHadad/bob)
+- You should be an existing vim user or keen to learn nvim and nvchad (through these docs)
+- [Neovim 0.7.2](https://github.com/neovim/neovim/releases/tag/v0.7.2) , if your distro/OS doesnt have it then try [neovim version manager](https://github.com/MordechaiHadad/bob)
 - [Use a Nerd Font](https://www.nerdfonts.com/) in your terminal emulator.
 - Make sure to delete this folder `~/.local/share/nvim` on linux/Macos or `~\AppData\Local\nvim` and `~\AppData\Local\nvim-data` on windows
 
@@ -54,7 +53,7 @@ This will open a prompt in NeoVim warning you that it is about to do a `git rese
 
 ## Uninstall
 
-```
+```bash
 # linux/macos (unix)
 rm -rf ~/.config/nvim
 rm -rf ~/.local/share/nvim

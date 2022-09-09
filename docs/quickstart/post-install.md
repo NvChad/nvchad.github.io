@@ -15,7 +15,7 @@ These are highly recommend and a **must do for any new Vimmer**
   ```
 - In-built help docs
   ```
-  :h <cmd>
+  :h terminal
   :h autocommand
   :h vim.api
   :h insert
@@ -33,7 +33,7 @@ After the initial installation, we recommend setting up a few things based on yo
 
 - NvChad updates wont overwite `lua/custom` dir as its gitignored, all of the user changes must be done in this dir only
 
-- `custom/init.lua` gets loaded at the end in the main init.lua file, add your commands, autocmds here etc
+- `custom/init.lua` gets loaded at the end in the main init.lua file, add your commands,options, autocmds here etc
 - `custom/chadrc.lua` is used to override `core/default_config.lua` and basically control whole of nvchad, you have to maintain the table structure of `default_config.lua`
 ---
 

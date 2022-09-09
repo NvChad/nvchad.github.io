@@ -13,7 +13,6 @@
 │   │   ├── default_config.lua
 │   │   ├── mappings.lua
 │   │   ├── options.lua
-│   │   ├── packer.lua  -- (bootstrap packer & installs plugins)
 │   │   ├── utils.lua  -- (core util functions) (i)
 │   │   └── init.lua  -- (autocmds)
 │   │
@@ -21,7 +20,7 @@
 │   │    ├── init.lua -- (default plugin list)
 │   │    └── configs
 │   │        ├── cmp.lua
-│   │        ├── others.lu -- (list of small configs of plugins)
+│   │        ├── others.lua -- (list of small configs of plugins)
 │   │        └── many more plugin configs
 |   |
 │   ├── custom *
@@ -41,7 +40,7 @@
 
 ## Themes
 
-- `<leader> + th`   (`<leader>` is `<space>` in our config)
+- `<leader> + th`   (`<leader>` is space key in our config)
 
 ## Mappings
 
