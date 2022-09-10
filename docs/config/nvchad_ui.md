@@ -37,12 +37,14 @@ title: UI plugins
 
 ```lua
 ["NvChad/ui"] = {
-   statusline = {
-       separator_style = "round",
-       overriden_modules = function()
-           return require "custom.abc"
-       end,
-   },
+  override_options = {
+    statusline = {
+      separator_style = "round",
+      overriden_modules = function()
+        return require "custom.abc"
+      end,
+    },
+  },
 },
 ```
 
@@ -74,12 +76,14 @@ return {
 - This example is for overriding the modules in tabufline
 ```lua
 ["NvChad/ui"] = {
+ override_options = {
    tabufline = {
-      lazyload = false, -- to show tabufline by default
-       overriden_modules = function()
-           return require "custom.xyz"
-       end,
+     lazyload = false, -- to show tabufline by default
+     overriden_modules = function()
+       return require "custom.xyz"
+     end,
    },
+ },
 },
 ```
 
