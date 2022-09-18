@@ -19,7 +19,8 @@
  -- more examples
  ["<C-n>"] = {"<cmd> NvimTreeToggle <CR>", "Toggle nvimtree", opts = {}},
 
- ["<leader>uu"] = { "<cmd> :NvChadUpdate <CR>", "  update nvchad" },
+ ["<leader>uu"] = { "<cmd> NvChadUpdate <CR>", "update nvchad" },
+ ["<leader>uu"] = { ":NvChadUpdate <CR>", "update nvchad" }, -- this will work too, either use <cmd> or : before command
 
  [";"] = { ":", "enter cmdline", opts = { nowait = true } },
  ["jk"] = { "<ESC>", "escape insert mode" , opts = { nowait = true }},
@@ -29,7 +30,7 @@
      function()
         require("base46").toggle_theme()
      end,
-        "   toggle theme",
+        "toggle theme",
    },
 ```
 
