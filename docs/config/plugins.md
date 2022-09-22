@@ -27,6 +27,8 @@ title: Plugins
 
 ## Install, Remove plugins & Override them
 
+- Check all packer options available for plugin definitions : [codeblock section here](https://github.com/wbthomason/packer.nvim#specifying-plugins)
+
 ```lua
 -- chadrc
 M.plugins = require "custom.plugins"
@@ -34,7 +36,8 @@ M.plugins = require "custom.plugins"
 
 ```lua
 -- custom/plugins/init.lua
-M.plugins = {
+-- we're basically returning a table!
+return {
 
   -- Install plugin
   ["Pocco81/TrueZen.nvim"] = {},
