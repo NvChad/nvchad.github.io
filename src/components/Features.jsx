@@ -27,8 +27,7 @@ const FeatureList = [
     imgSrc: "/logos/cogs.png",
     description: (
       <>
-       Built-in update mechanism to stay up to date with the latest changes &
-       preserve user configs.
+       Default plugins, options, themes etc can easily be disabled or overriden via the chadrc file. 
       </>
     ),
   },
@@ -38,8 +37,8 @@ const FeatureList = [
     imgSrc: "/logos/update.png",
     description: (
       <>
-        Builtin update mechanism to stay update with the latest changes &
-        preserves user configs and stable.
+        Builtin update mechanism to stay up to date with the latest changes
+        while preserving user configs.
       </>
     ),
   },
