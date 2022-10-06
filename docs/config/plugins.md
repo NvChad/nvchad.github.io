@@ -6,7 +6,7 @@ title: Plugins
 ## Plugin definition
 
 - What is a plugin definition? Its a term we use to define plugins so packer could use & install them.
-- Our way of defining plugin is slightly different and better than packer's way
+- Our way of defining plugins through packer is slightly different
 - Example : 
 
 ```lua
