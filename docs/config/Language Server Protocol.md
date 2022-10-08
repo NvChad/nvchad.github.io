@@ -44,7 +44,7 @@ end
 
 - Run the `:Mason` command to open Mason.nvim's floating window and there you can install, update, or uninstall the available packages (i.e. lspservers, linters, formatters, etc.)
 - Press `i` on the package name in the list to install it.
-- It's better to list all your requireed packages and put them into your Mason override config.
+- It's better to list all your required packages and put them into your Mason override config.
 - Find the exact name of your packages from the `:Mason` window
 - This is an example of siduck's config:
 
