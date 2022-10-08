@@ -19,7 +19,7 @@ const sidebars = {
         "config/plugins",
         "config/Mappings",
         "config/nvchad_ui",
-        "config/Lsp stuff",
+        "config/Language Server Protocol",
         "config/Format & lint",
         "config/theming",
       ],
