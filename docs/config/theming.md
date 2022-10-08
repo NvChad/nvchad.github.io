@@ -6,13 +6,14 @@ title: Highlight groups
 ### Override default highlight groups
 
 - Make sure you use a valid highlight group!
-- check your theme colors in this dir : 
+- Check your theme colors in this dir:
+
 ```shell
 ~/.local/share/nvim/site/pack/packer/opt/base46/lua/hl_themes
 ```
-- Over there, in your theme file ex : onedark.lua, only the variables from base_30 can be used in overriding your custom highlight groups. 
-- You can even use hex colors in fg/bg field but its preferred to use variable names ex : blue, darker_black, one_bg etc from your theme file as it'll look better.
-- So no need to write hex colors manually!
+- In your theme file, for instance onedark.lua, only the variables from base_30 can be used in overriding your custom highlight groups. 
+- You can even use hex colors in the fg/bg field, but it's preferable to use variable names (for instance: blue, darker_black, one_bg, etc.) from your theme file as these will look better.
+- No need to write hex colors manually!
 
 ```lua
 M.ui = {
@@ -29,7 +30,7 @@ M.ui = {
 
 OR 
 
-- You can even use the path of the table in hl_override table (make sure u load it in variable before) like :
+- You can even use the path of the table in hl_override (but make sure you load it in variable before):
 
 ```lua
 -- custom.highlights file
@@ -51,15 +52,15 @@ M.ui = {
 
 ### Add new highlight groups
 
-- The same method can be used as above, but instead of `hl_override`, you have to use `hl_add` field in chadrc.
+- The same method can be used as above, but instead of `hl_override`, you can use the `hl_add` field in chadrc.
 
 ## Customize themes
 
 ### Local themes
 
-(WARNING: DO this on your own risk cuz you might not be able to make perfect nvchad themes like siduck )
-- Default themes are in our nvim-base16 repo's hl_themes dir
-- Any nvchad theme structure be like :
+(WARNING: Do this at your own risk because you might not be able to make perfect nvchad themes like siduck.)
+- Default themes are in our nvim-base16 repo's hl_themes dir.
+- Any nvchad theme structure looks like this:
 
 ```lua
 -- theme file is custom/themes/siduck.lua
@@ -85,7 +86,7 @@ M.ui = {
 }
 ```
 
-- NOTE: The telescope theme switcher is still WIP so u have to add theme name in chadrc manually for now.
+- NOTE: The telescope theme switcher is still a work in progress, so you have to add theme names in chadrc manually for now.
 
 ### Override specific colors in themes
 
