@@ -1,6 +1,6 @@
 ## Setup lsp server
 
-- Skim through [lspconfig repo](https://github.com/neovim/nvim-lspconfig) to get a general overview of how the config looks/works.
+- Skim through [lspconfig repo](https://github.com/neovim/nvim-lspconfig) to get a general overview of how the config works.
 - Then check [server_configurations.md](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md) to make sure your language's lsp server is present there.
 
 ```lua
@@ -34,19 +34,19 @@ end
 
 ## Mason.nvim
 
-- Mason.nvim plugin in nvchad is mainly used to install lspservers, formatters, linters, debug adapters. 
+- The Mason.nvim plugin in NvChad is mainly used to install lspservers, formatters, linters, and debug adapters. 
 
-(NOTE: IT just downloads the binaries and lsp server/formatters wont run automatically! You need to configure custom lspconfig & probably some plugin like null-ls/neoformat etc for the formatters to work)
+(NOTE: This only downloads the binaries. The lsp server/formatters won't run automatically. You need to configure a custom lspconfig and possibly some plugin like null-ls/neoformat or others for the formatters to work.)
 
 ```
 :MasonInstall html-lsp 
 ```
 
-- Run `:Mason` command to open Mason.nvim's floating window and there you can install, update, uninstall etc the available packages ( i.e lspservers, linters, formatters etc)
-- Press i on the package name in the list to install it.
-- Its better to list all your requireed packages and put them into your mason override config.
-- Find exact names of your package from `:Mason` window
-- This is an example of siduck's config :D
+- Run the `:Mason` command to open Mason.nvim's floating window and there you can install, update, or uninstall the available packages (i.e. lspservers, linters, formatters, etc.)
+- Press `i` on the package name in the list to install it.
+- It's better to list all your requireed packages and put them into your Mason override config.
+- Find the exact name of your packages from the `:Mason` window
+- This is an example of siduck's config:
 
 ```lua
  ["williamboman/mason.nvim"] = {
@@ -72,5 +72,5 @@ end
   }
 ```
 
-- Once this is done, then reopen nvim and run `:MasonInstallAll` command. This will install the listed packages in `ensure_installed` field of mason.nvim config.
-- Btw that `MasonInstallAll` command is a custom nvchad command and not really from any of mason.nvim's original commands. 
+- Once this is done, reopen nvim and run the `:MasonInstallAll` command. This will install the listed packages in the `ensure_installed` field of the mason.nvim config.
+- The `MasonInstallAll` command is a custom NvChad command and not from the original set of mason.nvim commands. 
