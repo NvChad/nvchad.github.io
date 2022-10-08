@@ -3,11 +3,11 @@
 ## Overview
 
 - C = Ctrl
-- leader = space
+- Space = leader
 - A = alt
 - S = shift
 
-- Defaults are defined in `core.mappings` (core/mappings.lua)
+- Defaults are defined in `core.mappings` (core/mappings.lua). 
 
 ## Mapping format
 
@@ -34,10 +34,10 @@
    },
 ```
 
-- The mapping description is required for `WhichKey`, do non-whichkey users can skip it
-- Icons are visually appealing and help readability, but they are optional
-- So you can place icons before the textual description, separated by 2-3 spaces
-- [Find icons to copy/paste at nerdfonts website](https://www.nerdfonts.com/cheat-sheet)
+- The mapping description is required for `WhichKey`, so non-whichkey users can skip that.
+- Icons are visually appealing and help readability, but they are optional.
+- You can place icons before the textual description, separated by 2-3 spaces.
+- [Find icons to copy/paste at Nerd Fonts website](https://www.nerdfonts.com/cheat-sheet)
 
 ### Default opts values
 
@@ -55,14 +55,14 @@
 
 ## Add new mappings
 
-- This is the mappings structure of core.mappings and your custom mappings
-- You have to put your mappings into `modes` like n, v, i, t etc
+- This is the mappings structure of core.mappings and your custom mappings.
+- You need to put your mappings into `modes` like n, v, i, t, etc.
 ```lua
 -- chadrc
 M.mappings = require "custom.mappings"
 ```
 
-- n = normal, i = insert and so on!
+- n = normal, i = insert and so on.
 
 ```lua
 -- lua/custom/mappings 
@@ -94,8 +94,8 @@ M.xyz = {
 return M
 ```
 
-- `abc` and `xyz` above are arbitrary; they could, for example, be a plugin's name
-- Be sure to maintain a table structure similar to core.mappings 
+- The `abc` and `xyz` above are arbitrary; they could, for example, be a plugin's name.
+- Be sure to maintain a table structure similar to core.mappings.
 - Mappings will be automatically loaded. You don't need to load them manually.
 
 ## Override default mappings
