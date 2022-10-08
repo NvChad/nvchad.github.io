@@ -1,5 +1,5 @@
-- NOTE : Make sure you know basic lua , if not then [check](/quickstart/learn-lua).
-- Make sure that you read sections in config (in the sidebar of this site) orderwise.
+- NOTE : Make sure you know basic Lua, if not then [check](/quickstart/learn-lua).
+- Read the sections in config (in the sidebar of this site) in order.
 
 ## Structure
 
@@ -29,11 +29,11 @@
 │   │   ├── more files, dirs
 ```
 
--  Note : custom dir is created by user
+-  Note : The custom dir is created by the user.
 
 ## Walkthrough
 
-- Letss goooo!
+- Let's goooo!
 
 ![chad](https://media.discordapp.net/attachments/610012463907209227/891016498733256774/869951078962196571.png)
 ![lessgooo](https://cdn.discordapp.com/attachments/610012463907209227/891011437810577480/863483056531046450.png)
@@ -48,7 +48,7 @@
 
 ## Default settings
 
-- This file is lua/core/default_config.lua
+- This file is lua/core/default_config.lua.
 
 ```lua
 -- Table fields in default_config.lua
