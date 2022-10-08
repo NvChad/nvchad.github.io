@@ -75,6 +75,7 @@ M.base_16 = {
     -- my base16 colors
 }
 
+vim.opt.bg = "dark" -- or light 
 return M
 ```
 
@@ -85,8 +86,6 @@ M.ui = {
    theme = "siduck",
 }
 ```
-
-- NOTE: The telescope theme switcher is still a work in progress, so you have to add theme names in chadrc manually for now.
 
 ### Override specific colors in themes
 
