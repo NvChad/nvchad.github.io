@@ -5,8 +5,8 @@ title: UI plugins
 
 ### Statusline & tabufline 
 
-- We use our own [plugin](https://github.com/NvChad/ui) for statusline & tabufline and it has some options
-- Default config : ( you must know that every plugin's default config is just a table kinda)
+- We use our own [plugin](https://github.com/NvChad/ui) for statusline & tabufline and it has some options.
+- The default config: (You must know that every plugin's default config is just a table).
 
 ```lua
 {
@@ -33,7 +33,7 @@ title: UI plugins
 ```
 #### Override statusline modules 
 
-- Add this in your plugin overrides section
+- Add this in your plugin overrides section:
 
 ```lua
 ["NvChad/ui"] = {
@@ -59,10 +59,10 @@ return {
    end,
 }
 ```
-- First check the list of modules in [our statusline modules file](https://github.com/NvChad/ui/blob/main/lua/nvchad_ui/statusline/modules.lua)
-- In the above code, you can see that I wanted to print "bruh" next to the mode module in the statusline.
-- The above code just overrides the default mode module in our statusline so you can just do ```return ""```, this basically returns an empty string in the mode module which can also be thought as disabling mode module.
-- But most of the time you want to add highlights to the text you added so you would have to add highlight group to the text like :  
+- First, check the list of modules in [our statusline modules file](https://github.com/NvChad/ui/blob/main/lua/nvchad_ui/statusline/modules.lua).
+- In the above code, you can see that we wanted to print "bruh" next to the mode module in the statusline.
+- The above code overrides the default mode module in our statusline so we can just use ```return ""```, this basically returns an empty string in the mode module which can also be thought of as disabling mode module.
+- Most of the time you want to add highlights to the text you inserted so you would have to add a highlight group to the text:  
 
 ```lua
 "#BruhHl%" .. " bruh "
@@ -72,8 +72,9 @@ return {
 
 #### Tabufline
 
-- Add this in your plugin overrides section
-- This example is for overriding the modules in tabufline
+- Add this in your plugin overrides section.
+- This example is for overriding the modules in tabufline:
+
 ```lua
 ["NvChad/ui"] = {
  override_options = {
@@ -99,6 +100,6 @@ return {
    end,
 }
 ```
-- First check the list of modules in [our tabufline modules file](https://github.com/NvChad/ui/blob/main/lua/nvchad_ui/tabufline/modules.lua)
-- In the above code, I just added a button to the tabufline's button list
-- The above code just overrides the default buttons module in our tabufline so you can just do ```return ""```, this basically returns an empty string in the buttons module which can also disable buttons module.
+- First, check the list of modules in [our tabufline modules file](https://github.com/NvChad/ui/blob/main/lua/nvchad_ui/tabufline/modules.lua).
+- In the above code, we added a button to the tabufline's button list.
+- The above code overrides the default buttons module in our tabufline so we can just use ```return ""```, this basically returns an empty string in the buttons module which can also disable the buttons module.
