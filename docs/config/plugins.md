@@ -5,9 +5,8 @@ title: Plugins
 
 ## Plugin definition
 
-- What is a plugin definition? Its a term we use to define plugins so packer could use & install them.
-- Our way of defining plugins through packer is slightly different
-- Example : 
+- What is a plugin definition? It's a term we use to define plugins so Packer can use and install them.
+- Our way of defining plugins through Packer is slightly different:
 
 ```lua
   -- packer's original syntax
@@ -25,9 +24,9 @@ title: Plugins
   ["Pocco81/TrueZen.nvim"] = {}
 ```
 
-## Install, Remove plugins & Override them
+## Install, remove plugins & override them
 
-- Check all packer options available for plugin definitions : [codeblock section here](https://github.com/wbthomason/packer.nvim#specifying-plugins)
+- Check all Packer options available for plugin definitions : [codeblock section here](https://github.com/wbthomason/packer.nvim#specifying-plugins).
 
 ```lua
 -- chadrc
@@ -74,4 +73,4 @@ return {
 }
 ```
 
-- NOTE : THe override_options will override the default plugin config's options, so you dont have to re-write the whole default plugin config but just write the things you want to change ( override )
+- NOTE : The override_options will override the default plugin config's options, so you don't have to re-write the whole default plugin config but rather write only the things you want to change (overwrite).
