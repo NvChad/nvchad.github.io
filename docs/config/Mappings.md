@@ -35,12 +35,8 @@
 ```
 
 - The mapping description is required for `WhichKey`, so non-whichkey users can skip that.
-- Icons are visually appealing and help readability, but they are optional.
-- You can place icons before the textual description, separated by 2-3 spaces.
-- [Find icons to copy/paste at Nerd Fonts website](https://www.nerdfonts.com/cheat-sheet)
 
 ### Default opts values
-
 
 ```lua
 {
