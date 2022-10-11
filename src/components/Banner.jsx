@@ -5,11 +5,11 @@ function BannerText() {
   return (
     <div className="bannerContent">
       <h1>
-        Enhance your neovim workflow
+        Enhance your Neovim workflow
       </h1>
 
       <p>
-        Blazing fast neovim config providing solid defaults and beautiful UI
+        Blazing fast Neovim config providing solid defaults and a beautiful UI
       </p>
 
       <div className="bannerBtns">
