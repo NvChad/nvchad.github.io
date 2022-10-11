@@ -1,18 +1,18 @@
 ---
 id: Nvim lua
-title: Nvim Lua stuff 
+title: Nvim Lua
 ---
 
 ###  Call or import a module
 
-- Neovim config's lua dir is on the PATH. 
-- Suppose file is ~/.config/nvim/lua/core/chad.lua
+- Neovim config's Lua dir is on the PATH. 
+- Suppose the file is ~/.config/nvim/lua/core/chad.lua
 
 ```lua
 require 'core.chad'
 ```
 
-- If you rename that chad.lua to init.lua 
+- If you rename chad.lua to init.lua:
 
 ```lua
 require 'core'
@@ -35,7 +35,7 @@ let g:autosave = true -- vimscript
 vim.g.autosave = true -- lua
 ```
 
-- multiline global stuff
+- Multiline globals
 
 vimscript:
 
@@ -54,4 +54,4 @@ let g:nvim_tree_show_icons = {
   }
 ```
 
-check [nvim-lua guide](https://github.com/nanotee/nvim-lua-guide) for better explanation and more information.
+Check [nvim-lua guide](https://github.com/nanotee/nvim-lua-guide) for a better explanation and more information.
