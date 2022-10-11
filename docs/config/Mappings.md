@@ -97,7 +97,7 @@ return M
 ## Override default mappings
 
 ```lua
-- Let's override nvimtree's mappings
+-- Let's override nvimtree's mappings
 
 M.nvimtree = {
    n = {
