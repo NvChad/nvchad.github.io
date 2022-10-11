@@ -133,7 +133,7 @@ end
 
 **Invert Value**
 
-you can also invert a value with the **not** keyword
+You can also invert a value with the **not** keyword:
 
 ```lua
 local x = 18
@@ -169,7 +169,7 @@ end
 
 ## Scope
 
-Variables have different scopes. Once the end of the scope is reached the values in that scope are no longer accessable
+Variables have different scopes. Once the end of the scope is reached, the values in that scope are no longer accessible.
 
 ```lua
 function foo()
@@ -181,7 +181,7 @@ print(n) -- nil , n isn't accessible outside foo()
 
 ## Loops
 
-Different ways to make a loop
+Different ways to make a loop:
 
 ### While 
 ```lua
@@ -210,11 +210,11 @@ hi
 ## Tables
 
 - Tables can be used to store complex data.
-- Types of tables : 
+- Types of tables: 
 
 ### Arrays (lists)
 
-- Items within these can be accessed by "index"
+- Items within these can be accessed by "index".
 
 ```lua
 local colors = { "red", "green", "blue" }
@@ -245,7 +245,7 @@ end
 
 ### Dictionaries
 
-- These contain keys and values
+- These contain keys and values:
 
 ```lua 
 local info = { 
@@ -295,4 +295,4 @@ require("path")
 ```
 
 - Credits - [Lua-Beginners-Guide](https://github.com/pohka/Lua-Beginners-Guide)
-- This tutorial is a modifed version of the above guide, shortened to teach lua stuff needed only to configure nvim in general
+- This tutorial is a modifed version of the above guide, shortened to teach basic Lua needed only to configure Neovim in general.
