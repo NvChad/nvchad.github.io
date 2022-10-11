@@ -7,22 +7,22 @@ export default function Description() {
 
       <ul>
         <li>
-          NvChad is a neovim config written in lua aiming to provide a base
-          configuration with very beautiful UI and blazing fast startuptime
-          (around 0.02 secs ~ 0.07 secs on hardware basis)
+          NvChad is a Neovim configuration written in Lua aiming to provide a base
+          configuration with a beautiful UI and blazing fast startup time
+          (around 0.02 secs ~ 0.07 seconds on the basis of hardware)
         </li>
 
         <li>
-          Lazy loading is done 93% of the time meaning that plugins will not be
-          loaded by default, they will be loaded only when required also at
-          specific commands, vim events etc. This helps in lowering the
-          startuptime, hence making the startuptime faster than usual
+          Lazy loading is done 93% of the time, meaning that plugins will not be
+          loaded by default. They are loaded only when required at
+          specific commands, Vim events, etc. This helps in lowering the
+          startup time, making it faster than usual
         </li>
 
         <li>
-          NvChad isnt a framework! Its supposed to be used as a "base" config
-          for the masses. It aims to provide a specfic collection of default
-          plugins which seem to be very useful.
+          NvChad is not a framework! It is supposed to be used as a "base" configuration
+          for the masses. It aims to provide a specific collection of default
+          plugins which users find to be very useful.
         </li>
       </ul>
     </div>
