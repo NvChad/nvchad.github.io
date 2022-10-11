@@ -7,7 +7,7 @@ The NvChad team would love to acknowledge many projects which made this possible
 
 Thank you
 
-- [NeoVim](https://github.com/neovim/neovim) & [Vim](https://github.com/vim/vim)
+- [Neovim](https://github.com/neovim/neovim) & [Vim](https://github.com/vim/vim)
 - Every single plugin's maintainer(s) & community :D
 
 - Other NeoVim configurations which inspired @siduck to create NvChad
