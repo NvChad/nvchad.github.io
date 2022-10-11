@@ -9,9 +9,9 @@ title: Themes
 
 ## Dark 
 
-### Onedark 
+### One Dark 
 
-![onedark theme](/img/themes/onedark.png)
+![one dark theme](/img/themes/onedark.png)
 
 ### Aquarium 
 
