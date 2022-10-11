@@ -4,8 +4,8 @@
 - Then check [server_configurations.md](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md) to make sure your language's lsp server is present there.
 
 ```lua
--- we are just modifying lspconfig's packer definition table
--- put this in your custom plugins section i.e M.plugins field 
+-- We are just modifying lspconfig's packer definition table
+-- Put this in your custom plugins section i.e M.plugins field 
 
 ["neovim/nvim-lspconfig"] = {
     config = function()
