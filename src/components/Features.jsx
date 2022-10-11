@@ -7,7 +7,7 @@ const FeatureList = [
     imgSrc: "/logos/rocket.png",
     description: (
       <>
-        Blazing fast startuptime as plugins are lazy loaded wherever possible,
+        Blazing fast startup time as plugins are lazy loaded wherever possible;
         plugins will load only when needed.
       </>
     ),
@@ -17,8 +17,8 @@ const FeatureList = [
     imgSrc: "/logos/ui.png",
     description: (
       <>
-        NvChad provides pretty UI while still embracing the cli, UI plugins are
-        themed perfectly to the fullest!
+        NvChad provides a pretty UI while still embracing the CLI; UI plugins are
+        themed with visual elegance. 
       </>
     ),
   },
@@ -27,7 +27,7 @@ const FeatureList = [
     imgSrc: "/logos/cogs.png",
     description: (
       <>
-       Default plugins, options, themes etc can easily be disabled or overriden via the chadrc file. 
+       Default plugins, options, and themes can easily be disabled or overriden via the chadrc file. 
       </>
     ),
   },
@@ -37,8 +37,8 @@ const FeatureList = [
     imgSrc: "/logos/update.png",
     description: (
       <>
-        Builtin update mechanism to stay up to date with the latest changes
-        while preserving user configs.
+        Built-in update mechanism to stay up to date with the latest changes
+        while preserving user configuration.
       </>
     ),
   },
@@ -47,8 +47,8 @@ const FeatureList = [
     imgSrc: "/logos/lua.png",
     description: (
       <>
-        Config is completely written lua which integrates well with the latest
-        lua API of neovim and plugins written in lua
+        Configuration is completely written in Lua which integrates well with the latest
+        Lua API of Neovim and plugins written in Lua. 
       </>
     ),
   },
