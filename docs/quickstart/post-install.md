@@ -5,7 +5,7 @@ title: Post Install
 
 ## If you're new to Neovim/Vim
 
-We strongly encourage you to learn how to use Neovim/Vim. If you are totally new to Vim then you cannot use NvChad, until you gain some basic knowledge about Vim's modes, default editor commands, and key bindings.
+We strongly encourage you to learn how to use Neovim/Vim. If you are totally new to Vim then you cannot use NvChad until you gain some basic knowledge about Vim's modes, default editor commands, and key bindings.
 
 These are highly recommended and a **must do for any new Vimmer:**
 
@@ -22,7 +22,7 @@ These are highly recommended and a **must do for any new Vimmer:**
   ```
 - [Google your issue](https://google.com)
   - Example format query: `neovim how to delete 10 lines`
-- [NeoVim quick reference](https://neovim.io/doc/user/quickref.html)
+- [Neovim quick reference](https://neovim.io/doc/user/quickref.html)
 - Vim movement games:
   - [Vim Adventures](https://vim-adventures.com/)
   - [Vim Genius](http://www.vimgenius.com/)
