@@ -5,7 +5,7 @@ title: Themes
 
 # Themes
 
-(Note: This list is WIP)
+(Note: This list is a work-in-progress.)
 
 ## Dark 
 
