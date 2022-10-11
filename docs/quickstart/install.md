@@ -4,7 +4,7 @@ title: Install
 sidebar_position: 1
 ---
 
-## Try in docker container 
+## Try in a Docker container 
 
 This will leave your current Neovim configuration untouched. Once you exit Neovim, the image is deleted.
 
@@ -18,18 +18,18 @@ This will leave your current Neovim configuration untouched. Once you exit Neovi
 
 ## Pre-requisites
 
-- You should be an existing vim user or keen to learn nvim and nvchad (through these docs)
-- [Neovim 0.7.2](https://github.com/neovim/neovim/releases/tag/v0.7.2) , if your distro/OS doesnt have it then try [neovim version manager](https://github.com/MordechaiHadad/bob)
+- You should be an existing Vim user or keen to learn Neovim and NvChad (through these docs).
+- [Neovim 0.7.2](https://github.com/neovim/neovim/releases/tag/v0.7.2), if your distro/OS doesn't have it then try [neovim version manager](https://github.com/MordechaiHadad/bob).
 - [Use a Nerd Font](https://www.nerdfonts.com/) in your terminal emulator.
-- Make sure to delete this folder `~/.local/share/nvim` on linux/Macos or `~\AppData\Local\nvim` and `~\AppData\Local\nvim-data` on windows
+- Make sure to delete this folder `~/.local/share/nvim` on Linux/macOS or `~\AppData\Local\nvim` and `~\AppData\Local\nvim-data` on Windows.
 
 ### Semi-optional 
 
-- [`ripgrep`](https://github.com/BurntSushi/ripgrep) is required for grep searching with _Telescope_
+- [`ripgrep`](https://github.com/BurntSushi/ripgrep) is required for grep searching with _Telescope_. 
 
 ## Install
 
-### Linux / Macos (UNIX)
+### Linux / macOS (UNIX)
 
 ```bash
 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
@@ -39,17 +39,17 @@ git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
 ```bash
 git clone https://github.com/NvChad/NvChad $HOME\AppData\Local\nvim --depth 1 && nvim
 ```
-(Note: windows users must have  [`mingw`](http://mingw-w64.org/doku.php) installed & set on path)
+(Note: Windows users must have [`mingw`](http://mingw-w64.org/doku.php) installed and set on path).
 
 ## Update
 
-NvChad has an update mechanism built-in, which will pull any new updates to the git repository.
+NvChad has an update mechanism built-in, which will pull any new updates from the git repository.
 
-- Update nvchad by pressing `<leader> + uu`
+- Update NvChad by pressing `<leader> + uu`
 
-- **Note**: by NvChad default, `<leader>` is the `<space>` key
+- **Note**: by NvChad default, `<leader>` is the `<space>` key.
 
-This will open a prompt in NeoVim warning you that it is about to do a `git reset --hard` and **you will lose any customisations** you've made to NvChad outside the custom folder
+This will open a prompt in Neovim warning you that it is about to do a `git reset --hard` and **you will lose any customisations** you've made to NvChad outside the custom folder.
 
 ## Uninstall
 
