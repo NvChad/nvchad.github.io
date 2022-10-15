@@ -194,10 +194,9 @@ end
 ```
 
 ### For
-```
+```lua
 for i = 1, 3 do
    print("hi")
-   i = i + 1
 end
 ```
 ```
