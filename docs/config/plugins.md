@@ -1,8 +1,3 @@
----
-id: plugins
-title: Plugins
----
-
 ## Plugin definition
 
 - What is a plugin definition? It's a term we use to define plugins so Packer can use and install them.

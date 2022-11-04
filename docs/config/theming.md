@@ -1,8 +1,3 @@
----
-id: theming
-title: Highlight groups
----
-
 ### Override default highlight groups
 
 - Make sure you use a valid highlight group!

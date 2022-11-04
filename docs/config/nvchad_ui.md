@@ -1,8 +1,3 @@
----
-id: nvchad_ui
-title: UI plugins
----
-
 ### Statusline & tabufline 
 
 - We use our own [plugin](https://github.com/NvChad/ui) for statusline & tabufline and it has some options.

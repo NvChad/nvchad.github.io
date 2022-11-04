@@ -1,8 +1,3 @@
----
-id: Nvim lua
-title: Nvim Lua
----
-
 ###  Call or import a module
 
 - Neovim config's Lua dir is on the PATH. 

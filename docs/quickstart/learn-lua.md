@@ -1,8 +1,3 @@
----
-id: learn-lua
-title: Learn Lua 
----
-
 ## Print
 
 ```lua
@@ -72,12 +67,15 @@ print(isAlive) -- false
 
 **Comparison Operators**
 
-- == equality
-- < less than
-- \> greater than
-- <= less than or equal to
-- \>= greater than or equal to
-- ~= inequality
+```
+ == equality
+ < less than
+ \> greater than
+ <= less than or equal to
+ \>= greater than or equal to
+ ~= inequality
+ ```
+
 
 ## Conditional Statements
 
