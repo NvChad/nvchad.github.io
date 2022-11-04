@@ -1,14 +1,11 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  mode: "jit",
-
-  content: [
+ content: [
     "./src/**/*.tsx",
   ],
 
   darkMode: "class", // or 'media' or 'class'
-  variants: {},
 
   fontFamily: {
     sans: ["Inter"],

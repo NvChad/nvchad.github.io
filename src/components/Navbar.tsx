@@ -11,7 +11,7 @@ import { TbMoon, TbSun } from "solid-icons/tb";
 
 function Links() {
   return (
-    <div class="flex gap-5 bg-red-200">
+    <div class="flex gap-5">
       <A href="/" class="flex items-center gap-3 font-semibold ">
         <img src="/logo.svg" alt='nvchad logo' class="w-7" />
         NvChad
