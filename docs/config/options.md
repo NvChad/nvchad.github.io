@@ -17,6 +17,4 @@
 
 - Put this in `custom/init.lua`:
 
-```lua
-vim.g.luasnippets_path = "your snippets path"
-```
+`vim.g.luasnippets_path = "your snippets path"`

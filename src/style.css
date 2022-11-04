@@ -5,7 +5,11 @@
 @layer base {
   body {
     @apply bg-white text-black;
-    @apply dark:bg-black dark:text-whiteTint;
+    @apply dark:bg-black dark:text-grey;
+  }
+
+  .chad {
+    font-family: "Lato", sans-serif;
   }
 
   body * div,
@@ -20,7 +24,7 @@
   }
 
   button {
-    @apply flex gap-3  justify-between items-center  w-full;
+    @apply flex gap-3 justify-between items-center w-full;
     @apply whitespace-nowrap;
   }
 }
@@ -41,6 +45,11 @@
   .DocContent pre {
     @apply bg-slate-800 dark:bg-tintBlack;
     @apply p-5 rounded-xl font-mono;
+  }
+
+  .DocContent code {
+    @apply bg-slate-800 dark:bg-tintBlack;
+    @apply p-1 px-2 rounded-xl;
   }
 
   .DocContent ul {

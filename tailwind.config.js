@@ -1,7 +1,7 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
- content: [
+  content: [
     "./src/**/*.tsx",
   ],
 
@@ -19,7 +19,10 @@ module.exports = {
         black2: "#0b121f",
         whiteTint: "#ECEEF2",
         tintBlack: "#19202d",
-        tintBlack2: '#2d3441'
+        tintBlack2: "#2d3441",
+        tintBlack3: '#333a47',
+        grey: "#b5bcc9",
+        darkgrey: "#79808d",
       },
 
       fontFamily: {
@@ -27,4 +30,4 @@ module.exports = {
       },
     },
   },
-}
+};

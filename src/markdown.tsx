@@ -48,8 +48,11 @@ export function useMDX(): MDXProps {
         });
 
         function Chad(x: any) {
-          let styles = activeContext_Heading() == x[1] ? "bg-red-200" : "";
-          return x[0] == "h3" ? `pl-5 ${styles}` : `${styles}`;
+          const labelStyles = "border-l-2 p-1 px-5";
+          let styles = activeContext_Heading() == x[1]
+            ? `${labelStyles} border-blue-300 text-blue-300 bg-tintBlack`
+            : `${labelStyles} border-tintBlack3 text-darkgrey`;
+          return x[0] == "h3" ? `pl-9 ${styles}` : `${styles}`;
         }
 
         return (
@@ -58,16 +61,18 @@ export function useMDX(): MDXProps {
               {props.children}
             </div>
 
-            <div class="bg-whiteTint dark:bg-black2 p-5 mt-10 h-fit grid sticky top-0">
-              {contextHeadings.map((x) => (
-                <a
-                  href={"#" + x[1]}
-                  class={Chad(x)}
-                  onclick={() => setActiveContext_Heading(x[1])}
-                >
-                  {x[1]}
-                </a>
-              ))}
+            <div class='pt-10 h-screen sticky top-0'>
+              <div class="h-fit grid ">
+                {contextHeadings.map((x) => (
+                  <a
+                    href={"#" + x[1]}
+                    class={Chad(x)}
+                    onclick={() => setActiveContext_Heading(x[1])}
+                  >
+                    {x[1]}
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
         );
