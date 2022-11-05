@@ -57,7 +57,7 @@ function BtnLinks() {
 
 function Navbar() {
   return (
-    <nav class="flex gap-5 text-xl p-8 items-center justify-between">
+    <nav class="sticky top-0 z-50 flex gap-5 text-xl p-8 py-5 items-center justify-between bg-black border-b-2 border-tintBlack font-medium">
       <Links />
       <BtnLinks />
     </nav>

@@ -8,6 +8,7 @@ import "highlight.js/styles/base16/onedark.css";
 
 import {
   activeContext_Heading,
+  generateActiveContext,
   setActiveContext_Heading,
 } from "./components/Docs";
 
@@ -45,9 +46,11 @@ export function useMDX(): MDXProps {
           });
 
           setHeadings(result);
+
+          generateActiveContext();
         });
 
-        function Chad(x: any) {
+        function generateStyles(x: any) {
           const labelStyles = "border-l-2 p-1 px-5";
           let styles = activeContext_Heading() == x[1]
             ? `${labelStyles} border-blue-300 text-blue-300 bg-tintBlack`
@@ -61,12 +64,12 @@ export function useMDX(): MDXProps {
               {props.children}
             </div>
 
-            <div class='pt-10 h-screen sticky top-0'>
+            <div class="pt-10 sticky h-[calc(100vh-4rem)] top-16">
               <div class="h-fit grid ">
                 {contextHeadings.map((x) => (
                   <a
                     href={"#" + x[1]}
-                    class={Chad(x)}
+                    class={generateStyles(x)}
                     onclick={() => setActiveContext_Heading(x[1])}
                   >
                     {x[1]}

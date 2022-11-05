@@ -18,9 +18,15 @@ function NestedLabels(props: any) {
     <div class="flex flex-col items-start gap-5">
       <button
         onclick={() => collapseLinks(showLinks() ? false : true)}
-        class="gap-20 bg-tintBlack p-2 px-3"
+        class="gap-20 bg-tintBlack text-white2 font-medium p-2 px-3"
       >
-        {props.BtnLabel} {showLinks()
+        <div class="flex items-center gap-2">
+          {props.BtnLabel[1]}
+
+          {props.BtnLabel[0]}
+        </div>
+
+        {showLinks()
           ? (
             <div class="bg-tintBlack2 p-2 rounded-full text-red-300">
               <FaSolidChevronDown />
@@ -46,20 +52,22 @@ function NestedLabels(props: any) {
 }
 
 function SideBar() {
-  return (
-    <aside class="h-screen sticky top-0 bg-whiteTint dark:bg-black2 text-grey p-8 px-8 max-w-lg">
-      <A href="/" class="flex items-center gap-3 mb-8 text-3xl m-auto justify-center">
-        <img src="/logo.svg" alt="nvchad logo" class="w-10" />
-        NvChad
-      </A>
+  const LinkStyles = "pl-0 flex items-center gap-2";
 
+  return (
+    <aside class="h-[calc(100vh-4rem)] sticky top-16 bg-whiteTint dark:bg-black2 text-grey p-8 px-8 max-w-lg">
       {/* sidebar labels & links */}
       <div class="h-full flex flex-col gap-5">
         {sidebar_Items.map((item: any) => {
           return item.label
             ? <NestedLabels BtnLabel={item.label} labels={item.items} />
             : (
-              <A href={item[1]} class='pl-3' activeClass="font-semibold text-white">
+              <A
+                href={item[1]}
+                inactiveClass={LinkStyles}
+                activeClass={`${LinkStyles} text-red-300`}
+              >
+                {item[2]}
                 {item[0]}
               </A>
             );

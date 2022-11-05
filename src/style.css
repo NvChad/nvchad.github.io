@@ -8,10 +8,6 @@
     @apply dark:bg-black dark:text-grey;
   }
 
-  .chad {
-    font-family: "Lato", sans-serif;
-  }
-
   body * div,
   body * button,
   body * p,
@@ -31,7 +27,7 @@
 
 @layer components {
   .DocContent {
-    @apply grid gap-5 p-10;
+    @apply grid gap-5 pl-10 p-5 mr-32;
   }
 
   .DocContent h2 {
@@ -40,6 +36,15 @@
 
   .DocContent h3 {
     @apply font-semibold text-lg;
+  }
+
+  .DocContent p {
+    @apply text-lg;
+  }
+
+  .DocContent h2,
+  .DocContent h3 {
+    @apply text-white2;
   }
 
   .DocContent pre {
@@ -54,5 +59,9 @@
 
   .DocContent ul {
     @apply list-disc pl-5;
+  }
+
+  .DocContent li {
+    @apply my-2;
   }
 }

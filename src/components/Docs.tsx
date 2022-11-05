@@ -9,7 +9,7 @@ export const [activeContext_Heading, setActiveContext_Heading] = createSignal(
   "",
 );
 
-const generateActiveContext = () => {
+export const generateActiveContext = () => {
   let docs_Elements = document.getElementById("DocContent")?.childNodes;
 
   let visible_Elements: Array<Array<number>> = [];
@@ -35,8 +35,6 @@ const generateActiveContext = () => {
     }
   });
 };
-
-generateActiveContext();
 
 window.addEventListener("scroll", () => generateActiveContext());
 
