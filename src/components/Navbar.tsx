@@ -49,7 +49,7 @@ export function BtnLinks() {
         }}
         title="Theme Toggle"
       >
-        <div class="p-2 bg-tintBlack2 rounded-full">
+        <div class="p-2 bg-pale dark:bg-tintBlack2 rounded-full">
           {theme() == "light" ? <TbSun /> : <TbMoon />}
         </div>
       </button>

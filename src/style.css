@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-white text-black;
+    @apply bg-white text-gray-700;
     @apply dark:bg-black dark:text-grey;
   }
 
@@ -26,9 +26,12 @@
   }
 
   .vertCentered {
-    @apply flex items-center gap-2; 
+    @apply flex items-center gap-2;
   }
 
+  button , input{
+    @apply outline-none
+  }
 }
 
 @layer components {
@@ -50,18 +53,19 @@
 
   .DocContent h2,
   .DocContent h3 {
-    @apply text-white2;
+    @apply text-gray-900 dark:text-white2;
   }
 
   .DocContent pre {
-    @apply bg-slate-800 dark:bg-tintBlack;
+    @apply bg-[#282c34] dark:bg-tintBlack;
     @apply p-5 rounded-xl font-mono;
+    @apply shadow-2xl;
   }
 
   .DocContent code {
-    @apply bg-slate-800 dark:bg-tintBlack2;
-    @apply p-1 px-2 rounded-xl;
-    @apply whitespace-nowrap
+    @apply bg-slate-200 dark:bg-tintBlack2;
+    @apply p-1 px-3 rounded-xl;
+    @apply whitespace-nowrap;
   }
 
   .DocContent ul {

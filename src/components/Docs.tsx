@@ -41,15 +41,15 @@ window.addEventListener("scroll", () => generateActiveContext());
 
 function TopBar() {
   const Searchbar = () => (
-    <div class="vertCentered justify-between dark:bg-tintBlack p-2 pr-4 w-full whitespace-nowrap ">
+    <div class="vertCentered justify-between bg-pale dark:bg-tintBlack p-2 pr-4 w-full whitespace-nowrap">
       <div class="vertCentered w-full">
-        <div class='bg-tintBlack2 p-3 rounded-full text-red-300'>
+        <div class='bg-white2 text-black dark:bg-tintBlack2 p-3 rounded-full dark:text-red-300'>
           <FiSearch />
         </div>
 
         <input
           placeholder="search documentation"
-          class="p-2 w-full dark:bg-tintBlack"
+          class="p-2 w-full bg-pale dark:bg-tintBlack"
         />
       </div>
 

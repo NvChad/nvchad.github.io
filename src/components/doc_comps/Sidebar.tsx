@@ -18,7 +18,7 @@ function NestedLabels(props: any) {
     <div class="grid gap-5">
       <button
         onclick={() => collapseLinks(showLinks() ? false : true)}
-        class="gap-20 bg-tintBlack text-white2 font-medium p-2 px-3"
+        class="gap-20 bg-blue-100 text-gray-700 dark:bg-tintBlack dark:text-white2 font-medium p-2 px-3"
       >
         <div class="vertCentered">
           {props.BtnLabel[1]}
@@ -28,12 +28,12 @@ function NestedLabels(props: any) {
 
         {showLinks()
           ? (
-            <div class="bg-tintBlack2 p-2 rounded-full text-red-300">
+            <div class="bg-blue-200 p-2 rounded-full dark:bg-tintBlack2  dark:text-red-300">
               <FaSolidChevronDown />
             </div>
           )
           : (
-            <div class="bg-tintBlack2 p-2 rounded-full">
+            <div class="bg-blue-200 dark:bg-tintBlack2 p-2 rounded-full">
               <FaSolidChevronRight />
             </div>
           )}
@@ -41,9 +41,9 @@ function NestedLabels(props: any) {
 
       {/* collapsable nested links */}
       <Show when={showLinks()}>
-        <div class="grid pl-4 gap-3 border-tintBlack2 border-l rounded-none">
+        <div class="grid pl-4 gap-3 dark:border-tintBlack2 border-l rounded-none">
           {props.labels.map((x: any) => (
-            <A activeClass="text-red-300" href={x[1]}>{x[0]}</A>
+            <A activeClass="text-red-400 dark:text-red-300" href={x[1]}>{x[0]}</A>
           ))}
         </div>
       </Show>
@@ -55,7 +55,7 @@ function SideBar() {
   const LinkStyles = "pl-0 vertCentered";
 
   return (
-    <aside class="h-screen sticky top-0 bg-whiteTint dark:bg-black2 text-grey p-8 px-8 max-w-lg">
+    <aside class="shadow-xl h-screen sticky top-0 bg-white text-gray-600 dark:bg-black2 dark:text-grey p-8 px-8 max-w-lg">
       <A href="/" class="vertCentered gap-3 mb-8 text-3xl m-auto justify-center">
         <img src="/logo.svg" alt="nvchad logo" class="w-10" />
         NvChad

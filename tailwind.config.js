@@ -24,6 +24,7 @@ module.exports = {
         tintBlack3: '#333a47',
         grey: "#b5bcc9",
         darkgrey: "#79808d",
+        pale: '#eaf0f5'
       },
 
       fontFamily: {
