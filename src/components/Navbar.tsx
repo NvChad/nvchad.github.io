@@ -13,7 +13,7 @@ function Links() {
   return (
     <div class="flex gap-5">
       <A href="/" class="flex items-center gap-3 font-semibold ">
-        <img src="/logo.svg" alt='nvchad logo' class="w-7" />
+        <img src="/logo.svg" alt="nvchad logo" class="w-7" />
         NvChad
       </A>
       <A href="/docs/quickstart/install">Docs</A>
@@ -45,9 +45,7 @@ function BtnLinks() {
           const el = document.querySelector("html")!;
           el.className = localStorage.theme = theme();
         }}
-
         title="Theme Toggle"
-
       >
         {theme() == "light" ? <TbSun /> : <TbMoon />}
       </button>
@@ -56,8 +54,14 @@ function BtnLinks() {
 }
 
 function Navbar() {
+  const styles = `sticky top-0 z-50
+                flex gap-5 items-center justify-between 
+                bg-white dark:bg-black font-medium 
+                border-b-2 border-whiteTint dark:border-tintBlack
+                text-xl p-8 py-5`;
+
   return (
-    <nav class="sticky top-0 z-50 flex gap-5 text-xl p-8 py-5 items-center justify-between bg-black border-b-2 border-tintBlack font-medium">
+    <nav class={styles}>
       <Links />
       <BtnLinks />
     </nav>

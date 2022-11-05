@@ -55,7 +55,12 @@ function SideBar() {
   const LinkStyles = "pl-0 flex items-center gap-2";
 
   return (
-    <aside class="h-[calc(100vh-4rem)] sticky top-16 bg-whiteTint dark:bg-black2 text-grey p-8 px-8 max-w-lg">
+    <aside class="h-screen sticky top-0 bg-whiteTint dark:bg-black2 text-grey p-8 px-8 max-w-lg">
+      <A href="/" class="flex items-center gap-3 mb-8 text-3xl m-auto justify-center">
+        <img src="/logo.svg" alt="nvchad logo" class="w-10" />
+        NvChad
+      </A>
+
       {/* sidebar labels & links */}
       <div class="h-full flex flex-col gap-5">
         {sidebar_Items.map((item: any) => {
