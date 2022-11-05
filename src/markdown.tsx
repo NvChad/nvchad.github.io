@@ -46,14 +46,13 @@ export function useMDX(): MDXProps {
           });
 
           setHeadings(result);
-
           generateActiveContext();
         });
 
         function generateStyles(x: any) {
           const labelStyles = "border-l-2 p-1 px-5";
           let styles = activeContext_Heading() == x[1]
-            ? `${labelStyles} border-blue-300 text-blue-300 bg-tintBlack`
+            ? `${labelStyles} border-blue-300 text-blue-300 bg-tintBlack2`
             : `${labelStyles} border-tintBlack3 text-darkgrey`;
           return x[0] == "h3" ? `pl-9 ${styles}` : `${styles}`;
         }

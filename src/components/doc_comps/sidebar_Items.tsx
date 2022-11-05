@@ -15,7 +15,7 @@ const sidebar_Items: Array<any> = [
     ],
   },
   {
-    label: ["Custom config", <ImCog />],
+    label: ["Custom config", <ImCog/>],
 
     items: [
       ["Walkthrough", "config/Walkthrough"],

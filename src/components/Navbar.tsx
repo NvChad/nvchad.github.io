@@ -12,7 +12,7 @@ import { TbMoon, TbSun } from "solid-icons/tb";
 function Links() {
   return (
     <div class="flex gap-5">
-      <A href="/" class="flex items-center gap-3 font-semibold ">
+      <A href="/" class="vertCentered gap-3 font-semibold ">
         <img src="/logo.svg" alt="nvchad logo" class="w-7" />
         NvChad
       </A>
@@ -29,7 +29,7 @@ const tmpTheme = localStorage && localStorage.theme
 
 const [theme, setTheme] = createSignal(tmpTheme);
 
-function BtnLinks() {
+export function BtnLinks() {
   return (
     <div class="flex gap-5 text-2xl">
       <FaBrandsGithub />
@@ -55,7 +55,7 @@ function BtnLinks() {
 
 function Navbar() {
   const styles = `sticky top-0 z-50
-                flex gap-5 items-center justify-between 
+                vertCentered gap-5 justify-between 
                 bg-white dark:bg-black font-medium 
                 border-b-2 border-whiteTint dark:border-tintBlack
                 text-xl p-8 py-5`;

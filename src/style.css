@@ -11,6 +11,7 @@
   body * div,
   body * button,
   body * p,
+  body * input,
   body * span {
     @apply rounded-xl;
   }
@@ -20,14 +21,19 @@
   }
 
   button {
-    @apply flex gap-3 justify-between items-center w-full;
+    @apply vertCentered justify-between  w-full;
     @apply whitespace-nowrap;
   }
+
+  .vertCentered {
+    @apply flex items-center gap-2; 
+  }
+
 }
 
 @layer components {
   .DocContent {
-    @apply grid gap-5 pl-10 p-5 mr-32;
+    @apply grid gap-5 pt-2 mr-32;
   }
 
   .DocContent h2 {
@@ -53,8 +59,9 @@
   }
 
   .DocContent code {
-    @apply bg-slate-800 dark:bg-tintBlack;
+    @apply bg-slate-800 dark:bg-tintBlack2;
     @apply p-1 px-2 rounded-xl;
+    @apply whitespace-nowrap
   }
 
   .DocContent ul {

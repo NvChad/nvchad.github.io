@@ -15,12 +15,12 @@ function NestedLabels(props: any) {
   );
 
   return (
-    <div class="flex flex-col items-start gap-5">
+    <div class="grid gap-5">
       <button
         onclick={() => collapseLinks(showLinks() ? false : true)}
         class="gap-20 bg-tintBlack text-white2 font-medium p-2 px-3"
       >
-        <div class="flex items-center gap-2">
+        <div class="vertCentered">
           {props.BtnLabel[1]}
 
           {props.BtnLabel[0]}
@@ -52,11 +52,11 @@ function NestedLabels(props: any) {
 }
 
 function SideBar() {
-  const LinkStyles = "pl-0 flex items-center gap-2";
+  const LinkStyles = "pl-0 vertCentered";
 
   return (
     <aside class="h-screen sticky top-0 bg-whiteTint dark:bg-black2 text-grey p-8 px-8 max-w-lg">
-      <A href="/" class="flex items-center gap-3 mb-8 text-3xl m-auto justify-center">
+      <A href="/" class="vertCentered gap-3 mb-8 text-3xl m-auto justify-center">
         <img src="/logo.svg" alt="nvchad logo" class="w-10" />
         NvChad
       </A>
