@@ -1,11 +1,9 @@
 import { A } from "@solidjs/router";
 import { createSignal } from "solid-js";
 
-import {
-  FaBrandsDiscord,
-  FaBrandsGithub,
-  FaBrandsTelegram,
-} from "solid-icons/fa";
+import { FaBrandsDiscord, FaBrandsGithub } from "solid-icons/fa";
+import { BiLogosTelegram } from "solid-icons/bi";
+
 import { SiMatrix } from "solid-icons/si";
 import { TbMoon, TbSun } from "solid-icons/tb";
 
@@ -30,12 +28,16 @@ const tmpTheme = localStorage && localStorage.theme
 const [theme, setTheme] = createSignal(tmpTheme);
 
 export function BtnLinks() {
+  const Btns: Array<Array<any>> = [
+    [<FaBrandsGithub />, "https://github.com/NvChad/NvChad"],
+    [<BiLogosTelegram />, "https://t.me/DE_WM"],
+    [<FaBrandsDiscord />, "https://discord.com/invite/gADmkJb9Fb"],
+    [<SiMatrix />, "https://matrix.to/#/#nvchad:matrix.org"],
+  ];
+
   return (
-    <div class="flex gap-5 text-2xl">
-      <FaBrandsGithub />
-      <FaBrandsTelegram />
-      <FaBrandsDiscord />
-      <SiMatrix />
+    <div class="vertCentered gap-5 text-2xl">
+      {Btns.map((x) => <a href={x[1]} target="_blank">{x[0]}</a>)}
 
       {/* theme toggle */}
       <button
@@ -47,7 +49,9 @@ export function BtnLinks() {
         }}
         title="Theme Toggle"
       >
-        {theme() == "light" ? <TbSun /> : <TbMoon />}
+        <div class="p-2 bg-tintBlack2 rounded-full">
+          {theme() == "light" ? <TbSun /> : <TbMoon />}
+        </div>
       </button>
     </div>
   );
