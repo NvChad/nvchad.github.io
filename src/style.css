@@ -24,7 +24,7 @@
     @apply vertCentered justify-between w-full;
     @apply whitespace-nowrap;
     @apply hover:dark:bg-tintBlack2 hover:dark:text-red-200;
-    @apply hover:bg-green-200 hover:text-black
+    @apply hover:bg-red-200 hover:text-black
   }
 
   .vertCentered {
@@ -39,7 +39,7 @@
 
 @layer components {
   .DocContent {
-    @apply grid gap-5 md:pt-2 md:mr-32;
+    @apply grid gap-5 md:pt-2 lg:mr-32;
   }
 
   .DocContent h2 {

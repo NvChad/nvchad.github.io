@@ -70,7 +70,7 @@ export const [sideBarShown, showSidebar] = createSignal(false);
 // final component!
 function Docs() {
   const MobileNav = () => (
-    <nav class="my-5 mx-5 flex justify-between md:hidden">
+    <nav class="my-5 mx-5 flex justify-between lg:hidden text-xl">
       <A href="/" class="vertCentered gap-3 font-semibold ">
         <img src="/logo.svg" alt="nvchad logo" class="w-7" />
         NvChad
@@ -80,7 +80,7 @@ function Docs() {
       <div class="vertCentered">
         <ThemeToggleBtn />
         <button
-          class="p-2 bg-whiteTint dark:bg-tintBlack2 md:hidden w-fit"
+          class="p-2 bg-whiteTint dark:bg-tintBlack2 lg:hidden w-fit"
           onclick={() => showSidebar(sideBarShown() ? false : true)}
         >
           <FiMenu />
@@ -89,10 +89,10 @@ function Docs() {
     </nav>
   );
 
-  const styles = "md:mx-10 md:blur-none";
+  const styles = "md:mx-10 lg:blur-none";
 
   return (
-    <div class="grid grid-cols-[auto_1fr] ">
+    <div class="grid grid-cols-[auto_1fr]">
       <Sidebar />
 
       <div class={sideBarShown() ? `${styles} blur-sm` : styles}>

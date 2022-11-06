@@ -22,8 +22,8 @@ function Links() {
       {/* route links */}
       <div
         class={linksShown()
-          ? "grid md:vertCentered gap-4"
-          : "hidden md:vertCentered gap-10"}
+          ? "grid md:vertCentered gap-4 md:bg-red-200"
+          : "hidden md:vertCentered md:gap-5"}
       >
         <A href="/docs/quickstart/install">Docs</A>
         <A href="/Features">Features</A>
@@ -63,7 +63,7 @@ export function BtnLinks(props:any) {
     [<SiMatrix />, "https://matrix.to/#/#nvchad:matrix.org"],
   ];
 
-  const btnStyles = `vertCentered md:vertCentered gap-5 md:gap-5 text-2xl ${props.styles}`;
+  const btnStyles = `lg:vertCentered gap-5 md:gap-5 text-2xl ${props.styles}`;
 
   return (
     <div class={linksShown() ? btnStyles : `hidden ${btnStyles}`}>
@@ -83,7 +83,7 @@ function Navbar() {
 
   return (
     <nav class={styles}>
-      <div class="grid md:flex gap-3 justify-between w-full">
+      <div class="grid gap-5 md:flex md:gap-3 justify-between w-full">
         <Links />
         <BtnLinks />
       </div>

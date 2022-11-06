@@ -63,7 +63,7 @@ export function useMDX(): MDXProps {
               {props.children}
             </div>
 
-            <div class="hidden md:grid pt-10 sticky h-[calc(100vh-4rem)] top-16">
+            <div class="hidden lg:grid pt-10 sticky h-[calc(100vh-4rem)] top-16">
               <div class="h-fit grid">
                 <h4 class="text-lg font-medium pb-2 pl-5 dark:border-tintBlack3 border-l-2">
                   On this page
