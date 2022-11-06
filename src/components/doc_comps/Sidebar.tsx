@@ -57,15 +57,14 @@ function NestedLabels(props: any) {
 }
 
 function SideBar() {
-  const LinkStyles = "pl-0 vertCentered";
-  const sideBarStyles = `absolute md:flex flex-col shadow-xl
-    h-screen sticky top-0 p-8 px-8 
+  const styles = `h-full absolute z-10 md:sticky md:flex flex-col shadow-xl
+    h-screen top-0 p-8 px-8 
     bg-white text-gray-600 dark:bg-black2 dark:text-grey`;
 
+  const LinkStyles = "pl-0 vertCentered";
+
   return (
-    <div
-      class={sideBarShown() ? ` ${sideBarStyles}` : `hidden ${sideBarStyles}`}
-    >
+    <div class={sideBarShown() ? `${styles}` : `hidden ${styles}`}>
       {/* brand logo */}
       <A
         href="/"

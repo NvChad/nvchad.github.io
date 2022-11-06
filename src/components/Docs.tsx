@@ -89,11 +89,13 @@ function Docs() {
     </nav>
   );
 
+  const styles = "md:mx-10 md:blur-none";
+
   return (
-    <div class="relative grid grid-cols-[auto_1fr]">
+    <div class="grid grid-cols-[auto_1fr] ">
       <Sidebar />
 
-      <div class="md:mx-10">
+      <div class={sideBarShown() ? `${styles} blur-sm` : styles}>
         <MobileNav />
         <TopBar />
         <Outlet /> {/* doc content */}
