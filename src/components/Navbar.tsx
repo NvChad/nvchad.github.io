@@ -22,7 +22,7 @@ function Links() {
       {/* route links */}
       <div
         class={linksShown()
-          ? "grid md:vertCentered gap-4 md:bg-red-200"
+          ? "grid md:vertCentered gap-4"
           : "hidden md:vertCentered md:gap-5"}
       >
         <A href="/docs/quickstart/install">Docs</A>
@@ -79,7 +79,7 @@ function Navbar() {
   const styles = `sticky top-0 z-50
                 flex md:vertCentered gap-5 justify-between 
                 bg-white dark:bg-black font-medium 
-                text-xl p-8 py-5`;
+                text-xl p-8 py-3 shadow-soft`;
 
   return (
     <nav class={styles}>

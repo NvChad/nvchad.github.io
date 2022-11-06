@@ -5,7 +5,7 @@
 @layer base {
   body,
   .bgCol {
-    @apply bg-white text-gray-700;
+    @apply bg-white text-black;
     @apply dark:bg-black dark:text-grey;
   }
 
@@ -36,6 +36,34 @@
   input {
     @apply outline-none;
   }
+
+  h1 {
+    @apply text-5xl font-bold;
+  }
+
+  /* gradients for homepage */
+
+  .redGradient {
+    background-image: linear-gradient(
+      to right,
+      #ff8177 0%,
+      #ff867a 0%,
+      #ff8c7f 21%,
+      #f99185 52%,
+      #cf556c 78%,
+      #b12a5b 100%
+    );
+  }
+
+  .blueGradient {
+    background-image: linear-gradient(
+      -225deg,
+      #5271c4 0%,
+      #b19fff 48%,
+      #eca1fe 100%
+    );
+  }
+
 }
 
 @layer components {
@@ -44,7 +72,7 @@
   }
 
   .DocContent h2 {
-    @apply font-bold text-2xl;
+    @apply font-semibold text-2xl;
   }
 
   .DocContent h3 {

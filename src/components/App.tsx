@@ -2,6 +2,7 @@ import { Route, Routes, useLocation } from "@solidjs/router";
 import { lazy, Show } from "solid-js";
 
 import Navbar from "./Navbar";
+import Home from "./Home";
 import DocRoutes from "./doc_comps/DocRoutes";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       </Show>
 
       <Routes>
+        <Route path="/" component={Home} />
         <Route path="/docs" component={lazy(() => import("./Docs"))}>
           <DocRoutes />
         </Route>
