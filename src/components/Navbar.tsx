@@ -63,7 +63,7 @@ export function BtnLinks(props:any) {
     [<SiMatrix />, "https://matrix.to/#/#nvchad:matrix.org"],
   ];
 
-  const btnStyles = `lg:vertCentered gap-5 md:gap-5 text-2xl ${props.styles}`;
+  const btnStyles = `vertCentered md:flex items-center gap-5 text-2xl ${props.styles}`;
 
   return (
     <div class={linksShown() ? btnStyles : `hidden ${btnStyles}`}>

@@ -1,6 +1,6 @@
 import { Dynamic, Show } from "solid-js/web";
 import type { MDXProps } from "solid-marked";
-import { createEffect } from "solid-js";
+import { createEffect, createSignal } from "solid-js";
 import { createStore } from "solid-js/store";
 import hljs from "highlight.js";
 
@@ -11,6 +11,8 @@ import {
   generateActiveContext,
   setActiveContext_Heading,
 } from "./components/Docs";
+
+const [contextLabelsShown, toggleContextLabels] = createSignal(false);
 
 // eslint-disable-next-line import/prefer-default-export
 export function useMDX(): MDXProps {
@@ -50,7 +52,7 @@ export function useMDX(): MDXProps {
         });
 
         function generateStyles(x: any) {
-          const labelStyles = "border-l-2 p-1 px-5";
+          const labelStyles = "lg:border-l-2 p-1 px-5";
           let styles = activeContext_Heading() == x[1]
             ? `${labelStyles} border-purple-300 bg-purple-100 text-purple-800 dark:border-blue-300 dark:text-blue-300 dark:bg-tintBlack2`
             : `${labelStyles} dark:border-tintBlack3 text-darkgrey`;
@@ -58,25 +60,34 @@ export function useMDX(): MDXProps {
         }
 
         return (
-          <div class="grid grid-cols-[1fr_auto] p-5">
+          <div class="flex flex-col-reverse xl:grid xl:grid-cols-[1fr_auto] p-0">
             <div class="DocContent" id="DocContent">
               {props.children}
             </div>
 
-            <div class="hidden lg:grid pt-10 sticky h-[calc(100vh-4rem)] top-16">
-              <div class="h-fit grid">
-                <h4 class="text-lg font-medium pb-2 pl-5 dark:border-tintBlack3 border-l-2">
+            {/* on this page component */}
+            <div class="my-5 xl:grid lg:pt-10 lg:sticky lg:h-[calc(100vh-4rem)] lg:top-16 ">
+              <div class="h-fit grid border-grey dark:border-tintBlack3 border lg:border-none">
+                <button
+                  class="text-lg font-medium py-2 lg:pb-2 pl-5 dark:border-tintBlack3 lg:border-l-2 lg:rounded-none "
+                  onclick={() =>
+                    toggleContextLabels(contextLabelsShown() ? false : true)}
+                >
                   On this page
-                </h4>
-                {contextHeadings.map((x) => (
-                  <a
-                    href={"#" + x[1]}
-                    class={generateStyles(x)}
-                    onclick={() => setActiveContext_Heading(x[1])}
-                  >
-                    {x[1]}
-                  </a>
-                ))}
+                </button>
+
+                {/* labels */}
+                <div class={contextLabelsShown() ? "grid" : "hidden lg:grid"}>
+                  {contextHeadings.map((x) => (
+                    <a
+                      href={"#" + x[1]}
+                      class={generateStyles(x)}
+                      onclick={() => setActiveContext_Heading(x[1])}
+                    >
+                      {x[1]}
+                    </a>
+                  ))}
+                </div>
               </div>
             </div>
           </div>

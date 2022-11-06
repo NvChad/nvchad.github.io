@@ -39,9 +39,9 @@ export const generateActiveContext = () => {
 
 window.addEventListener("scroll", () => generateActiveContext());
 
-function TopBar() {
-  const Searchbar = () => (
-    <div class="vertCentered justify-between bg-pale dark:bg-tintBlack p-2 pr-4 w-full whitespace-nowrap">
+function SearchBar() {
+  const InputBar = () => (
+    <div class="lg:my-6 vertCentered justify-between bg-pale dark:bg-tintBlack p-2 pr-4 w-full whitespace-nowrap">
       <div class="vertCentered w-full">
         <div class="bg-white2 text-black dark:bg-tintBlack2 p-3 rounded-full dark:text-red-300">
           <FiSearch />
@@ -58,8 +58,8 @@ function TopBar() {
   );
 
   return (
-    <div class="top-0 vertCentered justify-between text-lg mx-3 mt-5 gap-5">
-      <Searchbar />
+    <div class="vertCentered justify-between text-lg gap-5">
+      <InputBar />
       <BtnLinks styles="hidden" /> {/* hide on mobiles only */}
     </div>
   );
@@ -70,7 +70,7 @@ export const [sideBarShown, showSidebar] = createSignal(false);
 // final component!
 function Docs() {
   const MobileNav = () => (
-    <nav class="my-5 mx-5 flex justify-between lg:hidden text-xl">
+    <nav class="py-8 flex justify-between lg:hidden text-xl sticky h-10 top-0 z-50 bgCol">
       <A href="/" class="vertCentered gap-3 font-semibold ">
         <img src="/logo.svg" alt="nvchad logo" class="w-7" />
         NvChad
@@ -89,15 +89,20 @@ function Docs() {
     </nav>
   );
 
-  const styles = "md:mx-10 lg:blur-none";
+  const docContentStyles = "md:mx-10 lg:blur-none";
+  const docStyles = "grid grid-cols-[auto_1fr]";
 
   return (
-    <div class="grid grid-cols-[auto_1fr]">
+    <div class={sideBarShown() ? `${docStyles} p-4 pl-0 pt-0` : `${docStyles} p-4 pt-0`}>
       <Sidebar />
 
-      <div class={sideBarShown() ? `${styles} blur-sm` : styles}>
+      <div
+        class={sideBarShown()
+          ? `${docContentStyles} blur-sm`
+          : docContentStyles}
+      >
         <MobileNav />
-        <TopBar />
+        <SearchBar />
         <Outlet /> {/* doc content */}
       </div>
     </div>

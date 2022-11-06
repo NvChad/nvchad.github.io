@@ -18,7 +18,7 @@
     "vite-plugin-solid-marked": "0.4.1"
   },
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview"
   }

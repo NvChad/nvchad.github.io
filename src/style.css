@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 @layer base {
-  body {
+  body,
+  .bgCol {
     @apply bg-white text-gray-700;
     @apply dark:bg-black dark:text-grey;
   }
@@ -24,22 +25,22 @@
     @apply vertCentered justify-between w-full;
     @apply whitespace-nowrap;
     @apply hover:dark:bg-tintBlack2 hover:dark:text-red-200;
-    @apply hover:bg-red-200 hover:text-black
+    @apply hover:bg-red-200 hover:text-black;
   }
 
   .vertCentered {
     @apply flex items-center gap-2;
   }
 
-  button , input{
-    @apply outline-none
+  button,
+  input {
+    @apply outline-none;
   }
-
 }
 
 @layer components {
   .DocContent {
-    @apply grid gap-5 md:pt-2 lg:mr-32;
+    @apply grid gap-5 pt-2 lg:mr-32;
   }
 
   .DocContent h2 {
