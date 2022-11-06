@@ -64,7 +64,8 @@ export function useMDX(): MDXProps {
             </div>
 
             <div class="pt-10 sticky h-[calc(100vh-4rem)] top-16">
-              <div class="h-fit grid ">
+              <div class="h-fit grid">
+                <h4 class='text-lg font-medium pb-2 pl-5 dark:border-tintBlack3 border-l-2'> On this page </h4>
                 {contextHeadings.map((x) => (
                   <a
                     href={"#" + x[1]}
