@@ -23,6 +23,8 @@
   button {
     @apply vertCentered justify-between w-full;
     @apply whitespace-nowrap;
+    @apply hover:dark:bg-tintBlack2 hover:dark:text-red-200;
+    @apply hover:bg-green-200 hover:text-black
   }
 
   .vertCentered {
@@ -32,11 +34,12 @@
   button , input{
     @apply outline-none
   }
+
 }
 
 @layer components {
   .DocContent {
-    @apply grid gap-5 pt-2 mr-32;
+    @apply grid gap-5 md:pt-2 md:mr-32;
   }
 
   .DocContent h2 {

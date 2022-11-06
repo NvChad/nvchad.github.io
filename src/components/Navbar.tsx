@@ -37,7 +37,7 @@ const tmpTheme = localStorage && localStorage.theme
   ? localStorage.theme
   : "light";
 
-const ThemeToggleBtn = (props:any) => (
+export const ThemeToggleBtn = (props:any) => (
   <button
     onclick={() => {
       setTheme(theme() == "light" ? "dark" : "light");
@@ -55,7 +55,7 @@ const ThemeToggleBtn = (props:any) => (
 
 const [theme, setTheme] = createSignal(tmpTheme);
 
-export function BtnLinks() {
+export function BtnLinks(props:any) {
   const Btns: Array<Array<any>> = [
     [<FaBrandsGithub />, "https://github.com/NvChad/NvChad"],
     [<BiLogosTelegram />, "https://t.me/DE_WM"],
@@ -63,7 +63,7 @@ export function BtnLinks() {
     [<SiMatrix />, "https://matrix.to/#/#nvchad:matrix.org"],
   ];
 
-  const btnStyles = "vertCentered md:vertCentered gap-5 md:gap-5 text-2xl";
+  const btnStyles = `vertCentered md:vertCentered gap-5 md:gap-5 text-2xl ${props.styles}`;
 
   return (
     <div class={linksShown() ? btnStyles : `hidden ${btnStyles}`}>

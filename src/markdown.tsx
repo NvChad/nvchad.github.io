@@ -63,9 +63,11 @@ export function useMDX(): MDXProps {
               {props.children}
             </div>
 
-            <div class="pt-10 sticky h-[calc(100vh-4rem)] top-16">
+            <div class="hidden md:grid pt-10 sticky h-[calc(100vh-4rem)] top-16">
               <div class="h-fit grid">
-                <h4 class='text-lg font-medium pb-2 pl-5 dark:border-tintBlack3 border-l-2'> On this page </h4>
+                <h4 class="text-lg font-medium pb-2 pl-5 dark:border-tintBlack3 border-l-2">
+                  On this page
+                </h4>
                 {contextHeadings.map((x) => (
                   <a
                     href={"#" + x[1]}
@@ -101,7 +103,9 @@ export function useMDX(): MDXProps {
         return (
           <pre
             ref={ref}
-            class={props.lang ? `language-${props.lang}` : "language-bash"}
+            class={props.lang
+              ? `language-${props.lang} overflow-x-auto`
+              : "language-bash overflow-x-auto"}
           >
             {props.children}
           </pre>
