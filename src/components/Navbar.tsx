@@ -6,17 +6,29 @@ import { BiLogosTelegram } from "solid-icons/bi";
 
 import { SiMatrix } from "solid-icons/si";
 import { TbMoon, TbSun } from "solid-icons/tb";
+import { FiMenu } from 'solid-icons/fi'
+
+// for toggling menu links, btns on mobile
+const [linksShown, showLinks] = createSignal(false);
 
 function Links() {
   return (
-    <div class="flex gap-5">
+    <div class="grid md:flex gap-5">
       <A href="/" class="vertCentered gap-3 font-semibold ">
         <img src="/logo.svg" alt="nvchad logo" class="w-7" />
         NvChad
       </A>
-      <A href="/docs/quickstart/install">Docs</A>
-      <A href="/Features">Features</A>
-      <A href="/Themes">Themes</A>
+
+      {/* route links */}
+      <div
+        class={linksShown()
+          ? "grid md:vertCentered gap-4"
+          : "hidden md:vertCentered gap-10"}
+      >
+        <A href="/docs/quickstart/install">Docs</A>
+        <A href="/Features">Features</A>
+        <A href="/Themes">Themes</A>
+      </div>
     </div>
   );
 }
@@ -24,6 +36,22 @@ function Links() {
 const tmpTheme = localStorage && localStorage.theme
   ? localStorage.theme
   : "light";
+
+const ThemeToggleBtn = (props:any) => (
+  <button
+    onclick={() => {
+      setTheme(theme() == "light" ? "dark" : "light");
+
+      const el = document.querySelector("html")!;
+      el.className = localStorage.theme = theme();
+    }}
+    title="Theme Toggle"
+  >
+    <div class={`${props.display} p-2 bg-pale dark:bg-tintBlack2 rounded-full`}>
+      {theme() == "light" ? <TbSun /> : <TbMoon />}
+    </div>
+  </button>
+);
 
 const [theme, setTheme] = createSignal(tmpTheme);
 
@@ -35,38 +63,42 @@ export function BtnLinks() {
     [<SiMatrix />, "https://matrix.to/#/#nvchad:matrix.org"],
   ];
 
+  const btnStyles = "vertCentered md:vertCentered gap-5 md:gap-5 text-2xl";
+
   return (
-    <div class="vertCentered gap-5 text-2xl">
+    <div class={linksShown() ? btnStyles : `hidden ${btnStyles}`}>
+      {/* hide links by default on mobile */}
+
       {Btns.map((x) => <a href={x[1]} target="_blank">{x[0]}</a>)}
-
-      {/* theme toggle */}
-      <button
-        onclick={() => {
-          setTheme(theme() == "light" ? "dark" : "light");
-
-          const el = document.querySelector("html")!;
-          el.className = localStorage.theme = theme();
-        }}
-        title="Theme Toggle"
-      >
-        <div class="p-2 bg-pale dark:bg-tintBlack2 rounded-full">
-          {theme() == "light" ? <TbSun /> : <TbMoon />}
-        </div>
-      </button>
+      <ThemeToggleBtn display="hidden md:flex" />
     </div>
   );
 }
 
 function Navbar() {
   const styles = `sticky top-0 z-50
-                vertCentered gap-5 justify-between 
+                flex md:vertCentered gap-5 justify-between 
                 bg-white dark:bg-black font-medium 
                 text-xl p-8 py-5`;
 
   return (
     <nav class={styles}>
-      <Links />
-      <BtnLinks />
+      <div class="grid md:flex gap-3 justify-between w-full">
+        <Links />
+        <BtnLinks />
+      </div>
+
+      {/* shown only on mobile */}
+      <div class="vertCentered h-fit">
+        <ThemeToggleBtn display="md:hidden"/>
+
+        <button
+          class="p-2 bg-whiteTint dark:bg-tintBlack2 md:hidden"
+          onclick={() => showLinks(linksShown() ? false : true)}
+        >
+          <FiMenu />
+        </button>
+      </div>
     </nav>
   );
 }

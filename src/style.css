@@ -21,7 +21,7 @@
   }
 
   button {
-    @apply vertCentered justify-between  w-full;
+    @apply vertCentered justify-between w-full;
     @apply whitespace-nowrap;
   }
 
