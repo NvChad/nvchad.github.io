@@ -61,7 +61,6 @@ function Navbar() {
   const styles = `sticky top-0 z-50
                 vertCentered gap-5 justify-between 
                 bg-white dark:bg-black font-medium 
-                border-b-2 border-whiteTint dark:border-tintBlack
                 text-xl p-8 py-5`;
 
   return (

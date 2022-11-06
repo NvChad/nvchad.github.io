@@ -43,7 +43,7 @@ function NestedLabels(props: any) {
       <Show when={showLinks()}>
         <div class="grid pl-4 gap-3 dark:border-tintBlack2 border-l rounded-none">
           {props.labels.map((x: any) => (
-            <A activeClass="text-red-400 dark:text-red-300" href={x[1]}>{x[0]}</A>
+            <A activeClass="text-red-400 dark:text-red-300 font-medium" href={x[1]}>{x[0]}</A>
           ))}
         </div>
       </Show>
@@ -70,7 +70,7 @@ function SideBar() {
               <A
                 href={item[1]}
                 inactiveClass={LinkStyles}
-                activeClass={`${LinkStyles} text-red-300`}
+                activeClass={`${LinkStyles} font-medium text-red-400 dark:text-red-300`}
               >
                 {item[2]}
                 {item[0]}
