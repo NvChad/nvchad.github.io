@@ -7,10 +7,6 @@ module.exports = {
 
   darkMode: "class", // or 'media' or 'class'
 
-  fontFamily: {
-    sans: ["Inter"],
-  },
-
   theme: {
     extend: {
       colors: {

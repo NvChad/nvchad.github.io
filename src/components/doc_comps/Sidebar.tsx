@@ -57,7 +57,7 @@ function NestedLabels(props: any) {
 }
 
 function SideBar() {
-  const styles = `h-full absolute z-10 lg:sticky lg:flex flex-col shadow-xl
+  const styles = `h-full absolute z-10 lg:sticky xl:flex flex-col shadow-xl
     h-screen top-0 p-8 px-8 
     bg-white text-gray-600 dark:bg-black2 dark:text-grey`;
 
@@ -68,7 +68,7 @@ function SideBar() {
       {/* brand logo */}
       <A
         href="/"
-        class="vertCentered gap-3 mb-8 text-3xl m-auto justify-between lg:justify-center"
+        class="vertCentered gap-3 mb-8 text-3xl m-auto justify-between xl:justify-center"
       >
         <div class="vertCentered">
           <img src="/logo.svg" alt="nvchad logo" class="w-10" />
@@ -76,7 +76,7 @@ function SideBar() {
         </div>
 
         <button
-          class="lg:hidden dark:text-red-300 w-fit p-2 rounded-full"
+          class="xl:hidden dark:text-red-300 w-fit p-2 rounded-full"
           onclick={(e) => {
             e.preventDefault();
             showSidebar(false);

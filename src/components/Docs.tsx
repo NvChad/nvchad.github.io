@@ -1,9 +1,8 @@
-import { A, Outlet } from "@solidjs/router";
+import { Outlet } from "@solidjs/router";
 import { createSignal } from "solid-js";
 import Sidebar from "./doc_comps/Sidebar";
-import { BtnLinks, ThemeToggleBtn } from "./Navbar";
+import { BtnLinks, MobileNav } from "./Navbar";
 import { FiSearch } from "solid-icons/fi";
-import { FiMenu } from "solid-icons/fi";
 
 // for context bar on the right
 export const [activeContext_Heading, setActiveContext_Heading] = createSignal(
@@ -41,7 +40,7 @@ window.addEventListener("scroll", () => generateActiveContext());
 
 function SearchBar() {
   const InputBar = () => (
-    <div class="lg:my-6 vertCentered justify-between bg-pale dark:bg-tintBlack p-2 pr-4 w-full whitespace-nowrap">
+    <div class="xl:my-6 vertCentered justify-between bg-pale dark:bg-tintBlack p-2 pr-4 w-full whitespace-nowrap">
       <div class="vertCentered w-full">
         <div class="bg-white2 text-black dark:bg-tintBlack2 p-3 rounded-full dark:text-red-300">
           <FiSearch />
@@ -60,7 +59,7 @@ function SearchBar() {
   return (
     <div class="vertCentered justify-between text-lg gap-5">
       <InputBar />
-      <BtnLinks styles="hidden" /> {/* hide on mobiles only */}
+      <BtnLinks styles="hidden xl:flex" /> {/* hide on mobiles only */}
     </div>
   );
 }
@@ -69,31 +68,15 @@ export const [sideBarShown, showSidebar] = createSignal(false);
 
 // final component!
 function Docs() {
-  const MobileNav = () => (
-    <nav class="py-8 flex justify-between lg:hidden text-xl sticky h-10 top-0 z-50 bgCol">
-      <A href="/" class="vertCentered gap-3 font-semibold ">
-        <img src="/logo.svg" alt="nvchad logo" class="w-7" />
-        NvChad
-      </A>
-
-      {/* btns */}
-      <div class="vertCentered">
-        <ThemeToggleBtn />
-        <button
-          class="p-2 bg-whiteTint dark:bg-tintBlack2 lg:hidden w-fit"
-          onclick={() => showSidebar(sideBarShown() ? false : true)}
-        >
-          <FiMenu />
-        </button>
-      </div>
-    </nav>
-  );
-
-  const docContentStyles = "md:mx-10 lg:blur-none";
+  const docContentStyles = "md:mx-10 xl:blur-none";
   const docStyles = "grid grid-cols-[auto_1fr]";
 
   return (
-    <div class={sideBarShown() ? `${docStyles} p-4 pl-0 pt-0` : `${docStyles} p-4 pt-0`}>
+    <div
+      class={sideBarShown()
+        ? `${docStyles} p-4 pl-0 pt-0`
+        : `${docStyles} p-4 pt-0`}
+    >
       <Sidebar />
 
       <div

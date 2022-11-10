@@ -66,8 +66,8 @@ export function useMDX(): MDXProps {
             </div>
 
             {/* on this page component */}
-            <div class="my-5 xl:grid lg:pt-10 lg:sticky lg:h-[calc(100vh-4rem)] lg:top-16 ">
-              <div class="h-fit grid border-grey dark:border-tintBlack3 border lg:border-none">
+            <div class="my-5 xl:grid xl:pt-10 xl:h-[calc(100vh-4rem)] xl:top-16 ">
+              <div class="h-fit grid border-grey dark:border-tintBlack3 border xl:border-none">
                 <button
                   class="text-lg font-medium py-2 lg:pb-2 pl-5 dark:border-tintBlack3 lg:border-l-2 lg:rounded-none "
                   onclick={() =>
@@ -77,7 +77,7 @@ export function useMDX(): MDXProps {
                 </button>
 
                 {/* labels */}
-                <div class={contextLabelsShown() ? "grid" : "hidden lg:grid"}>
+                <div class={contextLabelsShown() ? "grid" : "hidden xl:grid"}>
                   {contextHeadings.map((x) => (
                     <a
                       href={"#" + x[1]}

@@ -68,7 +68,7 @@
 
 @layer components {
   .DocContent {
-    @apply grid gap-5 pt-2 lg:mr-32;
+    @apply grid gap-5 pt-2 xl:mr-10;
   }
 
   .DocContent h2 {

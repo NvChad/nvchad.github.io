@@ -6,7 +6,8 @@ import { BiLogosTelegram } from "solid-icons/bi";
 
 import { SiMatrix } from "solid-icons/si";
 import { TbMoon, TbSun } from "solid-icons/tb";
-import { FiMenu } from 'solid-icons/fi'
+import { FiMenu } from "solid-icons/fi";
+import { showSidebar, sideBarShown } from "./Docs";
 
 // for toggling menu links, btns on mobile
 const [linksShown, showLinks] = createSignal(false);
@@ -14,7 +15,7 @@ const [linksShown, showLinks] = createSignal(false);
 function Links() {
   return (
     <div class="grid md:flex gap-5">
-      <A href="/" class="vertCentered gap-3 font-semibold ">
+      <A href="/" class="vertCentered gap-3 font-semibold">
         <img src="/logo.svg" alt="nvchad logo" class="w-7" />
         NvChad
       </A>
@@ -37,7 +38,7 @@ const tmpTheme = localStorage && localStorage.theme
   ? localStorage.theme
   : "light";
 
-export const ThemeToggleBtn = (props:any) => (
+export const ThemeToggleBtn = (props: any) => (
   <button
     onclick={() => {
       setTheme(theme() == "light" ? "dark" : "light");
@@ -55,7 +56,7 @@ export const ThemeToggleBtn = (props:any) => (
 
 const [theme, setTheme] = createSignal(tmpTheme);
 
-export function BtnLinks(props:any) {
+export function BtnLinks(props: any) {
   const Btns: Array<Array<any>> = [
     [<FaBrandsGithub />, "https://github.com/NvChad/NvChad"],
     [<BiLogosTelegram />, "https://t.me/DE_WM"],
@@ -63,17 +64,43 @@ export function BtnLinks(props:any) {
     [<SiMatrix />, "https://matrix.to/#/#nvchad:matrix.org"],
   ];
 
-  const btnStyles = `vertCentered md:flex items-center gap-5 text-2xl ${props.styles}`;
+  const btnStyles =
+    `vertCentered items-center gap-5 text-2xl ${props.styles}`;
 
   return (
     <div class={linksShown() ? btnStyles : `hidden ${btnStyles}`}>
       {/* hide links by default on mobile */}
 
-      {Btns.map((x) => <a href={x[1]} target="_blank">{x[0]}</a>)}
+      {Btns.map((x) => (
+        <a href={x[1]} target="_blank">
+          {x[0]}
+        </a>
+      ))}
+
       <ThemeToggleBtn display="hidden md:flex" />
     </div>
   );
 }
+
+export const MobileNav = () => (
+  <nav class="py-8 flex justify-between xl:hidden text-xl sticky h-10 top-0 z-50 bgCol">
+    <A href="/" class="vertCentered gap-3 font-semibold ">
+      <img src="/logo.svg" alt="nvchad logo" class="w-7" />
+      NvChad
+    </A>
+
+    {/* btns */}
+    <div class="vertCentered">
+      <ThemeToggleBtn />
+      <button
+        class="p-2 bg-whiteTint dark:bg-tintBlack2 xl:hidden w-fit"
+        onclick={() => showSidebar(sideBarShown() ? false : true)}
+      >
+        <FiMenu />
+      </button>
+    </div>
+  </nav>
+);
 
 function Navbar() {
   const styles = `sticky top-0 z-50
@@ -85,12 +112,12 @@ function Navbar() {
     <nav class={styles}>
       <div class="grid gap-5 md:flex md:gap-3 justify-between w-full">
         <Links />
-        <BtnLinks />
+        <BtnLinks styles="lg:flex" />
       </div>
 
       {/* shown only on mobile */}
       <div class="vertCentered h-fit">
-        <ThemeToggleBtn display="md:hidden"/>
+        <ThemeToggleBtn display="md:hidden" />
 
         <button
           class="p-2 bg-whiteTint dark:bg-tintBlack2 md:hidden"

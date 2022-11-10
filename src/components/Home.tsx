@@ -1,6 +1,6 @@
 import { A } from "@solidjs/router";
-import { FiArrowDownCircle } from "solid-icons/fi";
 import { FaBrandsDocker } from "solid-icons/fa";
+import { BsArrowDownCircle } from "solid-icons/bs";
 
 function BannerText() {
   const BtnLinks = () => {
@@ -8,9 +8,9 @@ function BannerText() {
       "vertCentered shadow-soft bg-onedark w-fit p-2 md:p-4 md:px-6 rounded-full";
 
     return (
-      <div class="bannerBtns flex gap-3 m-auto text-sm md:text-lg text-indigo-300">
+      <div class="bannerBtns flex gap-3 m-auto text-sm md:text-xl text-indigo-300">
         <A href="/docs/quickstart/install#pre-requisites" class={styles}>
-          <FiArrowDownCircle /> Install
+          <BsArrowDownCircle /> Install
         </A>
 
         <A
