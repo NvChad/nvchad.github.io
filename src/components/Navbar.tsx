@@ -58,21 +58,32 @@ const [theme, setTheme] = createSignal(tmpTheme);
 
 export function BtnLinks(props: any) {
   const Btns: Array<Array<any>> = [
-    [<FaBrandsGithub />, "https://github.com/NvChad/NvChad"],
-    [<BiLogosTelegram />, "https://t.me/DE_WM"],
-    [<FaBrandsDiscord />, "https://discord.com/invite/gADmkJb9Fb"],
-    [<SiMatrix />, "https://matrix.to/#/#nvchad:matrix.org"],
+    [
+      <FaBrandsGithub />,
+      "https://github.com/NvChad/NvChad",
+      "Github repo",
+    ],
+    [<BiLogosTelegram />, "https://t.me/DE_WM", "Telegram group link"],
+    [
+      <FaBrandsDiscord />,
+      "https://discord.com/invite/gADmkJb9Fb",
+      "Discord server",
+    ],
+    [
+      <SiMatrix />,
+      "https://matrix.to/#/#nvchad:matrix.org",
+      "Matrix space",
+    ],
   ];
 
-  const btnStyles =
-    `vertCentered items-center gap-5 text-2xl ${props.styles}`;
+  const btnStyles = `vertCentered items-center gap-5 text-2xl ${props.styles}`;
 
   return (
     <div class={linksShown() ? btnStyles : `hidden ${btnStyles}`}>
       {/* hide links by default on mobile */}
 
       {Btns.map((x) => (
-        <a href={x[1]} target="_blank">
+        <a href={x[1]} target="_blank" aria-label={x[2]}>
           {x[0]}
         </a>
       ))}
