@@ -59,7 +59,7 @@ function NestedLabels(props: any) {
 function SideBar() {
   const styles = `h-full absolute z-10 lg:sticky xl:flex flex-col shadow-xl
     h-screen top-0 p-8 px-8 
-    bg-white text-gray-600 dark:bg-black2 dark:text-grey`;
+    bg-white text-gray-600 dark:bg-black2 dark:text-grey rounded-none`;
 
   const LinkStyles = "pl-0 vertCentered";
 

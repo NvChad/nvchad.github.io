@@ -112,7 +112,7 @@ function Navbar() {
     <nav class={styles}>
       <div class="grid gap-5 md:flex md:gap-3 justify-between w-full">
         <Links />
-        <BtnLinks styles="lg:flex" />
+        <BtnLinks styles="md:flex" />
       </div>
 
       {/* shown only on mobile */}

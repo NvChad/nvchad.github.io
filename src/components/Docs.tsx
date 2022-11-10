@@ -68,14 +68,14 @@ export const [sideBarShown, showSidebar] = createSignal(false);
 
 // final component!
 function Docs() {
-  const docContentStyles = "md:mx-10 xl:blur-none";
+  const docContentStyles = "px-5 xl:px-10 xl:blur-none";
   const docStyles = "grid grid-cols-[auto_1fr]";
 
   return (
     <div
       class={sideBarShown()
         ? `${docStyles} p-4 pl-0 pt-0`
-        : `${docStyles} p-4 pt-0`}
+        : `${docStyles} p-4 pl-0 pt-0`}
     >
       <Sidebar />
 

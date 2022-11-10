@@ -17,10 +17,6 @@
     @apply rounded-xl;
   }
 
-  p {
-    @apply text-base;
-  }
-
   button {
     @apply vertCentered justify-between w-full;
     @apply whitespace-nowrap;
@@ -39,6 +35,10 @@
 
   h1 {
     @apply text-5xl font-bold;
+  }
+
+     h2 {
+    @apply text-3xl font-bold;
   }
 
   /* gradients for homepage */
@@ -63,7 +63,6 @@
       #eca1fe 100%
     );
   }
-
 }
 
 @layer components {
