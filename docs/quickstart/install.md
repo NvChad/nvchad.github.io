@@ -19,7 +19,7 @@ This will leave your current Neovim configuration untouched. Once you exit Neovi
 ## Pre-requisites
 
 - You should be an existing Vim user or keen to learn Neovim and NvChad (through these docs).
-- [Neovim 0.7.2](https://github.com/neovim/neovim/releases/tag/v0.7.2), if your distro/OS doesn't have it then try [neovim version manager](https://github.com/MordechaiHadad/bob).
+- [Neovim 0.8.0](https://github.com/neovim/neovim/releases/tag/v0.8.0), if your distro/OS doesn't have it then try [neovim version manager](https://github.com/MordechaiHadad/bob).
 - [Use a Nerd Font](https://www.nerdfonts.com/) in your terminal emulator.
 - Make sure to delete this folder `~/.local/share/nvim` on Linux/macOS or `~\AppData\Local\nvim` and `~\AppData\Local\nvim-data` on Windows.
 
