@@ -44,7 +44,7 @@ module.exports = {
           position: "right",
         },
         {
-          href: "https://t.me/DE_WM",
+          href: "https://t.me/nvchad_tg",
           position: "right",
         },
 
