@@ -1,8 +1,11 @@
-import { Outlet } from "@solidjs/router";
-import { createSignal } from "solid-js";
+import { Outlet, useLocation } from "@solidjs/router";
+import { createStore } from "solid-js/store";
+import { createEffect, createSignal, on } from "solid-js";
 import Sidebar from "./doc_comps/Sidebar";
 import { BtnLinks, MobileNav } from "./Navbar";
 import { FiSearch } from "solid-icons/fi";
+
+import "highlight.js/styles/base16/onedark.css";
 
 // for context bar on the right
 export const [activeContext_Heading, setActiveContext_Heading] = createSignal(
@@ -71,6 +74,36 @@ function Docs() {
   const docContentStyles = "px-5 xl:px-10 xl:blur-none";
   const docStyles = "grid grid-cols-[auto_1fr]";
 
+  const [contextLabelsShown, toggleContextLabels] = createSignal(false);
+  const [contextHeadings, setHeadings] = createStore([]);
+
+  // filter out all h2 elements for Context SideBar
+  // this will run on route change
+  createEffect(on(() => useLocation().pathname, () => {
+    setTimeout(() => {
+      let docs = document.getElementById("DocContent")?.childNodes;
+      let result: Array<Array<string>> = [];
+
+      docs?.forEach((item: any) => {
+        if (item.localName == "h2" || item.localName == "h3") {
+          item.id = item.innerText;
+          result.push([item.localName, item.innerText]);
+        }
+      });
+
+      setHeadings(result);
+      generateActiveContext();
+    }, 50);
+  }));
+
+  function generateStyles(x: any) {
+    const labelStyles = "lg:border-l-2 p-1 px-5";
+    let styles = activeContext_Heading() == x[1]
+      ? `${labelStyles} border-purple-300 bg-purple-100 text-purple-800 dark:border-blue-300 dark:text-blue-300 dark:bg-tintBlack2`
+      : `${labelStyles} dark:border-tintBlack3 text-darkgrey`;
+    return x[0] == "h3" ? `pl-9 ${styles}` : `${styles}`;
+  }
+
   return (
     <div
       class={sideBarShown()
@@ -86,7 +119,41 @@ function Docs() {
       >
         <MobileNav />
         <SearchBar />
-        <Outlet /> {/* doc content */}
+
+        <div class="flex flex-col-reverse xl:grid xl:grid-cols-[1fr_auto]">
+          <div id="DocContent">
+            <Outlet />
+          </div>
+
+          {/* on this page component */}
+          {contextHeadings.length > 1 &&
+            (
+              <div class="sticky my-5 xl:grid xl:pt-10 xl:h-[calc(100vh-4rem)] xl:top-16 ">
+                <div class="h-fit grid border-grey dark:border-tintBlack3 border xl:border-none">
+                  <button
+                    class="text-lg font-medium py-2 lg:pb-2 pl-5 dark:border-tintBlack3 lg:border-l-2 lg:rounded-none "
+                    onclick={() =>
+                      toggleContextLabels(contextLabelsShown() ? false : true)}
+                  >
+                    On this page
+                  </button>
+
+                  {/* labels */}
+                  <div class={contextLabelsShown() ? "grid" : "hidden xl:grid"}>
+                    {contextHeadings.map((x: any) => (
+                      <a
+                        href={"#" + x[1]}
+                        class={generateStyles(x)}
+                        onclick={() => setActiveContext_Heading(x[1])}
+                      >
+                        {x[1]}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            )}
+        </div>
       </div>
     </div>
   );

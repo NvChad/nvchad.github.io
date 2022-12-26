@@ -1,21 +1,23 @@
 {
   "name": "nvchad website",
   "version": "0.4.1",
+  "type": "module",
   "dependencies": {
     "@solidjs/router": "^0.5.0",
-    "highlight.js": "^11.6.0",
     "solid-icons": "^1.0.4",
     "solid-js": "^1.6.1"
   },
   "devDependencies": {
+    "rehype-highlight": "^6.0.0",
+    "@mdx-js/rollup": "^2.2.1",
     "autoprefixer": "^10.4.13",
+    "mdx": "^0.3.1",
     "postcss": "^8.4.18",
-    "solid-marked": "0.4.0",
+    "solid-jsx": "^0.9.1",
     "tailwindcss": "^3.2.1",
     "typescript": "^4.8.4",
     "vite": "^2.9.15",
-    "vite-plugin-solid": "2.2.6",
-    "vite-plugin-solid-marked": "0.4.1"
+    "vite-plugin-solid": "2.2.6"
   },
   "scripts": {
     "dev": "vite --host",

@@ -7,6 +7,7 @@
   .bgCol {
     @apply bg-white text-black;
     @apply dark:bg-black dark:text-grey;
+    @apply m-0 p-0;
   }
 
   body * div,
@@ -37,7 +38,7 @@
     @apply text-5xl font-bold;
   }
 
-     h2 {
+  h2 {
     @apply text-3xl font-bold;
   }
 
@@ -65,45 +66,51 @@
   }
 }
 
+/* doc related classes! */
+
 @layer components {
-  .DocContent {
-    @apply grid gap-5 pt-2 xl:mr-10;
+  #DocContent {
+    @apply  grid gap-5 pt-2 xl:mr-10;
   }
 
-  .DocContent h2 {
+  #DocContent h2 {
     @apply font-semibold text-2xl;
   }
 
-  .DocContent h3 {
+  #DocContent h3 {
     @apply font-semibold text-lg;
   }
 
-  .DocContent p {
+  #DocContent p {
     @apply text-lg;
   }
 
-  .DocContent h2,
-  .DocContent h3 {
+  #DocContent h2,
+  #DocContent h3 {
     @apply text-gray-900 dark:text-white2;
   }
 
-  .DocContent pre {
-    @apply bg-[#282c34] dark:bg-tintBlack;
+  #DocContent pre {
+    @apply bg-[#282c24] dark:bg-tintBlack;
     @apply p-5 rounded-xl font-mono;
     @apply shadow-2xl;
   }
 
-  .DocContent code {
+  #DocContent code {
     @apply bg-slate-200 dark:bg-tintBlack2;
     @apply p-1 px-3 rounded-xl;
-    @apply whitespace-nowrap;
   }
 
-  .DocContent ul {
+  #DocContent pre code {
+    @apply bg-[#282c34] dark:bg-tintBlack;
+    @apply text-white
+  }
+
+  #DocContent ul {
     @apply list-disc pl-5;
   }
 
-  .DocContent li {
+  #DocContent li {
     @apply my-2;
   }
 }

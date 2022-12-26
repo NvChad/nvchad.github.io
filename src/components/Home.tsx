@@ -3,10 +3,10 @@ import Features from "./Landing_Page/Features";
 
 function Home() {
   return (
-    <div>
+    <>
       <Banner />
       <Features/>
-    </div>
+    </>
   );
 }
 
