@@ -1,16 +1,16 @@
 /* Taken from: https://github.com/highlightjs/highlight.js/blob/main/src/styles/github.css */
 
 .dark pre code {
-  --hljs-color: #c9d1d9;
-  --hljs-type: #ff7b72;
-  --hljs-function: #d2a8ff;
-  --hljs-attr: #79c0ff;
-  --hljs-string: #a5d6ff;
-  --hljs-built_in: #ffa657;
-  --hljs-comment: #8b949e;
-  --hljs-quote: #7ee787;
-  --hljs-section: #1f6feb;
-  --hljs-bullet: #f2cc60;
+  --hljs-color: #b5bcc9;
+  --hljs-type: #ef8891;
+  --hljs-function: #c2a2e3;
+  --hljs-attr: #99aee5;
+  --hljs-string: #9ce5c0;
+  --hljs-built_in: #eda685;
+  --hljs-comment: #4e555c;
+  --hljs-quote: #9ce5c0;
+  --hljs-section: #92dbb6;
+  --hljs-bullet: #fbdf90;
   --hljs-addition: #aff5b4;
   --hljs-addition-bg: #033a16;
   --hljs-deletion: #ffdcd7;
@@ -18,30 +18,20 @@
 }
 
 pre code {
-  --hljs-color: #24292e;
-  --hljs-type: #d73a49;
-  --hljs-function: #6f42c1;
-  --hljs-attr: #005cc5;
-  --hljs-string: #032f62;
-  --hljs-built_in: #e36209;
-  --hljs-comment: #6a737d;
-  --hljs-quote: #22863a;
-  --hljs-section: #005cc5;
-  --hljs-bullet: #735c0f;
-  --hljs-addition: #22863a;
-  --hljs-addition-bg: #f0fff4;
-  --hljs-deletion: #b31d28;
-  --hljs-deletion-bg: #ffeef0;
-}
-
-pre code.hljs {
-  display: block;
-  overflow-x: auto;
-  padding: 1em;
-}
-
-code.hljs {
-  padding: 3px 5px;
+  --hljs-color: #b5bcc9;
+  --hljs-type: #ef8891;
+  --hljs-function: #c2a2e3;
+  --hljs-attr: #99aee5;
+  --hljs-string: #b5c3ea;
+  --hljs-built_in: #eda685;
+  --hljs-comment: #4e555c;
+  --hljs-quote: #9ce5c0;
+  --hljs-section: #92dbb6;
+  --hljs-bullet: #fbdf90;
+  --hljs-addition: #aff5b4;
+  --hljs-addition-bg: #033a16;
+  --hljs-deletion: #ffdcd7;
+  --hljs-deletion-bg: #67060c;
 }
 
 .hljs {

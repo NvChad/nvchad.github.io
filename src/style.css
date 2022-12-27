@@ -70,7 +70,7 @@
 
 @layer components {
   #DocContent {
-    @apply  grid gap-5 pt-2 xl:mr-10;
+    @apply grid gap-5 pt-2 xl:mr-10;
   }
 
   #DocContent h2 {
@@ -93,17 +93,17 @@
   #DocContent pre {
     @apply bg-[#282c24] dark:bg-tintBlack;
     @apply p-5 rounded-xl font-mono;
-    @apply shadow-2xl;
+    @apply shadow-2xl overflow-x-auto;
   }
 
   #DocContent code {
-    @apply bg-slate-200 dark:bg-tintBlack2;
-    @apply p-1 px-3 rounded-xl;
+    @apply p-1 px-3 bg-slate-200 dark:bg-tintBlack2;
+    @apply rounded-full;
   }
 
   #DocContent pre code {
     @apply bg-[#282c34] dark:bg-tintBlack;
-    @apply text-white
+    @apply text-white  rounded-none p-0;
   }
 
   #DocContent ul {

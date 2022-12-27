@@ -3,11 +3,11 @@
 This will leave your current Neovim configuration untouched. Once you exit Neovim, the image is deleted.
 
 ```bash
-  docker run -w /root -it --rm alpine:edge sh -uelic '
-    apk add git nodejs neovim ripgrep alpine-sdk --update
-    git clone https://github.com/NvChad/NvChad ~/.config/nvim
-    nvim
-    '
+docker run -w /root -it --rm alpine:edge sh -uelic '
+  apk add git nodejs neovim ripgrep alpine-sdk --update
+  git clone https://github.com/NvChad/NvChad ~/.config/nvim
+  nvim
+  '
 ```
 
 ## Pre-requisites

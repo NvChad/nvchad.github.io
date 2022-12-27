@@ -5,7 +5,7 @@ import Sidebar from "./doc_comps/Sidebar";
 import { BtnLinks, MobileNav } from "./Navbar";
 import { FiSearch } from "solid-icons/fi";
 
-import "highlight.js/styles/base16/onedark.css";
+import "../hljs.css";
 
 // for context bar on the right
 export const [activeContext_Heading, setActiveContext_Heading] = createSignal(
@@ -72,8 +72,6 @@ export const [sideBarShown, showSidebar] = createSignal(false);
 // final component!
 function Docs() {
   const docContentStyles = "px-5 xl:px-10 xl:blur-none";
-  const docStyles = "grid grid-cols-[auto_1fr]";
-
   const [contextLabelsShown, toggleContextLabels] = createSignal(false);
   const [contextHeadings, setHeadings] = createStore([]);
 
@@ -105,11 +103,7 @@ function Docs() {
   }
 
   return (
-    <div
-      class={sideBarShown()
-        ? `${docStyles} p-4 pl-0 pt-0`
-        : `${docStyles} p-4 pl-0 pt-0`}
-    >
+    <div>
       <Sidebar />
 
       <div

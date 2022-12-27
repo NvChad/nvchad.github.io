@@ -105,7 +105,7 @@ export const MobileNav = () => (
       <ThemeToggleBtn />
       <button
         class="p-2 bg-whiteTint dark:bg-tintBlack2 xl:hidden w-fit"
-        onclick={() => showSidebar(sideBarShown() ? false : true)}
+        onclick={() => showSidebar(!sideBarShown())}
       >
         <FiMenu />
       </button>
