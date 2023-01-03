@@ -9,7 +9,7 @@ title: Highlight groups
 - Check your theme colors in this dir:
 
 ```shell
-~/.local/share/nvim/site/pack/packer/opt/base46/lua/hl_themes
+~/.local/share/nvim/site/pack/packer/start/base46/lua/base46/themes/
 ```
 - In your theme file, for instance onedark.lua, only the variables from base_30 can be used in overriding your custom highlight groups. 
 - You can even use hex colors in the fg/bg field, but it's preferable to use variable names (for instance: blue, darker_black, one_bg, etc.) from your theme file as these will look better.
