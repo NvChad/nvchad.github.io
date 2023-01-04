@@ -63,11 +63,16 @@ function Feature(props: any) {
   const { details } = props;
 
   return (
-    <div class="grid gap-5 text-center justify-center px-10 lg:p-0">
-      <img src={details.imgSrc} alt={`${details.title}`} class="w-[20%] md:w-[35%] m-auto" />
-      <div class="grid gap gap-5">
-        <h2>{details.title}</h2>
-        <p class='px-0 lg:p-0'>{details.description}</p>
+    <div grid gap-5 text-center justify-center rounded-2xl p-10 bg-slate-1 dark:bg-tintBlack-1>
+      <img
+        src={details.imgSrc}
+        alt={`${details.title}`}
+        class="w-[20%] md:w-[45%] m-auto bg-slate-2 dark:bg-black-1 p-5 rounded-full"
+      />
+
+      <div grid>
+        <h2 mb-2 whitespace-nowrap>{details.title}</h2>
+        <p>{details.description}</p>
       </div>
     </div>
   );
@@ -75,8 +80,8 @@ function Feature(props: any) {
 
 export default function Features() {
   return (
-    <section class="max-w-6xl m-auto grid justify-center text-center gap-10 my-20">
-      <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-10">
+    <section max-w-6xl m-auto grid justify-center text-center my-20 px-5>
+      <div grid md:grid-cols-2 lg:grid-cols-3 gap-10>
         {FeatureList.map((feature, i) => <Feature key={i} details={feature} />)}
       </div>
     </section>

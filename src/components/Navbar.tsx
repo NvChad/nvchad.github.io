@@ -1,12 +1,5 @@
 import { A } from "@solidjs/router";
 import { createSignal } from "solid-js";
-
-import { FaBrandsDiscord, FaBrandsGithub } from "solid-icons/fa";
-import { BiLogosTelegram } from "solid-icons/bi";
-
-import { SiMatrix } from "solid-icons/si";
-import { TbMoon, TbSun } from "solid-icons/tb";
-import { FiMenu } from "solid-icons/fi";
 import { showSidebar, sideBarShown } from "./Docs";
 
 // for toggling menu links, btns on mobile
@@ -14,18 +7,15 @@ const [linksShown, showLinks] = createSignal(false);
 
 function Links() {
   return (
-    <div class="grid md:flex gap-5">
-      <A href="/" class="vertCentered gap-3 font-semibold">
-        <img src="/logo.svg" alt="nvchad logo" class="w-7" />
+    <div grid md:flex gap-5>
+      {/* Brand logo */}
+      <A href="/" class="vertCentered !gap-4 font-bold">
+        <img src="/logo.svg" alt="nvchad logo" w-7 />
         NvChad
       </A>
 
       {/* route links */}
-      <div
-        class={linksShown()
-          ? "grid md:vertCentered gap-4"
-          : "hidden md:vertCentered md:gap-5"}
-      >
+      <div class="grid md:vertCentered md:!gap-5 gap-5" hidden={!linksShown()}>
         <A href="/docs/quickstart/install">Docs</A>
         <A href="/Features">Features</A>
         <A href="/Themes">Themes</A>
@@ -34,67 +24,65 @@ function Links() {
   );
 }
 
-const tmpTheme = localStorage && localStorage.theme
-  ? localStorage.theme
-  : "light";
+export const ThemeToggleBtn = (props: any) => {
+  const [theme, setTheme] = createSignal(
+    localStorage && localStorage.theme ? localStorage.theme : "light"
+  );
 
-export const ThemeToggleBtn = (props: any) => (
-  <button
-    onclick={() => {
-      setTheme(theme() == "light" ? "dark" : "light");
+  return (
+    <button
+      onclick={() => {
+        setTheme(theme() == "light" ? "dark" : "light");
+        const el = document.querySelector("html")!;
+        el.className = localStorage.theme = theme();
+      }}
+      class={`${props.display} text-xl p-2 bg-pale dark:bg-tintBlack-2 rounded-full`}
+    >
+      <div
+        class={theme() == "light" ? "i-carbon-sun" : "i-ph-moon-stars-bold"}
+      ></div>
+    </button>
+  );
+};
 
-      const el = document.querySelector("html")!;
-      el.className = localStorage.theme = theme();
-    }}
-    title="Theme Toggle"
-  >
-    <div class={`${props.display} p-2 bg-pale dark:bg-tintBlack2 rounded-full`}>
-      {theme() == "light" ? <TbSun /> : <TbMoon />}
-    </div>
-  </button>
-);
-
-const [theme, setTheme] = createSignal(tmpTheme);
-
-export function BtnLinks(props: any) {
+export function BtnLinks() {
   const Btns: Array<Array<any>> = [
+    ["i-ph-telegram-logo", "https://t.me/DE_WM", "Telegram group link"],
     [
-      <FaBrandsGithub />,
-      "https://github.com/NvChad/NvChad",
-      "Github repo",
-    ],
-    [<BiLogosTelegram />, "https://t.me/DE_WM", "Telegram group link"],
-    [
-      <FaBrandsDiscord />,
+      "i-ic-baseline-discord",
       "https://discord.com/invite/gADmkJb9Fb",
       "Discord server",
     ],
+
+    ["i-mdi-github", "https://github.com/NvChad/NvChad", "Github repo"],
     [
-      <SiMatrix />,
+      "i-tabler-brand-matrix",
       "https://matrix.to/#/#nvchad:matrix.org",
       "Matrix space",
     ],
   ];
 
-  const btnStyles = `vertCentered items-center gap-5 text-2xl ${props.styles}`;
-
   return (
-    <div class={linksShown() ? btnStyles : `hidden ${btnStyles}`}>
+    <div
+      class={`md:vertCentered !gap-5 text-2xl ${
+        linksShown() ? "vertCentered" : "hidden"
+      }`}
+    >
       {/* hide links by default on mobile */}
 
       {Btns.map((x) => (
-        <a href={x[1]} target="_blank" aria-label={x[2]}>
+        <a href={x[1]} target="_blank" aria-label={x[2]} class={x[0]}>
           {x[0]}
         </a>
       ))}
 
-      <ThemeToggleBtn display="hidden md:flex" />
+      <ThemeToggleBtn display="hidden md:vertCentered" />
     </div>
   );
 }
 
 export const MobileNav = () => (
-  <nav class="py-8 flex justify-between xl:hidden text-xl sticky h-10 top-0 z-50 bgCol">
+  <nav py-3 flex justify-between xl="hidden" text-xl sticky h-10 top-0 z-50 bg-white-1 dark:bg-black-1>
     <A href="/" class="vertCentered gap-3 font-semibold ">
       <img src="/logo.svg" alt="nvchad logo" class="w-7" />
       NvChad
@@ -104,10 +92,10 @@ export const MobileNav = () => (
     <div class="vertCentered">
       <ThemeToggleBtn />
       <button
-        class="p-2 bg-whiteTint dark:bg-tintBlack2 xl:hidden w-fit"
+        class="p-2 bg-whiteTint dark:bg-tintBlack-2 xl:hidden w-fit rounded-lg text-xl"
         onclick={() => showSidebar(!sideBarShown())}
       >
-        <FiMenu />
+        <div i-material-symbols-menu-rounded></div>
       </button>
     </div>
   </nav>
@@ -116,14 +104,17 @@ export const MobileNav = () => (
 function Navbar() {
   const styles = `sticky top-0 z-50
                 flex md:vertCentered gap-5 justify-between 
-                bg-white dark:bg-black font-medium 
-                text-xl p-8 py-3 shadow-soft`;
+                bg-white-1 dark:bg-black-1 
+                text-xl p-4 md:px-0 py-3 shadow-xl dark:softShadow`;
 
   return (
     <nav class={styles}>
-      <div class="grid gap-5 md:flex md:gap-3 justify-between w-full">
+      <div
+        md="flex gap-3 max-w-[90vw] mx-auto"
+        class="grid justify-between w-full gap-5"
+      >
         <Links />
-        <BtnLinks styles="md:flex" />
+        <BtnLinks />
       </div>
 
       {/* shown only on mobile */}
@@ -131,10 +122,10 @@ function Navbar() {
         <ThemeToggleBtn display="md:hidden" />
 
         <button
-          class="p-2 bg-whiteTint dark:bg-tintBlack2 md:hidden"
+          class="p-2 text-xl bg-whiteTint rounded-lg dark:bg-tintBlack-2 md:hidden"
           onclick={() => showLinks(linksShown() ? false : true)}
         >
-          <FiMenu />
+          <div i-material-symbols-menu-rounded></div>
         </button>
       </div>
     </nav>

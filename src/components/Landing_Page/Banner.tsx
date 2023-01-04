@@ -1,35 +1,31 @@
-import { FaBrandsDocker } from "solid-icons/fa";
-import { BsArrowDownCircle } from "solid-icons/bs";
-
-// banner buttons
 function BtnLinks() {
-  const styles =
-    "vertCentered shadow-soft bg-onedark w-fit p-2 md:p-4 md:px-6 rounded-full";
+  const linkStyles =
+    "vertCentered bg-onedark w-fit p-3 px-4 rounded-full";
 
   return (
-    <div class="bannerBtns flex gap-3 m-auto text-sm md:text-xl text-indigo-300">
-      <a href="/docs/quickstart/install#pre-requisites" class={styles}>
-        <BsArrowDownCircle /> Install
+    <div mx-auto flex gap-3 text-sm md:text-lg text-white-2  class="[&_a]:shadow-xl">
+      <a href="/docs/quickstart/install#pre-requisites" class={linkStyles}>
+        <div class='i-grommet-icons-install-option'> </div> Install
       </a>
 
       <a
         href="/docs/quickstart/install#try-in-docker-container"
-        class={styles}
+        class={linkStyles}
       >
-        <FaBrandsDocker /> Docker
+        <div class='i-mdi-docker'> </div> Docker
       </a>
     </div>
   );
 }
 
-function BannerText() {
+function HeroText() {
   return (
-    <div class="grid justify-center gap-5 text-center mb-6">
-      <h1 class="text-3xl md:text-5xl lg:text-6xl text-white">
+    <div text-slate-8 grid text-center mx-auto mb-10>
+      <h1 mb-0>
         Enhance your Neovim workflow
       </h1>
 
-      <p class="font-medium text-base md:text-xl text-black">
+      <p font-medium text-base md:text-xl >
         Blazing fast Neovim config providing solid defaults and a beautiful UI
       </p>
 
@@ -38,19 +34,22 @@ function BannerText() {
   );
 }
 
-function Banner() {
+function Hero() {
+  let redGradient = 'bg-gradient-to-r dark:from-red-4 dark:to-purple-5'
+  let blueGradient = 'bg-gradient-to-r from-cyan-300 to-blue-500'
+
   return (
-    <div class="banner blueGradient dark:redGradient grid p-10 pt-6 justify-center rounded-none">
-      <BannerText />
+    <div class={`grid p-10 pt-0 justify-center rounded-none ${blueGradient} dark:${redGradient}`}>
+      <HeroText />
 
       {/* banner img */}
       <img
         src="/banner.webp"
         alt="NvChad screenshot"
-        class="rounded-xl shadow-soft lg:max-w-[94%] m-auto"
+        class="rounded-lg  md:rounded-xl max-w-[90vw] softshadow  m-auto"
       />
     </div>
   );
 }
 
-export default Banner;
+export default Hero;
