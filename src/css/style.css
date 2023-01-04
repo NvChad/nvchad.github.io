@@ -49,9 +49,8 @@ h2 {
 /* doc related classes! */
 
 #DocContent {
-  @apply flex flex-col gap-5 pt-2 pb-5 xl:mr-10;
+  @apply grid gap-5 pt-2 pb-5 xl:mr-10 h-fit;
 }
-
 
 #DocContent h1 {
   @apply my-0;
@@ -82,7 +81,7 @@ h2 {
 #DocContent pre {
   @apply bg-tintBlack-2  dark:bg-black-2 dark:bg-tintBlack;
   @apply p-5 rounded-xl font-mono my-0 text-sm;
-  @apply shadow-2xl overflow-x-auto ;
+  @apply shadow-2xl overflow-x-auto;
 }
 
 #DocContent code {
@@ -92,7 +91,7 @@ h2 {
 
 #DocContent pre code {
   @apply bg-tintBlack-2 dark:bg-black-2;
-  @apply text-sm 
+  @apply text-sm;
 }
 
 #DocContent ul {
@@ -101,4 +100,24 @@ h2 {
 
 #DocContent li {
   @apply my-2;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+::-webkit-scrollbar:vertical {
+  width: 15px;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-4 dark:bg-slate-6;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-white-2 dark:bg-tintBlack-2;
 }
