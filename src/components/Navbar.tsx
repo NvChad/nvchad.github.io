@@ -47,7 +47,7 @@ export const ThemeToggleBtn = (props: any) => {
 
 export function BtnLinks() {
   const Btns: Array<Array<any>> = [
-    ["i-ph-telegram-logo", "https://t.me/DE_WM", "Telegram group link"],
+    ["i-ph-telegram-logo", "https://t.me/nvchad_tg", "Telegram group link"],
     [
       "i-ic-baseline-discord",
       "https://discord.com/invite/gADmkJb9Fb",
