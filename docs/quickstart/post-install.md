@@ -38,3 +38,7 @@ For example, to install the treesitter parser for `css` , `html`:
 ```
 
 For a list of supported languages, please checkout the [docs](https://github.com/nvim-treesitter/nvim-treesitter#supported-languages).
+
+## Nvim lua api
+
+- Be familiar with Neovim's lua api i.e you should know how to convert a vimscript code into lua in your config. Read the official [documentation](https://neovim.io/doc/user/lua-guide.html#lua-guide) for this 

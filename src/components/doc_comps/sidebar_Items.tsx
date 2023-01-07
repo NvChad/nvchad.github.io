@@ -5,7 +5,6 @@ const sidebar_Items: Array<any> = [
       ["Install", "quickstart/install"],
       ["Post Install", "quickstart/post-install"],
       ["Learn basic Lua", "quickstart/learn-lua"],
-      ["Nvim Lua guide", "quickstart/Nvim lua"],
     ],
   },
   {
