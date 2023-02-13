@@ -29,7 +29,7 @@ print("Hi") -- comment
 local x = 10 -- number
 local name = "sid" -- string
 local isAlive = true -- boolean
-local a = nil --no value or invalid value
+local a = nil -- no value or invalid value
 ```
 
 **Numbers**
@@ -56,7 +56,7 @@ local phrase = "I am"
 local name = "Sid"
 print(phrase .. " " .. name) -- I am Sid
 
---or
+-- or
 print("I am " .. "Sid")
 ```
 
@@ -176,7 +176,7 @@ function foo()
   local n = 10
 end
 
-print(n) -- nil , n isn't accessible outside foo()
+print(n) -- prints nil, n isn't accessible outside foo()
 ```
 
 ## Loops
@@ -250,11 +250,11 @@ end
 local info = { 
    name = "sid",
    age = 20,
-   isAlive = true
+   isAlive = true,
 }
 
 -- both print sid
-prrint(info["name"])
+print(info["name"])
 print(info.name)
 
 -- Loop by pairs
@@ -262,7 +262,7 @@ for key, value in pairs(info) do
    print(key .. " " .. tostring(value))
 end
 
--- prints name sid, age 20 etc
+-- prints name sid, age 20, etc.
 ```
 
 ### **Nested Tables**
