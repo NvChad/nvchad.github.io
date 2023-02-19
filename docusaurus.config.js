@@ -28,7 +28,7 @@ module.exports = {
           sidebarId: 'config'
         },
         {
-          to: "Features",
+          to: "features",
           label: "Features",
           position: "left",
           sidebarId: 'config'
