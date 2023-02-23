@@ -85,7 +85,7 @@ function Docs() {
   return (
     <div
       grid
-      class="lg:grid-cols-[auto_1fr] max-w-[1800px] mx-auto mt-10  md:px-5"
+      class="lg:grid-cols-[auto_1fr] max-w-[1800px] mx-auto mt-10  xl:px-5"
     >
       <Sidebar />
 
@@ -105,8 +105,7 @@ function Docs() {
                   xl="rounded-none pb-2 border-l-solid mb-0 pt-0 bg-transparent dark:bg-transparent"
                   border="none l-2 gray-3"
                   dark="border-tintBlack-3"
-                  onclick={() =>
-                    toggleContextLabels(contextLabelsShown() ? false : true)}
+                  onclick={() => toggleContextLabels(!contextLabelsShown())}
                 >
                   On this page
                   <div i-mdi-chevron-down-circle text-2xl xl:hidden></div>
@@ -114,8 +113,7 @@ function Docs() {
 
                 {/* labels */}
                 <div
-                  class="grid xl:grid py-3 xl:py-0 bg-slate-1 dark:bg-tintBlack-1 xl:bg-transparent xl:dark-bg-transparent"
-                  hidden={!contextLabelsShown()}
+                  class={`grid xl:grid py-3 xl:py-0 bg-slate-1 dark:bg-tintBlack-1 xl:bg-transparent xl:dark-bg-transparent ${contextLabelsShown()? "" : "hidden"}`}
                 >
                   {contextHeadings.map((x: any) => (
                     <a

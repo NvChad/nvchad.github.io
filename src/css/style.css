@@ -24,7 +24,7 @@ button {
   @apply hover:dark:bg-tintBlack-3 hover:dark:text-red-200;
   @apply hover:bg-green-200 hover:text-black;
   @apply hover:cursor-pointer dark:text-grey text-black;
-  @apply p-2 text-base
+  @apply p-2 text-base;
 }
 
 button,
@@ -32,9 +32,9 @@ input {
   @apply outline-none border-none border-0;
 }
 
-  input   {
-    @apply bg-transparent text-base;
-  }
+input {
+  @apply bg-transparent text-base;
+}
 
 h1 {
   @apply text-3xl md:text-5xl lg:text-6xl font-bold;
@@ -118,4 +118,19 @@ h2 {
 
 ::-webkit-scrollbar-track {
   @apply bg-white-2 dark:bg-tintBlack-2;
+}
+
+/* navbar stuff */
+
+.activeNavLink {
+  text-underline-offset: 0.8rem;
+  @apply underline underline-black-2 dark:underline-blue-4;
+  @apply text-black-2 dark:text-blue-4;
+    @apply font-medium;
+}
+
+/* inactiveColor */
+
+.inactiveColor {
+  @apply text-slate-6 dark:text-slate-4;
 }
