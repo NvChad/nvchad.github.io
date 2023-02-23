@@ -1,4 +1,4 @@
-import { A } from "@solidjs/router";
+import { A, useLocation } from "@solidjs/router";
 import { createSignal } from "solid-js";
 import { showSidebar, sideBarShown } from "./Docs";
 
@@ -9,7 +9,7 @@ function Links() {
   return (
     <div grid md:flex gap-5>
       {/* Brand logo */}
-      <A href="/" class="vertCentered !gap-4 font-bold">
+      <A href="/" class="vertCentered !gap-4 font-bold dark:text-silver-1">
         <img src="/logo.svg" alt="nvchad logo" w-7 />
         NvChad
       </A>
@@ -26,7 +26,7 @@ function Links() {
 
 export const ThemeToggleBtn = (props: any) => {
   const [theme, setTheme] = createSignal(
-    localStorage && localStorage.theme ? localStorage.theme : "light"
+    localStorage && localStorage.theme ? localStorage.theme : "light",
   );
 
   return (
@@ -40,26 +40,20 @@ export const ThemeToggleBtn = (props: any) => {
     >
       <div
         class={theme() == "light" ? "i-carbon-sun" : "i-ph-moon-stars-bold"}
-      ></div>
+      >
+      </div>
     </button>
   );
 };
 
 export function BtnLinks() {
   const Btns: Array<Array<any>> = [
-    ["i-ph-telegram-logo", "https://t.me/nvchad_tg", "Telegram group link"],
     [
-      "i-ic-baseline-discord",
-      "https://discord.com/invite/gADmkJb9Fb",
-      "Discord server",
+      "i-octicon:feed-discussion-16",
+      "https://github.com/NvChad/NvChad",
+      "Github repo",
     ],
-
     ["i-mdi-github", "https://github.com/NvChad/NvChad", "Github repo"],
-    [
-      "i-tabler-brand-matrix",
-      "https://matrix.to/#/#nvchad:matrix.org",
-      "Matrix space",
-    ],
   ];
 
   return (
@@ -70,65 +64,77 @@ export function BtnLinks() {
     >
       {/* hide links by default on mobile */}
 
+      <Searchbar />
+
       {Btns.map((x) => (
         <a href={x[1]} target="_blank" aria-label={x[2]} class={x[0]}>
           {x[0]}
         </a>
       ))}
-
       <ThemeToggleBtn display="hidden md:vertCentered" />
     </div>
   );
 }
 
-export const MobileNav = () => (
-  <nav py-3 flex justify-between xl="hidden" text-xl sticky h-10 top-0 z-50 bg-white-1 dark:bg-black-1>
-    <A href="/" class="vertCentered gap-3 font-semibold ">
-      <img src="/logo.svg" alt="nvchad logo" class="w-7" />
-      NvChad
-    </A>
-
-    {/* btns */}
-    <div class="vertCentered">
-      <ThemeToggleBtn />
-      <button
-        class="p-2 bg-whiteTint dark:bg-tintBlack-2 xl:hidden w-fit rounded-lg text-xl"
-        onclick={() => showSidebar(!sideBarShown())}
+function Searchbar() {
+  return (
+    <button class="vertCentered  text-base w-fit dark:bg-dark-3 p-2 px-3 rounded-lg">
+      <div i-ion-search></div>
+      Search
+      <div
+        border="1 solid dark-4"
+        p="1 x-2"
+        class="ml-1 text-slate-5 text-sm rounded-lg"
       >
-        <div i-material-symbols-menu-rounded></div>
-      </button>
-    </div>
-  </nav>
-);
+        Ctrl + k
+      </div>
+    </button>
+  );
+}
 
 function Navbar() {
   const styles = `sticky top-0 z-50
                 flex md:vertCentered gap-5 justify-between 
-                bg-white-1 dark:bg-black-1 
-                text-xl p-4 md:px-0 py-3 shadow-xl dark:softShadow`;
+                bg-white-1 dark:bg-dark-2 
+                text-xl p-4 py-5  max-w-[1800px] mx-auto`;
 
   return (
-    <nav class={styles}>
-      <div
-        md="flex gap-3 max-w-[90vw] mx-auto"
-        class="grid justify-between w-full gap-5"
-      >
-        <Links />
-        <BtnLinks />
-      </div>
-
-      {/* shown only on mobile */}
-      <div class="vertCentered h-fit">
-        <ThemeToggleBtn display="md:hidden" />
-
-        <button
-          class="p-2 text-xl bg-whiteTint rounded-lg dark:bg-tintBlack-2 md:hidden"
-          onclick={() => showLinks(linksShown() ? false : true)}
+    <div border="0 b solid dark-4">
+      <nav class={styles}>
+        <div
+          md="flex gap-3 mx-auto"
+          class="grid justify-between w-full gap-5"
         >
-          <div i-material-symbols-menu-rounded></div>
-        </button>
-      </div>
-    </nav>
+          <Links />
+          <BtnLinks />
+        </div>
+
+        {/* shown only on mobile */}
+        <div class="vertCentered h-fit md:!hidden">
+          {useLocation().pathname.includes("docs") &&
+            (
+              <button
+                rounded-lg
+                dark:bg-blue-3
+                dark:text-black-2
+                onclick={() => showSidebar(!sideBarShown())}
+              >
+                <div i-ic:round-menu-open></div>
+
+                Docs
+              </button>
+            )}
+          <ThemeToggleBtn />
+
+          <button
+            class="p-2 text-xl bg-whiteTint rounded-lg dark:bg-tintBlack-2"
+            onclick={() => showLinks(linksShown() ? false : true)}
+          >
+            <div i-material-symbols-menu-rounded></div>
+          </button>
+        </div>
+      </nav>
+    </div>
   );
 }
 

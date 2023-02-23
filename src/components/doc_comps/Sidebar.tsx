@@ -55,36 +55,15 @@ function NestedLabels(props: any) {
 }
 
 function SideBar() {
-  const styles = `h-full absolute xl:sticky z-10 top-0  xl:flex flex-col shadow-xl
-    h-screen top-0 p-8 px-8 
-    bg-white-1 text-gray-600 dark:bg-black-2 dark:text-grey rounded-none`;
+  const styles = `h-full absolute xl:sticky z-10 top-0  xl:flex flex-col
+    h-screen top-0  bg-dark-2
+     text-gray-600 dark:text-grey rounded-none`;
 
   const LinkStyles = "pl-0 vertCentered";
 
   return (
     <div class={styles} hidden={sideBarShown() ? false : true}>
-      {/* brand logo */}
-      <A
-        href="/"
-        class="vertCentered gap-3 mb-8 text-3xl m-auto justify-between xl:justify-center"
-      >
-        <div class="vertCentered">
-          <img src="/logo.svg" alt="nvchad logo" w-10 />
-          NvChad
-        </div>
-
-        {/* close btn */}
-        <button
-          class="bg-tintBlack-2 xl:hidden dark:text-red-300 w-fit p-2 rounded-full"
-          onclick={(e) => {
-            e.preventDefault();
-            showSidebar(false);
-          }}
-        >
-          <div i-material-symbols-close-rounded></div>
-        </button>
-      </A>
-
+     
       {/* sidebar labels & links */}
       <div h-full flex flex-col gap-5 class='[&_*]:text-base'>
         {sidebar_Items.map((item: any) => {

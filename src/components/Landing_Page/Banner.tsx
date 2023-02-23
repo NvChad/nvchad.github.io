@@ -35,7 +35,7 @@ function HeroText() {
 }
 
 function Hero() {
-  let redGradient = 'bg-gradient-to-r dark:from-red-4 dark:to-purple-5'
+  let redGradient = 'bg-gradient-to-r dark:from-blue-4 dark:to-purple-4'
   let blueGradient = 'bg-gradient-to-r from-cyan-300 to-blue-500'
 
   return (
@@ -46,7 +46,7 @@ function Hero() {
       <img
         src="/banner.webp"
         alt="NvChad screenshot"
-        class="rounded-lg  md:rounded-xl max-w-[90vw] softshadow  m-auto"
+        class="rounded-lg  md:rounded-xl max-w-[70vw] softshadow  m-auto"
       />
     </div>
   );

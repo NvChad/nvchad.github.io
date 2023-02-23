@@ -6,8 +6,8 @@ import transformerDirectives from "@unocss/transformer-directives";
 import {
   defineConfig,
   presetAttributify,
-  presetUno,
   presetIcons,
+  presetUno,
 } from "unocss";
 
 export default defineConfig({
@@ -35,17 +35,33 @@ export default defineConfig({
       grey: "#b5bcc9",
       darkgrey: "#79808d",
       pale: "#daebf1",
+
+      dark: {
+        1: "#121723",
+        2: "#141926",
+        3: "#212633",
+        4: "#2E3340",
+      },
+
+      silver: {
+        1: "#eef0f2",
+        2: "#C6CAD1",
+      },
     },
   },
 
-  presets: [presetUno(), presetIcons(
-    {
-      scale:1.2
-    }
-  ), presetAttributify()],
+  presets: [
+    presetUno(),
+    presetIcons(
+      {
+        scale: 1.2,
+      },
+    ),
+    presetAttributify(),
+  ],
 
   rules: [
-    ['softShadow', { 'box-shadow': 'rgba(0, 0, 0, 0.35) 0px 5px 15px' }],
+    ["softShadow", { "box-shadow": "rgba(0, 0, 0, 0.35) 0px 5px 15px" }],
   ],
 
   shortcuts: [

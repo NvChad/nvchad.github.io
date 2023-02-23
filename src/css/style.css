@@ -1,19 +1,12 @@
 :root {
-  font-family: "Inter Tight", sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 body {
   @apply bg-white text-slate-8;
-  @apply dark:bg-black-1 dark:text-grey;
+  @apply dark:bg-dark-2 dark:text-silver-2;
   @apply m-0 p-0;
 }
-
-/* body * div, */
-/* body * button, */
-/* body * p, */
-/* body * input, */
-/* body * span { */
-/* } */
 
 a {
   text-decoration: none;
@@ -31,12 +24,17 @@ button {
   @apply hover:dark:bg-tintBlack-3 hover:dark:text-red-200;
   @apply hover:bg-green-200 hover:text-black;
   @apply hover:cursor-pointer dark:text-grey text-black;
+  @apply p-2 text-base
 }
 
 button,
 input {
   @apply outline-none border-none border-0;
 }
+
+  input   {
+    @apply bg-transparent text-base;
+  }
 
 h1 {
   @apply text-3xl md:text-5xl lg:text-6xl font-bold;
@@ -49,7 +47,7 @@ h2 {
 /* doc related classes! */
 
 #DocContent {
-  @apply grid gap-5 pt-2 pb-5 xl:mr-10 h-fit;
+  @apply grid gap-5  pb-5 xl:mr-10 h-fit;
 }
 
 #DocContent h1 {
@@ -107,11 +105,11 @@ h2 {
 }
 
 ::-webkit-scrollbar:vertical {
-  width: 15px;
+  width: 7px;
 }
 
 ::-webkit-scrollbar:horizontal {
-  height: 15px;
+  height: 7px;
 }
 
 ::-webkit-scrollbar-thumb {

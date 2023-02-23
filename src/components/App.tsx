@@ -1,4 +1,4 @@
-import { Route, Routes, useLocation } from "@solidjs/router";
+import { Route, Routes } from "@solidjs/router";
 import { lazy } from "solid-js";
 
 import Navbar from "./Navbar";
@@ -8,7 +8,7 @@ import DocRoutes from "./doc_comps/DocRoutes";
 function App() {
   return (
     <>
-      {!useLocation().pathname.includes("docs") && <Navbar />}
+       <Navbar />
 
       <Routes>
         <Route path="/" component={Home} />
