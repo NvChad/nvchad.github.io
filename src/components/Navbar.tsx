@@ -51,11 +51,11 @@ export const ThemeToggleBtn = (props: any) => {
 export function BtnLinks() {
   const Btns: Array<Array<any>> = [
     [
-      "i-octicon:feed-discussion-16",
-      "https://github.com/NvChad/NvChad",
-      "Github repo",
+      "i-ph:chat-teardrop-text text-3xl",
+      "#communities",
+      "nvchad discussions",
     ],
-    ["i-mdi-github", "https://github.com/NvChad/NvChad", "Github repo"],
+    ["i-bi:github  ", "https://github.com/NvChad/NvChad", "Github repo"],
   ];
 
   return (
@@ -99,7 +99,7 @@ function Navbar() {
   const styles = `sticky top-0 z-50
                 flex md:vertCentered gap-5 justify-between 
                 bg-white-1 dark:bg-dark-2 
-                text-xl p-4 py-5  max-w-[1800px] mx-auto`;
+                text-xl p-4 max-w-[1800px] mx-auto`;
 
   return (
     <div border="0 b solid slate-2 dark:dark-4">
