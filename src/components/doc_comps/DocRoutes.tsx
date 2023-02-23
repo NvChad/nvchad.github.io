@@ -21,7 +21,7 @@ function createRouteName(str: string) {
 }
 
 export default function () {
-  let pages = import.meta.glob("../../../docs/**/*.md");
+  let pages = import.meta.glob("../../../docs/**/*.mdx");
 
   return (
     <>
