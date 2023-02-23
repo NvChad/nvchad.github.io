@@ -123,10 +123,8 @@ h2 {
 /* navbar stuff */
 
 .activeNavLink {
-  text-underline-offset: 0.8rem;
-  @apply underline underline-black-2 dark:underline-blue-4;
   @apply text-black-2 dark:text-blue-4;
-    @apply font-medium;
+  @apply font-medium;
 }
 
 /* inactiveColor */
