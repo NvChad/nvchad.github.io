@@ -3,8 +3,8 @@
 }
 
 body {
-  @apply bg-white text-slate-8;
-  @apply dark:bg-dark-2 dark:text-silver-2;
+  @apply bg-white text-slate-7;
+  @apply dark:bg-dark-2 dark:text-slate-4;
   @apply m-0 p-0;
 }
 

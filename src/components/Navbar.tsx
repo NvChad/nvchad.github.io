@@ -9,13 +9,17 @@ function Links() {
   return (
     <div grid md:flex gap-5>
       {/* Brand logo */}
-      <A href="/" class="vertCentered !gap-4 font-bold  mr-2">
+      <A href="/" class="vertCentered !gap-3 font-bold">
         <img src="/logo.svg" alt="nvchad logo" w-7 />
         NvChad
       </A>
 
       {/* route links */}
-      <div class="grid md:vertCentered md:!gap-5 gap-5 inactiveColor" hidden={!linksShown()}>
+      <div
+        class={`grid md:vertCentered md:!gap-5 gap-5 inactiveColor ${
+          linksShown() ? "" : "hidden"
+        }`}
+      >
         <A activeClass="activeNavLink" href="/docs/quickstart/install">Docs</A>
         <A activeClass="activeNavLink" href="/Features">Features</A>
         <A activeClass="activeNavLink" href="/Themes">Themes</A>
@@ -36,12 +40,12 @@ export const ThemeToggleBtn = (props: any) => {
         const el = document.querySelector("html")!;
         el.className = localStorage.theme = theme();
       }}
-      class={`${props.display} text-xl p-2 bg-slate-1 dark:bg-tintBlack-2 rounded-full`}
+      class={`shadow-lg ${props.display} text-xl p-2 bg-slate-7 text-white-1 dark:bg-tintBlack-2 rounded-full`}
     >
       <div
         class={theme() == "light"
-          ? "i-carbon-sun"
-          : "i-ph-moon-stars-bold text-blue-4"}
+          ? "i-line-md:sun-rising-twotone-loop"
+          : "i-ph-moon-stars-bold"}
       >
       </div>
     </button>
@@ -66,10 +70,12 @@ export function BtnLinks() {
     >
       {/* hide links by default on mobile */}
 
+      <div id="docsearch"></div>
+
       <Searchbar />
 
       {Btns.map((x) => (
-        <a href={x[1]} target="_blank" aria-label={x[2]} class={x[0]}>
+        <a text="slate-7 dark:slate-4"  href={x[1]} target="_blank" aria-label={x[2]} class={x[0]}>
           {x[0]}
         </a>
       ))}
@@ -80,12 +86,17 @@ export function BtnLinks() {
 
 function Searchbar() {
   return (
-    <button class="vertCentered text-base w-fit p-2 px-3 rounded-lg" bg="slate-1 dark:dark-3" >
+    <button
+      id="searchbar"
+      class="vertCentered text-base w-fit p-2 px-3 rounded-lg"
+      bg="slate-1 dark:dark-3"
+      text="slate-5"
+    >
       <div i-ion-search></div>
 
       Search
       <div
-        border="1 solid dark:dark-4"
+        border="1 solid slate-4 dark:dark-4"
         p="1 x-2"
         class="ml-3 text-slate-5 dark:text-slate-4 text-sm rounded-lg"
       >
@@ -114,6 +125,8 @@ function Navbar() {
 
         {/* shown only on mobile */}
         <div class="vertCentered h-fit md:!hidden">
+          <ThemeToggleBtn />
+
           {useLocation().pathname.includes("docs") &&
             (
               <button
@@ -127,7 +140,6 @@ function Navbar() {
                 Docs
               </button>
             )}
-          <ThemeToggleBtn />
 
           <button
             class="p-2 text-xl bg-whiteTint rounded-lg dark:bg-tintBlack-2"
