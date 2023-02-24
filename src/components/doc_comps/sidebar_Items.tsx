@@ -1,6 +1,6 @@
 const sidebar_Items: Array<any> = [
   {
-    label: ["Quickstart", "i-heroicons-rocket-launch-20-solid"],
+    label: ["Quickstart", "i-mingcute:safe-flash-fill"],
     items: [
       ["Install", "quickstart/install"],
       ["Post Install", "quickstart/post-install"],
@@ -24,7 +24,7 @@ const sidebar_Items: Array<any> = [
 
   ["Debugging config", "debugging-config", "i-ri-bug-line"],
   ["Contributing", "contribute", "i-mdi-github"],
-  ["Credits", "credits", "i-mdi-cards-heart-outline"],
+  ["Credits", "credits", "i-line-md:heart"],
 ];
 
 export default sidebar_Items;

@@ -73,9 +73,9 @@ function Docs() {
 
   function generateStyles(x: any) {
     let styles =
-      ` py-2 xl:py-1 px-5 text-darkgrey xl:border-solid border-0 border-l-2 border-gray-3 dark:border-tintBlack-3 ${
+      `rounded-r-lg py-2 xl:py-1 px-5 text-darkgrey xl:border-solid border-0 border-l-2 border-gray-3 dark:border-tintBlack-3 ${
         activeContext_Heading() == x[1]
-          ? "!border-purple-5 bg-purple-1 text-purple-8 dark:bg-tintBlack-2 dark:text-blue-3"
+          ? "border-violet-5 bg-violet-1 text-violet-8 dark:bg-dark-3 dark:text-blue-3 dark:border-blue-4"
           : ""
       }`;
 
