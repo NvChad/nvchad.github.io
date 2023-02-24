@@ -42,7 +42,7 @@ export const ThemeToggleBtn = (props: any) => {
       }}
       class={`shadow-lg ${props.display} text-xl p-2 bg-slate-7 text-white-1 dark:bg-tintBlack-2 rounded-full`}
     >
-      <div
+      <div text-base
         class={theme() == "light"
           ? "i-line-md:sun-rising-twotone-loop"
           : "i-ph-moon-stars-bold"}
@@ -110,7 +110,7 @@ function Navbar() {
   const styles = `sticky top-0 z-50
                 flex md:vertCentered gap-5 justify-between 
                 bg-white-1 dark:bg-dark-2 
-                text-xl p-4 max-w-[1800px] mx-auto`;
+                text-xl p-4 max-w-[1700px] mx-auto`;
 
   return (
     <div border="0 b solid slate-2 dark:dark-4">

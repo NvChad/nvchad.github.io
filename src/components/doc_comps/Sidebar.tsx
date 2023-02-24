@@ -28,10 +28,9 @@ function NestedLabels(props: any) {
           class={`text-xl bg-slate-6 text-white-1 dark:bg-tintBlack-2 p-1 rounded-full
                   ${showLinks() ? "dark:text-red-300" : ""}`}
         >
-          <div
-            class={`i-line-md:chevron-small-${showLinks() ? "down" : "right"}`}
-          >
-          </div>
+          {showLinks()
+            ? <div i-mi:chevron-down></div>
+            : <div i-mi:chevron-right></div>}
         </div>
       </button>
 

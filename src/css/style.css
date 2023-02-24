@@ -4,7 +4,7 @@
 
 body {
   @apply bg-white text-slate-7;
-  @apply dark:bg-dark-2 dark:text-slate-4;
+  @apply dark:bg-dark-2 dark:text-slate-3;
   @apply m-0 p-0;
 }
 
@@ -47,7 +47,7 @@ h2 {
 /* doc related classes! */
 
 #DocContent {
-  @apply grid gap-5  pb-5 xl:mr-10 h-fit;
+  @apply grid gap-5 pb-5 xl:mr-10 h-fit;
 }
 
 #DocContent h1 {
@@ -77,18 +77,18 @@ h2 {
 }
 
 #DocContent pre {
-  @apply bg-tintBlack-2  dark:bg-black-2 dark:bg-tintBlack;
+  @apply bg-dark-4  dark:bg-dark-3;
   @apply p-5 rounded-xl font-mono my-0 text-sm;
   @apply shadow-2xl overflow-x-auto;
 }
 
 #DocContent code {
-  @apply bg-slate-2 dark:bg-tintBlack-2 px-2 pb-1;
+  @apply bg-slate-1 dark:bg-dark-3 p-1 px-2;
   @apply text-base rounded-lg;
 }
 
 #DocContent pre code {
-  @apply bg-tintBlack-2 dark:bg-black-2;
+  @apply bg-dark-4 dark:bg-dark-3;
   @apply text-sm;
 }
 
@@ -117,7 +117,7 @@ h2 {
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-white-2 dark:bg-tintBlack-2;
+  @apply bg-white-2 dark:bg-t;
 }
 
 /* navbar stuff */
@@ -131,4 +131,10 @@ h2 {
 
 .inactiveColor {
   @apply text-slate-6 dark:text-slate-4;
+}
+
+@media screen and (min-width: 1700px) {
+  body {
+    zoom: 110%;
+  }
 }
