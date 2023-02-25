@@ -18,23 +18,7 @@ export default defineConfig({
         2: "#c9d0dd",
       },
 
-      black: {
-        1: "#1A1C20",
-        2: "#26282C",
-      },
-
       onedark: "#1E222A",
-      whiteTint: "#eff3f7",
-
-      tintBlack: {
-        1: "#19202d",
-        2: "#2d3441",
-        3: "#333a47",
-      },
-
-      grey: "#b5bcc9",
-      darkgrey: "#79808d",
-      pale: "#daebf1",
 
       dark: {
         1: "#121723",

@@ -40,7 +40,7 @@ export const ThemeToggleBtn = (props: any) => {
         const el = document.querySelector("html")!;
         el.className = localStorage.theme = theme();
       }}
-      class={`shadow-lg ${props.display} text-xl p-2 bg-slate-7 text-white-1 dark:bg-tintBlack-2 rounded-full`}
+      class={`shadow-lg ${props.display} text-xl p-2 bg-slate-7 text-white-1 dark:bg-dark-3 rounded-full`}
     >
       <div text-base
         class={theme() == "light"
@@ -132,7 +132,7 @@ function Navbar() {
               <button
                 rounded-lg
                 dark:bg-blue-3
-                dark:text-black-2
+                dark:text-black
                 onclick={() => showSidebar(!sideBarShown())}
               >
                 <div i-ic:round-menu-open></div>
@@ -142,7 +142,7 @@ function Navbar() {
             )}
 
           <button
-            class="p-2 text-xl bg-whiteTint rounded-lg dark:bg-tintBlack-2"
+            class="p-2 text-xl rounded-lg"
             onclick={() => showLinks(linksShown() ? false : true)}
           >
             <div i-material-symbols-menu-rounded></div>

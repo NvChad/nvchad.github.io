@@ -74,7 +74,7 @@ function Docs() {
 
   function generateStyles(x: any) {
     let styles =
-      `rounded-r-lg py-2 xl:py-1 px-5 text-darkgrey xl:border-solid border-0 border-l-2 border-gray-3 dark:border-tintBlack-3 ${
+      `rounded-r-lg py-2 xl:py-1 px-5 text-darkgrey xl:border-solid border-0 border-l-2 border-gray-3 dark:border-dark-3 ${
         activeContext_Heading() == x[1]
           ? "!border-blue-5 bg-slate-2 xl:bg-sky-1 !text-blue-7 font-medium dark:bg-dark-3 dark:!text-blue-3 dark:border-blue-4"
           : ""
@@ -99,13 +99,12 @@ function Docs() {
           {/* on this page component */}
           {contextHeadings.length > 1 && (
             <div class="sticky my-5 xl:gid  xl:h-[calc(100vh-4rem)] ">
-              <div class="h-fit grid border-grey dark:border-tintBlack-3 border xl:border-none">
+              <div class="h-fit grid">
                 {/* on this page btn, shows only on small screens*/}
                 <button
-                  class="rounded-lg text-lg  bg-sky-1 dark:bg-tintBlack-2 font-medium py-2 pl-5 mb-3 "
+                  class="rounded-lg text-lg  bg-sky-1 dark:bg-dark-3 font-medium py-2 pl-5 mb-3 "
                   m="t-[-2rem]"
                   xl="rounded-none pb-2 border-l-solid mb-0 pt-0 bg-transparent dark:bg-transparent"
-                  dark="border-tintBlack-3"
                   onclick={() => toggleContextLabels(!contextLabelsShown())}
                 >
                   On this page
@@ -115,7 +114,7 @@ function Docs() {
 
                 {/* labels */}
                 <div
-                  class={`grid xl:grid py-3 xl:py-0 bg-slate-1 dark:bg-tintBlack-1 xl:bg-transparent xl:dark-bg-transparent ${
+                  class={`grid xl:grid py-3 xl:py-0 bg-slate-1 dark:bg-dark-3 xl:bg-transparent xl:dark-bg-transparent ${
                     contextLabelsShown() ? "" : "hidden"
                   }`}
                 >

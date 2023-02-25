@@ -21,9 +21,9 @@ a {
 button {
   @apply vertCentered justify-between w-full;
   @apply whitespace-nowrap;
-  @apply hover:dark:bg-tintBlack-3 hover:dark:text-red-200;
+  @apply hover:dark:bg-blue hover:dark:text-red-200;
   @apply hover:bg-green-200 hover:text-black;
-  @apply hover:cursor-pointer dark:text-grey text-black;
+  @apply hover:cursor-pointer dark:text-slate-4 text-black;
   @apply p-2 text-base bg-slate-1 dark:bg-dark-3;
 }
 

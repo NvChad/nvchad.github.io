@@ -17,7 +17,7 @@ function NestedLabels(props: any) {
     <div class="grid gap-5">
       <button
         onclick={() => collapseLinks(showLinks() ? false : true)}
-        class="rounded-full gap-20 bg-sky-1 text-gray-700 dark:bg-tintBlack-1 dark:text-white2 font-medium p-2 px-3"
+        class="rounded-full gap-20 bg-sky-1 text-gray-700 dark:bg-dark-3 dark:text-white2 font-medium p-2 px-3"
       >
         <div class="vertCentered">
           <div class={props.BtnLabel[1]}></div> {props.BtnLabel[0]}
@@ -25,7 +25,7 @@ function NestedLabels(props: any) {
 
         {/* chevron icons! */}
         <div
-          class={`text-xl bg-slate-6 text-white-1 dark:bg-tintBlack-2 p-1 rounded-full
+          class={`text-xl bg-slate-6 text-slate-2 dark:bg-dark-4 p-1 rounded-full
                   ${showLinks() ? "dark:text-red-300" : ""}`}
         >
           {showLinks()
@@ -36,10 +36,10 @@ function NestedLabels(props: any) {
 
       {/* collapsable nested links */}
       <Show when={showLinks()}>
-        <div class="grid pl-4 gap-3 dark:border-tintBlack-2 border-l rounded-none">
+        <div class="grid pl-4 gap-3 rounded-none">
           {props.labels.map((x: any) => (
             <A
-              activeClass="text-slate-9 dark:text-red-300 font-medium"
+              activeClass="text-slate-9 dark:text-red-3 font-medium"
               href={x[1]}
             >
               {x[0]}
@@ -61,7 +61,7 @@ function SideBar() {
   return (
     <div class={styles} hidden={sideBarShown() ? false : true}>
       {/* sidebar labels & links */}
-      <div h-full flex flex-col gap-5 class="[&_*]:text-base">
+      <div h-full flex flex-col gap-5 class="[&_*]:text-base dark:text-slate-4">
         {sidebar_Items.map((item: any) => {
           return item.label
             ? <NestedLabels BtnLabel={item.label} labels={item.items} />

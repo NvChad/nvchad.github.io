@@ -63,7 +63,7 @@ function Feature(props: any) {
   const { details } = props;
 
   return (
-    <div grid gap-5 text-center justify-center rounded-2xl p-10 bg-slate-1 dark:bg-tintBlack-1>
+    <div grid gap-5 text-center justify-center rounded-2xl p-10 bg-slate-1 dark:bg-dark-3>
       <img
         src={details.imgSrc}
         alt={`${details.title}`}
