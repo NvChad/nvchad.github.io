@@ -8,8 +8,7 @@ import DocRoutes from "./doc_comps/DocRoutes";
 function App() {
   return (
     <>
-       <Navbar />
-
+      <Navbar />
       <Routes>
         <Route path="/" component={Home} />
         <Route path="/docs" component={lazy(() => import("./Docs"))}>

@@ -23,7 +23,7 @@
 }
 
 #DocContent a {
-  @apply  text-blue-6 dark:text-blue-3 font-medium;
+  @apply text-blue-6 dark:text-blue-3 font-medium;
 }
 
 #DocContent abbr[title] {
@@ -433,14 +433,31 @@
   @apply bg-dark-4  dark:bg-dark-3 p-0;
   @apply p-5 rounded-xl font-mono my-0 text-sm;
   @apply shadow-md overflow-x-auto;
+
+  /* code content + copy button */
+  @apply grid grid-cols-[1fr_auto] items-start grid-columns-2;
 }
 
 #DocContent code {
-  @apply bg-slate-1 dark:bg-dark-3 p-1 px-2 p-0;
-  @apply text-base rounded-lg;
+  @apply bg-slate-1 dark:bg-dark-3 p-1;
+  @apply text-base rounded-md;
 }
 
 #DocContent pre code {
   @apply bg-dark-4 dark:bg-dark-3;
-  @apply text-sm p-0;
+  @apply text-[14px];
+}
+
+.clickedCopyBtn {
+  @apply text-green-3;
+}
+
+/* copy button */
+#DocContent pre button {
+  @apply rounded-full w-fit h-fit p-0;
+  @apply text-slate-5 bg-transparent;
+}
+
+#DocContent pre button :hover{
+  @apply text-red;
 }

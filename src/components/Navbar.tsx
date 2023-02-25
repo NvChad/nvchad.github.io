@@ -28,6 +28,23 @@ function Links() {
   );
 }
 
+function DocsBtn() {
+  return (
+    useLocation().pathname.includes("docs") &&
+    (
+      <button
+        xl="hidden"
+        dark:bg-blue-3
+        dark:text-black
+        onclick={() => showSidebar(!sideBarShown())}
+      >
+        <div i-ic:round-menu-open></div>
+        Docs
+      </button>
+    )
+  );
+}
+
 export const ThemeToggleBtn = (props: any) => {
   const [theme, setTheme] = createSignal(
     localStorage && localStorage.theme ? localStorage.theme : "light",
@@ -42,7 +59,8 @@ export const ThemeToggleBtn = (props: any) => {
       }}
       class={`shadow-lg ${props.display} text-xl p-2 bg-slate-7 text-white-1 dark:bg-dark-3 rounded-full`}
     >
-      <div text-base
+      <div
+        text-base
         class={theme() == "light"
           ? "i-line-md:sun-rising-twotone-loop"
           : "i-ph-moon-stars-bold"}
@@ -72,10 +90,17 @@ export function BtnLinks() {
 
       <div id="docsearch"></div>
 
+      <DocsBtn />
       <Searchbar />
 
       {Btns.map((x) => (
-        <a text="slate-7 dark:slate-4"  href={x[1]} target="_blank" aria-label={x[2]} class={x[0]}>
+        <a
+          text="slate-7 dark:slate-4"
+          href={x[1]}
+          target="_blank"
+          aria-label={x[2]}
+          class={x[0]}
+        >
           {x[0]}
         </a>
       ))}
@@ -124,22 +149,10 @@ function Navbar() {
         </div>
 
         {/* shown only on mobile */}
+
         <div class="vertCentered h-fit md:!hidden">
           <ThemeToggleBtn />
-
-          {useLocation().pathname.includes("docs") &&
-            (
-              <button
-                rounded-lg
-                dark:bg-blue-3
-                dark:text-black
-                onclick={() => showSidebar(!sideBarShown())}
-              >
-                <div i-ic:round-menu-open></div>
-
-                Docs
-              </button>
-            )}
+          <DocsBtn />
 
           <button
             class="p-2 text-xl rounded-lg"

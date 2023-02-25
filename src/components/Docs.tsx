@@ -6,6 +6,8 @@ import Sidebar from "./doc_comps/Sidebar";
 import "../css/hljs.css";
 import "../css/markdown.css";
 
+import create_copyIcon from "./doc_comps/clipboard";
+
 // for context bar on the right
 export const [activeContext_Heading, setActiveContext_Heading] = createSignal(
   "",
@@ -48,24 +50,24 @@ function Docs() {
   const [contextLabelsShown, toggleContextLabels] = createSignal(false);
   const [contextHeadings, setHeadings] = createStore([]);
 
-  // filter out all h2 elements for Context SideBar
-  // this will run on route change
+  //  run on route change
   createEffect(
     on(
       () => useLocation().pathname,
       () => {
         setTimeout(() => {
-          let docs = document.getElementById("DocContent")?.childNodes;
-          let result: Array<Array<string>> = [];
+          create_copyIcon();
 
-          docs?.forEach((item: any) => {
-            if (item.localName == "h2" || item.localName == "h3") {
-              item.id = item.innerText;
-              result.push([item.localName, item.innerText]);
-            }
+          const docs = document.getElementById("DocContent");
+          const headingElements = docs?.querySelectorAll("h2, h3");
+          const headings: Array<Array<string>> = [];
+
+          headingElements?.forEach((item: any) => {
+            item.id = item.innerText;
+            headings.push([item.localName, item.innerText]);
           });
 
-          setHeadings(result);
+          setHeadings(headings);
           generateActiveContext();
         }, 50);
       },
@@ -102,7 +104,7 @@ function Docs() {
               <div class="h-fit grid">
                 {/* on this page btn, shows only on small screens*/}
                 <button
-                  class="rounded-lg text-lg bg-sky-1 dark:bg-dark-3 py-9 pl-5 mb-3"
+                  class="rounded-lg text-lg bg-sky-1 dark:bg-dark-3 pl-5 mb-3"
                   m="t-[-2rem]"
                   xl="rounded-none pb-2 border-l-solid mb-0 pt-0 bg-transparent dark:bg-transparent"
                   onclick={() => toggleContextLabels(!contextLabelsShown())}
