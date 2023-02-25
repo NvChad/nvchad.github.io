@@ -1,3 +1,5 @@
+import OS_Selector from "../../doc_components/install.tsx";
+
 ## Try in a Docker container 
 
 This will leave your current Neovim configuration untouched. Once you exit Neovim, the image is deleted.
@@ -23,17 +25,10 @@ docker run -w /root -it --rm alpine:edge sh -uelic '
 
 ## Install
 
-### Linux / macOS (UNIX)
+<OS_Selector/>
 
-```bash
-git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
-```
-### Windows
-
-```bash
-git clone https://github.com/NvChad/NvChad $HOME\AppData\Local\nvim --depth 1 && nvim
-```
-(Note: Windows users must have [`mingw`](http://mingw-w64.org/doku.php) installed and set on path).
+<br/>
+- (Note: Windows users must have [`mingw`](http://mingw-w64.org/doku.php) installed and set on path).
 
 ## Update
 

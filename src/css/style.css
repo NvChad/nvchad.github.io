@@ -24,7 +24,7 @@ button {
   @apply hover:dark:bg-tintBlack-3 hover:dark:text-red-200;
   @apply hover:bg-green-200 hover:text-black;
   @apply hover:cursor-pointer dark:text-grey text-black;
-  @apply p-2 text-base;
+  @apply p-2 text-base bg-slate-1;
 }
 
 button,
