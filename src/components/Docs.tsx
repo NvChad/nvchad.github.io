@@ -86,7 +86,7 @@ function Docs() {
   return (
     <div
       grid
-      class="lg:grid-cols-[auto_1fr] max-w-[1700px] mx-auto mt-10 xl:px-5"
+      class="xl:grid-cols-[auto_1fr] max-w-[1700px] mx-auto mt-10 xl:px-5"
     >
       <Sidebar />
 

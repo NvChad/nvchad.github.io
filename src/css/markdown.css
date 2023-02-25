@@ -5,7 +5,6 @@
   -webkit-text-size-adjust: 100%;
   line-height: 1.5;
   word-wrap: break-word;
-  @apply xl:pr-10;
 }
 
 #DocContent details,
@@ -23,8 +22,7 @@
 }
 
 #DocContent a {
-  background-color: transparent;
-  @apply  text-blue-5;
+  @apply  text-blue-6 dark:text-blue-3 font-medium;
 }
 
 #DocContent abbr[title] {
@@ -150,7 +148,7 @@
   font-weight: 600;
   padding-bottom: 0.3em;
   font-size: 1.5em;
-  /* border-bottom: 1px solid hsla(210, 18%, 87%, 1); */
+  /* @apply border border-solid border-0 border-b-2 border-slate-2 */
 }
 
 #DocContent h3 {
@@ -433,7 +431,7 @@
 #DocContent pre {
   @apply bg-dark-4  dark:bg-dark-3 p-0;
   @apply p-5 rounded-xl font-mono my-0 text-sm;
-  @apply shadow-2xl overflow-x-auto;
+  @apply shadow-md overflow-x-auto;
 }
 
 #DocContent code {
