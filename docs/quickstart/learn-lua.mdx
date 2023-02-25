@@ -25,39 +25,25 @@ local x = 10 -- number
 local name = "sid" -- string
 local isAlive = true -- boolean
 local a = nil --no value or invalid value
-```
 
-**Numbers**
-
-```lua
+-- numbers
 local a = 1
 local b = 2
-
 print(a + b) -- 3
-```
 
-```lua
 -- increment
 local n = 1
 n = n + 1
 print(n) -- 2
-```
 
-**Strings**
-
-```lua
+-- strings
 -- Concatenate strings
 local phrase = "I am"
 local name = "Sid"
 print(phrase .. " " .. name) -- I am Sid
-
---or
 print("I am " .. "Sid")
-```
 
-**Boolean**
-
-```lua
+-- Boolean
 local isAlive = true
 print(isAlive) -- true
 
@@ -65,7 +51,7 @@ isAlive = false
 print(isAlive) -- false
 ```
 
-**Comparison Operators**
+## Comparison Operators
 
 ```
  == equality
@@ -75,7 +61,6 @@ print(isAlive) -- false
  \>= greater than or equal to
  ~= inequality
  ```
-
 
 ## Conditional Statements
 
@@ -97,9 +82,7 @@ elseif age == 18 then
 else
   print("kiddo")
 end
-```
 
-```lua
 -- Boolean comparison
 local isAlive = true
 
@@ -115,7 +98,7 @@ if name ~= "sid" then
 end
 ```
 
-**Combining Statements**
+### Combining Statements
 
 ```lua
 local age = 22
@@ -155,11 +138,8 @@ local print_num = function(a)
 end
 
 print_num(5) -- prints 5 
-```
 
-```lua
 -- multiple parameters
-
 function sum(a, b)
   return a + b
 end
@@ -197,15 +177,12 @@ for i = 1, 3 do
    print("hi")
 end
 -- Both print "hi" 3 times
--- hi
--- hi
--- hi
 ```
 
 ## Tables
 
 - Tables can be used to store complex data.
-- Types of tables: 
+- Types of tables: arrays (lists) and dicts (key,value) 
 
 ### Arrays (lists)
 
@@ -215,8 +192,6 @@ end
 local colors = { "red", "green", "blue" }
 
 print(colors[1]) -- red
-print(colors[2]) -- green
-print(colors[3]) -- blue
 
 -- Different ways to loop through lists
 -- #colors is the length of the table, #tablename is the syntax
@@ -287,7 +262,15 @@ Import code from other files
 
 ```lua
 require("path")
+
+-- for example in ~/.config/nvim/lua , all dirs and files are accessable via require
+
+-- ~/.config/nvim/lua/custom 
+-- ~/.config/nvim/lua/custom/init.lua
+
+ require "custom"
+
+-- both do the same thing
 ```
 
-- Credits - [Lua-Beginners-Guide](https://github.com/pohka/Lua-Beginners-Guide)
-- This tutorial is a modifed version of the above guide, shortened to teach basic Lua needed only to configure Neovim in general.
+

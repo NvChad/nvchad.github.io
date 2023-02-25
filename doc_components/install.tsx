@@ -22,7 +22,7 @@ const Btn = (props: any) => {
 
   return (
     <button
-      bg={osname() == os ? "blue-1" : ""}
+      bg={osname() == os ? "blue-1 dark:blue-5" : ""}
       onclick={() => {
         setOS(os);
         setOSCMD(cmd);

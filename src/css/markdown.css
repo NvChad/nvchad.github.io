@@ -5,6 +5,7 @@
   -webkit-text-size-adjust: 100%;
   line-height: 1.5;
   word-wrap: break-word;
+  @apply xl:pr-10 pb-10;
 }
 
 #DocContent details,
