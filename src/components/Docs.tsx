@@ -74,19 +74,19 @@ function Docs() {
 
   function generateStyles(x: any) {
     let styles =
-      `rounded-r-lg py-2 xl:py-1 px-5 text-darkgrey xl:border-solid border-0 border-l-2 border-gray-3 dark:border-dark-3 ${
+      `rounded-r-lg py-2  px-5 text-darkgrey xl:border-solid border-0 border-l-2 border-slate-2 dark:border-dark-3 ${
         activeContext_Heading() == x[1]
           ? "!border-blue-5 bg-slate-2 xl:bg-sky-1 !text-blue-7 font-medium dark:bg-dark-3 dark:!text-blue-3 dark:border-blue-4"
           : ""
       }`;
 
-    return x[0] == "h3" ? `pl-9 ${styles}` : `${styles}`;
+    return x[0] == "h3" ? `pl-10 ${styles}` : `${styles}`;
   }
 
   return (
     <div
       grid
-      class="xl:grid-cols-[auto_1fr] max-w-[1700px] mx-auto mt-10 xl:px-5"
+      class="xl:grid-cols-[auto_1fr] max-w-[1700px] mx-auto mt-8 xl:px-5"
     >
       <Sidebar />
 
@@ -102,18 +102,19 @@ function Docs() {
               <div class="h-fit grid">
                 {/* on this page btn, shows only on small screens*/}
                 <button
-                  class="rounded-lg text-lg  bg-sky-1 dark:bg-dark-3 font-medium py-2 pl-5 mb-3 "
+                  class="rounded-lg text-lg bg-sky-1 dark:bg-dark-3 py-9 pl-5 mb-3"
                   m="t-[-2rem]"
                   xl="rounded-none pb-2 border-l-solid mb-0 pt-0 bg-transparent dark:bg-transparent"
                   onclick={() => toggleContextLabels(!contextLabelsShown())}
                 >
-                  On this page
+                  Page Contents
                   <div class="i-mdi-chevron-down-circle text-2xl xl:hidden text-slate-7">
                   </div>
                 </button>
 
                 {/* labels */}
                 <div
+                  text="slate-5"
                   class={`grid xl:grid py-3 xl:py-0 bg-slate-1 dark:bg-dark-3 xl:bg-transparent xl:dark-bg-transparent ${
                     contextLabelsShown() ? "" : "hidden"
                   }`}
