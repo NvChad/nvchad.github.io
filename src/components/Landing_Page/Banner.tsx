@@ -46,7 +46,7 @@ function Hero() {
       <img
         src="/banner.webp"
         alt="NvChad screenshot"
-        class="rounded-lg md:rounded-xl max-w-[70vw] baby:max-w-[1000px] softshadow  m-auto"
+        class="rounded-lg md:rounded-xl max-w-[70vw] 2xl:max-w-[1700px] softshadow  m-auto"
       />
     </div>
   );

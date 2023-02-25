@@ -1,0 +1,447 @@
+/* Most of the CSS taken from here : shttps://github.com/hyrious/github-markdown-css/blob/main/github-markdown.css, huge credits to it! */
+
+#DocContent {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.5;
+  word-wrap: break-word;
+  @apply xl:pr-10;
+}
+
+#DocContent details,
+#DocContent figcaption,
+#DocContent figure {
+  display: block;
+}
+
+#DocContent summary {
+  display: list-item;
+}
+
+#DocContent [hidden] {
+  display: none !important;
+}
+
+#DocContent a {
+  background-color: transparent;
+  @apply  text-blue-5;
+}
+
+#DocContent abbr[title] {
+  border-bottom: none;
+  text-decoration: underline dotted;
+}
+
+#DocContent b,
+#DocContent strong {
+  font-weight: 600;
+}
+
+#DocContent dfn {
+  font-style: italic;
+}
+
+#DocContent h1 {
+  margin: 0.67em 0;
+  font-weight: 600;
+  padding-bottom: 0.3em;
+  font-size: 2em;
+  border-bottom: 1px solid hsla(210, 18%, 87%, 1);
+}
+
+#DocContent img {
+  border-style: none;
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: #ffffff;
+}
+
+#DocContent code,
+#DocContent kbd,
+#DocContent pre,
+#DocContent samp {
+  font-family: monospace;
+  font-size: 1em;
+}
+
+#DocContent figure {
+  margin: 1em 40px;
+}
+
+/* #DocContent hr { */
+/*   box-sizing: content-box; */
+/*   overflow: hidden; */
+/*   background: transparent; */
+/*   border-bottom: 1px solid hsla(210, 18%, 87%, 1); */
+/*   height: 0.25em; */
+/*   padding: 0; */
+/*   margin: 24px 0; */
+/*   background-color: #d0d7de; */
+/*   border: 0; */
+/* } */
+
+#DocContent hr::before {
+  display: table;
+  content: "";
+}
+
+#DocContent hr::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+#DocContent table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  overflow: auto;
+}
+
+#DocContent td,
+#DocContent th {
+  padding: 0;
+}
+
+#DocContent details summary {
+  cursor: pointer;
+}
+
+#DocContent details:not([open]) > *:not(summary) {
+  display: none !important;
+}
+
+#DocContent a:focus {
+  outline: 2px solid #0969da;
+  outline-offset: -2px;
+  box-shadow: none;
+}
+
+#DocContent kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
+    Liberation Mono, monospace;
+  line-height: 10px;
+  color: #24292f;
+  vertical-align: middle;
+  background-color: #f6f8fa;
+  border: solid 1px rgba(175, 184, 193, 0.2);
+  border-bottom-color: rgba(175, 184, 193, 0.2);
+  border-radius: 6px;
+  box-shadow: inset 0 -1px 0 rgba(175, 184, 193, 0.2);
+}
+
+#DocContent h1,
+#DocContent h2,
+#DocContent h3,
+#DocContent h4,
+#DocContent h5,
+#DocContent h6 {
+  margin-top: 34px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+#DocContent h2 {
+  font-weight: 600;
+  padding-bottom: 0.3em;
+  font-size: 1.5em;
+  /* border-bottom: 1px solid hsla(210, 18%, 87%, 1); */
+}
+
+#DocContent h3 {
+  font-weight: 600;
+  font-size: 1.25em;
+}
+
+#DocContent h4 {
+  font-weight: 600;
+  font-size: 1em;
+}
+
+#DocContent h5 {
+  font-weight: 600;
+  font-size: 0.875em;
+}
+
+#DocContent h6 {
+  font-weight: 600;
+  font-size: 0.85em;
+  color: #57606a;
+}
+
+#DocContent p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+#DocContent blockquote {
+  padding: 0 1em;
+  color: #57606a;
+  border-left: 0.25em solid #d0d7de;
+}
+
+#DocContent ul,
+#DocContent ol {
+  padding-left: 2em;
+}
+
+#DocContent > *:first-child {
+  margin-top: 0 !important;
+}
+
+#DocContent > *:last-child {
+  margin-bottom: 0 !important;
+}
+
+#DocContent a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+#DocContent p,
+#DocContent blockquote,
+#DocContent ul,
+#DocContent ol,
+#DocContent dl,
+#DocContent table,
+#DocContent pre,
+#DocContent details {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+#DocContent blockquote > :first-child {
+  margin-top: 0;
+}
+
+#DocContent blockquote > :last-child {
+  margin-bottom: 0;
+}
+#DocContent li + li {
+  margin-top: 0.25em;
+}
+
+#DocContent dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+}
+
+#DocContent dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+#DocContent table th {
+  font-weight: 600;
+}
+
+#DocContent table th,
+#DocContent table td {
+  padding: 6px 13px;
+  border: 1px solid #d0d7de;
+}
+
+#DocContent table tr {
+  background-color: #ffffff;
+  border-top: 1px solid hsla(210, 18%, 87%, 1);
+}
+
+#DocContent table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+#DocContent table img {
+  background-color: transparent;
+}
+
+#DocContent img[align="right"] {
+  padding-left: 20px;
+}
+
+#DocContent img[align="left"] {
+  padding-right: 20px;
+}
+
+#DocContent span.frame {
+  display: block;
+  overflow: hidden;
+}
+
+#DocContent span.frame > span {
+  display: block;
+  float: left;
+  width: auto;
+  padding: 7px;
+  margin: 13px 0 0;
+  overflow: hidden;
+  border: 1px solid #d0d7de;
+}
+
+#DocContent span.frame span img {
+  display: block;
+  float: left;
+}
+
+#DocContent span.frame span span {
+  display: block;
+  padding: 5px 0 0;
+  clear: both;
+  color: #24292f;
+}
+
+#DocContent span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+
+#DocContent span.align-center > span {
+  display: block;
+  margin: 13px auto 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+#DocContent span.align-center span img {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#DocContent span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+
+#DocContent span.align-right > span {
+  display: block;
+  margin: 13px 0 0;
+  overflow: hidden;
+  text-align: right;
+}
+
+#DocContent span.align-right span img {
+  margin: 0;
+  text-align: right;
+}
+
+#DocContent span.float-left {
+  display: block;
+  float: left;
+  margin-right: 13px;
+  overflow: hidden;
+}
+
+#DocContent span.float-left span {
+  margin: 13px 0 0;
+}
+
+#DocContent span.float-right {
+  display: block;
+  float: right;
+  margin-left: 13px;
+  overflow: hidden;
+}
+
+#DocContent span.float-right > span {
+  display: block;
+  margin: 13px auto 0;
+  overflow: hidden;
+  text-align: right;
+}
+
+#DocContent code,
+#DocContent tt {
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  white-space: break-spaces;
+  background-color: rgba(175, 184, 193, 0.2);
+  border-radius: 6px;
+}
+
+#DocContent code br,
+#DocContent tt br {
+  display: none;
+}
+
+#DocContent del code {
+  text-decoration: inherit;
+}
+
+#DocContent samp {
+  font-size: 85%;
+}
+
+#DocContent [data-footnote-ref]::before {
+  content: "[";
+}
+
+#DocContent [data-footnote-ref]::after {
+  content: "]";
+}
+
+#DocContent .footnotes {
+  font-size: 12px;
+  color: #57606a;
+  border-top: 1px solid #d0d7de;
+}
+
+#DocContent .footnotes ol {
+  padding-left: 16px;
+}
+
+#DocContent .footnotes ol ul {
+  display: inline-block;
+  padding-left: 16px;
+  margin-top: 16px;
+}
+
+#DocContent .footnotes li {
+  position: relative;
+}
+
+#DocContent .footnotes li:target::before {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -24px;
+  pointer-events: none;
+  content: "";
+  border: 2px solid #0969da;
+  border-radius: 6px;
+}
+
+#DocContent .footnotes li:target {
+  color: #24292f;
+}
+
+#DocContent .footnotes .data-footnote-backref g-emoji {
+  font-family: monospace;
+}
+
+/* codeblocks */
+#DocContent pre {
+  @apply bg-dark-4  dark:bg-dark-3 p-0;
+  @apply p-5 rounded-xl font-mono my-0 text-sm;
+  @apply shadow-2xl overflow-x-auto;
+}
+
+#DocContent code {
+  @apply bg-slate-1 dark:bg-dark-3 p-1 px-2 p-0;
+  @apply text-base rounded-lg;
+}
+
+#DocContent pre code {
+  @apply bg-dark-4 dark:bg-dark-3;
+  @apply text-sm p-0;
+}

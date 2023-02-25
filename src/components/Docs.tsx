@@ -3,7 +3,8 @@ import { createStore } from "solid-js/store";
 import { createEffect, createSignal, on } from "solid-js";
 import Sidebar from "./doc_comps/Sidebar";
 
-import "../css/hljs.css"; // css for highlighting codeblock syntaxes!
+import "../css/hljs.css";
+import "../css/markdown.css";
 
 // for context bar on the right
 export const [activeContext_Heading, setActiveContext_Heading] = createSignal(
@@ -104,7 +105,6 @@ function Docs() {
                   class="rounded-lg text-lg  bg-sky-1 dark:bg-tintBlack-2 font-medium py-2 pl-5 mb-3 "
                   m="t-[-2rem]"
                   xl="rounded-none pb-2 border-l-solid mb-0 pt-0 bg-transparent dark:bg-transparent"
-                  border="none l-2 gray-3"
                   dark="border-tintBlack-3"
                   onclick={() => toggleContextLabels(!contextLabelsShown())}
                 >
