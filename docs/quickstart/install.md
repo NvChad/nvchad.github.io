@@ -39,7 +39,7 @@ git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
 ```bash
 git clone https://github.com/NvChad/NvChad $HOME\AppData\Local\nvim --depth 1 && nvim
 ```
-(Note: Windows users must have [`mingw`](http://mingw-w64.org/doku.php) installed and set on path).
+(Note: Windows users must have [`mingw`](http://mingw-w64.org/downloads) installed and set on path).
 
 ## Update
 
