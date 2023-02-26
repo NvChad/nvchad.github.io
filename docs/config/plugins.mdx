@@ -1,58 +1,64 @@
-## Plugin definition
+## Overview
 
-- What is a plugin definition? It's a term we use to define plugins so Packer can use and install them.
-- Our way of defining plugins through Packer is slightly different:
+- NvChad uses [lazy.nvim](https://github.com/folke/lazy.nvim) for plugins management so its syntax is valid.
+- Basically NvChad expects a user plugin table, which then gets merged with the default plugins table.
+- So plugins defined in the custom plugins table override the plugin specs defined in default plugins table too.
+
+
+## Lazy loading
+
+- We lazy load almost 95% of the plugins, so we expect you to lazy load the plugins as well! As its efficient in reducing startuptime. We don't want users making NvChad slow just because they didn't lazy load plugins they've added!
+
+### Tips
+
+- <strong> cmd : </strong> If a plugin loads on commands then use the `cmd` spec, For ex: trouble.nvim plugin opens when we run "Trouble" command, so now I'd just write the word "Trouble" in the cmd spec of trouble.nvim plugin definition.
+- <strong> event : </strong> Use this spec if you want to load a plugin on certain vim event ( check :h events ). Cmp.nvim plugin is useful when we're in insert mode, so I lazyload it at "InsertEnter" event. 
+
+- There are more specs through which you could do lazyloading like <strong> ft, cond, keys </strong>.
+
+## Managing custom plugins
+- In NvChad (lazy = true) is set to all plugins, so if you want a plugin to be enabled on startup, do (lazy = false)
+- Some examples : 
 
 ```lua
-  -- packer's original syntax
-  use {
-    "Pocco81/TrueZen.nvim",
-     cmd = "abc"
-  }
-
-  -- NvChad's syntax
-  ["Pocco81/TrueZen.nvim"] = {
-    cmd = "abc"
-  },
-
-  -- if you dont wish to have any plugin definition options
-  ["Pocco81/TrueZen.nvim"] = {}
+-- custom/chadrc.lua
+M.plugins = "custom.plugins"
 ```
 
-## Install, remove plugins & override them
-
-- Check all Packer options available for plugin definitions : [codeblock section here](https://github.com/wbthomason/packer.nvim#specifying-plugins).
+<br/>
 
 ```lua
--- chadrc
-M.plugins = require "custom.plugins"
-```
-
-```lua
--- custom/plugins/init.lua
--- we're basically returning a table!
+-- custom/plugins.lua
 return {
 
   -- Install plugin
-  ["Pocco81/TrueZen.nvim"] = {},
+  { "elkowar/yuck.vim" , lazy = false },
 
-  -- Override plugin definition options
-  ["goolord/alpha-nvim"] = {
-    disable = false,
-    cmd = "Alpha",
+  -- Using more plugin specs like cmd etc
+  {
+    "Pocco81/TrueZen.nvim",
+    cmd = { "TZAtaraxis", "TZMinimalist" },
+    config = function()
+      require "custom.plugins.truezen"
+    end,
+  }
+
+  -- Override plugin specs options
+  { "folke/which-key.nvim", enabled = true },
+  
+  -- opts overrides default plugin config's option
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = {"html", "css", "bash"},
+    },
   },
 
-  -- Override plugin config
-  ["williamboman/mason.nvim"] = {
-    override_options = {
-          ensure_installed = { "html-lsp", "clangd" }
-      }
-  },
-   
-   -- Override plugin config if it has a module called
-   -- If you wish to call a module, which is 'cmp' in this case
-   ["hrsh7th/nvim-cmp"] = {
-    override_options = function()
+  -- Here we wrap opts with a function because its loading cmp module
+  -- If we didnt wrap with function then the code will run on startup
+   {
+    "hrsh7th/nvim-cmp"
+    opts = function()
       local cmp = require "cmp"
 
       return {
@@ -61,11 +67,6 @@ return {
         },
       }
     end,
-  },
-
-  -- remove plugin
-  ["neovim/nvim-lspconfig"] = false
+   },
 }
 ```
-
-- NOTE : The override_options will override the default plugin config's options, so you don't have to re-write the whole default plugin config but rather write only the things you want to change (overwrite).
