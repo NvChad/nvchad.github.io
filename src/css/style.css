@@ -2,6 +2,10 @@
   font-family: "Inter", sans-serif;
 }
 
+button:hover {
+  background-color: brightness(90%);
+}
+
 body {
   @apply bg-white text-slate-7;
   @apply dark:bg-dark-2 dark:text-slate-3;
@@ -21,10 +25,10 @@ a {
 button {
   @apply vertCentered justify-between w-full;
   @apply whitespace-nowrap rounded-lg;
-  @apply hover:dark:bg-blue hover:dark:text-red-200;
-  @apply hover:bg-green-200 hover:text-black;
-  @apply hover:cursor-pointer dark:text-slate-4 text-black;
+  @apply hover:cursor-pointer 
   @apply p-2 text-base bg-slate-1 dark:bg-dark-3;
+  @apply dark:text-slate-4 text-black;
+  @apply hover:darkenBg dark:hover:lightenBg;
 }
 
 button,
