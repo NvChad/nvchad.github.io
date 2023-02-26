@@ -5,19 +5,19 @@
 
 
 ```lua
--- We are just modifying lspconfig's packer definition table
--- Put this in your custom plugins section i.e M.plugins field 
-
-["neovim/nvim-lspconfig"] = {
-    config = function()
+-- We are just modifying lspconfig's config spec
+{
+  "neovim/nvim-lspconfig",
+   config = function()
       require "plugins.configs.lspconfig"
       require "custom.plugins.lspconfig"
-    end,
+   end,
 },
 ```
+<br/>
 
 ```lua
--- custom.plugins.lspconfig
+-- custom.configs.lspconfig
 local on_attach = require("plugins.configs.lspconfig").on_attach
 local capabilities = require("plugins.configs.lspconfig").capabilities
 
@@ -31,47 +31,25 @@ for _, lsp in ipairs(servers) do
   }
 end
 ```
-- Open nvim and run `:PackerCompile`
-
 ## Mason.nvim
 
-- The Mason.nvim plugin in NvChad is mainly used to install lspservers, formatters, linters, and debug adapters. 
-
-(NOTE: This only downloads the binaries. The lsp server/formatters won't run automatically. You need to configure a custom lspconfig and possibly some plugin like null-ls/neoformat or others for the formatters to work.)
-
-```
-:MasonInstall html-lsp 
-```
-
-- Run the `:Mason` command to open Mason.nvim's floating window and there you can install, update, or uninstall the available packages (i.e. lspservers, linters, formatters, etc.)
-- Press `i` on the package name in the list to install it.
+- The Mason.nvim plugin is used to install lspservers, formatters, linters, and debug adapters. 
 - It's better to list all your required packages and put them into your Mason override config.
 - Find the exact name of your packages from the `:Mason` window
-- This is an example of siduck's config:
 
 ```lua
  ["williamboman/mason.nvim"] = {
    override_options = {
       ensure_installed = {
-        -- lua stuff
         "lua-language-server",
-        "stylua",
-
-        -- web dev
         "css-lsp",
         "html-lsp",
-        "typescript-language-server",
-        "deno",
-        "emmet-ls",
-        "json-lsp",
-
-        -- shell
-        "shfmt",
-        "shellcheck",
+        "clangd",
+        "prettier"
       },
     },
   }
 ```
-
-- Once this is done, reopen nvim and run the `:MasonInstallAll` command. This will install the listed packages in the `ensure_installed` field of the mason.nvim config.
-- The `MasonInstallAll` command is a custom NvChad command and not from the original set of mason.nvim commands. 
+<br/>
+- Reopen nvim & run the `:MasonInstallAll` command. This will install the listed binaries in the `ensure_installed` table.
+- This only downloads the binaries. The lsp server/formatters won't run automatically. You need to configure a custom lspconfig and possibly some plugin like null-ls/neoformat etc for the formatters to work.
