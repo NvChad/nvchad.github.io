@@ -9,20 +9,22 @@ function Links() {
   return (
     <div grid md:flex gap-5>
       {/* Brand logo */}
-      <A href="/" class="vertCentered !gap-3 font-bold">
+      <A href="/" class="vertCentered !gap-3 font-bold text-grey-4 dark:text-white-2">
         <img src="/logo.svg" alt="nvchad logo" w-7 />
         NvChad
       </A>
 
       {/* route links */}
       <div
-        class={`grid md:vertCentered md:!gap-5 gap-5 inactiveColor ${
+        text='slate-7 dark:slate-4'
+        class={`grid md:vertCentered md:!gap-5 gap-5 ${
           linksShown() ? "" : "hidden"
         }`}
       >
-        <A activeClass="activeNavLink" href="/docs/quickstart/install">Docs</A>
-        <A activeClass="activeNavLink" href="/Features">Features</A>
-        <A activeClass="activeNavLink" href="/Themes">Themes</A>
+        <A href="/docs/quickstart/install">Docs</A>
+        <A href="/Features">Features</A>
+        <A href="/Themes">Themes</A>
+        <div> </div>
       </div>
     </div>
   );
@@ -115,15 +117,15 @@ function Searchbar() {
       id="searchbar"
       class="vertCentered text-base w-fit p-2 px-3 rounded-lg"
       bg="slate-1 dark:dark-3"
-      text="slate-5"
+      text="grey-1"
     >
       <div i-ion-search></div>
 
       Search
       <div
-        border="1 solid slate-4 dark:dark-4"
+        border="1 solid grey-1 dark:dark-4"
         p="1 x-2"
-        class="ml-3 text-slate-5 dark:text-slate-4 text-sm rounded-lg"
+        class="ml-3 text-grey-1 dark:text-slate-4 text-sm rounded-lg"
       >
         Ctrl + k
       </div>
@@ -135,7 +137,7 @@ function Navbar() {
   const styles = `sticky top-0 z-50
                 flex md:vertCentered gap-5 justify-between 
                 bg-white-1 dark:bg-dark-2 
-                text-xl p-4 max-w-[1700px] mx-auto`;
+                text-lg font-medium  p-4 py-3 max-w-[1700px] mx-auto`;
 
   return (
     <div border="0 b solid slate-2 dark:dark-4">

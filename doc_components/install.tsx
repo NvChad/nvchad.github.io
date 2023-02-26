@@ -18,16 +18,21 @@ const docker_cmd = `docker run -w /root -it --rm alpine:latest sh -uelic '
 const [oscmd, setOSCMD] = createSignal(unix_cmd);
 
 const Btn = (props: any) => {
-  const { cmd, os } = props;
+  const { cmd, os, icon } = props;
 
   return (
     <button
-      bg={osname() == os ? "blue-1 dark:blue-5" : ""}
+      class={`!text-vsm ${
+        osname() == os
+          ? "text-white-1 bg-blue-6 dark:bg-blue-3 dark:text-dark-1"
+          : "bg-slate-2"
+      }`}
       onclick={() => {
         setOS(os);
         setOSCMD(cmd);
       }}
     >
+      <div class={icon} text-base></div>
       {os}
     </button>
   );
@@ -36,10 +41,10 @@ const Btn = (props: any) => {
 export default () => {
   return (
     <div grid gap-5>
-      <div class="[&_*]:rounded-lg [&_*]:px-5 [&_*]:p-3  [&_*]:w-fit vertCentered !gap-5">
-        <Btn os="Linux / Macos" cmd={unix_cmd} />
-        <Btn os="Windows" cmd={windows_cmd} />
-        <Btn os="Docker" cmd={docker_cmd} />
+      <div class="[&_*]:rounded-lg [&_button]:p-3 [&_button]:w-fit vertCentered !gap-3">
+        <Btn os="Linux / Macos" cmd={unix_cmd} icon="i-mingcute:hashtag-fill" />
+        <Btn os="Windows" cmd={windows_cmd} icon="i-mdi:windows" />
+        <Btn os="Docker" cmd={docker_cmd} icon="i-nonicons:docker-16" />
       </div>
 
       <pre class="hljs">{oscmd}</pre>

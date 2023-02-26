@@ -92,7 +92,7 @@ function Docs() {
     >
       <Sidebar />
 
-      <div class="px-5 xl:px-10 xl:blur-none" blur={sideBarShown() ? "sm" : ""}>
+      <div class="px-5  xl:pl-10  xl:blur-none" blur={sideBarShown() ? "sm" : ""}>
         <div class="flex flex-col-reverse xl:grid xl:grid-cols-[1fr_auto]">
           <div id="DocContent">
             <Outlet />
@@ -100,11 +100,11 @@ function Docs() {
 
           {/* on this page component */}
           {contextHeadings.length > 1 && (
-            <div class="sticky my-5 xl:gid  xl:h-[calc(100vh-4rem)] ">
+            <div class="sticky my-5 xl:grid xl:h-[calc(100vh-4rem)] ">
               <div class="h-fit grid">
                 {/* on this page btn, shows only on small screens*/}
                 <button
-                  class="rounded-lg text-lg bg-sky-1 dark:bg-dark-3 pl-5 mb-3"
+                  class="rounded-lg text-lg bg-blue-1 dark:bg-dark-3 mb-3"
                   m="t-[-2rem]"
                   xl="rounded-none pb-2 border-l-solid mb-0 pt-0 bg-transparent dark:bg-transparent"
                   onclick={() => toggleContextLabels(!contextLabelsShown())}

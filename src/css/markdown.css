@@ -23,7 +23,7 @@
 }
 
 #DocContent a {
-  @apply text-blue-6 dark:text-blue-3 font-medium;
+  @apply text-blue-5 underline dark:text-blue-4 font-medium;
 }
 
 #DocContent abbr[title] {
@@ -67,7 +67,7 @@
 }
 
 #DocContent kbd {
-  @apply bg-slate-2 dark:bg-dark-3 p-1 rounded-md
+  @apply bg-slate-2 dark:bg-dark-3 p-1 rounded-md;
 }
 
 /* #DocContent hr { */
@@ -428,7 +428,7 @@
 
 #DocContent code {
   @apply bg-slate-1 dark:bg-dark-3 p-1 px-2;
-  @apply text-base rounded-md ;
+  @apply text-base rounded-md;
 }
 
 #DocContent pre code {
@@ -446,6 +446,6 @@
   @apply text-slate-5 bg-transparent;
 }
 
-#DocContent pre button :hover{
+#DocContent pre button :hover {
   @apply text-red;
 }
