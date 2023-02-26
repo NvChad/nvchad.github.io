@@ -18,7 +18,7 @@ const sidebar_Items: Array<any> = [
       ["Format & Lint", "config/format_lint"],
       ["Mappings", "config/mappings"],
       ["UI Customization", "config/nvchad_ui"],
-      ["Themeing", "config/theming"],
+      ["Customize colors", "config/theming"],
     ],
   },
 
