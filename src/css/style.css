@@ -6,6 +6,10 @@ button:hover {
   background-color: brightness(90%);
 }
 
+div {
+  @apply rounded-lg;
+}
+
 body {
   @apply bg-white text-slate-7;
   @apply dark:bg-dark-2 dark:text-slate-3;

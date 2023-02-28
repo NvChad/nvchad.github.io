@@ -4,6 +4,7 @@ import { lazy } from "solid-js";
 import Navbar from "./Navbar";
 import Home from "./Home";
 import DocRoutes from "./doc_comps/DocRoutes";
+import Themes from "./themes";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/docs" component={lazy(() => import("./Docs"))}>
           <DocRoutes />
         </Route>
+        <Route path="/themes" component={Themes} />
       </Routes>
     </>
   );
