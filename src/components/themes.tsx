@@ -4,13 +4,8 @@ import { createSignal } from "solid-js";
 const languages = [
   {
     lang: "python",
-    icon: "i-logos:python",
+    icon: "i-mdi:language-python",
     images: import.meta.glob("../../public/themes/python/*.webp"),
-  },
-  {
-    lang: "html",
-    icon: "i-vscode-icons:file-type-html",
-    images: import.meta.glob("../../public/themes/html/*.webp"),
   },
   {
     lang: "javascript",
@@ -97,7 +92,7 @@ function LangListBtns() {
         </button>
 
         <button
-          class="rounded-l-none dark:text-blue-4"
+          class="rounded-l-none text-slate-7 dark:text-blue-4"
           bg="blue-2 dark:dark-4"
           onclick={() => setGridMode(!gridMode())}
         >
