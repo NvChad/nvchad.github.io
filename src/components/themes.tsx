@@ -18,9 +18,9 @@ const languages = [
     images: import.meta.glob("../../public/themes/haskell/*.webp"),
   },
   {
-    lang: "c / c++",
+    lang: "c",
     icon: "i-logos:c-plusplus",
-    images: import.meta.glob("../../public/themes/cpp/*.webp"),
+    images: import.meta.glob("../../public/themes/c/*.webp"),
   },
   {
     lang: "rust",
