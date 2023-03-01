@@ -23,16 +23,6 @@ const languages = [
     images: import.meta.glob("../../public/themes/c/*.webp"),
   },
   {
-    lang: "rust",
-    icon: "i-logos:rust dark:i-skill-icons:rust",
-    images: import.meta.glob("../../public/themes/rust/*.webp"),
-  },
-  {
-    lang: "zig",
-    icon: "i-skill-icons:zig-dark",
-    images: import.meta.glob("../../public/themes/zig/*.webp"),
-  },
-  {
     lang: "lua",
     icon: "i-logos:lua dark:i-skill-icons:lua-light",
     images: import.meta.glob("../../public/themes/lua/*.webp"),
