@@ -31,8 +31,8 @@ export default defineConfig({
       grey: {
         1: "#8798AD",
         2: "#536387",
-        4: "#2E384D"
-      }
+        4: "#2E384D",
+      },
     },
   },
 

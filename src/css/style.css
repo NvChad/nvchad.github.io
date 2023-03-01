@@ -29,7 +29,7 @@ a {
 button {
   @apply vertCentered justify-between w-full;
   @apply whitespace-nowrap rounded-lg;
-  @apply hover:cursor-pointer 
+  @apply hover:cursor-pointer w-fit
   @apply p-2 text-base bg-slate-1 dark:bg-dark-3;
   @apply dark:text-slate-4 text-black;
   @apply hover:darkenBg dark:hover:lightenBg;

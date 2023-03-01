@@ -1,6 +1,8 @@
 import { A, useLocation } from "@solidjs/router";
-import { createSignal } from "solid-js";
+import { createEffect, createSignal } from "solid-js";
 import { showSidebar, sideBarShown } from "./Docs";
+import docsearch from "@docsearch/js";
+import "@docsearch/css";
 
 // for toggling menu links, btns on mobile
 const [linksShown, showLinks] = createSignal(false);
@@ -9,14 +11,17 @@ function Links() {
   return (
     <div grid md:flex gap-5>
       {/* Brand logo */}
-      <A href="/" class="vertCentered !gap-3 font-bold text-grey-4 dark:text-white-2">
+      <A
+        href="/"
+        class="vertCentered !gap-3 font-bold text-grey-4 dark:text-white-2"
+      >
         <img src="/logo.svg" alt="nvchad logo" w-7 />
         NvChad
       </A>
 
       {/* route links */}
       <div
-        text='slate-7 dark:slate-4'
+        text="slate-7 dark:slate-4"
         class={`grid md:vertCentered md:!gap-5 gap-5 ${
           linksShown() ? "" : "hidden"
         }`}
@@ -58,7 +63,7 @@ export const ThemeToggleBtn = (props: any) => {
         const el = document.querySelector("html")!;
         el.className = localStorage.theme = theme();
       }}
-      class={`shadow-lg ${props.display} text-xl p-2 bg-slate-7 text-white-1 dark:bg-dark-3 rounded-full`}
+      class={`shadow-lg ${props.display} text-xl p-2 bg-slate-8 text-white-1 dark:bg-dark-3 rounded-full`}
     >
       <div
         text-base
@@ -89,14 +94,14 @@ export function BtnLinks() {
     >
       {/* hide links by default on mobile */}
 
-      <div id="docsearch"></div>
+      <div hidden id="docsearch"></div>
 
       <DocsBtn />
       <Searchbar />
 
       {Btns.map((x) => (
         <a
-          text="slate-7 dark:slate-4"
+          text="slate-8 dark:slate-4"
           href={x[1]}
           target="_blank"
           aria-label={x[2]}
@@ -111,12 +116,26 @@ export function BtnLinks() {
 }
 
 function Searchbar() {
+  // creadte algolia  docsearch
+  createEffect(() => {
+    docsearch({
+      appid: "bojs19ch35",
+      apikey: "c74ee96af1dea95b6e189501983733f8",
+      indexname: "nvchad",
+      container: "#docsearch",
+    });
+  });
+
   return (
     <button
       id="searchbar"
       class="vertCentered text-base w-fit p-2 px-3 rounded-lg"
       bg="slate-1 dark:dark-3"
       text="grey-1"
+      onclick={() => {
+        alert("This is WIP!");
+        document.querySelector(".DocSearch").click();
+      }}
     >
       <div i-ion-search></div>
 

@@ -3,7 +3,10 @@
   "version": "0.4.1",
   "type": "module",
   "dependencies": {
+    "@docsearch/css": "^3.3.3",
+    "@docsearch/js": "3",
     "@solidjs/router": "^0.6.0",
+    "install": "^0.13.0",
     "solid-js": "^1.6.7"
   },
   "devDependencies": {

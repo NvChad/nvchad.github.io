@@ -14,7 +14,6 @@ const languages = [
     lang: "javascript",
     icon: "i-skill-icons:javascript",
   },
-
   {
     lang: "haskell",
     icon: "i-logos:haskell-icon",
@@ -40,8 +39,6 @@ const languages = [
 
 const [activeLang, setLangOpt] = createSignal("python");
 
-let python_imgs = import.meta.glob("../../public/themes/python/*.webp");
-
 function LangSidebar() {
   return (
     <div flex flex-wrap gap-3>
@@ -52,7 +49,7 @@ function LangSidebar() {
             capitalize
             px-3
             class="gap-2 justify-start"
-            bg={activeLang() == x.lang ? "!blue-6" : ""}
+            border={activeLang() == x.lang ? "2 solid blue-5" : ""}
             onclick={() => setLangOpt(x.lang)}
           >
             <div class={x.icon}>
@@ -65,18 +62,55 @@ function LangSidebar() {
   );
 }
 
+let python_imgs = import.meta.glob("../../public/themes/python/*.webp");
+let python_arr: Array<string> = [];
+
+Object.keys(python_imgs).map((key) => {
+  python_arr.push(key.replace("../../public", ""));
+});
+
 function ThemeGallery() {
   return (
     <div
       grid
       lg:grid-cols-3
-      xl:grid-cols-4
       gap-6
-      class="[&_*]:max-w-[100%] [&_*]:h-auto"
+      class="[&_*]:max-w-[100%] [&_*]:h-auto 2xl:grid-cols-4
+"
     >
-      {Object.keys(python_imgs).map((key) => (
-        <img loading="lazy" src={key} rounded-lg softShadow />
-      ))}
+      {python_arr.map((key) => {
+        const filename = key?.split("/").pop();
+        const theme = filename.split(".")[0];
+        const theme_type = theme.includes("light") ? "light" : "dark";
+
+        return (
+          <div softShadow grid>
+            <img
+              loading="lazy"
+              src={key}
+              rounded="lg b-none"
+              shadow-b-md
+            />
+
+            <div
+              class={`vertCentered justify-between rounded-t-none ${
+                theme_type == "light"
+                  ? "bg-dark-4 text-white-1 dark:bg-dark-3"
+                  : "bg-white-1  dark:bg-dark-3 "
+              }`}
+              font-medium
+              capitalize
+              p="2 x-3"
+            >
+              <button i-ph-palette-bold class='dark:bg-white-2' ></button>
+              {/* get theme name from theme path*/}
+              {theme}
+              <button i-bx:fullscreen>
+              </button>
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 }
