@@ -15,7 +15,7 @@ function Links() {
         href="/"
         class="vertCentered !gap-3 font-bold text-grey-4 dark:text-white-2"
       >
-        <img src="/logo.svg" alt="nvchad logo" w-7 />
+        <img src="/logo.svg" alt="nvchad logo" w="26px" h="26px" />
         NvChad
       </A>
 

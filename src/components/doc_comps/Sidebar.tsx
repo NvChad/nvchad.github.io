@@ -18,7 +18,7 @@ function NestedLabels(props: any) {
       {/* collapse btn */}
       <button
         onclick={() => collapseLinks(showLinks() ? false : true)}
-        class="rounded-xl gap-20 bg-slate-1 text-slate-7 dark:bg-dark-3 dark:text-white-1 p-2"
+        class="rounded-xl gap-20 bg-slate-1 text-slate-7 dark:bg-dark-3 dark:text-white-1 p-2 w-full"
       >
         <div class="vertCentered" font-medium>
           <div class={props.BtnLabel[1]}></div> {props.BtnLabel[0]}

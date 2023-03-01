@@ -59,6 +59,8 @@ languages.map((lang, i) => {
 
 const [activeLang, setLangOpt] = createSignal("python");
 const [activeImages, setImages] = createSignal(languages[0].images);
+const [galleryShown, setGalleryStatus] = createSignal(true);
+const [zoomedImg, setZoomedImgPath] = createSignal("");
 
 function LangSidebar() {
   return (
@@ -127,7 +129,15 @@ function ThemeGallery() {
               <button i-ph-palette-bold class="dark:bg-white-2"></button>
               {/* get theme name from theme path*/}
               {theme}
-              <button i-bx:fullscreen>
+
+              <button
+                dark:bg-blue
+                i-bx:fullscreen
+                onclick={() => {
+                  setZoomedImgPath(key);
+                  setGalleryStatus(!galleryShown());
+                }}
+              >
               </button>
             </div>
           </div>
@@ -137,11 +147,33 @@ function ThemeGallery() {
   );
 }
 
+function ImageZoomed() {
+  return (
+    <div top-0 left-0 sticky>
+      <button
+        onclick={() => setGalleryStatus(!galleryShown())}
+        class="px-3 my-6 mx-auto bg-red-4 text-white-1 dark:text-red-3"
+      >
+        <div i-ion:close></div>
+        Close
+      </button>
+      <img src={zoomedImg()} h-auto w-full class="z-[9999]" />
+    </div>
+  );
+}
+
 function Themes() {
   return (
-    <div grid class="gap-5 max-w-[1700px] mx-auto my-6 px-5">
-      <LangSidebar />
-      <ThemeGallery />
+    <div>
+      {!galleryShown() && <ImageZoomed />}
+
+      {galleryShown() &&
+        (
+          <div grid class="gap-5 max-w-[1700px] mx-auto my-6 px-5">
+            <LangSidebar />
+            <ThemeGallery />
+          </div>
+        )}
     </div>
   );
 }
