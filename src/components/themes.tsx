@@ -61,32 +61,52 @@ const [activeLang, setLangOpt] = createSignal("python");
 const [activeImages, setImages] = createSignal(languages[0].images);
 const [galleryShown, setGalleryStatus] = createSignal(true);
 const [zoomedImg, setZoomedImgPath] = createSignal("");
+const [gridMode, setGridMode] = createSignal(true);
 
-function LangSidebar() {
+function LangListBtns() {
   return (
-    <div flex flex-wrap gap-3>
-      {languages.map((x) => {
-        return (
-          <button
-            w-fit
-            capitalize
-            px-3
-            class="gap-2 justify-start"
-            border={activeLang() == x.lang ? "2 solid blue-5" : ""}
-            onclick={() => {
-              setLangOpt(x.lang);
-              const images = languages.find((obj) => obj.lang === x.lang)
-                ?.images;
+    <div flex justify-between gap-2>
+      <div flex flex-wrap gap-3>
+        {languages.map((x) => {
+          return (
+            <button
+              class="gap-2 justify-start capitalize px-3"
+              border={activeLang() == x.lang ? "2 solid blue-5" : ""}
+              onclick={() => {
+                setLangOpt(x.lang);
+                const images = languages.find((obj) => obj.lang === x.lang)
+                  ?.images;
 
-              setImages(images);
-            }}
-          >
-            <div class={x.icon}>
-            </div>
-            {x.lang}
-          </button>
-        );
-      })}
+                setImages(images);
+              }}
+            >
+              <div class={x.icon}></div> {x.lang}
+            </button>
+          );
+        })}
+      </div>
+
+      {/* gallery layout modes */}
+      <div flex h-fit>
+        <button
+          bg="white-1"
+          border="solid 1 blue-3 dark:dark-4 r-0"
+          rounded-r-none
+        >
+          <div i-ri:layout-grid-line rounded-none></div> Grid
+        </button>
+
+        <button
+          class="rounded-l-none dark:text-blue-4"
+          bg="blue-2 dark:dark-4"
+          onclick={() => setGridMode(!gridMode())}
+        >
+          <div>
+            {gridMode() && <div i-bi:toggle2-on text-xl></div>}
+            {!gridMode() && <div i-bi:toggle2-off text-xl></div>}
+          </div>
+        </button>
+      </div>
     </div>
   );
 }
@@ -94,11 +114,9 @@ function LangSidebar() {
 function ThemeGallery() {
   return (
     <div
-      grid
-      lg:grid-cols-3
-      gap-6
-      class="[&_*]:max-w-[100%] [&_*]:h-auto 2xl:grid-cols-4
-"
+      class={`grid gap-6 [&_*]:max-w-[100%] [&_*]:h-auto ${
+        gridMode() ? "lg:grid-cols-3 2xl:grid-cols-4" : ""
+      }`}
     >
       {activeImages().map((key) => {
         const filename = key?.split("/").pop();
@@ -107,6 +125,7 @@ function ThemeGallery() {
 
         return (
           <div softShadow grid>
+            {/* theme screnshot */}
             <img
               loading="lazy"
               src={key}
@@ -116,6 +135,7 @@ function ThemeGallery() {
               height={1440}
             />
 
+            {/* theme titles & fullscreen btn */}
             <div
               class={`vertCentered justify-between rounded-t-none ${
                 theme_type == "light"
@@ -131,8 +151,7 @@ function ThemeGallery() {
               {theme}
 
               <button
-                dark:bg-blue
-                i-bx:fullscreen
+                class="dark:bg-blue i-bx:fullscreen"
                 onclick={() => {
                   setZoomedImgPath(key);
                   setGalleryStatus(!galleryShown());
@@ -150,6 +169,7 @@ function ThemeGallery() {
 function ImageZoomed() {
   return (
     <div top-0 left-0 sticky>
+      {/* image close btn */}
       <button
         onclick={() => setGalleryStatus(!galleryShown())}
         class="px-3 my-6 mx-auto bg-red-4 text-white-1 dark:text-red-3"
@@ -170,7 +190,7 @@ function Themes() {
       {galleryShown() &&
         (
           <div grid class="gap-5 max-w-[1700px] mx-auto my-6 px-5">
-            <LangSidebar />
+            <LangListBtns />
             <ThemeGallery />
           </div>
         )}

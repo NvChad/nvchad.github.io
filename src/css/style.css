@@ -59,17 +59,17 @@ h2 {
 }
 
 ::-webkit-scrollbar:vertical {
-  width: 7px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar:horizontal {
-  height: 7px;
+  height: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-slate-4 dark:bg-slate-6;
+  @apply bg-slate-4 dark:bg-slate-5;
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-white-2 dark:bg-t;
+  @apply bg-white-2 dark:bg-dark-4;
 }
