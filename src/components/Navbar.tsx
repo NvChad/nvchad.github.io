@@ -44,7 +44,9 @@ function DocsBtn() {
         dark:text-black
         onclick={() => showSidebar(!sideBarShown())}
       >
-        <div i-ic:round-menu-open></div>
+        {sideBarShown()
+          ? <div i-ic:round-close></div>
+          : <div i-carbon:side-panel-close-filled></div>}
         Docs
       </button>
     )

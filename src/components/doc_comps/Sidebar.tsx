@@ -18,7 +18,7 @@ function NestedLabels(props: any) {
       {/* collapse btn */}
       <button
         onclick={() => collapseLinks(showLinks() ? false : true)}
-        class="rounded-xl gap-20 bg-slate-1 text-slate-7 dark:bg-dark-3 dark:text-white-1 p-2 w-full"
+        class="rounded-xl gap-20 bg-sky-1 text-slate-7 dark:bg-dark-3 dark:text-white-1 p-2 w-full"
       >
         <div class="vertCentered" font-medium>
           <div class={props.BtnLabel[1]}></div> {props.BtnLabel[0]}
@@ -26,12 +26,12 @@ function NestedLabels(props: any) {
 
         {/* chevron icons! */}
         <div
-          class={`text-xl bg-slate-3 text-slate-7 dark:bg-dark-4 p-1 rounded-full
+          class={`text-xl bg-slate-6 text-slate-1 dark:bg-dark-4 p-1 rounded-full
                   ${showLinks() ? "dark:text-red-3" : "dark:text-white-1"}`}
         >
           {showLinks()
-            ? <div i-mi:chevron-down></div>
-            : <div i-mi:chevron-right></div>}
+            ? <div i-octicon:chevron-down-12></div>
+            : <div i-octicon:chevron-right-12></div>}
         </div>
       </button>
 
@@ -53,9 +53,9 @@ function NestedLabels(props: any) {
 }
 
 function SideBar() {
-  const styles = `h-full absolute xl:sticky z-10 top-0  xl:flex flex-col
-    h-screen top-0 bg-white-1 dark:bg-dark-2
-     text-gray-600 dark:text-grey rounded-none`;
+  const styles = `h-fit  xl:sticky z-10 top-0  xl:flex flex-col
+     bg-white-1 dark:bg-dark-2
+     text-gray-600 dark:text-grey rounded-none pt-0 p-7 xl:p-0`;
 
   const LinkStyles = "pl-0 vertCentered";
 

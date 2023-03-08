@@ -162,19 +162,19 @@ function ImageZoomed() {
         <div i-ion:close></div>
         Close
       </button>
-      <img src={zoomedImg()} h-auto w-full class="z-[9999]" />
+      <img src={zoomedImg()} h-auto w-full class="z-[9999]" rounded-lg softShadow />
     </div>
   );
 }
 
 function Themes() {
   return (
-    <div>
+    <div class="max-w-[1700px] mx-auto">
       {!galleryShown() && <ImageZoomed />}
 
       {galleryShown() &&
         (
-          <div grid class="gap-5 max-w-[1700px] mx-auto my-6 px-5">
+          <div grid class="gap-5 my-6 px-5">
             <LangListBtns />
             <ThemeGallery />
           </div>
