@@ -89,12 +89,12 @@ function Docs() {
   return (
     <div
       grid
-      class="xl:grid-cols-[auto_1fr] max-w-[1700px] mx-auto my-8"
+      class="xl:grid-cols-[auto_1fr] max-w-[1700px] mx-auto my-8 px-4"
     >
       <Sidebar />
 
       <div
-        class="px-4  xl:px-0  xl:blur-none"
+        class="xl:blur-none"
         blur={sideBarShown() ? "sm" : ""}
       >
         <div class="flex flex-col-reverse xl:grid xl:grid-cols-[1fr_auto]">

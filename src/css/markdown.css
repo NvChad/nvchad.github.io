@@ -135,7 +135,7 @@
 
 #DocContent h2 {
   font-weight: 600;
-  padding-bottom: 0.3em;
+  padding-bottom: 0.5rem;
   font-size: 1.5em;
   /* @apply border border-solid border-0 border-b-2 border-slate-2 */
 }
@@ -428,7 +428,7 @@
 
 #DocContent code {
   @apply bg-slate-1 dark:bg-dark-3 p-1 px-2;
-  @apply text-base rounded-md;
+  @apply text-sm rounded-md;
 }
 
 #DocContent pre code {

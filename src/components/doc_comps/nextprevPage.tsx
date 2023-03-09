@@ -1,4 +1,4 @@
-import { useLocation } from "@solidjs/router";
+import { A, useLocation } from "@solidjs/router";
 import sidebar_Items from "./sidebar_Items";
 
 let sorted_lables: any = [];
@@ -23,7 +23,7 @@ arr = [
 */
 
 function generateTxt(direction: Number, wantLink?: boolean) {
-  let result: any = false;
+  let result = "";
   let current_path = useLocation().pathname.replace(/^\/docs\//, "");
 
   sorted_lables.forEach((el: any, index: any) => {
@@ -45,24 +45,24 @@ export default () => {
       {/* previous page */}
       {generateTxt(-1)
         ? (
-          <a href={generateTxt(-1, true)}>
+          <A href={generateTxt(-1, true)}>
             <button border={border} class={btnClass}>
-              <div i-ph:arrow-left></div>
+              <div i-ph:arrow-left-bold></div>
               {generateTxt(-1)}
             </button>
-          </a>
+          </A>
         )
         : <div></div>}
 
       {/* next page */}
       {generateTxt(1)
         ? (
-          <a href={generateTxt(1, true)}>
+          <A href={generateTxt(1, true)}>
             <button border={border} class={btnClass}>
               {generateTxt(1)}
-              <div i-ph:arrow-right></div>
+              <div i-ph:arrow-right-bold></div>
             </button>
-          </a>
+          </A>
         )
         : <div></div>}
     </div>

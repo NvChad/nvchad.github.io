@@ -24,8 +24,8 @@ const Btn = (props: any) => {
     <button
       class={`!text-vsm ${
         osname() == os
-          ? "text-white-1 bg-blue-6 dark:bg-blue-3 dark:text-dark-1"
-          : "bg-slate-2"
+          ? "text-white-1 bg-blue-5 dark:bg-blue-3 dark:text-dark-1"
+          : "bg-slate-1"
       }`}
       onclick={() => {
         setOS(os);
