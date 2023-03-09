@@ -8,7 +8,6 @@
 │   ├── core
 │   │   ├── default_config.lua
 │   │   ├── mappings.lua
-│   │   ├── options.lua
 │   │   ├── utils.lua  -- (core util functions) (i)
 │   │   └── init.lua  -- (autocmds)
 │   │
@@ -44,7 +43,8 @@
 
 ```lua
 -- Table fields in default_config.lua
-M.ui = {}
-M.plugins = {}
-M.mappings = {} 
+M.ui = {},
+M.plugins = "",
+M.mappings = {},
+M.lazy_nvim = {}, -- startup config for lazy.nvim
 ```
