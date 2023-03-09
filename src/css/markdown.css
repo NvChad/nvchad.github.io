@@ -427,7 +427,7 @@
 }
 
 #DocContent code {
-  @apply bg-slate-1 dark:bg-dark-3 p-1 px-2;
+  @apply bg-slate-1 dark:bg-dark-3 p-[0.1rem] px-1;
   @apply text-sm rounded-md;
 }
 
