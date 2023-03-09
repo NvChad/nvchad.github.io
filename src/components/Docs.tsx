@@ -2,6 +2,7 @@ import { Outlet, useLocation } from "@solidjs/router";
 import { createStore } from "solid-js/store";
 import { createEffect, createSignal, on } from "solid-js";
 import Sidebar from "./doc_comps/Sidebar";
+import NextPrevPageBtns from "./doc_comps/nextprevPage";
 
 import "../css/hljs.css";
 import "../css/markdown.css";
@@ -88,22 +89,25 @@ function Docs() {
   return (
     <div
       grid
-      class="xl:grid-cols-[auto_1fr] max-w-[1700px] mx-auto mt-8 xl:px-5"
+      class="xl:grid-cols-[auto_1fr] max-w-[1700px] mx-auto my-8"
     >
       <Sidebar />
 
       <div
-        class="px-5  xl:pl-10  xl:blur-none"
+        class="px-4  xl:px-0  xl:blur-none"
         blur={sideBarShown() ? "sm" : ""}
       >
         <div class="flex flex-col-reverse xl:grid xl:grid-cols-[1fr_auto]">
-          <div id="DocContent">
-            <Outlet />
+          <div xl:px-10>
+            <div id="DocContent" w-full>
+              <Outlet />
+            </div>
+            <NextPrevPageBtns />
           </div>
 
           {/* on this page component */}
           {contextHeadings.length > 1 && (
-            <div class="sticky my-5 xl:grid xl:h-[calc(100vh-4rem)] ">
+            <div class="sticky my-5 xl:grid xl:h-[calc(100vh-4rem)]">
               <div class="h-fit grid">
                 {/* on this page btn, shows only on small screens*/}
                 <button

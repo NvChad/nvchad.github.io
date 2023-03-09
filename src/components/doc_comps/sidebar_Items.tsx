@@ -11,7 +11,7 @@ const sidebar_Items: Array<any> = [
     label: ["Custom config", "i-mdi-cog"],
 
     items: [
-      ["Walkthrough", "config/Walkthrough"],
+      ["Walkthrough", "config/walkthrough"],
       ["Options", "config/options"],
       ["Manage Plugins", "config/plugins"],
       ["LSP Configuration", "config/Lsp"],

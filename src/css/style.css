@@ -14,6 +14,7 @@ body {
   @apply bg-white text-slate-7;
   @apply dark:bg-dark-2 dark:text-slate-3;
   @apply m-0 p-0;
+  overflow-x: hidden;
 }
 
 a {
