@@ -22,7 +22,8 @@ const sidebar_Items: Array<any> = [
     ],
   },
 
-  ["Debugging config", "debugging-config", "i-ri-bug-line"],
+  ["Features", "features", "i-tabler:server-cog"],
+  ["Debug config", "debugging-config", "i-ri-bug-line"],
   ["Contributing", "contribute", "i-mdi-github"],
   ["Credits", "credits", "i-line-md:heart"],
 ];

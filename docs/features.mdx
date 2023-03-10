@@ -1,86 +1,118 @@
----
-id: features
-title: Features
----
+# Inbuilt features
 
-NvChad comes with many comforts of a modern IDE. All lazy-loaded and built on top of NeoVim's fantastic Lua integration while still looking very beautiful!
+- NvChad is built upon its personal plugins and many general neovim plugins, below are the features that are provided by nvchad plugins **( our ui plugin, base46, extensions, nvterm, nvim-colorizer )**
 
-## Plugins
+## Base46
 
-### Core plugins
+- Base46 is NvChad's highlight performant theming plugin and has many ported themes ( around 57+ ).
 
-#### [`packer.nvim`](https://github.com/wbthomason/packer.nvim)
+#### How it works?
 
-A `use-package` inspired plugin manager for Neovim. Uses native packages, supports Luarocks dependencies, written in Lua, allows for expressive config, lazy loading, etc.
+- Gets highlight groups 
+- Do some computations i.e check for overriden highlight groups, new highlight groups, theme overrides, custom user themes etc.  
+- Now base46 compiles all of that into bytecode.
+- Integration files aren't loaded by default, for example highlight group for telescope, nvimtree etc are put into different files.
+- highlight groups are lazyloaded i.e you load them when needed 
+- **example : dofile(vim.g.base46_cache .. "treesitter")**
+- In the below video you can see that the chadrc file's ( user config ) UI related options reload on the fly 
 
-#### [`telescope.nvim`](https://github.com/nvim-telescope/telescope.nvim)
+<div class="iframe-container">
+  <iframe src="https://www.youtube.com/embed/xytzreFq_us" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allow="fullscreen"></iframe>
+</div>
 
-Fuzzy finding select menu with text.
+## Theme switcher
 
-![Telescope](https://raw.githubusercontent.com/siduck/dotfiles/all/rice%20flex/tel.png)
+- We build a theme switcher with telescope.nvim which reloads theme on the fly using base46 plugin.
 
-### UI plugins
+<div class="iframe-container">
+ <iframe  src="https://www.youtube.com/embed/wt7IX8ojMrs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allow="fullscreen;"></iframe>
+</div>
 
-#### [Tabufline - NvChad's tab+bufferline](https://github.com/NvChad/ui)
+## Statusline 
 
-![tabufline1](/img/features/tabufline1.png)
-![tabufline2](/img/features/tabufline1.png)
-![tabufline3](/img/features/tabufline1.png)
+- We have our own statusline module ( our UI Plugin ) which has 4 statusline styles
 
-Top bar tab+buffer line for Neovim (can be used for managing buffers and tabs, closing them). It also creates custom clickable buttons on the bufferline.
+![nvchad statusline](/features/statuslines.webp)
 
-![bufferline](https://raw.githubusercontent.com/siduck/dotfiles/all/rice%20flex/bufferline.png)
+## Tabufline
 
-#### [`NvChad's statusline written from scratch`](https://github.com/NvChad/ui)
+- NvChad's tabufline module ( from UI Plugin ) is a mix of tabline & bufferline. 
+- It manages buffers & tabs, buttons in it are clickable
+- Each tab will have its own set of buffers stored and the tabufline will show those only.
+- Think it like workspaces on Linux/Windows where windows stay in their own workspaces, but in vim buffers from all tabs will be shown in every tab!
 
-Fast Neovim statusline plugin written in Lua.
+![tabufline1](/features/tabufline.webp)
 
-Separator styles: `slant`, `round`, `default`, `block`, `arrow`:
+<div class="iframe-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/V_9iJ96U_k8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allow="fullscreen;"></iframe>
+</div>
 
-![statusline ](/img/features/statusline.png)
-![statusline modes](/img/features/statusline_modes.png)
+## Nvterm 
 
-- NOTE : (The statusline looks different based on the themes; the above screenshot is from the OneDark theme)
+- NvChad's terminal plugin to toggle and run commands in neovim terminal buffer
+- Using it with our telescope picker ( :Telescope terms ) to unhide terminal buffers.
 
-#### [`nvim-tree.lua`](https://github.com/kyazdani42/nvim-tree.lua)
+<div class="iframe-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3DysWI_6YpQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allow="fullscreen;"></iframe>
+</div>
 
-A file explorer tree for Neovim written in Lua.
+
+## Dashboard
+
+- Nvdash is NvChad's minimal dashboard module, It's very simple at this stage and will get more features in the future!
+- It has 2 themes ( grid & simple )
+
+![nvdash](/features/nvdash.webp)
+
+## NvCheatsheet
+
+- Auto-generated mappings cheatsheet module which has a similar layout to that of CSS's masonry layout.
+
+![nvcheatsheet](/features/nvcheatsheet.webp)
+
+<div class="iframe-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IljDD4cjgKc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allow='fullscreen;'></iframe>
+</div>
+
+# General neovim plugins
+
+- These plugins aren't related to nvchad, we just tweak theme a bit and theme the UI related ones.
+
+## Telescope.nvim
+
+- [Telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) is a highly extendable fuzzy finder over lists. Built on the latest awesome features from neovim core. Telescope is centered around modularity, allowing for easy customization.
+- Below are 2 styles of telescope in nvchad ( bordered and borderless )
+
+![telescope](/features/telescope.webp)
+
+## Nvim-tree.lua
+
+- [`nvim-tree.lua`](https://github.com/kyazdani42/nvim-tree.lua) is a file explorer tree for Neovim written in Lua.
 
 ![nvim tree](https://raw.githubusercontent.com/siduck/dotfiles/all/rice%20flex/nvimtree.png)
 
-#### [`blankline`](https://github.com/lukas-reineke/indent-blankline.nvim)
 
-Indentline plugin.
+## Nvim-cmp
 
-![blankline screenshot](https://raw.githubusercontent.com/siduck/dotfiles/all/rice%20flex/blanklineNvim.png)
+- [`nvim-cmp`](A completion plugin for neovim coded in Lua.) is a completion plugin for neovim coded in Lua.
+- Below are some cmp styles in nvchad 
 
-#### [`alpha-nvim`](https://github.com/goolord/alpha-nvim)
+![nvim-cmp](/features/cmp.webp)
 
-Dashboard plugin for Neovim.
+- Note that thats just the cmp look in everblush theme, there are more 56+ themes! You can hide cmp icons, cmpkind txt etc from the user config ( chadrc ) itself! 
 
-![dashboard](/img/screenshots/dashboard.png)
+## Auto-completion & LSP
 
-#### [`base46`](https://github.com/NvChad/base46)
+- [`nvim-lspconfig`](https://github.com/neovim/nvim-lspconfig) is used along with cmp for completion and [`luasnip`](https://github.com/L3MON4D3/LuaSnip)  + [`friendly-snippets`](https://github.com/rafamadriz/friendly-snippets) for snippet completion! 
+<div class="iframe-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oMzMDXA-VO0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allow='fullscreen;'></iframe>
+</div>
 
-Manages syntax colorscheme in NvChad.
-
-#### [`nvim-colorizer.lua`](https://github.com/norcalli/nvim-colorizer.lua)
-
-Fastest Neovim colorizer, hex colors, hsl codes and much more.
-
-#### [`nvim-web-devicons`](https://github.com/kyazdani42/nvim-web-devicons)
-
-Lua fork of Vim devicons which lets you change colors and edit icons of filetypes.
-
-### [`nvim-treesitter`](https://github.com/nvim-treesitter/nvim-treesitter)
-
-Neovim Treesitter configurations and abstraction layer. We mostly use this for syntax highlighting. The pretty syntax highlighting you see in all of our screenshots is possible due to Treesitter.
-
-- [`nvim-cmp`](https://github.com/hrsh7th/nvim-cmp) - Completion menu.
-
-### Other plugins
-
-- [`gitsigns.nvim`](https://github.com/lewis6991/gitsigns.nvim)
+- [`lazy.nvim`](https://github.com/folke/lazy.nvim) - A modern plugin manager for Neovim
+- [`nvim-colorizer.lua`](https://github.com/NvChad/nvim-colorizer.lua) - Fastest Neovim colorizer, hex colors, hsl codes and much more.
+- [`nvim-treesitter`](https://github.com/nvim-treesitter/nvim-treesitter) - Nvim Treesitter configurations and abstraction layer, we use it for syntax highlighting & auto-indenting. 
+- [`blankline`](https://github.com/lukas-reineke/indent-blankline.nvim) - Indent guides for Neovim i.e indentline plugin.
+- [`gitsigns.nvim`](https://github.com/lewis6991/gitsigns.nvim) - Git integration for buffers
 - [`nvim-autopairs`](https://github.com/windwp/nvim-autopairs)
-- [`comment.nvim`](https://github.com/numToStr/Comment.nvim)
-- [`nvim-lspconfig`](https://github.com/neovim/nvim-lspconfig) - Used for configuring lsp servers etc
+- [`comment.nvim`](https://github.com/numToStr/Comment.nvim) - Commenting plugin
+- [`mason.nvim`](https://github.com/williamboman/mason.nvim) - Portable package manager for Neovim that runs everywhere Neovim runs. Easily install and manage LSP servers, DAP servers, linters, and formatters.

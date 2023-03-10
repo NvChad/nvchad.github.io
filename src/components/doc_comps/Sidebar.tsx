@@ -69,8 +69,8 @@ function SideBar() {
             : (
               <A
                 href={item[1]}
-                inactiveClass={LinkStyles}
-                activeClass={`${LinkStyles} font-medium text-red-400 dark:text-red-300`}
+                vertCentered
+                activeClass="font-medium text-blue-5 dark:text-blue-3" 
               >
                 <div class={item[2]}></div>
                 {item[0]}
