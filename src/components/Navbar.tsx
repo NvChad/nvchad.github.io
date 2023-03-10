@@ -29,6 +29,7 @@ function Links() {
         <A href="/docs/quickstart/install">Docs</A>
         <A href="/docs/features">Features</A>
         <A href="/themes">Themes</A>
+        <A href="/news">News</A>
       </div>
     </div>
   );

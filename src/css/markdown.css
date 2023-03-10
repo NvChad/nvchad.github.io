@@ -471,3 +471,27 @@
   @apply rounded-lg;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
+#news h2,
+.headingUnderline {
+  @apply border border-solid border-0 border-b-2 border-slate-2;
+  @apply dark:border-dark-4;
+}
+
+#news h2 {
+  @apply pb-5;
+}
+
+#news p,
+#news li {
+  @apply text-lg;
+}
+
+#news img {
+  @apply w-full rounded-lg softShadow;
+}
+
+#news code {
+  @apply bg-slate-1 p-1 rounded-lg dark:bg-dark-3;
+  @apply text-[14px];
+}
