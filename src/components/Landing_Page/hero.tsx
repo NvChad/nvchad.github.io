@@ -25,7 +25,7 @@ function HeroText() {
         Enhance your Neovim workflow
       </h1>
 
-      <p font-medium text-base md:text-xl >
+      <p font-medium text-base md:text-xl>
         Blazing fast Neovim config providing solid defaults and a beautiful UI
       </p>
 

@@ -40,14 +40,18 @@ export const generateActiveContext = () => {
   }
 };
 
-window.addEventListener("scroll", () => generateActiveContext());
-
 export const [sideBarShown, showSidebar] = createSignal(false);
 
 // final component!
 function Docs() {
   const [contextLabelsShown, toggleContextLabels] = createSignal(false);
   const [contextHeadings, setHeadings] = createStore([]);
+
+  window.addEventListener("scroll", () => {
+    if (useLocation().pathname.includes("docs")) {
+      generateActiveContext();
+    }
+  });
 
   //  run on route change
   createEffect(

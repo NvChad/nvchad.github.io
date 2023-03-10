@@ -74,3 +74,7 @@ h2 {
 ::-webkit-scrollbar-track {
   @apply bg-white-2 dark:bg-dark-4;
 }
+
+.footerUnderline {
+  text-underline-offset: 1rem;
+}

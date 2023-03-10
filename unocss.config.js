@@ -21,7 +21,7 @@ export default defineConfig({
       onedark: "#1E222A",
 
       dark: {
-        1: "#121723",
+        1: "#13141b",
         2: "#171821",
         3: "#222331",
         4: "#2d2f41",
