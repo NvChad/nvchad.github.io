@@ -174,7 +174,7 @@ function Themes() {
 
       {galleryShown() &&
         (
-          <div grid class="gap-5 my-6 px-5">
+          <div grid class="gap-5 my-6" p="x-4 xl:0">
             <LangListBtns />
             <ThemeGallery />
           </div>

@@ -36,17 +36,17 @@ function HeroText() {
 
 function Hero() {
   let redGradient = 'bg-gradient-to-r dark:from-blue-4 dark:to-purple-4'
-  let blueGradient = 'bg-gradient-to-r from-cyan-300 to-blue-500'
+  let blueGradient = 'bg-gradient-to-r from-blue-3 to-blue-5'
 
   return (
-    <div class={`grid p-10 pt-0 justify-center rounded-none ${blueGradient} dark:${redGradient}`}>
+    <div class={`grid p-10 pb-15 pt-0 justify-center rounded-none ${blueGradient} dark:${redGradient}`}>
       <HeroText />
 
       {/* banner img */}
       <img
         src="/banner.webp"
         alt="NvChad screenshot"
-        class="rounded-lg md:rounded-xl max-w-[70vw] 2xl:max-w-[1700px] softshadow  m-auto"
+        class="rounded-lg md:rounded-xl max-w-[90vw] 2xl:max-w-[1700px] softshadow  m-auto"
       />
     </div>
   );

@@ -1,7 +1,7 @@
 const FeatureList = [
   {
     title: "Fast by default",
-    imgSrc: "/landingPage/rocket.png",
+    icon: "i-fluent:rocket-20-regular text-red-3",
     description: (
       <>
         Blazing fast startup time as plugins are lazy loaded wherever possible;
@@ -11,7 +11,7 @@ const FeatureList = [
   },
   {
     title: "Beautiful UI",
-    imgSrc: "/landingPage/ui.png",
+    icon: "i-circum:palette",
     description: (
       <>
         NvChad provides a pretty UI while still embracing the CLI; UI plugins
@@ -21,7 +21,7 @@ const FeatureList = [
   },
   {
     title: "Highly customizable",
-    imgSrc: "/landingPage/cogs.png",
+    icon: "i-ion:cog-sharp text-emerald-3",
     description: (
       <>
         Default plugins, options, and themes can easily be disabled or overriden
@@ -32,17 +32,17 @@ const FeatureList = [
 
   {
     title: "Update mechanism",
-    imgSrc: "/landingPage/update.png",
+    icon: "i-line-md:downloading-loop !mb-1",
     description: (
       <>
-        Built-in update mechanism to stay up to date with the latest changes
+        Update mechanism via git to stay up to date with the latest changes
         while preserving user configuration.
       </>
     ),
   },
   {
     title: "Powered by Lua",
-    imgSrc: "/landingPage/lua.png",
+    icon: "i-simple-icons:lua text-blue-3",
     description: (
       <>
         Configuration is completely written in Lua which integrates well with
@@ -52,9 +52,12 @@ const FeatureList = [
   },
   {
     title: "Prettiest themes",
-    imgSrc: "/landingPage/themes.png",
+    icon: "i-ph:paint-brush-broad text-lime-2",
     description: (
-      <>30+ inbuilt beautiful themes, say bye-bye to theme plugins!</>
+      <>
+        56+ inbuilt beautifully ported & custom themes, say bye-bye to theme
+        plugins! All the theme colors are overridable via user config.
+      </>
     ),
   },
 ];
@@ -63,12 +66,14 @@ function Feature(props: any) {
   const { details } = props;
 
   return (
-    <div grid gap-5 text-center justify-center rounded-2xl p-10 bg-slate-1 dark:bg-dark-3>
-      <img
-        src={details.imgSrc}
-        alt={`${details.title}`}
-        class="w-[20%] md:w-[45%] m-auto bg-slate-2 dark:bg-black-1 p-5 rounded-full"
-      />
+    <div class="grid gap-5 text-center justify-center rounded-2xl p-10">
+      <div w-fit bg-dark-3 text-white-1 rounded-full mx-auto shadow-md>
+        <div
+          class={`${details.icon}`}
+          text-7xl
+          m-5
+        />
+      </div>
 
       <div grid>
         <h2 mb-2 whitespace-nowrap>{details.title}</h2>
@@ -80,7 +85,7 @@ function Feature(props: any) {
 
 export default function Features() {
   return (
-    <section max-w-6xl m-auto grid justify-center text-center my-20 px-5>
+    <section max="w-[1700px]" m-auto grid justify-center text-center my-20 px-5>
       <div grid md:grid-cols-2 lg:grid-cols-3 gap-10>
         {FeatureList.map((feature, i) => <Feature key={i} details={feature} />)}
       </div>
