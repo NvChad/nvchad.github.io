@@ -14,32 +14,30 @@ export const [activeContext_Heading, setActiveContext_Heading] = createSignal(
   "",
 );
 
+function isElementVisible(myElement: any) {
+  const rect = myElement.getBoundingClientRect();
+  const isVisible = rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <=
+      (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth);
+
+  return (isVisible) ? true : false;
+}
+
 // On this page component uses this
 export const generateActiveContext = () => {
-  let docs_Elements = document.getElementById("DocContent")?.childNodes;
+  let docs_Elements = document.getElementById("DocContent");
+  let headings = docs_Elements?.querySelectorAll("h2,h3");
 
-  let visible_Elements: Array<Array<number>> = [];
-  let resultIndex = 0;
-
-  docs_Elements?.forEach((el, index) =>
-    visible_Elements.push([index, el.offsetTop])
-  );
-
-  for (let i = 0; i < visible_Elements.length; i++) {
-    if (window.pageYOffset < visible_Elements[i][1]) {
-      resultIndex = i;
+  // just get the first h2/h3
+  for (let i = 0; i < headings.length; i++) {
+    if (isElementVisible(headings[i])) {
+      const txt = headings[i].innerText;
+      setActiveContext_Heading(txt);
       break;
     }
   }
-
-  docs_Elements?.forEach((el, index) => {
-    if (
-      (el.localName == "h2" || el.localName == "h3") &&
-      index <= resultIndex
-    ) {
-      setActiveContext_Heading(el.innerText);
-    }
-  });
 };
 
 window.addEventListener("scroll", () => generateActiveContext());
@@ -107,7 +105,7 @@ function Docs() {
 
           {/* on this page component */}
           {contextHeadings.length > 1 && (
-            <div class="sticky my-5 xl:grid xl:h-[calc(100vh-4rem)]">
+            <div class="top-0 sticky my-5 xl:grid xl:h-[calc(100vh-4rem)]">
               <div class="h-fit grid">
                 {/* on this page btn, shows only on small screens*/}
                 <button
