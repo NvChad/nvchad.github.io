@@ -38,11 +38,11 @@ end
 - Find the exact name of your packages from the `:Mason` window
 
 ```lua
- ["williamboman/mason.nvim"] = {
-   override_options = {
+ {
+   "williamboman/mason.nvim",
+   opts = {
       ensure_installed = {
         "lua-language-server",
-        "css-lsp",
         "html-lsp",
         "clangd",
         "prettier"
