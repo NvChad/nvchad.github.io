@@ -1,111 +1,89 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+html {
+  scroll-behavior: smooth;
+}
 
 :root {
   font-family: "Inter", sans-serif;
-  --doc-sidebar-width: 250px !important;
-  --ifm-code-font-size: 100%;
 }
 
-:root .navbar__title {
-  margin-left: 4px;
-  font-size: 1.75rem;
+button:hover {
+  background-color: brightness(90%);
 }
 
-h1,
-h2,
-h3,
-h4 {
-  font-family: "Inter", sans-serif;
+div {
+  @apply rounded-lg;
 }
 
-.hero__title {
-  color: white;
+body {
+  @apply bg-white text-slate-7;
+  @apply dark:bg-dark-2 dark:text-slate-3;
+  @apply m-0 p-0;
+  overflow-x: hidden;
 }
 
-.prism-code {
-  background-color: var(--prismBg) !important;
+a {
+  text-decoration: none;
+  color: inherit;
+  @apply hover:text-blue-3;
 }
 
-/* navbar community link icons */
-.navbar__item.navbar__link[href*="github"] {
-  padding: 0 1.3rem 0 0;
-  display: flex;
-  font-size: 0;
+.softshadow {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.navbar__item.navbar__link[href*="github"]:before {
-  content: "";
-  width: 1.5rem;
-  height: 1.5rem;
-  background-image: var(--github);
-  background-repeat: no-repeat;
+button {
+  @apply vertCentered justify-between w-full;
+  @apply whitespace-nowrap rounded-lg;
+  @apply hover:cursor-pointer w-fit
+  @apply p-2 text-base bg-slate-1 dark:bg-dark-3;
+  @apply dark:text-slate-4 text-black;
+  @apply hover:darkenBg dark:hover:lightenBg;
 }
 
-.navbar__item.navbar__link[href*="t.me"] {
-  padding: 0 1.3rem 0 0;
-  display: flex;
-  font-size: 0;
+button,
+input {
+  @apply outline-none border-none border-0;
 }
 
-.navbar__item.navbar__link[href*="t.me"]:before {
-  content: "";
-  width: 1.5rem;
-  height: 1.5rem;
-  background-image: var(--telegram);
-  background-repeat: no-repeat;
+input {
+  @apply bg-transparent text-base;
 }
 
-.navbar__item.navbar__link[href*="discord"] {
-  padding: 0 1.3rem 0 0;
-  display: flex;
-  font-size: 0;
+h1 {
+  @apply text-3xl md:text-5xl lg:text-6xl font-bold;
 }
 
-.navbar__item.navbar__link[href*="discord"]:before {
-  content: "";
-  width: 1.5rem;
-  height: 1.5rem;
-  background-image: var(--discord);
-  background-repeat: no-repeat;
+h2 {
+  @apply text-3xl font-bold;
 }
 
-.navbar__item.navbar__link[href*="matrix"] {
-  padding: 0 1.3rem 0 0;
-  display: flex;
-  font-size: 0;
+.footerUnderline {
+  text-underline-offset: 1rem;
 }
 
-.navbar__item.navbar__link[href*="matrix"]:before {
-  content: "";
-  width: 1.5rem;
-  height: 1.5rem;
-  background-image: var(--matrix);
-  background-repeat: no-repeat;
+/* news classes  */
+.news {
+  @apply max-w-[1400px] mx-auto p-5;
 }
 
-
-/* ===== Scrollbar ==== */
-
-* {
-  scrollbar-width: .5rem;
-  scrollbar-color: blue pink;
+.news h2 {
+  @apply dark:border-dark-4;
 }
 
-/* Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-  width: .5rem;
+.news h2 {
+  @apply pb-5;
 }
 
-*::-webkit-scrollbar-track {
-  background: var(--border);
+.news p,
+.news li {
+  @apply text-lg;
 }
 
-*::-webkit-scrollbar-thumb {
-  background-color: var(--ifm-color-primary);
-  border-radius: 5px;
+.news img {
+  @apply w-full rounded-lg softShadow;
 }
 
-/* misc */
-img {
-  border-radius: .5rem;
+.news code {
+  @apply bg-slate-1 p-1 rounded-lg dark:bg-dark-3;
+  @apply text-[14px];
 }
