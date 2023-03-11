@@ -1,8 +1,43 @@
 <div id='DocContent' class='news'> 
 
-##  NvChad v2.0 Release Candidate
+##  NvChad v2.0 Release
 
 ![v2.0 poster](/news/v2.0.webp)
+
+<div my-10>
+
+```lua
+# Changelog
+
+## Added
+
+- Lazy.nvim package manager
+- NvDash ( dashboard module )
+- Multiple statusline themes : vscode, vscode_colored, minimal. 
+- Some cmp styles : flat_light, flat_dark, atom, atom_colored
+- NvCheatsheet, a mappings cheatsheet with 2 themes ( grid & simple )
+- Ported 13 new themes to base46 
+- Made base46 generate compiled cache of highlight groups.
+- Make some chadrc ui options auto-reloadable.
+
+
+## Changed 
+
+- Made nvchad_ui options overridable from chadrc itself.
+- Refactored our telescope extensions, made them more minimal.
+- override_opts is renamed to opts ( cuz lazy.nvim handles it now )
+- M.plugins in chadrc now expects only a string
+
+
+## Removed
+
+- Alpha.nvim dashboard plugin
+- Packer.nvim package manager
+- Impatient.nvim as lazy.nvim handles cache part too.
+
+```
+
+</div>
 
 NvChad `v2.0`, a new release is now available, after all these months! From this release onwards, NvChad will take care about stability & exciting featuers at the same time.
 
@@ -61,10 +96,9 @@ So Whats new in this release?
 <iframe src="https://www.youtube.com/embed/IljDD4cjgKc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allow='fullscreen;'></iframe>
 </div>
 
-## NOTIC To v1.0 users
+## Notice To v1.0 users
 
-As there's lazy.nvim being used in this release so this might be a breaking change for you, but dont worry, you can still use old nvchad version and slowly migrate to this one. 
+As there's lazy.nvim being used in this release so this might be a breaking change for you, but dont worry, you can still use old nvchad version and slowly migrate to v2.0. 
 
-- List of breaking changes are mentioned in this <u>[github issue](https://github.com/NvChad/NvChad/issues/1809)</u>
-
+- Migration changes are mentioned in this <u>[github issue](https://github.com/NvChad/NvChad/issues/1809)</u>
 </div>
