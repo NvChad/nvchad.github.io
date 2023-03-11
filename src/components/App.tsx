@@ -1,11 +1,13 @@
 import { Route, Routes } from "@solidjs/router";
-import { lazy } from "solid-js";
 
 import Navbar from "./Navbar";
 import Home from "./Home";
 import DocRoutes from "./doc_comps/DocRoutes";
 import Themes from "./themes";
 import NewsRoutes from "./news_comps/newsRoutes";
+
+import Docs from "./Docs";
+import News from "./News";
 
 function App() {
   return (
@@ -14,12 +16,12 @@ function App() {
       <Routes>
         <Route path="/" component={Home} />
 
-        <Route path="/docs" component={lazy(() => import("./Docs"))}>
+        <Route path="/docs" component={Docs}>
           <DocRoutes />
         </Route>
 
         <Route path="/themes" component={Themes} />
-        <Route path="/news" component={lazy(() => import("./News"))} />
+        <Route path="/news" component={News} />
         <NewsRoutes />
       </Routes>
     </>
