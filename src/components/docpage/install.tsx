@@ -1,6 +1,6 @@
 import { createSignal } from "solid-js";
 
-const [osname, setOS] = createSignal("Linux / Macos");
+export const [osname, setOS] = createSignal("Linux / Macos");
 
 // installer commands
 const unix_cmd =

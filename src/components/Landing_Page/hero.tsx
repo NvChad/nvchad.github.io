@@ -1,18 +1,22 @@
+import { A } from "@solidjs/router";
+import { setOS } from "../docpage/install";
+
 function BtnLinks() {
   const linkStyles = "vertCentered bg-onedark w-fit p-3 px-4 rounded-full";
 
   return (
     <div class="mx-auto flex gap-3 text-sm md:text-lg text-white-2 [&_a]:shadow-xl">
-      <a href="/docs/quickstart/install#pre-requisites" class={linkStyles}>
+      <A href="/docs/quickstart/install" class={linkStyles}>
         <div class="i-grommet-icons-install-option"></div> Install
-      </a>
+      </A>
 
-      <a
-        href="/docs/quickstart/install#try-in-docker-container"
+      <A
+        href="/docs/quickstart/install"
         class={linkStyles}
+        onclick={() => setOS("Docker")}
       >
         <div class="i-mdi-docker"></div> Docker
-      </a>
+      </A>
     </div>
   );
 }
