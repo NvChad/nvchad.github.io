@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 import Home from "./Home";
 import DocRoutes from "./doc_comps/DocRoutes";
 import Themes from "./themes";
-import News from "./News";
+import NewsRoutes from "./news_comps/newsRoutes";
 
 function App() {
   return (
@@ -13,11 +13,14 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" component={Home} />
+
         <Route path="/docs" component={lazy(() => import("./Docs"))}>
           <DocRoutes />
         </Route>
+
         <Route path="/themes" component={Themes} />
-        <Route path="/news" component={News} />
+        <Route path="/news" component={lazy(() => import("./News"))} />
+        <NewsRoutes />
       </Routes>
     </>
   );

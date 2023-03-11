@@ -83,7 +83,7 @@ export function BtnLinks() {
   const Btns: Array<Array<any>> = [
     [
       "i-ph:chat-teardrop-text text-3xl",
-      "#communities",
+      "#community",
       "nvchad discussions",
     ],
     ["i-bi:github  ", "https://github.com/NvChad/NvChad", "Github repo"],

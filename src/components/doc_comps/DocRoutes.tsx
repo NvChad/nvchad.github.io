@@ -30,7 +30,7 @@ export default function () {
           path={createRouteName(key)}
           component={lazy(pages[key])}
         />
-      ))})
+      ))}
     </>
   );
 }

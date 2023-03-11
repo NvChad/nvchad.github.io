@@ -1,50 +1,37 @@
-import VersionTwo from "../../news/v2_0.mdx";
-import { createSignal } from "solid-js";
-
-// This page is highly WIP, i have to release v2.0 today itself .
-const [newsShown, setNews] = createSignal(false);
-
-const blogs: any = [
-  {
-    heading: "NvChad v2.0 released!",
-    details:
-      "This release builds gets on with new UI features in our ui plugin & usage of lazy.nvim. Improvements in startuptime & cachifying our theme plugin,  base46 totally i.e it will now only be used to generate & compile hightlight groups!",
-    component: <VersionTwo />,
-    link: "v2_0",
-  },
-];
+import { blogs } from "./news_comps/newsRoutes";
+import { A } from "@solidjs/router";
 
 function News() {
-  console.log(blogs);
   return (
-    <div m="y-10 x-auto" px-3 max="w-[1000px]">
+    <div m="y-5 xl:y-10 x-auto" px-3 max="w-[1700px]">
       {/* overview cards */}
-      {!newsShown()
-        ? (
-          <div grid gap-10>
-            {blogs.map((x) => {
-              {/* card */}
-              return (
-                <div border="slate 1 dark:dark-4 solid" p-5 grid gap-5>
-                  <h2 class="headingUnderline m-0" pb-5>{x.heading}</h2>
-                  <p text-lg text-base class="m-0 p-0">{x.details}</p>
+      <div grid gap-10 class="md:grid-cols-2 2xl:grid-cols-3">
+        {blogs.map((x) => {
+          {/* card */}
+          return (
+            <div border="slate 0 dark:dark-4 solid" grid gap-5 shadow-xl bg='dark:dark-3'>
+              <img src={`/news/v2.0.webp`} w-full rounded-t-lg/>
 
+              <div grid gap-5 p-10 pt-5>
+                <h2 class="headingUnderline m-0" pb-5>{x.heading}</h2>
+                <p text-lg  class="m-0 p-0">{x.details}</p>
+
+                <A href={x.link}>
                   <button
                     bg-blue-6
                     text-white-1
                     dark:bg-blue-3
                     dark:text-dark-1
                     px-5
-                    onclick={() => setNews(!newsShown())}
                   >
                     read more
                   </button>
-                </div>
-              );
-            })}
-          </div>
-        )
-        : <VersionTwo />}
+                </A>
+              </div>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }

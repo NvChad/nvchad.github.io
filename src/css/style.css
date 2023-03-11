@@ -82,3 +82,29 @@ h2 {
 .footerUnderline {
   text-underline-offset: 1rem;
 }
+
+.news {
+  @apply max-w-[1400px] mx-auto p-5;
+}
+
+.news h2 {
+  @apply dark:border-dark-4;
+}
+
+.news h2 {
+  @apply pb-5;
+}
+
+.news p,
+.news li {
+  @apply text-lg;
+}
+
+.news img {
+  @apply w-full rounded-lg softShadow;
+}
+
+.news code {
+  @apply bg-slate-1 p-1 rounded-lg dark:bg-dark-3;
+  @apply text-[14px];
+}
