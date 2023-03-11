@@ -106,7 +106,6 @@ export function BtnLinks() {
         <a
           text="slate-8 dark:slate-4"
           href={x[1]}
-          target="_blank"
           aria-label={x[2]}
           class={x[0]}
         >
