@@ -57,32 +57,11 @@ h2 {
   @apply text-3xl font-bold;
 }
 
-/* themed scrollbar  */
-
-::-webkit-scrollbar {
-  -webkit-appearance: none;
-}
-
-::-webkit-scrollbar:vertical {
-  width: 10px;
-}
-
-::-webkit-scrollbar:horizontal {
-  height: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  @apply bg-slate-4 dark:bg-slate-5;
-}
-
-::-webkit-scrollbar-track {
-  @apply bg-white-2 dark:bg-dark-4;
-}
-
 .footerUnderline {
   text-underline-offset: 1rem;
 }
 
+/* news classes  */
 .news {
   @apply max-w-[1400px] mx-auto p-5;
 }
