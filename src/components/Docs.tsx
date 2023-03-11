@@ -1,6 +1,6 @@
 import { Outlet, useLocation } from "@solidjs/router";
 import { createStore } from "solid-js/store";
-import { createEffect, createSignal, on } from "solid-js";
+import { createEffect, createSignal, on, onMount } from "solid-js";
 import Sidebar from "./doc_comps/Sidebar";
 import NextPrevPageBtns from "./doc_comps/nextprevPage";
 
@@ -27,15 +27,17 @@ function isElementVisible(myElement: any) {
 
 // On this page component uses this
 export const generateActiveContext = () => {
-  let docs_Elements = document.getElementById("DocContent");
-  let headings = docs_Elements?.querySelectorAll("h2,h3");
+  if (window.location.pathname.includes("docs")) {
+    let docs_Elements = document.getElementById("DocContent");
+    let headings = docs_Elements?.querySelectorAll("h2,h3");
 
-  // just get the first h2/h3
-  for (let i = 0; i < headings.length; i++) {
-    if (isElementVisible(headings[i])) {
-      const txt = headings[i].innerText;
-      setActiveContext_Heading(txt);
-      break;
+    // just get the first h2/h3
+    for (let i = 0; i < headings.length; i++) {
+      if (isElementVisible(headings[i])) {
+        const txt = headings[i].innerText;
+        setActiveContext_Heading(txt);
+        break;
+      }
     }
   }
 };
@@ -47,11 +49,7 @@ function Docs() {
   const [contextLabelsShown, toggleContextLabels] = createSignal(false);
   const [contextHeadings, setHeadings] = createStore([]);
 
-  window.addEventListener("scroll", () => {
-    if (useLocation().pathname.includes("docs")) {
-      generateActiveContext();
-    }
-  });
+  onMount(() => window.addEventListener("scroll", generateActiveContext));
 
   //  run on route change
   createEffect(
@@ -119,7 +117,7 @@ function Docs() {
                   onclick={() => toggleContextLabels(!contextLabelsShown())}
                 >
                   Page Contents
-                  <div class="i-mdi-chevron-down-circle text-2xl xl:hidden text-slate-7">
+                  <div class="i-mdi-chevron-down-circle text-2xl xl:hidden text-slate-7 dark:bg-blue-3">
                   </div>
                 </button>
 
