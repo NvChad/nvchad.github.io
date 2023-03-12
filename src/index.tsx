@@ -4,7 +4,7 @@ import "uno.css";
 import "./css/style.css";
 
 import App from "./components/App";
-import { hashIntegration, Router } from "@solidjs/router";
+import { Router } from "@solidjs/router";
 
 const root = document.getElementById("app");
 
@@ -13,7 +13,7 @@ const el = document.querySelector("html")!;
 el.className = localStorage.theme || "light";
 
 render(() => (
-  <Router source={hashIntegration()}>
+  <Router>
     <App />
   </Router>
 ), root);

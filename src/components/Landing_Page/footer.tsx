@@ -56,7 +56,7 @@ function Footer() {
           <div grid text-start>
             <p text-lg>Powered by Github pages</p>
 
-            <div flex vertCentered bg="dark-4 dark:dark-3" p="3 x-4">
+            <div flex vertCentered justify-center bg="dark-4 dark:dark-3" p="3 x-4">
               <div i-logos-solidjs-icon></div> Solidjs +{" "}
               <div i-simple-icons:unocss rounded-none></div> Unocss
             </div>
