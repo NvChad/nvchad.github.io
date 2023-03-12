@@ -1,6 +1,6 @@
 import { Outlet, useLocation } from "@solidjs/router";
 import { createStore } from "solid-js/store";
-import { createEffect, createSignal, on, onMount } from "solid-js";
+import { createEffect, createSignal, on, onCleanup, onMount } from "solid-js";
 import Sidebar from "./doc_comps/Sidebar";
 import NextPrevPageBtns from "./doc_comps/nextprevPage";
 
@@ -27,17 +27,15 @@ function isElementVisible(myElement: any) {
 
 // On this page component uses this
 export const generateActiveContext = () => {
-  if (window.location.pathname.includes("docs")) {
-    let docs_Elements = document.getElementById("DocContent");
-    let headings = docs_Elements?.querySelectorAll("h2,h3");
+  let docs_Elements = document.getElementById("DocContent");
+  let headings = docs_Elements?.querySelectorAll("h2,h3");
 
-    // just get the first h2/h3
-    for (let i = 0; i < headings.length; i++) {
-      if (isElementVisible(headings[i])) {
-        const txt = headings[i].innerText;
-        setActiveContext_Heading(txt);
-        break;
-      }
+  // just get the first h2/h3
+  for (let i = 0; i < headings.length; i++) {
+    if (isElementVisible(headings[i])) {
+      const txt = headings[i].innerText;
+      setActiveContext_Heading(txt);
+      break;
     }
   }
 };
@@ -50,6 +48,7 @@ function Docs() {
   const [contextHeadings, setHeadings] = createStore([]);
 
   onMount(() => window.addEventListener("scroll", generateActiveContext));
+  onCleanup(() => window.removeEventListener("scroll", generateActiveContext));
 
   //  run on route change
   createEffect(
