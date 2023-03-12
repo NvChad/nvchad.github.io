@@ -63,7 +63,7 @@ function Docs() {
           const headings: Array<Array<string>> = [];
 
           headingElements?.forEach((item: any) => {
-            item.id = item.innerText;
+            item.id = item.innerText.replaceAll(/[ .&]/g, "_");
             headings.push([item.localName, item.innerText]);
           });
 
@@ -129,7 +129,9 @@ function Docs() {
                 >
                   {contextHeadings.map((x: any) => (
                     <A
-                      href={`${useLocation().pathname}#${x[1]}`}
+                      href={`${useLocation().pathname}#${
+                        x[1].replaceAll(/[ .&]/g, "_")
+                      }`}
                       class={generateStyles(x)}
                       onclick={() => setActiveContext_Heading(x[1])}
                     >
