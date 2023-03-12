@@ -43,7 +43,7 @@ function Hero() {
 
   return (
     <div
-      class={`grid p-10 pb-15 pt-0 justify-center rounded-none ${blueGradient} dark:${redGradient}`}
+      class={`grid shadow-md p-10 pb-15 pt-0 justify-center rounded-none ${blueGradient} dark:${redGradient}`}
     >
       <HeroText />
 
@@ -52,7 +52,7 @@ function Hero() {
         <img
           src="/banner.webp"
           alt="NvChad screenshot"
-          class="rounded-lg md:rounded-xl max-w-[90vw] 2xl:max-w-[1700px] softshadow  m-auto"
+          class="rounded-lg md:rounded-xl max-w-[90vw] 2xl:max-w-[1700px] softshadow m-auto"
         />
       </div>
     </div>
