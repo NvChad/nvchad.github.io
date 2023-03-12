@@ -118,6 +118,10 @@ function ThemeGallery() {
               shadow-b-md
               width={2560}
               height={1440}
+              onclick={() => {
+                setZoomedImgPath(key);
+                setGalleryStatus(!galleryShown());
+              }}
             />
 
             {/* theme titles & fullscreen btn */}
@@ -162,7 +166,11 @@ function ImageZoomed() {
         <div i-ion:close></div>
         Close
       </button>
-      <img src={zoomedImg()} h-auto w-full class="z-[9999]" rounded-lg softShadow />
+      <img
+        src={zoomedImg()}
+        class="z-[9999]"
+        class="rounded-lg softShadow h-auto w-full"
+      />
     </div>
   );
 }
