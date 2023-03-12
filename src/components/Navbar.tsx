@@ -121,9 +121,9 @@ function Searchbar() {
   // creadte algolia  docsearch
   createEffect(() => {
     docsearch({
-      appid: "bojs19ch35",
-      apikey: "c74ee96af1dea95b6e189501983733f8",
-      indexname: "nvchad",
+      appId: "bojs19ch35",
+      apiKey: "c74ee96af1dea95b6e189501983733f8",
+      indexName: "nvchad",
       container: "#docsearch",
     });
   });
