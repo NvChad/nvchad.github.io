@@ -69,6 +69,15 @@ function Docs() {
 
           setHeadings(headings);
           generateActiveContext();
+
+          // check if current link has anchor link
+          const hash = location.hash;
+
+          // if yes then autoscroll to it
+          if ((hash.match(/#/g)).length == 2) {
+            const id_name = hash.match(/#(.*)#(.*)/)[2];
+            document.getElementById(id_name).scrollIntoView();
+          }
         }, 50);
       },
     ),
