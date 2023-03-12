@@ -25,7 +25,7 @@
   },
   "scripts": {
     "dev": "vite --host",
-    "build": "vite build && cp CNAME dist/",
+    "build": "vite build && cp CNAME dist/ && cp 404.html dist/",
     "preview": "vite preview"
   }
 }
