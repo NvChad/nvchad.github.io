@@ -37,7 +37,7 @@ function NestedLabels(props: any) {
 
       {/* collapsable nested links */}
       <Show when={showLinks()}>
-        <div class="grid pl-4 gap-3 rounded-none">
+        <div class="grid pl-4 gap-3 rounded-none"border="0 l solid slate-2 dark:dark-4" ml-3 pl-5>
           {props.labels.map((x: any) => (
             <A
               activeClass="text-slate-7 dark:text-white-2 font-bold"
