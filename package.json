@@ -2,6 +2,8 @@
   "name": "nvchad website",
   "version": "0.4.1",
   "type": "module",
+  "main": "index.html",
+  "fallback": "404.html",
   "dependencies": {
     "@docsearch/css": "^3.3.3",
     "@docsearch/js": "3",

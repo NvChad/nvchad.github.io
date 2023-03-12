@@ -13,7 +13,7 @@ const el = document.querySelector("html")!;
 el.className = localStorage.theme || "light";
 
 render(() => (
-  <Router base="/">
+  <Router>
     <App />
   </Router>
 ), root);
