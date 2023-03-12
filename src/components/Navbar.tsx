@@ -103,14 +103,14 @@ export function BtnLinks() {
       <Searchbar />
 
       {Btns.map((x) => (
-        <a
+        <A
           text="slate-8 dark:slate-4"
           href={x[1]}
           aria-label={x[2]}
           class={x[0]}
         >
           {x[0]}
-        </a>
+        </A>
       ))}
       <ThemeToggleBtn display="hidden md:vertCentered" />
     </div>

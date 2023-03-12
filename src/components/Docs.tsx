@@ -1,4 +1,4 @@
-import { Outlet, useLocation } from "@solidjs/router";
+import { A, Outlet, useLocation } from "@solidjs/router";
 import { createStore } from "solid-js/store";
 import { createEffect, createSignal, on, onCleanup, onMount } from "solid-js";
 import Sidebar from "./doc_comps/Sidebar";
@@ -128,13 +128,13 @@ function Docs() {
                   }`}
                 >
                   {contextHeadings.map((x: any) => (
-                    <a
-                      href={`#${x[1]}`}
+                    <A
+                      href={`${useLocation().pathname}#${x[1]}`}
                       class={generateStyles(x)}
                       onclick={() => setActiveContext_Heading(x[1])}
                     >
                       {x[1]}
-                    </a>
+                    </A>
                   ))}
                 </div>
               </div>
