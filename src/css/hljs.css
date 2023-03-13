@@ -27,7 +27,7 @@
 /*  Comment */
 .hljs-meta,
 .hljs-comment {
-  @apply text-slate-6;
+  @apply text-slate-5;
 }
 
 /* Red */

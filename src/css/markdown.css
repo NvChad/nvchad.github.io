@@ -23,7 +23,7 @@
 }
 
 #DocContent a {
-  @apply text-blue-5 underline dark:text-blue-4 font-medium;
+  @apply text-blue-6 underline dark:text-blue-4 font-medium;
 }
 
 #DocContent abbr[title] {
