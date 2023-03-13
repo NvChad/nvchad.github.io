@@ -14,7 +14,7 @@ function News() {
               class="shadow-xl flex flex-col  gap-4 items-start"
               bg="dark:dark-3"
             >
-              <img src={`/news/${x.cover}`} w-full rounded-t-lg />
+              <img src={`/news/${x.cover}`} w-full rounded-t-lg loading="lazy" />
 
               <div h-full flex flex-col gap-10 justify-between p-10 pt-5>
                 <div>

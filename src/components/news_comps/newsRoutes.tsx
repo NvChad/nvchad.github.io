@@ -2,7 +2,7 @@ import { Route } from "@solidjs/router";
 import { createEffect, onCleanup, onMount } from "solid-js";
 
 import ContextTitles from "../ContextTitles";
-import { news  } from "./newsData";
+import { news } from "./newsData";
 
 import {
   assign_heading_ids,
@@ -14,12 +14,24 @@ import {
 function NewsPage(props: any) {
   const { component } = props;
 
-  onMount(() =>
+  onMount(() => {
+    const el = document.getElementById("newsContent");
+    const imgs = el?.querySelectorAll("img");
+
+    if (imgs) {
+      imgs.forEach((img, index) => {
+        // skip lazyloading first img
+        if (index != 0) {
+          img.setAttribute("loading", "lazy");
+        }
+      });
+    }
+
     window.addEventListener(
       "scroll",
       () => generateActiveContext("newsContent"),
-    )
-  );
+    );
+  });
 
   onCleanup(() =>
     window.removeEventListener(
