@@ -1,5 +1,5 @@
-export default () => {
-  const docContent = document.getElementById("DocContent");
+export default (id: string) => {
+  const docContent = document.getElementById(id);
   const preElements = docContent?.querySelectorAll("pre");
 
   preElements.forEach(function (preElement) {
@@ -15,7 +15,6 @@ export default () => {
       // use check icon for copyIcon div
       const copyIcon = button.querySelector("div");
       copyIcon.classList = "i-line-md:confirm-circle clickedCopyBtn";
-
 
       const content = preElement.textContent;
       navigator.clipboard.writeText(content);

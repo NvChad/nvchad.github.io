@@ -62,10 +62,6 @@ h2 {
 }
 
 /* news classes  */
-.news {
-  @apply max-w-[1400px] mx-auto p-5;
-}
-
 .news h2 {
   @apply dark:border-dark-4;
 }

@@ -55,7 +55,7 @@ const FeatureList = [
     icon: "i-ph:paint-brush-broad text-red-3",
     description: (
       <>
-        56+ inbuilt beautifully ported & custom themes! All the theme colors are overridable via user config.
+        57 inbuilt beautifully ported & custom themes! All the theme colors are overridable via user config.
       </>
     ),
   },
