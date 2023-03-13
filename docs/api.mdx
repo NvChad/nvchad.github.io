@@ -1,0 +1,47 @@
+# # NvChad API
+
+These are list of some functions which are provided by nvchad plugins that aren't included in the config. You can make commands & mappings out of them. 
+
+## Tbufpick 
+
+- Used for picking buffers by entering the numbers previewed on them after running this module.
+
+```lua
+require("nvchad_ui.tabufline").tbufpick()
+```
+
+## Arrange buffer
+
+- Used for arranging buffers left/right in the tabufline.
+
+```lua
+-- move buffer right
+require("nvchad_ui.tabufline").move_buf(1)
+
+-- move buffer left
+require("nvchad_ui.tabufline").move_buf(-1)
+```
+
+## Toggle transparency 
+
+- Used to toggle transparency, make sure that you have transparency option set in your chadrc.
+
+```lua
+require("base46").toggle_transparency()
+```
+
+## Toggle themes 
+
+- Used to toggle between 2 themes, make sure that you have `theme_toggle` option set in your chadrc.
+
+```lua
+require("base46").toggle_themes()
+```
+
+## Close all buffers
+
+- Used to close all the buffers in current tab. ( the close icon in tabufline handles this ).
+
+```lua
+require("nvchad_ui.tabufline").closeAllbufs()
+```

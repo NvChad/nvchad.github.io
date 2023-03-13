@@ -12,6 +12,7 @@ import Ui from "../../../docs/config/nvchad_ui.mdx";
 import Theming from "../../../docs/config/theming.mdx";
 
 import Features from "../../../docs/features.mdx";
+import Api from "../../../docs/api.mdx";
 import Debug from "../../../docs/debugging-config.mdx";
 import Contribute from "../../../docs/contribute.mdx";
 import Credits from "../../../docs/credits.mdx";
@@ -41,6 +42,7 @@ const sidebar_Items: Array<any> = [
   },
 
   ["Features", "features", "i-tabler:server-cog", Features],
+  ["Api Functions", "api", "i-mdi:atom-variant", Api],
   ["Debug config", "debugging-config", "i-ri-bug-line", Debug],
   ["Contributing", "contribute", "i-mdi-github", Contribute],
   ["Credits", "credits", "i-line-md:heart", Credits],
