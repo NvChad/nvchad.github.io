@@ -1,8 +1,8 @@
 import { Route } from "@solidjs/router";
-import { createEffect, createSignal, on, onCleanup, onMount } from "solid-js";
+import { createEffect, onCleanup, onMount } from "solid-js";
 
-import VersionTwo from "../../../news/v2_0.mdx";
 import ContextTitles from "../ContextTitles";
+import { news  } from "./newsData";
 
 import {
   assign_heading_ids,
@@ -10,18 +10,6 @@ import {
   contextHeadings,
   generateActiveContext,
 } from "../../utils";
-
-// data
-export const blogs: any = [
-  {
-    heading: "NvChad v2.0 released!",
-    details:
-      "This release builds gets on with new UI features in our ui plugin & usage of lazy.nvim. Improvements in startuptime & cachifying our theme plugin,  base46 totally",
-    component: <VersionTwo />,
-    link: "/news/v2.0",
-    cover: "v2.0.webp",
-  },
-];
 
 function NewsPage(props: any) {
   const { component } = props;
@@ -68,7 +56,7 @@ function NewsPage(props: any) {
 function NewsRoutes() {
   return (
     <>
-      {blogs.map((x: any) => (
+      {news.map((x: any) => (
         <Route
           path={x.link}
           element={<NewsPage component={x.component} />}
