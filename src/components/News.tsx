@@ -1,20 +1,26 @@
-import { blogs } from "./news_comps/newsRoutes";
+import { news } from "./news_comps/newsData";
 import { A } from "@solidjs/router";
 
 function News() {
   return (
     <div m="y-5 xl:y-10 x-auto" px-3 max="w-[1700px]">
       {/* overview cards */}
-      <div grid gap-10 class="md:grid-cols-2 2xl:grid-cols-3">
-        {blogs.map((x) => {
+      <div grid gap-5 class="md:grid-cols-2 2xl:grid-cols-3">
+        {news.map((x) => {
           {/* card */}
           return (
-            <div border="slate 0 dark:dark-4 solid" grid gap-5 shadow-xl bg='dark:dark-3'>
-              <img src={`/news/v2.0.webp`} w-full rounded-t-lg/>
+            <div
+              border="slate 0 dark:dark-4 solid"
+              class="shadow-xl flex flex-col  gap-4 items-start"
+              bg="dark:dark-3"
+            >
+              <img src={`/news/${x.cover}`} w-full rounded-t-lg loading="lazy" />
 
-              <div grid gap-5 p-10 pt-5>
-                <h2 class="headingUnderline m-0" pb-5>{x.heading}</h2>
-                <p text-lg  class="m-0 p-0">{x.details}</p>
+              <div h-full flex flex-col gap-10 justify-between p-10 pt-5>
+                <div>
+                  <h2 class="m-0" pb-5>{x.heading}</h2>
+                  <p text-lg class="m-0 p-0">{x.details}</p>
+                </div>
 
                 <A href={x.link}>
                   <button

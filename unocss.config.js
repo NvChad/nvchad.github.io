@@ -50,6 +50,7 @@ export default defineConfig({
     ["softShadow", { "box-shadow": "rgba(0, 0, 0, 0.35) 0px 5px 15px" }],
     ["lightenBg", { "filter": "brightness(125%)" }],
     ["darkenBg", { "filter": "brightness(93%)" }],
+    ["box", { "max-width": "1700px" }],
   ],
 
   shortcuts: [

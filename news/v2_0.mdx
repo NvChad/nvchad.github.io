@@ -1,13 +1,13 @@
 <div id='DocContent' class='news'> 
 
-##  NvChad v2.0 Release
+# # Announcing NvChad v2.0
 
 ![v2.0 poster](/news/v2.0.webp)
 
 <div my-10>
 
+## Changelog
 ```lua
-# Changelog
 
 ## Added
 
@@ -19,6 +19,7 @@
 - Ported 13 new themes to base46 
 - Made base46 generate compiled cache of highlight groups.
 - Make some chadrc ui options auto-reloadable.
+- Added types for chadrc options.
 
 
 ## Changed 
@@ -45,11 +46,11 @@ Meaning that each release **( version like v3.0 v4.0 etc )** will be maintained 
 
 So Whats new in this release?
 
-### Replacing packer.nvim with lazy.nvim
+## Using lazy.nvim
 
 - Lazy.nvim is used as the package manager, replacing packer so obviously it has minor syntax changes.
 
-### Cachifying base46 completely 
+## Cachifying base46 
 
 - Before base46 used to do some sort of computations like checking for user define highlight groups, highlight groups overrides, theme specific overrides i.e if user has changed colors in specific themes etc and then it would generate a final list of all highlight groups -> then load them.
 
@@ -65,20 +66,20 @@ So Whats new in this release?
 
 - 13 New themes have been added so now we in total have around 57 ~ themes! Check the [`theme page`](/themes) for more details 
 
-### NvDash
+## NvDash
 
 - Nvdash is NvChad's minimal dashboard module, It's very simple at this stage and will get more features in the future!
 - <u>NvDash</u> is the command
 
 ![nvdash](/features/nvdash.webp)
 
-### New cmp styles
+## New cmp styles
 
 - Now we have around 4-5 cmp styles, you can remove their icons, cmp_kind text directly from chadrc itself now.
 
 ![nvim-cmp](/features/cmp.webp)
 
-### Statusline 
+## Statusline themes
 
 - 3 new statusline themes have been added! ( the first one is the default )
 
@@ -96,9 +97,20 @@ So Whats new in this release?
 <iframe src="https://www.youtube.com/embed/IljDD4cjgKc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allow='fullscreen;'></iframe>
 </div>
 
+## Chadrc completion
+
+![chadrc types](/features/chadrc_types.webp)
+
+- Big thanks to @Lucario387 for adding types to chadrc options. This will get you autocompletions for all nvchad options in the chadrc file!
+
+## Example_config 
+
+- To have a custom config quickstart, you can check the [example_config](https://github.com/NvChad/example_config/). If you want something featureful, check its `v2.0_featureful` branch.
+
+
 ## Notice To v1.0 users
 
 As there's lazy.nvim being used in this release so this might be a breaking change for you, but dont worry, you can still use old nvchad version and slowly migrate to v2.0. 
 
-- Migration changes are mentioned in this <u>[github issue](https://github.com/NvChad/NvChad/issues/1809)</u>
+- Migration changes are mentioned in this [section](http://nvchad.com/#/news/v2.0_migration).
 </div>

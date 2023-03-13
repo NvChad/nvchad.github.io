@@ -31,7 +31,7 @@ function Communities() {
       <div flex gap-5 bg="dark-4 dark:dark-3" p="3 x-4">
         {links.map((x) => {
           return (
-            <a Capitalize href={x[2]} vertCentered>
+            <a Capitalize href={x[2]} aria-label={x[0]} vertCentered>
               <div class={x[1]} text-2xl rounded-none></div>
             </a>
           );
@@ -56,7 +56,13 @@ function Footer() {
           <div grid text-start>
             <p text-lg>Powered by Github pages</p>
 
-            <div flex vertCentered justify-center bg="dark-4 dark:dark-3" p="3 x-4">
+            <div
+              flex
+              vertCentered
+              justify-center
+              bg="dark-4 dark:dark-3"
+              p="3 x-4"
+            >
               <div i-logos-solidjs-icon></div> Solidjs +{" "}
               <div i-simple-icons:unocss rounded-none></div> Unocss
             </div>

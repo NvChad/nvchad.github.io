@@ -67,6 +67,7 @@ export const ThemeToggleBtn = (props: any) => {
         el.className = localStorage.theme = theme();
       }}
       class={`shadow-lg ${props.display} text-xl p-2 bg-slate-8 text-white-1 dark:bg-dark-3 rounded-full`}
+      aria-label="theme toggler"
     >
       <div
         text-base
@@ -133,7 +134,7 @@ function Searchbar() {
       id="searchbar"
       class="vertCentered text-base w-fit p-2 px-3 rounded-lg"
       bg="slate-1 dark:dark-3"
-      text="grey-1"
+      text="slate-6"
       onclick={() => {
         alert("This is WIP!");
         document.querySelector(".DocSearch").click();
@@ -143,9 +144,9 @@ function Searchbar() {
 
       Search
       <div
-        border="1 solid grey-1 dark:dark-4"
+        border="1 solid slate-6 dark:dark-4"
         p="1 x-2"
-        class="ml-3 text-grey-1 dark:text-slate-4 text-sm rounded-lg"
+        class="ml-3 text-slate-7 dark:text-slate-4 text-sm rounded-lg"
       >
         Ctrl + k
       </div>

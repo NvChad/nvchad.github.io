@@ -5,7 +5,6 @@
   -webkit-text-size-adjust: 100%;
   line-height: 1.6;
   word-wrap: break-word;
-  letter-spacing: 0.01em;
   @apply xl:pr-10 pb-10;
 }
 
@@ -24,7 +23,7 @@
 }
 
 #DocContent a {
-  @apply text-blue-5 underline dark:text-blue-4 font-medium;
+  @apply text-blue-6 underline dark:text-blue-4 font-medium;
 }
 
 #DocContent abbr[title] {

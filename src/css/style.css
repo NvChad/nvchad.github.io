@@ -76,10 +76,24 @@ h2 {
 }
 
 .news img {
-  @apply w-full rounded-lg softShadow;
+  @apply w-full rounded-lg !shadow-lg;
 }
 
 .news code {
   @apply bg-slate-1 p-1 rounded-lg dark:bg-dark-3;
   @apply text-[14px];
+}
+
+img {
+  animation: fadeIn 0.5s ease 0s 1 normal forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
