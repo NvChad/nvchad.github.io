@@ -24,7 +24,7 @@ function ContextTitles() {
   const [contextLabelsShown, toggleContextLabels] = createSignal(false);
 
   return (
-    <div class="top-0 sticky my-5 xl:grid xl:h-[calc(100vh-4rem)]">
+    <div class="top-0 sticky my-5 xl:grid xl:h-[calc(100vh-11rem)]">
       <div class="h-fit grid">
         {/* on this page btn, shows only on small screens*/}
         <button
