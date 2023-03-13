@@ -76,7 +76,7 @@ h2 {
 }
 
 .news img {
-  @apply w-full rounded-lg softShadow;
+  @apply w-full rounded-lg !shadow-lg;
 }
 
 .news code {
