@@ -96,7 +96,7 @@ function LangListBtns() {
   );
 }
 
-function ThemeGallery() {
+function Gallery() {
   return (
     <div
       class={`grid gap-6 [&_*]:max-w-[100%] [&_*]:h-auto ${
@@ -108,13 +108,21 @@ function ThemeGallery() {
         const theme = filename.split(".")[0];
         const theme_type = theme.includes("light") ? "light" : "dark";
 
+        const label_position = (gridMode())
+          ? "top-0 right-0 rounded-br-none rounded-tl-none"
+          : "bottom-0 left-1/2 transform -translate-x-1/2 rounded-b-none";
+
+        const label_color = (theme_type == "dark")
+          ? "bg-white-1 text-dark-3"
+          : " bg-dark-4 text-white-1";
+
         return (
-          <div softShadow grid>
+          <div softShadow grid relative>
             {/* theme screnshot */}
             <img
               loading="lazy"
               src={key}
-              rounded="lg b-none"
+              rounded="lg"
               shadow-b-md
               width={2560}
               height={1440}
@@ -126,27 +134,13 @@ function ThemeGallery() {
 
             {/* theme titles & fullscreen btn */}
             <div
-              class={`vertCentered justify-between rounded-t-none ${
-                theme_type == "light"
-                  ? "bg-dark-4 text-white-1 dark:bg-dark-3"
-                  : "bg-white-1  dark:bg-dark-3 "
-              }`}
+              class={`absolute vertCentered justify-between ${label_position} ${label_color}`}
               font-medium
               capitalize
               p="2 x-3"
             >
-              <button i-ph-palette-bold class="dark:bg-white-2"></button>
               {/* get theme name from theme path*/}
               {theme}
-
-              <button
-                class="dark:bg-blue i-bx:fullscreen"
-                onclick={() => {
-                  setZoomedImgPath(key);
-                  setGalleryStatus(!galleryShown());
-                }}
-              >
-              </button>
             </div>
           </div>
         );
@@ -182,9 +176,9 @@ function Themes() {
 
       {galleryShown() &&
         (
-          <div grid class="gap-5 my-6" p="x-4 xl:0">
+          <div grid class="gap-5 my-6" p="x-4 2xl:0">
             <LangListBtns />
-            <ThemeGallery />
+            <Gallery />
           </div>
         )}
     </div>
