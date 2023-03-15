@@ -47,9 +47,9 @@ export const assign_heading_ids = () => {
 export const autoscroll_toID = () => {
   const hash = location.hash;
 
-  // if currentl link has an anhcor link then autoscroll to it
-  if ((hash.match(/#/g)).length == 2) {
-    const id_name = hash.match(/#(.*)#(.*)/)[2];
-    document.getElementById(id_name).scrollIntoView();
+  // if currentl link has an anhcor link (with # prefix) then autoscroll to it
+  if (hash[0] === "#") {
+    const id = hash.substring(1);
+    document.getElementById(id).scrollIntoView();
   }
 };
