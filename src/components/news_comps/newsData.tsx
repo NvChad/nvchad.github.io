@@ -1,5 +1,5 @@
-import VersionTwo from "../../../news/v2_0.mdx";
-import VersionTwo_Migration from "../../../news/v2_0_migration.mdx";
+import VersionTwo from "../../../news/v2.0.mdx";
+import VersionTwo_Migration from "../../../news/v2.0_migration.mdx";
 
 export const news: any = [
   {
