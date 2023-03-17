@@ -1,3 +1,3 @@
 # Official site for NvChad 
 
-Built using solidjs + unocss from scratch. No SSG's were used, this is its own SSG.
+Built using solidjs + unocss from scratch. No site generators were used for this, This is its own thing.
