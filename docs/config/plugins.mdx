@@ -2,7 +2,6 @@
 
 - NvChad uses [lazy.nvim](https://github.com/folke/lazy.nvim) for plugins management so its syntax is valid.
 - Basically NvChad expects a user plugin table, which then gets merged with the default plugins table.
-- So plugins defined in the custom plugins table override the plugin specs defined in default plugins table too.
 
 
 ## Lazy loading
@@ -20,15 +19,18 @@
 - In NvChad (lazy = true) is set to all plugins, so if you want a plugin to be enabled on startup, do (lazy = false)
 - Some examples : 
 
+**`custom/chadrc.lua`**  :
 ```lua
--- custom/chadrc.lua
 M.plugins = "custom.plugins"
 ```
+<br/>
+
+- Do know you shouldnt save anything in `custom/plugins/` dir. We're using the import feature provided by lazy.nvim so it'll import all the files in a dir and expect each file to return plugin tables etc which we dont want so we just create "custom/plugins.lua" file and then lazy will import only this file.
 
 <br/>
 
+**`custom/plugins.lua`** :
 ```lua
--- custom/plugins.lua
 return {
 
   -- Install plugin
@@ -39,13 +41,10 @@ return {
     "Pocco81/TrueZen.nvim",
     cmd = { "TZAtaraxis", "TZMinimalist" },
     config = function()
-      require "custom.plugins.truezen"
+      require "custom.configs.truezen"
     end,
   }
 
-  -- Override plugin specs options
-  { "folke/which-key.nvim", enabled = true },
-  
   -- opts overrides default plugin config's option
   {
     "nvim-treesitter/nvim-treesitter",

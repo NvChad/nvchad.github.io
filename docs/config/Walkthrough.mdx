@@ -117,8 +117,12 @@ And the result is :
 - **core/utils -** helpful functions
 - The custom dir contains all the user configurations, `chadrc.lua` and `init.lua` in `custom dir` are the main files.
 
-
 ![GitHub Logo](/illustrations/config_nutshell.webp)
+
+From now whenever we talk about paths, do know that they're relative to the lua folder in your nvim config.
+
+- To extend nvchad the user should use 2 files in the custom dir ( chadrc.lua and init.lua ). You shouldn't make changes outside the custom dir.
+- The chadrc file is meant to override the `core/default_config.lua` file so check it to know all the available options.
 
 ## Themes
 
@@ -126,6 +130,6 @@ And the result is :
 
 ## Mappings
 
-- `:Telescope keymaps` 
-- NvCheatsheet  ( command )
+- `Telescope keymaps` 
+- `NvCheatsheet`
 

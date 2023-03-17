@@ -31,6 +31,21 @@ for _, lsp in ipairs(servers) do
   }
 end
 ```
+<br/>
+
+```lua
+--  Without the loop it would look like this 
+
+lspconfig.html.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+}
+
+lspconfig.cssls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+}
+```
 ## Mason.nvim
 
 - The Mason.nvim plugin is used to install lspservers, formatters, linters, and debug adapters. 
@@ -44,12 +59,13 @@ end
       ensure_installed = {
         "lua-language-server",
         "html-lsp",
-        "clangd",
-        "prettier"
+        "prettier",
+        "stylua"
       },
     },
   }
 ```
 <br/>
+
 - Reopen nvim & run the `:MasonInstallAll` command. This will install the listed binaries in the `ensure_installed` table.
 - This only downloads the binaries. The lsp server/formatters won't run automatically. You need to configure a custom lspconfig and possibly some plugin like null-ls/neoformat etc for the formatters to work.

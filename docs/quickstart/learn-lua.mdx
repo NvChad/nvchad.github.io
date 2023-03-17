@@ -1,8 +1,3 @@
-## Introduction 
-
-- Learning basic lua is highly recommended when configuring neovim config. It's a really simple & small language, this tutorial would barely take  
-5-10 minutes if you already have experience in programming.
-
 ## Comments
 
 ```lua
@@ -25,12 +20,7 @@ local name = "sid" -- string
 local isAlive = true -- boolean
 local a = nil --no value or invalid value
 
--- numbers
-local a = 1
-local b = 2
-print(a + b) -- 3
-
--- increment
+-- increment in numbers
 local n = 1
 n = n + 1
 print(n) -- 2
@@ -39,15 +29,9 @@ print(n) -- 2
 -- Concatenate strings
 local phrase = "I am"
 local name = "Sid"
+
 print(phrase .. " " .. name) -- I am Sid
 print("I am " .. "Sid")
-
--- Boolean
-local isAlive = true
-print(isAlive) -- true
-
-isAlive = false
-print(isAlive) -- false
 ```
 
 ## Comparison Operators
@@ -116,10 +100,10 @@ end
 You can also invert a value with the **not** keyword:
 
 ```lua
-local x = 18
+local isAlive = true
 
-if not x == 18 then
-  print("kiddo!") -- prints nothing as x is 18
+if not isAlive then
+  print(" ye ded!")
 end
 ```
 
@@ -263,7 +247,7 @@ Import code from other files
 require("path")
 
 -- for example in ~/.config/nvim/lua , all dirs and files are accessable via require
-
+-- Do know that all files in that lua folder are in path!
 -- ~/.config/nvim/lua/custom 
 -- ~/.config/nvim/lua/custom/init.lua
 
