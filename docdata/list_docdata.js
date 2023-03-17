@@ -34,17 +34,32 @@ files.forEach((routes) => {
   const mdString = fs.readFileSync(`./${routes}`, "utf-8");
 
   // split string into array of strings
-  const sentences = mdString.split(/\n+(?=\S)/);
+  const sentences = mdString.split(
+    /\n\s*\n(?!(?:.*```[\s\S]*?```))/,
+  );
 
   // make a new array with named keys
-  const final_arr = sentences.map((x) => {
-    return {
-      sentence: x.replace(/^\s*-\s*/, ""),
-      route: "/" + routes.replace(/\.[^/.]+$/, ""),
-    };
+  const final_arr = [];
+
+  sentences.map((x) => {
+    // dont include codeblocks and certain strings
+    if (
+      !(x.includes("<div>") || x.includes("</div>") || x.includes("<iframe>") ||
+        x.includes("\n"))
+    ) {
+      final_arr.push({
+        sentence: x.replace(/^\s*-\s*/, ""),
+        route: "/" + routes.replace(/\.[^/.]+$/, ""), // rm file extension
+      });
+    }
   });
 
   database = [...database, final_arr];
 });
 
-fs.writeFileSync("./chad.js", "return " + JSON.stringify(database, null, 2));
+// parse data
+let data = JSON.stringify(database);
+data = data.replace(/^\[|\]$/g, ""); // remove extra []'s
+data = `return ${data}`;
+
+fs.writeFileSync("./chad.js", data);
