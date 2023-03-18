@@ -228,7 +228,7 @@ print_num(`,i(e.span,{className:"hljs-number",children:"5"}),") ",i(e.span,{clas
 }
 
 `,i(e.span,{className:"hljs-comment",children:"-- both print sid"}),`
-prrint(info[`,i(e.span,{className:"hljs-string",children:'"name"'}),`])
+`,i(e.span,{className:"hljs-built_in",children:"print"}),"(info[",i(e.span,{className:"hljs-string",children:'"name"'}),`])
 `,i(e.span,{className:"hljs-built_in",children:"print"}),`(info.name)
 
 `,i(e.span,{className:"hljs-comment",children:"-- Loop by pairs"}),`
@@ -241,8 +241,8 @@ prrint(info[`,i(e.span,{className:"hljs-string",children:'"name"'}),`])
 `,i(e.h3,{children:i(e.strong,{children:"Nested Tables"})}),`
 `,i(e.pre,{children:p(e.code,{className:"hljs language-lua",children:[i(e.span,{className:"hljs-comment",children:"-- Nested lists"}),`
 `,i(e.span,{className:"hljs-keyword",children:"local"}),` data = {
-    { `,i(e.span,{className:"hljs-string",children:'"Sid"'}),", ",i(e.span,{className:"hljs-number",children:"20"}),` },
-    { `,i(e.span,{className:"hljs-string",children:'"Tim"'}),", ",i(e.span,{className:"hljs-number",children:"90"}),` },
+    { `,i(e.span,{className:"hljs-string",children:'"sid"'}),", ",i(e.span,{className:"hljs-number",children:"20"}),` },
+    { `,i(e.span,{className:"hljs-string",children:'"tim"'}),", ",i(e.span,{className:"hljs-number",children:"90"}),` },
 }
 
 `,i(e.span,{className:"hljs-keyword",children:"for"})," i = ",i(e.span,{className:"hljs-number",children:"1"}),", #data ",i(e.span,{className:"hljs-keyword",children:"do"}),`
@@ -252,7 +252,7 @@ prrint(info[`,i(e.span,{className:"hljs-string",children:'"name"'}),`])
 `,i(e.span,{className:"hljs-comment",children:"-- Nested dictionaries"}),`
 `,i(e.span,{className:"hljs-keyword",children:"local"}),` data = {
     sid = { age = `,i(e.span,{className:"hljs-number",children:"20"}),` },
-    `,i(e.span,{className:"hljs-built_in",children:"time"})," = { age = ",i(e.span,{className:"hljs-number",children:"90"}),` },
+    tim = { age = `,i(e.span,{className:"hljs-number",children:"90"}),` },
 }
 `]})}),`
 `,i(e.h2,{children:"Modules"}),`
