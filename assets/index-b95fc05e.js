@@ -482,7 +482,7 @@ prrint(info[`,i(e.span,{className:"hljs-string",children:'"name"'}),`])
 }
 `]})})]})}function Lo(n={}){const{wrapper:e}=n.components||{};return e?i(e,Object.assign({},n,{children:i(mr,n)})):mr(n)}function fr(n){const e=Object.assign({h2:"h2",ul:"ul",li:"li",a:"a",pre:"pre",code:"code",span:"span"},n.components);return p(G,{children:[i(e.h2,{children:"Setup lsp server"}),`
 `,p(e.ul,{children:[`
-`,p(e.li,{children:["Check ",i(e.a,{href:"https://github.com/neovim/nvim-lspconfig",children:"lspconfig repo"})," to get a general overview of how the config works."]}),`
+`,p(e.li,{children:["Skim through ",i(e.a,{href:"https://github.com/neovim/nvim-lspconfig",children:"lspconfig repo"})," to get a general overview of how the config works."]}),`
 `,p(e.li,{children:["Then check ",i(e.a,{href:"https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md",children:"server_configurations.md"})," to make sure your language's lsp server is present there."]}),`
 `]}),`
 `,i(e.pre,{children:p(e.code,{className:"hljs language-lua",children:[i(e.span,{className:"hljs-comment",children:"-- We are just modifying lspconfig's config spec"}),`
@@ -592,7 +592,6 @@ null_ls.setup {
 `,p(e.ul,{children:[`
 `,p(e.li,{children:["Format code : ",i(e.code,{children:"<leader> + fm"})]}),`
 `,i(e.li,{children:"linter/formatter/debugger listed in your null-ls config must be downloaded via mason or system wide."}),`
-`,i(e.li,{children:"Do know that LSP server for your language must be active & then the relevant null-ls formatter/linter will work."}),`
 `]})]})}function Ro(n={}){const{wrapper:e}=n.components||{};return e?i(e,Object.assign({},n,{children:i(_r,n)})):_r(n)}function gr(n){const e=Object.assign({h2:"h2",ul:"ul",li:"li",code:"code",pre:"pre",span:"span",strong:"strong"},n.components);return p(G,{children:[i(e.h2,{children:"Overview"}),`
 `,p(e.ul,{children:[`
 `,p(e.li,{children:["C = ",i("kbd",{children:" Ctrl "})]}),`
