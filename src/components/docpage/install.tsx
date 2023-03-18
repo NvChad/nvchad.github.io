@@ -10,7 +10,7 @@ const windows_cmd =
   "git clone https://github.com/NvChad/NvChad $HOME\\AppData\\Local\\nvim --depth 1 && nvim";
 
 const docker_cmd = `docker run -w /root -it --rm alpine:latest sh -uelic '
-  apk add git nodejs neovim ripgrep alpine-sdk --update
+  apk add git nodejs neovim ripgrep build-base --update
   git clone https://github.com/NvChad/NvChad ~/.config/nvim
   nvim
   '`;
