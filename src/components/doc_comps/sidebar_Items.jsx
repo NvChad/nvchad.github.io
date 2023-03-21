@@ -17,7 +17,7 @@ import Debug from "../../../docs/debugging-config.mdx";
 import Contribute from "../../../docs/contribute.mdx";
 import Credits from "../../../docs/credits.mdx";
 
-const sidebar_Items: Array<any> = [
+const sidebar_Items = [
   {
     label: ["Quickstart", "i-mingcute:safe-flash-fill"],
     items: [

@@ -1,7 +1,7 @@
 import { Route } from "@solidjs/router";
 import sidebar_Items from "./sidebar_Items";
 
-let routes_arr: Array<any> = [];
+let routes_arr = [];
 
 sidebar_Items.forEach((x) => {
   if (x.label) routes_arr = [...routes_arr, ...x.items];

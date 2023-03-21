@@ -8,7 +8,7 @@ import {
 } from "../utils";
 
 // style inactive/active title differently
-function generateStyles(x: any) {
+function generateStyles(x) {
   let styles =
     `rounded-r-lg py-2  px-5 text-darkgrey xl:border-solid border-0 border-l-2 border-slate-2 dark:border-dark-3 ${
       activeContext_Heading() == x[1]
@@ -45,7 +45,7 @@ function ContextTitles() {
             contextLabelsShown() ? "" : "hidden"
           }`}
         >
-          {contextHeadings.map((x: any) => (
+          {contextHeadings.map((x) => (
             <A
               href={`${useLocation().pathname}#${
                 x[1].replaceAll(/[ .&]/g, "_")

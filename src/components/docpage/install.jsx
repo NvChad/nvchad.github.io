@@ -17,7 +17,7 @@ const docker_cmd = `docker run -w /root -it --rm alpine:latest sh -uelic '
 
 const [oscmd, setOSCMD] = createSignal(unix_cmd);
 
-const Btn = (props: any) => {
+const Btn = (props) => {
   const { cmd, os, icon } = props;
 
   return (

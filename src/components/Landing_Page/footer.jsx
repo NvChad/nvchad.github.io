@@ -1,4 +1,4 @@
-const links: any = [
+const links = [
   [
     "github discussions",
     "i-mdi:github",

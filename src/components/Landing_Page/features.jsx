@@ -75,7 +75,7 @@ const FeatureList = [
   },
 ];
 
-function Feature(props: any) {
+function Feature(props) {
   const { details } = props;
 
   return (

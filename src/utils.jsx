@@ -1,7 +1,7 @@
 import { createSignal } from "solid-js";
 import { createStore } from "solid-js/store";
 
-function isElementVisible(myElement: any) {
+function isElementVisible(myElement) {
   const rect = myElement.getBoundingClientRect();
   const isVisible = rect.top >= 0 &&
     rect.left >= 0 &&
@@ -18,7 +18,7 @@ export const [activeContext_Heading, setActiveContext_Heading] = createSignal(
 
 export const [contextHeadings, setHeadings] = createStore([]);
 
-export const generateActiveContext = (id: string) => {
+export const generateActiveContext = (id) => {
   let docs_Elements = document.getElementById(id);
   let headings = docs_Elements?.querySelectorAll("h2,h3");
 
@@ -34,9 +34,9 @@ export const generateActiveContext = (id: string) => {
 export const assign_heading_ids = () => {
   const docs = document.getElementById("DocContent");
   const headingElements = docs?.querySelectorAll("h2, h3");
-  const headings: Array<Array<string>> = [];
+  const headings = [];
 
-  headingElements?.forEach((item: any) => {
+  headingElements?.forEach((item) => {
     item.id = item.innerText.replaceAll(/[ .&]/g, "_");
     headings.push([item.localName, item.innerText]);
   });

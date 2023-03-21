@@ -38,7 +38,7 @@ function Docs() {
       () => useLocation().pathname,
       () => {
         setTimeout(() => {
-          create_copyIcon("DocContent");
+          create_copyIcon('DocContent');
           assign_heading_ids();
           generateActiveContext("DocContent");
           autoscroll_toID();
@@ -63,7 +63,6 @@ function Docs() {
             <div id="DocContent" w-full>
               <Outlet />
             </div>
-
             <NextPrevPageBtns />
           </div>
 
@@ -72,7 +71,7 @@ function Docs() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 export default Docs;

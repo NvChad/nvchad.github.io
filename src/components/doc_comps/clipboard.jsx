@@ -1,4 +1,4 @@
-export default (id: string) => {
+export default (id) => {
   const docContent = document.getElementById(id);
   const preElements = docContent?.querySelectorAll("pre");
 

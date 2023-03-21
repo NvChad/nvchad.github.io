@@ -1,11 +1,11 @@
 import { A, useLocation } from "@solidjs/router";
 import sidebar_Items from "./sidebar_Items";
 
-let sorted_lables: any = [];
+let sorted_lables = [];
 
 sidebar_Items.forEach((el) => {
   if (!Array.isArray(el)) {
-    el.items.forEach((labels: Array<string>) => {
+    el.items.forEach((labels) => {
       sorted_lables.push(labels);
     });
   } else {
@@ -22,11 +22,11 @@ arr = [
 ]
 */
 
-function generateTxt(direction: Number, wantLink?: boolean) {
+function generateTxt(direction, wantLink) {
   let result = "";
   let current_path = useLocation().pathname.replace(/^\/docs\//, "");
 
-  sorted_lables.forEach((el: any, index: any) => {
+  sorted_lables.forEach((el, index) => {
     if (current_path == el[1] && sorted_lables[index + direction]) {
       result = sorted_lables[index + direction][wantLink ? 1 : 0];
     }

@@ -4,9 +4,9 @@ import sidebar_Items from "../doc_comps/sidebar_Items";
 import { createSignal, Show } from "solid-js";
 import { sideBarShown } from "../Docs";
 
-function NestedLabels(props: any) {
+function NestedLabels(props) {
   const is_ActiveRoute = props.labels.filter(
-    (item: string) => useLocation().pathname == `/docs/${item[1]}`,
+    (item) => useLocation().pathname == `/docs/${item[1]}`,
   ).length;
 
   const [showLinks, collapseLinks] = createSignal(
@@ -38,7 +38,7 @@ function NestedLabels(props: any) {
       {/* collapsable nested links */}
       <Show when={showLinks()}>
         <div class="grid pl-4 gap-3 rounded-none"border="0 l solid slate-2 dark:dark-4" ml-3 pl-5>
-          {props.labels.map((x: any) => (
+          {props.labels.map((x) => (
             <A
               activeClass="text-slate-7 dark:text-white-2 font-bold"
               href={x[1]}
@@ -57,13 +57,11 @@ function SideBar() {
      bg-white-1 dark:bg-dark-2
      text-gray-600 dark:text-grey rounded-none pt-0 p-7 xl:p-0`;
 
-  const LinkStyles = "pl-0 vertCentered";
-
   return (
     <div class={styles} hidden={sideBarShown() ? false : true}>
       {/* sidebar labels & links */}
       <div h-full flex flex-col gap-5 class="[&_*]:text-base dark:text-slate-4">
-        {sidebar_Items.map((item: any) => {
+        {sidebar_Items.map((item) => {
           return item.label
             ? <NestedLabels BtnLabel={item.label} labels={item.items} />
             : (

@@ -1,8 +1,6 @@
 import { A, useLocation } from "@solidjs/router";
 import { createEffect, createSignal } from "solid-js";
 import { showSidebar, sideBarShown } from "./Docs";
-import docsearch from "@docsearch/js";
-import "@docsearch/css";
 
 // for toggling menu links, btns on mobile
 const [linksShown, showLinks] = createSignal(false);
@@ -54,7 +52,7 @@ function DocsBtn() {
   );
 }
 
-export const ThemeToggleBtn = (props: any) => {
+export const ThemeToggleBtn = (props) => {
   const [theme, setTheme] = createSignal(
     localStorage && localStorage.theme ? localStorage.theme : "light",
   );
@@ -63,7 +61,7 @@ export const ThemeToggleBtn = (props: any) => {
     <button
       onclick={() => {
         setTheme(theme() == "light" ? "dark" : "light");
-        const el = document.querySelector("html")!;
+        const el = document.querySelector("html");
         el.className = localStorage.theme = theme();
       }}
       class={`shadow-lg ${props.display} text-xl p-2 bg-slate-8 text-white-1 dark:bg-dark-3 rounded-full`}
@@ -81,7 +79,7 @@ export const ThemeToggleBtn = (props: any) => {
 };
 
 export function BtnLinks() {
-  const Btns: Array<Array<any>> = [
+  const Btns = [
     [
       "i-ph:chat-teardrop-text text-3xl",
       "#community",
@@ -97,9 +95,6 @@ export function BtnLinks() {
       }`}
     >
       {/* hide links by default on mobile */}
-
-      <div hidden id="docsearch"></div>
-
       <DocsBtn />
       <Searchbar />
 
@@ -119,16 +114,6 @@ export function BtnLinks() {
 }
 
 function Searchbar() {
-  // creadte algolia  docsearch
-  createEffect(() => {
-    docsearch({
-      appId: "BOJS19CH35",
-      apiKey: "c74ee96af1dea95b6e189501983733f8",
-      indexName: "nvchad",
-      container: "#docsearch",
-    });
-  });
-
   return (
     <button
       id="searchbar"
@@ -137,7 +122,6 @@ function Searchbar() {
       text="slate-6"
       onclick={() => {
         alert("This is WIP!");
-        document.querySelector(".DocSearch").click();
       }}
     >
       <div i-ion-search></div>

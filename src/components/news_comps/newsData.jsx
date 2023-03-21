@@ -1,7 +1,7 @@
 import VersionTwo from "../../../news/v2.0.mdx";
 import VersionTwo_Migration from "../../../news/v2.0_migration.mdx";
 
-export const news: any = [
+export const news = [
   {
     heading: "NvChad v2.0 released!",
     details:

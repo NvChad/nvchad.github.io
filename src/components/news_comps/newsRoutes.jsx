@@ -11,7 +11,7 @@ import {
   generateActiveContext,
 } from "../../utils";
 
-function NewsPage(props: any) {
+function NewsPage(props) {
   const { component } = props;
 
   onMount(() => {
@@ -68,7 +68,7 @@ function NewsPage(props: any) {
 function NewsRoutes() {
   return (
     <>
-      {news.map((x: any) => (
+      {news.map((x) => (
         <Route
           path={x.link}
           element={<NewsPage component={x.component} />}

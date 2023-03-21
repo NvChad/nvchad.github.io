@@ -33,7 +33,7 @@ const languages = [
 languages.map((lang, i) => {
   const lang_imglist = lang.images;
 
-  let arr: Array<string> = [];
+  let arr = [];
 
   Object.keys(lang_imglist).map((key) => {
     arr.push(key.replace("../../public", ""));
