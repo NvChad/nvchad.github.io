@@ -1,11 +1,10 @@
 ## Setup lsp server
 
-- Skim through [lspconfig repo](https://github.com/neovim/nvim-lspconfig) to get a general overview of how the config works.
-- Then check [server_configurations.md](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md) to make sure your language's lsp server is present there.
+Before starting, it is strongly recommended that you walk trhough the LSP configuration: [`lspconfig` repository](https://github.com/neovim/nvim-lspconfig). Then check [server_configurations.md](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md) to make sure your language's LSP server is present there. You can install LSP servers manually or through `mason.nvim` (recommended option).
 
 
 ```lua
--- We are just modifying lspconfig's config spec
+-- In order to modify the `lspconfig` configuration:
 {
   "neovim/nvim-lspconfig",
    config = function()
@@ -14,10 +13,11 @@
    end,
 },
 ```
-<br/>
+
+<br />
 
 ```lua
--- custom.configs.lspconfig
+-- custom/configs/lspconfig.lua
 local on_attach = require("plugins.configs.lspconfig").on_attach
 local capabilities = require("plugins.configs.lspconfig").capabilities
 
@@ -30,27 +30,22 @@ for _, lsp in ipairs(servers) do
     capabilities = capabilities,
   }
 end
-```
-<br/>
 
-```lua
---  Without the loop it would look like this 
-
-lspconfig.html.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-}
-
-lspconfig.cssls.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-}
+-- Without the loop, you would have to manually set up each LSP 
+-- 
+-- lspconfig.html.setup {
+--   on_attach = on_attach,
+--   capabilities = capabilities,
+-- }
+--
+-- lspconfig.cssls.setup {
+--   on_attach = on_attach,
+--   capabilities = capabilities,
+-- }
 ```
 ## Mason.nvim
 
-- The Mason.nvim plugin is used to install lspservers, formatters, linters, and debug adapters. 
-- It's better to list all your required packages and put them into your Mason override config.
-- Find the exact name of your packages from the `:Mason` window
+The `mason.nvim` plugin is used to install LSP servers, formatters, linters, and debug adapters. It's better to list all your required packages and put them into your Mason override config, so they are automatically installed when running `MasonInstallAll`. You can find the exact name of the LSP packages using `:Mason`, that will open a window.
 
 ```lua
  {
@@ -65,7 +60,11 @@ lspconfig.cssls.setup {
     },
   }
 ```
-<br/>
 
-- Reopen nvim & run the `:MasonInstallAll` command. This will install the listed binaries in the `ensure_installed` table.
-- This only downloads the binaries. The lsp server/formatters won't run automatically. You need to configure a custom lspconfig and possibly some plugin like null-ls/neoformat etc for the formatters to work.
+<br />
+
+After modifying `mason`'s configuration, do:
+
+- Run `nvim +MasonInstallAll`. This will install the listed binaries in the `ensure_installed` table.
+
+Once the binaries are installed, you will have to configure them to properly work with LSP. NvChad does not provide any language configuration aside from lua.

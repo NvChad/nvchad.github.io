@@ -1,7 +1,9 @@
 ## How does NvChad work? 
 
-- To continue this topic, first you should understand `vim.tbl_deep_extend` function which we use for merging tables and their values recursively.
-- We use `vim.tbl_deep_extend` to merge 2 tables usually, the syntax looks like this : 
+### Understanding the basics
+
+Before getting into the this topic, first you should understand the `vim.tbl_deep_extend` function which is used for merging tables and their values recursively.  
+The function `vim.tbl_deep_extend` is normally used to merge 2 tables, and its syntax looks like this: 
 
 ```lua
 -- table 1
@@ -15,19 +17,18 @@ local someone = {
     name = "siduck",
 }
 
+-- "force" will overwrite equal values from the someone table over the person table
 local result = vim.tbl_deep_extend("force", person, someone)
 
--- "force" will use values from someone table to override them on person table
 -- result : 
-
 {
-    name = "siduck",
+    name = "siduck", -- as you can see, name has been overwritten
     age = 19,
 }
 ```
 
-<br/>
-- Lets look at some complex tables : 
+<br />
+Its usage can even be used in more complex tables. As said, it works recursively, which means that it will apply the same behaviour for nested table values: 
 
 ```lua
 local person = {
@@ -56,7 +57,7 @@ local result = vim.tbl_deep_extend("force", person, someone)
 ```
 <br/>
 
-And the result is : 
+The resulting table will have merged each property from the tables, and the same for the `skilsl` and `distros_used` values:
 
 ```lua
 {
@@ -73,14 +74,15 @@ And the result is :
    }
 }
 
--- tbl_deep_extend function merges values recursively, but if there's an array ( list ) then it wont merge the the list tables. 
+-- tbl_deep_extend function merges values recursively, but if there's an array (list), it won't merge the list tables. 
 
--- Example : table 1 has  {"python", "java", "c++"} and table 2 has {"js","lua"}, now you might be wondering that it should merge it like this : 
-
--- { "python", "java", "c++", "lua"} , But no! thats wrong, the result will be only {"js","lua"}.
+-- Example: the first table has {"python", "java", "c++"} and the second table has {"js","lua"}. Now you might be wondering that it should merge it like this: 
+-- { "python", "java", "c++", "lua"}
+-- But no! thats wrong, the result will be only {"js","lua"}
 ```
+
 <br/>
-- tbl_deep_extend merges dicts tables recursively i.e tables which have key/value pair but not lists ( arrays )
+To sum up, `tbl_deep_extend` merges dictonary tables recursively (i.e tables which have `key/value` pair but not lists).
 
 ## Config Structure
 
@@ -110,25 +112,29 @@ And the result is :
 ```
 <br/>
 
-- **init.lua -** runs everything
-- **core/default_config -** returns a table for whole nvchad config 
-- **core/mappings -** default mappings
-- **core/init -** globals, nvim options, commands, autocmds 
-- **core/utils -** helpful functions
-- The custom dir contains all the user configurations, `chadrc.lua` and `init.lua` in `custom dir` are the main files.
+- **`init.lua` -** runs everything
+- **`core/default_config` -** returns a table for whole nvchad config 
+- **`core/mappings` -** default mappings
+- **`core/init` -** globals, nvim options, commands, autocmds 
+- **`core/utils` -** helpful functions
+- The custom dir will contain all the user configuration. `chadrc.lua` and `init.lua` in `custom` are the main files.
 
 ![GitHub Logo](/illustrations/config_nutshell.webp)
 
-From now whenever we talk about paths, do know that they're relative to the lua folder in your nvim config.
+From now on, whenever we talk about paths, keep in mind that they're relative to the `lua` folder in your `nvim` config (by default it should be `~/.config/nvim/`).
 
-- To extend nvchad the user should use 2 files in the custom dir ( chadrc.lua and init.lua ). You shouldn't make changes outside the custom dir.
-- The chadrc file is meant to override the `core/default_config.lua` file so check it to know all the available options.
+- To extend NvChad, the user should use 2 files in the custom dir (`chadrc.lua` and `init.lua`). It is not recommended to make changes outside the `custom` dir. The main reason is because NvChad provides an utility that will auto-update by basically pulling the changes from git. Any other file outside the `custom` dir will be treated as a change by `git`, meaning that NvChad will not be able to fast-forward the pull.
+- The `chadrc` file overrides the `core/default_config.lua` file. In order to know what options can you change, make sure the check the [`default_config.lua`](https://github.com/NvChad/NvChad/blob/v2.0/lua/core/default_config.lua) file.
 
 ## Themes
 
-- `<leader> + th`   (`<leader>` is space key in our config)
+You can see all the themes with the following keymap: `<leader> + th`.
+
+> The `leader` key is the `<space>` in NvChad. 
 
 ## Mappings
+
+If you want to know all the keymaps, you can run the following comands in the nvim `Cmd`:
 
 - `Telescope keymaps` 
 - `NvCheatsheet`

@@ -1,42 +1,36 @@
 ## Overview
 
-- NvChad uses [lazy.nvim](https://github.com/folke/lazy.nvim) for plugins management so its syntax is valid.
-- Basically NvChad expects a user plugin table, which then gets merged with the default plugins table.
-
+NvChad uses [lazy.nvim](https://github.com/folke/lazy.nvim) for plugins management. Basically, NvChad expects a user plugin table, which then gets merged with the default plugins table. You can find the table in: [`lua/plugins/init.lua`](https://github.com/NvChad/NvChad/blob/v2.0/lua/plugins/init.lua).
 
 ## Lazy loading
 
-- We lazy load almost 95% of the plugins, so we expect you to lazy load the plugins as well! As its efficient in reducing startuptime. We don't want users making NvChad slow just because they didn't lazy load plugins they've added!
+We lazy load almost 95% of the plugins, so we expect and recommend you to lazy load the plugins as well, as its efficient in reducing startuptime. We don't want users making NvChad slow just because they didn't lazy load plugins they've added!
 
 ### Tips
 
-- <strong> cmd : </strong> If a plugin loads on commands then use the `cmd` spec, For ex: trouble.nvim plugin opens when we run "Trouble" command, so now I'd just write the word "Trouble" in the cmd spec of trouble.nvim plugin definition.
-- <strong> event : </strong> Use this spec if you want to load a plugin on certain vim event ( check :h events ). Cmp.nvim plugin is useful when we're in insert mode, so I lazyload it at "InsertEnter" event. 
+- **`cmd`:** If a plugin loads on commands, then use the `cmd` spec. For example, the `trouble.nvim` plugin opens when the command `Trouble` is run. Therefore, we would write the word `Trouble` in the `cmd` spec of the `trouble.nvim` plugin configuration.
+- **`event`:** Use this spec if you want to load a plugin on certain vim event (check `:h events`). For example, the `cmp.nvim` plugin is useful when we're in insert mode, so it is lazyload it at the `InsertEnter` event. 
 
-- There are more specs through which you could do lazyloading like <strong> ft, cond, keys </strong>.
+There are more specs through which you could do lazy-loading like `ft`, `config` and `keys`.
 
 ## Managing custom plugins
-- In NvChad (lazy = true) is set to all plugins, so if you want a plugin to be enabled on startup, do (lazy = false)
-- Some examples : 
 
-**`custom/chadrc.lua`**  :
+All NvChad default plugins will have `lazy = true` set. Therefore, if you want a plugin to be enabled on startup, change it to `lazy = false`.
+
+<br/>
+
+It is recommended that you avoid saving any files in the `custom/plugins/*` directory. Our system utilizes the import feature provided by`lazy.nvim`, which imports all files in a directory and expects each file to return plugin tables. This behavior is undesirable for our purposes, so it is recommendeed to create a single file named `custom/plugins.lua`. This file will be imported by `lazy.nvim`, and no other files in the directory will be processed.
+
 ```lua
+-- custom/chadrc.lua
 M.plugins = "custom.plugins"
-```
-<br/>
 
-- Do know you shouldnt save anything in `custom/plugins/` dir. We're using the import feature provided by lazy.nvim so it'll import all the files in a dir and expect each file to return plugin tables etc which we dont want so we just create "custom/plugins.lua" file and then lazy will import only this file.
-
-<br/>
-
-**`custom/plugins.lua`** :
-```lua
+-- custom/plugins.lua
 return {
-
   -- Install plugin
   { "elkowar/yuck.vim" , lazy = false },
 
-  -- Using more plugin specs like cmd etc
+  -- You can use any plugin specification from lazy.nvim
   {
     "Pocco81/TrueZen.nvim",
     cmd = { "TZAtaraxis", "TZMinimalist" },
@@ -45,7 +39,7 @@ return {
     end,
   }
 
-  -- opts overrides default plugin config's option
+  -- opts overrides all default plugin configurations
   {
     "nvim-treesitter/nvim-treesitter",
     opts = {
@@ -53,8 +47,8 @@ return {
     },
   },
 
-  -- Here we wrap opts with a function because its loading cmp module
-  -- If we didnt wrap with function then the code will run on startup
+  -- It is also possible to wrap opts with a function because it is required
+  -- to load the cmp module. If it wasn't done, then the code would run on startup
    {
     "hrsh7th/nvim-cmp",
     opts = function()
