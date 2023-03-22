@@ -75,9 +75,9 @@ And the result is :
 
 -- tbl_deep_extend function merges values recursively, but if there's an array ( list ) then it wont merge the the list tables. 
 
--- Example : table 1 has  {"python", "java", "c++"} and table 2 has {"lua"}, now you might be wondering that it should merge it like this : 
+-- Example : table 1 has  {"python", "java", "c++"} and table 2 has {"js","lua"}, now you might be wondering that it should merge it like this : 
 
--- { "python", "java", "c++", "lua"} , But no! thats wrong, the result will be only {"lua"}.
+-- { "python", "java", "c++", "lua"} , But no! thats wrong, the result will be only {"js","lua"}.
 ```
 <br/>
 - tbl_deep_extend merges dicts tables recursively i.e tables which have key/value pair but not lists ( arrays )
