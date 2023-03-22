@@ -309,7 +309,7 @@ print_num(`,n(e.span,{className:"hljs-number",children:"5"}),") ",n(e.span,{clas
     }
 }
 
-`,n(e.span,{className:"hljs-keyword",children:"local"}),` somone = {
+`,n(e.span,{className:"hljs-keyword",children:"local"}),` someone = {
     name = `,n(e.span,{className:"hljs-string",children:'"siduck"'}),`,
     skills = {`,n(e.span,{className:"hljs-string",children:'"js"'}),", ",n(e.span,{className:"hljs-string",children:'"lua"'}),`},
 
