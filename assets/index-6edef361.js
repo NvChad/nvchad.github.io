@@ -339,9 +339,9 @@ print_num(`,n(e.span,{className:"hljs-number",children:"5"}),") ",n(e.span,{clas
 
 `,n(e.span,{className:"hljs-comment",children:"-- tbl_deep_extend function merges values recursively, but if there's an array ( list ) then it wont merge the the list tables. "}),`
 
-`,n(e.span,{className:"hljs-comment",children:'-- Example : table 1 has  {"python", "java", "c++"} and table 2 has {"lua"}, now you might be wondering that it should merge it like this : '}),`
+`,n(e.span,{className:"hljs-comment",children:'-- Example : table 1 has  {"python", "java", "c++"} and table 2 has {"js","lua"}, now you might be wondering that it should merge it like this : '}),`
 
-`,n(e.span,{className:"hljs-comment",children:'-- { "python", "java", "c++", "lua"} , But no! thats wrong, the result will be only {"lua"}.'}),`
+`,n(e.span,{className:"hljs-comment",children:'-- { "python", "java", "c++", "lua"} , But no! thats wrong, the result will be only {"js","lua"}.'}),`
 `]})}),`
 `,n("br",{}),`
 `,a(e.ul,{children:[`
