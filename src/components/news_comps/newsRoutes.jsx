@@ -11,9 +11,7 @@ import {
   generateActiveContext,
 } from "../../utils";
 
-function NewsPage(props) {
-  const { component } = props;
-
+export function NewsPage(props) {
   onMount(() => {
     const el = document.getElementById("newsContent");
     const imgs = el?.querySelectorAll("img");
@@ -27,18 +25,11 @@ function NewsPage(props) {
       });
     }
 
-    window.addEventListener(
-      "scroll",
-      () => generateActiveContext("newsContent"),
-    );
-  });
+    const onScroll = () => generateActiveContext("newsContent")
+    window.addEventListener("scroll", onScroll);
 
-  onCleanup(() =>
-    window.removeEventListener(
-      "scroll",
-      () => generateActiveContext("newsContent"),
-    )
-  );
+    onCleanup(() => window.removeEventListener("scroll", onScroll));
+  });
 
   //  run on route change
   createEffect(
@@ -57,7 +48,7 @@ function NewsPage(props) {
       p="5 xl:10"
       class="box mx-auto flex flex-col-reverse xl:grid xl:grid-cols-[1fr_auto]"
     >
-      <div id="newsContent">{component}</div>
+      <div id="newsContent">{props.children}</div>
 
       {/* on this page component */}
       {contextHeadings.length > 1 && <ContextTitles />}
