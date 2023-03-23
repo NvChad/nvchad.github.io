@@ -587,7 +587,7 @@ null_ls.setup {
 },
 `]})}),`
 `,n(e.h2,{children:"Add new mappings"}),`
-`,a(e.p,{children:["In order to add or customize the mappings, make sure that you follow the expected file structure for NvChad. The default mappings are loaded from ",n(e.code,{children:"core.mappings"}),", and it is recommende that you place your mappings inside ",n(e.code,{children:"custom.mappings"}),". Remember that the mappings ",n(e.strong,{children:"must"})," have a vim mode: ",n(e.code,{children:"n"})," (for normal), ",n(e.code,{children:"v"})," (for visual), ",n(e.code,{children:"i"})," (for insert) and so on."]}),`
+`,a(e.p,{children:["In order to add or customize the mappings, make sure that you follow the expected file structure for NvChad. The default mappings are loaded from ",n(e.code,{children:"core.mappings"}),", and it is recommended that you place your mappings inside ",n(e.code,{children:"custom.mappings"}),". Remember that the mappings ",n(e.strong,{children:"must"})," have a vim mode: ",n(e.code,{children:"n"})," (for normal), ",n(e.code,{children:"v"})," (for visual), ",n(e.code,{children:"i"})," (for insert) and so on."]}),`
 `,a(e.p,{children:["Inside your ",n(e.code,{children:"chadrc"})," file, make sure you add:"]}),`
 `,n(e.pre,{children:a(e.code,{className:"hljs language-lua",children:[n(e.span,{className:"hljs-comment",children:"-- custom/chadrc.lua"}),`
 M.mappings = `,n(e.span,{className:"hljs-built_in",children:"require"})," ",n(e.span,{className:"hljs-string",children:'"custom.mappings"'}),`
