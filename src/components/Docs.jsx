@@ -21,16 +21,16 @@ export const [sideBarShown, showSidebar] = createSignal(false);
 
 // final component!
 function Docs() {
-  onMount(() =>
+  onMount(() => {
     window.addEventListener("scroll", () => generateActiveContext("DocContent"))
-  );
 
-  onCleanup(() =>
-    window.removeEventListener(
-      "scroll",
-      () => generateActiveContext("DocContent"),
-    )
-  );
+    onCleanup(() =>
+      window.removeEventListener(
+        "scroll",
+        () => generateActiveContext("DocContent"),
+      )
+    );
+  });
 
   //  run on route change
   createEffect(

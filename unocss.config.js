@@ -38,18 +38,16 @@ export default defineConfig({
 
   presets: [
     presetUno(),
-    presetIcons(
-      {
-        scale: 1.2,
-      },
-    ),
+    presetIcons({
+      scale: 1.2,
+    }),
     presetAttributify(),
   ],
 
   rules: [
     ["softShadow", { "box-shadow": "rgba(0, 0, 0, 0.35) 0px 5px 15px" }],
-    ["lightenBg", { "filter": "brightness(125%)" }],
-    ["darkenBg", { "filter": "brightness(93%)" }],
+    ["lightenBg", { filter: "brightness(125%)" }],
+    ["darkenBg", { filter: "brightness(93%)" }],
     ["box", { "max-width": "1700px" }],
   ],
 
@@ -57,5 +55,8 @@ export default defineConfig({
     ["vertCentered", "flex items-center gap-2", { layer: "utilites" }],
   ],
 
-  transformers: [transformerAttributifyJsx(), transformerDirectives()],
+  transformers: [
+    transformerAttributifyJsx({ exclude: [/node_modules/] }),
+    transformerDirectives(),
+  ],
 });

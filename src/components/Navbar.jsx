@@ -54,7 +54,7 @@ function DocsBtn() {
 
 export const ThemeToggleBtn = (props) => {
   const [theme, setTheme] = createSignal(
-    localStorage && localStorage.theme ? localStorage.theme : "light",
+    globalThis.localStorage && localStorage.theme ? localStorage.theme : "light",
   );
 
   return (

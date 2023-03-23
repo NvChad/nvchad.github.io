@@ -49,3 +49,9 @@ const sidebar_Items = [
 ];
 
 export default sidebar_Items;
+
+export const sidebarMap = Object.fromEntries(
+  sidebar_Items
+    .flatMap((x) => (x.label ? x.items : [x]))
+    .map((x) => [x[1], x[x.length - 1]]),
+);
