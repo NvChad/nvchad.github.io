@@ -1,16 +1,13 @@
 ## Override default highlight groups
 
-- Make sure you use a valid highlight group!
-- Check your theme colors in this dir:
+It is possible to overwrite the highlighting groups for the selected theme:
 
-```shell
-~/.local/share/nvim/lazy/base46/lua/base46/integrations
-```
+- Make sure you use a valid highlight group
+- Check your theme colors in this dir: `~/.local/share/nvim/lazy/base46/lua/base46/integrations`
+
 <br/>
 
-- In your theme file, for instance onedark.lua, only the variables from base_30 can be used in overriding your custom highlight groups. 
-- You can even use hex colors in the fg/bg field, but it's preferable to use variable names (for instance: blue, darker_black, one_bg, etc.) from your theme file as these will look better.
-- No need to write hex colors manually!
+When modifying the custom highlight groups in your theme file, such as "onedark.lua", it is important to note that only the variables from "base_30" can be used for this purpose. Although hex colors can also be used in the "fg/bg" field, it is recommended to utilize the variable names (e.g. "blue", "darker_black", "one_bg", etc.) from your theme file as they will provide a better aesthetic. This way, there is no need to manually input the hex colors.
 
 ```lua
 M.ui = {
@@ -18,8 +15,7 @@ M.ui = {
       Pmenu = { bg = "white" },
       -- Pmenu = { bg = "#ffffff" }, this works too
 
-
-      MyHighlightGroup = {
+      MyHighlightGroup = { -- custom highlights are also allowed
          fg = "red",
          bg = "darker_black"
       }
@@ -27,16 +23,14 @@ M.ui = {
 }
 ```
 
-### Add new highlight groups
-
-- The same method can be used as above, but instead of `hl_override`, you add in `hl_add` field in chadrc.
+In order to add custom highlights, thee same method can be used as above. However, instead of using `hl_override`, you have to use the `hl_add` field in chadrc.
 
 ## Customize themes
 
-- You can edit theme colors from the `changed_themes` table
+If you just want to customize an already existing theme, you can change the following configuration:
+
 ```lua
 M.ui = {
-
    changed_themes = {
       onedark = {
          base_16 = {
@@ -57,12 +51,17 @@ M.ui = {
 
 ### Local themes
 
-(WARNING: Do this at your own risk because you might not be able to make nvchad themes like siduck.)
-- Default themes are in our base46 repo's themes dir.
-- Any nvchad theme structure looks like this:
+> (WARNING: Do this at your own risk because you might not be able to make nvchad themes like siduck.)
+
+Keep in mind that:
+
+- Default themes can be found in our [`base46`](https://github.com/NvChad/base46) repository.
+
+Here is the default structure for NvChad themes:
 
 ```lua
--- theme file is custom/themes/siduck.lua
+-- place the file in custom/themes/<theme-name>.lua
+-- for example: custom/themes/siduck.lua
 
 local M = {}
 
@@ -74,12 +73,14 @@ M.base_16 = {
     -- my base16 colors
 }
 
-vim.opt.bg = "dark" -- or light 
+M.type = "dark" -- this is required or your theme will break on loading!
+
 return M
 ```
 
 <br/>
-- Make sure to use the exact variable names!
+
+Finally, you just need to use the same name as the file!
 
 ```lua
 M.ui = {

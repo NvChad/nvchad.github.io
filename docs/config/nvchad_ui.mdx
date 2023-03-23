@@ -1,17 +1,16 @@
 ## Statusline & tabufline 
 
-- We use our own [plugin](https://github.com/NvChad/ui) for statusline & tabufline and it has some options.
-- The default config: (You must know that every plugin's default config is just a table).
+We use our own [plugin](https://github.com/NvChad/ui) for `statusline` and `tabufline`. The default config is (keep in mind that every plugin's default config is just a table):
 
 ```lua
 M.ui = {
-  ... some options
+  -- ...other options
 
   statusline = {
     theme = "default", -- default/vscode/vscode_colored/minimal
 
-    -- default/round/block/arrow separators work only for default statusline theme
-    -- round and block will work for minimal theme only
+    -- default/round/block/arrow (separators work only for "default" statusline theme;
+    -- round and block will work for the minimal theme only)
     separator_style = "default",
     overriden_modules = nil,
   },
@@ -21,58 +20,59 @@ M.ui = {
     overriden_modules = nil,
   },
 
-  ... some options
+  -- ...other options
 }
 ```
 
-### Override statusline modules 
+### Override `statusline` modules 
 
-- Add this in your plugin overrides section:
+It is also possible to override the plugin's configuration:
 
 ```lua
-statusline = {
-  overriden_modules = function()
-    local st_modules = require "nvchad_ui.statusline.default"
-    -- this is just default table of statusline modules
-
-    return {
-      mode = function()
-        return st_modules.mode() .. " bruh "
-      end,
-    }
-  end,
-},
-
+M.ui = {
+  statusline = {
+    overriden_modules = function()
+      local st_modules = require "nvchad_ui.statusline.default"
+      -- this is just default table of statusline modules
+  
+      return {
+        mode = function()
+          return st_modules.mode() .. " bruh "
+        end,
+      }
+    end,
+  },
+}
 ```
 <br/>
 
-- First, check the list of modules in [our statusline modules file](https://github.com/NvChad/ui/blob/main/lua/nvchad_ui/statusline/modules.lua).
-- In the above code, you can see that we wanted to print "bruh" next to the mode module in the statusline.
-- To add highlight group to your text 
+It is recommended to check the list of modules in [our `statusline` modules file](https://github.com/NvChad/ui/blob/main/lua/nvchad_ui/statusline/modules.lua). In the above code, you can see that we want to print "bruh" next to the mode module, in the statusline. In order to add highlight group to your text, do:
 
 ```lua
-"#BruhHl%" .. " bruh "
--- so the highlight group here is BruhHl
+"#BruhHl%" .. " bruh " -- the highlight group here is BruhHl
 ```
 
-### Override tabufline modules
+### Override `tabufline` modules
 
-- Overriding tabufline modules is the same as statusline
-- This example is for overriding the modules in tabufline:
+The configuration for overriding `tabufline` is the same as in `statusline`:
 
 ```lua
-tabufline = {
-   overriden_modules = function()
-     local modules = require "nvchad_ui.tabufline.modules"
-
-     return {
-       buttons = function()
-         return modules.buttons() .. " my button "
-       end,
-       -- or buttons = "" , this will disable the buttons
-     }
-   end,
- },
+M.ui = {
+  tabufline = {
+     overriden_modules = function()
+       local modules = require "nvchad_ui.tabufline.modules"
+  
+       return {
+         buttons = function()
+           return modules.buttons() .. " my button "
+         end,
+         -- or buttons = "" , this will disable the buttons
+       }
+     end,
+  },
+}
 ```
+
 <br/>
-- First, check the list of modules in [our tabufline modules file](https://github.com/NvChad/ui/blob/main/lua/nvchad_ui/tabufline/modules.lua).
+
+Again, check the list of modules in [our tabufline modules file](https://github.com/NvChad/ui/blob/main/lua/nvchad_ui/tabufline/modules.lua).

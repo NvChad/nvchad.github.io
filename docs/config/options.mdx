@@ -1,14 +1,7 @@
 ## Override default options
 
-- Put the options in `custom/init.lua`.
-- New options can put in the same file as well. 
-
-## Autocmds & Globals
-
-- Load these in the `custom/init.lua` file.
+In order to override default options, it is recommended to put the options in `custom/init.lua`. New options can put in the same file as well. `autocmds` and `globals` can also be put inside `custom/init.lua`
 
 ## Snippets 
 
-- NvChad uses luasnip for snippets.
-- For custom snippets you can add the below global.
-- `vim.g.luasnippets_path = "your snippets path"`
+NvChad uses `luasnip` for snippets. In order to add custom snippets, you can pass the path to your snippets on: `vim.g.luasnippets_path = "your snippets path"`
