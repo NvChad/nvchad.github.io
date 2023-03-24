@@ -25,7 +25,7 @@
     "vite-plugin-solid": "2.5.0"
   },
   "scripts": {
-    "start": "solid-start start",
+    "start": "npx serve dist",
     "dev": "solid-start dev",
     "build": "solid-start build && mv dist _dist && mv _dist/public dist && rm -rf _dist"
   },
