@@ -2,7 +2,7 @@ export default (id) => {
   const docContent = document.getElementById(id);
   const preElements = docContent?.querySelectorAll("pre");
 
-  preElements.forEach(function (preElement) {
+  preElements?.forEach(function (preElement) {
     const button = document.createElement("button");
     button.classList = "copyBtn";
     button.ariaLabel = "copy button"

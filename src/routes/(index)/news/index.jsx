@@ -1,5 +1,5 @@
-import { news } from "~/components/news_comps/newsData";
 import { A } from "@solidjs/router";
+import { news } from "./(items)/index";
 
 function News() {
   return (
@@ -7,7 +7,7 @@ function News() {
       {/* overview cards */}
       <div grid gap-5 class="md:grid-cols-2 2xl:grid-cols-3">
         {news.map((x) => {
-          {/* card */}
+          /* card */
           return (
             <div
               border="slate 0 dark:dark-4 solid"
@@ -23,8 +23,12 @@ function News() {
 
               <div h-full flex flex-col gap-10 justify-between p-10 pt-5>
                 <div>
-                  <h2 class="m-0" pb-5>{x.heading}</h2>
-                  <p text-lg class="m-0 p-0">{x.details}</p>
+                  <h2 class="m-0" pb-5>
+                    {x.heading}
+                  </h2>
+                  <p text-lg class="m-0 p-0">
+                    {x.details}
+                  </p>
                 </div>
 
                 <A href={x.link}>

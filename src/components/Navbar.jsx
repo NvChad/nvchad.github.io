@@ -1,6 +1,6 @@
 import { A, useLocation } from "@solidjs/router";
 import { createEffect, createSignal } from "solid-js";
-import { showSidebar, sideBarShown } from "./Docs";
+import { showSidebar, sideBarShown } from "~/routes/(index)/docs";
 
 // for toggling menu links, btns on mobile
 const [linksShown, showLinks] = createSignal(false);
