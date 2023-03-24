@@ -1,14 +1,12 @@
-import { Route } from "@solidjs/router";
 import { createEffect, onCleanup, onMount } from "solid-js";
 
 import ContextTitles from "../ContextTitles";
-import { news } from "./newsData";
 
 import {
   assign_heading_ids,
   autoscroll_toID,
   contextHeadings,
-  generateActiveContext,
+  generateActiveContext
 } from "../../utils";
 
 export function NewsPage(props) {
@@ -55,18 +53,4 @@ export function NewsPage(props) {
     </div>
   );
 }
-
-function NewsRoutes() {
-  return (
-    <>
-      {news.map((x) => (
-        <Route
-          path={x.link}
-          element={<NewsPage component={x.component} />}
-        />
-      ))}
-    </>
-  );
-}
-
-export default NewsRoutes;
+export default NewsPage;

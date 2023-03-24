@@ -27,7 +27,7 @@
   "scripts": {
     "start": "solid-start start",
     "dev": "solid-start dev",
-    "build": "solid-start build"
+    "build": "solid-start build && mv dist _dist && mv _dist/public dist && rm -rf _dist"
   },
   "engines": {
     "node": ">=16.8"
