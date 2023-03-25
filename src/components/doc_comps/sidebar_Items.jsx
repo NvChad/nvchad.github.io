@@ -14,7 +14,7 @@ const sidebar_Items = [
       ["Walkthrough", "config/walkthrough"],
       ["Options", "config/options"],
       ["Manage Plugins", "config/plugins"],
-      ["LSP Configuration", "config/Lsp"],
+      ["LSP Configuration", "config/lsp"],
       ["Format & Lint", "config/format_lint"],
       ["Mappings", "config/mappings"],
       ["UI Customization", "config/nvchad_ui"],

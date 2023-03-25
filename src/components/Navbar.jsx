@@ -2,6 +2,9 @@ import { A, useLocation } from "@solidjs/router";
 import { createEffect, createSignal } from "solid-js";
 import { showSidebar, sideBarShown } from "~/routes/(index)/docs";
 
+import docsearch from "@docsearch/js";
+import "@docsearch/css";
+
 // for toggling menu links, btns on mobile
 const [linksShown, showLinks] = createSignal(false);
 
@@ -97,6 +100,9 @@ export function BtnLinks() {
       }`}
     >
       {/* hide links by default on mobile */}
+
+      <div hidden id="docsearch"></div>
+
       <DocsBtn />
       <Searchbar />
 
@@ -116,6 +122,16 @@ export function BtnLinks() {
 }
 
 function Searchbar() {
+  // creadte algolia  docsearch
+  createEffect(() => {
+    docsearch({
+      appId: "BOJS19CH35",
+      apiKey: "c74ee96af1dea95b6e189501983733f8",
+      indexName: "nvchad",
+      container: "#docsearch",
+    });
+  });
+
   return (
     <button
       id="searchbar"
@@ -124,6 +140,7 @@ function Searchbar() {
       text="slate-6"
       onclick={() => {
         alert("This is WIP!");
+        document.querySelector(".DocSearch").click();
       }}
     >
       <div i-ion-search></div>
