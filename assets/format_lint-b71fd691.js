@@ -1,4 +1,4 @@
-import{b as e,q as i,g as t,t as a}from"./entry-client-4fa1a5f7.js";import{M as r}from"./index-8788f135.js";const c=a("<br>",1);function s(l){const n=Object.assign({h2:"h2",code:"code",p:"p",ul:"ul",li:"li",pre:"pre",span:"span",a:"a",strong:"strong"},r(),l.components);return[e(n.h2,{get children(){return["Install ",e(n.code,{children:"null-ls.nvim"})]}}),`
+import{b as e,q as i,g as t,t as a}from"./entry-client-a6386263.js";import{M as r}from"./index-7e16e971.js";const c=a("<br>",1);function s(l){const n=Object.assign({h2:"h2",code:"code",p:"p",ul:"ul",li:"li",pre:"pre",span:"span",a:"a",strong:"strong"},r(),l.components);return[e(n.h2,{get children(){return["Install ",e(n.code,{children:"null-ls.nvim"})]}}),`
 `,e(n.p,{get children(){return["It is recommended that you install ",e(n.code,{children:"null-ls"})," due to its simplicity and ease to set up. With that, keep in mind that:"]}}),`
 `,e(n.ul,{get children(){return[`
 `,e(n.li,{get children(){return["Dependencies are loaded after the original plugin (",e(n.code,{children:"lspconfig"})," in NvChad's case)."]}}),`

@@ -1,4 +1,4 @@
-import{M as s}from"./index-8788f135.js";import{b as n,q as a}from"./entry-client-4fa1a5f7.js";function l(r){const e=Object.assign({h1:"h1",p:"p",h2:"h2",ul:"ul",li:"li",pre:"pre",code:"code",span:"span"},s(),r.components);return[n(e.h1,{children:"# NvChad API"}),`
+import{M as s}from"./index-7e16e971.js";import{b as n,q as a}from"./entry-client-a6386263.js";function l(r){const e=Object.assign({h1:"h1",p:"p",h2:"h2",ul:"ul",li:"li",pre:"pre",code:"code",span:"span"},s(),r.components);return[n(e.h1,{children:"# NvChad API"}),`
 `,n(e.p,{children:"These are list of some functions which are provided by nvchad plugins that aren't included in the config. You can make commands & mappings out of them."}),`
 `,n(e.h2,{children:"Tbufpick"}),`
 `,n(e.ul,{get children(){return[`
