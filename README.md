@@ -1,4 +1,7 @@
 # Official site for NvChad
 
-Built using solidjs + unocss from scratch. No site generators were used for
-this, This is its own thing.
+Built using solidjs + unocss from scratch.  
+
+# Credits
+
+- Thanks to [@mdynnl](https://github.com/mdynnl) for integration of solid-start and solid-ssg in this site.
