@@ -5,7 +5,7 @@ export default (id) => {
   preElements?.forEach(function (preElement) {
     const button = document.createElement("button");
     button.classList = "copyBtn";
-    button.ariaLabel = "copy button"
+    button.ariaLabel = "copy button";
 
     // create copy icon
     const icon = document.createElement("div");

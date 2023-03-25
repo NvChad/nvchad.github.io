@@ -22,14 +22,16 @@ export const [sideBarShown, showSidebar] = createSignal(false);
 // final component!
 function Docs() {
   onMount(() => {
-    window.addEventListener("scroll", () =>
-      generateActiveContext("DocContent"),
+    window.addEventListener(
+      "scroll",
+      () => generateActiveContext("DocContent"),
     );
 
     onCleanup(() =>
-      window.removeEventListener("scroll", () =>
-        generateActiveContext("DocContent"),
-      ),
+      window.removeEventListener(
+        "scroll",
+        () => generateActiveContext("DocContent"),
+      )
     );
   });
 

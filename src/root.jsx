@@ -11,6 +11,7 @@ import {
   Scripts,
   Title,
 } from "solid-start";
+
 import "uno.css";
 import "~/css/style.css";
 
