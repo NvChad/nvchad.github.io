@@ -138,10 +138,7 @@ function Searchbar() {
       class="vertCentered text-base w-fit p-2 px-3 rounded-lg"
       bg="slate-1 dark:dark-3"
       text="slate-6"
-      onclick={() => {
-        alert("This is WIP!");
-        document.querySelector(".DocSearch").click();
-      }}
+      onclick={() => document.querySelector(".DocSearch").click()}
     >
       <div i-ion-search></div>
 
