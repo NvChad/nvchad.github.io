@@ -6,7 +6,7 @@ import {
   assign_heading_ids,
   autoscroll_toID,
   contextHeadings,
-  generateActiveContext
+  generateActiveContext,
 } from "../../utils";
 
 export function NewsPage(props) {
@@ -23,7 +23,7 @@ export function NewsPage(props) {
       });
     }
 
-    const onScroll = () => generateActiveContext("newsContent")
+    const onScroll = () => generateActiveContext("newsContent");
     window.addEventListener("scroll", onScroll);
 
     onCleanup(() => window.removeEventListener("scroll", onScroll));

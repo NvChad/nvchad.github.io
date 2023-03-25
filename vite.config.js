@@ -18,7 +18,7 @@ export default defineConfig({
     },
     solid({
       adapter: (await import("solid-start-static")).default(),
-      extensions: [".md", ".mdx"],
+      extensions: [".mdx"],
     }),
   ],
 });
