@@ -6,11 +6,6 @@
      <priority>0.5</priority>
    </url>
   <url>
-     <loc>https://nvchad.com/docs/config/Walkthrough</loc>
-     <changefreq>weekly</changefreq>
-     <priority>0.5</priority>
-   </url>
-  <url>
      <loc>https://nvchad.com/docs/config/format_lint</loc>
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
@@ -42,6 +37,11 @@
    </url>
   <url>
      <loc>https://nvchad.com/docs/config/theming</loc>
+     <changefreq>weekly</changefreq>
+     <priority>0.5</priority>
+   </url>
+  <url>
+     <loc>https://nvchad.com/docs/config/walkthrough</loc>
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
    </url>

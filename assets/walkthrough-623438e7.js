@@ -1,4 +1,4 @@
-import{b as n,q as i,g as s,t as c}from"./entry-client-1875b987.js";import{M as t}from"./index-fd5f6a83.js";const r=c("<br>",1);function a(l){const e=Object.assign({h2:"h2",h3:"h3",p:"p",code:"code",br:"br",pre:"pre",span:"span",ul:"ul",li:"li",strong:"strong",img:"img",a:"a",blockquote:"blockquote"},t(),l.components);return[n(e.h2,{children:"How does NvChad work?"}),`
+import{b as n,q as i,g as s,t as c}from"./entry-client-4fa1a5f7.js";import{M as t}from"./index-8788f135.js";const r=c("<br>",1);function a(l){const e=Object.assign({h2:"h2",h3:"h3",p:"p",code:"code",br:"br",pre:"pre",span:"span",ul:"ul",li:"li",strong:"strong",img:"img",a:"a",blockquote:"blockquote"},t(),l.components);return[n(e.h2,{children:"How does NvChad work?"}),`
 `,n(e.h3,{children:"Understanding the basics"}),`
 `,n(e.p,{get children(){return["Before getting into the this topic, first you should understand the ",n(e.code,{children:"vim.tbl_deep_extend"})," function which is used for merging tables and their values recursively.",n(e.br,{}),`
 `,"The function ",n(e.code,{children:"vim.tbl_deep_extend"})," is normally used to merge 2 tables, and its syntax looks like this:"]}}),`

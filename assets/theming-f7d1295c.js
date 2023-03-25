@@ -1,4 +1,4 @@
-import{b as n,q as h,g as l,t as i}from"./entry-client-1875b987.js";import{M as r}from"./index-fd5f6a83.js";const t=i("<br>",1);function a(s){const e=Object.assign({h2:"h2",p:"p",ul:"ul",li:"li",code:"code",pre:"pre",span:"span",h3:"h3",blockquote:"blockquote",a:"a"},r(),s.components);return[n(e.h2,{children:"Override default highlight groups"}),`
+import{b as n,q as h,g as l,t as i}from"./entry-client-4fa1a5f7.js";import{M as r}from"./index-8788f135.js";const t=i("<br>",1);function a(s){const e=Object.assign({h2:"h2",p:"p",ul:"ul",li:"li",code:"code",pre:"pre",span:"span",h3:"h3",blockquote:"blockquote",a:"a"},r(),s.components);return[n(e.h2,{children:"Override default highlight groups"}),`
 `,n(e.p,{children:"It is possible to overwrite the highlighting groups for the selected theme:"}),`
 `,n(e.ul,{get children(){return[`
 `,n(e.li,{children:"Make sure you use a valid highlight group"}),`

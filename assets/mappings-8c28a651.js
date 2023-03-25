@@ -1,4 +1,4 @@
-import{b as n,q as i,g as l,t as a}from"./entry-client-1875b987.js";import{M as c}from"./index-fd5f6a83.js";const t=a("<kbd>Ctrl</kbd>",2),h=a("<kbd>Space</kbd>",2),d=a("<kbd>alt</kbd>",2),o=a("<kbd>shift</kbd>",2),m=a("<br>",1);function r(s){const e=Object.assign({h2:"h2",p:"p",ul:"ul",li:"li",code:"code",pre:"pre",span:"span",strong:"strong"},c(),s.components);return[n(e.h2,{children:"Overview"}),`
+import{b as n,q as i,g as l,t as a}from"./entry-client-4fa1a5f7.js";import{M as c}from"./index-8788f135.js";const t=a("<kbd>Ctrl</kbd>",2),h=a("<kbd>Space</kbd>",2),d=a("<kbd>alt</kbd>",2),o=a("<kbd>shift</kbd>",2),m=a("<br>",1);function r(s){const e=Object.assign({h2:"h2",p:"p",ul:"ul",li:"li",code:"code",pre:"pre",span:"span",strong:"strong"},c(),s.components);return[n(e.h2,{children:"Overview"}),`
 `,n(e.p,{children:"The mapping configuration uses the nvim name shorcuts as:"}),`
 `,n(e.ul,{get children(){return[`
 `,n(e.li,{get children(){return[n(e.code,{children:"<C>"}),": ",l(t)]}}),`
