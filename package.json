@@ -27,7 +27,7 @@
   "scripts": {
     "start": "npx serve dist",
     "dev": "solid-start dev",
-    "build": "solid-start build && mv dist _dist && mv _dist/public dist && rm -rf _dist"
+    "build": "solid-start build && mv dist _dist && mv _dist/public dist && rm -rf _dist && cp -r CNAME dist"
   },
   "engines": {
     "node": ">=16.8"
