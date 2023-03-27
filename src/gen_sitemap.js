@@ -35,6 +35,8 @@ files = files.map((x) => {
   return route.join("/").slice(0, -4); // remove .mdx extension too
 });
 
+files.push("news");
+
 // generate xml tags
 let site_urls = "";
 
