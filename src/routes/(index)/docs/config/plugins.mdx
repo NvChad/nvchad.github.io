@@ -1,41 +1,42 @@
 ## Overview
 
-NvChad uses [lazy.nvim](https://github.com/folke/lazy.nvim) for plugins management. Basically, NvChad expects a user plugin table, which then gets merged with the default plugins table. You can find the table in: [`lua/plugins/init.lua`](https://github.com/NvChad/NvChad/blob/v2.0/lua/plugins/init.lua).
+NvChad uses [lazy.nvim](https://github.com/folke/lazy.nvim) for plugins management. Basically, NvChad expects a user plugin table, which then gets merged with the default plugins table. You can find the default table in: [`lua/plugins/init.lua`](https://github.com/NvChad/NvChad/blob/v2.0/lua/plugins/init.lua).
 
 ## Lazy loading
 
-We lazy load almost 95% of the plugins, so we expect and recommend you to lazy load the plugins as well, as its efficient in reducing startuptime. We don't want users making NvChad slow just because they didn't lazy load plugins they've added!
+We lazy load almost 95% of the plugins, so we expect and recommend you to lazy load the plugins as well, as its efficient in reducing startuptime.
 
-### Tips
+- We don't want users making NvChad slow just because they didn't lazy load plugins they've added.
+- Please read the [lazy.nvim plugin specs](https://github.com/folke/lazy.nvim#-plugin-spec) docs to know what options are available for lazyloading etc.
+- Try your best to lazy-load a plugin!
 
-- **`cmd`:** If a plugin loads on commands, then use the `cmd` spec. For example, the `trouble.nvim` plugin opens when the command `Trouble` is run. Therefore, we would write the word `Trouble` in the `cmd` spec of the `trouble.nvim` plugin configuration.
-- **`event`:** Use this spec if you want to load a plugin on certain vim event (check `:h events`). For example, the `cmp.nvim` plugin is useful when we're in insert mode, so it is lazyload it at the `InsertEnter` event. 
-
-There are more specs through which you could do lazy-loading like `ft`, `config` and `keys`.
-
-## Managing custom plugins
+## Manage custom plugins
 
 All NvChad default plugins will have `lazy = true` set. Therefore, if you want a plugin to be enabled on startup, change it to `lazy = false`.
 
+It is recommended that you avoid saving any files in the `custom/plugins/*` directory.
+
+> Our system utilizes the import feature provided by`lazy.nvim`, which imports all files in a directory and expects each file to return plugin tables. This behavior is undesirable for our purposes, so it is recommendeed to create a single file named **custom/plugins.lua**. This file will be imported by `lazy.nvim`, and no other files in the directory will be processed.
+
 <br/>
-
-It is recommended that you avoid saving any files in the `custom/plugins/*` directory. Our system utilizes the import feature provided by`lazy.nvim`, which imports all files in a directory and expects each file to return plugin tables. This behavior is undesirable for our purposes, so it is recommendeed to create a single file named `custom/plugins.lua`. This file will be imported by `lazy.nvim`, and no other files in the directory will be processed.
-
+- **custom/chadrc.lua**
 ```lua
--- custom/chadrc.lua
 M.plugins = "custom.plugins"
+```
 
--- custom/plugins.lua
-return {
-  -- Install plugin
-  { "elkowar/yuck.vim" , lazy = false },
+<br/>
+- **custom/plugins.lua**
+```lua
+local plugins = {
+
+  { "elkowar/yuck.vim" , lazy = false },  -- load a plugin at startup
 
   -- You can use any plugin specification from lazy.nvim
   {
     "Pocco81/TrueZen.nvim",
     cmd = { "TZAtaraxis", "TZMinimalist" },
     config = function()
-      require "custom.configs.truezen"
+      require "custom.configs.truezen" -- just an example path
     end,
   }
 
@@ -47,19 +48,23 @@ return {
     },
   },
 
-  -- It is also possible to wrap opts with a function because it is required
-  -- to load the cmp module. If it wasn't done, then the code would run on startup
-   {
-    "hrsh7th/nvim-cmp",
-    opts = function()
-      local cmp = require "cmp"
-
-      return {
-        mapping = {
-          ["<C-d>"] = cmp.mapping.scroll_docs(-8),
+  -- if you load some function or module within your opt, wrap it with a function
+  {
+   "nvim-telescope/telescope.nvim",
+   opts = {
+     defaults = {
+       mappings = {
+         i = {
+           ["<esc>"] = function(...)
+               require("telescope.actions").close(...)
+            end,
+          },
         },
-      }
-    end,
-   },
+      },
+    },
+   }
+
 }
+
+return plugins
 ```

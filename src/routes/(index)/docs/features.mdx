@@ -13,7 +13,7 @@
 - Now base46 compiles all of that into bytecode.
 - Integration files aren't loaded by default, for example highlight group for telescope, nvimtree etc are put into different files.
 - highlight groups are lazyloaded i.e you load them when needed 
-- **example : dofile(vim.g.base46_cache .. "treesitter")**
+- **example : dofile(vim.g.base46_cache .. "cmp")**
 - In the below video you can see that the chadrc file's ( user config ) UI related options reload on the fly 
 
 <div class="iframe-container">
@@ -22,7 +22,7 @@
 
 ## Theme switcher
 
-- We build a theme switcher with telescope.nvim which reloads theme on the fly using base46 plugin.
+- A theme switcher with telescope.nvim which reloads theme on the fly using base46 plugin + plenary.nvim.
 
 <div class="iframe-container">
  <iframe  src="https://www.youtube.com/embed/wt7IX8ojMrs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allow="fullscreen;"></iframe>
@@ -41,8 +41,6 @@
 - Each tab will have its own set of buffers stored and the tabufline will show those only.
 - Think it like workspaces on Linux/Windows where windows stay in their own workspaces, but in vim buffers from all tabs will be shown in every tab!
 
-![tabufline1](/features/tabufline.webp)
-
 <div class="iframe-container">
 <iframe src="https://www.youtube.com/embed/V_9iJ96U_k8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allow="fullscreen;"></iframe>
 </div>
@@ -50,7 +48,7 @@
 ## Nvterm 
 
 - NvChad's terminal plugin to toggle and run commands in neovim terminal buffer
-- Using it with our telescope picker ( :Telescope terms ) to unhide terminal buffers.
+- Using it with our telescope picker ( :Telescope terms ) to unhide terminal buffers <kbd> leader + pt </kbd>.
 
 <div class="iframe-container">
 <iframe src="https://www.youtube.com/embed/3DysWI_6YpQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allow="fullscreen;"></iframe>
@@ -61,6 +59,7 @@
 
 - Nvdash is NvChad's minimal dashboard module, It's very simple at this stage and will get more features in the future!
 - Command to run it `NvDash`, its disabled on startup, check the default_config.lua for its syntax and override it from chadrc.
+
 ![nvdash](/features/nvdash.webp)
 
 ## NvCheatsheet

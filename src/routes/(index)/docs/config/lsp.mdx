@@ -1,7 +1,10 @@
 ## Setup lsp server
 
-Before starting, it is strongly recommended that you walk through the LSP configuration: [`lspconfig` repository](https://github.com/neovim/nvim-lspconfig). Then check [server_configurations.md](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md) to make sure your language's LSP server is present there. You can install LSP servers manually or through `mason.nvim` (recommended option).
+Before starting, it is strongly recommended that you walk through the LSP configuration: [`lspconfig` repository](https://github.com/neovim/nvim-lspconfig).
 
+Then check [server_configurations.md](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md) to make sure your language's LSP server is present there. 
+
+- **custom/plugina.lua**
 
 ```lua
 -- In order to modify the `lspconfig` configuration:
@@ -16,8 +19,9 @@ Before starting, it is strongly recommended that you walk through the LSP config
 
 <br />
 
+- **custom/configs/lspconfig.lua**
+
 ```lua
--- custom/configs/lspconfig.lua
 local on_attach = require("plugins.configs.lspconfig").on_attach
 local capabilities = require("plugins.configs.lspconfig").capabilities
 
@@ -45,7 +49,9 @@ end
 ```
 ## Mason.nvim
 
-The `mason.nvim` plugin is used to install LSP servers, formatters, linters, and debug adapters. It's better to list all your required packages and put them into your Mason override config, so they are automatically installed when running `MasonInstallAll`. You can find the exact name of the LSP packages using `:Mason`, that will open a window.
+The `mason.nvim` plugin is used to install LSP servers, formatters, linters, and debug adapters. It's better to list all your required packages in your Mason override config, so they automatically install when running `MasonInstallAll` command.
+
+You can find the exact name of the LSP packages using `:Mason`, that will open a window.
 
 ```lua
  {
@@ -63,8 +69,4 @@ The `mason.nvim` plugin is used to install LSP servers, formatters, linters, and
 
 <br />
 
-After modifying `mason`'s configuration, do:
-
-- Run `nvim +MasonInstallAll`. This will install the listed binaries in the `ensure_installed` table.
-
-Once the binaries are installed, you will have to configure them to properly work with LSP. NvChad does not provide any language configuration aside from lua.
+> Once the binaries are installed, you will have to configure them to properly work with LSP, null-ls, nvim-dap etc. It depends on what you installed. <u>**NvChad does not provide any language configuration aside from lua**</u>.

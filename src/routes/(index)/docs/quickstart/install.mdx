@@ -3,9 +3,9 @@ import OS_Selector from "~/components/docpage/install.jsx";
 ## Pre-requisites
 
 - [Neovim 0.8.3](https://github.com/neovim/neovim/releases/tag/v0.8.0).
-- [Nerd Font](https://www.nerdfonts.com/) Set it in your terminal emulator.
+- [Nerd Font](https://www.nerdfonts.com/) as your terminal font.
   - Make sure the nerd font you set doesnt end with <strong>Mono</strong> to prevent small icons. 
-   - <strong>Example : </strong> Iosevka Nerd Font and not <s>Iosevka Nerd Font Mono</s>
+  - <strong>Example : </strong> JetbrainsMono Nerd Font and not **<s>JetbrainsMono Nerd Font Mono</s>**
 - [Ripgrep](https://github.com/BurntSushi/ripgrep) is required for grep searching with Telescope <strong>(OPTIONAL)</strong>. 
 - GCC, Windows users must have [`mingw`](http://mingw-w64.org/downloads) installed and set on path.
 - Delete old neovim folder (check commands below)
@@ -21,12 +21,13 @@ To update NvChad run the following command :
 - `NvChadUpdate`.
 
 ## Uninstall
+
 ```bash
-# linux/macos (unix)
+# Linux / Macos (unix)
 rm -rf ~/.config/nvim
 rm -rf ~/.local/share/nvim
 
-# windows
+# Windows
 rd -r ~\AppData\Local\nvim
 rd -r ~\AppData\Local\nvim-data
 ```

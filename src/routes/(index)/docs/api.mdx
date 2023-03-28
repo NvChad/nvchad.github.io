@@ -1,6 +1,6 @@
 # # NvChad API
 
-These are list of some functions which are provided by nvchad plugins that aren't included in the config. You can make commands & mappings out of them. 
+These are list of some functions & tips/tricks which are provided by nvchad plugins that aren't included in the config. You can make commands & mappings out of them. 
 
 ## Tbufpick 
 
@@ -44,4 +44,19 @@ require("base46").toggle_themes()
 
 ```lua
 require("nvchad_ui.tabufline").closeAllbufs()
+```
+
+## Show only modifed buffers
+
+- This is an autocmd which will show only modified buffers and current buffer, [read more](https://github.com/NvChad/ui/issues/78).
+- Put it in your `custom/init.lua`
+
+```lua
+vim.api.nvim_create_autocmd({ "BufAdd", "BufEnter", "tabnew" }, {
+  callback = function()
+    vim.t.bufs = vim.tbl_filter(function(bufnr)
+      return vim.api.nvim_buf_get_option(bufnr, "modified")
+    end, vim.t.bufs)
+  end,
+})
 ```

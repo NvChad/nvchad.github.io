@@ -1,10 +1,6 @@
-## Install `null-ls.nvim`
+## Null-ls.nvim
 
-It is recommended that you install `null-ls` due to its simplicity and ease to set up. With that, keep in mind that:
-
-- Dependencies are loaded after the original plugin (`lspconfig` in NvChad's case).
-- `null-ls` is loaded after `lspconfig` as `lspconfig` is lazy-loaded.
-
+It is recommended that you install `null-ls` to manage formatting & linting.
 Here's a possible install configuration for `null-ls`:
 
 ```lua
@@ -25,7 +21,11 @@ Here's a possible install configuration for `null-ls`:
 }
 ```
 
-## Null-ls config
+<br/>
+- Dependencies are loaded after the original plugin (`lspconfig` in NvChad's case).
+- `null-ls` is loaded after `lspconfig` as `lspconfig` is lazy-loaded.
+
+## Configuration
 
 Make sure to check [`null-ls` builtins](https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md) to get exact names for formatters, linters etc.
 
@@ -53,8 +53,9 @@ null_ls.setup {
 ```
 <br/>
 
+- Check [null-ls docs](https://github.com/jose-elias-alvarez/null-ls.nvim/wiki/Formatting-on-save) for adding format on save.
 Other things to take into account when configuring `null-ls` for NvChad:
 
 - This shortcut is defined for code formatting: `<leader> + fm`.
-- The linter, formatter or debugger that you will use in `null-ls` configuration, has to be downloaded via `mason` or system wide. **NvChad does ont come with any pre-installed linter, debugger nor formatter**.
+- The linter, formatter or debugger that you will use in `null-ls` configuration, has to be downloaded via `mason` (that ensure_installed opt) or system wide. 
 - Make sure the LSP servers for the filetypes are active for the relevant `null-ls` formatter and/or linter to work.

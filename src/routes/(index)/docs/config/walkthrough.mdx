@@ -1,9 +1,10 @@
-## How does NvChad work? 
+# How does NvChad work? 
 
-### Understanding the basics
+## Understanding the basics
 
 Before getting into the this topic, first you should understand the `vim.tbl_deep_extend` function which is used for merging tables and their values recursively.  
-The function `vim.tbl_deep_extend` is normally used to merge 2 tables, and its syntax looks like this: 
+
+- The function `vim.tbl_deep_extend` is normally used to merge 2 tables, and its syntax looks like this: 
 
 ```lua
 -- table 1
@@ -76,8 +77,10 @@ The resulting table will have merged each property from the tables, and the same
 
 -- tbl_deep_extend function merges values recursively, but if there's an array (list), it won't merge the list tables. 
 
--- Example: the first table has {"python", "java", "c++"} and the second table has {"js","lua"}. Now you might be wondering that it should merge it like this: 
--- { "python", "java", "c++", "lua"}
+-- Example: the first table has {"python", "java", "c++"} and the second table has {"js","lua"}. 
+
+-- Now you might be wondering that it should merge it like this: { "python", "java", "c++", "lua"}
+
 -- But no! thats wrong, the result will be only {"js","lua"}
 ```
 
@@ -106,36 +109,44 @@ To sum up, `tbl_deep_extend` merges dictonary tables recursively (i.e tables whi
 │   │   USER CONFIG  
 │   │  
 │   ├── custom *
-│   │   ├── chadrc.lua -- (overrides default_config)
-│   │   ├── init.lua -- (runs in main init.lua file)
+│   │   ├── chadrc.lua
+│   │   ├── init.lua
 │   │   ├── more files, dirs
 ```
 <br/>
 
-- **`init.lua` -** runs everything
-- **`core/default_config` -** returns a table for whole nvchad config 
+- **`init.lua` -** runs whole config
+- **`core/default_config` -** returns a table of default options in NvChad. 
 - **`core/mappings` -** default mappings
-- **`core/init` -** globals, nvim options, commands, autocmds 
+- **`core/init` -** default globals, nvim options, commands, autocmds 
 - **`core/utils` -** helpful functions
-- The custom dir will contain all the user configuration. `chadrc.lua` and `init.lua` in `custom` are the main files.
+
+
+## Custom config
+
+There are 2 important files in **custom** dir which extend NvChad:
+
+- **`custom/chadrc.lua`** meant to override that table in `default_config.lua` file
+- **`custom/init.lua`** runs in the main `init.lua`, its meant to have vim options, globals, autocmds, commands etc.
 
 ![GitHub Logo](/illustrations/config_nutshell.webp)
 
 From now on, whenever we talk about paths, keep in mind that they're relative to the `lua` folder in your `nvim` config (by default it should be `~/.config/nvim/`).
 
-- To extend NvChad, the user should use 2 files in the custom dir (`chadrc.lua` and `init.lua`). It is not recommended to make changes outside the `custom` dir. The main reason is because NvChad provides an utility that will auto-update by basically pulling the changes from git. Any other file outside the `custom` dir will be treated as a change by `git`, meaning that NvChad will not be able to fast-forward the pull.
-- The `chadrc` file overrides the `core/default_config.lua` file. In order to know what options can you change, make sure the check the [`default_config.lua`](https://github.com/NvChad/NvChad/blob/v2.0/lua/core/default_config.lua) file.
+- It is not recommended to make changes outside the `custom` dir, because NvChad config is a repo and it **gitignores** only the custom dir, it uses `git pull` to update the config.
+
+- Any other file outside the `custom` dir will be treated as a change by `git`, meaning that NvChad will not be able to fast-forward the pull.
+
 
 ## Themes
 
 You can see all the themes with the following keymap: `<leader> + th`.
 
-> The `leader` key is the `<space>` in NvChad. 
+> The `leader` key is the  <kbd>space></kbd>  in NvChad. 
 
 ## Mappings
 
-If you want to know all the keymaps, you can run the following comands in the nvim `Cmd`:
+If you want to know all the keymaps, you can run the following comands:
 
-- `Telescope keymaps` 
 - `NvCheatsheet`
-
+- `Telescope keymaps` 

@@ -1,13 +1,11 @@
 ## Override default highlight groups
 
-It is possible to overwrite the highlighting groups for the selected theme:
-
-- Make sure you use a valid highlight group
+- Make sure you use a valid highlight group.
 - Check your theme colors in this dir: `~/.local/share/nvim/lazy/base46/lua/base46/integrations`
 
-<br/>
+When modifying the custom highlight groups in your theme file, such as "onedark.lua", it is important to note that only the variables from "base_30" can be used for this purpose. 
 
-When modifying the custom highlight groups in your theme file, such as "onedark.lua", it is important to note that only the variables from "base_30" can be used for this purpose. Although hex colors can also be used in the "fg/bg" field, it is recommended to utilize the variable names (e.g. "blue", "darker_black", "one_bg", etc.) from your theme file as they will provide a better aesthetic. This way, there is no need to manually input the hex colors.
+Although hex colors can also be used in the "fg/bg" field, it is recommended to utilize the variable names (e.g. "blue", "darker_black", "one_bg", etc.) from your theme file as they will provide a better aesthetic. This way, there is no need to manually write the hex colors.
 
 ```lua
 M.ui = {
@@ -22,8 +20,9 @@ M.ui = {
    },
 }
 ```
+<br/>
 
-In order to add custom highlights, thee same method can be used as above. However, instead of using `hl_override`, you have to use the `hl_add` field in chadrc.
+In order to add custom highlights, its the same as above, just use **`hl_add`**.
 
 ## Customize themes
 
@@ -51,36 +50,34 @@ M.ui = {
 
 ### Local themes
 
-> (WARNING: Do this at your own risk because you might not be able to make nvchad themes like siduck.)
-
-Keep in mind that:
+> <u>WARNING: Do this at your own risk because you might not be able to make nice nvchad themes like siduck.</u>
 
 - Default themes can be found in our [`base46`](https://github.com/NvChad/base46) repository.
 
 Here is the default structure for NvChad themes:
 
 ```lua
--- place the file in custom/themes/<theme-name>.lua
+-- place the file in /custom/themes/<theme-name>.lua
 -- for example: custom/themes/siduck.lua
 
 local M = {}
 
 M.base_30 = {
-    -- my colors
+   -- 30 colors based on base_16
 }
 
 M.base_16 = {
-    -- my base16 colors
+   -- base16 colors
 }
 
-M.type = "dark" -- this is required or your theme will break on loading!
+M.type = "dark" -- light / dark
 
 return M
 ```
 
 <br/>
 
-Finally, you just need to use the same name as the file!
+Finally, add your theme in chadrc. 
 
 ```lua
 M.ui = {

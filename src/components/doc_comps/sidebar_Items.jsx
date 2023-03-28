@@ -12,7 +12,7 @@ const sidebar_Items = [
     label: ["Custom config", "i-mdi-cog"],
     items: [
       ["Walkthrough", "config/walkthrough"],
-      ["Options", "config/options"],
+      ["Snippets", "config/snippets"],
       ["Manage Plugins", "config/plugins"],
       ["LSP Configuration", "config/lsp"],
       ["Format & Lint", "config/format_lint"],
