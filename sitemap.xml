@@ -26,12 +26,12 @@
      <priority>0.5</priority>
    </url>
   <url>
-     <loc>https://nvchad.com/docs/config/options</loc>
+     <loc>https://nvchad.com/docs/config/plugins</loc>
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
    </url>
   <url>
-     <loc>https://nvchad.com/docs/config/plugins</loc>
+     <loc>https://nvchad.com/docs/config/snippets</loc>
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
    </url>
