@@ -1,4 +1,4 @@
-import{b as n,q as i,g as l,t as c}from"./entry-client-91d26f47.js";import{M as t}from"./index-f80fd03c.js";const a=c("<br>",1);function r(s){const e=Object.assign({h2:"h2",p:"p",a:"a",code:"code",pre:"pre",span:"span",h3:"h3"},t(),s.components);return[n(e.h2,{children:"Statusline & tabufline"}),`
+import{b as n,q as i,g as l,t as c}from"./entry-client-d253aea2.js";import{M as t}from"./index-a172eef7.js";const a=c("<br>",1);function r(s){const e=Object.assign({h2:"h2",p:"p",a:"a",code:"code",pre:"pre",span:"span",h3:"h3"},t(),s.components);return[n(e.h2,{children:"Statusline & tabufline"}),`
 `,n(e.p,{get children(){return["We use our own ",n(e.a,{href:"https://github.com/NvChad/ui",children:"plugin"})," for ",n(e.code,{children:"statusline"})," and ",n(e.code,{children:"tabufline"}),". The default config is (keep in mind that every plugin's default config is just a table):"]}}),`
 `,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return[`M.ui = {
   `,n(e.span,{className:"hljs-comment",children:"-- ...other options"}),`
@@ -30,7 +30,8 @@ import{b as n,q as i,g as l,t as c}from"./entry-client-91d26f47.js";import{M as 
   
       `,n(e.span,{className:"hljs-keyword",children:"return"}),` {
         mode = `,n(e.span,{className:"hljs-function",get children(){return[n(e.span,{className:"hljs-keyword",children:"function"}),n(e.span,{className:"hljs-params",children:"()"})]}}),`
-          `,n(e.span,{className:"hljs-keyword",children:"return"})," st_modules.mode() .. ",n(e.span,{className:"hljs-string",children:'" bruh "'}),`
+          `,n(e.span,{className:"hljs-keyword",children:"return"})," st_modules.mode() .. ",n(e.span,{className:"hljs-string",children:'" bruh "'}),` 
+          `,n(e.span,{className:"hljs-comment",children:'-- or just return "" to hide this module'}),`
         `,n(e.span,{className:"hljs-keyword",children:"end"}),`,
       }
     `,n(e.span,{className:"hljs-keyword",children:"end"}),`,
