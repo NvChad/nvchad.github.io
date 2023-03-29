@@ -1,4 +1,4 @@
-import{b as e,q as t,g as s,t as a}from"./entry-client-d253aea2.js";import{M as i}from"./index-a172eef7.js";const h=a("<kbd>Ctrl</kbd>",2),d=a("<kbd>Space</kbd>",2),o=a("<kbd>alt</kbd>",2),p=a("<kbd>shift</kbd>",2),r=a("<br>",1);function c(l){const n=Object.assign({h2:"h2",p:"p",ul:"ul",li:"li",code:"code",pre:"pre",span:"span",strong:"strong",blockquote:"blockquote"},i(),l.components);return[e(n.h2,{children:"Overview"}),`
+import{b as e,q as t,g as s,t as a}from"./entry-client-8e9ccd14.js";import{M as i}from"./index-b165016c.js";const h=a("<kbd>Ctrl</kbd>",2),d=a("<kbd>Space</kbd>",2),o=a("<kbd>alt</kbd>",2),p=a("<kbd>shift</kbd>",2),r=a("<br>",1);function c(l){const n=Object.assign({h2:"h2",p:"p",ul:"ul",li:"li",code:"code",pre:"pre",span:"span",strong:"strong",blockquote:"blockquote"},i(),l.components);return[e(n.h2,{children:"Overview"}),`
 `,e(n.p,{children:"The mapping configuration uses the nvim name shorcuts as:"}),`
 `,e(n.ul,{get children(){return[`
 `,e(n.li,{get children(){return[e(n.code,{children:"<C>"})," -> ",s(h)]}}),`
@@ -17,9 +17,7 @@ import{b as e,q as t,g as s,t as a}from"./entry-client-d253aea2.js";import{M as 
 [`,e(n.span,{className:"hljs-string",children:'"keys"'}),"] = {",e(n.span,{className:"hljs-string",children:'"action"'}),", ",e(n.span,{className:"hljs-string",children:'"description"'}),`, opts = {}},
 
 [`,e(n.span,{className:"hljs-string",children:'"<C-n>"'}),"] = {",e(n.span,{className:"hljs-string",children:'"<cmd> NvimTreeToggle <CR>"'}),", ",e(n.span,{className:"hljs-string",children:'"Toggle nvimtree"'}),`},
-
-`,e(n.span,{className:"hljs-comment",children:"-- : can be used instead of <cmd> too "}),`
-[`,e(n.span,{className:"hljs-string",children:'"<leader>ff"'}),"] = {",e(n.span,{className:"hljs-string",children:'":Telescope <CR>"'}),", ",e(n.span,{className:"hljs-string",children:'"Telescope"'}),`},   
+[`,e(n.span,{className:"hljs-string",children:'"<leader>ff"'}),"] = {",e(n.span,{className:"hljs-string",children:'"<cmd> Telescope <CR>"'}),", ",e(n.span,{className:"hljs-string",children:'"Telescope"'}),`},   
 
 `,e(n.span,{className:"hljs-comment",children:"-- opts can have the props: buffer, silent, noremap, nowait and so on."}),`
 `,e(n.span,{className:"hljs-comment",children:"-- All standard key binding opts are supported. "}),`
