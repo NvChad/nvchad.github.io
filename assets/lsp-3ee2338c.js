@@ -1,15 +1,15 @@
-import{b as e,q as o,g as l,i as h,t as c}from"./entry-client-3cb49ff2.js";import{M as t}from"./index-22b1818d.js";const r=c("<br>",1),d=c("<u></u>",2);function i(s){const n=Object.assign({h2:"h2",p:"p",a:"a",code:"code",ul:"ul",li:"li",strong:"strong",pre:"pre",span:"span",blockquote:"blockquote"},t(),s.components);return[e(n.h2,{children:"Setup lsp server"}),`
+import{b as e,q as o,g as l,i as h,t as c}from"./entry-client-e2f7a0db.js";import{M as t}from"./index-122662dd.js";const r=c("<br>",1),d=c("<u></u>",2);function i(s){const n=Object.assign({h2:"h2",p:"p",a:"a",code:"code",ul:"ul",li:"li",strong:"strong",pre:"pre",span:"span",blockquote:"blockquote"},t(),s.components);return[e(n.h2,{children:"Setup lsp server"}),`
 `,e(n.p,{get children(){return["Before starting, it is strongly recommended that you walk through the LSP configuration: ",e(n.a,{href:"https://github.com/neovim/nvim-lspconfig",get children(){return[e(n.code,{children:"lspconfig"})," repository"]}}),"."]}}),`
 `,e(n.p,{get children(){return["Then check ",e(n.a,{href:"https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md",children:"server_configurations.md"})," to make sure your language's LSP server is present there."]}}),`
 `,e(n.ul,{get children(){return[`
-`,e(n.li,{get children(){return e(n.strong,{children:"custom/plugina.lua"})}}),`
+`,e(n.li,{get children(){return e(n.strong,{children:"custom/plugins.lua"})}}),`
 `]}}),`
 `,e(n.pre,{get children(){return e(n.code,{className:"hljs language-lua",get children(){return[e(n.span,{className:"hljs-comment",children:"-- In order to modify the `lspconfig` configuration:"}),`
 {
   `,e(n.span,{className:"hljs-string",children:'"neovim/nvim-lspconfig"'}),`,
    `,e(n.span,{className:"hljs-built_in",children:"config"})," = ",e(n.span,{className:"hljs-function",get children(){return[e(n.span,{className:"hljs-keyword",children:"function"}),e(n.span,{className:"hljs-params",children:"()"})]}}),`
       `,e(n.span,{className:"hljs-built_in",children:"require"})," ",e(n.span,{className:"hljs-string",children:'"plugins.configs.lspconfig"'}),`
-      `,e(n.span,{className:"hljs-built_in",children:"require"})," ",e(n.span,{className:"hljs-string",children:'"custom.plugins.lspconfig"'}),`
+      `,e(n.span,{className:"hljs-built_in",children:"require"})," ",e(n.span,{className:"hljs-string",children:'"custom.configs.lspconfig"'}),`
    `,e(n.span,{className:"hljs-keyword",children:"end"}),`,
 },
 `]}})}}),`
