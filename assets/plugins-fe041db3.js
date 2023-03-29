@@ -1,4 +1,4 @@
-import{b as n,q as r,g as s,t as c}from"./entry-client-3cb49ff2.js";import{M as i}from"./index-22b1818d.js";const a=c("<br>",1);function t(l){const e=Object.assign({h2:"h2",p:"p",a:"a",code:"code",ul:"ul",li:"li",blockquote:"blockquote",strong:"strong",pre:"pre",span:"span"},i(),l.components);return[n(e.h2,{children:"Overview"}),`
+import{b as n,q as r,g as s,t as c}from"./entry-client-29c1bbcd.js";import{M as t}from"./index-d16430d5.js";const a=c("<br>",1);function i(l){const e=Object.assign({h2:"h2",p:"p",a:"a",code:"code",ul:"ul",li:"li",blockquote:"blockquote",strong:"strong",pre:"pre",span:"span"},t(),l.components);return[n(e.h2,{children:"Overview"}),`
 `,n(e.p,{get children(){return["NvChad uses ",n(e.a,{href:"https://github.com/folke/lazy.nvim",children:"lazy.nvim"})," for plugins management. Basically, NvChad expects a user plugin table, which then gets merged with the default plugins table. You can find the default table in: ",n(e.a,{href:"https://github.com/NvChad/NvChad/blob/v2.0/lua/plugins/init.lua",get children(){return n(e.code,{children:"lua/plugins/init.lua"})}}),"."]}}),`
 `,n(e.h2,{children:"Lazy loading"}),`
 `,n(e.p,{children:"We lazy load almost 95% of the plugins, so we expect and recommend you to lazy load the plugins as well, as its efficient in reducing startuptime."}),`
@@ -36,8 +36,7 @@ import{b as n,q as r,g as s,t as c}from"./entry-client-3cb49ff2.js";import{M as 
     `,n(e.span,{className:"hljs-keyword",children:"end"}),`,
   }
 
-  `,n(e.span,{className:"hljs-comment",children:"-- this opts will merge with the default opts table"}),`
-  `,n(e.span,{className:"hljs-comment",children:"-- meaning that default opts + your opts"}),`
+  `,n(e.span,{className:"hljs-comment",children:"-- opts overrides all default plugin configurations"}),`
   {
     `,n(e.span,{className:"hljs-string",children:'"nvim-treesitter/nvim-treesitter"'}),`,
     opts = {
@@ -64,4 +63,4 @@ import{b as n,q as r,g as s,t as c}from"./entry-client-3cb49ff2.js";import{M as 
 }
 
 `,n(e.span,{className:"hljs-keyword",children:"return"}),` plugins
-`]}})}})]}function d(l={}){const{wrapper:e}=Object.assign({},i(),l.components);return e?n(e,r(l,{get children(){return n(t,l)}})):t(l)}export{d as default};
+`]}})}})]}function d(l={}){const{wrapper:e}=Object.assign({},t(),l.components);return e?n(e,r(l,{get children(){return n(i,l)}})):i(l)}export{d as default};
