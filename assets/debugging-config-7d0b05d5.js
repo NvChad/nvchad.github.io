@@ -1,4 +1,4 @@
-import{M as r}from"./index-7267d386.js";import{b as n,q as o}from"./entry-client-9d9bc004.js";function i(t){const e=Object.assign({h2:"h2",ul:"ul",li:"li",code:"code",a:"a"},r(),t.components);return[n(e.h2,{children:"Basic debugging"}),`
+import{M as r}from"./index-f97cef65.js";import{b as n,q as o}from"./entry-client-debd7ce2.js";function i(t){const e=Object.assign({h2:"h2",ul:"ul",li:"li",code:"code",a:"a"},r(),t.components);return[n(e.h2,{children:"Basic debugging"}),`
 `,n(e.ul,{get children(){return[`
 `,n(e.li,{get children(){return["You can check the health of Neovim with the ",n(e.code,{children:"checkhealth"})," command."]}}),`
 `,n(e.li,{children:"Make sure you dont have syntax errors in your custom config files"}),`

@@ -1,10 +1,15 @@
-import{M as s}from"./index-7267d386.js";import{b as n,q as a}from"./entry-client-9d9bc004.js";function l(r){const e=Object.assign({h1:"h1",p:"p",h2:"h2",ul:"ul",li:"li",pre:"pre",code:"code",span:"span",a:"a"},s(),r.components);return[n(e.h1,{children:"# NvChad API"}),`
+import{b as n,q as a,g as i,t}from"./entry-client-debd7ce2.js";import{M as r}from"./index-f97cef65.js";const c=t("<kbd>Alt+1</kbd>",2);function l(s){const e=Object.assign({h1:"h1",p:"p",h2:"h2",ul:"ul",li:"li",code:"code",pre:"pre",span:"span",a:"a"},r(),s.components);return[n(e.h1,{children:"# NvChad API"}),`
 `,n(e.p,{children:"These are list of some functions & tips/tricks which are provided by nvchad plugins that aren't included in the config. You can make commands & mappings out of them."}),`
-`,n(e.h2,{children:"Tbufpick"}),`
+`,n(e.h2,{children:"GotoTab"}),`
 `,n(e.ul,{get children(){return[`
-`,n(e.li,{children:"Used for picking buffers by entering the numbers previewed on them after running this module."}),`
+`,n(e.li,{get children(){return["This utilizes the ",n(e.code,{children:"vim.t.bufs"})," tab table variable where we store buffer numbers of current tab."]}}),`
+`,n(e.li,{get children(){return["Then it loops from 1-9 to create mappings of switching tab by number i.e ",i(c)," will switch first tab."]}}),`
 `]}}),`
-`,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return[n(e.span,{className:"hljs-built_in",children:"require"}),"(",n(e.span,{className:"hljs-string",children:'"nvchad_ui.tabufline"'}),`).tbufpick()
+`,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return[n(e.span,{className:"hljs-keyword",children:"for"})," i = ",n(e.span,{className:"hljs-number",children:"1"}),", ",n(e.span,{className:"hljs-number",children:"9"}),", ",n(e.span,{className:"hljs-number",children:"1"})," ",n(e.span,{className:"hljs-keyword",children:"do"}),`
+  vim.keymap.set(`,n(e.span,{className:"hljs-string",children:'"n"'}),", ",n(e.span,{className:"hljs-built_in",children:"string"}),".",n(e.span,{className:"hljs-built_in",children:"format"}),"(",n(e.span,{className:"hljs-string",children:'"<A-%s>"'}),", i), ",n(e.span,{className:"hljs-function",get children(){return[n(e.span,{className:"hljs-keyword",children:"function"}),n(e.span,{className:"hljs-params",children:"()"})]}}),`
+    vim.api.nvim_set_current_buf(vim.t.bufs[i])
+  `,n(e.span,{className:"hljs-keyword",children:"end"}),`)
+`,n(e.span,{className:"hljs-keyword",children:"end"}),`
 `]}})}}),`
 `,n(e.h2,{children:"Arrange buffer"}),`
 `,n(e.ul,{get children(){return[`
@@ -46,4 +51,4 @@ import{M as s}from"./index-7267d386.js";import{b as n,q as a}from"./entry-client
     `,n(e.span,{className:"hljs-keyword",children:"end"}),`, vim.t.bufs)
   `,n(e.span,{className:"hljs-keyword",children:"end"}),`,
 })
-`]}})}})]}function c(r={}){const{wrapper:e}=Object.assign({},s(),r.components);return e?n(e,a(r,{get children(){return n(l,r)}})):l(r)}export{c as default};
+`]}})}})]}function u(s={}){const{wrapper:e}=Object.assign({},r(),s.components);return e?n(e,a(s,{get children(){return n(l,s)}})):l(s)}export{u as default};

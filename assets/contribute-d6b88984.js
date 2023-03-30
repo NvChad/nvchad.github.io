@@ -1,4 +1,4 @@
-import{M as i}from"./index-7267d386.js";import{b as n,q as a}from"./entry-client-9d9bc004.js";function r(t){const e=Object.assign({h2:"h2",ul:"ul",li:"li",p:"p",a:"a"},i(),t.components);return[n(e.h2,{children:"Things to know before contributing"}),`
+import{M as i}from"./index-f97cef65.js";import{b as n,q as a}from"./entry-client-debd7ce2.js";function r(t){const e=Object.assign({h2:"h2",ul:"ul",li:"li",p:"p",a:"a"},i(),t.components);return[n(e.h2,{children:"Things to know before contributing"}),`
 `,n(e.ul,{get children(){return[`
 `,n(e.li,{get children(){return[`
 `,n(e.p,{children:"When making a PR (pull request), please be very descriptive about what you've done."}),`
