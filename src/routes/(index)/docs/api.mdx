@@ -2,12 +2,17 @@
 
 These are list of some functions & tips/tricks which are provided by nvchad plugins that aren't included in the config. You can make commands & mappings out of them. 
 
-## Tbufpick 
+## GotoTab
 
-- Used for picking buffers by entering the numbers previewed on them after running this module.
+- This utilizes the `vim.t.bufs` tab table variable where we store buffer numbers of current tab.
+- Then it loops from 1-9 to create mappings of switching tab by number i.e <kbd>Alt+1</kbd> will switch first tab.
 
 ```lua
-require("nvchad_ui.tabufline").tbufpick()
+for i = 1, 9, 1 do
+  vim.keymap.set("n", string.format("<A-%s>", i), function()
+    vim.api.nvim_set_current_buf(vim.t.bufs[i])
+  end)
+end
 ```
 
 ## Arrange buffer
