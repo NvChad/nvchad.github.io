@@ -1,0 +1,49 @@
+# Nvim-treesitter
+
+We use [Nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) plugin to have proper syntax highlighting in NvChad. It can be used for various things such as auto indent etc too.
+
+## Install parsers 
+
+The TSInstall command is used to install treesitter parsers i.e `TSInstall <parser>` 
+
+- Example : 
+
+```lua
+TSInstall lua html
+```
+
+<br/>
+
+But this may be tedious when you have so many parsers to install and you'd have to repeat this step if you're re-installing nvchad with your old custom settings.
+
+## Custom config 
+
+- So now we'll just override the default config and add our own parser names to it.
+- For knowing correct parser names, do check [nvim-treesitter docs](https://github.com/nvim-treesitter/nvim-treesitter#supported-languages)
+- `custom/plugins.lua`
+
+```lua
+{
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = {
+        -- defaults 
+        "vim",
+        "lua",
+
+        -- web dev 
+        "html",
+        "css",
+        "javascript",
+        "typescript",
+        "tsx",
+        "json",
+        -- "vue", "svelte",
+
+       -- low level
+        "c",
+        "zig"
+      },
+    },
+  },
+```
