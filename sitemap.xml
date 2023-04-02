@@ -36,6 +36,11 @@
      <priority>0.5</priority>
    </url>
   <url>
+     <loc>https://nvchad.com/docs/config/syntax</loc>
+     <changefreq>weekly</changefreq>
+     <priority>0.5</priority>
+   </url>
+  <url>
      <loc>https://nvchad.com/docs/config/theming</loc>
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
