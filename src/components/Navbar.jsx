@@ -122,13 +122,20 @@ export function BtnLinks() {
 }
 
 function Searchbar() {
-  // creadte algolia  docsearch
   createEffect(() => {
+    // setup algolia docsearch
     docsearch({
       appId: "BOJS19CH35",
       apiKey: "c74ee96af1dea95b6e189501983733f8",
       indexName: "nvchad",
       container: "#docsearch",
+    });
+
+    // open docs on Ctrl + k keybind
+    document.addEventListener("keydown", (event) => {
+      if (event.ctrlKey && event.key === "k") {
+        document.querySelector(".DocSearch").click();
+      }
     });
   });
 
