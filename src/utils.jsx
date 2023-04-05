@@ -37,8 +37,8 @@ export const assign_heading_ids = () => {
   const headings = [];
 
   headingElements?.forEach((item) => {
-    item.id = item.innerText.replaceAll(/[ .&]/g, "_");
-    headings.push([item.localName, item.innerText]);
+    item.id = item.innerText.replaceAll(/[ .&]/g, "_").toLowerCase();
+    headings.push([item.localName.toLowerCase(), item.innerText]);
   });
 
   setHeadings(headings);

@@ -48,7 +48,7 @@ function ContextTitles() {
           {contextHeadings.map((x) => (
             <A
               href={`${useLocation().pathname}#${
-                x[1].replaceAll(/[ .&]/g, "_")
+                x[1].replaceAll(/[ .&]/g, "_").toLowerCase()
               }`}
               class={generateStyles(x)}
               onclick={() => setActiveContext_Heading(x[1])}
