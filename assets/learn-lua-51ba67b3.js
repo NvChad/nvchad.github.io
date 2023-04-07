@@ -1,4 +1,4 @@
-import{M as a}from"./index-1189c10c.js";import{b as n,q as r}from"./entry-client-0d411de6.js";function l(e){const s=Object.assign({h2:"h2",pre:"pre",code:"code",span:"span",h3:"h3",p:"p",strong:"strong",ul:"ul",li:"li"},a(),e.components);return[n(s.h2,{children:"Comments"}),`
+import{M as a}from"./index-f9abae30.js";import{b as n,q as r}from"./entry-client-09a37913.js";function l(e){const s=Object.assign({h2:"h2",pre:"pre",code:"code",span:"span",h3:"h3",p:"p",strong:"strong",ul:"ul",li:"li"},a(),e.components);return[n(s.h2,{children:"Comments"}),`
 `,n(s.pre,{get children(){return n(s.code,{className:"hljs language-lua",get children(){return[n(s.span,{className:"hljs-comment",children:"-- comment"}),`
 `,n(s.span,{className:"hljs-built_in",children:"print"}),"(",n(s.span,{className:"hljs-string",children:'"Hi"'}),") ",n(s.span,{className:"hljs-comment",children:"-- comment"}),`
 
