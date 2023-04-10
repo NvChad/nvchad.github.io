@@ -1,4 +1,4 @@
-import{b as n,q as a,g as i,t}from"./entry-client-06334e81.js";import{M as r}from"./index-163efe73.js";const c=t("<kbd>Alt+1</kbd>",2);function l(s){const e=Object.assign({h1:"h1",p:"p",h2:"h2",ul:"ul",li:"li",code:"code",pre:"pre",span:"span",a:"a"},r(),s.components);return[n(e.h1,{children:"# NvChad API"}),`
+import{b as n,q as a,g as i,t}from"./entry-client-0a436940.js";import{M as r}from"./index-570d8eed.js";const c=t("<kbd>Alt+1</kbd>",2);function l(s){const e=Object.assign({h1:"h1",p:"p",h2:"h2",ul:"ul",li:"li",code:"code",pre:"pre",span:"span",a:"a"},r(),s.components);return[n(e.h1,{children:"# NvChad API"}),`
 `,n(e.p,{children:"These are list of some functions & tips/tricks which are provided by nvchad plugins that aren't included in the config. You can make commands & mappings out of them."}),`
 `,n(e.h2,{children:"GotoTab"}),`
 `,n(e.ul,{get children(){return[`
@@ -31,7 +31,7 @@ import{b as n,q as a,g as i,t}from"./entry-client-06334e81.js";import{M as r}fro
 `,n(e.ul,{get children(){return[`
 `,n(e.li,{get children(){return["Used to toggle between 2 themes, make sure that you have ",n(e.code,{children:"theme_toggle"})," option set in your chadrc."]}}),`
 `]}}),`
-`,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return[n(e.span,{className:"hljs-built_in",children:"require"}),"(",n(e.span,{className:"hljs-string",children:'"base46"'}),`).toggle_themes()
+`,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return[n(e.span,{className:"hljs-built_in",children:"require"}),"(",n(e.span,{className:"hljs-string",children:'"base46"'}),`).toggle_theme()
 `]}})}}),`
 `,n(e.h2,{children:"Close all buffers"}),`
 `,n(e.ul,{get children(){return[`
