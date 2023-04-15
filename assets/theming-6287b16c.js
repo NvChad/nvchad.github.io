@@ -1,8 +1,8 @@
-import{b as n,q as i,g as l,t}from"./entry-client-28f4a481.js";import{M as h}from"./index-f6b045cc.js";const a=t("<br>",1),c=t("<u>WARNING: Do this at your own risk because you might not be able to make nice nvchad themes like siduck.</u>",2);function r(s){const e=Object.assign({h2:"h2",ul:"ul",li:"li",code:"code",p:"p",pre:"pre",span:"span",strong:"strong",h3:"h3",blockquote:"blockquote",a:"a"},h(),s.components);return[n(e.h2,{children:"Override default highlight groups"}),`
+import{b as n,q as i,g as t,t as l}from"./entry-client-401c79d4.js";import{M as h}from"./index-be0bc58d.js";const a=l("<br>",1),c=l("<u>WARNING: Do this at your own risk because you might not be able to make nice nvchad themes like siduck.</u>",2);function r(s){const e=Object.assign({h2:"h2",ul:"ul",li:"li",a:"a",p:"p",pre:"pre",code:"code",span:"span",strong:"strong",h3:"h3",blockquote:"blockquote"},h(),s.components);return[n(e.h2,{children:"Override default highlight groups"}),`
 `,n(e.ul,{get children(){return[`
 `,n(e.li,{children:"Make sure you use a valid highlight group."}),`
-`,n(e.li,{get children(){return["Check your theme colors in this dir: ",n(e.code,{children:"~/.local/share/nvim/lazy/base46/lua/base46/themes"})]}}),`
-`,n(e.li,{get children(){return["To know which highlight groups are available, check ",n(e.code,{children:"~/.local/share/nvim/lazy/base46/lua/base46/integrations/anyfile.lua"})]}}),`
+`,n(e.li,{get children(){return["Check your theme colors in the ",n(e.a,{href:"https://github.com/NvChad/base46/tree/v2.0/lua/base46/themes",children:"base46 theme dir"})]}}),`
+`,n(e.li,{get children(){return["To know which highlight groups are available, check the ",n(e.a,{href:"https://github.com/NvChad/base46/tree/v2.0/lua/base46/integrations",children:"base46 integrations dir"})]}}),`
 `,n(e.li,{children:"Also if you just press tab key in hl_override, a list of highlight groups will show up via the completion menu."}),`
 `]}}),`
 `,n(e.p,{children:'When modifying the custom highlight groups in your theme file, such as "onedark.lua", it is important to note that only the variables from "base_30" can be used for this purpose.'}),`
@@ -19,7 +19,7 @@ import{b as n,q as i,g as l,t}from"./entry-client-28f4a481.js";import{M as h}fro
    },
 }
 `]}})}}),`
-`,l(a),`
+`,t(a),`
 `,n(e.p,{get children(){return["In order to add custom highlights, its the same as above, just use ",n(e.strong,{get children(){return n(e.code,{children:"hl_add"})}}),"."]}}),`
 `,n(e.h2,{children:"Customize themes"}),`
 `,n(e.p,{children:"If you just want to customize an already existing theme, you can change the following configuration:"}),`
@@ -43,7 +43,7 @@ import{b as n,q as i,g as l,t}from"./entry-client-28f4a481.js";import{M as h}fro
 `]}})}}),`
 `,n(e.h3,{children:"Local themes"}),`
 `,n(e.blockquote,{get children(){return[`
-`,l(c),`
+`,t(c),`
 `]}}),`
 `,n(e.ul,{get children(){return[`
 `,n(e.li,{get children(){return["Default themes can be found in our ",n(e.a,{href:"https://github.com/NvChad/base46",get children(){return n(e.code,{children:"base46"})}})," repository."]}}),`
@@ -66,7 +66,7 @@ M.`,n(e.span,{className:"hljs-built_in",children:"type"})," = ",n(e.span,{classN
 
 `,n(e.span,{className:"hljs-keyword",children:"return"}),` M
 `]}})}}),`
-`,l(a),`
+`,t(a),`
 `,n(e.p,{children:"Finally, add your theme in chadrc."}),`
 `,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return[`M.ui = {
    theme = `,n(e.span,{className:"hljs-string",children:'"siduck"'}),`,
