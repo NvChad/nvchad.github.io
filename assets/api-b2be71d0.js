@@ -1,4 +1,4 @@
-import{b as n,q as a,g as i,t}from"./entry-client-af7db93b.js";import{M as r}from"./index-e9cd4b5f.js";const c=t("<kbd>Alt+1</kbd>",2);function l(s){const e=Object.assign({h1:"h1",p:"p",h2:"h2",ul:"ul",li:"li",code:"code",pre:"pre",span:"span",a:"a"},r(),s.components);return[n(e.h1,{children:"# NvChad API"}),`
+import{b as n,q as a,g as i,t}from"./entry-client-5de32f75.js";import{M as r}from"./index-8f08adb7.js";const c=t("<kbd>Alt+1</kbd>",2);function l(s){const e=Object.assign({h1:"h1",p:"p",h2:"h2",ul:"ul",li:"li",code:"code",pre:"pre",span:"span",a:"a"},r(),s.components);return[n(e.h1,{children:"# NvChad API"}),`
 `,n(e.p,{children:"These are list of some functions & tips/tricks which are provided by nvchad plugins that aren't included in the config. You can make commands & mappings out of them."}),`
 `,n(e.h2,{children:"GotoTab"}),`
 `,n(e.ul,{get children(){return[`
@@ -37,7 +37,7 @@ import{b as n,q as a,g as i,t}from"./entry-client-af7db93b.js";import{M as r}fro
 `,n(e.ul,{get children(){return[`
 `,n(e.li,{children:"Used to close all the buffers in current tab. ( the close icon in tabufline handles this )."}),`
 `]}}),`
-`,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return[n(e.span,{className:"hljs-built_in",children:"require"}),"(",n(e.span,{className:"hljs-string",children:'"nvchad_ui.tabufline"'}),`).closeAllbufs()
+`,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return[n(e.span,{className:"hljs-built_in",children:"require"}),"(",n(e.span,{className:"hljs-string",children:'"nvchad_ui.tabufline"'}),`).closeAllBufs()
 `]}})}}),`
 `,n(e.h2,{children:"Show only modifed buffers"}),`
 `,n(e.ul,{get children(){return[`
