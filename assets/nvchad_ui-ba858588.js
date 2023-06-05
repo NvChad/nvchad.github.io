@@ -1,4 +1,4 @@
-import{b as n,q as i,g as l,t as c}from"./entry-client-ed02b346.js";import{M as t}from"./index-a27ef57d.js";const a=c("<br>",1);function r(s){const e=Object.assign({h2:"h2",p:"p",a:"a",code:"code",pre:"pre",span:"span",h3:"h3"},t(),s.components);return[n(e.h2,{children:"Statusline & tabufline"}),`
+import{b as n,q as i,g as l,t as c}from"./entry-client-79ca0a46.js";import{M as t}from"./index-0fa771b7.js";const a=c("<br>",1);function r(s){const e=Object.assign({h2:"h2",p:"p",a:"a",code:"code",pre:"pre",span:"span",h3:"h3"},t(),s.components);return[n(e.h2,{children:"Statusline & tabufline"}),`
 `,n(e.p,{get children(){return["We use our own ",n(e.a,{href:"https://github.com/NvChad/ui",children:"plugin"})," for ",n(e.code,{children:"statusline"})," and ",n(e.code,{children:"tabufline"}),". The default config is (keep in mind that every plugin's default config is just a table):"]}}),`
 `,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return[`M.ui = {
   `,n(e.span,{className:"hljs-comment",children:"-- ...other options"}),`
@@ -39,7 +39,7 @@ import{b as n,q as i,g as l,t as c}from"./entry-client-ed02b346.js";import{M as 
 }
 `]}})}}),`
 `,l(a),`
-`,n(e.p,{get children(){return["It is recommended to check the list of modules in ",n(e.a,{href:"https://github.com/NvChad/ui/blob/main/lua/nvchad_ui/statusline/modules.lua",get children(){return["our ",n(e.code,{children:"statusline"})," modules file"]}}),'. In the above code, you can see that we want to print "bruh" next to the mode module, in the statusline. In order to add highlight group to your text, do:']}}),`
+`,n(e.p,{get children(){return["It is recommended to check the list of modules in ",n(e.a,{href:"https://github.com/NvChad/ui/blob/v2.0/lua/nvchad_ui/statusline",get children(){return["our ",n(e.code,{children:"statusline"})," modules file"]}}),'. In the above code, you can see that we want to print "bruh" next to the mode module, in the statusline. In order to add highlight group to your text, do:']}}),`
 `,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return[n(e.span,{className:"hljs-string",children:'"%#BruhHl#"'})," .. ",n(e.span,{className:"hljs-string",children:'" bruh "'})," ",n(e.span,{className:"hljs-comment",children:"-- the highlight group here is BruhHl"}),`
 `]}})}}),`
 `,n(e.h3,{get children(){return["Override ",n(e.code,{children:"tabufline"})," modules"]}}),`
@@ -60,4 +60,4 @@ import{b as n,q as i,g as l,t as c}from"./entry-client-ed02b346.js";import{M as 
 }
 `]}})}}),`
 `,l(a),`
-`,n(e.p,{get children(){return["Again, check the list of modules in ",n(e.a,{href:"https://github.com/NvChad/ui/blob/main/lua/nvchad_ui/tabufline/modules.lua",children:"our tabufline modules file"}),"."]}})]}function o(s={}){const{wrapper:e}=Object.assign({},t(),s.components);return e?n(e,i(s,{get children(){return n(r,s)}})):r(s)}export{o as default};
+`,n(e.p,{get children(){return["Again, check the list of modules in ",n(e.a,{href:"https://github.com/NvChad/ui/blob/v2.0/lua/nvchad_ui/tabufline",children:"our tabufline modules file"}),"."]}})]}function o(s={}){const{wrapper:e}=Object.assign({},t(),s.components);return e?n(e,i(s,{get children(){return n(r,s)}})):r(s)}export{o as default};
