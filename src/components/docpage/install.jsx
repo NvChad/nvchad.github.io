@@ -41,7 +41,7 @@ const Btn = (props) => {
 export default () => {
   return (
     <div grid gap-5>
-      <div class="[&_*]:rounded-lg [&_button]:p-3 [&_button]:w-fit vertCentered !gap-3">
+      <div flex flex-wrap class="[&_*]:rounded-lg [&_button]:p-3 [&_button]:w-fit vertCentered !gap-3">
         <Btn os="Linux / Macos" cmd={unix_cmd} icon="i-mingcute:hashtag-fill" />
         <Btn os="Windows" cmd={windows_cmd} icon="i-mdi:windows" />
         <Btn os="Docker" cmd={docker_cmd} icon="i-nonicons:docker-16" />
