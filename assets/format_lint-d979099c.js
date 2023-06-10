@@ -1,4 +1,4 @@
-import{b as e,q as t,g as s,t as c}from"./entry-client-66f42a9f.js";import{M as a}from"./index-29714db3.js";const r=c("<br>",1);function i(l){const n=Object.assign({h2:"h2",p:"p",code:"code",pre:"pre",span:"span",ul:"ul",li:"li",a:"a"},a(),l.components);return[e(n.h2,{children:"Null-ls.nvim"}),`
+import{b as e,q as t,g as s,t as c}from"./entry-client-1a256bdb.js";import{M as a}from"./index-76ad1f69.js";const r=c("<br>",1);function i(l){const n=Object.assign({h2:"h2",p:"p",code:"code",pre:"pre",span:"span",ul:"ul",li:"li",a:"a"},a(),l.components);return[e(n.h2,{children:"Null-ls.nvim"}),`
 `,e(n.p,{get children(){return["It is recommended that you install ",e(n.code,{children:"null-ls"}),` to manage formatting & linting.
 Here's a possible install configuration for `,e(n.code,{children:"null-ls"}),":"]}}),`
 `,e(n.pre,{get children(){return e(n.code,{className:"hljs language-lua",get children(){return[`{
@@ -24,7 +24,7 @@ Here's a possible install configuration for `,e(n.code,{children:"null-ls"}),":"
 `]}}),`
 `,e(n.h2,{children:"Configuration"}),`
 `,e(n.p,{get children(){return["Make sure to check ",e(n.a,{href:"https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md",get children(){return[e(n.code,{children:"null-ls"})," builtins"]}})," to get exact names for formatters, linters etc."]}}),`
-`,e(n.p,{get children(){return["Here's an exmple configuration for ",e(n.code,{children:"null-ls"}),", following the NvChad file directory structure:"]}}),`
+`,e(n.p,{get children(){return["Here's an example configuration for ",e(n.code,{children:"null-ls"}),", following the NvChad file directory structure:"]}}),`
 `,e(n.pre,{get children(){return e(n.code,{className:"hljs language-lua",get children(){return[e(n.span,{className:"hljs-comment",children:"-- custom/configs/null-ls.lua"}),`
 
 `,e(n.span,{className:"hljs-keyword",children:"local"})," null_ls = ",e(n.span,{className:"hljs-built_in",children:"require"})," ",e(n.span,{className:"hljs-string",children:'"null-ls"'}),`
