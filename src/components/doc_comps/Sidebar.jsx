@@ -72,7 +72,7 @@ function SideBar() {
             : (
               <A
                 href={item[1]}
-                vertCentered
+                class="vertCentered"
                 activeClass="font-medium text-blue-5 dark:text-blue-3"
               >
                 <div class={item[2]}></div>

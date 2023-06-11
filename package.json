@@ -2,34 +2,35 @@
   "name": "nvchad website",
   "version": "0.4.1",
   "type": "module",
-  "dependencies": {
-    "@docsearch/css": "^3.3.3",
-    "@docsearch/js": "3",
-    "@solidjs/meta": "^0.28.2",
-    "@solidjs/router": "^0.7.0",
-    "install": "^0.13.0",
-    "solid-js": "^1.6.7",
-    "solid-mdx": "^0.0.6",
-    "solid-start": "^0.2.23",
-    "undici": "^5.21.0"
-  },
+
   "devDependencies": {
-    "@iconify/json": "^2.2.2",
-    "@mdx-js/rollup": "^2.2.1",
-    "@unocss/preset-icons": "^0.48.0",
-    "@unocss/transformer-attributify-jsx": "^0.48.0",
-    "@unocss/transformer-directives": "^0.48.0",
     "mdx": "^0.3.1",
     "rehype-highlight": "^6.0.0",
-    "solid-start-static": "^0.2.23",
-    "unocss": "^0.48.0",
-    "vite": "^4.0.4",
-    "vite-plugin-solid": "2.5.0"
+    "@mdx-js/rollup": "^2.3.0",
+    "@iconify/json": "^2.2.76",
+    "unocss": "^0.53.1",
+    "@unocss/preset-icons": "^0.53.1",
+    "@unocss/transformer-directives": "^0.53.1",
+    "vite": "^4.3.9",
+    "solid-start-node": "^0.2.26",
+    "solid-start-static": "^0.2.26"
   },
+
+  "dependencies": {
+    "@docsearch/css": "^3.5.0",
+    "@docsearch/js": "3",
+    "@solidjs/meta": "^0.28.5",
+    "@solidjs/router": "^0.8.2",
+    "solid-js": "^1.7.6",
+    "solid-mdx": "^0.0.6",
+    "solid-start": "^0.2.26",
+    "undici": "^5.22.1"
+  },
+
   "scripts": {
-    "start": "npx serve dist",
+    "start": "solid-start start",
     "dev": "solid-start dev",
-    "build": "solid-start build && mv dist _dist && mv _dist/public dist && rm -rf _dist && cp -r CNAME dist && node ./src/gen_sitemap.js"
+    "build": "solid-start build && cp -r CNAME dist && node ./src/gen_sitemap.js"
   },
   "engines": {
     "node": ">=16.8"

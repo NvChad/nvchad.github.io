@@ -1,5 +1,3 @@
-import transformerAttributifyJsx from "@unocss/transformer-attributify-jsx";
-
 // lets me use unocss classes in css files
 import transformerDirectives from "@unocss/transformer-directives";
 
@@ -56,7 +54,6 @@ export default defineConfig({
   ],
 
   transformers: [
-    transformerAttributifyJsx({ exclude: [/node_modules/] }),
     transformerDirectives(),
   ],
 });
