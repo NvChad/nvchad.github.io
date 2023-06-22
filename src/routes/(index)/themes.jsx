@@ -47,6 +47,7 @@ const [activeImages, setImages] = createSignal(languages[0].images);
 const [galleryShown, setGalleryStatus] = createSignal(true);
 const [zoomedImg, setZoomedImgPath] = createSignal("");
 const [gridMode, setGridMode] = createSignal(true);
+const [scrollPosition, setScrollPosition] = createSignal(0);
 
 function LangListBtns() {
   return (
@@ -129,6 +130,7 @@ function Gallery() {
               onclick={() => {
                 setZoomedImgPath(key);
                 setGalleryStatus(!galleryShown());
+                setScrollPosition(window.scrollY);
               }}
             />
 
@@ -154,7 +156,10 @@ function ImageZoomed() {
     <div top-0 left-0 sticky>
       {/* image close btn */}
       <button
-        onclick={() => setGalleryStatus(!galleryShown())}
+        onclick={() => {
+            setGalleryStatus(!galleryShown())
+            window.scrollTo(0, scrollPosition());
+        }}
         class="px-3 my-6 mx-auto bg-red-4 text-white-1 dark:text-red-3"
       >
         <div i-ion:close></div>
