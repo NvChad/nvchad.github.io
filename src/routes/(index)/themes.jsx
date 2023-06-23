@@ -128,9 +128,9 @@ function Gallery() {
               width={2560}
               height={1440}
               onclick={() => {
+                setScrollPosition(window.scrollY);
                 setZoomedImgPath(key);
                 setGalleryStatus(!galleryShown());
-                setScrollPosition(window.scrollY);
               }}
             />
 
