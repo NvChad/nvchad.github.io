@@ -6,10 +6,16 @@ export const [osname, setOS] = createSignal("Linux / Macos");
 const unix_cmd =
   "git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim";
 
-const windows_cmd =
-  "git clone https://github.com/NvChad/NvChad $HOME\\AppData\\Local\\nvim --depth 1 && nvim";
+const windows_cmd = [
+  "git clone https://github.com/NvChad/NvChad $HOME\\AppData\\Local\\nvim --depth 1 && nvim",
+  `# if the above path doesnt work, try any of these paths :\n
+%LOCALAPPDATA%\\nvim\ \n
+%USERPROFILE%\AppData\Local\\nvim \n
+C:\Users\%USERNAME%\AppData\Local\\nvim`,
+];
 
-export const docker_cmd = `docker run -w /root -it --rm alpine:latest sh -uelic '
+export const docker_cmd =
+  `docker run -w /root -it --rm alpine:latest sh -uelic '
   apk add git nodejs neovim ripgrep build-base --update
   git clone https://github.com/NvChad/NvChad ~/.config/nvim
   nvim
@@ -41,13 +47,15 @@ const Btn = (props) => {
 export default () => {
   return (
     <div grid gap-5>
-      <div flex flex-wrap class="[&_*]:rounded-lg [&_button]:p-3 [&_button]:w-fit vertCentered !gap-3">
+      <div flex flex-wrap class="[&_button]:p-3" gap-3>
         <Btn os="Linux / Macos" cmd={unix_cmd} icon="i-mingcute:hashtag-fill" />
         <Btn os="Windows" cmd={windows_cmd} icon="i-mdi:windows" />
         <Btn os="Docker" cmd={docker_cmd} icon="i-nonicons:docker-16" />
       </div>
 
-      <pre class="hljs">{oscmd}</pre>
+      {typeof (oscmd()) === "string"
+        ? <pre class="hljs"> {oscmd()}</pre>
+        : oscmd().map((x) => <pre class="hljs"> {x}</pre>)}
     </div>
   );
 };
