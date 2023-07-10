@@ -21,7 +21,7 @@ export default function Root() {
       <Head>
         <Meta
           name="description"
-          content="NvChad is a blazing fast neovim framework with solid defaults and beautiful UI"
+          content="Blazing fast Neovim config providing solid defaults and a beautiful UI, enhancing your neovim experience."
         />
         {/* favicon & font */}
         <link rel="icon" type="image/svg+xml" href="/logo.svg" />
