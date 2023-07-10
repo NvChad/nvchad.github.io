@@ -1,4 +1,4 @@
-import{b as n,q as c,g as s,t as a}from"./entry-client-57835644.js";import{M as i}from"./index-299bf337.js";const r=a("<br>"),h=a("<kbd>space");function t(l){const e=Object.assign({h1:"h1",h2:"h2",p:"p",code:"code",ul:"ul",li:"li",pre:"pre",span:"span",strong:"strong",img:"img",blockquote:"blockquote"},i(),l.components);return[n(e.h1,{children:"How does NvChad work?"}),`
+import{b as n,q as c,g as s,t as a}from"./entry-client-b32c7a1d.js";import{M as i}from"./index-b3f414e3.js";const r=a("<br>"),h=a("<kbd>space");function t(l){const e=Object.assign({h1:"h1",h2:"h2",p:"p",code:"code",ul:"ul",li:"li",pre:"pre",span:"span",strong:"strong",img:"img",blockquote:"blockquote"},i(),l.components);return[n(e.h1,{children:"How does NvChad work?"}),`
 `,n(e.h2,{children:"Understanding the basics"}),`
 `,n(e.p,{get children(){return["Before getting into the this topic, first you should understand the ",n(e.code,{children:"vim.tbl_deep_extend"})," function which is used for merging tables and their values recursively."]}}),`
 `,n(e.ul,{get children(){return[`
