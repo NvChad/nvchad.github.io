@@ -24,8 +24,7 @@ function ContextTitles() {
   const [contextLabelsShown, toggleContextLabels] = createSignal(false);
 
   return (
-    <div class="top-0 sticky my-5 xl:grid xl:h-[calc(100vh-11rem)]">
-      <div class="h-fit grid">
+      <div h-fit mt-6 xl='sticky top-30'>
         {/* on this page btn, shows only on small screens*/}
         <button
           class="rounded-lg text-lg bg-blue-1 dark:bg-dark-3 mb-3 w-full"
@@ -44,6 +43,7 @@ function ContextTitles() {
           class={`grid xl:grid py-3 xl:py-0 bg-slate-1 dark:bg-dark-3 xl:bg-transparent xl:dark-bg-transparent ${
             contextLabelsShown() ? "" : "hidden"
           }`}
+        mb-5
         >
           {contextHeadings.map((x) => (
             <A
@@ -58,7 +58,6 @@ function ContextTitles() {
           ))}
         </div>
       </div>
-    </div>
   );
 }
 

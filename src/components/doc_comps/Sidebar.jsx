@@ -58,12 +58,12 @@ function NestedLabels(props) {
 }
 
 function SideBar() {
-  const styles = `h-fit  xl:sticky z-10 top-0  xl:flex flex-col
+  const styles = `h-fit fixed xl:sticky z-10 xl:top-24 xl:flex flex-col
      bg-white-1 dark:bg-dark-2
-     text-gray-600 dark:text-grey rounded-none pt-0 p-7 xl:p-0`;
+     text-gray-600 dark:text-grey rounded-xl p-5 xl:p-0`;
 
   return (
-    <div class={styles} hidden={sideBarShown() ? false : true}>
+    <aside class={styles} hidden={sideBarShown() ? false : true}>
       {/* sidebar labels & links */}
       <div h-full flex flex-col gap-5 class="[&_*]:text-base dark:text-slate-4">
         {sidebar_Items.map((item) => {
@@ -81,7 +81,7 @@ function SideBar() {
             );
         })}
       </div>
-    </div>
+    </aside>
   );
 }
 
