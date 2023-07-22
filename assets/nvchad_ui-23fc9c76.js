@@ -1,4 +1,4 @@
-import{b as n,q as i,g as l,t as c}from"./entry-client-991b3bf1.js";import{M as t}from"./index-88d034b4.js";const a=c("<br>");function r(s){const e=Object.assign({h2:"h2",p:"p",a:"a",code:"code",pre:"pre",span:"span",h3:"h3"},t(),s.components);return[n(e.h2,{children:"Statusline & tabufline"}),`
+import{b as n,q as i,g as l,t as c}from"./entry-client-6758ea94.js";import{M as t}from"./index-458d9506.js";const a=c("<br>");function r(s){const e=Object.assign({h2:"h2",p:"p",a:"a",code:"code",pre:"pre",span:"span",h3:"h3"},t(),s.components);return[n(e.h2,{children:"Statusline & tabufline"}),`
 `,n(e.p,{get children(){return["We use our own ",n(e.a,{href:"https://github.com/NvChad/ui",children:"plugin"})," for ",n(e.code,{children:"statusline"})," and ",n(e.code,{children:"tabufline"}),". The default config is (keep in mind that every plugin's default config is just a table):"]}}),`
 `,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return[`M.ui = {
   `,n(e.span,{className:"hljs-comment",children:"-- ...other options"}),`
