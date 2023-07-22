@@ -164,12 +164,19 @@ function Searchbar() {
 function Navbar() {
   const styles = `
                 flex md:vertCentered gap-5 justify-between 
-                bg-white-1 dark:bg-dark-2 
                 text-lg font-medium  p-4 py-3 max-w-[1700px] mx-auto`;
 
   return (
-    <div border="0 b solid slate-2 dark:dark-4" sticky top-0 z-50>
-      <nav class={styles}>
+    <nav
+      border="0 b solid slate-2 dark:dark-4"
+      sticky
+      top-0
+      z-50
+      bg-white-1
+      dark:bg-dark-2
+      shadow={useLocation().pathname.includes("docs") ? "" : "lg"}
+    >
+      <div class={styles}>
         <div
           md="flex gap-3 mx-auto"
           class="grid justify-between w-full gap-5"
@@ -191,8 +198,8 @@ function Navbar() {
             <div i-material-symbols-menu-rounded></div>
           </button>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
   );
 }
 
