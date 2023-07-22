@@ -1,4 +1,4 @@
-import{b as n,q as i,g as t,t as l}from"./entry-client-fc09d25b.js";import{M as h}from"./index-50f96f9c.js";const a=l("<br>"),c=l("<u>WARNING: Do this at your own risk because you might not be able to make nice nvchad themes like siduck.");function r(s){const e=Object.assign({h2:"h2",ul:"ul",li:"li",a:"a",p:"p",pre:"pre",code:"code",span:"span",strong:"strong",h3:"h3",blockquote:"blockquote"},h(),s.components);return[n(e.h2,{children:"Override default highlight groups"}),`
+import{b as n,q as i,g as a,t as r}from"./entry-client-c39f7bc1.js";import{M as h}from"./index-a84401e2.js";const l=r("<br>"),c=r("<u>WARNING: Do this at your own risk because you might not be able to make nice nvchad themes like siduck.");function t(s){const e=Object.assign({h2:"h2",ul:"ul",li:"li",a:"a",p:"p",pre:"pre",code:"code",span:"span",strong:"strong",h3:"h3",blockquote:"blockquote"},h(),s.components);return[n(e.h2,{children:"Override default highlight groups"}),`
 `,n(e.ul,{get children(){return[`
 `,n(e.li,{children:"Make sure you use a valid highlight group."}),`
 `,n(e.li,{get children(){return["Check your theme colors in the ",n(e.a,{href:"https://github.com/NvChad/base46/tree/v2.0/lua/base46/themes",children:"base46 theme dir"})]}}),`
@@ -11,6 +11,13 @@ import{b as n,q as i,g as t,t as l}from"./entry-client-fc09d25b.js";import{M as 
    hl_override = {
       Pmenu = { bg = `,n(e.span,{className:"hljs-string",children:'"white"'}),` },
       `,n(e.span,{className:"hljs-comment",children:'-- Pmenu = { bg = "#ffffff" }, this works too'}),`
+        
+      `,n(e.span,{className:"hljs-comment",children:"-- if you want to lighten or darken color"}),`
+      `,n(e.span,{className:"hljs-comment",children:"-- this will use the black colorf rom nvchad theme & lighten it by 2x"}),`
+      `,n(e.span,{className:"hljs-comment",children:"-- use a negative number to darken it"}),`
+      Normal = {
+        bg = {`,n(e.span,{className:"hljs-string",children:'"black"'}),", ",n(e.span,{className:"hljs-number",children:"2"}),`}
+      },
 
       MyHighlightGroup = { `,n(e.span,{className:"hljs-comment",children:"-- custom highlights are also allowed"}),`
          fg = `,n(e.span,{className:"hljs-string",children:'"red"'}),`,
@@ -19,7 +26,7 @@ import{b as n,q as i,g as t,t as l}from"./entry-client-fc09d25b.js";import{M as 
    },
 }
 `]}})}}),`
-`,t(a),`
+`,a(l),`
 `,n(e.p,{get children(){return["In order to add custom highlights, its the same as above, just use ",n(e.strong,{get children(){return n(e.code,{children:"hl_add"})}}),"."]}}),`
 `,n(e.h2,{children:"Customize themes"}),`
 `,n(e.p,{children:"If you just want to customize an already existing theme, you can change the following configuration:"}),`
@@ -43,7 +50,7 @@ import{b as n,q as i,g as t,t as l}from"./entry-client-fc09d25b.js";import{M as 
 `]}})}}),`
 `,n(e.h3,{children:"Local themes"}),`
 `,n(e.blockquote,{get children(){return[`
-`,t(c),`
+`,a(c),`
 `]}}),`
 `,n(e.ul,{get children(){return[`
 `,n(e.li,{get children(){return["Default themes can be found in our ",n(e.a,{href:"https://github.com/NvChad/base46",get children(){return n(e.code,{children:"base46"})}})," repository."]}}),`
@@ -66,9 +73,9 @@ M.`,n(e.span,{className:"hljs-built_in",children:"type"})," = ",n(e.span,{classN
 
 `,n(e.span,{className:"hljs-keyword",children:"return"}),` M
 `]}})}}),`
-`,t(a),`
+`,a(l),`
 `,n(e.p,{children:"Finally, add your theme in chadrc."}),`
 `,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return[`M.ui = {
    theme = `,n(e.span,{className:"hljs-string",children:'"siduck"'}),`,
 }
-`]}})}})]}function u(s={}){const{wrapper:e}=Object.assign({},h(),s.components);return e?n(e,i(s,{get children(){return n(r,s)}})):r(s)}export{u as default};
+`]}})}})]}function m(s={}){const{wrapper:e}=Object.assign({},h(),s.components);return e?n(e,i(s,{get children(){return n(t,s)}})):t(s)}export{m as default};
