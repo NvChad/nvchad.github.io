@@ -1,4 +1,4 @@
-import{b as e,q as o,g as l,i as h,t as c}from"./entry-client-c39f7bc1.js";import{M as t}from"./index-a84401e2.js";const r=c("<br>"),d=c("<u>");function i(s){const n=Object.assign({h2:"h2",p:"p",a:"a",code:"code",ul:"ul",li:"li",strong:"strong",pre:"pre",span:"span",blockquote:"blockquote"},t(),s.components);return[e(n.h2,{children:"Setup lsp server"}),`
+import{b as e,q as o,g as l,i as h,t as i}from"./entry-client-91f37588.js";import{M as t}from"./index-a728405f.js";const r=i("<br>"),d=i("<u>");function c(s){const n=Object.assign({h2:"h2",p:"p",a:"a",code:"code",ul:"ul",li:"li",strong:"strong",pre:"pre",span:"span",blockquote:"blockquote"},t(),s.components);return[e(n.h2,{children:"Setup lsp server"}),`
 `,e(n.p,{get children(){return["Before starting, it is strongly recommended that you walk through the LSP configuration: ",e(n.a,{href:"https://github.com/neovim/nvim-lspconfig",get children(){return[e(n.code,{children:"lspconfig"})," repository"]}}),"."]}}),`
 `,e(n.p,{get children(){return["Then check ",e(n.a,{href:"https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md",children:"server_configurations.md"})," to make sure your language's LSP server is present there."]}}),`
 `,e(n.ul,{get children(){return[`
@@ -17,8 +17,9 @@ import{b as e,q as o,g as l,i as h,t as c}from"./entry-client-c39f7bc1.js";impor
 `,e(n.ul,{get children(){return[`
 `,e(n.li,{get children(){return e(n.strong,{children:"custom/configs/lspconfig.lua"})}}),`
 `]}}),`
-`,e(n.pre,{get children(){return e(n.code,{className:"hljs language-lua",get children(){return[e(n.span,{className:"hljs-keyword",children:"local"})," on_attach = ",e(n.span,{className:"hljs-built_in",children:"require"}),"(",e(n.span,{className:"hljs-string",children:'"plugins.configs.lspconfig"'}),`).on_attach
-`,e(n.span,{className:"hljs-keyword",children:"local"})," capabilities = ",e(n.span,{className:"hljs-built_in",children:"require"}),"(",e(n.span,{className:"hljs-string",children:'"plugins.configs.lspconfig"'}),`).capabilities
+`,e(n.pre,{get children(){return e(n.code,{className:"hljs language-lua",get children(){return[e(n.span,{className:"hljs-keyword",children:"local"})," configs = ",e(n.span,{className:"hljs-built_in",children:"require"}),"(",e(n.span,{className:"hljs-string",children:'"plugins.configs.lspconfig"'}),`)
+`,e(n.span,{className:"hljs-keyword",children:"local"}),` on_attach = configs.on_attach
+`,e(n.span,{className:"hljs-keyword",children:"local"}),` capabilities = configs.capabilities
 
 `,e(n.span,{className:"hljs-keyword",children:"local"})," lspconfig = ",e(n.span,{className:"hljs-built_in",children:"require"})," ",e(n.span,{className:"hljs-string",children:'"lspconfig"'}),`
 `,e(n.span,{className:"hljs-keyword",children:"local"})," servers = { ",e(n.span,{className:"hljs-string",children:'"html"'}),", ",e(n.span,{className:"hljs-string",children:'"cssls"'}),", ",e(n.span,{className:"hljs-string",children:'"clangd"'}),`}
@@ -60,4 +61,4 @@ import{b as e,q as o,g as l,i as h,t as c}from"./entry-client-c39f7bc1.js";impor
 `,l(r),`
 `,e(n.blockquote,{get children(){return[`
 `,e(n.p,{get children(){return["Once the binaries are installed, you will have to configure them to properly work with LSP, null-ls, nvim-dap etc. It depends on what you installed. ",(()=>{const a=l(d);return h(a,e(n.strong,{children:"NvChad does not provide any language configuration aside from lua"})),a})(),"."]}}),`
-`]}})]}function u(s={}){const{wrapper:n}=Object.assign({},t(),s.components);return n?e(n,o(s,{get children(){return e(i,s)}})):i(s)}export{u as default};
+`]}})]}function u(s={}){const{wrapper:n}=Object.assign({},t(),s.components);return n?e(n,o(s,{get children(){return e(c,s)}})):c(s)}export{u as default};
