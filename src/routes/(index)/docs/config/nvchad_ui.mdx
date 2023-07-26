@@ -24,56 +24,65 @@ M.ui = {
 }
 ```
 
-### Override `statusline` modules 
+### Override statusline modules 
 
-It is also possible to override the plugin's configuration:
+- To override default list of statusline modules, you need to check their indexes in the modules table [our `statusline` modules file](https://github.com/NvChad/ui/blob/v2.0/lua/nvchad_ui/statusline)
+- you can either define a function outside or just define & run it right away like below :
 
 ```lua
 M.ui = {
   statusline = {
-    overriden_modules = function()
-      local st_modules = require "nvchad_ui.statusline.default"
-      -- this is just default table of statusline modules
-  
-      return {
-        mode = function()
-          return st_modules.mode() .. " bruh " 
-          -- or just return "" to hide this module
-        end,
-      }
+    -- modules arg here is the default table of modules
+    overriden_modules = function(modules)
+      modules[1] = (function()
+        return "MODE!"
+      end)()
+
+      -- define the somefunction anywhwere in your custom dir, just call it well!
+      -- modules[2] = somefunction()  
+
+      -- adding a module between 2 modules
+      -- Use the table.insert functin to insert at specific index
+      -- This will insert a new module at index 2 and previous index 2 will become 3 now
+
+      table.insert(
+        modules,
+        2,
+        (function()
+          return " between mode and filename ! "
+        end)()
+      )
     end,
   },
 }
 ```
 <br/>
 
-It is recommended to check the list of modules in [our `statusline` modules file](https://github.com/NvChad/ui/blob/v2.0/lua/nvchad_ui/statusline). In the above code, you can see that we want to print "bruh" next to the mode module, in the statusline. In order to add highlight group to your text, do:
+- To highlight a string in statusline, wrap it with your highlight group:
 
 ```lua
 "%#BruhHl#" .. " bruh " -- the highlight group here is BruhHl
 ```
 
-### Override `tabufline` modules
+### Override tabufline modules
 
 The configuration for overriding `tabufline` is the same as in `statusline`:
+
+- Below code will hide module at index 4 as it returns an empty string, (hiding buttons module)
 
 ```lua
 M.ui = {
   tabufline = {
-     overriden_modules = function()
-       local modules = require "nvchad_ui.tabufline.modules"
-  
-       return {
-         buttons = function()
-           return modules.buttons() .. " my button "
-         end,
-         -- or buttons = "" , this will hide the buttons
-       }
-     end,
+    overriden_modules = function(modules)
+      modules[4] = (function()
+        return ""
+      end)()
+
+    -- or table.remove(modules, 4)
+    end,
   },
 }
 ```
-
 <br/>
 
 Again, check the list of modules in [our tabufline modules file](https://github.com/NvChad/ui/blob/v2.0/lua/nvchad_ui/tabufline).
