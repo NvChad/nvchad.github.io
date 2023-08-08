@@ -1,4 +1,4 @@
-import{b as e,q as t,g as s,t as a}from"./entry-client-68590c6d.js";import{M as i}from"./index-37903c4d.js";const h=a("<kbd>Ctrl"),d=a("<kbd>Space"),o=a("<kbd>alt"),p=a("<kbd>shift"),r=a("<br>");function c(l){const n=Object.assign({h2:"h2",p:"p",ul:"ul",li:"li",code:"code",pre:"pre",span:"span",strong:"strong",blockquote:"blockquote"},i(),l.components);return[e(n.h2,{children:"Overview"}),`
+import{b as e,q as t,g as s,t as a}from"./entry-client-653df18c.js";import{M as i}from"./index-ecfaabf7.js";const h=a("<kbd>Ctrl"),d=a("<kbd>Space"),o=a("<kbd>alt"),p=a("<kbd>shift"),r=a("<br>");function c(l){const n=Object.assign({h2:"h2",p:"p",ul:"ul",li:"li",code:"code",pre:"pre",span:"span",strong:"strong",blockquote:"blockquote"},i(),l.components);return[e(n.h2,{children:"Overview"}),`
 `,e(n.p,{children:"The mapping configuration uses the nvim name shorcuts as:"}),`
 `,e(n.ul,{get children(){return[`
 `,e(n.li,{get children(){return[e(n.code,{children:"<C>"})," -> ",s(h)]}}),`
@@ -67,7 +67,7 @@ M.abc = {
   n = {
      [`,e(n.span,{className:"hljs-string",children:'"<C-n>"'}),"] = {",e(n.span,{className:"hljs-string",children:'"<cmd> Telescope <CR>"'}),", ",e(n.span,{className:"hljs-string",children:'"Telescope"'}),`},
      [`,e(n.span,{className:"hljs-string",children:'"<C-s>"'}),"] = {",e(n.span,{className:"hljs-string",children:'":Telescope Files <CR>"'}),", ",e(n.span,{className:"hljs-string",children:'"Telescope Files"'}),`} 
-  }
+  },
 
   i = {
      [`,e(n.span,{className:"hljs-string",children:'"jk"'}),"] = { ",e(n.span,{className:"hljs-string",children:'"<ESC>"'}),", ",e(n.span,{className:"hljs-string",children:'"escape insert mode"'})," , opts = { nowait = ",e(n.span,{className:"hljs-literal",children:"true"}),` }},
