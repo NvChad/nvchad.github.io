@@ -1,4 +1,4 @@
-import{b as n,q as t,g as l,t as c}from"./entry-client-653df18c.js";import{M as i}from"./index-ecfaabf7.js";const a=c("<br>");function r(s){const e=Object.assign({h2:"h2",p:"p",a:"a",code:"code",pre:"pre",span:"span",h3:"h3",ul:"ul",li:"li"},i(),s.components);return[n(e.h2,{children:"Statusline & tabufline"}),`
+import{b as n,q as t,g as l,t as c}from"./entry-client-f1e39074.js";import{M as i}from"./index-7a802495.js";const a=c("<br>");function r(s){const e=Object.assign({h2:"h2",p:"p",a:"a",code:"code",pre:"pre",span:"span",h3:"h3",ul:"ul",li:"li"},i(),s.components);return[n(e.h2,{children:"Statusline & tabufline"}),`
 `,n(e.p,{get children(){return["We use our own ",n(e.a,{href:"https://github.com/NvChad/ui",children:"plugin"})," for ",n(e.code,{children:"statusline"})," and ",n(e.code,{children:"tabufline"}),". The default config is (keep in mind that every plugin's default config is just a table):"]}}),`
 `,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return[`M.ui = {
   `,n(e.span,{className:"hljs-comment",children:"-- ...other options"}),`
@@ -22,7 +22,7 @@ import{b as n,q as t,g as l,t as c}from"./entry-client-653df18c.js";import{M as 
 `]}})}}),`
 `,n(e.h3,{children:"Override statusline modules"}),`
 `,n(e.ul,{get children(){return[`
-`,n(e.li,{get children(){return["To override default list of statusline modules, you need to check their indexes in the modules table ",n(e.a,{href:"https://github.com/NvChad/ui/blob/v2.0/lua/nvchad_ui/statusline",get children(){return["our ",n(e.code,{children:"statusline"})," modules file"]}})]}}),`
+`,n(e.li,{get children(){return["To override default list of statusline modules, you need to check their indexes in the modules table ",n(e.a,{href:"https://github.com/NvChad/ui/blob/v2.0/lua/nvchad/statusline",get children(){return["our ",n(e.code,{children:"statusline"})," modules file"]}})]}}),`
 `,n(e.li,{children:"you can either define a function outside or just define & run it right away like below :"}),`
 `]}}),`
 `,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return[`M.ui = {
@@ -75,4 +75,4 @@ import{b as n,q as t,g as l,t as c}from"./entry-client-653df18c.js";import{M as 
 }
 `]}})}}),`
 `,l(a),`
-`,n(e.p,{get children(){return["Again, check the list of modules in ",n(e.a,{href:"https://github.com/NvChad/ui/blob/v2.0/lua/nvchad_ui/tabufline",children:"our tabufline modules file"}),"."]}})]}function o(s={}){const{wrapper:e}=Object.assign({},i(),s.components);return e?n(e,t(s,{get children(){return n(r,s)}})):r(s)}export{o as default};
+`,n(e.p,{get children(){return["Again, check the list of modules in ",n(e.a,{href:"https://github.com/NvChad/ui/blob/v2.0/lua/nvchad/tabufline",children:"our tabufline modules file"}),"."]}})]}function o(s={}){const{wrapper:e}=Object.assign({},i(),s.components);return e?n(e,t(s,{get children(){return n(r,s)}})):r(s)}export{o as default};
