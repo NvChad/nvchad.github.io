@@ -7,30 +7,30 @@
     "mdx": "^0.3.1",
     "rehype-highlight": "^6.0.0",
     "@mdx-js/rollup": "^2.3.0",
-    "@iconify/json": "^2.2.76",
-    "unocss": "^0.53.1",
-    "@unocss/preset-icons": "^0.53.1",
-    "@unocss/transformer-directives": "^0.53.1",
-    "vite": "^4.3.9",
-    "solid-start-node": "^0.2.26",
-    "solid-start-static": "^0.2.26"
+    "@iconify/json": "^2.2.100",
+    "unocss": "^0.55.0",
+    "@unocss/preset-icons": "^0.55.0",
+    "@unocss/transformer-directives": "^0.55.0",
+    "vite": "^4.4.9",
+    "solid-start-node": "^0.3.1",
+    "solid-start-static": "^0.3.1"
   },
 
   "dependencies": {
-    "@docsearch/css": "^3.5.0",
+    "@docsearch/css": "^3.5.1",
     "@docsearch/js": "3",
-    "@solidjs/meta": "^0.28.5",
-    "@solidjs/router": "^0.8.2",
-    "solid-js": "^1.7.6",
+    "@solidjs/meta": "^0.28.6",
+    "@solidjs/router": "^0.8.3",
+    "solid-js": "^1.7.10",
     "solid-mdx": "^0.0.6",
-    "solid-start": "^0.2.26",
-    "undici": "^5.22.1"
+    "solid-start": "^0.3.1",
+    "undici": "^5.23.0"
   },
 
   "scripts": {
     "start": "solid-start start",
     "dev": "solid-start dev",
-    "build": "solid-start build && mv dist _dist && mv _dist/public dist && rm -rf _dist && cp -r CNAME dist && node ./src/gen_sitemap.js"
+    "build": "solid-start build && cp -r CNAME dist && node ./src/gen_sitemap.js"
   },
   "engines": {
     "node": ">=16.8"
