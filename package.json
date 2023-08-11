@@ -21,7 +21,7 @@
     "@docsearch/js": "3",
     "@solidjs/meta": "^0.28.6",
     "@solidjs/router": "^0.8.3",
-    "solid-js": "^1.7.10",
+    "solid-js": "^1.7.11",
     "solid-mdx": "^0.0.6",
     "solid-start": "^0.3.1",
     "undici": "^5.23.0"
