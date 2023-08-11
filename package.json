@@ -30,7 +30,7 @@
   "scripts": {
     "start": "solid-start start",
     "dev": "solid-start dev",
-    "build": "solid-start build && cp -r CNAME dist && node ./src/gen_sitemap.js"
+    "build": "solid-start build && mv dist _dist && mv _dist/public dist && rm -rf _dist && cp -r CNAME dist && node ./src/gen_sitemap.js"
   },
   "engines": {
     "node": ">=16.8"
