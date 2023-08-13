@@ -1,4 +1,4 @@
-import{b as n,n as r,g as s,t as c}from"./entry-client-2ee485f3.js";import{M as t}from"./index-de115c3c.js";const a=c("<br>");function i(l){const e=Object.assign({h2:"h2",p:"p",a:"a",code:"code",ul:"ul",li:"li",blockquote:"blockquote",strong:"strong",pre:"pre",span:"span"},t(),l.components);return[n(e.h2,{children:"Overview"}),`
+import{b as n,n as r,g as s,t as c}from"./entry-client-1d8ff880.js";import{M as t}from"./index-3aecdf4a.js";const a=c("<br>");function i(l){const e=Object.assign({h2:"h2",p:"p",a:"a",code:"code",ul:"ul",li:"li",blockquote:"blockquote",strong:"strong",pre:"pre",span:"span"},t(),l.components);return[n(e.h2,{children:"Overview"}),`
 `,n(e.p,{get children(){return["NvChad uses ",n(e.a,{href:"https://github.com/folke/lazy.nvim",children:"lazy.nvim"})," for plugins management. Basically, NvChad expects a user plugin table, which then gets merged with the default plugins table. You can find the default table in: ",n(e.a,{href:"https://github.com/NvChad/NvChad/blob/v2.0/lua/plugins/init.lua",get children(){return n(e.code,{children:"lua/plugins/init.lua"})}}),"."]}}),`
 `,n(e.h2,{children:"Lazy loading"}),`
 `,n(e.p,{children:"We lazy load almost 95% of the plugins, so we expect and recommend you to lazy load the plugins as well, as its efficient in reducing startuptime."}),`
@@ -11,7 +11,7 @@ import{b as n,n as r,g as s,t as c}from"./entry-client-2ee485f3.js";import{M as 
 `,n(e.p,{get children(){return["All NvChad default plugins will have ",n(e.code,{children:"lazy = true"})," set. Therefore, if you want a plugin to be enabled on startup, change it to ",n(e.code,{children:"lazy = false"}),"."]}}),`
 `,n(e.p,{get children(){return["It is recommended that you avoid saving any files in the ",n(e.code,{children:"custom/plugins/*"})," directory."]}}),`
 `,n(e.blockquote,{get children(){return[`
-`,n(e.p,{get children(){return["Our system utilizes the import feature provided by",n(e.code,{children:"lazy.nvim"}),", which imports all files in a directory and expects each file to return plugin tables. This behavior is undesirable for our purposes, so it is recommendeed to create a single file named ",n(e.strong,{children:"custom/plugins.lua"}),". This file will be imported by ",n(e.code,{children:"lazy.nvim"}),", and no other files in the directory will be processed."]}}),`
+`,n(e.p,{get children(){return["Our system utilizes the import feature provided by",n(e.code,{children:"lazy.nvim"}),", which imports all files in a directory and expects each file to return plugin tables. This behavior is undesirable for our purposes, so it is recommended to create a single file named ",n(e.strong,{children:"custom/plugins.lua"}),". This file will be imported by ",n(e.code,{children:"lazy.nvim"}),", and no other files in the directory will be processed."]}}),`
 `]}}),`
 `,s(a),`
 `,n(e.ul,{get children(){return[`
