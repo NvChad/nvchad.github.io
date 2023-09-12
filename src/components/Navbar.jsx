@@ -41,7 +41,7 @@ function DocsBtn() {
     useLocation().pathname.includes("docs") &&
     (
       <button
-        xl="hidden"
+        md="hidden"
         dark:bg-blue-3
         dark:text-black
         onclick={() => showSidebar(!sideBarShown())}
