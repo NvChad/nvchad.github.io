@@ -21,7 +21,7 @@ export default function Root() {
       <Head>
         <Meta
           name="description"
-          content="Blazing fast Neovim config providing solid defaults and a beautiful UI, enhancing your neovim experience."
+          content="Blazing fast Neovim config providing solid defaults and a beautiful UI, enhancing your Neovim experience."
         />
         {/* favicon & font */}
         <link rel="icon" type="image/svg+xml" href="/logo.svg" />

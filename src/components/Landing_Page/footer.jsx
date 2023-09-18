@@ -63,8 +63,8 @@ function Footer() {
               bg="dark-4 dark:dark-3"
               p="3 x-4"
             >
-              <div i-logos-solidjs-icon></div> Solidjs +{" "}
-              <div i-simple-icons:unocss rounded-none></div> Unocss
+              <div i-logos-solidjs-icon></div> SolidJS +{" "}
+              <div i-simple-icons:unocss rounded-none></div> UnoCSS
             </div>
           </div>
           <Communities />
