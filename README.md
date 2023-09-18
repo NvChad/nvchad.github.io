@@ -1,10 +1,10 @@
-# Official site for NvChad
+# Official NvChad site
 
-Built using solidjs + unocss from scratch.  
+Built using [SolidJS](https://www.solidjs.com/) + [UnoCSS](https://unocss.dev/) from scratch.  
 
 # Contributing 
 
-The docs ( markdown files ) are [here](https://github.com/NvChad/nvchad.github.io/tree/src/src/routes/(index)/docs) , feel free to send PR's regarding spelling mistakes, incorrect grammar etc.
+The docs (markdown files) are [here](https://github.com/NvChad/nvchad.github.io/tree/src/src/routes/(index)/docs). Feel free to send PR's regarding spelling mistakes, incorrect grammar etc.
 
 # Credits
 
