@@ -54,8 +54,8 @@ export default () => {
       </div>
 
       {typeof (oscmd()) === "string"
-        ? <pre class="hljs"> {oscmd()}</pre>
-        : oscmd().map((x) => <pre class="hljs"> {x}</pre>)}
+        ? <pre class="hljs">{oscmd()}</pre>
+        : oscmd().map((x) => <pre class="hljs">{x}</pre>)}
     </div>
   );
 };
