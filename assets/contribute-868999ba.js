@@ -1,4 +1,4 @@
-import{M as i}from"./index-d475edcb.js";import{b as n,n as a}from"./entry-client-2f5ff72b.js";function r(t){const e=Object.assign({h2:"h2",ul:"ul",li:"li",p:"p",a:"a"},i(),t.components);return[n(e.h2,{children:"Things to know before contributing"}),`
+import{M as i}from"./index-555d93a3.js";import{b as n,n as a}from"./entry-client-5db719bc.js";function r(t){const e=Object.assign({h2:"h2",ul:"ul",li:"li",p:"p",a:"a"},i(),t.components);return[n(e.h2,{children:"Things to know before contributing"}),`
 `,n(e.ul,{get children(){return[`
 `,n(e.li,{get children(){return[`
 `,n(e.p,{children:"When making a PR (pull request), please be very descriptive about what you've done."}),`
@@ -19,7 +19,7 @@ import{M as i}from"./index-d475edcb.js";import{b as n,n as a}from"./entry-client
 `]}}),`
 `,n(e.h2,{children:"Other ways to contribute"}),`
 `,n(e.ul,{get children(){return[`
-`,n(e.li,{children:"Help other nvchad users on github discussions, issues, our discord/matrix server, telegram group."}),`
-`,n(e.li,{children:"Star NvChad github repo."}),`
-`,n(e.li,{get children(){return["If you would like to appreciate siduck's work ( creator of NvChad ) via funding then ",n(e.a,{href:"https://github.com/NvChad/NvChad#gift_heart-support",children:"check"}),"."]}}),`
+`,n(e.li,{children:"Help other nvchad users on GitHub discussions, issues, our discord/matrix server, telegram group."}),`
+`,n(e.li,{children:"Star NvChad GitHub repo."}),`
+`,n(e.li,{get children(){return["If you would like to appreciate siduck's work ( creator of NvChad ) via funding, then ",n(e.a,{href:"https://github.com/NvChad/NvChad#gift_heart-support",children:"check"}),"."]}}),`
 `]}})]}function l(t={}){const{wrapper:e}=Object.assign({},i(),t.components);return e?n(e,a(t,{get children(){return n(r,t)}})):r(t)}export{l as default};
