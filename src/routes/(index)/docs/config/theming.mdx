@@ -1,4 +1,4 @@
-## Override default highlight groups
+## Override highlight groups
 
 - Make sure you use a valid highlight group.
 - Check your theme colors in the [base46 theme dir](https://github.com/NvChad/base46/tree/v2.0/lua/base46/themes)
@@ -94,3 +94,34 @@ M.ui = {
 }
 ```
 
+## Extended Integrations
+
+- [Base46 Extended integrations](https://github.com/NvChad/base46/tree/v2.0/lua/base46/extended_integrations) aren't loaded by default, to load them you need to mention the integration name in chadrc's ui table's `extended_integrations` table
+
+Example :
+
+```lua
+M.ui.extended_integrations = {"trouble", "alpha", "dap"}
+```
+<br/>
+- Now these integrations are included with the default list of integrations in base46 for compiling & caching, to load them use "dofile"
+
+```lua
+dofile(vim.g.base46_cache .. "trouble")
+dofile(vim.g.base46_cache .. "alpha")
+```
+<br/>
+- You can put the dofile code in custom/init.lua to make the highlight groups load by default, but in most cases you can just lazyload them so just put in the plugin's config function spec , example
+
+```lua
+{
+  "folke/trouble.nvim",
+  cmd = "Trouble",
+  config = function()
+     dofile(vim.g.base46_cache .. "trouble")
+     require("trouble").setup()
+  end
+}
+```
+
+- In the above example we have lazyloaded the plugin as well as its highlight groups!
