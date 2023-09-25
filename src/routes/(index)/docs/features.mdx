@@ -1,6 +1,6 @@
 # Inbuilt features
 
-- NvChad is built upon its personal plugins and many general neovim plugins, below are the features that are provided by nvchad plugins **( our ui plugin, base46, extensions, nvterm, nvim-colorizer )**
+- NvChad is built upon its personal plugins and many general Neovim plugins, below are the features that are provided by nvchad plugins **( our ui plugin, base46, extensions, nvterm, nvim-colorizer )**
 
 ## Base46
 
@@ -9,12 +9,12 @@
 #### How it works?
 
 - Gets highlight groups 
-- Do some computations i.e check for overriden highlight groups, new highlight groups, theme overrides, custom user themes etc.  
-- Now base46 compiles all of that into bytecode.
-- Integration files aren't loaded by default, for example highlight group for telescope, nvimtree etc are put into different files.
-- highlight groups are lazyloaded i.e you load them when needed 
+- Do some computations i.e. check for overridden highlight groups, new highlight groups, theme overrides, custom user themes etc.  
+- Now, base46 compiles all of that into bytecode.
+- Integration files aren't loaded by default; for example highlight group for telescope, nvimtree etc are put into different files.
+- highlight groups are lazyloaded i.e. you load them when needed 
 - **example : dofile(vim.g.base46_cache .. "cmp")**
-- In the below video you can see that the chadrc file's ( user config ) UI related options reload on the fly 
+- In the below video, you can see that the chadrc file's ( user config ) UI related options reload on the fly 
 
 <div class="iframe-container">
   <iframe src="https://www.youtube.com/embed/xytzreFq_us" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allow="fullscreen"></iframe>
@@ -22,7 +22,7 @@
 
 ## Theme switcher
 
-- A theme switcher with telescope.nvim which reloads theme on the fly using base46 plugin + plenary.nvim.
+- A theme switcher with telescope.nvim that reloads themes on the fly using the base46 plugin + plenary.nvim.
 
 <div class="iframe-container">
  <iframe  src="https://www.youtube.com/embed/wt7IX8ojMrs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allow="fullscreen;"></iframe>
@@ -38,8 +38,8 @@
 
 - NvChad's tabufline module ( from UI Plugin ) is a mix of tabline & bufferline. 
 - It manages buffers & tabs, buttons in it are clickable
-- Each tab will have its own set of buffers stored and the tabufline will show those only.
-- Think it like workspaces on Linux/Windows where windows stay in their own workspaces, but in vim buffers from all tabs will be shown in every tab!
+- Each tab will have its own set of buffers stored, and the tabufline will show those only.
+- Think of it like workspaces on Linux/Windows where windows stay in their own workspaces, but in vim buffers from all tabs will be shown in every tab!
 
 <div class="iframe-container">
 <iframe src="https://www.youtube.com/embed/V_9iJ96U_k8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allow="fullscreen;"></iframe>
@@ -47,7 +47,7 @@
 
 ## Nvterm 
 
-- NvChad's terminal plugin to toggle and run commands in neovim terminal buffer
+- NvChad's terminal plugin to toggle and run commands in Neovim terminal buffer
 - Using it with our telescope picker ( :Telescope terms ) to unhide terminal buffers <kbd> leader + pt </kbd>.
 
 <div class="iframe-container">
@@ -64,7 +64,7 @@
 
 ## NvCheatsheet
 
-- Auto-generated mappings cheatsheet module which has a similar layout to that of CSS's masonry layout.
+- Auto-generated mappings cheatsheet module, which has a similar layout to that of CSS's masonry layout.
 - It has 2 themes ( grid & simple )
 
 ![nvcheatsheet](/features/nvcheatsheet.webp)
@@ -75,13 +75,13 @@
 <iframe src="https://www.youtube.com/embed/IljDD4cjgKc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allow='fullscreen;'></iframe>
 </div>
 
-# General neovim plugins
+# General Neovim plugins
 
 - These plugins aren't related to nvchad, we just tweak them a bit and theme the UI related ones.
 
 ## Telescope.nvim
 
-- [Telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) is a highly extendable fuzzy finder over lists. Built on the latest awesome features from neovim core. Telescope is centered around modularity, allowing for easy customization.
+- [Telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) is a highly extensible fuzzy finder over lists. Built on the latest awesome features from Neovim core. Telescope is centered around modularity, allowing for easy customization.
 - Below are 2 styles of telescope in nvchad ( bordered and borderless )
 
 ![telescope](/features/telescope.webp)
@@ -95,12 +95,12 @@
 
 ## Nvim-cmp
 
-- [`nvim-cmp`](A completion plugin for neovim coded in Lua.) is a completion plugin for neovim coded in Lua.
+- [`nvim-cmp`](A completion plugin for Neovim coded in Lua.) is a completion plugin for Neovim coded in Lua.
 - Below are some cmp styles in nvchad 
 
 ![nvim-cmp](/features/cmp.webp)
 
-- Note that thats just the cmp look in everblush theme, there are more 57 themes! You can hide cmp icons, cmpkind txt etc from the user config ( chadrc ) itself! 
+- Note that that's just the cmp look in everblush theme, there are more 57 themes! You can hide cmp icons, cmpkind txt etc from the user config ( chadrc ) itself! 
 
 ## Auto-completion & LSP
 
