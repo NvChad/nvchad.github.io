@@ -19,7 +19,7 @@ const FeatureList = [
     title: "Highly customizable",
     icon: "i-ion:cog-sharp text-emerald-3",
     description: ` 
-        Default plugins, UI, configuration can easily be disabled or overriden
+        Default plugins, UI, configuration can easily be disabled or overridden
         via the chadrc file.
     `,
   },
