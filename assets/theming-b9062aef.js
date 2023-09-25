@@ -1,4 +1,4 @@
-import{b as n,n as i,g as a,t as r}from"./entry-client-b94c4cdc.js";import{M as h}from"./index-cfd36805.js";const l=r("<br>"),c=r("<u>WARNING: Do this at your own risk because you might not be able to make nice nvchad themes like siduck.");function t(s){const e=Object.assign({h2:"h2",ul:"ul",li:"li",a:"a",p:"p",pre:"pre",code:"code",span:"span",strong:"strong",h3:"h3",blockquote:"blockquote"},h(),s.components);return[n(e.h2,{children:"Override default highlight groups"}),`
+import{b as n,n as h,g as l,t as r}from"./entry-client-2f5ff72b.js";import{M as i}from"./index-d475edcb.js";const a=r("<br>"),c=r("<u>WARNING: Do this at your own risk because you might not be able to make nice nvchad themes like siduck.");function t(s){const e=Object.assign({h2:"h2",ul:"ul",li:"li",a:"a",p:"p",pre:"pre",code:"code",span:"span",strong:"strong",h3:"h3",blockquote:"blockquote"},i(),s.components);return[n(e.h2,{children:"Override highlight groups"}),`
 `,n(e.ul,{get children(){return[`
 `,n(e.li,{children:"Make sure you use a valid highlight group."}),`
 `,n(e.li,{get children(){return["Check your theme colors in the ",n(e.a,{href:"https://github.com/NvChad/base46/tree/v2.0/lua/base46/themes",children:"base46 theme dir"})]}}),`
@@ -26,7 +26,7 @@ import{b as n,n as i,g as a,t as r}from"./entry-client-b94c4cdc.js";import{M as 
    },
 }
 `]}})}}),`
-`,a(l),`
+`,l(a),`
 `,n(e.p,{get children(){return["In order to add custom highlights, its the same as above, just use ",n(e.strong,{get children(){return n(e.code,{children:"hl_add"})}}),"."]}}),`
 `,n(e.h2,{children:"Customize themes"}),`
 `,n(e.p,{children:"If you just want to customize an already existing theme, you can change the following configuration:"}),`
@@ -50,7 +50,7 @@ import{b as n,n as i,g as a,t as r}from"./entry-client-b94c4cdc.js";import{M as 
 `]}})}}),`
 `,n(e.h3,{children:"Local themes"}),`
 `,n(e.blockquote,{get children(){return[`
-`,a(c),`
+`,l(c),`
 `]}}),`
 `,n(e.ul,{get children(){return[`
 `,n(e.li,{get children(){return["Default themes can be found in our ",n(e.a,{href:"https://github.com/NvChad/base46",get children(){return n(e.code,{children:"base46"})}})," repository."]}}),`
@@ -73,9 +73,39 @@ M.`,n(e.span,{className:"hljs-built_in",children:"type"})," = ",n(e.span,{classN
 
 `,n(e.span,{className:"hljs-keyword",children:"return"}),` M
 `]}})}}),`
-`,a(l),`
+`,l(a),`
 `,n(e.p,{children:"Finally, add your theme in chadrc."}),`
 `,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return[`M.ui = {
    theme = `,n(e.span,{className:"hljs-string",children:'"siduck"'}),`,
 }
-`]}})}})]}function m(s={}){const{wrapper:e}=Object.assign({},h(),s.components);return e?n(e,i(s,{get children(){return n(t,s)}})):t(s)}export{m as default};
+`]}})}}),`
+`,n(e.h2,{children:"Extended Integrations"}),`
+`,n(e.ul,{get children(){return[`
+`,n(e.li,{get children(){return[n(e.a,{href:"https://github.com/NvChad/base46/tree/v2.0/lua/base46/extended_integrations",children:"Base46 Extended integrations"})," aren't loaded by default, to load them you need to mention the integration name in chadrc's ui table's ",n(e.code,{children:"extended_integrations"})," table"]}}),`
+`]}}),`
+`,n(e.p,{children:"Example :"}),`
+`,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return["M.ui.extended_integrations = {",n(e.span,{className:"hljs-string",children:'"trouble"'}),", ",n(e.span,{className:"hljs-string",children:'"alpha"'}),", ",n(e.span,{className:"hljs-string",children:'"dap"'}),`}
+`]}})}}),`
+`,l(a),`
+`,n(e.ul,{get children(){return[`
+`,n(e.li,{children:'Now these integrations are included with the default list of integrations in base46 for compiling & caching, to load them use "dofile"'}),`
+`]}}),`
+`,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return[n(e.span,{className:"hljs-built_in",children:"dofile"}),"(vim.g.base46_cache .. ",n(e.span,{className:"hljs-string",children:'"trouble"'}),`)
+`,n(e.span,{className:"hljs-built_in",children:"dofile"}),"(vim.g.base46_cache .. ",n(e.span,{className:"hljs-string",children:'"alpha"'}),`)
+`]}})}}),`
+`,l(a),`
+`,n(e.ul,{get children(){return[`
+`,n(e.li,{children:"You can put the dofile code in custom/init.lua to make the highlight groups load by default, but in most cases you can just lazyload them so just put in the plugin's config function spec , example"}),`
+`]}}),`
+`,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return[`{
+  `,n(e.span,{className:"hljs-string",children:'"folke/trouble.nvim"'}),`,
+  cmd = `,n(e.span,{className:"hljs-string",children:'"Trouble"'}),`,
+  `,n(e.span,{className:"hljs-built_in",children:"config"})," = ",n(e.span,{className:"hljs-function",get children(){return[n(e.span,{className:"hljs-keyword",children:"function"}),n(e.span,{className:"hljs-params",children:"()"})]}}),`
+     `,n(e.span,{className:"hljs-built_in",children:"dofile"}),"(vim.g.base46_cache .. ",n(e.span,{className:"hljs-string",children:'"trouble"'}),`)
+     `,n(e.span,{className:"hljs-built_in",children:"require"}),"(",n(e.span,{className:"hljs-string",children:'"trouble"'}),`).setup()
+  `,n(e.span,{className:"hljs-keyword",children:"end"}),`
+}
+`]}})}}),`
+`,n(e.ul,{get children(){return[`
+`,n(e.li,{children:"In the above example we have lazyloaded the plugin as well as its highlight groups!"}),`
+`]}})]}function u(s={}){const{wrapper:e}=Object.assign({},i(),s.components);return e?n(e,h(s,{get children(){return n(t,s)}})):t(s)}export{u as default};

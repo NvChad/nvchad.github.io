@@ -1,4 +1,4 @@
-import{M as i}from"./index-cfd36805.js";import{b as n,n as h}from"./entry-client-b94c4cdc.js";function r(t){const e=Object.assign({p:"p",ul:"ul",li:"li",a:"a",strong:"strong"},i(),t.components);return[n(e.p,{children:"The NvChad team would love to acknowledge many projects which made this possible."}),`
+import{M as i}from"./index-d475edcb.js";import{b as n,n as h}from"./entry-client-2f5ff72b.js";function r(t){const e=Object.assign({p:"p",ul:"ul",li:"li",a:"a",strong:"strong"},i(),t.components);return[n(e.p,{children:"The NvChad team would love to acknowledge many projects which made this possible."}),`
 `,n(e.p,{children:"Thank you!"}),`
 `,n(e.ul,{get children(){return[`
 `,n(e.li,{get children(){return[`
