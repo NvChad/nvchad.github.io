@@ -66,6 +66,11 @@
      <priority>0.5</priority>
    </url>
   <url>
+     <loc>https://nvchad.com/docs/index</loc>
+     <changefreq>weekly</changefreq>
+     <priority>0.5</priority>
+   </url>
+  <url>
      <loc>https://nvchad.com/docs/quickstart/install</loc>
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>

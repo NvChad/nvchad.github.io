@@ -1,4 +1,4 @@
-import{c as x,e as A,g as d,a,i as n,b as p,h as L,t as h,f as b,d as M,r as O}from"./entry-client-ff08ae38.js";const D=h("<button><div text-base></div><!#><!/>"),y=h('<div grid gap-5><div flex flex-wrap class="[&amp;_button]:p-3" gap-3><!#><!/><!#><!/><!#><!/></div><!#><!/>'),u=h('<pre class="hljs">'),[R,P]=x("Linux / Macos"),S="git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim",U=["git clone https://github.com/NvChad/NvChad $HOME\\AppData\\Local\\nvim --depth 1 && nvim",`# if the above path doesnt work, try any of these paths :
+import{c as x,e as A,g as d,a,i as n,b as p,h as L,t as h,f as b,d as M,r as O}from"./entry-client-fc2b3836.js";const D=h("<button><div text-base></div><!#><!/>"),y=h('<div grid gap-5><div flex flex-wrap class="[&amp;_button]:p-3" gap-3><!#><!/><!#><!/><!#><!/></div><!#><!/>'),u=h('<pre class="hljs">'),[R,P]=x("Linux / Macos"),S="git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim",U=["git clone https://github.com/NvChad/NvChad $HOME\\AppData\\Local\\nvim --depth 1 && nvim",`# if the above path doesnt work, try any of these paths :
 
 %LOCALAPPDATA%\\nvim 
 
