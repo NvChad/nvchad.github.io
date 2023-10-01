@@ -1,4 +1,4 @@
-import{b as n,n as r,g as l,t as c}from"./entry-client-82ac7634.js";import{M as t}from"./index-1cafb174.js";const a=c("<br>");function i(s){const e=Object.assign({h2:"h2",p:"p",a:"a",code:"code",ul:"ul",li:"li",blockquote:"blockquote",strong:"strong",pre:"pre",span:"span"},t(),s.components);return[n(e.h2,{children:"Overview"}),`
+import{b as n,n as r,g as l,t as c}from"./entry-client-8cecb4bf.js";import{M as t}from"./index-bfe42579.js";const a=c("<br>");function i(s){const e=Object.assign({h2:"h2",p:"p",a:"a",code:"code",ul:"ul",li:"li",blockquote:"blockquote",strong:"strong",pre:"pre",span:"span"},t(),s.components);return[n(e.h2,{children:"Overview"}),`
 `,n(e.p,{get children(){return["NvChad uses ",n(e.a,{href:"https://github.com/folke/lazy.nvim",children:"lazy.nvim"})," for plugins management. Basically, NvChad expects a user plugin table, which then gets merged with the default plugins table. You can find the default table in: ",n(e.a,{href:"https://github.com/NvChad/NvChad/blob/v2.0/lua/plugins/init.lua",get children(){return n(e.code,{children:"lua/plugins/init.lua"})}}),"."]}}),`
 `,n(e.h2,{children:"Lazy loading"}),`
 `,n(e.p,{children:"We lazy load almost 95% of the plugins, so we expect and recommend you to lazy load the plugins as well, as its efficient in reducing startuptime."}),`
@@ -57,7 +57,10 @@ import{b as n,n as r,g as l,t as c}from"./entry-client-82ac7634.js";import{M as 
     `,n(e.span,{className:"hljs-string",children:'"nvim-telescope/telescope.nvim"'}),`,
     opts = `,n(e.span,{className:"hljs-function",get children(){return[n(e.span,{className:"hljs-keyword",children:"function"}),n(e.span,{className:"hljs-params",children:"()"})]}}),`
       `,n(e.span,{className:"hljs-keyword",children:"local"})," conf = ",n(e.span,{className:"hljs-built_in",children:"require"})," ",n(e.span,{className:"hljs-string",children:'"plugins.configs.telescope"'}),`
-      conf.defaults.mappings.i = `,n(e.span,{className:"hljs-built_in",children:"require"}),"(",n(e.span,{className:"hljs-string",children:'"telescope.actions"'}),").",n(e.span,{className:"hljs-built_in",children:"close"}),`
+      conf.defaults.mappings.i = {
+        [`,n(e.span,{className:"hljs-string",children:'"<C-j>"'}),"] = ",n(e.span,{className:"hljs-built_in",children:"require"}),"(",n(e.span,{className:"hljs-string",children:'"telescope.actions"'}),`).move_selection_next,
+        [`,n(e.span,{className:"hljs-string",children:'"<Esc>"'}),"] = ",n(e.span,{className:"hljs-built_in",children:"require"}),"(",n(e.span,{className:"hljs-string",children:'"telescope.actions"'}),").",n(e.span,{className:"hljs-built_in",children:"close"}),`,
+      }
 
       `,n(e.span,{className:"hljs-keyword",children:"return"}),` conf
     `,n(e.span,{className:"hljs-keyword",children:"end"}),`,

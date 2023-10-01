@@ -1,4 +1,4 @@
-import{b as e,n as t,g as s,t as a}from"./entry-client-82ac7634.js";import{M as i}from"./index-1cafb174.js";const h=a("<kbd>Ctrl"),d=a("<kbd>Space"),o=a("<kbd>alt"),p=a("<kbd>shift"),r=a("<br>");function c(l){const n=Object.assign({h2:"h2",p:"p",ul:"ul",li:"li",code:"code",pre:"pre",span:"span",strong:"strong",blockquote:"blockquote"},i(),l.components);return[e(n.h2,{children:"Overview"}),`
+import{b as e,n as t,g as s,t as a}from"./entry-client-8cecb4bf.js";import{M as i}from"./index-bfe42579.js";const h=a("<kbd>Ctrl"),d=a("<kbd>Space"),o=a("<kbd>alt"),p=a("<kbd>shift"),r=a("<br>");function c(l){const n=Object.assign({h2:"h2",p:"p",ul:"ul",li:"li",code:"code",pre:"pre",span:"span",strong:"strong",blockquote:"blockquote"},i(),l.components);return[e(n.h2,{children:"Overview"}),`
 `,e(n.p,{children:"The mapping configuration uses the nvim name shorcuts as:"}),`
 `,e(n.ul,{get children(){return[`
 `,e(n.li,{get children(){return[e(n.code,{children:"<C>"})," -> ",s(h)]}}),`
