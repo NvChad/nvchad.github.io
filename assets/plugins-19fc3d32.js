@@ -1,4 +1,4 @@
-import{b as n,n as r,g as s,t as c}from"./entry-client-fc2b3836.js";import{M as t}from"./index-8d1425ad.js";const a=c("<br>");function i(l){const e=Object.assign({h2:"h2",p:"p",a:"a",code:"code",ul:"ul",li:"li",blockquote:"blockquote",strong:"strong",pre:"pre",span:"span"},t(),l.components);return[n(e.h2,{children:"Overview"}),`
+import{b as n,n as r,g as l,t as c}from"./entry-client-82ac7634.js";import{M as t}from"./index-1cafb174.js";const a=c("<br>");function i(s){const e=Object.assign({h2:"h2",p:"p",a:"a",code:"code",ul:"ul",li:"li",blockquote:"blockquote",strong:"strong",pre:"pre",span:"span"},t(),s.components);return[n(e.h2,{children:"Overview"}),`
 `,n(e.p,{get children(){return["NvChad uses ",n(e.a,{href:"https://github.com/folke/lazy.nvim",children:"lazy.nvim"})," for plugins management. Basically, NvChad expects a user plugin table, which then gets merged with the default plugins table. You can find the default table in: ",n(e.a,{href:"https://github.com/NvChad/NvChad/blob/v2.0/lua/plugins/init.lua",get children(){return n(e.code,{children:"lua/plugins/init.lua"})}}),"."]}}),`
 `,n(e.h2,{children:"Lazy loading"}),`
 `,n(e.p,{children:"We lazy load almost 95% of the plugins, so we expect and recommend you to lazy load the plugins as well, as its efficient in reducing startuptime."}),`
@@ -13,13 +13,13 @@ import{b as n,n as r,g as s,t as c}from"./entry-client-fc2b3836.js";import{M as 
 `,n(e.blockquote,{get children(){return[`
 `,n(e.p,{get children(){return["Our system utilizes the import feature provided by",n(e.code,{children:"lazy.nvim"}),", which imports all files in a directory and expects each file to return plugin tables. This behavior is undesirable for our purposes, so it is recommended to create a single file named ",n(e.strong,{children:"custom/plugins.lua"}),". This file will be imported by ",n(e.code,{children:"lazy.nvim"}),", and no other files in the directory will be processed."]}}),`
 `]}}),`
-`,s(a),`
+`,l(a),`
 `,n(e.ul,{get children(){return[`
 `,n(e.li,{get children(){return n(e.strong,{children:"custom/chadrc.lua"})}}),`
 `]}}),`
 `,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return["M.plugins = ",n(e.span,{className:"hljs-string",children:'"custom.plugins"'}),`
 `]}})}}),`
-`,s(a),`
+`,l(a),`
 `,n(e.ul,{get children(){return[`
 `,n(e.li,{get children(){return n(e.strong,{children:"custom/plugins.lua"})}}),`
 `]}}),`
@@ -43,29 +43,26 @@ import{b as n,n as r,g as s,t as c}from"./entry-client-fc2b3836.js";import{M as 
       ensure_installed = {`,n(e.span,{className:"hljs-string",children:'"html"'}),", ",n(e.span,{className:"hljs-string",children:'"css"'}),", ",n(e.span,{className:"hljs-string",children:'"bash"'}),`},
     },
   },
-
-  `,n(e.span,{className:"hljs-comment",children:"-- if you load some function or module within your opt, wrap it with a function"}),`
+  
   {
-   `,n(e.span,{className:"hljs-string",children:'"nvim-telescope/telescope.nvim"'}),`,
-   opts = {
-     defaults = {
-       mappings = {
-         i = {
-           [`,n(e.span,{className:"hljs-string",children:'"<esc>"'}),"] = ",n(e.span,{className:"hljs-function",get children(){return[n(e.span,{className:"hljs-keyword",children:"function"}),n(e.span,{className:"hljs-params",children:"(...)"})]}}),`
-               `,n(e.span,{className:"hljs-built_in",children:"require"}),"(",n(e.span,{className:"hljs-string",children:'"telescope.actions"'}),").",n(e.span,{className:"hljs-built_in",children:"close"}),`(...)
-            `,n(e.span,{className:"hljs-keyword",children:"end"}),`,
-          },
-        },
-      },
-    },
-   },
+    `,n(e.span,{className:"hljs-string",children:'"folke/which-key.nvim"'}),`,
+    enabled = `,n(e.span,{className:"hljs-literal",children:"false"}),`,
+  },
 
-   {
-     `,n(e.span,{className:"hljs-string",children:'"folke/which-key.nvim"'}),`,
-     enabled = `,n(e.span,{className:"hljs-literal",children:"false"}),`,
-   }
+  `,n(e.span,{className:"hljs-comment",children:"-- If your opts uses a function call, then make opts spec a function*"}),`
+  `,n(e.span,{className:"hljs-comment",children:"-- should return the modified default config as well"}),`
+  `,n(e.span,{className:"hljs-comment",children:"-- here we just call the default telescope config "}),`
+  `,n(e.span,{className:"hljs-comment",children:"-- and then assign a function to some of its options"}),`
+  {
+    `,n(e.span,{className:"hljs-string",children:'"nvim-telescope/telescope.nvim"'}),`,
+    opts = `,n(e.span,{className:"hljs-function",get children(){return[n(e.span,{className:"hljs-keyword",children:"function"}),n(e.span,{className:"hljs-params",children:"()"})]}}),`
+      `,n(e.span,{className:"hljs-keyword",children:"local"})," conf = ",n(e.span,{className:"hljs-built_in",children:"require"})," ",n(e.span,{className:"hljs-string",children:'"plugins.configs.telescope"'}),`
+      conf.defaults.mappings.i = `,n(e.span,{className:"hljs-built_in",children:"require"}),"(",n(e.span,{className:"hljs-string",children:'"telescope.actions"'}),").",n(e.span,{className:"hljs-built_in",children:"close"}),`
 
+      `,n(e.span,{className:"hljs-keyword",children:"return"}),` conf
+    `,n(e.span,{className:"hljs-keyword",children:"end"}),`,
+  }
 }
 
 `,n(e.span,{className:"hljs-keyword",children:"return"}),` plugins
-`]}})}})]}function d(l={}){const{wrapper:e}=Object.assign({},t(),l.components);return e?n(e,r(l,{get children(){return n(i,l)}})):i(l)}export{d as default};
+`]}})}})]}function d(s={}){const{wrapper:e}=Object.assign({},t(),s.components);return e?n(e,r(s,{get children(){return n(i,s)}})):i(s)}export{d as default};
