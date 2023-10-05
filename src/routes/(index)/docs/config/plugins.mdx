@@ -14,7 +14,7 @@ We lazy load almost 95% of the plugins, so we expect and recommend you to lazy l
 
 All NvChad default plugins will have `lazy = true` set. Therefore, if you want a plugin to be enabled on startup, change it to `lazy = false`.
 
-It is recommended that you avoid saving any files in the `custom/plugins/*` directory.
+It is recommended that you avoid saving any files in the `lua/plugins/*` directory.
 
 > Our system utilizes the import feature provided by`lazy.nvim`, which imports all files in a directory and expects each file to return plugin tables. This behavior is undesirable for our purposes, so it is recommended to create a single file named **custom/plugins.lua**. This file will be imported by `lazy.nvim`, and no other files in the directory will be processed.
 
