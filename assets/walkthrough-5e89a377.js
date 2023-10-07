@@ -1,4 +1,4 @@
-import{b as n,n as c,g as s,t as a}from"./entry-client-6e661f15.js";import{M as i}from"./index-e76e2dde.js";const r=a("<br>"),h=a("<kbd>space");function t(l){const e=Object.assign({h1:"h1",h2:"h2",p:"p",code:"code",ul:"ul",li:"li",pre:"pre",span:"span",strong:"strong",img:"img",blockquote:"blockquote"},i(),l.components);return[n(e.h1,{children:"How does NvChad work?"}),`
+import{b as n,n as c,g as s,t as a}from"./entry-client-8069ef76.js";import{M as i}from"./index-28701e22.js";const r=a("<br>"),h=a("<kbd>space");function t(l){const e=Object.assign({h1:"h1",h2:"h2",p:"p",code:"code",ul:"ul",li:"li",pre:"pre",span:"span",strong:"strong",img:"img",a:"a",blockquote:"blockquote"},i(),l.components);return[n(e.h1,{children:"How does NvChad work?"}),`
 `,n(e.h2,{children:"Understanding the basics"}),`
 `,n(e.p,{get children(){return["Before getting into the topic, first you should understand the ",n(e.code,{children:"vim.tbl_deep_extend"})," function which is used for merging tables and their values recursively."]}}),`
 `,n(e.ul,{get children(){return[`
@@ -122,6 +122,9 @@ import{b as n,n as c,g as s,t as a}from"./entry-client-6e661f15.js";import{M as 
 `]}}),`
 `,n(e.li,{get children(){return[`
 `,n(e.p,{get children(){return["Any other file outside the ",n(e.code,{children:"custom"})," dir will be treated as a change by ",n(e.code,{children:"git"}),", meaning that NvChad will not be able to fast-forward the pull."]}}),`
+`]}}),`
+`,n(e.li,{get children(){return[`
+`,n(e.p,{get children(){return["Check ",n(e.a,{href:"https://github.com/NvChad/example_config",children:"example_config"})," for reference."]}}),`
 `]}}),`
 `]}}),`
 `,n(e.h2,{children:"Themes"}),`

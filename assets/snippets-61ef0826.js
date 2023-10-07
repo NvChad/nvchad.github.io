@@ -1,4 +1,4 @@
-import{b as e,n as r,g as i,t as l}from"./entry-client-6e661f15.js";import{M as a}from"./index-e76e2dde.js";const o=l("<br>");function s(t){const n=Object.assign({h2:"h2",p:"p",code:"code",ul:"ul",li:"li",a:"a",strong:"strong",pre:"pre",span:"span",blockquote:"blockquote"},a(),t.components);return[e(n.h2,{children:"Luasnip"}),`
+import{b as e,n as r,g as i,t as l}from"./entry-client-8069ef76.js";import{M as a}from"./index-28701e22.js";const o=l("<br>");function s(t){const n=Object.assign({h2:"h2",p:"p",code:"code",ul:"ul",li:"li",a:"a",strong:"strong",pre:"pre",span:"span",blockquote:"blockquote"},a(),t.components);return[e(n.h2,{children:"Luasnip"}),`
 `,e(n.p,{get children(){return["NvChad uses ",e(n.code,{children:"luasnip"})," plugin for handling snippets, by default it uses ",e(n.code,{children:"friendly-snippets"})," plugin which provides snippets for many languages ."]}}),`
 `,e(n.ul,{get children(){return[`
 `,e(n.li,{get children(){return["But you would want to extend or add your own snippets so read ",e(n.a,{href:"https://github.com/L3MON4D3/LuaSnip/blob/master/DOC.md#loaders",children:"luasnip docs"}),"."]}}),`

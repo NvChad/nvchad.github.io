@@ -3,16 +3,16 @@
     "type": "route",
     "script": {
       "type": "script",
-      "href": "/assets/(index)-23846943.js"
+      "href": "/assets/(index)-b092a1de.js"
     },
     "assets": [
       {
         "type": "script",
-        "href": "/assets/(index)-23846943.js"
+        "href": "/assets/(index)-b092a1de.js"
       },
       {
         "type": "script",
-        "href": "/assets/entry-client-6e661f15.js"
+        "href": "/assets/entry-client-8069ef76.js"
       },
       {
         "type": "style",
@@ -20,11 +20,11 @@
       },
       {
         "type": "script",
-        "href": "/assets/docs-8ee86eb1.js"
+        "href": "/assets/docs-bdc8fb62.js"
       },
       {
         "type": "script",
-        "href": "/assets/ContextTitles-ba47a081.js"
+        "href": "/assets/ContextTitles-d90072b8.js"
       },
       {
         "type": "style",
@@ -40,16 +40,16 @@
     "type": "route",
     "script": {
       "type": "script",
-      "href": "/assets/_...404_-5b5e7a98.js"
+      "href": "/assets/_...404_-5b93c8e3.js"
     },
     "assets": [
       {
         "type": "script",
-        "href": "/assets/_...404_-5b5e7a98.js"
+        "href": "/assets/_...404_-5b93c8e3.js"
       },
       {
         "type": "script",
-        "href": "/assets/entry-client-6e661f15.js"
+        "href": "/assets/entry-client-8069ef76.js"
       },
       {
         "type": "style",
@@ -61,16 +61,16 @@
     "type": "route",
     "script": {
       "type": "script",
-      "href": "/assets/docs-8ee86eb1.js"
+      "href": "/assets/docs-bdc8fb62.js"
     },
     "assets": [
       {
         "type": "script",
-        "href": "/assets/docs-8ee86eb1.js"
+        "href": "/assets/docs-bdc8fb62.js"
       },
       {
         "type": "script",
-        "href": "/assets/entry-client-6e661f15.js"
+        "href": "/assets/entry-client-8069ef76.js"
       },
       {
         "type": "style",
@@ -78,7 +78,7 @@
       },
       {
         "type": "script",
-        "href": "/assets/ContextTitles-ba47a081.js"
+        "href": "/assets/ContextTitles-d90072b8.js"
       },
       {
         "type": "style",
@@ -90,16 +90,16 @@
     "type": "route",
     "script": {
       "type": "script",
-      "href": "/assets/api-50a9b267.js"
+      "href": "/assets/api-4001b922.js"
     },
     "assets": [
       {
         "type": "script",
-        "href": "/assets/api-50a9b267.js"
+        "href": "/assets/api-4001b922.js"
       },
       {
         "type": "script",
-        "href": "/assets/entry-client-6e661f15.js"
+        "href": "/assets/entry-client-8069ef76.js"
       },
       {
         "type": "style",
@@ -107,7 +107,7 @@
       },
       {
         "type": "script",
-        "href": "/assets/index-e76e2dde.js"
+        "href": "/assets/index-28701e22.js"
       }
     ]
   },
@@ -115,16 +115,16 @@
     "type": "route",
     "script": {
       "type": "script",
-      "href": "/assets/format_lint-21e7f390.js"
+      "href": "/assets/format_lint-437c9101.js"
     },
     "assets": [
       {
         "type": "script",
-        "href": "/assets/format_lint-21e7f390.js"
+        "href": "/assets/format_lint-437c9101.js"
       },
       {
         "type": "script",
-        "href": "/assets/entry-client-6e661f15.js"
+        "href": "/assets/entry-client-8069ef76.js"
       },
       {
         "type": "style",
@@ -132,7 +132,7 @@
       },
       {
         "type": "script",
-        "href": "/assets/index-e76e2dde.js"
+        "href": "/assets/index-28701e22.js"
       }
     ]
   },
@@ -140,16 +140,16 @@
     "type": "route",
     "script": {
       "type": "script",
-      "href": "/assets/lsp-1d041a6a.js"
+      "href": "/assets/lsp-670f46d0.js"
     },
     "assets": [
       {
         "type": "script",
-        "href": "/assets/lsp-1d041a6a.js"
+        "href": "/assets/lsp-670f46d0.js"
       },
       {
         "type": "script",
-        "href": "/assets/entry-client-6e661f15.js"
+        "href": "/assets/entry-client-8069ef76.js"
       },
       {
         "type": "style",
@@ -157,7 +157,7 @@
       },
       {
         "type": "script",
-        "href": "/assets/index-e76e2dde.js"
+        "href": "/assets/index-28701e22.js"
       }
     ]
   },
@@ -165,16 +165,16 @@
     "type": "route",
     "script": {
       "type": "script",
-      "href": "/assets/mappings-e8a18c87.js"
+      "href": "/assets/mappings-9c67bc46.js"
     },
     "assets": [
       {
         "type": "script",
-        "href": "/assets/mappings-e8a18c87.js"
+        "href": "/assets/mappings-9c67bc46.js"
       },
       {
         "type": "script",
-        "href": "/assets/entry-client-6e661f15.js"
+        "href": "/assets/entry-client-8069ef76.js"
       },
       {
         "type": "style",
@@ -182,7 +182,7 @@
       },
       {
         "type": "script",
-        "href": "/assets/index-e76e2dde.js"
+        "href": "/assets/index-28701e22.js"
       }
     ]
   },
@@ -190,16 +190,16 @@
     "type": "route",
     "script": {
       "type": "script",
-      "href": "/assets/nvchad_ui-51851529.js"
+      "href": "/assets/nvchad_ui-59b18dc3.js"
     },
     "assets": [
       {
         "type": "script",
-        "href": "/assets/nvchad_ui-51851529.js"
+        "href": "/assets/nvchad_ui-59b18dc3.js"
       },
       {
         "type": "script",
-        "href": "/assets/entry-client-6e661f15.js"
+        "href": "/assets/entry-client-8069ef76.js"
       },
       {
         "type": "style",
@@ -207,7 +207,7 @@
       },
       {
         "type": "script",
-        "href": "/assets/index-e76e2dde.js"
+        "href": "/assets/index-28701e22.js"
       }
     ]
   },
@@ -215,16 +215,16 @@
     "type": "route",
     "script": {
       "type": "script",
-      "href": "/assets/plugins-c9f27b05.js"
+      "href": "/assets/plugins-905612c3.js"
     },
     "assets": [
       {
         "type": "script",
-        "href": "/assets/plugins-c9f27b05.js"
+        "href": "/assets/plugins-905612c3.js"
       },
       {
         "type": "script",
-        "href": "/assets/entry-client-6e661f15.js"
+        "href": "/assets/entry-client-8069ef76.js"
       },
       {
         "type": "style",
@@ -232,7 +232,7 @@
       },
       {
         "type": "script",
-        "href": "/assets/index-e76e2dde.js"
+        "href": "/assets/index-28701e22.js"
       }
     ]
   },
@@ -240,16 +240,16 @@
     "type": "route",
     "script": {
       "type": "script",
-      "href": "/assets/snippets-7fce3280.js"
+      "href": "/assets/snippets-61ef0826.js"
     },
     "assets": [
       {
         "type": "script",
-        "href": "/assets/snippets-7fce3280.js"
+        "href": "/assets/snippets-61ef0826.js"
       },
       {
         "type": "script",
-        "href": "/assets/entry-client-6e661f15.js"
+        "href": "/assets/entry-client-8069ef76.js"
       },
       {
         "type": "style",
@@ -257,7 +257,7 @@
       },
       {
         "type": "script",
-        "href": "/assets/index-e76e2dde.js"
+        "href": "/assets/index-28701e22.js"
       }
     ]
   },
@@ -265,16 +265,16 @@
     "type": "route",
     "script": {
       "type": "script",
-      "href": "/assets/syntax-099d6e65.js"
+      "href": "/assets/syntax-581e30c1.js"
     },
     "assets": [
       {
         "type": "script",
-        "href": "/assets/syntax-099d6e65.js"
+        "href": "/assets/syntax-581e30c1.js"
       },
       {
         "type": "script",
-        "href": "/assets/entry-client-6e661f15.js"
+        "href": "/assets/entry-client-8069ef76.js"
       },
       {
         "type": "style",
@@ -282,7 +282,7 @@
       },
       {
         "type": "script",
-        "href": "/assets/index-e76e2dde.js"
+        "href": "/assets/index-28701e22.js"
       }
     ]
   },
@@ -290,16 +290,16 @@
     "type": "route",
     "script": {
       "type": "script",
-      "href": "/assets/theming-a692cf5a.js"
+      "href": "/assets/theming-1f4590a8.js"
     },
     "assets": [
       {
         "type": "script",
-        "href": "/assets/theming-a692cf5a.js"
+        "href": "/assets/theming-1f4590a8.js"
       },
       {
         "type": "script",
-        "href": "/assets/entry-client-6e661f15.js"
+        "href": "/assets/entry-client-8069ef76.js"
       },
       {
         "type": "style",
@@ -307,7 +307,7 @@
       },
       {
         "type": "script",
-        "href": "/assets/index-e76e2dde.js"
+        "href": "/assets/index-28701e22.js"
       }
     ]
   },
@@ -315,16 +315,16 @@
     "type": "route",
     "script": {
       "type": "script",
-      "href": "/assets/walkthrough-8e62e6c1.js"
+      "href": "/assets/walkthrough-5e89a377.js"
     },
     "assets": [
       {
         "type": "script",
-        "href": "/assets/walkthrough-8e62e6c1.js"
+        "href": "/assets/walkthrough-5e89a377.js"
       },
       {
         "type": "script",
-        "href": "/assets/entry-client-6e661f15.js"
+        "href": "/assets/entry-client-8069ef76.js"
       },
       {
         "type": "style",
@@ -332,7 +332,7 @@
       },
       {
         "type": "script",
-        "href": "/assets/index-e76e2dde.js"
+        "href": "/assets/index-28701e22.js"
       }
     ]
   },
@@ -340,20 +340,20 @@
     "type": "route",
     "script": {
       "type": "script",
-      "href": "/assets/contribute-bbd4d683.js"
+      "href": "/assets/contribute-ca54eccd.js"
     },
     "assets": [
       {
         "type": "script",
-        "href": "/assets/contribute-bbd4d683.js"
+        "href": "/assets/contribute-ca54eccd.js"
       },
       {
         "type": "script",
-        "href": "/assets/index-e76e2dde.js"
+        "href": "/assets/index-28701e22.js"
       },
       {
         "type": "script",
-        "href": "/assets/entry-client-6e661f15.js"
+        "href": "/assets/entry-client-8069ef76.js"
       },
       {
         "type": "style",
@@ -365,20 +365,20 @@
     "type": "route",
     "script": {
       "type": "script",
-      "href": "/assets/credits-d9f95aaa.js"
+      "href": "/assets/credits-d9197822.js"
     },
     "assets": [
       {
         "type": "script",
-        "href": "/assets/credits-d9f95aaa.js"
+        "href": "/assets/credits-d9197822.js"
       },
       {
         "type": "script",
-        "href": "/assets/index-e76e2dde.js"
+        "href": "/assets/index-28701e22.js"
       },
       {
         "type": "script",
-        "href": "/assets/entry-client-6e661f15.js"
+        "href": "/assets/entry-client-8069ef76.js"
       },
       {
         "type": "style",
@@ -390,16 +390,16 @@
     "type": "route",
     "script": {
       "type": "script",
-      "href": "/assets/features-9c6905a1.js"
+      "href": "/assets/features-26a2701b.js"
     },
     "assets": [
       {
         "type": "script",
-        "href": "/assets/features-9c6905a1.js"
+        "href": "/assets/features-26a2701b.js"
       },
       {
         "type": "script",
-        "href": "/assets/entry-client-6e661f15.js"
+        "href": "/assets/entry-client-8069ef76.js"
       },
       {
         "type": "style",
@@ -407,7 +407,7 @@
       },
       {
         "type": "script",
-        "href": "/assets/index-e76e2dde.js"
+        "href": "/assets/index-28701e22.js"
       }
     ]
   },
@@ -415,16 +415,16 @@
     "type": "route",
     "script": {
       "type": "script",
-      "href": "/assets/index-0343bc1b.js"
+      "href": "/assets/index-d82f5c23.js"
     },
     "assets": [
       {
         "type": "script",
-        "href": "/assets/index-0343bc1b.js"
+        "href": "/assets/index-d82f5c23.js"
       },
       {
         "type": "script",
-        "href": "/assets/entry-client-6e661f15.js"
+        "href": "/assets/entry-client-8069ef76.js"
       },
       {
         "type": "style",
@@ -436,16 +436,16 @@
     "type": "route",
     "script": {
       "type": "script",
-      "href": "/assets/install-18322b8b.js"
+      "href": "/assets/install-7f3991cd.js"
     },
     "assets": [
       {
         "type": "script",
-        "href": "/assets/install-18322b8b.js"
+        "href": "/assets/install-7f3991cd.js"
       },
       {
         "type": "script",
-        "href": "/assets/entry-client-6e661f15.js"
+        "href": "/assets/entry-client-8069ef76.js"
       },
       {
         "type": "style",
@@ -453,11 +453,11 @@
       },
       {
         "type": "script",
-        "href": "/assets/index-e76e2dde.js"
+        "href": "/assets/index-28701e22.js"
       },
       {
         "type": "script",
-        "href": "/assets/install-cd4b3b77.js"
+        "href": "/assets/install-f33399aa.js"
       }
     ]
   },
@@ -465,20 +465,20 @@
     "type": "route",
     "script": {
       "type": "script",
-      "href": "/assets/learn-lua-ea8f485d.js"
+      "href": "/assets/learn-lua-f2a608e4.js"
     },
     "assets": [
       {
         "type": "script",
-        "href": "/assets/learn-lua-ea8f485d.js"
+        "href": "/assets/learn-lua-f2a608e4.js"
       },
       {
         "type": "script",
-        "href": "/assets/index-e76e2dde.js"
+        "href": "/assets/index-28701e22.js"
       },
       {
         "type": "script",
-        "href": "/assets/entry-client-6e661f15.js"
+        "href": "/assets/entry-client-8069ef76.js"
       },
       {
         "type": "style",
@@ -490,20 +490,20 @@
     "type": "route",
     "script": {
       "type": "script",
-      "href": "/assets/post-install-a7f6ea95.js"
+      "href": "/assets/post-install-6d5a9379.js"
     },
     "assets": [
       {
         "type": "script",
-        "href": "/assets/post-install-a7f6ea95.js"
+        "href": "/assets/post-install-6d5a9379.js"
       },
       {
         "type": "script",
-        "href": "/assets/index-e76e2dde.js"
+        "href": "/assets/index-28701e22.js"
       },
       {
         "type": "script",
-        "href": "/assets/entry-client-6e661f15.js"
+        "href": "/assets/entry-client-8069ef76.js"
       },
       {
         "type": "style",
@@ -515,16 +515,16 @@
     "type": "route",
     "script": {
       "type": "script",
-      "href": "/assets/index-9c63db05.js"
+      "href": "/assets/index-8d8bb5fb.js"
     },
     "assets": [
       {
         "type": "script",
-        "href": "/assets/index-9c63db05.js"
+        "href": "/assets/index-8d8bb5fb.js"
       },
       {
         "type": "script",
-        "href": "/assets/entry-client-6e661f15.js"
+        "href": "/assets/entry-client-8069ef76.js"
       },
       {
         "type": "style",
@@ -532,7 +532,7 @@
       },
       {
         "type": "script",
-        "href": "/assets/install-cd4b3b77.js"
+        "href": "/assets/install-f33399aa.js"
       }
     ]
   },
@@ -540,16 +540,16 @@
     "type": "route",
     "script": {
       "type": "script",
-      "href": "/assets/(items)-ecfa88c0.js"
+      "href": "/assets/(items)-0ce5977d.js"
     },
     "assets": [
       {
         "type": "script",
-        "href": "/assets/(items)-ecfa88c0.js"
+        "href": "/assets/(items)-0ce5977d.js"
       },
       {
         "type": "script",
-        "href": "/assets/entry-client-6e661f15.js"
+        "href": "/assets/entry-client-8069ef76.js"
       },
       {
         "type": "style",
@@ -557,7 +557,7 @@
       },
       {
         "type": "script",
-        "href": "/assets/ContextTitles-ba47a081.js"
+        "href": "/assets/ContextTitles-d90072b8.js"
       }
     ]
   },
@@ -565,16 +565,16 @@
     "type": "route",
     "script": {
       "type": "script",
-      "href": "/assets/index-94cc2ef9.js"
+      "href": "/assets/index-a5d83305.js"
     },
     "assets": [
       {
         "type": "script",
-        "href": "/assets/index-94cc2ef9.js"
+        "href": "/assets/index-a5d83305.js"
       },
       {
         "type": "script",
-        "href": "/assets/entry-client-6e661f15.js"
+        "href": "/assets/entry-client-8069ef76.js"
       },
       {
         "type": "style",
@@ -582,15 +582,15 @@
       },
       {
         "type": "script",
-        "href": "/assets/v2.0-6f248ebf.js"
+        "href": "/assets/v2.0-9ac00a8d.js"
       },
       {
         "type": "script",
-        "href": "/assets/index-e76e2dde.js"
+        "href": "/assets/index-28701e22.js"
       },
       {
         "type": "script",
-        "href": "/assets/v2.0_migration-660b50c9.js"
+        "href": "/assets/v2.0_migration-5544f99a.js"
       }
     ]
   },
@@ -598,16 +598,16 @@
     "type": "route",
     "script": {
       "type": "script",
-      "href": "/assets/v2.0-6f248ebf.js"
+      "href": "/assets/v2.0-9ac00a8d.js"
     },
     "assets": [
       {
         "type": "script",
-        "href": "/assets/v2.0-6f248ebf.js"
+        "href": "/assets/v2.0-9ac00a8d.js"
       },
       {
         "type": "script",
-        "href": "/assets/entry-client-6e661f15.js"
+        "href": "/assets/entry-client-8069ef76.js"
       },
       {
         "type": "style",
@@ -615,7 +615,7 @@
       },
       {
         "type": "script",
-        "href": "/assets/index-e76e2dde.js"
+        "href": "/assets/index-28701e22.js"
       }
     ]
   },
@@ -623,16 +623,16 @@
     "type": "route",
     "script": {
       "type": "script",
-      "href": "/assets/v2.0_migration-660b50c9.js"
+      "href": "/assets/v2.0_migration-5544f99a.js"
     },
     "assets": [
       {
         "type": "script",
-        "href": "/assets/v2.0_migration-660b50c9.js"
+        "href": "/assets/v2.0_migration-5544f99a.js"
       },
       {
         "type": "script",
-        "href": "/assets/entry-client-6e661f15.js"
+        "href": "/assets/entry-client-8069ef76.js"
       },
       {
         "type": "style",
@@ -640,7 +640,7 @@
       },
       {
         "type": "script",
-        "href": "/assets/index-e76e2dde.js"
+        "href": "/assets/index-28701e22.js"
       }
     ]
   },
@@ -648,16 +648,16 @@
     "type": "route",
     "script": {
       "type": "script",
-      "href": "/assets/index-94cc2ef9.js"
+      "href": "/assets/index-a5d83305.js"
     },
     "assets": [
       {
         "type": "script",
-        "href": "/assets/index-94cc2ef9.js"
+        "href": "/assets/index-a5d83305.js"
       },
       {
         "type": "script",
-        "href": "/assets/entry-client-6e661f15.js"
+        "href": "/assets/entry-client-8069ef76.js"
       },
       {
         "type": "style",
@@ -665,15 +665,15 @@
       },
       {
         "type": "script",
-        "href": "/assets/v2.0-6f248ebf.js"
+        "href": "/assets/v2.0-9ac00a8d.js"
       },
       {
         "type": "script",
-        "href": "/assets/index-e76e2dde.js"
+        "href": "/assets/index-28701e22.js"
       },
       {
         "type": "script",
-        "href": "/assets/v2.0_migration-660b50c9.js"
+        "href": "/assets/v2.0_migration-5544f99a.js"
       }
     ]
   },
@@ -681,16 +681,16 @@
     "type": "route",
     "script": {
       "type": "script",
-      "href": "/assets/themes-79c437ac.js"
+      "href": "/assets/themes-91349125.js"
     },
     "assets": [
       {
         "type": "script",
-        "href": "/assets/themes-79c437ac.js"
+        "href": "/assets/themes-91349125.js"
       },
       {
         "type": "script",
-        "href": "/assets/entry-client-6e661f15.js"
+        "href": "/assets/entry-client-8069ef76.js"
       },
       {
         "type": "style",
@@ -702,12 +702,12 @@
     "type": "entry",
     "script": {
       "type": "script",
-      "href": "/assets/entry-client-6e661f15.js"
+      "href": "/assets/entry-client-8069ef76.js"
     },
     "assets": [
       {
         "type": "script",
-        "href": "/assets/entry-client-6e661f15.js"
+        "href": "/assets/entry-client-8069ef76.js"
       },
       {
         "type": "style",
