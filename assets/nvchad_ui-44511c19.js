@@ -1,4 +1,4 @@
-import{b as n,n as t,g as l,t as c}from"./entry-client-1de5b8f8.js";import{M as i}from"./index-0e04896c.js";const a=c("<br>");function r(s){const e=Object.assign({h2:"h2",p:"p",a:"a",code:"code",pre:"pre",span:"span",h3:"h3",ul:"ul",li:"li"},i(),s.components);return[n(e.h2,{children:"Statusline & tabufline"}),`
+import{b as n,n as t,g as l,t as c}from"./entry-client-f7fd553f.js";import{M as i}from"./index-6ceddcc7.js";const a=c("<br>");function r(s){const e=Object.assign({h2:"h2",p:"p",a:"a",code:"code",pre:"pre",span:"span",h3:"h3",ul:"ul",li:"li"},i(),s.components);return[n(e.h2,{children:"Statusline & tabufline"}),`
 `,n(e.p,{get children(){return["We use our own ",n(e.a,{href:"https://github.com/NvChad/ui",children:"plugin"})," for ",n(e.code,{children:"statusline"})," and ",n(e.code,{children:"tabufline"}),". The default config is (keep in mind that every plugin's default config is just a table):"]}}),`
 `,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return[`M.ui = {
   `,n(e.span,{className:"hljs-comment",children:"-- ...other options"}),`

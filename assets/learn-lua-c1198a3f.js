@@ -1,4 +1,4 @@
-import{M as a}from"./index-0e04896c.js";import{b as n,n as r}from"./entry-client-1de5b8f8.js";function l(e){const s=Object.assign({h2:"h2",pre:"pre",code:"code",span:"span",h3:"h3",p:"p",strong:"strong",ul:"ul",li:"li"},a(),e.components);return[n(s.h2,{children:"Comments"}),`
+import{M as a}from"./index-6ceddcc7.js";import{b as n,n as r}from"./entry-client-f7fd553f.js";function l(e){const s=Object.assign({h2:"h2",pre:"pre",code:"code",span:"span",h3:"h3",p:"p",strong:"strong",ul:"ul",li:"li"},a(),e.components);return[n(s.h2,{children:"Comments"}),`
 `,n(s.pre,{get children(){return n(s.code,{className:"hljs language-lua",get children(){return[n(s.span,{className:"hljs-comment",children:"-- comment"}),`
 `,n(s.span,{className:"hljs-built_in",children:"print"}),"(",n(s.span,{className:"hljs-string",children:'"Hi"'}),") ",n(s.span,{className:"hljs-comment",children:"-- comment"}),`
 
@@ -205,7 +205,7 @@ print_num(`,n(s.span,{className:"hljs-number",children:"5"}),") ",n(s.span,{clas
 `,n(s.pre,{get children(){return n(s.code,{className:"hljs language-lua",get children(){return[n(s.span,{className:"hljs-built_in",children:"require"}),"(",n(s.span,{className:"hljs-string",children:'"path"'}),`)
 
 `,n(s.span,{className:"hljs-comment",children:"-- for example in ~/.config/nvim/lua , all dirs and files are accessable via require"}),`
-`,n(s.span,{className:"hljs-comment",children:"-- Do know that all files in that lua folder are in path!"}),`
+`,n(s.span,{className:"hljs-comment",children:"-- Do note that all files in that lua folder are in path!"}),`
 `,n(s.span,{className:"hljs-comment",children:"-- ~/.config/nvim/lua/custom "}),`
 `,n(s.span,{className:"hljs-comment",children:"-- ~/.config/nvim/lua/custom/init.lua"}),`
 

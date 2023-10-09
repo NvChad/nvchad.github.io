@@ -6,11 +6,11 @@
   "assets/entry-client-!~{001}~.js-unocss-hash.css": [
   ],
   "node_modules/@docsearch/css/dist/style.css": [
-    "/assets/(index)-42631941.js",
+    "/assets/(index)-ddab324b.js",
     "/assets/(index)-7f2642b4.css"
   ],
   "node_modules/@docsearch/js/dist/esm/index.js": [
-    "/assets/(index)-42631941.js",
+    "/assets/(index)-ddab324b.js",
     "/assets/(index)-7f2642b4.css"
   ],
   "node_modules/@solidjs/meta/dist/index.jsx": [
@@ -28,12 +28,12 @@
   "node_modules/solid-js/dist/solid.js": [
   ],
   "node_modules/solid-js/store/dist/store.js": [
-    "/assets/ContextTitles-14aa5a88.js"
+    "/assets/ContextTitles-15beb2b5.js"
   ],
   "node_modules/solid-js/web/dist/web.js": [
   ],
   "node_modules/solid-mdx/dist/index.mjs": [
-    "/assets/index-0e04896c.js"
+    "/assets/index-6ceddcc7.js"
   ],
   "node_modules/solid-start/entry-client/StartClient.tsx": [
   ],
@@ -42,8 +42,8 @@
   "node_modules/solid-start/error-boundary/ErrorBoundary.tsx": [
   ],
   "node_modules/solid-start/islands/useLocation.tsx": [
-    "/assets/docs-03ae8e3c.js",
-    "/assets/docs-f6e5fd48.css"
+    "/assets/docs-f65288bd.js",
+    "/assets/docs-6ea38d35.css"
   ],
   "node_modules/solid-start/root/Document.tsx": [
   ],
@@ -56,7 +56,7 @@
   "node_modules/solid-start/server/ServerContext.tsx": [
   ],
   "node_modules/solid-start/server/components/HttpStatusCode.tsx": [
-    "/assets/_...404_-a74dfbed.js"
+    "/assets/_...404_-496f48ff.js"
   ],
   "node_modules/solid-start/server/types.tsx": [
   ],
@@ -1201,50 +1201,50 @@
     "/assets/yoru-cc9cceb0.webp"
   ],
   "src/components/ContextTitles.jsx": [
-    "/assets/ContextTitles-14aa5a88.js"
+    "/assets/ContextTitles-15beb2b5.js"
   ],
   "src/components/Landing_Page/features.jsx": [
-    "/assets/index-c41b453c.js"
+    "/assets/index-20a952d1.js"
   ],
   "src/components/Landing_Page/footer.jsx": [
-    "/assets/index-c41b453c.js"
+    "/assets/index-20a952d1.js"
   ],
   "src/components/Landing_Page/hero.jsx": [
-    "/assets/index-c41b453c.js"
+    "/assets/index-20a952d1.js"
   ],
   "src/components/Navbar.jsx": [
-    "/assets/(index)-42631941.js",
+    "/assets/(index)-ddab324b.js",
     "/assets/(index)-7f2642b4.css"
   ],
   "src/components/doc_comps/Sidebar.jsx": [
-    "/assets/docs-03ae8e3c.js",
-    "/assets/docs-f6e5fd48.css"
+    "/assets/docs-f65288bd.js",
+    "/assets/docs-6ea38d35.css"
   ],
   "src/components/doc_comps/clipboard.jsx": [
-    "/assets/docs-03ae8e3c.js",
-    "/assets/docs-f6e5fd48.css"
+    "/assets/docs-f65288bd.js",
+    "/assets/docs-6ea38d35.css"
   ],
   "src/components/doc_comps/nextprevPage.jsx": [
-    "/assets/docs-03ae8e3c.js",
-    "/assets/docs-f6e5fd48.css"
+    "/assets/docs-f65288bd.js",
+    "/assets/docs-6ea38d35.css"
   ],
   "src/components/doc_comps/sidebar_Items.jsx": [
-    "/assets/docs-03ae8e3c.js",
-    "/assets/docs-f6e5fd48.css"
+    "/assets/docs-f65288bd.js",
+    "/assets/docs-6ea38d35.css"
   ],
   "src/components/docpage/install.jsx": [
-    "/assets/install-0b541eb3.js"
+    "/assets/install-2a30cbdb.js"
   ],
   "src/components/news_comps/NewsPage.jsx": [
-    "/assets/(items)-46382628.js"
+    "/assets/(items)-f1e133b9.js"
   ],
   "src/css/hljs.css": [
-    "/assets/docs-03ae8e3c.js",
-    "/assets/docs-f6e5fd48.css"
+    "/assets/docs-f65288bd.js",
+    "/assets/docs-6ea38d35.css"
   ],
   "src/css/markdown.css": [
-    "/assets/docs-03ae8e3c.js",
-    "/assets/docs-f6e5fd48.css"
+    "/assets/docs-f65288bd.js",
+    "/assets/docs-6ea38d35.css"
   ],
   "src/css/style.css": [
   ],
@@ -1253,89 +1253,89 @@
   "src/root.jsx": [
   ],
   "src/routes/(index).jsx": [
-    "/assets/(index)-42631941.js",
+    "/assets/(index)-ddab324b.js",
     "/assets/(index)-7f2642b4.css"
   ],
   "src/routes/(index)/[...404].jsx": [
-    "/assets/_...404_-a74dfbed.js"
+    "/assets/_...404_-496f48ff.js"
   ],
   "src/routes/(index)/docs.jsx": [
-    "/assets/docs-03ae8e3c.js",
-    "/assets/docs-f6e5fd48.css"
+    "/assets/docs-f65288bd.js",
+    "/assets/docs-6ea38d35.css"
   ],
   "src/routes/(index)/docs/api.mdx": [
-    "/assets/api-3f300036.js"
+    "/assets/api-299fdfce.js"
   ],
   "src/routes/(index)/docs/config/format_lint.mdx": [
-    "/assets/format_lint-3f279633.js"
+    "/assets/format_lint-3a211a43.js"
   ],
   "src/routes/(index)/docs/config/lsp.mdx": [
-    "/assets/lsp-35930e70.js"
+    "/assets/lsp-141899af.js"
   ],
   "src/routes/(index)/docs/config/mappings.mdx": [
-    "/assets/mappings-d466f2dd.js"
+    "/assets/mappings-8f911a31.js"
   ],
   "src/routes/(index)/docs/config/nvchad_ui.mdx": [
-    "/assets/nvchad_ui-b4f33987.js"
+    "/assets/nvchad_ui-44511c19.js"
   ],
   "src/routes/(index)/docs/config/plugins.mdx": [
-    "/assets/plugins-cd0606eb.js"
+    "/assets/plugins-cc3978d8.js"
   ],
   "src/routes/(index)/docs/config/snippets.mdx": [
-    "/assets/snippets-dd17fbe3.js"
+    "/assets/snippets-7a693ab9.js"
   ],
   "src/routes/(index)/docs/config/syntax.mdx": [
-    "/assets/syntax-b0de97f0.js"
+    "/assets/syntax-4fe7ad6c.js"
   ],
   "src/routes/(index)/docs/config/theming.mdx": [
-    "/assets/theming-2929fba5.js"
+    "/assets/theming-7ef3d4cd.js"
   ],
   "src/routes/(index)/docs/config/walkthrough.mdx": [
-    "/assets/walkthrough-88b3e748.js"
+    "/assets/walkthrough-3be39c80.js"
   ],
   "src/routes/(index)/docs/contribute.mdx": [
-    "/assets/contribute-4a39673f.js"
+    "/assets/contribute-213f01f5.js"
   ],
   "src/routes/(index)/docs/credits.mdx": [
-    "/assets/credits-034bd5dd.js"
+    "/assets/credits-d26238e0.js"
   ],
   "src/routes/(index)/docs/features.mdx": [
-    "/assets/features-cbcf074a.js"
+    "/assets/features-6069f82a.js"
   ],
   "src/routes/(index)/docs/index.jsx": [
-    "/assets/index-d3e3838e.js"
+    "/assets/index-9decb17f.js"
   ],
   "src/routes/(index)/docs/quickstart/install.mdx": [
-    "/assets/install-b4effbe5.js"
+    "/assets/install-730ac621.js"
   ],
   "src/routes/(index)/docs/quickstart/learn-lua.mdx": [
-    "/assets/learn-lua-7b2c6db9.js"
+    "/assets/learn-lua-c1198a3f.js"
   ],
   "src/routes/(index)/docs/quickstart/post-install.mdx": [
-    "/assets/post-install-0ba86779.js"
+    "/assets/post-install-45885177.js"
   ],
   "src/routes/(index)/index.jsx": [
-    "/assets/index-c41b453c.js"
+    "/assets/index-20a952d1.js"
   ],
   "src/routes/(index)/news/(items).jsx": [
-    "/assets/(items)-46382628.js"
+    "/assets/(items)-f1e133b9.js"
   ],
   "src/routes/(index)/news/(items)/index.js": [
-    "/assets/index-521f88b3.js"
+    "/assets/index-9e3ec019.js"
   ],
   "src/routes/(index)/news/(items)/v2.0.mdx": [
-    "/assets/v2.0-cfa1fc95.js"
+    "/assets/v2.0-393ab2f5.js"
   ],
   "src/routes/(index)/news/(items)/v2.0_migration.mdx": [
-    "/assets/v2.0_migration-5aff3c69.js"
+    "/assets/v2.0_migration-f2383a70.js"
   ],
   "src/routes/(index)/news/index.jsx": [
-    "/assets/index-521f88b3.js"
+    "/assets/index-9e3ec019.js"
   ],
   "src/routes/(index)/themes.jsx": [
-    "/assets/themes-d463d6c9.js"
+    "/assets/themes-bd243bf4.js"
   ],
   "src/utils.jsx": [
-    "/assets/ContextTitles-14aa5a88.js"
+    "/assets/ContextTitles-15beb2b5.js"
   ]
 }
