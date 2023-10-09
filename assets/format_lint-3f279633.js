@@ -1,4 +1,4 @@
-import{b as e,n as t,g as s,t as c}from"./entry-client-8069ef76.js";import{M as a}from"./index-28701e22.js";const r=c("<br>");function i(l){const n=Object.assign({h2:"h2",p:"p",code:"code",pre:"pre",span:"span",ul:"ul",li:"li",a:"a"},a(),l.components);return[e(n.h2,{children:"Null-ls.nvim"}),`
+import{b as e,n as t,g as s,t as c}from"./entry-client-1de5b8f8.js";import{M as a}from"./index-0e04896c.js";const r=c("<br>");function i(l){const n=Object.assign({h2:"h2",p:"p",code:"code",pre:"pre",span:"span",ul:"ul",li:"li",a:"a"},a(),l.components);return[e(n.h2,{children:"Null-ls.nvim"}),`
 `,e(n.p,{get children(){return["It is recommended that you install ",e(n.code,{children:"null-ls"}),` to manage formatting & linting.
 Here's a possible install configuration for `,e(n.code,{children:"null-ls"}),":"]}}),`
 `,e(n.pre,{get children(){return e(n.code,{className:"hljs language-lua",get children(){return[`{
