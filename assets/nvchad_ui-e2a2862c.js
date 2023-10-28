@@ -1,4 +1,4 @@
-import{b as n,n as t,g as l,t as c}from"./entry-client-f7fd553f.js";import{M as i}from"./index-6ceddcc7.js";const a=c("<br>");function r(s){const e=Object.assign({h2:"h2",p:"p",a:"a",code:"code",pre:"pre",span:"span",h3:"h3",ul:"ul",li:"li"},i(),s.components);return[n(e.h2,{children:"Statusline & tabufline"}),`
+import{b as n,n as t,g as s,t as c}from"./entry-client-92b9baee.js";import{M as r}from"./index-7d7f1776.js";const a=c("<br>");function i(l){const e=Object.assign({h2:"h2",p:"p",a:"a",code:"code",pre:"pre",span:"span",h3:"h3",ul:"ul",li:"li"},r(),l.components);return[n(e.h2,{children:"Statusline & tabufline"}),`
 `,n(e.p,{get children(){return["We use our own ",n(e.a,{href:"https://github.com/NvChad/ui",children:"plugin"})," for ",n(e.code,{children:"statusline"})," and ",n(e.code,{children:"tabufline"}),". The default config is (keep in mind that every plugin's default config is just a table):"]}}),`
 `,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return[`M.ui = {
   `,n(e.span,{className:"hljs-comment",children:"-- ...other options"}),`
@@ -51,7 +51,7 @@ import{b as n,n as t,g as l,t as c}from"./entry-client-f7fd553f.js";import{M as 
   },
 }
 `]}})}}),`
-`,l(a),`
+`,s(a),`
 `,n(e.ul,{get children(){return[`
 `,n(e.li,{children:"To highlight a string in statusline, wrap it with your highlight group:"}),`
 `]}}),`
@@ -60,19 +60,19 @@ import{b as n,n as t,g as l,t as c}from"./entry-client-f7fd553f.js";import{M as 
 `,n(e.h3,{children:"Override tabufline modules"}),`
 `,n(e.p,{get children(){return["The configuration for overriding ",n(e.code,{children:"tabufline"})," is the same as in ",n(e.code,{children:"statusline"}),":"]}}),`
 `,n(e.ul,{get children(){return[`
-`,n(e.li,{children:"Below code will hide module at index 4 as it returns an empty string, (hiding buttons module)"}),`
+`,n(e.li,{children:"Below code will add a new module at last index and removes module at index 1."}),`
+`,n(e.li,{children:"The module at index 1 was previously nvimtree offset module which means it'll be shown on leftside of tabufline."}),`
+`,n(e.li,{children:"The below code for those using nvimtree on the right side and want the offset on right."}),`
 `]}}),`
 `,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return[`M.ui = {
   tabufline = {
     overriden_modules = `,n(e.span,{className:"hljs-function",get children(){return[n(e.span,{className:"hljs-keyword",children:"function"}),n(e.span,{className:"hljs-params",children:"(modules)"})]}}),`
-      modules[`,n(e.span,{className:"hljs-number",children:"4"}),"] = (",n(e.span,{className:"hljs-function",get children(){return[n(e.span,{className:"hljs-keyword",children:"function"}),n(e.span,{className:"hljs-params",children:"()"})]}}),`
-        `,n(e.span,{className:"hljs-keyword",children:"return"})," ",n(e.span,{className:"hljs-string",children:'""'}),`
-      `,n(e.span,{className:"hljs-keyword",children:"end"}),`)()
-
-    `,n(e.span,{className:"hljs-comment",children:"-- or table.remove(modules, 4)"}),`
+       `,n(e.span,{className:"hljs-built_in",children:"table"}),".",n(e.span,{className:"hljs-built_in",children:"insert"}),"(modules, modules[",n(e.span,{className:"hljs-number",children:"1"}),`])
+       `,n(e.span,{className:"hljs-built_in",children:"table"}),".",n(e.span,{className:"hljs-built_in",children:"remove"}),"(modules,",n(e.span,{className:"hljs-number",children:"1"}),`)
+      `,n(e.span,{className:"hljs-comment",children:'-- or modules[1] = ""'}),`
     `,n(e.span,{className:"hljs-keyword",children:"end"}),`,
   },
 }
 `]}})}}),`
-`,l(a),`
-`,n(e.p,{get children(){return["Again, check the list of modules in ",n(e.a,{href:"https://github.com/NvChad/ui/blob/v2.0/lua/nvchad/tabufline",children:"our tabufline modules file"}),"."]}})]}function o(s={}){const{wrapper:e}=Object.assign({},i(),s.components);return e?n(e,t(s,{get children(){return n(r,s)}})):r(s)}export{o as default};
+`,s(a),`
+`,n(e.p,{get children(){return["Again, check the list of modules in ",n(e.a,{href:"https://github.com/NvChad/ui/blob/v2.0/lua/nvchad/tabufline",children:"our tabufline modules file"}),"."]}})]}function o(l={}){const{wrapper:e}=Object.assign({},r(),l.components);return e?n(e,t(l,{get children(){return n(i,l)}})):i(l)}export{o as default};
