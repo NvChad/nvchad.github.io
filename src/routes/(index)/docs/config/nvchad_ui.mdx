@@ -68,17 +68,17 @@ M.ui = {
 
 The configuration for overriding `tabufline` is the same as in `statusline`:
 
-- Below code will hide module at index 4 as it returns an empty string, (hiding buttons module)
+- Below code will add a new module at last index and removes module at index 1.
+- The module at index 1 was previously nvimtree offset module which means it'll be shown on leftside of tabufline.
+- The below code for those using nvimtree on the right side and want the offset on right.
 
 ```lua
 M.ui = {
   tabufline = {
     overriden_modules = function(modules)
-      modules[4] = (function()
-        return ""
-      end)()
-
-    -- or table.remove(modules, 4)
+       table.insert(modules, modules[1])
+       table.remove(modules,1)
+      -- or modules[1] = ""
     end,
   },
 }
