@@ -1,35 +1,35 @@
 {
-  "_ContextTitles-b50e991b.js": {
-    "file": "assets/ContextTitles-b50e991b.js",
+  "_ContextTitles-570f8463.js": {
+    "file": "assets/ContextTitles-570f8463.js",
     "imports": [
       "src/entry-client.jsx"
     ]
   },
-  "_index-7d7f1776.js": {
-    "file": "assets/index-7d7f1776.js",
+  "_index-4c761dea.js": {
+    "file": "assets/index-4c761dea.js",
     "imports": [
       "src/entry-client.jsx"
     ]
   },
-  "_install-08267da6.js": {
-    "file": "assets/install-08267da6.js",
+  "_install-6c6b1fc8.js": {
+    "file": "assets/install-6c6b1fc8.js",
     "imports": [
       "src/entry-client.jsx"
     ]
   },
-  "_v2.0-ef8620b3.js": {
-    "file": "assets/v2.0-ef8620b3.js",
+  "_v2.0-e1fa10cd.js": {
+    "file": "assets/v2.0-e1fa10cd.js",
     "imports": [
       "src/entry-client.jsx",
-      "_index-7d7f1776.js"
+      "_index-4c761dea.js"
     ],
     "isDynamicEntry": true
   },
-  "_v2.0_migration-71353a3a.js": {
-    "file": "assets/v2.0_migration-71353a3a.js",
+  "_v2.0_migration-156501b5.js": {
+    "file": "assets/v2.0_migration-156501b5.js",
     "imports": [
       "src/entry-client.jsx",
-      "_index-7d7f1776.js"
+      "_index-4c761dea.js"
     ],
     "isDynamicEntry": true
   },
@@ -2344,12 +2344,12 @@
       "src/routes/(index)/docs/quickstart/post-install.mdx",
       "src/routes/(index)/index.jsx",
       "src/routes/(index)/news/(items).jsx",
-      "_v2.0-ef8620b3.js",
-      "_v2.0_migration-71353a3a.js",
+      "_v2.0-e1fa10cd.js",
+      "_v2.0_migration-156501b5.js",
       "src/routes/(index)/news/index.jsx",
       "src/routes/(index)/themes.jsx"
     ],
-    "file": "assets/entry-client-92b9baee.js",
+    "file": "assets/entry-client-e98e0183.js",
     "isEntry": true,
     "src": "src/entry-client.jsx"
   },
@@ -2361,17 +2361,17 @@
     "css": [
       "assets/(index)-7f2642b4.css"
     ],
-    "file": "assets/(index)-257a6378.js",
+    "file": "assets/(index)-e63dc32e.js",
     "imports": [
       "src/entry-client.jsx",
       "src/routes/(index)/docs.jsx",
-      "_ContextTitles-b50e991b.js"
+      "_ContextTitles-570f8463.js"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/(index).jsx"
   },
   "src/routes/(index)/[...404].jsx": {
-    "file": "assets/_...404_-abb6a9c8.js",
+    "file": "assets/_...404_-919e215d.js",
     "imports": [
       "src/entry-client.jsx"
     ],
@@ -2386,133 +2386,133 @@
     "css": [
       "assets/docs-6ea38d35.css"
     ],
-    "file": "assets/docs-4f36a404.js",
+    "file": "assets/docs-2a08e482.js",
     "imports": [
       "src/entry-client.jsx",
-      "_ContextTitles-b50e991b.js"
+      "_ContextTitles-570f8463.js"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/(index)/docs.jsx"
   },
   "src/routes/(index)/docs/api.mdx": {
-    "file": "assets/api-fd71a931.js",
+    "file": "assets/api-7b38ce0d.js",
     "imports": [
       "src/entry-client.jsx",
-      "_index-7d7f1776.js"
+      "_index-4c761dea.js"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/(index)/docs/api.mdx"
   },
   "src/routes/(index)/docs/config/format_lint.mdx": {
-    "file": "assets/format_lint-02c32d9c.js",
+    "file": "assets/format_lint-0ddffe6c.js",
     "imports": [
       "src/entry-client.jsx",
-      "_index-7d7f1776.js"
+      "_index-4c761dea.js"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/(index)/docs/config/format_lint.mdx"
   },
   "src/routes/(index)/docs/config/lsp.mdx": {
-    "file": "assets/lsp-9970fb88.js",
+    "file": "assets/lsp-38c5c081.js",
     "imports": [
       "src/entry-client.jsx",
-      "_index-7d7f1776.js"
+      "_index-4c761dea.js"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/(index)/docs/config/lsp.mdx"
   },
   "src/routes/(index)/docs/config/mappings.mdx": {
-    "file": "assets/mappings-301a86d1.js",
+    "file": "assets/mappings-1314f565.js",
     "imports": [
       "src/entry-client.jsx",
-      "_index-7d7f1776.js"
+      "_index-4c761dea.js"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/(index)/docs/config/mappings.mdx"
   },
   "src/routes/(index)/docs/config/nvchad_ui.mdx": {
-    "file": "assets/nvchad_ui-e2a2862c.js",
+    "file": "assets/nvchad_ui-3863ad3f.js",
     "imports": [
       "src/entry-client.jsx",
-      "_index-7d7f1776.js"
+      "_index-4c761dea.js"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/(index)/docs/config/nvchad_ui.mdx"
   },
   "src/routes/(index)/docs/config/plugins.mdx": {
-    "file": "assets/plugins-095d29a1.js",
+    "file": "assets/plugins-62355ca1.js",
     "imports": [
       "src/entry-client.jsx",
-      "_index-7d7f1776.js"
+      "_index-4c761dea.js"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/(index)/docs/config/plugins.mdx"
   },
   "src/routes/(index)/docs/config/snippets.mdx": {
-    "file": "assets/snippets-2abe352e.js",
+    "file": "assets/snippets-6ff06f4d.js",
     "imports": [
       "src/entry-client.jsx",
-      "_index-7d7f1776.js"
+      "_index-4c761dea.js"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/(index)/docs/config/snippets.mdx"
   },
   "src/routes/(index)/docs/config/syntax.mdx": {
-    "file": "assets/syntax-3ca8a043.js",
+    "file": "assets/syntax-0dae5b37.js",
     "imports": [
       "src/entry-client.jsx",
-      "_index-7d7f1776.js"
+      "_index-4c761dea.js"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/(index)/docs/config/syntax.mdx"
   },
   "src/routes/(index)/docs/config/theming.mdx": {
-    "file": "assets/theming-4d970243.js",
+    "file": "assets/theming-86d69fe2.js",
     "imports": [
       "src/entry-client.jsx",
-      "_index-7d7f1776.js"
+      "_index-4c761dea.js"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/(index)/docs/config/theming.mdx"
   },
   "src/routes/(index)/docs/config/walkthrough.mdx": {
-    "file": "assets/walkthrough-d96e4eac.js",
+    "file": "assets/walkthrough-2349a6ab.js",
     "imports": [
       "src/entry-client.jsx",
-      "_index-7d7f1776.js"
+      "_index-4c761dea.js"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/(index)/docs/config/walkthrough.mdx"
   },
   "src/routes/(index)/docs/contribute.mdx": {
-    "file": "assets/contribute-dddbecb4.js",
+    "file": "assets/contribute-19b18735.js",
     "imports": [
-      "_index-7d7f1776.js",
+      "_index-4c761dea.js",
       "src/entry-client.jsx"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/(index)/docs/contribute.mdx"
   },
   "src/routes/(index)/docs/credits.mdx": {
-    "file": "assets/credits-a8830f36.js",
+    "file": "assets/credits-fe0287fc.js",
     "imports": [
-      "_index-7d7f1776.js",
+      "_index-4c761dea.js",
       "src/entry-client.jsx"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/(index)/docs/credits.mdx"
   },
   "src/routes/(index)/docs/features.mdx": {
-    "file": "assets/features-2b982662.js",
+    "file": "assets/features-79e444fe.js",
     "imports": [
       "src/entry-client.jsx",
-      "_index-7d7f1776.js"
+      "_index-4c761dea.js"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/(index)/docs/features.mdx"
   },
   "src/routes/(index)/docs/index.jsx": {
-    "file": "assets/index-dc1ede80.js",
+    "file": "assets/index-f62153c2.js",
     "imports": [
       "src/entry-client.jsx"
     ],
@@ -2520,58 +2520,58 @@
     "src": "src/routes/(index)/docs/index.jsx"
   },
   "src/routes/(index)/docs/quickstart/install.mdx": {
-    "file": "assets/install-fcf5d31a.js",
+    "file": "assets/install-0caeb8d9.js",
     "imports": [
       "src/entry-client.jsx",
-      "_index-7d7f1776.js",
-      "_install-08267da6.js"
+      "_index-4c761dea.js",
+      "_install-6c6b1fc8.js"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/(index)/docs/quickstart/install.mdx"
   },
   "src/routes/(index)/docs/quickstart/learn-lua.mdx": {
-    "file": "assets/learn-lua-60d80f23.js",
+    "file": "assets/learn-lua-f3644731.js",
     "imports": [
-      "_index-7d7f1776.js",
+      "_index-4c761dea.js",
       "src/entry-client.jsx"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/(index)/docs/quickstart/learn-lua.mdx"
   },
   "src/routes/(index)/docs/quickstart/post-install.mdx": {
-    "file": "assets/post-install-aed1a71a.js",
+    "file": "assets/post-install-b05cdecd.js",
     "imports": [
-      "_index-7d7f1776.js",
+      "_index-4c761dea.js",
       "src/entry-client.jsx"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/(index)/docs/quickstart/post-install.mdx"
   },
   "src/routes/(index)/index.jsx": {
-    "file": "assets/index-88b604c1.js",
+    "file": "assets/index-61130de2.js",
     "imports": [
       "src/entry-client.jsx",
-      "_install-08267da6.js"
+      "_install-6c6b1fc8.js"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/(index)/index.jsx"
   },
   "src/routes/(index)/news/(items).jsx": {
-    "file": "assets/(items)-f8aa2227.js",
+    "file": "assets/(items)-8f39c558.js",
     "imports": [
       "src/entry-client.jsx",
-      "_ContextTitles-b50e991b.js"
+      "_ContextTitles-570f8463.js"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/(index)/news/(items).jsx"
   },
   "src/routes/(index)/news/index.jsx": {
-    "file": "assets/index-65cced9a.js",
+    "file": "assets/index-c728e598.js",
     "imports": [
       "src/entry-client.jsx",
-      "_v2.0-ef8620b3.js",
-      "_v2.0_migration-71353a3a.js",
-      "_index-7d7f1776.js"
+      "_v2.0-e1fa10cd.js",
+      "_v2.0_migration-156501b5.js",
+      "_index-4c761dea.js"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/(index)/news/index.jsx"
@@ -2864,7 +2864,7 @@
       "public/themes/lua/wombat.webp",
       "public/themes/lua/yoru.webp"
     ],
-    "file": "assets/themes-eff285d3.js",
+    "file": "assets/themes-c72ae69b.js",
     "imports": [
       "src/entry-client.jsx"
     ],

@@ -1,4 +1,4 @@
-import{b as n,n as c,g as s,t as a}from"./entry-client-92b9baee.js";import{M as i}from"./index-7d7f1776.js";const r=a("<br>"),h=a("<kbd>space");function t(l){const e=Object.assign({h1:"h1",h2:"h2",p:"p",code:"code",ul:"ul",li:"li",pre:"pre",span:"span",strong:"strong",img:"img",a:"a",blockquote:"blockquote"},i(),l.components);return[n(e.h1,{children:"How does NvChad work?"}),`
+import{b as n,n as c,g as s,t as a}from"./entry-client-e98e0183.js";import{M as i}from"./index-4c761dea.js";const r=a("<br>"),h=a("<kbd>space");function t(l){const e=Object.assign({h1:"h1",h2:"h2",p:"p",code:"code",ul:"ul",li:"li",pre:"pre",span:"span",strong:"strong",img:"img",a:"a",blockquote:"blockquote"},i(),l.components);return[n(e.h1,{children:"How does NvChad work?"}),`
 `,n(e.h2,{children:"Understanding the basics"}),`
 `,n(e.p,{get children(){return["Before getting into the topic, first you should understand the ",n(e.code,{children:"vim.tbl_deep_extend"})," function which is used for merging tables and their values recursively."]}}),`
 `,n(e.ul,{get children(){return[`
