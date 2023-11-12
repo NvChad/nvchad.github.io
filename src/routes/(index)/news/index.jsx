@@ -39,7 +39,7 @@ function News() {
                     dark:text-dark-1
                     px-5
                   >
-                    read more
+                    Read More
                   </button>
                 </A>
               </div>
