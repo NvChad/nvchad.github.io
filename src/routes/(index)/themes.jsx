@@ -19,7 +19,7 @@ const languages = [
   },
   {
     lang: "c",
-    icon: "i-logos:c-plusplus",
+    icon: "i-devicon:c",
     images: import.meta.glob("../../../public/themes/c/*.webp"),
   },
   {
