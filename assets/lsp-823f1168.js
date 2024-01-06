@@ -1,4 +1,4 @@
-import{b as e,n as o,g as l,i as h,t as i}from"./entry-client-c584cbe2.js";import{M as t}from"./index-aa0bc0bc.js";const r=i("<br>"),d=i("<u>");function c(s){const n=Object.assign({h2:"h2",p:"p",a:"a",code:"code",ul:"ul",li:"li",strong:"strong",pre:"pre",span:"span",blockquote:"blockquote"},t(),s.components);return[e(n.h2,{children:"Setup lsp server"}),`
+import{b as e,n as o,g as l,i as h,t as i}from"./entry-client-fe846866.js";import{M as t}from"./index-6ed570c4.js";const r=i("<br>"),d=i("<u>");function c(s){const n=Object.assign({h2:"h2",p:"p",a:"a",code:"code",ul:"ul",li:"li",strong:"strong",pre:"pre",span:"span",blockquote:"blockquote"},t(),s.components);return[e(n.h2,{children:"Setup lsp server"}),`
 `,e(n.p,{get children(){return["Before starting, it is strongly recommended that you walk through the LSP configuration: ",e(n.a,{href:"https://github.com/neovim/nvim-lspconfig",get children(){return[e(n.code,{children:"lspconfig"})," repository"]}}),"."]}}),`
 `,e(n.p,{get children(){return["Then check ",e(n.a,{href:"https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md",children:"server_configurations.md"})," to make sure your language's LSP server is present there."]}}),`
 `,e(n.ul,{get children(){return[`
@@ -60,5 +60,5 @@ import{b as e,n as o,g as l,i as h,t as i}from"./entry-client-c584cbe2.js";impor
 `]}})}}),`
 `,l(r),`
 `,e(n.blockquote,{get children(){return[`
-`,e(n.p,{get children(){return["Once the binaries are installed, you will have to configure them to properly work with LSP, null-ls, nvim-dap etc. It depends on what you installed. ",(()=>{const a=l(d);return h(a,e(n.strong,{children:"NvChad does not provide any language configuration aside from lua"})),a})(),"."]}}),`
+`,e(n.p,{get children(){return["Once the binaries are installed, you will have to configure them to properly work with LSP, conform.nvim, nvim-lint, nvim-dap etc. It depends on what you installed. ",(()=>{const a=l(d);return h(a,e(n.strong,{children:"NvChad does not provide any language configuration aside from lua"})),a})(),"."]}}),`
 `]}})]}function u(s={}){const{wrapper:n}=Object.assign({},t(),s.components);return n?e(n,o(s,{get children(){return e(c,s)}})):c(s)}export{u as default};
