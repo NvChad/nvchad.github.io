@@ -51,11 +51,11 @@ function Docs() {
   );
 
   return (
-    <div grid class="xl:grid-cols-[auto_1fr] max-w-[1700px] mx-auto mb-8 px-4">
+    <div grid class="xl:grid-cols-[auto_1fr] max-w-[1700px] mx-auto mb-8 p-4 py6">
       <Sidebar />
 
       <main class="xl:blur-none" blur={sideBarShown() ? "sm" : ""}>
-        <div class="flex flex-col-reverse xl:grid xl:grid-cols-[1fr_auto]" mt-6>
+        <div class="flex flex-col-reverse xl:grid xl:grid-cols-[1fr_auto]">
           <div xl:px-10>
             <div id="DocContent" w-full>
               <Outlet />

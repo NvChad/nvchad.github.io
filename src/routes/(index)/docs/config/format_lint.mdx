@@ -1,61 +1,10 @@
-## Null-ls.nvim
+## Formatting 
 
-It is recommended that you install `null-ls` to manage formatting & linting.
-Here's a possible install configuration for `null-ls`:
+- There are many formatter plugins but we use [conform.nvim](https://github.com/stevearc/conform.nvim) in our example_config.
+- Read its docs and the conform config in the [example_config](https://github.com/NvChad/example_config/blob/v2.0/configs/conform.lua) repo
 
-```lua
-{
-  "neovim/nvim-lspconfig",
 
-   dependencies = {
-     "jose-elias-alvarez/null-ls.nvim",
-     config = function()
-       require "custom.configs.null-ls"
-     end,
-   },
- 
-   config = function()
-      require "plugins.configs.lspconfig"
-      require "custom.configs.lspconfig"
-   end,
-}
-```
+## Linting 
 
-<br/>
-- Dependencies are loaded after the original plugin (`lspconfig` in NvChad's case).
-- `null-ls` is loaded after `lspconfig` as `lspconfig` is lazy-loaded.
-
-## Configuration
-
-Make sure to check [`null-ls` builtins](https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md) to get exact names for formatters, linters etc.
-
-Here's an example configuration for `null-ls`, following the NvChad file directory structure:
-
-```lua
--- custom/configs/null-ls.lua
-
-local null_ls = require "null-ls"
-
-local formatting = null_ls.builtins.formatting
-local lint = null_ls.builtins.diagnostics
-
-local sources = {
-   formatting.prettier,
-   formatting.stylua,
-
-   lint.shellcheck,
-}
-
-null_ls.setup {
-   debug = true,
-   sources = sources,
-}
-```
-<br/>
-
-- Check [null-ls docs](https://github.com/jose-elias-alvarez/null-ls.nvim/wiki/Formatting-on-save) for adding format on save.
-Other things to take into account when configuring `null-ls` for NvChad:
-
-- This shortcut is defined for code formatting: `<leader> + fm`.
-- The linter, formatter or debugger that you will use in `null-ls` configuration, has to be downloaded via `mason` (that ensure_installed opt) or system wide. 
-- Make sure the LSP servers for the filetypes are active for the relevant `null-ls` formatter and/or linter to work.
+- Most of the times the lsp's just enough for diagnostic messages, linting etc. Although you can use plugins like
+[nvim-lint](https://github.com/mfussenegger/nvim-lint).
