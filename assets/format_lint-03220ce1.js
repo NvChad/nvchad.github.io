@@ -1,4 +1,4 @@
-import{M as i}from"./index-6ed570c4.js";import{b as e,n as o}from"./entry-client-fe846866.js";function r(t){const n=Object.assign({h2:"h2",ul:"ul",li:"li",a:"a"},i(),t.components);return[e(n.h2,{children:"Formatting"}),`
+import{M as i}from"./index-1f6b7e89.js";import{b as e,n as o}from"./entry-client-eae2ede3.js";function r(t){const n=Object.assign({h2:"h2",ul:"ul",li:"li",a:"a"},i(),t.components);return[e(n.h2,{children:"Formatting"}),`
 `,e(n.ul,{get children(){return[`
 `,e(n.li,{get children(){return["There are many formatter plugins but we use ",e(n.a,{href:"https://github.com/stevearc/conform.nvim",children:"conform.nvim"})," in our example_config."]}}),`
 `,e(n.li,{get children(){return["Read its docs and the conform config in the ",e(n.a,{href:"https://github.com/NvChad/example_config/blob/v2.0/configs/conform.lua",children:"example_config"})," repo"]}}),`
