@@ -1,4 +1,4 @@
-import{b as n,n as h,g as l,t as r}from"./entry-client-eae2ede3.js";import{M as i}from"./index-1f6b7e89.js";const a=r("<br>"),c=r("<u>WARNING: Do this at your own risk because you might not be able to make nice nvchad themes like siduck.");function t(s){const e=Object.assign({h2:"h2",ul:"ul",li:"li",a:"a",p:"p",pre:"pre",code:"code",span:"span",strong:"strong",h3:"h3",blockquote:"blockquote"},i(),s.components);return[n(e.h2,{children:"Override highlight groups"}),`
+import{b as n,n as h,g as l,t as r}from"./entry-client-f4b1dc74.js";import{M as i}from"./index-65bc554e.js";const a=r("<br>"),c=r("<u>WARNING: Do this at your own risk because you might not be able to make nice nvchad themes like siduck.");function t(s){const e=Object.assign({h2:"h2",ul:"ul",li:"li",a:"a",p:"p",pre:"pre",code:"code",span:"span",strong:"strong",h3:"h3",blockquote:"blockquote"},i(),s.components);return[n(e.h2,{children:"Override highlight groups"}),`
 `,n(e.ul,{get children(){return[`
 `,n(e.li,{children:"Make sure you use a valid highlight group."}),`
 `,n(e.li,{get children(){return["Check your theme colors in the ",n(e.a,{href:"https://github.com/NvChad/base46/tree/v2.0/lua/base46/themes",children:"base46 theme dir"})]}}),`
@@ -13,7 +13,7 @@ import{b as n,n as h,g as l,t as r}from"./entry-client-eae2ede3.js";import{M as 
       `,n(e.span,{className:"hljs-comment",children:'-- Pmenu = { bg = "#ffffff" }, this works too'}),`
         
       `,n(e.span,{className:"hljs-comment",children:"-- if you want to lighten or darken color"}),`
-      `,n(e.span,{className:"hljs-comment",children:"-- this will use the black colorf rom nvchad theme & lighten it by 2x"}),`
+      `,n(e.span,{className:"hljs-comment",children:"-- this will use the black color from nvchad theme & lighten it by 2x"}),`
       `,n(e.span,{className:"hljs-comment",children:"-- use a negative number to darken it"}),`
       Normal = {
         bg = {`,n(e.span,{className:"hljs-string",children:'"black"'}),", ",n(e.span,{className:"hljs-number",children:"2"}),`}

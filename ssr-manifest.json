@@ -6,11 +6,11 @@
   "assets/entry-client-!~{001}~.js-unocss-hash.css": [
   ],
   "node_modules/@docsearch/css/dist/style.css": [
-    "/assets/(index)-a663b257.js",
+    "/assets/(index)-b3770b8e.js",
     "/assets/(index)-7f2642b4.css"
   ],
   "node_modules/@docsearch/js/dist/esm/index.js": [
-    "/assets/(index)-a663b257.js",
+    "/assets/(index)-b3770b8e.js",
     "/assets/(index)-7f2642b4.css"
   ],
   "node_modules/@solidjs/meta/dist/index.jsx": [
@@ -28,12 +28,12 @@
   "node_modules/solid-js/dist/solid.js": [
   ],
   "node_modules/solid-js/store/dist/store.js": [
-    "/assets/ContextTitles-feebb222.js"
+    "/assets/ContextTitles-97098aae.js"
   ],
   "node_modules/solid-js/web/dist/web.js": [
   ],
   "node_modules/solid-mdx/dist/index.mjs": [
-    "/assets/index-1f6b7e89.js"
+    "/assets/index-65bc554e.js"
   ],
   "node_modules/solid-start/entry-client/StartClient.tsx": [
   ],
@@ -42,7 +42,7 @@
   "node_modules/solid-start/error-boundary/ErrorBoundary.tsx": [
   ],
   "node_modules/solid-start/islands/useLocation.tsx": [
-    "/assets/docs-ef66cac2.js",
+    "/assets/docs-1c75b821.js",
     "/assets/docs-6ea38d35.css"
   ],
   "node_modules/solid-start/root/Document.tsx": [
@@ -56,7 +56,7 @@
   "node_modules/solid-start/server/ServerContext.tsx": [
   ],
   "node_modules/solid-start/server/components/HttpStatusCode.tsx": [
-    "/assets/_...404_-ab6269da.js"
+    "/assets/_...404_-981626b4.js"
   ],
   "node_modules/solid-start/server/types.tsx": [
   ],
@@ -1201,49 +1201,49 @@
     "/assets/yoru-cc9cceb0.webp"
   ],
   "src/components/ContextTitles.jsx": [
-    "/assets/ContextTitles-feebb222.js"
+    "/assets/ContextTitles-97098aae.js"
   ],
   "src/components/Landing_Page/features.jsx": [
-    "/assets/index-c9fc50fa.js"
+    "/assets/index-a5e67fb1.js"
   ],
   "src/components/Landing_Page/footer.jsx": [
-    "/assets/index-c9fc50fa.js"
+    "/assets/index-a5e67fb1.js"
   ],
   "src/components/Landing_Page/hero.jsx": [
-    "/assets/index-c9fc50fa.js"
+    "/assets/index-a5e67fb1.js"
   ],
   "src/components/Navbar.jsx": [
-    "/assets/(index)-a663b257.js",
+    "/assets/(index)-b3770b8e.js",
     "/assets/(index)-7f2642b4.css"
   ],
   "src/components/doc_comps/Sidebar.jsx": [
-    "/assets/docs-ef66cac2.js",
+    "/assets/docs-1c75b821.js",
     "/assets/docs-6ea38d35.css"
   ],
   "src/components/doc_comps/clipboard.jsx": [
-    "/assets/docs-ef66cac2.js",
+    "/assets/docs-1c75b821.js",
     "/assets/docs-6ea38d35.css"
   ],
   "src/components/doc_comps/nextprevPage.jsx": [
-    "/assets/docs-ef66cac2.js",
+    "/assets/docs-1c75b821.js",
     "/assets/docs-6ea38d35.css"
   ],
   "src/components/doc_comps/sidebar_Items.jsx": [
-    "/assets/docs-ef66cac2.js",
+    "/assets/docs-1c75b821.js",
     "/assets/docs-6ea38d35.css"
   ],
   "src/components/docpage/install.jsx": [
-    "/assets/install-db2caa69.js"
+    "/assets/install-5cd5ef19.js"
   ],
   "src/components/news_comps/NewsPage.jsx": [
-    "/assets/(items)-32707161.js"
+    "/assets/(items)-dbc9729c.js"
   ],
   "src/css/hljs.css": [
-    "/assets/docs-ef66cac2.js",
+    "/assets/docs-1c75b821.js",
     "/assets/docs-6ea38d35.css"
   ],
   "src/css/markdown.css": [
-    "/assets/docs-ef66cac2.js",
+    "/assets/docs-1c75b821.js",
     "/assets/docs-6ea38d35.css"
   ],
   "src/css/style.css": [
@@ -1253,89 +1253,89 @@
   "src/root.jsx": [
   ],
   "src/routes/(index).jsx": [
-    "/assets/(index)-a663b257.js",
+    "/assets/(index)-b3770b8e.js",
     "/assets/(index)-7f2642b4.css"
   ],
   "src/routes/(index)/[...404].jsx": [
-    "/assets/_...404_-ab6269da.js"
+    "/assets/_...404_-981626b4.js"
   ],
   "src/routes/(index)/docs.jsx": [
-    "/assets/docs-ef66cac2.js",
+    "/assets/docs-1c75b821.js",
     "/assets/docs-6ea38d35.css"
   ],
   "src/routes/(index)/docs/api.mdx": [
-    "/assets/api-31ae4266.js"
+    "/assets/api-7d49bf7d.js"
   ],
   "src/routes/(index)/docs/config/format_lint.mdx": [
-    "/assets/format_lint-03220ce1.js"
+    "/assets/format_lint-67c6df87.js"
   ],
   "src/routes/(index)/docs/config/lsp.mdx": [
-    "/assets/lsp-ed39e7db.js"
+    "/assets/lsp-8b04470e.js"
   ],
   "src/routes/(index)/docs/config/mappings.mdx": [
-    "/assets/mappings-b13a040c.js"
+    "/assets/mappings-5f8a661c.js"
   ],
   "src/routes/(index)/docs/config/nvchad_ui.mdx": [
-    "/assets/nvchad_ui-705d1679.js"
+    "/assets/nvchad_ui-a482135b.js"
   ],
   "src/routes/(index)/docs/config/plugins.mdx": [
-    "/assets/plugins-11508553.js"
+    "/assets/plugins-2c384f05.js"
   ],
   "src/routes/(index)/docs/config/snippets.mdx": [
-    "/assets/snippets-67b50bb2.js"
+    "/assets/snippets-93bbe385.js"
   ],
   "src/routes/(index)/docs/config/syntax.mdx": [
-    "/assets/syntax-2a7ce707.js"
+    "/assets/syntax-e44d34ff.js"
   ],
   "src/routes/(index)/docs/config/theming.mdx": [
-    "/assets/theming-158c6e35.js"
+    "/assets/theming-090f1068.js"
   ],
   "src/routes/(index)/docs/config/walkthrough.mdx": [
-    "/assets/walkthrough-febd087b.js"
+    "/assets/walkthrough-d1cbdaaa.js"
   ],
   "src/routes/(index)/docs/contribute.mdx": [
-    "/assets/contribute-4758fdb4.js"
+    "/assets/contribute-2b62e08a.js"
   ],
   "src/routes/(index)/docs/credits.mdx": [
-    "/assets/credits-53605e3f.js"
+    "/assets/credits-80e701b8.js"
   ],
   "src/routes/(index)/docs/features.mdx": [
-    "/assets/features-9e6be150.js"
+    "/assets/features-db8e4ba8.js"
   ],
   "src/routes/(index)/docs/index.jsx": [
-    "/assets/index-d0e86cea.js"
+    "/assets/index-1352b32d.js"
   ],
   "src/routes/(index)/docs/quickstart/install.mdx": [
-    "/assets/install-162360b7.js"
+    "/assets/install-5203f3fd.js"
   ],
   "src/routes/(index)/docs/quickstart/learn-lua.mdx": [
-    "/assets/learn-lua-7169010a.js"
+    "/assets/learn-lua-08a0e1a1.js"
   ],
   "src/routes/(index)/docs/quickstart/post-install.mdx": [
-    "/assets/post-install-33e74b1b.js"
+    "/assets/post-install-53cb4892.js"
   ],
   "src/routes/(index)/index.jsx": [
-    "/assets/index-c9fc50fa.js"
+    "/assets/index-a5e67fb1.js"
   ],
   "src/routes/(index)/news/(items).jsx": [
-    "/assets/(items)-32707161.js"
+    "/assets/(items)-dbc9729c.js"
   ],
   "src/routes/(index)/news/(items)/index.js": [
-    "/assets/index-69b77d31.js"
+    "/assets/index-8c78a9f5.js"
   ],
   "src/routes/(index)/news/(items)/v2.0.mdx": [
-    "/assets/v2.0-d559189b.js"
+    "/assets/v2.0-7a600758.js"
   ],
   "src/routes/(index)/news/(items)/v2.0_migration.mdx": [
-    "/assets/v2.0_migration-f3f7f0f4.js"
+    "/assets/v2.0_migration-7fab5300.js"
   ],
   "src/routes/(index)/news/index.jsx": [
-    "/assets/index-69b77d31.js"
+    "/assets/index-8c78a9f5.js"
   ],
   "src/routes/(index)/themes.jsx": [
-    "/assets/themes-de879890.js"
+    "/assets/themes-12e2f30d.js"
   ],
   "src/utils.jsx": [
-    "/assets/ContextTitles-feebb222.js"
+    "/assets/ContextTitles-97098aae.js"
   ]
 }
