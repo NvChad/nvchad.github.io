@@ -1,4 +1,4 @@
-import{b as e,n as s,g as t,t as l}from"./entry-client-f4b1dc74.js";import{M as o}from"./index-65bc554e.js";import{O as a}from"./install-5cd5ef19.js";const c=l("<strong>Mono"),h=l("<strong>Example : "),d=l("<s>JetbrainsMono Nerd Font Mono"),m=l("<strong>(OPTIONAL)");function i(r){const n=Object.assign({h2:"h2",ul:"ul",li:"li",a:"a",strong:"strong",code:"code",p:"p",pre:"pre",span:"span"},o(),r.components);return[e(n.h2,{children:"Pre-requisites"}),`
+import{b as e,n as s,g as t,t as l}from"./entry-client-f99610c5.js";import{M as o}from"./index-fdfaa171.js";import{O as a}from"./install-ae7588e6.js";const c=l("<strong>Mono"),h=l("<strong>Example : "),d=l("<s>JetbrainsMono Nerd Font Mono"),m=l("<strong>(OPTIONAL)");function i(r){const n=Object.assign({h2:"h2",ul:"ul",li:"li",a:"a",strong:"strong",code:"code",p:"p",pre:"pre",span:"span"},o(),r.components);return[e(n.h2,{children:"Pre-requisites"}),`
 `,e(n.ul,{get children(){return[`
 `,e(n.li,{get children(){return[e(n.a,{href:"https://github.com/neovim/neovim/releases/tag/v0.9.4",children:"Neovim 0.9.4"}),"."]}}),`
 `,e(n.li,{get children(){return[e(n.a,{href:"https://www.nerdfonts.com/",children:"Nerd Font"})," as your terminal font.",`
@@ -10,7 +10,7 @@ import{b as e,n as s,g as t,t as l}from"./entry-client-f4b1dc74.js";import{M as 
 `,e(n.li,{get children(){return[e(n.a,{href:"https://github.com/BurntSushi/ripgrep",children:"Ripgrep"})," is required for grep searching with Telescope ",t(m),"."]}}),`
 `,e(n.li,{get children(){return["GCC, Windows users must have ",e(n.a,{href:"http://mingw-w64.org/downloads",get children(){return e(n.code,{children:"mingw"})}})," installed and set on path."]}}),`
 `,e(n.li,{get children(){return["Make, Windows users must have ",e(n.a,{href:"https://gnuwin32.sourceforge.net/install.html",get children(){return e(n.code,{children:"GnuWin32"})}})," installed and set on path."]}}),`
-`,e(n.li,{children:"Delete old neovim folder (check commands below)"}),`
+`,e(n.li,{children:"Delete old neovim folders (check commands below)"}),`
 `]}}),`
 `,e(n.h2,{children:"Install"}),`
 `,e(a,{}),`
