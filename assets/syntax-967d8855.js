@@ -1,4 +1,4 @@
-import{b as n,n as l,g as a,t as i}from"./entry-client-f99610c5.js";import{M as r}from"./index-fdfaa171.js";const c=i("<br>");function t(s){const e=Object.assign({h1:"h1",p:"p",a:"a",h2:"h2",code:"code",ul:"ul",li:"li",pre:"pre",span:"span"},r(),s.components);return[n(e.h1,{children:"Nvim-treesitter"}),`
+import{b as n,n as l,g as a,t as i}from"./entry-client-10316c79.js";import{M as r}from"./index-be05d0a9.js";const c=i("<br>");function t(s){const e=Object.assign({h1:"h1",p:"p",a:"a",h2:"h2",code:"code",ul:"ul",li:"li",pre:"pre",span:"span"},r(),s.components);return[n(e.h1,{children:"Nvim-treesitter"}),`
 `,n(e.p,{get children(){return["We use ",n(e.a,{href:"https://github.com/nvim-treesitter/nvim-treesitter",children:"Nvim-treesitter"})," plugin to have proper syntax highlighting in NvChad. It can be used for various things such as auto indent etc too."]}}),`
 `,n(e.h2,{children:"Install parsers"}),`
 `,n(e.p,{get children(){return["The TSInstall command is used to install treesitter parsers i.e ",n(e.code,{children:"TSInstall <parser>"})]}}),`
