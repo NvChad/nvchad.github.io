@@ -1,4 +1,4 @@
-import{b as e,n as s,g as t,t as l}from"./entry-client-092c6a78.js";import{M as o}from"./index-4e284d9a.js";import{O as a}from"./install-d7257350.js";const c=l("<strong>Mono"),h=l("<strong>Example : "),d=l("<s>JetbrainsMono Nerd Font Mono"),m=l("<strong>(OPTIONAL)");function i(r){const n=Object.assign({h2:"h2",ul:"ul",li:"li",a:"a",strong:"strong",code:"code",p:"p",pre:"pre",span:"span"},o(),r.components);return[e(n.h2,{children:"Pre-requisites"}),`
+import{b as e,n as s,g as t,t as l}from"./entry-client-99d97252.js";import{M as a}from"./index-c3125282.js";import{O as o}from"./install-dcb3964a.js";const c=l("<strong>Mono"),h=l("<strong>Example : "),d=l("<s>JetbrainsMono Nerd Font Mono"),m=l("<strong>(OPTIONAL)");function i(r){const n=Object.assign({h2:"h2",ul:"ul",li:"li",a:"a",strong:"strong",code:"code",p:"p",pre:"pre",span:"span"},a(),r.components);return[e(n.h2,{children:"Pre-requisites"}),`
 `,e(n.ul,{get children(){return[`
 `,e(n.li,{get children(){return[e(n.a,{href:"https://github.com/neovim/neovim/releases/tag/v0.9.4",children:"Neovim 0.9.4"}),"."]}}),`
 `,e(n.li,{get children(){return[e(n.a,{href:"https://www.nerdfonts.com/",children:"Nerd Font"})," as your terminal font.",`
@@ -13,7 +13,7 @@ import{b as e,n as s,g as t,t as l}from"./entry-client-092c6a78.js";import{M as 
 `,e(n.li,{children:"Delete old neovim folders (check commands below)"}),`
 `]}}),`
 `,e(n.h2,{children:"Install"}),`
-`,e(a,{}),`
+`,e(o,{}),`
 `,e(n.h2,{children:"Update"}),`
 `,e(n.p,{children:"To update NvChad run the following command :"}),`
 `,e(n.ul,{get children(){return[`
@@ -24,7 +24,11 @@ import{b as e,n as s,g as t,t as l}from"./entry-client-092c6a78.js";import{M as 
 `,e(n.span,{className:"hljs-built_in",children:"rm"}),` -rf ~/.config/nvim
 `,e(n.span,{className:"hljs-built_in",children:"rm"}),` -rf ~/.local/share/nvim
 
-`,e(n.span,{className:"hljs-comment",children:"# Windows"}),`
+`,e(n.span,{className:"hljs-comment",children:"# Windows CMD"}),`
 rd -r ~\\AppData\\Local\\nvim
 rd -r ~\\AppData\\Local\\nvim-data
-`]}})}})]}function f(r={}){const{wrapper:n}=Object.assign({},o(),r.components);return n?e(n,s(r,{get children(){return e(i,r)}})):i(r)}export{f as default};
+
+`,e(n.span,{className:"hljs-comment",children:"# Window PowerShell"}),`
+`,e(n.span,{className:"hljs-built_in",children:"rm"}),` -Force ~\\AppData\\Local\\nvim
+`,e(n.span,{className:"hljs-built_in",children:"rm"}),` -Force ~\\AppData\\Local\\nvim-data
+`]}})}})]}function f(r={}){const{wrapper:n}=Object.assign({},a(),r.components);return n?e(n,s(r,{get children(){return e(i,r)}})):i(r)}export{f as default};

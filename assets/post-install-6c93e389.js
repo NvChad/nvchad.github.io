@@ -1,4 +1,4 @@
-import{M as i}from"./index-4e284d9a.js";import{b as n,n as t}from"./entry-client-092c6a78.js";function r(o){const e=Object.assign({h2:"h2",p:"p",ul:"ul",li:"li",a:"a"},i(),o.components);return[n(e.h2,{children:"If you're new to Neovim/Vim"}),`
+import{M as i}from"./index-c3125282.js";import{b as n,n as t}from"./entry-client-99d97252.js";function r(o){const e=Object.assign({h2:"h2",p:"p",ul:"ul",li:"li",a:"a"},i(),o.components);return[n(e.h2,{children:"If you're new to Neovim/Vim"}),`
 `,n(e.p,{children:"We strongly encourage you to learn how to use Neovim/Vim. If you are totally new to Vim, then you cannot use NvChad until you gain some basic knowledge about Vim's modes, default editor commands, globals, mappings, etc."}),`
 `,n(e.p,{children:"These are highly recommended and a must-do for any new Vimmer:"}),`
 `,n(e.ul,{get children(){return[`
