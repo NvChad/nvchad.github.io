@@ -7,10 +7,17 @@ const unix_cmd =
   "git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim";
 
 const windows_cmd = [
-  "git clone https://github.com/NvChad/NvChad %USERPROFILE%\\AppData\\Local\\nvim --depth 1 && nvim",
+  `# if you're using Command Prompt(CMD) \n
+git clone https://github.com/NvChad/NvChad %USERPROFILE%\\AppData\\Local\\nvim --depth 1 && nvim`,
+  `# if you're using PowerShell(pwsh) \n
+git clone https://github.com/NvChad/NvChad $ENV:USERPROFILE\\AppData\\Local\\nvim --depth 1 && nvim`,
   `# if the above path doesnt work, try any of these paths :\n
+# for CMD
 %LOCALAPPDATA%\\nvim\ \n
-C:\Users\\%USERNAME%\\AppData\\Local\\nvim`,
+C:\\Users\\%USERNAME%\\AppData\\Local\\nvim \n
+# for PowerShell
+$ENV:LOCALAPPDATA\\nvim\ \n
+C:\\Users\\$ENV:USERNAME\\AppData\\Local\\nvim`,
 ];
 
 export const docker_cmd =
