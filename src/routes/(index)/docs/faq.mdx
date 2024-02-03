@@ -1,0 +1,33 @@
+## Icons not working
+
+- Setup a [nerdfont](https://www.nerdfonts.com/#home) as your terminal's default font.
+
+## Set highlight groups 
+
+- For that you have to add highlight groups in hl_override ( existing ones which NvChad defines), for new ones, use hl_add. 
+- Check [theming docs](https://nvchad.com/docs/config/theming) for detailed info.
+
+
+## Customize theme colors 
+
+- Use `changed_themes` option in chadrc. check [theming docs](https://nvchad.com/docs/config/theming#customize_themes) for detailed info.
+
+## Custom local base46 themes
+
+- To make a custom local theme thats of the base46 format, you have to create `/custom/themes/mytheme.lua`. Check [base46 docs](https://github.com/NvChad/base46/blob/v2.0/README.md) for more info.
+
+
+## Can I remove base46?
+
+- No, NvChad hard-depends on base46, just use another config.
+
+## Mapping Ctrl + o / i keys
+
+- In Nvchad `<Tab> & <S-Tab>` are mapped by default and nvim maps to `<C-i>` if `<Tab>` key is mapped. [Check](https://stackoverflow.com/questions/16209213/vim-jump-forward-with-c-i-doesnt-work-for-me-too-snipmate/16209534#16209534)
+
+- To map those keys, you should either disable `<Tab>` in your custom mappings file or have certain settings in your terminal config, for exampele:  alacritty config : 
+
+```bash
+key_bindings:
+   - { key: I, mods: Control, chars: "\x1b[105;6u" }
+ ```

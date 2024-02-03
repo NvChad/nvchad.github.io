@@ -26,6 +26,7 @@ const sidebar_Items = [
   ["Features", "features", "i-tabler:server-cog"],
   ["Api Functions", "api", "i-mdi:atom-variant"],
   ["Contributing", "contribute", "i-mdi-github"],
+  ["Faq", "faq", "i-octicon:question-16"],
   ["Credits", "credits", "i-line-md:heart"],
 ];
 
