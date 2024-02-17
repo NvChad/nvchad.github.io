@@ -9,6 +9,12 @@ import pkg from "@vinxi/plugin-mdx";
 const { default: mdx } = pkg;
 export default defineConfig({
   start: {
+    server: {
+      experimental: {
+        asyncContext: true,
+      },
+    },
+
     extensions: ["mdx", "md"],
   },
   plugins: [
