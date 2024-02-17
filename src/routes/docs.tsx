@@ -33,19 +33,13 @@ function Docs(props) {
   });
 
   //  run on route change
-  createEffect(
-    on(
-      () => props.location.pathname,
-      () => {
-        setTimeout(() => {
-          create_copyIcon("DocContent");
-          assign_heading_ids();
-          generateActiveContext("DocContent");
-          autoscroll_toID();
-        }, 50);
-      },
-    ),
-  );
+  createEffect(() => {
+    const pathname = props.location.pathname;
+    create_copyIcon("DocContent");
+    assign_heading_ids();
+    generateActiveContext("DocContent");
+    autoscroll_toID();
+  });
 
   return (
     <div
