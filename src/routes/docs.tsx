@@ -21,36 +21,37 @@ export const [sideBarShown, showSidebar] = createSignal(false);
 // final component!
 function Docs(props) {
   onMount(() => {
-    window.addEventListener(
-      "scroll",
-      () => generateActiveContext("DocContent"),
+    window.addEventListener("scroll", () =>
+      generateActiveContext("DocContent"),
     );
 
     onCleanup(() =>
-      window.removeEventListener(
-        "scroll",
-        () => generateActiveContext("DocContent"),
-      )
+      window.removeEventListener("scroll", () =>
+        generateActiveContext("DocContent"),
+      ),
     );
   });
 
   //  run on route change
-  // createEffect(
-  //   on(
-  //     () => useLocation().pathname,
-  //     () => {
-  //       setTimeout(() => {
-  //         create_copyIcon("DocContent");
-  //         assign_heading_ids();
-  //         generateActiveContext("DocContent");
-  //         autoscroll_toID();
-  //       }, 50);
-  //     },
-  //   ),
-  // );
+  createEffect(
+    on(
+      () => props.location.pathname,
+      () => {
+        setTimeout(() => {
+          create_copyIcon("DocContent");
+          assign_heading_ids();
+          generateActiveContext("DocContent");
+          autoscroll_toID();
+        }, 50);
+      },
+    ),
+  );
 
   return (
-    <div grid class="xl:grid-cols-[auto_1fr] max-w-[1700px] mx-auto mb-8 p-4 py6">
+    <div
+      grid="~ xl:cols-[auto_1fr]"
+      class="max-w-[1700px] mx-auto mb-8 p-4 py6"
+    >
       <Sidebar />
 
       <main class="xl:blur-none" blur={sideBarShown() ? "sm" : ""}>
@@ -71,4 +72,3 @@ function Docs(props) {
 }
 
 export default Docs;
-
