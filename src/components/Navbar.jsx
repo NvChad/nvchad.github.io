@@ -1,6 +1,6 @@
 import { A, useLocation } from "@solidjs/router";
 import { createEffect, createSignal } from "solid-js";
-import { showSidebar, sideBarShown } from "~/routes/(index)/docs";
+import { showSidebar, sideBarShown } from "~/routes/docs";
 
 import docsearch from "@docsearch/js";
 import "@docsearch/css";
