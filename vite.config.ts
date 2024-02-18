@@ -10,6 +10,7 @@ const { default: mdx } = pkg;
 export default defineConfig({
   start: {
     server: {
+      preset: "github-pages",
       experimental: {
         asyncContext: true,
       },
