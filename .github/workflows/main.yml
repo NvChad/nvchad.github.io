@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: oven-sh/setup-bun@v1
+      - run: bun install
+      - run: bun run sitemap
+      - run: bun run build
+
+      - name: rm _server
+        run: rm -rf .output/public/_server
+
+        env:
+          BASE_PATH: /
+
+      - name: create .nojekyll
+        run: touch .output/public/.nojekyll
+
+      - name: deploy pages
+        uses: JamesIves/github-pages-deploy-action@v4.5.0
+        with:
+          branch: gh-pages
+          folder: .output/public

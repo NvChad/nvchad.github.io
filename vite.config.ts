@@ -7,10 +7,13 @@ import { defineConfig } from "@solidjs/start/config";
 import pkg from "@vinxi/plugin-mdx";
 
 const { default: mdx } = pkg;
+
 export default defineConfig({
   start: {
+    ssr: true,
     server: {
-      preset: "github-pages",
+      preset: process.env.NODE_ENV == "development" ? "node" : "static",
+      baseURL: process.env.BASE_PATH,
       experimental: {
         asyncContext: true,
       },

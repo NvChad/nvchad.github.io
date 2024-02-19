@@ -3,7 +3,8 @@
   "type": "module",
   "scripts": {
     "dev": "vinxi dev",
-    "build": "vinxi build",
+    "build": "vinxi build && rm -rf .output/public/_server",
+    "sitemap": "bun ./src/scripts/sitemap.js",
     "start": "vinxi start"
   },
 

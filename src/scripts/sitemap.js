@@ -1,10 +1,9 @@
-
-const glob = new Bun.Glob("../routes/**");
+const glob = new Bun.Glob("./src/routes/**");
 
 let files = [];
 
 for (const file of glob.scanSync(".")) {
-  let route = file.replace("../routes/", "").split(".")[0];
+  let route = file.replace("./src/routes/", "").split(".")[0];
   files.push(route);
 }
 
@@ -25,6 +24,6 @@ let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
    ${site_urls}
     </urlset>`;
 
-Bun.write("./../../public/sitemap.xml", sitemap);
+Bun.write("./public/sitemap.xml", sitemap);
 
 // // save sitemap only to dist dir
