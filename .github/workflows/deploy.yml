@@ -1,52 +1,58 @@
-name: Deploy
+# https://github.com/actions/deploy-pages#usage
+name: Deploy to GitHub Pages
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - src
 
 jobs:
   build:
-    name: Build
     runs-on: ubuntu-latest
     steps:
-      - uses: jirutka/setup-alpine@v1
+      - uses: actions/checkout@v3
+      - run: corepack enable
+      - uses: oven-sh/setup-bun@v1
         with:
-          branch: v3.15
+          bun-version: latest 
 
-      - name: Checkout repo
-        uses: actions/checkout@v2
-
-      - name: Setup Node
-        uses: actions/setup-node@v1
+      - uses: actions/cache@v4
         with:
-          node-version: 18
-
-      - name: Cache node modules
-        id: cache-nodemodules
-        uses: actions/cache@v2
-        env:
-          cache-name: cache-node-modules
-        with:
-          # caching node_modules
-          path: node_modules
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          path: ~/.bun/install/cache
+          key: ${{ runner.os }}-${{ matrix.bun }}-bun-${{ hashFiles('**/bun.lockb') }}
           restore-keys: |
-            ${{ runner.os }}-build-${{ env.cache-name }}-
-            ${{ runner.os }}-build-
-            ${{ runner.os }}-
+            ${{ runner.os }}-${{ matrix.bun }}-bun-
 
-      - name: Install Dependencies
-        if: steps.cache-nodemodules.outputs.cache-hit != 'true'
-        run: npm ci
-      #- name: Install dependencies
-      # uses: bahmutov/npm-install@v1
+      # Pick your own package manager and build script
+      - run: bun install
+      - run: bun run build
+        env:
+          NITRO_PRESET: github_pages
 
-      - name: Build project
-        run: npm run build
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          path: ./.output/public
+
+  # Deployment job
+  deploy:
+    # Add a dependency to the build job
+    needs: build
+
+    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+
+    # Deploy to the github_pages environment
+    environment:
+      name: github_pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    # Specify runner + deployment step
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1

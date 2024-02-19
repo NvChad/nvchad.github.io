@@ -2,7 +2,7 @@ import { A, useLocation } from "@solidjs/router";
 import sidebar_Items from "../doc_comps/sidebar_Items";
 
 import { createSignal, Show } from "solid-js";
-import { sideBarShown } from "~/routes/(index)/docs";
+import { sideBarShown } from "~/routes/docs";
 
 function NestedLabels(props) {
   const is_ActiveRoute = props.labels.filter(

@@ -3,18 +3,18 @@ import { createStore } from "solid-js/store";
 
 function isElementVisible(myElement) {
   const rect = myElement.getBoundingClientRect();
-  const isVisible = rect.top >= 0 &&
+  const isVisible =
+    rect.top >= 0 &&
     rect.left >= 0 &&
     rect.bottom <=
       (window.innerHeight || document.documentElement.clientHeight) &&
     rect.right <= (window.innerWidth || document.documentElement.clientWidth);
 
-  return (isVisible) ? true : false;
+  return isVisible ? true : false;
 }
 
-export const [activeContext_Heading, setActiveContext_Heading] = createSignal(
-  "",
-);
+export const [activeContext_Heading, setActiveContext_Heading] =
+  createSignal("");
 
 export const [contextHeadings, setHeadings] = createStore([]);
 
@@ -52,4 +52,12 @@ export const autoscroll_toID = () => {
     const id = hash.substring(1);
     document.getElementById(id).scrollIntoView();
   }
+};
+
+export const setCookie = (name, value) => {
+  var date = new Date();
+
+  date.setTime(date.getTime() + 10 * 365 * 24 * 60 * 60 * 1000);
+  var expires = "expires=" + date.toUTCString();
+  document.cookie = name + "=" + value + ";" + expires + ";path=/";
 };

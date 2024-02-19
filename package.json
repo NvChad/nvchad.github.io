@@ -1,39 +1,32 @@
 {
-  "name": "nvchad website",
-  "version": "0.4.1",
+  "name": "nvchad-website",
   "type": "module",
+  "scripts": {
+    "dev": "vinxi dev",
+    "build": "vinxi build && rm -rf .output/public/_server",
+    "sitemap": "bun ./src/scripts/sitemap.js",
+    "start": "vinxi start"
+  },
 
   "devDependencies": {
-    "mdx": "^0.3.1",
-    "rehype-highlight": "^6.0.0",
-    "@mdx-js/rollup": "^2.3.0",
     "@iconify/json": "^2.2.100",
     "unocss": "^0.55.0",
-    "@unocss/preset-icons": "^0.55.0",
-    "@unocss/transformer-directives": "^0.55.0",
-    "vite": "^4.4.9",
-    "solid-start-node": "^0.3.1",
-    "solid-start-static": "^0.3.1"
+    "@unocss/transformer-directives": "^0.55.0"
   },
 
   "dependencies": {
     "@docsearch/css": "^3.5.1",
     "@docsearch/js": "3",
-    "@solidjs/meta": "^0.28.6",
-    "@solidjs/router": "^0.8.3",
-    "solid-js": "^1.7.11",
-    "solid-mdx": "^0.0.6",
-    "solid-start": "^0.3.1",
-    "undici": "^5.23.0"
-  },
-
-  "scripts": {
-    "start": "solid-start start",
-    "dev": "solid-start dev",
-    "build_local": "solid-start build",
-    "build": "solid-start build && mv dist _dist && mv _dist/public dist && rm -rf _dist && cp -r CNAME dist && node ./src/gen_sitemap.js"
+    "@mdx-js/mdx": "^2.3.0",
+    "@solidjs/router": "^0.12.3",
+    "@solidjs/start": "^0.5.9",
+    "@vinxi/plugin-mdx": "^3.6.7",
+    "rehype-highlight": "^7.0.0",
+    "solid-js": "^1.8.15",
+    "solid-mdx": "^0.0.7",
+    "vinxi": "^0.2.1"
   },
   "engines": {
-    "node": ">=16.8"
+    "node": ">=18"
   }
 }

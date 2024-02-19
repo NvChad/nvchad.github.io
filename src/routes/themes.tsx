@@ -5,27 +5,27 @@ const languages = [
   {
     lang: "python",
     icon: "i-mdi:language-python",
-    images: import.meta.glob("../../../public/themes/python/*.webp"),
+    images: import.meta.glob("../../public/themes/python/*.webp"),
   },
   {
     lang: "javascript",
     icon: "i-skill-icons:javascript",
-    images: import.meta.glob("../../../public/themes/javascript/*.webp"),
+    images: import.meta.glob("../../public/themes/javascript/*.webp"),
   },
   {
     lang: "haskell",
     icon: "i-logos:haskell-icon",
-    images: import.meta.glob("../../../public/themes/haskell/*.webp"),
+    images: import.meta.glob("../../public/themes/haskell/*.webp"),
   },
   {
     lang: "c",
     icon: "i-devicon:c",
-    images: import.meta.glob("../../../public/themes/c/*.webp"),
+    images: import.meta.glob("../../public/themes/c/*.webp"),
   },
   {
     lang: "lua",
     icon: "i-logos:lua dark:i-skill-icons:lua-light",
-    images: import.meta.glob("../../../public/themes/lua/*.webp"),
+    images: import.meta.glob("../../public/themes/lua/*.webp"),
   },
 ];
 
@@ -41,6 +41,7 @@ languages.map((lang, i) => {
 
   languages[i].images = arr;
 });
+
 
 const [activeLang, setLangOpt] = createSignal("python");
 const [activeImages, setImages] = createSignal(languages[0].images);

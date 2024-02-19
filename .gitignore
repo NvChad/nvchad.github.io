@@ -1,9 +1,14 @@
+
 dist
 .solid
 .output
 .vercel
 .netlify
 netlify
+
+# Environment
+.env
+.env*.local
 
 # dependencies
 /node_modules
@@ -22,4 +27,4 @@ gitignore
 .DS_Store
 Thumbs.db
 
-pnpm-lock.yaml
+.vinxi

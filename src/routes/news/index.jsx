@@ -1,5 +1,14 @@
 import { A } from "@solidjs/router";
-import { news } from "./(items)/index";
+
+const toMeta = (v) =>
+  Object.entries(v).map(([link, mod]) => ({
+    link: link.replace(/^\.\/|\.mdx$/g, ""),
+    ...mod.meta,
+  }));
+
+const news = toMeta(import.meta.glob("./*.mdx", { eager: true }));
+
+console.log(news)
 
 function News() {
   return (

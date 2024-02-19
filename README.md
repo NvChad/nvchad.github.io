@@ -8,4 +8,4 @@ The docs (markdown files) are [here](https://github.com/NvChad/nvchad.github.io/
 
 # Credits
 
-- Thanks to [@mdynnl](https://github.com/mdynnl) for integration of solid-start and solid-ssg in this site.
+- Huge Thanks to [@mdynnl](https://github.com/mdynnl) for helping me integreating solid-start and solid-ssg in this site.

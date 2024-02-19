@@ -1,4 +1,3 @@
-import { Outlet, useLocation } from "solid-start";
 import { createEffect, createSignal, on, onCleanup, onMount } from "solid-js";
 import Sidebar from "~/components/doc_comps/Sidebar";
 import NextPrevPageBtns from "~/components/doc_comps/nextprevPage";
@@ -20,45 +19,40 @@ import ContextTitles from "~/components/ContextTitles";
 export const [sideBarShown, showSidebar] = createSignal(false);
 
 // final component!
-function Docs() {
+function Docs(props) {
   onMount(() => {
-    window.addEventListener(
-      "scroll",
-      () => generateActiveContext("DocContent"),
+    window.addEventListener("scroll", () =>
+      generateActiveContext("DocContent"),
     );
 
     onCleanup(() =>
-      window.removeEventListener(
-        "scroll",
-        () => generateActiveContext("DocContent"),
-      )
+      window.removeEventListener("scroll", () =>
+        generateActiveContext("DocContent"),
+      ),
     );
   });
 
   //  run on route change
-  createEffect(
-    on(
-      () => useLocation().pathname,
-      () => {
-        setTimeout(() => {
-          create_copyIcon("DocContent");
-          assign_heading_ids();
-          generateActiveContext("DocContent");
-          autoscroll_toID();
-        }, 50);
-      },
-    ),
-  );
+  createEffect(() => {
+    const pathname = props.location.pathname;
+    create_copyIcon("DocContent");
+    assign_heading_ids();
+    generateActiveContext("DocContent");
+    autoscroll_toID();
+  });
 
   return (
-    <div grid class="xl:grid-cols-[auto_1fr] max-w-[1700px] mx-auto mb-8 p-4 py6">
+    <div
+      grid="~ xl:cols-[auto_1fr]"
+      class="max-w-[1700px] mx-auto mb-8 p-4 py6"
+    >
       <Sidebar />
 
       <main class="xl:blur-none" blur={sideBarShown() ? "sm" : ""}>
         <div class="flex flex-col-reverse xl:grid xl:grid-cols-[1fr_auto]">
           <div xl:px-10>
             <div id="DocContent" w-full>
-              <Outlet />
+              {props.children}
             </div>
             <NextPrevPageBtns />
           </div>
