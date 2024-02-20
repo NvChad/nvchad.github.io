@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
    <url>
+     <loc>https://nvchad.com/</loc>
+     <changefreq>weekly</changefreq>
+     <priority>0.5</priority>
+     </url><url>
      <loc>https://nvchad.com/news</loc>
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
@@ -9,27 +13,15 @@
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
      </url><url>
-     <loc>https://nvchad.com/themes</loc>
+     <loc>https://nvchad.com/[...404]</loc>
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
      </url><url>
-     <loc>https://nvchad.com/[</loc>
+     <loc>https://nvchad.com/news/v2.0_migration</loc>
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
      </url><url>
-     <loc>https://nvchad.com/index</loc>
-     <changefreq>weekly</changefreq>
-     <priority>0.5</priority>
-     </url><url>
-     <loc>https://nvchad.com/news/index</loc>
-     <changefreq>weekly</changefreq>
-     <priority>0.5</priority>
-     </url><url>
-     <loc>https://nvchad.com/news/v2</loc>
-     <changefreq>weekly</changefreq>
-     <priority>0.5</priority>
-     </url><url>
-     <loc>https://nvchad.com/news/v2</loc>
+     <loc>https://nvchad.com/news/v2.0</loc>
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
      </url><url>
@@ -46,10 +38,6 @@
      <priority>0.5</priority>
      </url><url>
      <loc>https://nvchad.com/docs/contribute</loc>
-     <changefreq>weekly</changefreq>
-     <priority>0.5</priority>
-     </url><url>
-     <loc>https://nvchad.com/docs/index</loc>
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
      </url><url>
