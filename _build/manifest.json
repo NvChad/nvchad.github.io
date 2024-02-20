@@ -3,8 +3,8 @@
     "file": "assets/client-ac2d9cfd.css",
     "src": "\u0000virtual:#vinxi/handler/client.css"
   },
-  "_ContextTitles-08aa7439.js": {
-    "file": "assets/ContextTitles-08aa7439.js",
+  "_ContextTitles-0f7638e3.js": {
+    "file": "assets/ContextTitles-0f7638e3.js",
     "imports": [
       "_web-20758ba6.js",
       "_routing-77a8aa84.js",
@@ -18,16 +18,16 @@
       "_routing-77a8aa84.js"
     ]
   },
-  "_docs-bd0b4c7a.js": {
+  "_docs-d5c34c30.js": {
     "css": [
       "assets/docs-f6e5fd48.css"
     ],
-    "file": "assets/docs-bd0b4c7a.js",
+    "file": "assets/docs-d5c34c30.js",
     "imports": [
       "_web-20758ba6.js",
       "_routing-77a8aa84.js",
       "_components-1709c301.js",
-      "_ContextTitles-08aa7439.js"
+      "_ContextTitles-0f7638e3.js"
     ]
   },
   "_index-16ef742e.js": {
@@ -2352,11 +2352,11 @@
     "src": "src/routes/[...404].jsx?pick=default&pick=$css"
   },
   "src/routes/docs.tsx?pick=default&pick=$css": {
-    "file": "assets/docs-bdfce3c3.js",
+    "file": "assets/docs-3feb9417.js",
     "imports": [
       "_web-20758ba6.js",
-      "_docs-bd0b4c7a.js",
-      "_ContextTitles-08aa7439.js",
+      "_docs-d5c34c30.js",
+      "_ContextTitles-0f7638e3.js",
       "_routing-77a8aa84.js",
       "_components-1709c301.js"
     ],
@@ -2558,10 +2558,10 @@
     "src": "src/routes/index.tsx?pick=default&pick=$css"
   },
   "src/routes/news.tsx?pick=default&pick=$css": {
-    "file": "assets/news-d73d17bf.js",
+    "file": "assets/news-5094a4e3.js",
     "imports": [
       "_web-20758ba6.js",
-      "_ContextTitles-08aa7439.js",
+      "_ContextTitles-0f7638e3.js",
       "_routing-77a8aa84.js",
       "_components-1709c301.js"
     ],
@@ -2930,14 +2930,14 @@
       "src/routes/docs/quickstart/learn-lua.mdx?pick=$css",
       "src/routes/docs/quickstart/post-install.mdx?pick=$css"
     ],
-    "file": "assets/client-b77394dd.js",
+    "file": "assets/client-8ec280ee.js",
     "imports": [
       "_preload-helper-9f02f19c.js",
       "_web-20758ba6.js",
-      "_docs-bd0b4c7a.js",
-      "_ContextTitles-08aa7439.js",
+      "_docs-d5c34c30.js",
       "_routing-77a8aa84.js",
-      "_components-1709c301.js"
+      "_components-1709c301.js",
+      "_ContextTitles-0f7638e3.js"
     ],
     "isEntry": true,
     "src": "virtual:#vinxi/handler/client"
