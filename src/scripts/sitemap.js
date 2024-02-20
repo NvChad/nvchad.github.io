@@ -3,9 +3,16 @@ const glob = new Bun.Glob("./src/routes/**");
 let files = [];
 
 for (const file of glob.scanSync(".")) {
-  let route = file.replace("./src/routes/", "").split(".")[0];
+  if (file.includes("index")) continue;
+
+  let route = file.replace("./src/routes/", "");
+  route = route.substring(0, route.lastIndexOf(".")); // rm extension
+
   files.push(route);
 }
+
+files.splice(2, 1); // remove [...404] page
+files.unshift(""); // add / i.e home route
 
 // generate xml tags
 let site_urls = files.map(
@@ -25,5 +32,3 @@ let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     </urlset>`;
 
 Bun.write("./public/sitemap.xml", sitemap);
-
-// // save sitemap only to dist dir
