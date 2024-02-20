@@ -30,4 +30,8 @@ import{M as o}from"./index-16ef742e.js";import{b as n,m as i}from"./web-20758ba6
 `]}}),`
 `,n(e.pre,{get children(){return n(e.code,{className:"hljs language-bash",get children(){return[`key_bindings:
    - { key: I, mods: Control, chars: `,n(e.span,{className:"hljs-string",children:'"\\x1b[105;6u"'}),` }
-`]}})}})]}function d(r={}){const{wrapper:e}=Object.assign({},o(),r.components);return e?n(e,i(r,{get children(){return n(t,r)}})):t(r)}export{d as default};
+`]}})}}),`
+`,n(e.h2,{children:"NvChad's color is weird"}),`
+`,n(e.ul,{get children(){return[`
+`,n(e.li,{get children(){return["You might be using a terminal that doesn't support true color. This problem is very common for those who use the default MacOS terminal, opt to use ",n(e.a,{href:"https://iterm2.com/",children:"iterm2"})," instead."]}}),`
+`]}})]}function l(r={}){const{wrapper:e}=Object.assign({},o(),r.components);return e?n(e,i(r,{get children(){return n(t,r)}})):t(r)}export{l as default};

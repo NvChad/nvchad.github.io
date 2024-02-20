@@ -2485,7 +2485,7 @@
     "src": "src/routes/docs/credits.mdx?pick=$css"
   },
   "src/routes/docs/faq.mdx?pick=$css": {
-    "file": "assets/faq-5d6787e4.js",
+    "file": "assets/faq-af3c2788.js",
     "imports": [
       "_index-16ef742e.js",
       "_web-20758ba6.js"
@@ -2930,7 +2930,7 @@
       "src/routes/docs/quickstart/learn-lua.mdx?pick=$css",
       "src/routes/docs/quickstart/post-install.mdx?pick=$css"
     ],
-    "file": "assets/client-8ec280ee.js",
+    "file": "assets/client-73c54d3d.js",
     "imports": [
       "_preload-helper-9f02f19c.js",
       "_web-20758ba6.js",
