@@ -8,21 +8,21 @@
     "start": "vinxi start"
   },
   "devDependencies": {
-    "@iconify/json": "^2.2.100",
-    "unocss": "^0.55.0",
-    "@unocss/transformer-directives": "^0.55.0"
+    "@iconify/json": "^2.2.184",
+    "unocss": "^0.58.5",
+    "@unocss/transformer-directives": "^0.58.5"
   },
   "dependencies": {
-    "@docsearch/css": "^3.5.1",
+    "@docsearch/css": "^3.5.2",
     "@docsearch/js": "3",
-    "@mdx-js/mdx": "^2.3.0",
+    "@mdx-js/mdx": "^3.0.1",
     "@solidjs/router": "^0.12.3",
     "@solidjs/start": "^0.5.9",
-    "@vinxi/plugin-mdx": "^3.6.7",
+    "@vinxi/plugin-mdx": "^3.7.1",
     "rehype-highlight": "^7.0.0",
     "solid-js": "^1.8.15",
     "solid-mdx": "^0.0.7",
-    "vinxi": "^0.2.1"
+    "vinxi": "^0.3.3"
   },
   "engines": {
     "node": ">=18"
