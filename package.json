@@ -7,13 +7,11 @@
     "sitemap": "bun ./src/scripts/sitemap.js",
     "start": "vinxi start"
   },
-
   "devDependencies": {
     "@iconify/json": "^2.2.100",
     "unocss": "^0.55.0",
     "@unocss/transformer-directives": "^0.55.0"
   },
-
   "dependencies": {
     "@docsearch/css": "^3.5.1",
     "@docsearch/js": "3",

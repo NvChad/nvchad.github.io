@@ -1,7 +1,6 @@
 import { useLocation } from "@solidjs/router";
 import { createEffect, createSignal } from "solid-js";
 import { showSidebar, sideBarShown } from "~/routes/docs";
-import { setCookie } from "~/utils";
 
 import docsearch from "@docsearch/js";
 import "@docsearch/css";
@@ -66,10 +65,9 @@ export const ThemeToggleBtn = (props) => {
     <button
       onclick={() => {
         setTheme(theme() == "light" ? "dark" : "light");
-        setCookie("theme", theme());
-        document.querySelector("html").className = theme();
+        const html = document.querySelector("html");
+        html.className = localStorage.theme = theme();
       }}
-
       class={`shadow-lg ${props.display} text-xl p-2 bg-slate-8 text-white-1 dark:bg-dark-3 rounded-full`}
       aria-label="theme toggler"
     >

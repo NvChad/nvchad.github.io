@@ -15,7 +15,7 @@ jobs:
       - uses: oven-sh/setup-bun@v1
       - run: bun install
       - run: bun run sitemap
-      - run: bun run build
+      - run: NITRO_PRESET=static bun run build
 
       - name: rm _server
         run: rm -rf .output/public/_server

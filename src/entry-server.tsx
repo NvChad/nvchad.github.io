@@ -1,10 +1,9 @@
 import { createHandler, StartServer } from "@solidjs/start/server";
-import { getCookie } from "vinxi/server";
 
 export default createHandler(() => (
   <StartServer
     document={({ assets, children, scripts }) => (
-      <html lang="en" class={getCookie("theme")}>
+      <html lang="en">
         <head>
           <meta charset="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -28,9 +27,12 @@ export default createHandler(() => (
             rel="stylesheet"
           />
 
-          <title>NvChad</title>
-
           {assets}
+
+          {/* set saved theme  */}
+          <script>
+            document.querySelector("html").className = localStorage.theme
+          </script>
         </head>
         <body>
           <div id="app">{children}</div>

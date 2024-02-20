@@ -12,7 +12,6 @@ export default defineConfig({
   start: {
     ssr: true,
     server: {
-      preset: process.env.NODE_ENV == "development" ? "node" : "static",
       baseURL: process.env.BASE_PATH,
       experimental: {
         asyncContext: true,

@@ -53,11 +53,3 @@ export const autoscroll_toID = () => {
     document.getElementById(id).scrollIntoView();
   }
 };
-
-export const setCookie = (name, value) => {
-  var date = new Date();
-
-  date.setTime(date.getTime() + 10 * 365 * 24 * 60 * 60 * 1000);
-  var expires = "expires=" + date.toUTCString();
-  document.cookie = name + "=" + value + ";" + expires + ";path=/";
-};
