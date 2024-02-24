@@ -2,28 +2,24 @@ export default (id) => {
   const docContent = document.getElementById(id);
   const preElements = docContent?.querySelectorAll("pre");
 
+  console.log(preElements);
+
   preElements?.forEach(function (preElement) {
-    const button = document.createElement("button");
+    const childDiv = preElement.querySelector("div");
+    if (childDiv) return;
+
+    const button = document.createElement("div");
     button.classList = "copyBtn";
     button.ariaLabel = "copy button";
 
-    // create copy icon
-    const icon = document.createElement("div");
-    icon.classList = "i-uil:clipboard";
-    button.appendChild(icon);
-
     button.addEventListener("click", function () {
-      // use check icon for copyIcon div
-      const copyIcon = button.querySelector("div");
-      copyIcon.classList = "i-line-md:confirm-circle clickedCopyBtn";
+      button.classList = "clickedCopyBtn";
 
       const content = preElement.textContent;
       navigator.clipboard.writeText(content);
 
       // reset to old copyIcon after 1s
-      setTimeout(() => {
-        copyIcon.classList = "i-uil:clipboard";
-      }, 3000);
+      setTimeout(() => (button.classList = "copyBtn"), 2000);
     });
 
     preElement.appendChild(button);

@@ -1,4 +1,5 @@
 import { createEffect, onCleanup, onMount } from "solid-js";
+import create_copyIcon from "~/components/doc_comps/clipboard";
 
 import ContextTitles from "~/components/ContextTitles";
 
@@ -33,7 +34,7 @@ const Layout= (props) =>{
   createEffect(
     () => {
       setTimeout(() => {
-        // create_copyIcon("DocContent");
+        create_copyIcon("DocContent");
         assign_heading_ids();
         generateActiveContext("newsContent");
         autoscroll_toID();

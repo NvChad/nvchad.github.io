@@ -1,5 +1,5 @@
 import { A } from "@solidjs/router";
-import { setOS, setOSCMD, docker_cmd } from "../docpage/install";
+import { setOS, osInfos } from "../docpage/install";
 
 function BtnLinks() {
   const linkStyles = "vertCentered bg-onedark w-fit p-3 px-4 rounded-full";
@@ -13,10 +13,7 @@ function BtnLinks() {
       <A
         href="/docs/quickstart/install"
         class={linkStyles}
-        onclick={() => {
-          setOS("Docker");
-          setOSCMD(docker_cmd);
-        }}
+        onclick={() =>  setOS(osInfos[2])}
       >
         <div class="i-mdi-docker"></div> Docker
       </A>

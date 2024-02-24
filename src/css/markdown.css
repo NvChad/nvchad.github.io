@@ -169,8 +169,8 @@
 }
 
 #DocContent blockquote {
-  padding: .7em;
-  border-left: 0.25rem solid ;
+  padding: 0.7em;
+  border-left: 0.25rem solid;
   margin-left: 1rem;
   @apply bg-slate-1 dark:bg-dark-3 w-fit rounded-r-lg;
   @apply border-slate-3 dark:border-dark-4;
@@ -178,7 +178,7 @@
 
 #DocContent kbd {
   @apply bg-slate-2 dark:bg-dark-4 mx-1;
-  @apply px-2
+  @apply px-2;
 }
 
 #DocContent ul,
@@ -445,8 +445,14 @@
   @apply text-[14px];
 }
 
+.copyBtn {
+  @apply !bg-slate !hover:bg-green3;
+  @apply i-uil:clipboard cursor-pointer;
+}
+
 .clickedCopyBtn {
-  @apply text-green-3;
+  @apply !bg-green-3;
+  @apply i-line-md:confirm-circle;
 }
 
 /* copy button */

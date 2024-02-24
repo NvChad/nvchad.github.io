@@ -8,8 +8,6 @@ const toMeta = (v) =>
 
 const news = toMeta(import.meta.glob("./*.mdx", { eager: true }));
 
-console.log(news)
-
 function News() {
   return (
     <div m="y-5 xl:y-10 x-auto" px-3 max="w-[1700px]">
