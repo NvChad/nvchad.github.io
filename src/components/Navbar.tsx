@@ -67,7 +67,7 @@ function Searchbar() {
     // setup algolia docsearch
     docsearch({
       appId: "BOJS19CH35",
-      apiKey: import.meta.env.VITE_ALGOLIA_API,
+      apiKey: "c74ee96af1dea95b6e189501983733f8",
       indexName: "nvchad",
       container: "#docsearch",
     });

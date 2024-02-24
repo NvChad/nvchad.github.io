@@ -1,4 +1,4 @@
-import { A, useLocation } from "@solidjs/router";
+import { useLocation } from "@solidjs/router";
 import sidebar_Items from "./sidebar_Items";
 
 let sorted_lables = [];
@@ -22,7 +22,7 @@ arr = [
 ]
 */
 
-function generateTxt(direction, wantLink) {
+function generateTxt(direction: number, wantLink?: boolean) {
   let result = "";
   let current_path = useLocation().pathname.replace(/^\/docs\//, "");
 
@@ -43,28 +43,28 @@ export default () => {
   return (
     <div flex justify-between>
       {/* previous page */}
-      {generateTxt(-1)
-        ? (
-          <A href={generateTxt(-1, true)}>
-            <button border={border} class={btnClass}>
-              <div i-ph:arrow-left-bold></div>
-              {generateTxt(-1)}
-            </button>
-          </A>
-        )
-        : <div></div>}
+      {generateTxt(-1) ? (
+        <a href={"/docs/" + generateTxt(-1, true)}>
+          <button border={border} class={btnClass}>
+            <div i-ph:arrow-left-bold></div>
+            {generateTxt(-1)}
+          </button>
+        </a>
+      ) : (
+        <div></div>
+      )}
 
       {/* next page */}
-      {generateTxt(1)
-        ? (
-          <A href={generateTxt(1, true)}>
-            <button border={border} class={btnClass}>
-              {generateTxt(1)}
-              <div i-ph:arrow-right-bold></div>
-            </button>
-          </A>
-        )
-        : <div></div>}
+      {generateTxt(1) ? (
+        <a href={"/docs/" + generateTxt(1, true)}>
+          <button border={border} class={btnClass}>
+            {generateTxt(1)}
+            <div i-ph:arrow-right-bold></div>
+          </button>
+        </a>
+      ) : (
+        <div></div>
+      )}
     </div>
   );
 };

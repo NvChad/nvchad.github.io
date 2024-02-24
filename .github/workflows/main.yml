@@ -29,9 +29,6 @@ jobs:
       - name: rm _server
         run: rm -rf .output/public/_server
 
-        env:
-          BASE_PATH: /
-
       - name: create .nojekyll
         run: touch .output/public/.nojekyll
 

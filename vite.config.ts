@@ -12,7 +12,7 @@ export default defineConfig({
   start: {
     ssr: true,
     server: {
-      baseURL: process.env.BASE_PATH,
+      baseURL: '/',
       experimental: {
         asyncContext: true,
       },
