@@ -23,7 +23,7 @@ export const generateActiveContext = (id) => {
   let headings = docs_Elements?.querySelectorAll("h2,h3");
 
   // just get the first h2/h3
-  for (let i = 0; i < headings.length; i++) {
+  for (let i = 0; i < headings?.length; i++) {
     if (isElementVisible(headings[i])) {
       setActiveContext_Heading(headings[i].innerText);
       break;
@@ -50,6 +50,6 @@ export const autoscroll_toID = () => {
   // if currentl link has an anhcor link (with # prefix) then autoscroll to it
   if (hash[0] === "#") {
     const id = hash.substring(1);
-    document.getElementById(id).scrollIntoView();
+    document.getElementById(id)?.scrollIntoView();
   }
 };

@@ -1,6 +1,5 @@
-import { useLocation } from "@solidjs/router";
 import { createEffect, createSignal } from "solid-js";
-import  { mobSideBar, setMobSidebar  } from "~/components/doc_comps/Sidebar";
+import { mobSideBar, setMobSidebar } from "~/components/doc_comps/Sidebar";
 
 import docsearch from "@docsearch/js";
 import "@docsearch/css";
@@ -63,54 +62,14 @@ export const ThemeToggleBtn = (props) => {
   );
 };
 
-export function BtnLinks() {
-  const Btns = [
-    ["i-ph:chat-teardrop-text text-3xl", "#community", "nvchad discussions"],
-    ["i-bi:github  ", "https://github.com/NvChad/NvChad", "Github repo"],
-  ];
-
-  return (
-    <div
-      class={`md:vertCentered !gap-5 text-2xl ${
-        linksShown() ? "vertCentered" : "hidden"
-      }`}
-    >
-      {/* hide links by default on mobile */}
-
-      <div hidden id="docsearch"></div>
-
-      <Searchbar />
-
-      {Btns.map((x) => (
-        <a
-          text="slate-8 dark:slate-4"
-          href={x[1]}
-          aria-label={x[2]}
-          class={x[0]}
-        >
-          {x[0]}
-        </a>
-      ))}
-      <ThemeToggleBtn display="hidden md:vertCentered" />
-    </div>
-  );
-}
-
 function Searchbar() {
   createEffect(() => {
     // setup algolia docsearch
     docsearch({
       appId: "BOJS19CH35",
-      apiKey: "c74ee96af1dea95b6e189501983733f8",
+      apiKey: import.meta.env.VITE_ALGOLIA_API,
       indexName: "nvchad",
       container: "#docsearch",
-    });
-
-    // open docs on Ctrl + k keybind
-    document.addEventListener("keydown", (event) => {
-      if (event.ctrlKey && event.key === "k") {
-        document.querySelector(".DocSearch").click();
-      }
     });
   });
 
@@ -124,18 +83,47 @@ function Searchbar() {
     >
       <div i-ion-search></div>
       Search
-      <div
-        border="1 solid slate-6 dark:dark-4"
-        p="1 x-2"
-        class="ml-3 text-slate-7 dark:text-slate-4 text-sm rounded-lg"
-      >
-        Ctrl + k
-      </div>
     </button>
   );
 }
 
-function Navbar() {
+export function BtnLinks() {
+  const links = [
+    [
+      "i-ph:chat-teardrop-text text-xl md:text-3xl",
+      "/#community",
+      "nvchad discussions",
+    ],
+    ["i-bi:github  ", "https://github.com/NvChad/NvChad", "Github repo"],
+  ];
+
+  return (
+    <div
+      class={`md:vertCentered !gap-5 md:text-2xl ${linksShown() ? "vertCentered" : "hidden"}`}
+    >
+      <div hidden id="docsearch"></div>
+      <Searchbar />
+      {links.map((x) => (
+        <a
+          text="slate-8 dark:slate-4"
+          href={x[1]}
+          aria-label={x[2]}
+          class={x[0]}
+        >
+          {x[0]}
+        </a>
+      ))}
+
+      <ThemeToggleBtn display="hidden md:vertCentered" />
+    </div>
+  );
+}
+
+interface Proptypes {
+  pathname: string;
+}
+
+function Navbar(props: Proptypes) {
   const styles = `
                 flex md:vertCentered gap-5 justify-between 
                 text-lg font-medium  p-4 py-3 max-w-[1700px] mx-auto`;
@@ -143,12 +131,10 @@ function Navbar() {
   return (
     <nav
       border="0 b solid slate-2 dark:dark-4"
-      sticky
-      top-0
-      z-50
       bg-white-1
+      class="sticky top-0 z-50"
       dark:bg-dark-2
-      shadow={useLocation().pathname.includes("docs") ? "" : "lg"}
+      shadow={props.pathname.includes("docs") ? "" : "lg"}
     >
       <div class={styles}>
         <div md="flex gap-3 mx-auto" class="grid justify-between w-full gap-5">
@@ -162,7 +148,7 @@ function Navbar() {
           <ThemeToggleBtn />
 
           {/* sidebar toggle btn */}
-          {useLocation().pathname.includes("docs") && (
+          {props.pathname.includes("docs") && (
             <button
               dark:bg-blue-3
               dark:text-black
@@ -175,7 +161,6 @@ function Navbar() {
               )}
             </button>
           )}
-
           <button
             class="p-2 text-xl rounded-lg"
             onclick={() => showLinks(linksShown() ? false : true)}

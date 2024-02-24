@@ -2,8 +2,6 @@ export default (id) => {
   const docContent = document.getElementById(id);
   const preElements = docContent?.querySelectorAll("pre");
 
-  console.log(preElements);
-
   preElements?.forEach(function (preElement) {
     const childDiv = preElement.querySelector("div");
     if (childDiv) return;

@@ -13,7 +13,7 @@ function BtnLinks() {
       <A
         href="/docs/quickstart/install"
         class={linkStyles}
-        onclick={() =>  setOS(osInfos[2])}
+        onclick={() => setOS(osInfos[2])}
       >
         <div class="i-mdi-docker"></div> Docker
       </A>
@@ -24,9 +24,7 @@ function BtnLinks() {
 function HeroText() {
   return (
     <div text-slate-8 grid text-center mx-auto mb-10>
-      <h1 mb-0>
-        Enhance your Neovim workflow
-      </h1>
+      <h1 mb-0>Enhance your Neovim workflow</h1>
 
       <p font-medium text-base md:text-xl>
         Blazing fast Neovim config providing solid defaults and a beautiful UI
@@ -47,14 +45,13 @@ function Hero() {
     >
       <HeroText />
 
-      <div>
-        {/* banner img */}
-        <img
-          src="/banner.webp"
-          alt="NvChad screenshot"
-          class="rounded-lg md:rounded-xl max-w-[90vw] 2xl:max-w-[1700px] softshadow m-auto"
-        />
-      </div>
+      <img
+        src="/banner.webp"
+        alt="NvChad screenshot"
+        class="rounded-lg md:rounded-xl softshadow m-auto"
+        p='2xl:px10'
+        max-w='100% xl:90%'
+      />
     </div>
   );
 }

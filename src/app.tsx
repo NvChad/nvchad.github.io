@@ -12,7 +12,7 @@ export default function App() {
       base={import.meta.env.SERVER_BASE_URL}
       root={(props) => (
         <main>
-          <Navbar />
+          <Navbar pathname={props.location.pathname} />
           <Suspense>{props.children}</Suspense>
         </main>
       )}
