@@ -2344,7 +2344,7 @@
     ]
   },
   "src/routes/docs.tsx?pick=default&pick=$css": {
-    "file": "assets/docs-DXAc5Po1.js",
+    "file": "assets/docs-C7ML8Zxz.js",
     "src": "src/routes/docs.tsx?pick=default&pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -2352,9 +2352,9 @@
       "_web-DScAkgcG.js",
       "_Sidebar-jYSvShnh.js",
       "_routing-zmxRfIsI.js",
-      "_components-B-ztm8Ux.js",
       "_clipboard-DzJ4oxno.js",
-      "_ContextTitles-D7KWmhEM.js"
+      "_ContextTitles-D7KWmhEM.js",
+      "_components-B-ztm8Ux.js"
     ],
     "css": [
       "assets/docs-C087NetJ.css"
@@ -2898,7 +2898,7 @@
     ]
   },
   "virtual:#vinxi/handler/client": {
-    "file": "assets/client-Cs5qGk0s.js",
+    "file": "assets/client-CoJ6tm0h.js",
     "src": "virtual:#vinxi/handler/client",
     "isEntry": true,
     "imports": [
