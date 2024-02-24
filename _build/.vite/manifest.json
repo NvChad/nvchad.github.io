@@ -7,6 +7,14 @@
       "_components-B-ztm8Ux.js"
     ]
   },
+  "_Sidebar-jYSvShnh.js": {
+    "file": "assets/Sidebar-jYSvShnh.js",
+    "imports": [
+      "_web-DScAkgcG.js",
+      "_components-B-ztm8Ux.js",
+      "_routing-zmxRfIsI.js"
+    ]
+  },
   "_clipboard-DNY8yvE8.js": {
     "file": "assets/clipboard-DNY8yvE8.js"
   },
@@ -15,22 +23,6 @@
     "imports": [
       "_web-DScAkgcG.js",
       "_routing-zmxRfIsI.js"
-    ]
-  },
-  "_docs-!~{00u}~.js": {
-    "file": "assets/docs-C087NetJ.css",
-    "src": "_docs-!~{00u}~.js"
-  },
-  "_docs-BdM6OC47.js": {
-    "file": "assets/docs-BdM6OC47.js",
-    "imports": [
-      "_web-DScAkgcG.js",
-      "_routing-zmxRfIsI.js",
-      "_components-B-ztm8Ux.js",
-      "_ContextTitles-DK3A0sat.js"
-    ],
-    "css": [
-      "assets/docs-C087NetJ.css"
     ]
   },
   "_index-CYDpJFld.js": {
@@ -2352,17 +2344,20 @@
     ]
   },
   "src/routes/docs.tsx?pick=default&pick=$css": {
-    "file": "assets/docs-CsO1fquU.js",
+    "file": "assets/docs-sWYQGQNn.js",
     "src": "src/routes/docs.tsx?pick=default&pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_web-DScAkgcG.js",
-      "_docs-BdM6OC47.js",
-      "_clipboard-DNY8yvE8.js",
-      "_ContextTitles-DK3A0sat.js",
+      "_Sidebar-jYSvShnh.js",
       "_routing-zmxRfIsI.js",
-      "_components-B-ztm8Ux.js"
+      "_components-B-ztm8Ux.js",
+      "_clipboard-DNY8yvE8.js",
+      "_ContextTitles-DK3A0sat.js"
+    ],
+    "css": [
+      "assets/docs-C087NetJ.css"
     ]
   },
   "src/routes/docs/api.mdx?pick=$css": {
@@ -2903,16 +2898,15 @@
     ]
   },
   "virtual:#vinxi/handler/client": {
-    "file": "assets/client-hy6C9vOH.js",
+    "file": "assets/client-CnpkFz1o.js",
     "src": "virtual:#vinxi/handler/client",
     "isEntry": true,
     "imports": [
       "_preload-helper-xxf5fCYN.js",
       "_web-DScAkgcG.js",
-      "_docs-BdM6OC47.js",
+      "_Sidebar-jYSvShnh.js",
       "_routing-zmxRfIsI.js",
-      "_components-B-ztm8Ux.js",
-      "_ContextTitles-DK3A0sat.js"
+      "_components-B-ztm8Ux.js"
     ],
     "dynamicImports": [
       "src/routes/[...404].jsx?pick=default&pick=$css",
@@ -2943,7 +2937,7 @@
       "src/routes/docs/quickstart/post-install.mdx?pick=$css"
     ],
     "css": [
-      "assets/client-aMwVUvDO.css"
+      "assets/client-kO_7vllO.css"
     ]
   }
 }
