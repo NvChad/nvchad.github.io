@@ -31,8 +31,8 @@
       "_web-DScAkgcG.js"
     ]
   },
-  "_install-Ds5aq1HP.js": {
-    "file": "assets/install-Ds5aq1HP.js",
+  "_install-CGTAEIO3.js": {
+    "file": "assets/install-CGTAEIO3.js",
     "imports": [
       "_web-DScAkgcG.js",
       "_clipboard-DzJ4oxno.js"
@@ -2511,14 +2511,14 @@
     ]
   },
   "src/routes/docs/quickstart/install.mdx?pick=$css": {
-    "file": "assets/install-BqVZqBLn.js",
+    "file": "assets/install-DTdB5yQy.js",
     "src": "src/routes/docs/quickstart/install.mdx?pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_web-DScAkgcG.js",
       "_index-CYDpJFld.js",
-      "_install-Ds5aq1HP.js",
+      "_install-CGTAEIO3.js",
       "_clipboard-DzJ4oxno.js"
     ]
   },
@@ -2543,13 +2543,13 @@
     ]
   },
   "src/routes/index.tsx?pick=default&pick=$css": {
-    "file": "assets/index-Doi53TyI.js",
+    "file": "assets/index-jBszOz0y.js",
     "src": "src/routes/index.tsx?pick=default&pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_web-DScAkgcG.js",
-      "_install-Ds5aq1HP.js",
+      "_install-CGTAEIO3.js",
       "_components-B-ztm8Ux.js",
       "_clipboard-DzJ4oxno.js",
       "_routing-zmxRfIsI.js"
@@ -2898,7 +2898,7 @@
     ]
   },
   "virtual:#vinxi/handler/client": {
-    "file": "assets/client-CiRtKzFn.js",
+    "file": "assets/client-AvoH3Cz0.js",
     "src": "virtual:#vinxi/handler/client",
     "isEntry": true,
     "imports": [
@@ -2937,7 +2937,7 @@
       "src/routes/docs/quickstart/post-install.mdx?pick=$css"
     ],
     "css": [
-      "assets/client-BeSGTP1t.css"
+      "assets/client-DivdUEUd.css"
     ]
   }
 }
