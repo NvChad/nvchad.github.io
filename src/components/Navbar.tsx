@@ -1,6 +1,6 @@
 import { useLocation } from "@solidjs/router";
 import { createEffect, createSignal } from "solid-js";
-import { showSidebar, sideBarShown } from "~/routes/docs";
+import  { mobSideBar, setMobSidebar  } from "~/components/doc_comps/Sidebar";
 
 import docsearch from "@docsearch/js";
 import "@docsearch/css";
@@ -33,26 +33,6 @@ function Links() {
         <a href="/news">News</a>
       </div>
     </div>
-  );
-}
-
-function DocsBtn() {
-  return (
-    useLocation().pathname.includes("docs") && (
-      <button
-        md="hidden"
-        dark:bg-blue-3
-        dark:text-black
-        onclick={() => showSidebar(!sideBarShown())}
-      >
-        {sideBarShown() ? (
-          <div i-ic:round-close></div>
-        ) : (
-          <div i-carbon:side-panel-close-filled></div>
-        )}
-        Docs
-      </button>
-    )
   );
 }
 
@@ -99,7 +79,6 @@ export function BtnLinks() {
 
       <div hidden id="docsearch"></div>
 
-      <DocsBtn />
       <Searchbar />
 
       {Btns.map((x) => (
@@ -181,7 +160,21 @@ function Navbar() {
 
         <div class="vertCentered h-fit md:!hidden">
           <ThemeToggleBtn />
-          <DocsBtn />
+
+          {/* sidebar toggle btn */}
+          {useLocation().pathname.includes("docs") && (
+            <button
+              dark:bg-blue-3
+              dark:text-black
+              onclick={() => setMobSidebar(!mobSideBar())}
+            >
+              {mobSideBar() ? (
+                <div i-ic:round-close />
+              ) : (
+                <div i-carbon:side-panel-close-filled />
+              )}
+            </button>
+          )}
 
           <button
             class="p-2 text-xl rounded-lg"

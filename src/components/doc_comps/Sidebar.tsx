@@ -2,7 +2,8 @@ import { A, useLocation } from "@solidjs/router";
 import sidebar_Items from "../doc_comps/sidebar_Items";
 
 import { createSignal, Show } from "solid-js";
-import { sideBarShown } from "~/routes/docs";
+
+export const [mobSideBar, setMobSidebar] = createSignal(false);
 
 function NestedLabels(props) {
   const is_ActiveRoute = props.labels.filter(
@@ -29,9 +30,11 @@ function NestedLabels(props) {
           class={`text-xl bg-slate-6 text-slate-1 dark:bg-dark-4 p-1 rounded-full
                   ${showLinks() ? "dark:text-red-3" : "dark:text-white-2"}`}
         >
-          {showLinks()
-            ? <div i-octicon:chevron-down-12></div>
-            : <div i-octicon:chevron-right-12></div>}
+          {showLinks() ? (
+            <div i-octicon:chevron-down-12></div>
+          ) : (
+            <div i-octicon:chevron-right-12></div>
+          )}
         </div>
       </button>
 
@@ -58,27 +61,27 @@ function NestedLabels(props) {
 }
 
 function SideBar() {
-  const styles = `h-fit fixed xl:sticky z-10 xl:top-24 xl:flex flex-col
+  const styles = `h-fit xl:sticky z-10 xl:top-24 xl:flex flex-col
      bg-white-1 dark:bg-dark-2
-     text-gray-600 dark:text-grey rounded-xl p-5 xl:p-0`;
+     text-gray-600 dark:text-grey rounded-xl w-full lt-xl:pb5`;
 
   return (
-    <aside class={styles} hidden={sideBarShown() ? false : true}>
+    <aside class={styles} hidden={mobSideBar() ? false : true}>
       {/* sidebar labels & links */}
       <div h-full flex flex-col gap-5 class="[&_*]:text-base dark:text-slate-4">
         {sidebar_Items.map((item) => {
-          return item.label
-            ? <NestedLabels BtnLabel={item.label} labels={item.items} />
-            : (
-              <A
-                href={item[1]}
-                class="vertCentered"
-                activeClass="font-medium text-blue-5 dark:text-blue-3"
-              >
-                <div class={item[2]}></div>
-                {item[0]}
-              </A>
-            );
+          return item.label ? (
+            <NestedLabels BtnLabel={item.label} labels={item.items} />
+          ) : (
+            <A
+              href={item[1]}
+              class="vertCentered"
+              activeClass="font-medium text-blue-5 dark:text-blue-3"
+            >
+              <div class={item[2]}></div>
+              {item[0]}
+            </A>
+          );
         })}
       </div>
     </aside>

@@ -1,5 +1,5 @@
 import { createEffect, createSignal, on, onCleanup, onMount } from "solid-js";
-import Sidebar from "~/components/doc_comps/Sidebar";
+import Sidebar, { mobSideBar } from "~/components/doc_comps/Sidebar";
 import NextPrevPageBtns from "~/components/doc_comps/nextprevPage";
 
 import "~/css/hljs.css";
@@ -15,8 +15,6 @@ import {
 } from "~/utils";
 
 import ContextTitles from "~/components/ContextTitles";
-
-export const [sideBarShown, showSidebar] = createSignal(false);
 
 // final component!
 function Docs(props) {
@@ -44,11 +42,11 @@ function Docs(props) {
   return (
     <div
       grid="~ xl:cols-[auto_1fr]"
-      class="max-w-[1700px] mx-auto mb-8 p-4 py6"
+      class="max-w-[1700px] mx-auto mb-8 p-4 py6 relative"
     >
       <Sidebar />
 
-      <main class="xl:blur-none" blur={sideBarShown() ? "sm" : ""}>
+      <main class={`xl:blur-none ${mobSideBar() ? "blur-sm" : ""}`}>
         <div class="flex flex-col-reverse xl:grid xl:grid-cols-[1fr_auto]">
           <div xl:px-10>
             <div id="DocContent" w-full>
