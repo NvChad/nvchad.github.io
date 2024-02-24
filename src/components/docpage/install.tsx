@@ -29,7 +29,7 @@ export const osInfos = [
         <b>If the above path doesnt work, try any of these paths :</b>
         <li>For CMD : %LOCALAPPDATA%\nvim </li>
         <pre class="hljs">C:\Users\%USERNAME%\AppData\Local\nvim</pre>
-        <li>For CMD : %LOCALAPPDATA%\nvim </li>
+        <li>For PowerShell : $ENV:LocalAppData\nvim </li>
         <pre class="hljs">C:\Users\$ENV:USERNAME\AppData\Local\nvim</pre>
       </>
     ),
@@ -66,7 +66,7 @@ export default () => (
       </button>
     ))}
 
-    <div w="full" grid='~ gap3'>
+    <div w="full" grid='~ gap4'>
       {os()?.cmd && <pre class="hljs">{os()?.cmd}</pre>}
       {os()?.cmds && os().cmds}
     </div>
