@@ -2481,7 +2481,7 @@
     ]
   },
   "src/routes/docs/faq.mdx?pick=$css": {
-    "file": "assets/faq-BH9UQgIX.js",
+    "file": "assets/faq-CAURBtj-.js",
     "src": "src/routes/docs/faq.mdx?pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -2898,7 +2898,7 @@
     ]
   },
   "virtual:#vinxi/handler/client": {
-    "file": "assets/client-AvoH3Cz0.js",
+    "file": "assets/client-CYxBOvoX.js",
     "src": "virtual:#vinxi/handler/client",
     "isEntry": true,
     "imports": [
@@ -2937,7 +2937,7 @@
       "src/routes/docs/quickstart/post-install.mdx?pick=$css"
     ],
     "css": [
-      "assets/client-DivdUEUd.css"
+      "assets/client-Dsij3Ws8.css"
     ]
   }
 }
