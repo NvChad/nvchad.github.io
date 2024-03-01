@@ -25,12 +25,21 @@
 
 - In Nvchad `<Tab> & <S-Tab>` are mapped by default and nvim maps to `<C-i>` if `<Tab>` key is mapped. [Check](https://stackoverflow.com/questions/16209213/vim-jump-forward-with-c-i-doesnt-work-for-me-too-snipmate/16209534#16209534)
 
-- To map those keys, you should either disable `<Tab>` in your custom mappings file or have certain settings in your terminal config, for exampele:  alacritty config : 
+- To map those keys, you should either disable `<Tab>` in your custom mappings file or have certain settings in your terminal config, for example:  alacritty config : 
 
 ```bash
 key_bindings:
    - { key: I, mods: Control, chars: "\x1b[105;6u" }
  ```
+
+- **NOTE**: keymaps in NvChad are case sensitive, to delete it you need to use lowercase `<tab>`. Add this to your mappings.lua:
+```lua
+M.disabled = {
+	n = {
+		["<tab>"] = "",
+	},
+}
+```
 
 ## NvChad's color is weird
 
