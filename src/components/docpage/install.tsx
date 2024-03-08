@@ -66,7 +66,7 @@ export default () => (
       </button>
     ))}
 
-    <div w="full" grid='~ gap4'>
+    <div w="full" grid="~ gap4">
       {os()?.cmd && <pre class="hljs">{os()?.cmd}</pre>}
       {os()?.cmds && os().cmds}
     </div>

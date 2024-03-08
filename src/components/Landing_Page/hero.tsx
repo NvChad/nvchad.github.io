@@ -49,8 +49,8 @@ function Hero() {
         src="/banner.webp"
         alt="NvChad screenshot"
         class="rounded-lg md:rounded-xl softshadow m-auto"
-        p='2xl:px10'
-        max-w='100% xl:90%'
+        p="2xl:px10"
+        max-w="100% xl:90%"
       />
     </div>
   );

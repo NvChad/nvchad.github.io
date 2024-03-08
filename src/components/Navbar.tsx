@@ -99,7 +99,9 @@ export function BtnLinks() {
 
   return (
     <div
-      class={`md:vertCentered !gap-5 md:text-2xl ${linksShown() ? "vertCentered" : "hidden"}`}
+      class={`md:vertCentered !gap-5 md:text-2xl ${
+        linksShown() ? "vertCentered" : "hidden"
+      }`}
     >
       <div hidden id="docsearch"></div>
       <Searchbar />

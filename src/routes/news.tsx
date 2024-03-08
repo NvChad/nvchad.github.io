@@ -10,7 +10,7 @@ import {
   generateActiveContext,
 } from "~/utils";
 
-const Layout= (props) =>{
+const Layout = (props) => {
   onMount(() => {
     const el = document.getElementById("newsContent");
     const imgs = el?.querySelectorAll("img");
@@ -31,16 +31,14 @@ const Layout= (props) =>{
   });
 
   //  run on route change
-  createEffect(
-    () => {
-      setTimeout(() => {
-        create_copyIcon("DocContent");
-        assign_heading_ids();
-        generateActiveContext("newsContent");
-        autoscroll_toID();
-      }, 50);
-    },
-  );
+  createEffect(() => {
+    setTimeout(() => {
+      create_copyIcon("DocContent");
+      assign_heading_ids();
+      generateActiveContext("newsContent");
+      autoscroll_toID();
+    }, 50);
+  });
 
   return (
     <div
@@ -53,5 +51,5 @@ const Layout= (props) =>{
       {contextHeadings.length > 1 && <ContextTitles />}
     </div>
   );
-}
+};
 export default Layout;

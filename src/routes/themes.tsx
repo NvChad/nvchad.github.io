@@ -42,7 +42,6 @@ languages.map((lang, i) => {
   languages[i].images = arr;
 });
 
-
 const [activeLang, setLangOpt] = createSignal("python");
 const [activeImages, setImages] = createSignal(languages[0].images);
 const [galleryShown, setGalleryStatus] = createSignal(true);
@@ -61,8 +60,9 @@ function LangListBtns() {
               border={activeLang() == x.lang ? "2 solid blue-5" : ""}
               onclick={() => {
                 setLangOpt(x.lang);
-                const images = languages.find((obj) => obj.lang === x.lang)
-                  ?.images;
+                const images = languages.find(
+                  (obj) => obj.lang === x.lang,
+                )?.images;
 
                 setImages(images);
               }}
@@ -110,13 +110,14 @@ function Gallery() {
         const theme = filename.split(".")[0];
         const theme_type = theme.includes("light") ? "light" : "dark";
 
-        const label_position = (gridMode())
+        const label_position = gridMode()
           ? "top-0 right-0 rounded-br-none rounded-tl-none"
           : "bottom-0 left-1/2 transform -translate-x-1/2 rounded-b-none";
 
-        const label_color = (theme_type == "dark")
-          ? "bg-white-1 text-dark-3"
-          : " bg-dark-4 text-white-1";
+        const label_color =
+          theme_type == "dark"
+            ? "bg-white-1 text-dark-3"
+            : " bg-dark-4 text-white-1";
 
         return (
           <div softShadow grid relative>
@@ -158,8 +159,8 @@ function ImageZoomed() {
       {/* image close btn */}
       <button
         onclick={() => {
-            setGalleryStatus(!galleryShown())
-            window.scrollTo(0, scrollPosition());
+          setGalleryStatus(!galleryShown());
+          window.scrollTo(0, scrollPosition());
         }}
         class="px-3 my-6 mx-auto bg-red-4 text-white-1 dark:text-red-3"
       >
@@ -179,13 +180,12 @@ function Themes() {
     <div class="max-w-[1700px] mx-auto">
       {!galleryShown() && <ImageZoomed />}
 
-      {galleryShown() &&
-        (
-          <div grid class="gap-5 my-6" p="x-4 2xl:0">
-            <LangListBtns />
-            <Gallery />
-          </div>
-        )}
+      {galleryShown() && (
+        <div grid class="gap-5 my-6" p="x-4 2xl:0">
+          <LangListBtns />
+          <Gallery />
+        </div>
+      )}
     </div>
   );
 }

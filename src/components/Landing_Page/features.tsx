@@ -81,16 +81,16 @@ function Feature(props) {
   return (
     <div class="grid gap-5 text-center justify-center rounded-2xl p-10 h-fit">
       <div w-fit bg-dark-3 text-white-1 rounded-full mx-auto shadow-md>
-        <div
-          class={`${details.icon}`}
-          text="5xl xl:7xl"
-          m-5
-        />
+        <div class={`${details.icon}`} text="5xl xl:7xl" m-5 />
       </div>
 
       <div grid>
-        <h2 mb-2 whitespace-nowrap>{details.title}</h2>
-        <p text-lg dark:text-slate-4>{details.description}</p>
+        <h2 mb-2 whitespace-nowrap>
+          {details.title}
+        </h2>
+        <p text-lg dark:text-slate-4>
+          {details.description}
+        </p>
       </div>
     </div>
   );
@@ -100,7 +100,9 @@ export default function Features() {
   return (
     <section max="w-[1700px]" m-auto grid justify-center text-center my-20 px-5>
       <div grid md:grid-cols-2 lg:grid-cols-3>
-        {FeatureList.map((feature, i) => <Feature key={i} details={feature} />)}
+        {FeatureList.map((feature, i) => (
+          <Feature key={i} details={feature} />
+        ))}
       </div>
     </section>
   );

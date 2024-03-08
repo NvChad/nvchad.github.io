@@ -30,16 +30,14 @@ export function NewsPage(props) {
   });
 
   //  run on route change
-  createEffect(
-    () => {
-      setTimeout(() => {
-        // create_copyIcon("DocContent");
-        assign_heading_ids();
-        generateActiveContext("newsContent");
-        autoscroll_toID();
-      }, 50);
-    },
-  );
+  createEffect(() => {
+    setTimeout(() => {
+      // create_copyIcon("DocContent");
+      assign_heading_ids();
+      generateActiveContext("newsContent");
+      autoscroll_toID();
+    }, 50);
+  });
 
   return (
     <div

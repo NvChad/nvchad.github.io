@@ -26,7 +26,9 @@ const links = [
 function Communities() {
   return (
     <div grid gap-0 id="community">
-      <h3 text-start font-normal>Communities</h3>
+      <h3 text-start font-normal>
+        Communities
+      </h3>
       {/* links with icons */}
       <div flex gap-5 bg="dark-4 dark:dark-3" p="3 x-4">
         {links.map((x) => {
@@ -44,14 +46,7 @@ function Communities() {
 function Footer() {
   return (
     <div bg="dark-2 dark:dark-1" text-white-1 rounded-none>
-      <div
-        p-10
-        grid
-        gap-10
-        max="w-[1700px]"
-        mx-auto
-        text-center
-      >
+      <div p-10 grid gap-10 max="w-[1700px]" mx-auto text-center>
         <div class="grid gap-10 mx-auto md:mx-0 md:flex md:justify-between">
           <div grid text-start>
             <p text-lg>Powered by Github pages</p>
