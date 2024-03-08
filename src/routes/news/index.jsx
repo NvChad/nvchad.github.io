@@ -12,7 +12,7 @@ function News() {
   return (
     <div m="y-5 xl:y-10 x-auto" px-3 max="w-[1700px]">
       {/* overview cards */}
-      <div grid gap-5 class="md:grid-cols-2 2xl:grid-cols-3">
+      <div grid gap-5 class="md:grid-cols-2 2xl:grid-cols-4">
         {news.map((x) => {
           /* card */
           return (
@@ -28,7 +28,7 @@ function News() {
                 loading="lazy"
               />
 
-              <div h-full flex flex-col gap-10 justify-between p-10 pt-5>
+              <div h-full flex flex-col gap-4 justify-between p-10 pt-5>
                 <div>
                   <h2 class="m-0" pb-5>
                     {x.heading}
