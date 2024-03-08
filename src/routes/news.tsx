@@ -1,4 +1,8 @@
-import { createEffect, onCleanup, onMount } from "solid-js";
+import "~/css/hljs.css";
+import "~/css/markdown.css";
+
+import { createEffect, onCleanup, onMount, Show } from "solid-js";
+import { useLocation } from "@solidjs/router";
 import create_copyIcon from "~/components/doc_comps/clipboard";
 
 import ContextTitles from "~/components/ContextTitles";
@@ -12,7 +16,7 @@ import {
 
 const Layout = (props) => {
   onMount(() => {
-    const el = document.getElementById("newsContent");
+    const el = document.getElementById("DocContent");
     const imgs = el?.querySelectorAll("img");
 
     if (imgs) {
@@ -24,7 +28,7 @@ const Layout = (props) => {
       });
     }
 
-    const onScroll = () => generateActiveContext("newsContent");
+    const onScroll = () => generateActiveContext("DocContent");
     window.addEventListener("scroll", onScroll);
 
     onCleanup(() => window.removeEventListener("scroll", onScroll));
@@ -32,23 +36,31 @@ const Layout = (props) => {
 
   //  run on route change
   createEffect(() => {
-    setTimeout(() => {
-      create_copyIcon("DocContent");
-      assign_heading_ids();
-      generateActiveContext("newsContent");
-      autoscroll_toID();
-    }, 50);
+    const pathname = props.location.pathname;
+    create_copyIcon("DocContent");
+    assign_heading_ids();
+    generateActiveContext("DocContent");
+    autoscroll_toID();
   });
+
+  const location = useLocation();
 
   return (
     <div
       p="5 xl:10"
       class="box mx-auto flex flex-col-reverse xl:grid xl:grid-cols-[1fr_auto]"
+      gap='xl:10'
     >
-      <div id="newsContent">{props.children}</div>
+      <Show
+        when={!["/news", "/news/"].includes(location.pathname)}
+        fallback={props.children}
+      >
+        <div id="DocContent" class="news" w-full>
+          {props.children}
+        </div>
 
-      {/* on this page component */}
-      {contextHeadings.length > 1 && <ContextTitles />}
+        {contextHeadings.length > 1 && <ContextTitles />}
+      </Show>
     </div>
   );
 };

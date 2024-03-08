@@ -428,7 +428,7 @@
 /* codeblocks */
 #DocContent pre {
   @apply bg-dark-4  dark:bg-dark-3 p-0;
-  @apply p-5 rounded-xl font-mono my-0 text-sm;
+  @apply p-5 rounded-xl  my-0;
   @apply shadow-md overflow-x-auto;
 
   /* code content + copy button */
@@ -437,12 +437,12 @@
 
 #DocContent code {
   @apply bg-slate-1 dark:bg-dark-3 p-[0.1rem] px-2;
-  @apply text-sm rounded-md;
+  @apply rounded-md;
 }
 
 #DocContent pre code {
   @apply bg-dark-4 dark:bg-dark-3;
-  @apply text-[14px];
+  @apply text-base font-mono;
 }
 
 .copyBtn {
