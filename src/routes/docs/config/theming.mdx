@@ -1,3 +1,8 @@
+export const meta = {
+  title: "NvChad Theming",
+  desc: "Configure base46 themes in Nvchad",
+}
+
 ## Override highlight groups
 
 - Make sure you use a valid highlight group.
@@ -94,24 +99,28 @@ M.ui = {
 }
 ```
 
-## Extended Integrations
+## Integrations
+```lua 
+M.base46 = {
+  integrations = {
+    "blankline",
+    "cmp",
+    "git",
+    -- more
+  }
+}
+```
 
-- [Base46 Extended integrations](https://github.com/NvChad/base46/tree/v2.0/lua/base46/extended_integrations) aren't loaded by default, to load them you need to mention the integration name in chadrc's ui table's `extended_integrations` table
+<br/>
 
-Example :
+- Base46  uses the above table to compile highlight groups.
+- To load them, use the dofile function + full path of that highlight group cache file.
 
 ```lua
-M.ui.extended_integrations = {"trouble", "alpha", "dap"}
+dofile(vim.g.base46_cache .. "cmp")
 ```
 <br/>
-- Now these integrations are included with the default list of integrations in base46 for compiling & caching, to load them use "dofile"
-
-```lua
-dofile(vim.g.base46_cache .. "trouble")
-dofile(vim.g.base46_cache .. "alpha")
-```
-<br/>
-- You can put the dofile code in custom/init.lua to make the highlight groups load by default, but in most cases you can just lazyload them so just put in the plugin's config function spec , example
+- You can put the dofile code in your init.lua to make the highlight groups load by default, but in most cases you can just lazyload them like :
 
 ```lua
 {
@@ -123,5 +132,3 @@ dofile(vim.g.base46_cache .. "alpha")
   end
 }
 ```
-
-- In the above example we have lazyloaded the plugin as well as its highlight groups!

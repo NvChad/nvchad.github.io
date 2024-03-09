@@ -1,3 +1,8 @@
+export const meta = {
+  title: "NvChad Walkthrough",
+  desc: "Walkthrough guide for NvChad"
+}
+
 # How does NvChad work? 
 
 ## Understanding the basics
@@ -11,11 +16,13 @@ Before getting into the topic, first you should understand the `vim.tbl_deep_ext
 local person = {
     name = "joe",
     age = 19,
+    skills = {"python", "html"},
 }
 
 -- table 2
 local someone = {
     name = "siduck",
+    skills = {"js", "lua"},
 }
 
 -- "force" will overwrite equal values from the someone table over the person table
@@ -23,121 +30,19 @@ local result = vim.tbl_deep_extend("force", person, someone)
 
 -- result : 
 {
-    name = "siduck", -- as you can see, name has been overwritten
-    age = 19,
-}
-```
-
-<br />
-Its usage can be used in even more complex tables. As was mentioned before, it works recursively, which means that it will apply the same behavior for nested table values:
-
-```lua
-local person = {
-    name = "joe",
-    age = 19,
-    skills = {"python", "java", "c++"}
-
-    distros_used = {
-        ubuntu = "5 years",
-        arch = "10 minutes",
-        manjaro = "10 years",
-    }
-}
-
-local someone = {
     name = "siduck",
+    age = 19,
     skills = {"js", "lua"},
-
-    distros_used = {
-       ubuntu = "1 month",
-       artix = "2 years"
-    }
 }
 
-local result = vim.tbl_deep_extend("force", person, someone)
-```
-<br/>
-
-The resulting table will have merged each property from the tables, and the same for the `skills` and `distros_used` values:
-
-```lua
-{
-   name = "siduck",
-   age = 19
-
-   skills = {"js", "lua"},
-
-   distros_used = {
-       ubuntu = "1 month",
-       arch = "10 minutes",
-       manjaro = "10 years",
-       artix = "2 years"
-   }
-}
-
--- tbl_deep_extend function merges values recursively, but if there's an array (list), it won't merge the list tables. 
-
--- Example: the first table has {"python", "java", "c++"} and the second table has {"js","lua"}. 
-
--- Now you might be wondering that it should merge it like this: { "python", "java", "c++", "lua"}
-
--- But no! thats wrong, the result will be only {"js","lua"}
+-- The list tables wont merge cuz they dont have keys 
 ```
 
-<br/>
-To sum up, `tbl_deep_extend` merges dictonary tables recursively (i.e tables which have `key/value` pair but not lists).
+## Chadrc.lua
 
-## Config Structure
-
-```lua
-├── init.lua ( main init.lua )
-│
-├── lua
-│   │
-│   ├── core
-│   │   ├── default_config.lua
-│   │   ├── mappings.lua
-│   │   ├── utils.lua 
-│   │   └── init.lua  
-│   │
-│   ├── plugins
-│   │    ├── init.lua 
-│   │    └── configs
-│   │        ├── cmp.lua
-│   │        └── other configs
-│   │  
-│   │   USER CONFIG  
-│   │  
-│   ├── custom *
-│   │   ├── chadrc.lua
-│   │   ├── init.lua
-│   │   ├── more files, dirs
-```
-<br/>
-
-- **`init.lua` -** runs whole config
-- **`core/default_config` -** returns a table of default options in NvChad. 
-- **`core/mappings` -** default mappings
-- **`core/init` -** default globals, nvim options, commands, autocmds 
-- **`core/utils` -** helpful functions
-
-
-## Custom config
-
-There are 2 important files in **custom** dir which extend NvChad:
-
-- **`custom/chadrc.lua`** meant to override that table in `default_config.lua` file
-- **`custom/init.lua`** runs in the main `init.lua`, its meant to have vim options, globals, autocmds, commands etc.
-
-![GitHub Logo](/illustrations/config_nutshell.webp)
-
-From now on, whenever we talk about paths, keep in mind that they're relative to the `lua` folder in your `nvim` config (by default it should be `~/.config/nvim/`).
-
-- It is not recommended to make changes outside the `custom` dir, because NvChad config is a repo and it **gitignores** only the custom dir, it uses `git pull` to update the config.
-
-- Any other file outside the `custom` dir will be treated as a change by `git`, meaning that NvChad will not be able to fast-forward the pull.
-
-- Check [example_config](https://github.com/NvChad/example_config) for reference.
+- This file is meant to have structure of [nvconfig.lua](https://github.com/NvChad/NvChad/blob/starter/lua/nvconfig.lua), check the nvconfig.lua for knowing all supported options.
+- So nvconfig returns a table of config and then merges chadrc's table.
+- For non nvchad users, you can just use nvconfig file ( without chadrc code from it) and put it in your /lua dir
 
 ## Themes
 

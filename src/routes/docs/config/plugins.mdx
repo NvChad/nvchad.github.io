@@ -1,6 +1,11 @@
+export const meta = {
+  title: "NvChad Plugins",
+  desc: "Maintain plugins in NvChad",
+}
+
 ## Overview
 
-NvChad uses [lazy.nvim](https://github.com/folke/lazy.nvim) for plugins management. Basically, NvChad expects a user plugin table, which then gets merged with the default plugins table. You can find the default table in: [`lua/plugins/init.lua`](https://github.com/NvChad/NvChad/blob/v2.0/lua/plugins/init.lua).
+NvChad uses [lazy.nvim](https://github.com/folke/lazy.nvim) for plugins management. List of [default plugins](https://github.com/NvChad/NvChad/tree/v2.5/lua/nvchad/plugins).
 
 ## Lazy loading
 
@@ -10,22 +15,10 @@ We lazy load almost 95% of the plugins, so we expect and recommend you to lazy l
 - Please read the [lazy.nvim plugin specs](https://github.com/folke/lazy.nvim#-plugin-spec) docs to know what options are available for lazyloading etc.
 - Try your best to lazy-load a plugin!
 
-## Manage custom plugins
+## Manage plugins
 
 All NvChad default plugins will have `lazy = true` set. Therefore, if you want a plugin to be enabled on startup, change it to `lazy = false`.
-
-It is recommended that you avoid saving any files in the `lua/plugins/*` directory.
-
-> Our system utilizes the import feature provided by`lazy.nvim`, which imports all files in a directory and expects each file to return plugin tables. This behavior is undesirable for our purposes, so it is recommended to create a single file named **custom/plugins.lua**. This file will be imported by `lazy.nvim`, and no other files in the directory will be processed.
-
-<br/>
-- **custom/chadrc.lua**
-```lua
-M.plugins = "custom.plugins"
-```
-
-<br/>
-- **custom/plugins.lua**
+- **plugins.lua**
 
 ```lua
 local plugins = {
@@ -54,18 +47,22 @@ local plugins = {
     enabled = false,
   },
 
-  -- If your opts uses a function call, then make opts spec a function*
+  -- If your opts uses a function call ex: require*, then make opts spec a function
   -- should return the modified default config as well
   -- here we just call the default telescope config 
-  -- and then assign a function to some of its options
+  -- And edit its mappinsg
   {
     "nvim-telescope/telescope.nvim",
     opts = function()
       local conf = require "plugins.configs.telescope"
+
       conf.defaults.mappings.i = {
         ["<C-j>"] = require("telescope.actions").move_selection_next,
         ["<Esc>"] = require("telescope.actions").close,
       }
+
+     -- or 
+     -- table.insert(conf.defaults.mappings.i, your table)
 
       return conf
     end,

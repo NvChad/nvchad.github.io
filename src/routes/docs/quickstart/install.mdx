@@ -1,8 +1,13 @@
+export const meta = {
+  title: "NvChad Installation",
+  desc: "Install, Update, Uninstall guide for nvchad"
+};
+
 import OS_Selector from "~/components/docpage/install";
 
 ## Pre-requisites
 
-- [Neovim 0.9.4](https://github.com/neovim/neovim/releases/tag/v0.9.4).
+- [Neovim 0.9.5](https://github.com/neovim/neovim/releases/tag/v0.9.5).
 - [Nerd Font](https://www.nerdfonts.com/) as your terminal font.
   - Make sure the nerd font you set doesn't end with <strong>Mono</strong> to prevent small icons. 
   - <strong>Example : </strong> JetbrainsMono Nerd Font and not **<s>JetbrainsMono Nerd Font Mono</s>**
@@ -15,20 +20,11 @@ import OS_Selector from "~/components/docpage/install";
 
 <OS_Selector/>
 
-### Non Interactive
-
-- Clone the repo to the nvim config path.
-- Setup the environment variable `NVCHAD_EXAMPLE_CONFIG` to `n or y`  Example:
-
-```bash
-NVCHAD_EXAMPLE_CONFIG=y nvim --headless "+q"
-```
+- Run `:MasonInstall` command after lazy.nvim finishes downloading plugins.
 
 ## Update
 
-To update NvChad run the following command : 
-
-- `NvChadUpdate`.
+- `Lazy Sync` command
 
 ## Uninstall
 

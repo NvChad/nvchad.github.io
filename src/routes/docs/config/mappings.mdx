@@ -1,3 +1,8 @@
+export const meta = {
+  title: "NvChad Mappings",
+  desc: "Manage mappings in nvchad",
+}
+
 ## Overview
 
 The mapping configuration uses the nvim name shorcuts as:
@@ -6,95 +11,32 @@ The mapping configuration uses the nvim name shorcuts as:
 - `<leader>` -> <kbd>Space</kbd>
 - `<A>` -> <kbd>alt</kbd>
 - `<S>` -> <kbd>shift</kbd>
-<br/>
-- The default mappings are defined in `core.mappings` (`core/mappings.lua`). 
-- Alternatively, you can use `NvCheatsheet` or `Telescope keymaps` to list all mappings.
+- The default mappings are defined [here](https://github.com/NvChad/NvChad/blob/v2.5/lua/nvchad/mappings.lua). 
 
 ## Mapping format
 
-In order to list custom shortcuts in NvCheatsheet, make sure to use the following format
+- NvChad uses `vim.keymap.set` by default, check `:h vim.keymap.set` for detailed docs.
+- The desc opt is optional. Its only needed for NvCheatsheet to document, First word in desc will be used for group heading.
 
-```lua
--- opts is an optional parameter
-["keys"] = {"action", "description", opts = {}},
+```lua 
+local map = vim.keymap.set
 
-["<C-n>"] = {"<cmd> NvimTreeToggle <CR>", "Toggle nvimtree"},
-["<leader>ff"] = {"<cmd> Telescope <CR>", "Telescope"},   
+map("i", "<C-k>", "<Up>", { desc = "Move up" })
 
--- opts can have the props: buffer, silent, noremap, nowait and so on.
--- All standard key binding opts are supported. 
-[";"] = { ":", "enter cmdline", opts = { nowait = true } },
+-- multiple modes 
+map({ "i", "n" }, "<C-k>", "<Up>", { desc = "Move down" })
 
--- For a more complex keymap
-["<leader>tt"] = {
-  function()
-     require("base46").toggle_transparency()
-  end,
-  "toggle transparency",
-},
-```
+map("n", "<leader>ff", ":Telescope <cr>")
 
-## Add new mappings
+-- mapping with a lua function
+map("n", "<A-i>", function()
+  require("nvchad.term").toggle()
+end, { desc = "Terminal toggle floating" })
 
-- In order to add or customize the mappings, make sure that you follow the expected file structure for NvChad. 
 
-- The default mappings are loaded from `core.mappings`, and it is recommended that you place your mappings inside `custom.mappings` file.
+-- Disable mappings
+local nomap = vim.keymap.del
 
-- Remember that the mappings **must** have a vim mode: `n` (for normal), `v` (for visual), `i` (for insert) and so on.
-
-- **custom/chadrc.lua**
-
-```lua
-M.mappings = require "custom.mappings"
-```
-<br/>
-
-- **custom/mappings.lua**
-
-```lua
-local M = {}
-
--- In order to disable a default keymap, use
-M.disabled = {
-  n = {
-      ["<leader>h"] = "",
-      ["<C-a>"] = ""
-  }
-}
-
--- Your custom mappings
-M.abc = {
-  n = {
-     ["<C-n>"] = {"<cmd> Telescope <CR>", "Telescope"},
-     ["<C-s>"] = {":Telescope Files <CR>", "Telescope Files"} 
-  },
-
-  i = {
-     ["jk"] = { "<ESC>", "escape insert mode" , opts = { nowait = true }},
-    -- ...
-  }
-}
-
-return M
-```
-
-<br />
-
-> Mappings will be automatically loaded. You don't need to load them manually!
-
-## Manually load mappings
-
-Even though it is not required, you can manually load your mappings
-
-```lua
-M.some_plugin_name = {
-  plugin = true, -- Important
-
-  n = {
-     ["<C-n>"] = {"<cmd> Telescope <CR>", "Telescope"}
-  }
-}
-
--- Now to load it 
-require("core.utils").load_mappings("someplugin")
+nomap("i", "<C-k>")
+nomap("n", "<C-k>")
 ```

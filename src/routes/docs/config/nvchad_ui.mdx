@@ -1,88 +1,151 @@
+export const meta = {
+  title: "NvChad UI Configuration",
+  desc: "Manage NvChad's UI plugin configuration",
+}
+
+## Overview
+NvChad's Ui plugin handles the following modules:
+- Statusline
+- Tabufline ( bufferline + tablist )
+- NvDash ( Minimal dashboard )
+- Term ( terminal handling )
+
 ## Statusline & tabufline 
 
-We use our own [plugin](https://github.com/NvChad/ui) for `statusline` and `tabufline`. The default config is (keep in mind that every plugin's default config is just a table):
+- The order is a list of module names from default modules + your modules
+- Removing a word in the order will remove that module
+- modules expects all its keys to be a function that returns a string.
 
 ```lua
 M.ui = {
-  -- ...other options
-
-  statusline = {
-    theme = "default", -- default/vscode/vscode_colored/minimal
-
-    -- default/round/block/arrow (separators work only for "default" statusline theme;
-    -- round and block will work for the minimal theme only)
-    separator_style = "default",
-    overriden_modules = nil,
-  },
-
   tabufline = {
-    lazyload = true,
-    overriden_modules = nil,
-  },
-
-  -- ...other options
-}
-```
-
-### Override statusline modules 
-
-- To override default list of statusline modules, you need to check their indexes in the modules table [our `statusline` modules file](https://github.com/NvChad/ui/blob/v2.0/lua/nvchad/statusline)
-- you can either define a function outside or just define & run it right away like below :
-
-```lua
-M.ui = {
-  statusline = {
-    -- modules arg here is the default table of modules
-    overriden_modules = function(modules)
-      modules[1] = (function()
-        return "MODE!"
-      end)()
-
-      -- define the somefunction anywhwere in your custom dir, just call it well!
-      -- modules[2] = somefunction()  
-
-      -- adding a module between 2 modules
-      -- Use the table.insert functin to insert at specific index
-      -- This will insert a new module at index 2 and previous index 2 will become 3 now
-
-      table.insert(
-        modules,
-        2,
-        (function()
-          return " between mode and filename ! "
-        end)()
-      )
-    end,
+    --  more opts
+    order = { "treeOffset", "buffers", "tabs", "btns", 'abc' },
+    modules = {
+      abc = function()
+        return "hi"
+      end,
+    }
   },
 }
 ```
+
 <br/>
 
-- To highlight a string in statusline, wrap it with your highlight group:
+- Same goes for statuslines, but check its module order tables at [ui repo](https://github.com/NvChad/ui/blob/v2.5/lua/nvchad/stl/utils.lua)
+- Statusline modules can also have strings!
+- To highlight a string in statusline/tabufline, wrap it with your highlight group:
 
 ```lua
 "%#BruhHl#" .. " bruh " -- the highlight group here is BruhHl
 ```
 
-### Override tabufline modules
+## Term
 
-The configuration for overriding `tabufline` is the same as in `statusline`:
-
-- Below code will add a new module at last index and removes module at index 1.
-- The module at index 1 was previously nvimtree offset module which means it'll be shown on leftside of tabufline.
-- The below code for those using nvimtree on the right side and want the offset on right.
+- The term module exposes the following function expects a table of :
 
 ```lua
-M.ui = {
-  tabufline = {
-    overriden_modules = function(modules)
-       table.insert(modules, modules[1])
-       table.remove(modules,1)
-      -- or modules[1] = ""
-    end,
-  },
+{
+  pos = "sp", -- sp/vsp/float
+  cmd* = "neofetch" -- any command! ( supports function too)
+
+  -- this will highlight the term window differently
+  hl* = "Normal:term,WinSeparator:WinSeparator", 
+
+  id =  "any string" -- only needed for toggleable term
+  float_opts* = {} -- floating window options
 }
+```
+
+<br/>
+
+- *ones are optional
+- **pos** is required.
+- **id** is needed for toggleable/runner terminals only
+- If the optional opts are not provided then they will be taken from the `ui.term` table of your chadrc.
+
+### New Window
+
+- Create new terminal windows
+
+```lua 
+require("nvchad.term").new { pos = "sp", size = 0.3 }
+require("nvchad.term").new { pos = "vsp", cmd = "neofetch"}
+```
+
+### Toggleable
+
+- Create toggleable terminal windows
+
+```lua  
+require("nvchad.term").toggle({ pos = "float", id = "floatTerm", float_opts = {
+      border = "double",
+  }})
+
+require("nvchad.term").toggle { pos = "float", id = "floa", cmd ='lazygit' }
+require("nvchad.term").toggle { pos = "sp", id = "xyz" }
+require("nvchad.term").toggle { pos = "sp", id = "xyz2" }
+require("nvchad.term").toggle { pos = "vsp", id = "floo" }
 ```
 <br/>
 
-Again, check the list of modules in [our tabufline modules file](https://github.com/NvChad/ui/blob/v2.0/lua/nvchad/tabufline).
+- Mapping example
+- We are mapping in "t" terminal mode too or else we'd have to go to  normal mode and press `<A-i>` to toggle terminal.
+
+```lua 
+local map = vim.keymap.set
+
+map({ "n", "t" }, "<A-i>", function()
+  require("nvchad.term").toggle { pos = "float", id = "floatTerm" }
+end, { desc = "Terminal Toggle Floating term" })
+```
+
+### Runner
+
+- This function will first open a terminal + runs the cmd
+- Calling the function again will run the `cmd` in that terminal window
+- This can be seen as a code runner too! Usually useful if you want to see the result of some command
+
+```lua  
+require("nvchad.term").runner {
+    pos = "vsp",
+    cmd = "python test.py",
+    id = "ekk",
+  }
+```
+<br/>
+
+- As Cmd can be a function too, here's a complex example :
+
+```lua  
+require("nvchad.term").runner {
+  id = "boo",
+  pos = "sp",
+
+  cmd = function()
+    local file = vim.fn.expand "%"
+
+    local ft_cmds = {
+      python = "python3 " .. file,
+      cpp = "clear && g++ -o out " .. file .. " && ./out",
+    }
+
+    return ft_cmds[vim.bo.ft]
+  end,
+}
+```
+
+## Telescope extensions
+
+These are few telescope extensions present in the UI plugin.
+
+### Theme picker
+
+- This will show a list of themes from base46 and live-preview them + pressing enter will save them in chadrc.
+- Command `Telescope themes`
+
+### Hidden Term picker
+
+- If you close any terminal window by our close_buffer func i.e `<leader>x` then it'll just hide it 
+- You can un-hide them back by using `<leader>pt` keymap + press enter
+- Command `Telescope terms`

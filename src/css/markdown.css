@@ -56,13 +56,6 @@
   background-color: #ffffff;
 }
 
-#DocContent code,
-#DocContent pre,
-#DocContent samp {
-  font-family: monospace;
-  font-size: 1em;
-}
-
 #DocContent figure {
   margin: 1em 40px;
 }
@@ -354,16 +347,6 @@
   text-align: right;
 }
 
-#DocContent code,
-#DocContent tt {
-  padding: 0.2em 0.4em;
-  margin: 0;
-  font-size: 85%;
-  white-space: break-spaces;
-  background-color: rgba(175, 184, 193, 0.2);
-  border-radius: 6px;
-}
-
 #DocContent code br,
 #DocContent tt br {
   display: none;
@@ -428,7 +411,7 @@
 /* codeblocks */
 #DocContent pre {
   @apply bg-dark-4  dark:bg-dark-3 p-0;
-  @apply p-5 rounded-xl font-mono my-0 text-sm;
+  @apply p-5 rounded-xl  my-0;
   @apply shadow-md overflow-x-auto;
 
   /* code content + copy button */
@@ -436,13 +419,13 @@
 }
 
 #DocContent code {
-  @apply bg-slate-1 dark:bg-dark-3 p-[0.1rem] px-2;
-  @apply text-sm rounded-md;
+  @apply bg-slate-2 dark:bg-dark-3 p-[0.1rem] px-2;
+  @apply rounded-md;
 }
 
 #DocContent pre code {
   @apply bg-dark-4 dark:bg-dark-3;
-  @apply text-[14px];
+  @apply text-sm;
 }
 
 .copyBtn {

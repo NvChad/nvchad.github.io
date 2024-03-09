@@ -1,3 +1,8 @@
+export const meta = {
+  title: "NvChad Snippets",
+  desc: "Manage custom snippets in NvChad"
+}
+
 ## Luasnip 
 
 NvChad uses `luasnip` plugin for handling snippets, by default it uses `friendly-snippets` plugin which provides snippets for many languages . 
@@ -6,7 +11,7 @@ NvChad uses `luasnip` plugin for handling snippets, by default it uses `friendly
 
 ## Globals
 
-These are the globals you can use to include the path of your snippets. Put them in **custom/init.lua**.
+These are the globals you can use to include the path of your snippets.
 
 ```lua 
 -- vscode format i.e json files
@@ -19,4 +24,4 @@ vim.g.snipmate_snippets_path = "your snippets path"
 vim.g.lua_snippets_path = vim.fn.stdpath "config" .. "/lua/custom/lua_snippets"
 ```
 <br/>
-> The above code is an example in which we first get the path of nvim config and then add our custom snippets dir
+> stdpath("config") returns the path of our nvimc config folder

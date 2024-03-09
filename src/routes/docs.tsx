@@ -1,4 +1,4 @@
-import { createEffect, createSignal, on, onCleanup, onMount } from "solid-js";
+import { createEffect, onCleanup, onMount } from "solid-js";
 import Sidebar, { mobSideBar } from "~/components/doc_comps/Sidebar";
 import NextPrevPageBtns from "~/components/doc_comps/nextprevPage";
 
