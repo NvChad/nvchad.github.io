@@ -1,5 +1,10 @@
 import { createSignal } from "solid-js";
 
+export const meta = {
+  title: "NvChad themes",
+  desc: "List of all nvchad themes",
+};
+
 const imagePaths = import.meta.glob("../../public/themes/*.webp");
 
 let arr = Object.keys(imagePaths).map((key) => key.replace("../../public", ""));
@@ -10,7 +15,7 @@ const [gridMode, setGridMode] = createSignal(true);
 const [scrollPosition, setScrollPosition] = createSignal(0);
 
 const ToggleBtn = () => (
-  <div flex items-center bg="slate-1" px3 h-fit justify-between>
+  <div flex items-center bg="slate-1 dark:dark-3" px3 h-fit justify-between>
     <h3 font="medium">Theme Gallery</h3>
 
     {/* gallery layout modes */}

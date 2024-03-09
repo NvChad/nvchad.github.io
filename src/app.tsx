@@ -27,6 +27,8 @@ for (const path in routes) {
   metaData[route] = moduleMeta;
 }
 
+metaData["/themes/"] = metaData["/themes"];
+
 export default function App() {
   return (
     <Router
