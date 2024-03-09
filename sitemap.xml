@@ -17,23 +17,11 @@
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
      </url><url>
-     <loc>https://nvchad.com/news/v2-0</loc>
+     <loc>https://nvchad.com/news/v2.0_release</loc>
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
      </url><url>
-     <loc>https://nvchad.com/news/v2.5</loc>
-     <changefreq>weekly</changefreq>
-     <priority>0.5</priority>
-     </url><url>
-     <loc>https://nvchad.com/news/v2-5</loc>
-     <changefreq>weekly</changefreq>
-     <priority>0.5</priority>
-     </url><url>
-     <loc>https://nvchad.com/news/v2.0</loc>
-     <changefreq>weekly</changefreq>
-     <priority>0.5</priority>
-     </url><url>
-     <loc>https://nvchad.com/news/v2.0_migration</loc>
+     <loc>https://nvchad.com/news/v2.5_release</loc>
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
      </url><url>

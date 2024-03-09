@@ -1,5 +1,5 @@
 import{b as n,q as l,k as h,t as c}from"./web-CBU83r8B.js";import{M as i}from"./index-C2YDUEaq.js";var o=c("<br>");const s={title:"NvChad v2.5 released!",desc:"Minor NvChad release with standard neovim config structure, new 7 themes, UI Term module replacing nvterm.",cover:"v2.5.webp"};function t(r){const e={a:"a",code:"code",h1:"h1",h2:"h2",h3:"h3",img:"img",li:"li",p:"p",ul:"ul",...i(),...r.components};return[n(e.h1,{children:"NvChad v2.5 Released!"}),`
-`,n(e.p,{get children(){return n(e.img,{src:"/news/v2.5.webp",alt:"v2.0 poster"})}}),`
+`,n(e.p,{get children(){return n(e.img,{src:"/news/v2.5.webp",alt:"v2.5 poster"})}}),`
 `,n(e.h2,{children:"Changelog"}),`
 `,n(e.h2,{children:"Added"}),`
 `,n(e.ul,{get children(){return[`

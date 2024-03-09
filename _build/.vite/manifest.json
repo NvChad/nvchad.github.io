@@ -1,7 +1,7 @@
 {
-  "_ContextTitles-!~{01x}~.js": {
+  "_ContextTitles-!~{01u}~.js": {
     "file": "assets/ContextTitles-DktVqRnV.css",
-    "src": "_ContextTitles-!~{01x}~.js"
+    "src": "_ContextTitles-!~{01u}~.js"
   },
   "_ContextTitles-D20ffCXR.js": {
     "file": "assets/ContextTitles-D20ffCXR.js",
@@ -61,8 +61,8 @@
       "_web-CBU83r8B.js"
     ]
   },
-  "_v2.5-C2fCgkdr.js": {
-    "file": "assets/v2.5-C2fCgkdr.js",
+  "_v2.5_release-BXcnxtUR.js": {
+    "file": "assets/v2.5_release-BXcnxtUR.js",
     "imports": [
       "_web-CBU83r8B.js",
       "_index-C2YDUEaq.js"
@@ -809,19 +809,19 @@
     ]
   },
   "src/routes/news/index.tsx?pick=default&pick=$css": {
-    "file": "assets/index-BP4PTJkq.js",
+    "file": "assets/index-CnhdTD-9.js",
     "src": "src/routes/news/index.tsx?pick=default&pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_v2.5-C2fCgkdr.js",
+      "_v2.5_release-BXcnxtUR.js",
       "_web-CBU83r8B.js",
       "_index-C2YDUEaq.js"
     ]
   },
-  "src/routes/news/v2-0.mdx?pick=$css": {
-    "file": "assets/v2-0-BOaz1l1S.js",
-    "src": "src/routes/news/v2-0.mdx?pick=$css",
+  "src/routes/news/v2.0_release.mdx?pick=$css": {
+    "file": "assets/v2.0_release-BOaz1l1S.js",
+    "src": "src/routes/news/v2.0_release.mdx?pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
@@ -829,39 +829,9 @@
       "_index-C2YDUEaq.js"
     ]
   },
-  "src/routes/news/v2-5.mdx?pick=$css": {
-    "file": "assets/v2-5-niFiaZi4.js",
-    "src": "src/routes/news/v2-5.mdx?pick=$css",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_web-CBU83r8B.js",
-      "_index-C2YDUEaq.js"
-    ]
-  },
-  "src/routes/news/v2.0.mdx?pick=$css": {
-    "file": "assets/v2.0-BOaz1l1S.js",
-    "src": "src/routes/news/v2.0.mdx?pick=$css",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_web-CBU83r8B.js",
-      "_index-C2YDUEaq.js"
-    ]
-  },
-  "src/routes/news/v2.0_migration.mdx?pick=$css": {
-    "file": "assets/v2.0_migration-DhV85upU.js",
-    "src": "src/routes/news/v2.0_migration.mdx?pick=$css",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_web-CBU83r8B.js",
-      "_index-C2YDUEaq.js"
-    ]
-  },
-  "src/routes/news/v2.5.mdx?pick=$css": {
-    "file": "assets/v2.5-niFiaZi4.js",
-    "src": "src/routes/news/v2.5.mdx?pick=$css",
+  "src/routes/news/v2.5_release.mdx?pick=$css": {
+    "file": "assets/v2.5_release-BfydSmsU.js",
+    "src": "src/routes/news/v2.5_release.mdx?pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
@@ -946,7 +916,7 @@
     ]
   },
   "virtual:#vinxi/handler/client": {
-    "file": "assets/client-Be9POsvk.js",
+    "file": "assets/client-B0BlqDRy.js",
     "src": "virtual:#vinxi/handler/client",
     "isEntry": true,
     "imports": [
@@ -959,7 +929,7 @@
       "_routing-CayKO4ES.js",
       "_install-qf_m3P46.js",
       "_footer-BfnOYqFd.js",
-      "_v2.5-C2fCgkdr.js",
+      "_v2.5_release-BXcnxtUR.js",
       "_components-CVXb4Mrf.js"
     ],
     "dynamicImports": [
@@ -1039,11 +1009,8 @@
       "src/routes/docs/features.mdx?pick=$css",
       "src/routes/docs/index.tsx?pick=default&pick=$css",
       "src/routes/news/index.tsx?pick=default&pick=$css",
-      "src/routes/news/v2-0.mdx?pick=$css",
-      "src/routes/news/v2-5.mdx?pick=$css",
-      "src/routes/news/v2.0.mdx?pick=$css",
-      "src/routes/news/v2.0_migration.mdx?pick=$css",
-      "src/routes/news/v2.5.mdx?pick=$css",
+      "src/routes/news/v2.0_release.mdx?pick=$css",
+      "src/routes/news/v2.5_release.mdx?pick=$css",
       "src/routes/docs/config/lsp.mdx?pick=$css",
       "src/routes/docs/config/mappings.mdx?pick=$css",
       "src/routes/docs/config/nvchad_ui.mdx?pick=$css",
