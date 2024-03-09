@@ -30,13 +30,14 @@ local result = vim.tbl_deep_extend("force", person, someone)
     skills = {"js", "lua"},
 }
 
--- The list tables i.e arrays wont merge, only the array from the table 2 gets preferred. 
+-- The list tables wont merge cuz they dont have keys 
 ```
 
 ## Chadrc.lua
 
-- NvChad's ui and base46 plugin expect nvconfig.lua to be on path and take the config from it. 
+- This file is meant to have structure of [nvconfig.lua](https://github.com/NvChad/NvChad/blob/starter/lua/nvconfig.lua), check the nvconfig.lua for knowing all supported options.
 - So nvconfig returns a table of config and then merges chadrc's table.
+- For non nvchad users, you can just use nvconfig file ( without chadrc code from it) and put it in your /lua dir
 
 ## Themes
 

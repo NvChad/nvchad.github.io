@@ -42,18 +42,22 @@ local plugins = {
     enabled = false,
   },
 
-  -- If your opts uses a function call, then make opts spec a function*
+  -- If your opts uses a function call ex: require*, then make opts spec a function
   -- should return the modified default config as well
   -- here we just call the default telescope config 
-  -- and then assign a function to some of its options
+  -- And edit its mappinsg
   {
     "nvim-telescope/telescope.nvim",
     opts = function()
       local conf = require "plugins.configs.telescope"
+
       conf.defaults.mappings.i = {
         ["<C-j>"] = require("telescope.actions").move_selection_next,
         ["<Esc>"] = require("telescope.actions").close,
       }
+
+     -- or 
+     -- table.insert(conf.defaults.mappings.i, your table)
 
       return conf
     end,

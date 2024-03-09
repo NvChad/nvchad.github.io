@@ -22,8 +22,6 @@ function generateStyles(x) {
 function ContextTitles() {
   const [contextLabelsShown, toggleContextLabels] = createSignal(false);
 
-  const path = useLocation().pathname;
-
   return (
     <div h-fit mt-6 xl="sticky top-30">
       {/* on this page btn, shows only on small screens*/}
@@ -47,7 +45,9 @@ function ContextTitles() {
       >
         {contextHeadings.map((x) => (
           <a
-            href={`${path}#${x[1].replaceAll(/[ .&]/g, "_").toLowerCase()}`}
+            href={`${useLocation().pathname}#${x[1]
+              .replaceAll(/[ .&]/g, "_")
+              .toLowerCase()}`}
             class={generateStyles(x)}
             onclick={() => setActiveContext_Heading(x[1])}
           >
