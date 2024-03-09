@@ -25,6 +25,10 @@
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
      </url><url>
+     <loc>https://nvchad.com/news/test</loc>
+     <changefreq>weekly</changefreq>
+     <priority>0.5</priority>
+     </url><url>
      <loc>https://nvchad.com/news/v2.0_migration</loc>
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>

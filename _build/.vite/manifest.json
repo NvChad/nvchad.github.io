@@ -1,7 +1,7 @@
 {
-  "_ContextTitles-!~{01v}~.js": {
+  "_ContextTitles-!~{01w}~.js": {
     "file": "assets/ContextTitles-DktVqRnV.css",
-    "src": "_ContextTitles-!~{01v}~.js"
+    "src": "_ContextTitles-!~{01w}~.js"
   },
   "_ContextTitles-D20ffCXR.js": {
     "file": "assets/ContextTitles-D20ffCXR.js",
@@ -61,11 +61,11 @@
       "_web-CBU83r8B.js"
     ]
   },
-  "_v2.5-BqmHE2IN.js": {
-    "file": "assets/v2.5-BqmHE2IN.js",
+  "_v2.5-CiPRThd5.js": {
+    "file": "assets/v2.5-CiPRThd5.js",
     "imports": [
-      "_web-CBU83r8B.js",
-      "_index-C2YDUEaq.js"
+      "_index-C2YDUEaq.js",
+      "_web-CBU83r8B.js"
     ]
   },
   "_web-CBU83r8B.js": {
@@ -809,14 +809,24 @@
     ]
   },
   "src/routes/news/index.tsx?pick=default&pick=$css": {
-    "file": "assets/index-CGCP1_r6.js",
+    "file": "assets/index-Cfa4vN9i.js",
     "src": "src/routes/news/index.tsx?pick=default&pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_v2.5-BqmHE2IN.js",
+      "_v2.5-CiPRThd5.js",
       "_web-CBU83r8B.js",
       "_index-C2YDUEaq.js"
+    ]
+  },
+  "src/routes/news/test.mdx?pick=$css": {
+    "file": "assets/test-BlK6FqLN.js",
+    "src": "src/routes/news/test.mdx?pick=$css",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-C2YDUEaq.js",
+      "_web-CBU83r8B.js"
     ]
   },
   "src/routes/news/v2.0.mdx?pick=$css": {
@@ -926,7 +936,7 @@
     ]
   },
   "virtual:#vinxi/handler/client": {
-    "file": "assets/client-BSUGcsaX.js",
+    "file": "assets/client-Ozr5kUYE.js",
     "src": "virtual:#vinxi/handler/client",
     "isEntry": true,
     "imports": [
@@ -939,7 +949,7 @@
       "_routing-CayKO4ES.js",
       "_install-qf_m3P46.js",
       "_footer-BfnOYqFd.js",
-      "_v2.5-BqmHE2IN.js",
+      "_v2.5-CiPRThd5.js",
       "_components-CVXb4Mrf.js"
     ],
     "dynamicImports": [
@@ -1019,6 +1029,7 @@
       "src/routes/docs/features.mdx?pick=$css",
       "src/routes/docs/index.tsx?pick=default&pick=$css",
       "src/routes/news/index.tsx?pick=default&pick=$css",
+      "src/routes/news/test.mdx?pick=$css",
       "src/routes/news/v2.0.mdx?pick=$css",
       "src/routes/news/v2.0_migration.mdx?pick=$css",
       "src/routes/news/v2.5.mdx?pick=$css",

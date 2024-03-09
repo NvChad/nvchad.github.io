@@ -1,0 +1,1 @@
+import{M as r}from"./index-C2YDUEaq.js";import{b as n,q as c}from"./web-CBU83r8B.js";function o(t){const e={h1:"h1",...r(),...t.components};return n(e.h1,{children:"test news route"})}function s(t={}){const{wrapper:e}={...r(),...t.components};return e?n(e,c(t,{get children(){return n(o,t)}})):o(t)}export{s as default};
