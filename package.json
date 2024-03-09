@@ -16,6 +16,7 @@
     "@docsearch/css": "^3.6.0",
     "@docsearch/js": "3",
     "@mdx-js/mdx": "^3.0.1",
+    "@solidjs/meta": "^0.29.3",
     "@solidjs/router": "^0.13.0",
     "@solidjs/start": "^0.6.1",
     "@vinxi/plugin-mdx": "^3.7.1",

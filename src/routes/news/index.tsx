@@ -1,5 +1,3 @@
-import { A } from "@solidjs/router";
-
 const toMeta = (v) =>
   Object.entries(v).map(([link, mod]) => ({
     link: link.replace(/^\.\/|\.mdx$/g, ""),
@@ -7,6 +5,11 @@ const toMeta = (v) =>
   }));
 
 const news = toMeta(import.meta.glob("./*.mdx", { eager: true }));
+
+export const meta = {
+  title: "NvChad release blogs",
+  desc: "List of NvChad version release news / guides",
+};
 
 function News() {
   return (
@@ -31,14 +34,14 @@ function News() {
               <div h-full flex flex-col gap-4 justify-between p-10 pt-5>
                 <div>
                   <h2 class="m-0" pb-5>
-                    {x.heading}
+                    {x.title}
                   </h2>
                   <p text-lg class="m-0 p-0">
-                    {x.details}
+                    {x.desc}
                   </p>
                 </div>
 
-                <A href={x.link}>
+                <a href={x.link}>
                   <button
                     bg-blue-6
                     text-white-1
@@ -48,7 +51,7 @@ function News() {
                   >
                     Read More
                   </button>
-                </A>
+                </a>
               </div>
             </div>
           );

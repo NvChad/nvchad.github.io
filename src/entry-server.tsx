@@ -6,12 +6,7 @@ export default createHandler(() => (
       <html lang="en">
         <head>
           <meta charset="utf-8" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-          <meta
-            name="description"
-            content="Blazing fast Neovim config providing solid defaults and a beautiful UI, enhancing your Neovim experience."
-          />
+          <meta name="viewport" content="width=device-width, initial-scale=1" /> 
 
           {/* favicon & font */}
           <link rel="icon" type="image/svg+xml" href="/logo.svg" />
