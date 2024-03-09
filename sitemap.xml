@@ -17,15 +17,19 @@
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
      </url><url>
+     <loc>https://nvchad.com/news/v2-0</loc>
+     <changefreq>weekly</changefreq>
+     <priority>0.5</priority>
+     </url><url>
      <loc>https://nvchad.com/news/v2.5</loc>
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
      </url><url>
-     <loc>https://nvchad.com/news/v2.0</loc>
+     <loc>https://nvchad.com/news/v2-5</loc>
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
      </url><url>
-     <loc>https://nvchad.com/news/test</loc>
+     <loc>https://nvchad.com/news/v2.0</loc>
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
      </url><url>

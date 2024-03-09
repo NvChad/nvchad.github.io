@@ -1,7 +1,7 @@
 {
-  "_ContextTitles-!~{01w}~.js": {
+  "_ContextTitles-!~{01x}~.js": {
     "file": "assets/ContextTitles-DktVqRnV.css",
-    "src": "_ContextTitles-!~{01w}~.js"
+    "src": "_ContextTitles-!~{01x}~.js"
   },
   "_ContextTitles-D20ffCXR.js": {
     "file": "assets/ContextTitles-D20ffCXR.js",
@@ -61,11 +61,11 @@
       "_web-CBU83r8B.js"
     ]
   },
-  "_v2.5-CiPRThd5.js": {
-    "file": "assets/v2.5-CiPRThd5.js",
+  "_v2.5-C2fCgkdr.js": {
+    "file": "assets/v2.5-C2fCgkdr.js",
     "imports": [
-      "_index-C2YDUEaq.js",
-      "_web-CBU83r8B.js"
+      "_web-CBU83r8B.js",
+      "_index-C2YDUEaq.js"
     ]
   },
   "_web-CBU83r8B.js": {
@@ -809,24 +809,34 @@
     ]
   },
   "src/routes/news/index.tsx?pick=default&pick=$css": {
-    "file": "assets/index-Cfa4vN9i.js",
+    "file": "assets/index-BP4PTJkq.js",
     "src": "src/routes/news/index.tsx?pick=default&pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_v2.5-CiPRThd5.js",
+      "_v2.5-C2fCgkdr.js",
       "_web-CBU83r8B.js",
       "_index-C2YDUEaq.js"
     ]
   },
-  "src/routes/news/test.mdx?pick=$css": {
-    "file": "assets/test-BlK6FqLN.js",
-    "src": "src/routes/news/test.mdx?pick=$css",
+  "src/routes/news/v2-0.mdx?pick=$css": {
+    "file": "assets/v2-0-BOaz1l1S.js",
+    "src": "src/routes/news/v2-0.mdx?pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-C2YDUEaq.js",
-      "_web-CBU83r8B.js"
+      "_web-CBU83r8B.js",
+      "_index-C2YDUEaq.js"
+    ]
+  },
+  "src/routes/news/v2-5.mdx?pick=$css": {
+    "file": "assets/v2-5-niFiaZi4.js",
+    "src": "src/routes/news/v2-5.mdx?pick=$css",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_web-CBU83r8B.js",
+      "_index-C2YDUEaq.js"
     ]
   },
   "src/routes/news/v2.0.mdx?pick=$css": {
@@ -936,7 +946,7 @@
     ]
   },
   "virtual:#vinxi/handler/client": {
-    "file": "assets/client-Ozr5kUYE.js",
+    "file": "assets/client-Be9POsvk.js",
     "src": "virtual:#vinxi/handler/client",
     "isEntry": true,
     "imports": [
@@ -949,7 +959,7 @@
       "_routing-CayKO4ES.js",
       "_install-qf_m3P46.js",
       "_footer-BfnOYqFd.js",
-      "_v2.5-CiPRThd5.js",
+      "_v2.5-C2fCgkdr.js",
       "_components-CVXb4Mrf.js"
     ],
     "dynamicImports": [
@@ -1029,7 +1039,8 @@
       "src/routes/docs/features.mdx?pick=$css",
       "src/routes/docs/index.tsx?pick=default&pick=$css",
       "src/routes/news/index.tsx?pick=default&pick=$css",
-      "src/routes/news/test.mdx?pick=$css",
+      "src/routes/news/v2-0.mdx?pick=$css",
+      "src/routes/news/v2-5.mdx?pick=$css",
       "src/routes/news/v2.0.mdx?pick=$css",
       "src/routes/news/v2.0_migration.mdx?pick=$css",
       "src/routes/news/v2.5.mdx?pick=$css",
