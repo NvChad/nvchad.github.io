@@ -1,4 +1,4 @@
-import{M as t}from"./index-C2YDUEaq.js";import{b as n,q as l}from"./web-CBU83r8B.js";const o={title:"NvChad v2.5 released!",desc:"Minor NvChad release with standard neovim config structure, new 7 themes, UI Term module replacing nvterm.",cover:"v2.5.webp"};function r(i){const e={a:"a",code:"code",h1:"h1",h2:"h2",h3:"h3",img:"img",li:"li",p:"p",ul:"ul",...t(),...i.components};return[n(e.h1,{children:"NvChad v2.5 Released!"}),`
+import{b as n,q as l,k as h,t as c}from"./web-CBU83r8B.js";import{M as i}from"./index-C2YDUEaq.js";var o=c("<br>");const s={title:"NvChad v2.5 released!",desc:"Minor NvChad release with standard neovim config structure, new 7 themes, UI Term module replacing nvterm.",cover:"v2.5.webp"};function t(r){const e={a:"a",code:"code",h1:"h1",h2:"h2",h3:"h3",img:"img",li:"li",p:"p",ul:"ul",...i(),...r.components};return[n(e.h1,{children:"NvChad v2.5 Released!"}),`
 `,n(e.p,{get children(){return n(e.img,{src:"/news/v2.5.webp",alt:"v2.0 poster"})}}),`
 `,n(e.h2,{children:"Changelog"}),`
 `,n(e.h2,{children:"Added"}),`
@@ -49,8 +49,12 @@ chadracula-evondev`}),`
 `]}}),`
 `,n(e.h2,{children:"Migration"}),`
 `,n(e.ul,{get children(){return[`
+`,n(e.li,{get children(){return["git clone ",n(e.a,{href:"https://github.com/NvChad/starter",children:"starter repo"})," as your nvim config."]}}),`
 `,n(e.li,{get children(){return["Go through the new ",n(e.a,{href:"https://github.com/NvChad/NvChad/tree/v2.5",children:"module structure of nvchad"})," which will be used as your plugin."]}}),`
 `,n(e.li,{get children(){return["You can use this ",n(e.a,{href:"https://gist.github.com/siduck/048bed2e7570569e6b327b35d1715404",children:"shell script"})," ( unix only ) to automate your migration."]}}),`
+`]}}),`
+`,h(o),`
+`,n(e.ul,{get children(){return[`
 `,n(e.li,{children:"For Manual Migration, do the following:"}),`
 `,n(e.li,{get children(){return["Move All of your custom dir files to the ",n(e.code,{children:"lua"})," dir of starter config"]}}),`
 `,n(e.li,{get children(){return["Remove all instances of ",n(e.code,{children:"custom."}),` word in all your files, example
@@ -74,4 +78,4 @@ chadracula-evondev`}),`
 `,n(e.h3,{children:"nano-light"}),`
 `,n(e.p,{get children(){return n(e.img,{src:"/themes/nano-light.webp",alt:"nano-light theme"})}}),`
 `,n(e.h3,{children:"flexoki-light"}),`
-`,n(e.p,{get children(){return n(e.img,{src:"/themes/flexoki-light.webp",alt:"flexoki-light theme"})}})]}function d(i={}){const{wrapper:e}={...t(),...i.components};return e?n(e,l(i,{get children(){return n(r,i)}})):r(i)}export{d as default,o as meta};
+`,n(e.p,{get children(){return n(e.img,{src:"/themes/flexoki-light.webp",alt:"flexoki-light theme"})}})]}function u(r={}){const{wrapper:e}={...i(),...r.components};return e?n(e,l(r,{get children(){return n(t,r)}})):t(r)}export{u as default,s as meta};

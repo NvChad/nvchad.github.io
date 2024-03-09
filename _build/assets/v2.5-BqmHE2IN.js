@@ -93,7 +93,7 @@ import{b as n,q as a,k as t,t as i,m as g}from"./web-CBU83r8B.js";import{M as l}
 `,n(e.p,{children:"As there's lazy.nvim being used in this release so this might be a breaking change for you, but dont worry, you can still use old NvChad version and slowly migrate to v2.0."}),`
 `,n(e.ul,{get children(){return[`
 `,n(e.li,{get children(){return["Migration changes are mentioned in this ",n(e.a,{href:"/news/v2.0_migration",children:"section"}),"."]}}),`
-`]}})]}function b(r={}){const{wrapper:e}={...l(),...r.components};return e?n(e,a(r,{get children(){return n(c,r)}})):c(r)}const j=Object.freeze(Object.defineProperty({__proto__:null,default:b,meta:v},Symbol.toStringTag,{value:"Module"}));var w=i("<u>"),o=i("<br>");const y={title:"Breaking changes in v2.0",desc:"NvChad's v2.0 uses lazy.nvim instead of packer so there are slight differences in the plugin related syntax.",cover:"v2.0_migration.svg"};function d(r){const e={a:"a",code:"code",h1:"h1",h2:"h2",img:"img",li:"li",p:"p",pre:"pre",span:"span",strong:"strong",ul:"ul",...l(),...r.components};return[n(e.h1,{children:"Breaking changes in v2.0"}),`
+`]}})]}function b(r={}){const{wrapper:e}={...l(),...r.components};return e?n(e,a(r,{get children(){return n(c,r)}})):c(r)}const M=Object.freeze(Object.defineProperty({__proto__:null,default:b,meta:v},Symbol.toStringTag,{value:"Module"}));var w=i("<u>"),o=i("<br>");const y={title:"Breaking changes in v2.0",desc:"NvChad's v2.0 uses lazy.nvim instead of packer so there are slight differences in the plugin related syntax.",cover:"v2.0_migration.svg"};function d(r){const e={a:"a",code:"code",h1:"h1",h2:"h2",img:"img",li:"li",p:"p",pre:"pre",span:"span",strong:"strong",ul:"ul",...l(),...r.components};return[n(e.h1,{children:"Breaking changes in v2.0"}),`
 `,n(e.p,{get children(){return n(e.img,{src:"/news/v2.0_migration.svg",alt:"v2.0 poster"})}}),`
 `,n(e.ul,{get children(){return[`
 `,n(e.li,{get children(){return[`
@@ -176,7 +176,7 @@ M.ui = {
 `,n(e.ul,{get children(){return[`
 `,n(e.li,{get children(){return[n(e.code,{children:"\\"})," (to trigger tbufpick)."]}}),`
 `,n(e.li,{get children(){return[n(e.code,{children:"leader + tt"})," (for toggling themes)"]}}),`
-`]}})]}function _(r={}){const{wrapper:e}={...l(),...r.components};return e?n(e,a(r,{get children(){return n(d,r)}})):d(r)}const M=Object.freeze(Object.defineProperty({__proto__:null,default:_,meta:y},Symbol.toStringTag,{value:"Module"})),N={title:"NvChad v2.5 released!",desc:"Minor NvChad release with standard neovim config structure, new 7 themes, UI Term module replacing nvterm.",cover:"v2.5.webp"};function u(r){const e={a:"a",code:"code",h1:"h1",h2:"h2",h3:"h3",img:"img",li:"li",p:"p",ul:"ul",...l(),...r.components};return[n(e.h1,{children:"NvChad v2.5 Released!"}),`
+`]}})]}function _(r={}){const{wrapper:e}={...l(),...r.components};return e?n(e,a(r,{get children(){return n(d,r)}})):d(r)}const T=Object.freeze(Object.defineProperty({__proto__:null,default:_,meta:y},Symbol.toStringTag,{value:"Module"}));var N=i("<br>");const C={title:"NvChad v2.5 released!",desc:"Minor NvChad release with standard neovim config structure, new 7 themes, UI Term module replacing nvterm.",cover:"v2.5.webp"};function u(r){const e={a:"a",code:"code",h1:"h1",h2:"h2",h3:"h3",img:"img",li:"li",p:"p",ul:"ul",...l(),...r.components};return[n(e.h1,{children:"NvChad v2.5 Released!"}),`
 `,n(e.p,{get children(){return n(e.img,{src:"/news/v2.5.webp",alt:"v2.0 poster"})}}),`
 `,n(e.h2,{children:"Changelog"}),`
 `,n(e.h2,{children:"Added"}),`
@@ -227,8 +227,12 @@ chadracula-evondev`}),`
 `]}}),`
 `,n(e.h2,{children:"Migration"}),`
 `,n(e.ul,{get children(){return[`
+`,n(e.li,{get children(){return["git clone ",n(e.a,{href:"https://github.com/NvChad/starter",children:"starter repo"})," as your nvim config."]}}),`
 `,n(e.li,{get children(){return["Go through the new ",n(e.a,{href:"https://github.com/NvChad/NvChad/tree/v2.5",children:"module structure of nvchad"})," which will be used as your plugin."]}}),`
 `,n(e.li,{get children(){return["You can use this ",n(e.a,{href:"https://gist.github.com/siduck/048bed2e7570569e6b327b35d1715404",children:"shell script"})," ( unix only ) to automate your migration."]}}),`
+`]}}),`
+`,t(N),`
+`,n(e.ul,{get children(){return[`
 `,n(e.li,{children:"For Manual Migration, do the following:"}),`
 `,n(e.li,{get children(){return["Move All of your custom dir files to the ",n(e.code,{children:"lua"})," dir of starter config"]}}),`
 `,n(e.li,{get children(){return["Remove all instances of ",n(e.code,{children:"custom."}),` word in all your files, example
@@ -252,4 +256,4 @@ chadracula-evondev`}),`
 `,n(e.h3,{children:"nano-light"}),`
 `,n(e.p,{get children(){return n(e.img,{src:"/themes/nano-light.webp",alt:"nano-light theme"})}}),`
 `,n(e.h3,{children:"flexoki-light"}),`
-`,n(e.p,{get children(){return n(e.img,{src:"/themes/flexoki-light.webp",alt:"flexoki-light theme"})}})]}function C(r={}){const{wrapper:e}={...l(),...r.components};return e?n(e,a(r,{get children(){return n(u,r)}})):u(r)}const T=Object.freeze(Object.defineProperty({__proto__:null,default:C,meta:N},Symbol.toStringTag,{value:"Module"}));export{j as _,M as a,T as b};
+`,n(e.p,{get children(){return n(e.img,{src:"/themes/flexoki-light.webp",alt:"flexoki-light theme"})}})]}function k(r={}){const{wrapper:e}={...l(),...r.components};return e?n(e,a(r,{get children(){return n(u,r)}})):u(r)}const z=Object.freeze(Object.defineProperty({__proto__:null,default:k,meta:C},Symbol.toStringTag,{value:"Module"}));export{M as _,T as a,z as b};

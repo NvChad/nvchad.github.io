@@ -61,8 +61,8 @@
       "_web-CBU83r8B.js"
     ]
   },
-  "_v2.5-Dik7Y-Mt.js": {
-    "file": "assets/v2.5-Dik7Y-Mt.js",
+  "_v2.5-BqmHE2IN.js": {
+    "file": "assets/v2.5-BqmHE2IN.js",
     "imports": [
       "_web-CBU83r8B.js",
       "_index-C2YDUEaq.js"
@@ -809,12 +809,12 @@
     ]
   },
   "src/routes/news/index.tsx?pick=default&pick=$css": {
-    "file": "assets/index-D9p9MK4_.js",
+    "file": "assets/index-CGCP1_r6.js",
     "src": "src/routes/news/index.tsx?pick=default&pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_v2.5-Dik7Y-Mt.js",
+      "_v2.5-BqmHE2IN.js",
       "_web-CBU83r8B.js",
       "_index-C2YDUEaq.js"
     ]
@@ -840,13 +840,13 @@
     ]
   },
   "src/routes/news/v2.5.mdx?pick=$css": {
-    "file": "assets/v2.5-Beh3D-il.js",
+    "file": "assets/v2.5-niFiaZi4.js",
     "src": "src/routes/news/v2.5.mdx?pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-C2YDUEaq.js",
-      "_web-CBU83r8B.js"
+      "_web-CBU83r8B.js",
+      "_index-C2YDUEaq.js"
     ]
   },
   "src/routes/themes.tsx?pick=default&pick=$css": {
@@ -926,7 +926,7 @@
     ]
   },
   "virtual:#vinxi/handler/client": {
-    "file": "assets/client-BckW3EHt.js",
+    "file": "assets/client-BSUGcsaX.js",
     "src": "virtual:#vinxi/handler/client",
     "isEntry": true,
     "imports": [
@@ -939,7 +939,7 @@
       "_routing-CayKO4ES.js",
       "_install-qf_m3P46.js",
       "_footer-BfnOYqFd.js",
-      "_v2.5-Dik7Y-Mt.js",
+      "_v2.5-BqmHE2IN.js",
       "_components-CVXb4Mrf.js"
     ],
     "dynamicImports": [
