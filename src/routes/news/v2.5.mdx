@@ -44,6 +44,20 @@ export const meta = {
 - chadrc's cmp options: border_color , selected_item_bg
 - tabufline, show_numbers
 
+
+## Migration
+
+- Go through the new [module structure of nvchad](https://github.com/NvChad/NvChad/tree/v2.5) which will be used as your plugin.
+- You can use this [shell script](https://gist.github.com/siduck/048bed2e7570569e6b327b35d1715404) ( unix only ) to automate your migration.
+- For Manual Migration, do the following:
+- Move All of your custom dir files to the `lua` dir of starter config 
+- Remove all instances of `custom.` word in all your files, example 
+  `require('custom.options')` -> `require('options')`
+- Check the new [mappings syntax](https://nvchad.com/docs/config/mappings) and the [pinned issue](https://github.com/NvChad/NvChad/issues/2688) for some recipes.
+- replace `require "plugin.configs.lspconfig"` with `require('nvchad.configs.lspconfig').defaults()`
+- Check the term module [docs](http://nvchad.com/docs/config/nvchad_ui#term)
+- Check statusline/tabufline overriding syntax [docs](http://nvchad.com/docs/config/nvchad_ui#statusline___tabufline)
+
 ## New Themes
 
 ### Jabuti
