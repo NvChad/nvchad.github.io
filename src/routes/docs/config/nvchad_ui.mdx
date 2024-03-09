@@ -57,10 +57,9 @@ M.ui = {
 - *ones are optional
 - **pos** is required.
 - **id** is needed for toggleable/runner terminals only
-
 - If the optional opts are not provided then they will be taken from the `ui.term` table of your chadrc.
 
-### New
+### New Window
 
 - Create new terminal windows
 
@@ -130,3 +129,18 @@ require("nvchad.term").runner {
   end,
 }
 ```
+
+## Telescope extensions
+
+These are few telescope extensions present in the UI plugin.
+
+### Theme picker
+
+- This will show a list of themes from base46 and live-preview them + pressing enter will save them in chadrc.
+- Command `Telescope themes`
+
+### Hidden Term picker
+
+- If you close any terminal window by our close_buffer func i.e `<leader>x` then it'll just hide it 
+- You can un-hide them back by using `<leader>pt` keymap + press enter
+- Command `Telescope terms`
