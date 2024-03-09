@@ -17,6 +17,10 @@
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
      </url><url>
+     <loc>https://nvchad.com/news/v2.5</loc>
+     <changefreq>weekly</changefreq>
+     <priority>0.5</priority>
+     </url><url>
      <loc>https://nvchad.com/news/v2.0</loc>
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
@@ -78,10 +82,6 @@
      <priority>0.5</priority>
      </url><url>
      <loc>https://nvchad.com/docs/config/nvchad_ui</loc>
-     <changefreq>weekly</changefreq>
-     <priority>0.5</priority>
-     </url><url>
-     <loc>https://nvchad.com/docs/config/format_lint</loc>
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
      </url><url>

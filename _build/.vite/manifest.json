@@ -1,2914 +1,1012 @@
 {
-  "_ContextTitles-D7KWmhEM.js": {
-    "file": "assets/ContextTitles-D7KWmhEM.js",
-    "imports": [
-      "_web-DScAkgcG.js",
-      "_routing-zmxRfIsI.js",
-      "_components-B-ztm8Ux.js"
-    ]
+  "_ContextTitles-!~{01v}~.js": {
+    "file": "assets/ContextTitles-DktVqRnV.css",
+    "src": "_ContextTitles-!~{01v}~.js"
   },
-  "_Sidebar-jYSvShnh.js": {
-    "file": "assets/Sidebar-jYSvShnh.js",
+  "_ContextTitles-D20ffCXR.js": {
+    "file": "assets/ContextTitles-D20ffCXR.js",
     "imports": [
-      "_web-DScAkgcG.js",
-      "_components-B-ztm8Ux.js",
-      "_routing-zmxRfIsI.js"
+      "_web-CBU83r8B.js",
+      "_routing-CayKO4ES.js"
+    ],
+    "css": [
+      "assets/ContextTitles-DktVqRnV.css"
     ]
   },
   "_clipboard-DzJ4oxno.js": {
     "file": "assets/clipboard-DzJ4oxno.js"
   },
-  "_components-B-ztm8Ux.js": {
-    "file": "assets/components-B-ztm8Ux.js",
+  "_components-CVXb4Mrf.js": {
+    "file": "assets/components-CVXb4Mrf.js",
     "imports": [
-      "_web-DScAkgcG.js",
-      "_routing-zmxRfIsI.js"
+      "_web-CBU83r8B.js",
+      "_routing-CayKO4ES.js"
     ]
   },
-  "_index-CYDpJFld.js": {
-    "file": "assets/index-CYDpJFld.js",
+  "_footer-BfnOYqFd.js": {
+    "file": "assets/footer-BfnOYqFd.js",
     "imports": [
-      "_web-DScAkgcG.js"
+      "_web-CBU83r8B.js",
+      "_install-qf_m3P46.js",
+      "_components-CVXb4Mrf.js"
     ]
   },
-  "_install-CGTAEIO3.js": {
-    "file": "assets/install-CGTAEIO3.js",
+  "_index-C2YDUEaq.js": {
+    "file": "assets/index-C2YDUEaq.js",
     "imports": [
-      "_web-DScAkgcG.js",
+      "_web-CBU83r8B.js"
+    ]
+  },
+  "_install-qf_m3P46.js": {
+    "file": "assets/install-qf_m3P46.js",
+    "imports": [
+      "_web-CBU83r8B.js",
       "_clipboard-DzJ4oxno.js"
+    ]
+  },
+  "_nextprevPage-C225yNzP.js": {
+    "file": "assets/nextprevPage-C225yNzP.js",
+    "imports": [
+      "_web-CBU83r8B.js",
+      "_components-CVXb4Mrf.js",
+      "_routing-CayKO4ES.js"
     ]
   },
   "_preload-helper-xxf5fCYN.js": {
     "file": "assets/preload-helper-xxf5fCYN.js"
   },
-  "_routing-zmxRfIsI.js": {
-    "file": "assets/routing-zmxRfIsI.js",
+  "_routing-CayKO4ES.js": {
+    "file": "assets/routing-CayKO4ES.js",
     "imports": [
-      "_web-DScAkgcG.js"
+      "_web-CBU83r8B.js"
     ]
   },
-  "_web-DScAkgcG.js": {
-    "file": "assets/web-DScAkgcG.js"
+  "_v2.5-Dik7Y-Mt.js": {
+    "file": "assets/v2.5-Dik7Y-Mt.js",
+    "imports": [
+      "_web-CBU83r8B.js",
+      "_index-C2YDUEaq.js"
+    ]
+  },
+  "_web-CBU83r8B.js": {
+    "file": "assets/web-CBU83r8B.js"
   },
   "node_modules/shikiji/dist/onig.wasm": {
     "file": "assets/onig-Du5pRr7Y.wasm",
     "src": "node_modules/shikiji/dist/onig.wasm"
   },
-  "public/themes/c/aquarium.webp": {
+  "public/themes/aquarium.webp": {
     "file": "assets/aquarium-DK3x77eG.js",
-    "src": "public/themes/c/aquarium.webp",
+    "src": "public/themes/aquarium.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/aquarium-CrrvADP3.webp"
     ]
   },
-  "public/themes/c/ashes.webp": {
+  "public/themes/ashes.webp": {
     "file": "assets/ashes-Bj-FPGiv.js",
-    "src": "public/themes/c/ashes.webp",
+    "src": "public/themes/ashes.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/ashes-oF2qOYXH.webp"
     ]
   },
-  "public/themes/c/ayu_dark.webp": {
+  "public/themes/ayu_dark.webp": {
     "file": "assets/ayu_dark-BBCeZNwF.js",
-    "src": "public/themes/c/ayu_dark.webp",
+    "src": "public/themes/ayu_dark.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/ayu_dark-BHYuSfNl.webp"
     ]
   },
-  "public/themes/c/ayu_light.webp": {
+  "public/themes/ayu_light.webp": {
     "file": "assets/ayu_light-DxykghBM.js",
-    "src": "public/themes/c/ayu_light.webp",
+    "src": "public/themes/ayu_light.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/ayu_light-BW0BsEQ7.webp"
     ]
   },
-  "public/themes/c/bearded-arc.webp": {
+  "public/themes/bearded-arc.webp": {
     "file": "assets/bearded-arc-CMMpME1P.js",
-    "src": "public/themes/c/bearded-arc.webp",
+    "src": "public/themes/bearded-arc.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/bearded-arc-CDUzJwHn.webp"
     ]
   },
-  "public/themes/c/blossom_light.webp": {
+  "public/themes/blossom_light.webp": {
     "file": "assets/blossom_light-Le7IkTLN.js",
-    "src": "public/themes/c/blossom_light.webp",
+    "src": "public/themes/blossom_light.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/blossom_light-lJB6ueWL.webp"
     ]
   },
-  "public/themes/c/catppuccin.webp": {
+  "public/themes/catppuccin.webp": {
     "file": "assets/catppuccin-xE-yqvLu.js",
-    "src": "public/themes/c/catppuccin.webp",
+    "src": "public/themes/catppuccin.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/catppuccin-BUTy1xAe.webp"
     ]
   },
-  "public/themes/c/chadracula.webp": {
+  "public/themes/chadracula-evondev.webp": {
+    "file": "assets/chadracula-evondev-DBjJ8MZk.js",
+    "src": "public/themes/chadracula-evondev.webp",
+    "isDynamicEntry": true,
+    "assets": [
+      "assets/chadracula-evondev-C6wanjQP.webp"
+    ]
+  },
+  "public/themes/chadracula.webp": {
     "file": "assets/chadracula-B30d-Ckf.js",
-    "src": "public/themes/c/chadracula.webp",
+    "src": "public/themes/chadracula.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/chadracula-BEvdl1zN.webp"
     ]
   },
-  "public/themes/c/chadtain.webp": {
+  "public/themes/chadtain.webp": {
     "file": "assets/chadtain-m9nOCKfH.js",
-    "src": "public/themes/c/chadtain.webp",
+    "src": "public/themes/chadtain.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/chadtain-JcG6suJR.webp"
     ]
   },
-  "public/themes/c/chocolate.webp": {
+  "public/themes/chocolate.webp": {
     "file": "assets/chocolate-BcGTJ6rB.js",
-    "src": "public/themes/c/chocolate.webp",
+    "src": "public/themes/chocolate.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/chocolate-D1XNEecJ.webp"
     ]
   },
-  "public/themes/c/dark_horizon.webp": {
-    "file": "assets/dark_horizon-xhWL-jhz.js",
-    "src": "public/themes/c/dark_horizon.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/dark_horizon-Dp15Hadg.webp"
-    ]
-  },
-  "public/themes/c/decay.webp": {
-    "file": "assets/decay-TCwlIb6m.js",
-    "src": "public/themes/c/decay.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/decay-ByxOaNfe.webp"
-    ]
-  },
-  "public/themes/c/doomchad.webp": {
-    "file": "assets/doomchad-j_rp03Ce.js",
-    "src": "public/themes/c/doomchad.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/doomchad-DHK7giws.webp"
-    ]
-  },
-  "public/themes/c/everblush.webp": {
-    "file": "assets/everblush-0pTdBvzH.js",
-    "src": "public/themes/c/everblush.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/everblush-C0d_0BJm.webp"
-    ]
-  },
-  "public/themes/c/everforest.webp": {
-    "file": "assets/everforest-CqdxzojF.js",
-    "src": "public/themes/c/everforest.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/everforest-DQ6cHfny.webp"
-    ]
-  },
-  "public/themes/c/everforest_light.webp": {
-    "file": "assets/everforest_light-B8JdkWEZ.js",
-    "src": "public/themes/c/everforest_light.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/everforest_light-B8cjgpUS.webp"
-    ]
-  },
-  "public/themes/c/falcon.webp": {
-    "file": "assets/falcon-CxOv3ewC.js",
-    "src": "public/themes/c/falcon.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/falcon-sZlL5oVH.webp"
-    ]
-  },
-  "public/themes/c/gatekeeper.webp": {
-    "file": "assets/gatekeeper-CKv5Wsdr.js",
-    "src": "public/themes/c/gatekeeper.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/gatekeeper-BQEbAclA.webp"
-    ]
-  },
-  "public/themes/c/github_dark.webp": {
-    "file": "assets/github_dark-B6Ubdi3M.js",
-    "src": "public/themes/c/github_dark.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/github_dark-CTnwPd44.webp"
-    ]
-  },
-  "public/themes/c/github_light.webp": {
-    "file": "assets/github_light-v88ps3sU.js",
-    "src": "public/themes/c/github_light.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/github_light-Dnd934yi.webp"
-    ]
-  },
-  "public/themes/c/gruvbox.webp": {
-    "file": "assets/gruvbox-CtinmYO6.js",
-    "src": "public/themes/c/gruvbox.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/gruvbox-C_kc28Eq.webp"
-    ]
-  },
-  "public/themes/c/gruvbox_light.webp": {
-    "file": "assets/gruvbox_light-CjlVSXo_.js",
-    "src": "public/themes/c/gruvbox_light.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/gruvbox_light-CwpsHM2J.webp"
-    ]
-  },
-  "public/themes/c/gruvchad.webp": {
-    "file": "assets/gruvchad-DRyer7aw.js",
-    "src": "public/themes/c/gruvchad.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/gruvchad-pKpTRsbM.webp"
-    ]
-  },
-  "public/themes/c/jellybeans.webp": {
-    "file": "assets/jellybeans-DUOrSYOC.js",
-    "src": "public/themes/c/jellybeans.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/jellybeans-BWKJEhDA.webp"
-    ]
-  },
-  "public/themes/c/kanagawa.webp": {
-    "file": "assets/kanagawa-B2P_TnJf.js",
-    "src": "public/themes/c/kanagawa.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/kanagawa-2J1Uzmrx.webp"
-    ]
-  },
-  "public/themes/c/melange.webp": {
-    "file": "assets/melange-C1H3uCB1.js",
-    "src": "public/themes/c/melange.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/melange-CUdGiw2z.webp"
-    ]
-  },
-  "public/themes/c/monekai.webp": {
-    "file": "assets/monekai-BUGw5WNE.js",
-    "src": "public/themes/c/monekai.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/monekai-CDk-Lize.webp"
-    ]
-  },
-  "public/themes/c/monochrome.webp": {
-    "file": "assets/monochrome-BqtsXkFB.js",
-    "src": "public/themes/c/monochrome.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/monochrome-D9lDqEqj.webp"
-    ]
-  },
-  "public/themes/c/mountain.webp": {
-    "file": "assets/mountain-Cn50M8Oy.js",
-    "src": "public/themes/c/mountain.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/mountain-BVU5oFwf.webp"
-    ]
-  },
-  "public/themes/c/nightfox.webp": {
-    "file": "assets/nightfox-CcGke5QS.js",
-    "src": "public/themes/c/nightfox.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/nightfox--9LVXt24.webp"
-    ]
-  },
-  "public/themes/c/nightlamp.webp": {
-    "file": "assets/nightlamp-DEPBAorI.js",
-    "src": "public/themes/c/nightlamp.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/nightlamp-La5ChA-M.webp"
-    ]
-  },
-  "public/themes/c/nightowl.webp": {
-    "file": "assets/nightowl-CmzWnTZ_.js",
-    "src": "public/themes/c/nightowl.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/nightowl-DL4pn_fz.webp"
-    ]
-  },
-  "public/themes/c/nord.webp": {
-    "file": "assets/nord-nO3NZIq5.js",
-    "src": "public/themes/c/nord.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/nord-B0AsonWl.webp"
-    ]
-  },
-  "public/themes/c/oceanic-light.webp": {
-    "file": "assets/oceanic-light-CtEI5DTZ.js",
-    "src": "public/themes/c/oceanic-light.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/oceanic-light-DIMmCUEx.webp"
-    ]
-  },
-  "public/themes/c/oceanic-next.webp": {
-    "file": "assets/oceanic-next-DYuFstjU.js",
-    "src": "public/themes/c/oceanic-next.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/oceanic-next-ClZmTqTO.webp"
-    ]
-  },
-  "public/themes/c/one_light.webp": {
-    "file": "assets/one_light-2sjG7Csy.js",
-    "src": "public/themes/c/one_light.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/one_light-ixxAHpcl.webp"
-    ]
-  },
-  "public/themes/c/onedark.webp": {
-    "file": "assets/onedark-lLL9IpDo.js",
-    "src": "public/themes/c/onedark.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/onedark-BjXKE61B.webp"
-    ]
-  },
-  "public/themes/c/onenord.webp": {
-    "file": "assets/onenord-BqvEgqcp.js",
-    "src": "public/themes/c/onenord.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/onenord-DkFZbNKX.webp"
-    ]
-  },
-  "public/themes/c/onenord_light.webp": {
-    "file": "assets/onenord_light-Bx4v-cs4.js",
-    "src": "public/themes/c/onenord_light.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/onenord_light--xkyZo2L.webp"
-    ]
-  },
-  "public/themes/c/oxocarbon.webp": {
-    "file": "assets/oxocarbon-BH-mK__q.js",
-    "src": "public/themes/c/oxocarbon.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/oxocarbon-DeGSmb1u.webp"
-    ]
-  },
-  "public/themes/c/palenight.webp": {
-    "file": "assets/palenight-RZOhp_Rd.js",
-    "src": "public/themes/c/palenight.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/palenight-BfiseFr-.webp"
-    ]
-  },
-  "public/themes/c/pastelDark.webp": {
-    "file": "assets/pastelDark-oKA3MHG-.js",
-    "src": "public/themes/c/pastelDark.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/pastelDark-Ch50K1JV.webp"
-    ]
-  },
-  "public/themes/c/pastelbeans.webp": {
-    "file": "assets/pastelbeans-D8u6JZwU.js",
-    "src": "public/themes/c/pastelbeans.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/pastelbeans-BU1lLw-n.webp"
-    ]
-  },
-  "public/themes/c/penumbra_dark.webp": {
-    "file": "assets/penumbra_dark-Cxke2ZY6.js",
-    "src": "public/themes/c/penumbra_dark.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/penumbra_dark-BuKKpTlg.webp"
-    ]
-  },
-  "public/themes/c/penumbra_light.webp": {
-    "file": "assets/penumbra_light-D_KpVCyu.js",
-    "src": "public/themes/c/penumbra_light.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/penumbra_light-DMKsE3Ga.webp"
-    ]
-  },
-  "public/themes/c/radium.webp": {
-    "file": "assets/radium-BxmTmrmQ.js",
-    "src": "public/themes/c/radium.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/radium-eBD7j0_N.webp"
-    ]
-  },
-  "public/themes/c/rosepine.webp": {
-    "file": "assets/rosepine-C2sEeO_s.js",
-    "src": "public/themes/c/rosepine.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/rosepine-ymlM05dS.webp"
-    ]
-  },
-  "public/themes/c/rxyhn.webp": {
-    "file": "assets/rxyhn-C6CuxDhY.js",
-    "src": "public/themes/c/rxyhn.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/rxyhn-B7_DHOog.webp"
-    ]
-  },
-  "public/themes/c/solarized_dark.webp": {
-    "file": "assets/solarized_dark-DfTedw2A.js",
-    "src": "public/themes/c/solarized_dark.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/solarized_dark-CiZlBkG9.webp"
-    ]
-  },
-  "public/themes/c/sweetpastel.webp": {
-    "file": "assets/sweetpastel-pMaNnCal.js",
-    "src": "public/themes/c/sweetpastel.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/sweetpastel-B6vfQHYu.webp"
-    ]
-  },
-  "public/themes/c/tokyodark.webp": {
-    "file": "assets/tokyodark-BjVk1UGJ.js",
-    "src": "public/themes/c/tokyodark.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/tokyodark-DcDfJyTq.webp"
-    ]
-  },
-  "public/themes/c/tokyonight.webp": {
-    "file": "assets/tokyonight-D2Sxr13_.js",
-    "src": "public/themes/c/tokyonight.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/tokyonight-WN6e-kC2.webp"
-    ]
-  },
-  "public/themes/c/tomorrow_night.webp": {
-    "file": "assets/tomorrow_night-BWXupAdf.js",
-    "src": "public/themes/c/tomorrow_night.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/tomorrow_night-CN5Vbjc-.webp"
-    ]
-  },
-  "public/themes/c/tundra.webp": {
-    "file": "assets/tundra-DAWaERXf.js",
-    "src": "public/themes/c/tundra.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/tundra-CO0zR8KN.webp"
-    ]
-  },
-  "public/themes/c/vscode_dark.webp": {
-    "file": "assets/vscode_dark-BOxYPU0U.js",
-    "src": "public/themes/c/vscode_dark.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/vscode_dark-BwjpGEVf.webp"
-    ]
-  },
-  "public/themes/c/wombat.webp": {
-    "file": "assets/wombat-CrVcrHat.js",
-    "src": "public/themes/c/wombat.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/wombat-82NVS4na.webp"
-    ]
-  },
-  "public/themes/c/yoru.webp": {
-    "file": "assets/yoru-DFxkliJd.js",
-    "src": "public/themes/c/yoru.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/yoru-BZZaNXgm.webp"
-    ]
-  },
-  "public/themes/haskell/aquarium.webp": {
-    "file": "assets/aquarium-CcfezDGv.js",
-    "src": "public/themes/haskell/aquarium.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/aquarium-C6vESvHB.webp"
-    ]
-  },
-  "public/themes/haskell/ashes.webp": {
-    "file": "assets/ashes-CDad4kB1.js",
-    "src": "public/themes/haskell/ashes.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/ashes-CleVzOnV.webp"
-    ]
-  },
-  "public/themes/haskell/ayu_dark.webp": {
-    "file": "assets/ayu_dark-CN2mWC87.js",
-    "src": "public/themes/haskell/ayu_dark.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/ayu_dark-DKFK23we.webp"
-    ]
-  },
-  "public/themes/haskell/ayu_light.webp": {
-    "file": "assets/ayu_light-2iJu6R2A.js",
-    "src": "public/themes/haskell/ayu_light.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/ayu_light-DwLZiHxV.webp"
-    ]
-  },
-  "public/themes/haskell/bearded-arc.webp": {
-    "file": "assets/bearded-arc-KOdzlqDu.js",
-    "src": "public/themes/haskell/bearded-arc.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/bearded-arc-LfmN3nAc.webp"
-    ]
-  },
-  "public/themes/haskell/blossom_light.webp": {
-    "file": "assets/blossom_light-BQKnepXJ.js",
-    "src": "public/themes/haskell/blossom_light.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/blossom_light-D72EvKiw.webp"
-    ]
-  },
-  "public/themes/haskell/catppuccin.webp": {
-    "file": "assets/catppuccin-Bf2DKGgm.js",
-    "src": "public/themes/haskell/catppuccin.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/catppuccin-CU6JLy35.webp"
-    ]
-  },
-  "public/themes/haskell/chadracula.webp": {
-    "file": "assets/chadracula-Bi9WvUd5.js",
-    "src": "public/themes/haskell/chadracula.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/chadracula-CEywaYrc.webp"
-    ]
-  },
-  "public/themes/haskell/chadtain.webp": {
-    "file": "assets/chadtain-DLTKfYA2.js",
-    "src": "public/themes/haskell/chadtain.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/chadtain-chgIMicv.webp"
-    ]
-  },
-  "public/themes/haskell/chocolate.webp": {
-    "file": "assets/chocolate-CwuXksNP.js",
-    "src": "public/themes/haskell/chocolate.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/chocolate-B0BlbibA.webp"
-    ]
-  },
-  "public/themes/haskell/dark_horizon.webp": {
-    "file": "assets/dark_horizon-BUhbMNzW.js",
-    "src": "public/themes/haskell/dark_horizon.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/dark_horizon-BsVeNJzc.webp"
-    ]
-  },
-  "public/themes/haskell/decay.webp": {
-    "file": "assets/decay-B-hn-bD2.js",
-    "src": "public/themes/haskell/decay.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/decay-eiiPotk-.webp"
-    ]
-  },
-  "public/themes/haskell/doomchad.webp": {
-    "file": "assets/doomchad-2Gl5WNdU.js",
-    "src": "public/themes/haskell/doomchad.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/doomchad-CjaKCvRG.webp"
-    ]
-  },
-  "public/themes/haskell/everblush.webp": {
-    "file": "assets/everblush-CY1Ed4PU.js",
-    "src": "public/themes/haskell/everblush.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/everblush-CTH80NFt.webp"
-    ]
-  },
-  "public/themes/haskell/everforest.webp": {
-    "file": "assets/everforest-D9mnCqAB.js",
-    "src": "public/themes/haskell/everforest.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/everforest-CvXKbugq.webp"
-    ]
-  },
-  "public/themes/haskell/everforest_light.webp": {
-    "file": "assets/everforest_light-bUTZEof9.js",
-    "src": "public/themes/haskell/everforest_light.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/everforest_light-C9YtEAK_.webp"
-    ]
-  },
-  "public/themes/haskell/falcon.webp": {
-    "file": "assets/falcon-BFXwxnkg.js",
-    "src": "public/themes/haskell/falcon.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/falcon-DP1CCqL7.webp"
-    ]
-  },
-  "public/themes/haskell/gatekeeper.webp": {
-    "file": "assets/gatekeeper-CoKDeND4.js",
-    "src": "public/themes/haskell/gatekeeper.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/gatekeeper-C2PPhnjo.webp"
-    ]
-  },
-  "public/themes/haskell/github_dark.webp": {
-    "file": "assets/github_dark-C7kJ11Pr.js",
-    "src": "public/themes/haskell/github_dark.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/github_dark-DPevu3Lu.webp"
-    ]
-  },
-  "public/themes/haskell/github_light.webp": {
-    "file": "assets/github_light-BbwVqYDN.js",
-    "src": "public/themes/haskell/github_light.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/github_light-CJTB6wzq.webp"
-    ]
-  },
-  "public/themes/haskell/gruvbox.webp": {
-    "file": "assets/gruvbox-DASvJkY3.js",
-    "src": "public/themes/haskell/gruvbox.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/gruvbox-BgZ4H3ic.webp"
-    ]
-  },
-  "public/themes/haskell/gruvbox_light.webp": {
-    "file": "assets/gruvbox_light-ClIUQUai.js",
-    "src": "public/themes/haskell/gruvbox_light.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/gruvbox_light-C_lsIgeG.webp"
-    ]
-  },
-  "public/themes/haskell/gruvchad.webp": {
-    "file": "assets/gruvchad-r9uwRLRy.js",
-    "src": "public/themes/haskell/gruvchad.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/gruvchad-BJ0bQDCI.webp"
-    ]
-  },
-  "public/themes/haskell/jellybeans.webp": {
-    "file": "assets/jellybeans-Dgqc2UMQ.js",
-    "src": "public/themes/haskell/jellybeans.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/jellybeans-CxafWUSr.webp"
-    ]
-  },
-  "public/themes/haskell/kanagawa.webp": {
-    "file": "assets/kanagawa-D9Ydk7lO.js",
-    "src": "public/themes/haskell/kanagawa.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/kanagawa-oUuCjDU4.webp"
-    ]
-  },
-  "public/themes/haskell/melange.webp": {
-    "file": "assets/melange-Hmwedn6s.js",
-    "src": "public/themes/haskell/melange.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/melange-CblDVSJ3.webp"
-    ]
-  },
-  "public/themes/haskell/monekai.webp": {
-    "file": "assets/monekai-ifMxLrMz.js",
-    "src": "public/themes/haskell/monekai.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/monekai-COoz1rc2.webp"
-    ]
-  },
-  "public/themes/haskell/monochrome.webp": {
-    "file": "assets/monochrome-BxMc_HOP.js",
-    "src": "public/themes/haskell/monochrome.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/monochrome-pej6ojTg.webp"
-    ]
-  },
-  "public/themes/haskell/mountain.webp": {
-    "file": "assets/mountain-DMye3TIa.js",
-    "src": "public/themes/haskell/mountain.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/mountain-C9V0D12D.webp"
-    ]
-  },
-  "public/themes/haskell/nightfox.webp": {
-    "file": "assets/nightfox-r2KXGNim.js",
-    "src": "public/themes/haskell/nightfox.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/nightfox-k1A0zGoV.webp"
-    ]
-  },
-  "public/themes/haskell/nightlamp.webp": {
-    "file": "assets/nightlamp-IuwBUeN0.js",
-    "src": "public/themes/haskell/nightlamp.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/nightlamp-CuRF8kM7.webp"
-    ]
-  },
-  "public/themes/haskell/nightowl.webp": {
-    "file": "assets/nightowl-DcmxiVUp.js",
-    "src": "public/themes/haskell/nightowl.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/nightowl-DCOJaLws.webp"
-    ]
-  },
-  "public/themes/haskell/nord.webp": {
-    "file": "assets/nord-DWMwgfNh.js",
-    "src": "public/themes/haskell/nord.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/nord-CRmdwZOK.webp"
-    ]
-  },
-  "public/themes/haskell/oceanic-light.webp": {
-    "file": "assets/oceanic-light-CjrKDzej.js",
-    "src": "public/themes/haskell/oceanic-light.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/oceanic-light-CB0wAlO_.webp"
-    ]
-  },
-  "public/themes/haskell/oceanic-next.webp": {
-    "file": "assets/oceanic-next-BKrsRJOM.js",
-    "src": "public/themes/haskell/oceanic-next.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/oceanic-next-B_-ZywpO.webp"
-    ]
-  },
-  "public/themes/haskell/one_light.webp": {
-    "file": "assets/one_light-CQ4UUSKc.js",
-    "src": "public/themes/haskell/one_light.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/one_light-D4O48qBm.webp"
-    ]
-  },
-  "public/themes/haskell/onedark.webp": {
-    "file": "assets/onedark-D8-9oJfi.js",
-    "src": "public/themes/haskell/onedark.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/onedark-BfRKWPKQ.webp"
-    ]
-  },
-  "public/themes/haskell/onenord.webp": {
-    "file": "assets/onenord-DQDwf3Og.js",
-    "src": "public/themes/haskell/onenord.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/onenord-C5IVwsCi.webp"
-    ]
-  },
-  "public/themes/haskell/onenord_light.webp": {
-    "file": "assets/onenord_light-BDw0Jzqp.js",
-    "src": "public/themes/haskell/onenord_light.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/onenord_light-DBuSY1ty.webp"
-    ]
-  },
-  "public/themes/haskell/oxocarbon.webp": {
-    "file": "assets/oxocarbon-2iG6io7f.js",
-    "src": "public/themes/haskell/oxocarbon.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/oxocarbon-CkGDJhw-.webp"
-    ]
-  },
-  "public/themes/haskell/palenight.webp": {
-    "file": "assets/palenight-BKMwr87h.js",
-    "src": "public/themes/haskell/palenight.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/palenight-DFptsv1f.webp"
-    ]
-  },
-  "public/themes/haskell/pastelDark.webp": {
-    "file": "assets/pastelDark-CpMhaPqi.js",
-    "src": "public/themes/haskell/pastelDark.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/pastelDark-Cj7fxpx6.webp"
-    ]
-  },
-  "public/themes/haskell/pastelbeans.webp": {
-    "file": "assets/pastelbeans-1Eyo232Y.js",
-    "src": "public/themes/haskell/pastelbeans.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/pastelbeans-BOegtx0X.webp"
-    ]
-  },
-  "public/themes/haskell/penumbra_dark.webp": {
-    "file": "assets/penumbra_dark-B51NYDxG.js",
-    "src": "public/themes/haskell/penumbra_dark.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/penumbra_dark-DniMyGZ2.webp"
-    ]
-  },
-  "public/themes/haskell/penumbra_light.webp": {
-    "file": "assets/penumbra_light-CW-46ZEm.js",
-    "src": "public/themes/haskell/penumbra_light.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/penumbra_light-BErg2cc9.webp"
-    ]
-  },
-  "public/themes/haskell/radium.webp": {
-    "file": "assets/radium-DBC4jwdy.js",
-    "src": "public/themes/haskell/radium.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/radium-YVlA1jLc.webp"
-    ]
-  },
-  "public/themes/haskell/rosepine.webp": {
-    "file": "assets/rosepine-BJ0OavuN.js",
-    "src": "public/themes/haskell/rosepine.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/rosepine-CNsERo9K.webp"
-    ]
-  },
-  "public/themes/haskell/rxyhn.webp": {
-    "file": "assets/rxyhn-B1hCEAtl.js",
-    "src": "public/themes/haskell/rxyhn.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/rxyhn-D-xrKeUl.webp"
-    ]
-  },
-  "public/themes/haskell/solarized_dark.webp": {
-    "file": "assets/solarized_dark-Ckwpov-Y.js",
-    "src": "public/themes/haskell/solarized_dark.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/solarized_dark-KKkawiHL.webp"
-    ]
-  },
-  "public/themes/haskell/sweetpastel.webp": {
-    "file": "assets/sweetpastel-BWf9HNBn.js",
-    "src": "public/themes/haskell/sweetpastel.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/sweetpastel-hGQ3Jcnq.webp"
-    ]
-  },
-  "public/themes/haskell/tokyodark.webp": {
-    "file": "assets/tokyodark-D_KHmGVy.js",
-    "src": "public/themes/haskell/tokyodark.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/tokyodark-6VwymMAZ.webp"
-    ]
-  },
-  "public/themes/haskell/tokyonight.webp": {
-    "file": "assets/tokyonight-B5MF4Wll.js",
-    "src": "public/themes/haskell/tokyonight.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/tokyonight-CDRm7Kly.webp"
-    ]
-  },
-  "public/themes/haskell/tomorrow_night.webp": {
-    "file": "assets/tomorrow_night-DuXvbDDH.js",
-    "src": "public/themes/haskell/tomorrow_night.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/tomorrow_night-B21LMClT.webp"
-    ]
-  },
-  "public/themes/haskell/tundra.webp": {
-    "file": "assets/tundra-BiVSykDl.js",
-    "src": "public/themes/haskell/tundra.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/tundra-lMzmi-V6.webp"
-    ]
-  },
-  "public/themes/haskell/vscode_dark.webp": {
-    "file": "assets/vscode_dark-DaDimj90.js",
-    "src": "public/themes/haskell/vscode_dark.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/vscode_dark-UeXm1LXJ.webp"
-    ]
-  },
-  "public/themes/haskell/wombat.webp": {
-    "file": "assets/wombat-DVvDjrDV.js",
-    "src": "public/themes/haskell/wombat.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/wombat-lUgEw6xh.webp"
-    ]
-  },
-  "public/themes/haskell/yoru.webp": {
-    "file": "assets/yoru-Bdn9W54R.js",
-    "src": "public/themes/haskell/yoru.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/yoru-B2ONFllu.webp"
-    ]
-  },
-  "public/themes/javascript/aquarium.webp": {
-    "file": "assets/aquarium-DsdnUpMb.js",
-    "src": "public/themes/javascript/aquarium.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/aquarium-BRxf0XcV.webp"
-    ]
-  },
-  "public/themes/javascript/ashes.webp": {
-    "file": "assets/ashes-C1U5v_cK.js",
-    "src": "public/themes/javascript/ashes.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/ashes-BI6EfQAQ.webp"
-    ]
-  },
-  "public/themes/javascript/ayu_dark.webp": {
-    "file": "assets/ayu_dark-egAMjpHH.js",
-    "src": "public/themes/javascript/ayu_dark.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/ayu_dark-JNBbU8ml.webp"
-    ]
-  },
-  "public/themes/javascript/ayu_light.webp": {
-    "file": "assets/ayu_light-CCdyvu7e.js",
-    "src": "public/themes/javascript/ayu_light.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/ayu_light-BVTDjkpa.webp"
-    ]
-  },
-  "public/themes/javascript/bearded-arc.webp": {
-    "file": "assets/bearded-arc-VSgXasCz.js",
-    "src": "public/themes/javascript/bearded-arc.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/bearded-arc-BGQTKjqR.webp"
-    ]
-  },
-  "public/themes/javascript/blossom_light.webp": {
-    "file": "assets/blossom_light-Ct8jIaCe.js",
-    "src": "public/themes/javascript/blossom_light.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/blossom_light-cBDgwJN7.webp"
-    ]
-  },
-  "public/themes/javascript/catppuccin.webp": {
-    "file": "assets/catppuccin-D8RiTBom.js",
-    "src": "public/themes/javascript/catppuccin.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/catppuccin-C39Dams5.webp"
-    ]
-  },
-  "public/themes/javascript/chadracula.webp": {
-    "file": "assets/chadracula-D8hbuPpt.js",
-    "src": "public/themes/javascript/chadracula.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/chadracula-D0SLSXNj.webp"
-    ]
-  },
-  "public/themes/javascript/chadtain.webp": {
-    "file": "assets/chadtain-AFmvBUH-.js",
-    "src": "public/themes/javascript/chadtain.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/chadtain-wwMJ1GaN.webp"
-    ]
-  },
-  "public/themes/javascript/chocolate.webp": {
-    "file": "assets/chocolate-Dklbew74.js",
-    "src": "public/themes/javascript/chocolate.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/chocolate-Dn_sCJVF.webp"
-    ]
-  },
-  "public/themes/javascript/dark_horizon.webp": {
+  "public/themes/dark_horizon.webp": {
     "file": "assets/dark_horizon-DuWxCyBf.js",
-    "src": "public/themes/javascript/dark_horizon.webp",
+    "src": "public/themes/dark_horizon.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/dark_horizon-O80-YVyf.webp"
     ]
   },
-  "public/themes/javascript/decay.webp": {
+  "public/themes/decay.webp": {
     "file": "assets/decay-DhIXv20Y.js",
-    "src": "public/themes/javascript/decay.webp",
+    "src": "public/themes/decay.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/decay-S6VsHYU_.webp"
     ]
   },
-  "public/themes/javascript/doomchad.webp": {
+  "public/themes/doomchad.webp": {
     "file": "assets/doomchad-B8f10arS.js",
-    "src": "public/themes/javascript/doomchad.webp",
+    "src": "public/themes/doomchad.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/doomchad-BpP11dPy.webp"
     ]
   },
-  "public/themes/javascript/everblush.webp": {
+  "public/themes/everblush.webp": {
     "file": "assets/everblush-B_StBifN.js",
-    "src": "public/themes/javascript/everblush.webp",
+    "src": "public/themes/everblush.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/everblush-COrJG_as.webp"
     ]
   },
-  "public/themes/javascript/everforest.webp": {
+  "public/themes/everforest.webp": {
     "file": "assets/everforest-C9c3qgEn.js",
-    "src": "public/themes/javascript/everforest.webp",
+    "src": "public/themes/everforest.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/everforest-BKulk8wQ.webp"
     ]
   },
-  "public/themes/javascript/everforest_light.webp": {
+  "public/themes/everforest_light.webp": {
     "file": "assets/everforest_light-CypGsCib.js",
-    "src": "public/themes/javascript/everforest_light.webp",
+    "src": "public/themes/everforest_light.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/everforest_light-W_hSU1QN.webp"
     ]
   },
-  "public/themes/javascript/falcon.webp": {
+  "public/themes/falcon.webp": {
     "file": "assets/falcon-6FH1tmMn.js",
-    "src": "public/themes/javascript/falcon.webp",
+    "src": "public/themes/falcon.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/falcon-CBStHz_3.webp"
     ]
   },
-  "public/themes/javascript/gatekeeper.webp": {
+  "public/themes/flexoki-light.webp": {
+    "file": "assets/flexoki-light-C_4Ck3l-.js",
+    "src": "public/themes/flexoki-light.webp",
+    "isDynamicEntry": true,
+    "assets": [
+      "assets/flexoki-light-CwA8wSy5.webp"
+    ]
+  },
+  "public/themes/flexoki.webp": {
+    "file": "assets/flexoki-BI6yGQur.js",
+    "src": "public/themes/flexoki.webp",
+    "isDynamicEntry": true,
+    "assets": [
+      "assets/flexoki-BAVG5kU3.webp"
+    ]
+  },
+  "public/themes/gatekeeper.webp": {
     "file": "assets/gatekeeper-DX_U53Wo.js",
-    "src": "public/themes/javascript/gatekeeper.webp",
+    "src": "public/themes/gatekeeper.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/gatekeeper-DdcfUhO6.webp"
     ]
   },
-  "public/themes/javascript/github_dark.webp": {
+  "public/themes/github_dark.webp": {
     "file": "assets/github_dark-tWWI88ks.js",
-    "src": "public/themes/javascript/github_dark.webp",
+    "src": "public/themes/github_dark.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/github_dark-DQ6ZR8M3.webp"
     ]
   },
-  "public/themes/javascript/github_light.webp": {
+  "public/themes/github_light.webp": {
     "file": "assets/github_light-DK2Q5DQF.js",
-    "src": "public/themes/javascript/github_light.webp",
+    "src": "public/themes/github_light.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/github_light-DCURK-18.webp"
     ]
   },
-  "public/themes/javascript/gruvbox.webp": {
+  "public/themes/gruvbox.webp": {
     "file": "assets/gruvbox-cXMXR_fs.js",
-    "src": "public/themes/javascript/gruvbox.webp",
+    "src": "public/themes/gruvbox.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/gruvbox-B_QbmR-c.webp"
     ]
   },
-  "public/themes/javascript/gruvbox_light.webp": {
+  "public/themes/gruvbox_light.webp": {
     "file": "assets/gruvbox_light-Dj0JMI70.js",
-    "src": "public/themes/javascript/gruvbox_light.webp",
+    "src": "public/themes/gruvbox_light.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/gruvbox_light-DvhwvGzQ.webp"
     ]
   },
-  "public/themes/javascript/gruvchad.webp": {
+  "public/themes/gruvchad.webp": {
     "file": "assets/gruvchad-PgXDbk9M.js",
-    "src": "public/themes/javascript/gruvchad.webp",
+    "src": "public/themes/gruvchad.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/gruvchad-oM58JcZa.webp"
     ]
   },
-  "public/themes/javascript/jellybeans.webp": {
+  "public/themes/jabuti.webp": {
+    "file": "assets/jabuti-DHCO64FL.js",
+    "src": "public/themes/jabuti.webp",
+    "isDynamicEntry": true,
+    "assets": [
+      "assets/jabuti-DmJqXlTS.webp"
+    ]
+  },
+  "public/themes/jellybeans.webp": {
     "file": "assets/jellybeans-C69Kan1A.js",
-    "src": "public/themes/javascript/jellybeans.webp",
+    "src": "public/themes/jellybeans.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/jellybeans-DevVlIp6.webp"
     ]
   },
-  "public/themes/javascript/kanagawa.webp": {
+  "public/themes/kanagawa.webp": {
     "file": "assets/kanagawa-CAl2AkOr.js",
-    "src": "public/themes/javascript/kanagawa.webp",
+    "src": "public/themes/kanagawa.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/kanagawa-iS86xnev.webp"
     ]
   },
-  "public/themes/javascript/melange.webp": {
-    "file": "assets/melange-DggF6AuS.js",
-    "src": "public/themes/javascript/melange.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/melange-DEtba_60.webp"
-    ]
-  },
-  "public/themes/javascript/monekai.webp": {
-    "file": "assets/monekai-BHiCSWDg.js",
-    "src": "public/themes/javascript/monekai.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/monekai-B1BpKP7g.webp"
-    ]
-  },
-  "public/themes/javascript/monochrome.webp": {
-    "file": "assets/monochrome-CgChB0R7.js",
-    "src": "public/themes/javascript/monochrome.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/monochrome-DaI5GRcd.webp"
-    ]
-  },
-  "public/themes/javascript/mountain.webp": {
-    "file": "assets/mountain-CiveCn_R.js",
-    "src": "public/themes/javascript/mountain.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/mountain-C3rKnTSU.webp"
-    ]
-  },
-  "public/themes/javascript/nightfox.webp": {
-    "file": "assets/nightfox-C6p3GnTi.js",
-    "src": "public/themes/javascript/nightfox.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/nightfox-Dh3wxn78.webp"
-    ]
-  },
-  "public/themes/javascript/nightlamp.webp": {
-    "file": "assets/nightlamp-CQ9AmXww.js",
-    "src": "public/themes/javascript/nightlamp.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/nightlamp-BHY63kfN.webp"
-    ]
-  },
-  "public/themes/javascript/nightowl.webp": {
-    "file": "assets/nightowl-C5j5_0fN.js",
-    "src": "public/themes/javascript/nightowl.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/nightowl-DWHSzovH.webp"
-    ]
-  },
-  "public/themes/javascript/nord.webp": {
-    "file": "assets/nord-C_XnesHU.js",
-    "src": "public/themes/javascript/nord.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/nord-CP5r-aIg.webp"
-    ]
-  },
-  "public/themes/javascript/oceanic-light.webp": {
-    "file": "assets/oceanic-light-NcTf5iqv.js",
-    "src": "public/themes/javascript/oceanic-light.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/oceanic-light-DMlMwX7v.webp"
-    ]
-  },
-  "public/themes/javascript/oceanic-next.webp": {
-    "file": "assets/oceanic-next-DpKrrqR_.js",
-    "src": "public/themes/javascript/oceanic-next.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/oceanic-next-tqBZAu8F.webp"
-    ]
-  },
-  "public/themes/javascript/one_light.webp": {
-    "file": "assets/one_light-OeMjuQlt.js",
-    "src": "public/themes/javascript/one_light.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/one_light-B2ptdd1D.webp"
-    ]
-  },
-  "public/themes/javascript/onedark.webp": {
-    "file": "assets/onedark-CX3HzAu0.js",
-    "src": "public/themes/javascript/onedark.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/onedark-rCHW7AU4.webp"
-    ]
-  },
-  "public/themes/javascript/onenord.webp": {
-    "file": "assets/onenord-U_vjTwh2.js",
-    "src": "public/themes/javascript/onenord.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/onenord-BAT19b9j.webp"
-    ]
-  },
-  "public/themes/javascript/onenord_light.webp": {
-    "file": "assets/onenord_light-4sRy2yOu.js",
-    "src": "public/themes/javascript/onenord_light.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/onenord_light-BRuf2dhH.webp"
-    ]
-  },
-  "public/themes/javascript/oxocarbon.webp": {
-    "file": "assets/oxocarbon-Jk58VpE-.js",
-    "src": "public/themes/javascript/oxocarbon.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/oxocarbon-BSnCgG45.webp"
-    ]
-  },
-  "public/themes/javascript/palenight.webp": {
-    "file": "assets/palenight-DLlSrK9R.js",
-    "src": "public/themes/javascript/palenight.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/palenight-pKEwP0WA.webp"
-    ]
-  },
-  "public/themes/javascript/pastelDark.webp": {
-    "file": "assets/pastelDark-DhjZ3GdS.js",
-    "src": "public/themes/javascript/pastelDark.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/pastelDark-BoYu84Ay.webp"
-    ]
-  },
-  "public/themes/javascript/pastelbeans.webp": {
-    "file": "assets/pastelbeans-DayoWNmO.js",
-    "src": "public/themes/javascript/pastelbeans.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/pastelbeans-C-wHO4EF.webp"
-    ]
-  },
-  "public/themes/javascript/penumbra_dark.webp": {
-    "file": "assets/penumbra_dark-DC7bJ4Yy.js",
-    "src": "public/themes/javascript/penumbra_dark.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/penumbra_dark-N9imPOy9.webp"
-    ]
-  },
-  "public/themes/javascript/penumbra_light.webp": {
-    "file": "assets/penumbra_light-B02-XkTO.js",
-    "src": "public/themes/javascript/penumbra_light.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/penumbra_light-B2Yi2ttT.webp"
-    ]
-  },
-  "public/themes/javascript/radium.webp": {
-    "file": "assets/radium-BF9qVXCB.js",
-    "src": "public/themes/javascript/radium.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/radium-B_uK_AoE.webp"
-    ]
-  },
-  "public/themes/javascript/rosepine.webp": {
-    "file": "assets/rosepine-NFEq0Hd2.js",
-    "src": "public/themes/javascript/rosepine.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/rosepine-CzIuS83o.webp"
-    ]
-  },
-  "public/themes/javascript/rxyhn.webp": {
-    "file": "assets/rxyhn-wcBJMS1p.js",
-    "src": "public/themes/javascript/rxyhn.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/rxyhn-C0iYjmyN.webp"
-    ]
-  },
-  "public/themes/javascript/solarized_dark.webp": {
-    "file": "assets/solarized_dark-P68475vJ.js",
-    "src": "public/themes/javascript/solarized_dark.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/solarized_dark-CmaXOYMR.webp"
-    ]
-  },
-  "public/themes/javascript/sweetpastel.webp": {
-    "file": "assets/sweetpastel-qlNGjRw0.js",
-    "src": "public/themes/javascript/sweetpastel.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/sweetpastel-D8Of5mdT.webp"
-    ]
-  },
-  "public/themes/javascript/tokyodark.webp": {
-    "file": "assets/tokyodark-9KXuYcQd.js",
-    "src": "public/themes/javascript/tokyodark.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/tokyodark-BJQsw8UM.webp"
-    ]
-  },
-  "public/themes/javascript/tokyonight.webp": {
-    "file": "assets/tokyonight-Mfw0GLhH.js",
-    "src": "public/themes/javascript/tokyonight.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/tokyonight-ODVnWQ-0.webp"
-    ]
-  },
-  "public/themes/javascript/tomorrow_night.webp": {
-    "file": "assets/tomorrow_night-DqXXyyL7.js",
-    "src": "public/themes/javascript/tomorrow_night.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/tomorrow_night-ZBpm2XHP.webp"
-    ]
-  },
-  "public/themes/javascript/tundra.webp": {
-    "file": "assets/tundra-CdYrrmK4.js",
-    "src": "public/themes/javascript/tundra.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/tundra-Bt4sTdbt.webp"
-    ]
-  },
-  "public/themes/javascript/vscode_dark.webp": {
-    "file": "assets/vscode_dark-kyPxC2nU.js",
-    "src": "public/themes/javascript/vscode_dark.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/vscode_dark-x9FvC9rp.webp"
-    ]
-  },
-  "public/themes/javascript/wombat.webp": {
-    "file": "assets/wombat-DCEv37uW.js",
-    "src": "public/themes/javascript/wombat.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/wombat-CWdalz9B.webp"
-    ]
-  },
-  "public/themes/javascript/yoru.webp": {
-    "file": "assets/yoru-DWL0zvfx.js",
-    "src": "public/themes/javascript/yoru.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/yoru-Iub-gVj5.webp"
-    ]
-  },
-  "public/themes/lua/aquarium.webp": {
-    "file": "assets/aquarium-B1YSpdxA.js",
-    "src": "public/themes/lua/aquarium.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/aquarium-Dw8G_OnR.webp"
-    ]
-  },
-  "public/themes/lua/ashes.webp": {
-    "file": "assets/ashes-CVXl4YZq.js",
-    "src": "public/themes/lua/ashes.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/ashes-C_0QZkTF.webp"
-    ]
-  },
-  "public/themes/lua/ayu_dark.webp": {
-    "file": "assets/ayu_dark-NkaYi_I8.js",
-    "src": "public/themes/lua/ayu_dark.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/ayu_dark-R0YsjADm.webp"
-    ]
-  },
-  "public/themes/lua/ayu_light.webp": {
-    "file": "assets/ayu_light-D7OSZbSW.js",
-    "src": "public/themes/lua/ayu_light.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/ayu_light-BU3xFdOi.webp"
-    ]
-  },
-  "public/themes/lua/bearded-arc.webp": {
-    "file": "assets/bearded-arc-D8o90IIl.js",
-    "src": "public/themes/lua/bearded-arc.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/bearded-arc-DtI5U5YD.webp"
-    ]
-  },
-  "public/themes/lua/blossom_light.webp": {
-    "file": "assets/blossom_light-CjFrZw-s.js",
-    "src": "public/themes/lua/blossom_light.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/blossom_light-Dtp9Km24.webp"
-    ]
-  },
-  "public/themes/lua/catppuccin.webp": {
-    "file": "assets/catppuccin-Bvzcujmo.js",
-    "src": "public/themes/lua/catppuccin.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/catppuccin-52YFiI3N.webp"
-    ]
-  },
-  "public/themes/lua/chadracula.webp": {
-    "file": "assets/chadracula-BCWiWSwk.js",
-    "src": "public/themes/lua/chadracula.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/chadracula-BoykU5vD.webp"
-    ]
-  },
-  "public/themes/lua/chadtain.webp": {
-    "file": "assets/chadtain-Bss7SOb5.js",
-    "src": "public/themes/lua/chadtain.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/chadtain-Dmt1tLWp.webp"
-    ]
-  },
-  "public/themes/lua/chocolate.webp": {
-    "file": "assets/chocolate-C-JqcqeO.js",
-    "src": "public/themes/lua/chocolate.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/chocolate-CnugR7Ma.webp"
-    ]
-  },
-  "public/themes/lua/dark_horizon.webp": {
-    "file": "assets/dark_horizon-BdZrUz2Y.js",
-    "src": "public/themes/lua/dark_horizon.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/dark_horizon-xTWxUY-C.webp"
-    ]
-  },
-  "public/themes/lua/decay.webp": {
-    "file": "assets/decay-BO2ndBfz.js",
-    "src": "public/themes/lua/decay.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/decay-m_3_mWFQ.webp"
-    ]
-  },
-  "public/themes/lua/doomchad.webp": {
-    "file": "assets/doomchad-DQ_YRzib.js",
-    "src": "public/themes/lua/doomchad.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/doomchad-pFnVSxzT.webp"
-    ]
-  },
-  "public/themes/lua/everblush.webp": {
-    "file": "assets/everblush-pyjXE8IV.js",
-    "src": "public/themes/lua/everblush.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/everblush-Dxk7kNOF.webp"
-    ]
-  },
-  "public/themes/lua/everforest.webp": {
-    "file": "assets/everforest-DCtyUe5v.js",
-    "src": "public/themes/lua/everforest.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/everforest-hGzI79lX.webp"
-    ]
-  },
-  "public/themes/lua/everforest_light.webp": {
-    "file": "assets/everforest_light-De8_1W4A.js",
-    "src": "public/themes/lua/everforest_light.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/everforest_light-DWgZk16B.webp"
-    ]
-  },
-  "public/themes/lua/falcon.webp": {
-    "file": "assets/falcon-D2vdtYAI.js",
-    "src": "public/themes/lua/falcon.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/falcon-Cdkw_ba9.webp"
-    ]
-  },
-  "public/themes/lua/gatekeeper.webp": {
-    "file": "assets/gatekeeper-Fg_OELF4.js",
-    "src": "public/themes/lua/gatekeeper.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/gatekeeper-D3KhlQHf.webp"
-    ]
-  },
-  "public/themes/lua/github_dark.webp": {
-    "file": "assets/github_dark-lA6aJuae.js",
-    "src": "public/themes/lua/github_dark.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/github_dark-DV5pXsQ6.webp"
-    ]
-  },
-  "public/themes/lua/github_light.webp": {
-    "file": "assets/github_light-Cwba8RHa.js",
-    "src": "public/themes/lua/github_light.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/github_light-TCWcL7Ts.webp"
-    ]
-  },
-  "public/themes/lua/gruvbox.webp": {
-    "file": "assets/gruvbox-BpGkZ1uP.js",
-    "src": "public/themes/lua/gruvbox.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/gruvbox-CmLZLulx.webp"
-    ]
-  },
-  "public/themes/lua/gruvbox_light.webp": {
-    "file": "assets/gruvbox_light-BoFXA-Gi.js",
-    "src": "public/themes/lua/gruvbox_light.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/gruvbox_light-DoUbbt1H.webp"
-    ]
-  },
-  "public/themes/lua/gruvchad.webp": {
-    "file": "assets/gruvchad-NQ5sbZgH.js",
-    "src": "public/themes/lua/gruvchad.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/gruvchad-mVyiGk79.webp"
-    ]
-  },
-  "public/themes/lua/jellybeans.webp": {
-    "file": "assets/jellybeans-DbIsYcIJ.js",
-    "src": "public/themes/lua/jellybeans.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/jellybeans-CYyBRfoA.webp"
-    ]
-  },
-  "public/themes/lua/kanagawa.webp": {
-    "file": "assets/kanagawa-BH1cNaPN.js",
-    "src": "public/themes/lua/kanagawa.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/kanagawa-C5Z3xjPE.webp"
-    ]
-  },
-  "public/themes/lua/melange.webp": {
+  "public/themes/melange.webp": {
     "file": "assets/melange-ChAk3wcY.js",
-    "src": "public/themes/lua/melange.webp",
+    "src": "public/themes/melange.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/melange-CzoeCKPw.webp"
     ]
   },
-  "public/themes/lua/monekai.webp": {
+  "public/themes/mito-laser.webp": {
+    "file": "assets/mito-laser-Dw1Zun4Z.js",
+    "src": "public/themes/mito-laser.webp",
+    "isDynamicEntry": true,
+    "assets": [
+      "assets/mito-laser-mi41h_dy.webp"
+    ]
+  },
+  "public/themes/monekai.webp": {
     "file": "assets/monekai-DqQ0Lbq7.js",
-    "src": "public/themes/lua/monekai.webp",
+    "src": "public/themes/monekai.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/monekai-8-IvMgVv.webp"
     ]
   },
-  "public/themes/lua/monochrome.webp": {
+  "public/themes/monochrome.webp": {
     "file": "assets/monochrome-DfJFMyh6.js",
-    "src": "public/themes/lua/monochrome.webp",
+    "src": "public/themes/monochrome.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/monochrome-CvdYXH5s.webp"
     ]
   },
-  "public/themes/lua/mountain.webp": {
+  "public/themes/mountain.webp": {
     "file": "assets/mountain-DFEqRtnE.js",
-    "src": "public/themes/lua/mountain.webp",
+    "src": "public/themes/mountain.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/mountain-Ushi-1xU.webp"
     ]
   },
-  "public/themes/lua/nightfox.webp": {
+  "public/themes/nano-light.webp": {
+    "file": "assets/nano-light-BWJbtj1I.js",
+    "src": "public/themes/nano-light.webp",
+    "isDynamicEntry": true,
+    "assets": [
+      "assets/nano-light-D_mKZauV.webp"
+    ]
+  },
+  "public/themes/nightfox.webp": {
     "file": "assets/nightfox-DAtk8_Ib.js",
-    "src": "public/themes/lua/nightfox.webp",
+    "src": "public/themes/nightfox.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/nightfox-CB_3XsSW.webp"
     ]
   },
-  "public/themes/lua/nightlamp.webp": {
-    "file": "assets/nightlamp-BNnJG_Of.js",
-    "src": "public/themes/lua/nightlamp.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/nightlamp-BXatwUo3.webp"
-    ]
-  },
-  "public/themes/lua/nightowl.webp": {
-    "file": "assets/nightowl-DczhLiSx.js",
-    "src": "public/themes/lua/nightowl.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/nightowl-Dw4yj7qm.webp"
-    ]
-  },
-  "public/themes/lua/nord.webp": {
-    "file": "assets/nord-CXduDpac.js",
-    "src": "public/themes/lua/nord.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/nord-Lso6vRQj.webp"
-    ]
-  },
-  "public/themes/lua/oceanic-light.webp": {
-    "file": "assets/oceanic-light-DTvG5VkD.js",
-    "src": "public/themes/lua/oceanic-light.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/oceanic-light-DlUXngZ5.webp"
-    ]
-  },
-  "public/themes/lua/oceanic-next.webp": {
-    "file": "assets/oceanic-next-DwrM_DIB.js",
-    "src": "public/themes/lua/oceanic-next.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/oceanic-next-Dq8ZtepT.webp"
-    ]
-  },
-  "public/themes/lua/one_light.webp": {
-    "file": "assets/one_light-BhJPqSrr.js",
-    "src": "public/themes/lua/one_light.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/one_light-CHZvPW7w.webp"
-    ]
-  },
-  "public/themes/lua/onedark.webp": {
-    "file": "assets/onedark-CQ3n6-MF.js",
-    "src": "public/themes/lua/onedark.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/onedark-CSMCtc6U.webp"
-    ]
-  },
-  "public/themes/lua/onenord.webp": {
-    "file": "assets/onenord-CAqJPDgP.js",
-    "src": "public/themes/lua/onenord.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/onenord-Dvavodwn.webp"
-    ]
-  },
-  "public/themes/lua/onenord_light.webp": {
-    "file": "assets/onenord_light-D9oJhO9F.js",
-    "src": "public/themes/lua/onenord_light.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/onenord_light-BmzF20wq.webp"
-    ]
-  },
-  "public/themes/lua/oxocarbon.webp": {
-    "file": "assets/oxocarbon-CAbrg13E.js",
-    "src": "public/themes/lua/oxocarbon.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/oxocarbon-0ao-dJqJ.webp"
-    ]
-  },
-  "public/themes/lua/palenight.webp": {
-    "file": "assets/palenight-BWV6GpZf.js",
-    "src": "public/themes/lua/palenight.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/palenight-D9FGZuiA.webp"
-    ]
-  },
-  "public/themes/lua/pastelDark.webp": {
-    "file": "assets/pastelDark-BXCq1JAn.js",
-    "src": "public/themes/lua/pastelDark.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/pastelDark-BprlZsQJ.webp"
-    ]
-  },
-  "public/themes/lua/pastelbeans.webp": {
-    "file": "assets/pastelbeans-BnkWkMXp.js",
-    "src": "public/themes/lua/pastelbeans.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/pastelbeans-SYDFwblQ.webp"
-    ]
-  },
-  "public/themes/lua/penumbra_dark.webp": {
-    "file": "assets/penumbra_dark-Cfv3rLz2.js",
-    "src": "public/themes/lua/penumbra_dark.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/penumbra_dark-ChcCwyn1.webp"
-    ]
-  },
-  "public/themes/lua/penumbra_light.webp": {
-    "file": "assets/penumbra_light-C_6KOCzv.js",
-    "src": "public/themes/lua/penumbra_light.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/penumbra_light-DLVfPl4H.webp"
-    ]
-  },
-  "public/themes/lua/radium.webp": {
-    "file": "assets/radium-DHanifX0.js",
-    "src": "public/themes/lua/radium.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/radium-DbwKs4g6.webp"
-    ]
-  },
-  "public/themes/lua/rosepine.webp": {
-    "file": "assets/rosepine-B_4NTSrS.js",
-    "src": "public/themes/lua/rosepine.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/rosepine-C_CMv9le.webp"
-    ]
-  },
-  "public/themes/lua/rxyhn.webp": {
-    "file": "assets/rxyhn-C_tKmFuT.js",
-    "src": "public/themes/lua/rxyhn.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/rxyhn-li9as5_B.webp"
-    ]
-  },
-  "public/themes/lua/solarized_dark.webp": {
-    "file": "assets/solarized_dark-7b6wryeH.js",
-    "src": "public/themes/lua/solarized_dark.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/solarized_dark-Dwuxh3Fl.webp"
-    ]
-  },
-  "public/themes/lua/sweetpastel.webp": {
-    "file": "assets/sweetpastel-7_iUEOdR.js",
-    "src": "public/themes/lua/sweetpastel.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/sweetpastel-BL8YL0gG.webp"
-    ]
-  },
-  "public/themes/lua/tokyodark.webp": {
-    "file": "assets/tokyodark-BNaXh2XQ.js",
-    "src": "public/themes/lua/tokyodark.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/tokyodark-CndNNn_B.webp"
-    ]
-  },
-  "public/themes/lua/tokyonight.webp": {
-    "file": "assets/tokyonight-DBNBYaFH.js",
-    "src": "public/themes/lua/tokyonight.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/tokyonight-LPhYAd-Z.webp"
-    ]
-  },
-  "public/themes/lua/tomorrow_night.webp": {
-    "file": "assets/tomorrow_night-DE6Uel7L.js",
-    "src": "public/themes/lua/tomorrow_night.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/tomorrow_night-CGbyd03p.webp"
-    ]
-  },
-  "public/themes/lua/tundra.webp": {
-    "file": "assets/tundra-C533-iZz.js",
-    "src": "public/themes/lua/tundra.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/tundra-D5gAOyiw.webp"
-    ]
-  },
-  "public/themes/lua/vscode_dark.webp": {
-    "file": "assets/vscode_dark-c-l1jX-R.js",
-    "src": "public/themes/lua/vscode_dark.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/vscode_dark-DBI0Mbto.webp"
-    ]
-  },
-  "public/themes/lua/wombat.webp": {
-    "file": "assets/wombat-XGj21FYo.js",
-    "src": "public/themes/lua/wombat.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/wombat-BPUkvctd.webp"
-    ]
-  },
-  "public/themes/lua/yoru.webp": {
-    "file": "assets/yoru-CCrwHEUD.js",
-    "src": "public/themes/lua/yoru.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/yoru-CcTmo-qK.webp"
-    ]
-  },
-  "public/themes/python/aquarium.webp": {
-    "file": "assets/aquarium-Dbogi9AH.js",
-    "src": "public/themes/python/aquarium.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/aquarium-PbG6Zcnt.webp"
-    ]
-  },
-  "public/themes/python/ashes.webp": {
-    "file": "assets/ashes-Bb_ITAdN.js",
-    "src": "public/themes/python/ashes.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/ashes-D03Lb9V_.webp"
-    ]
-  },
-  "public/themes/python/ayu_dark.webp": {
-    "file": "assets/ayu_dark-BTR4b7Em.js",
-    "src": "public/themes/python/ayu_dark.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/ayu_dark-CLyoulnI.webp"
-    ]
-  },
-  "public/themes/python/ayu_light.webp": {
-    "file": "assets/ayu_light-0OzN5s4k.js",
-    "src": "public/themes/python/ayu_light.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/ayu_light-BvZh1ycn.webp"
-    ]
-  },
-  "public/themes/python/bearded-arc.webp": {
-    "file": "assets/bearded-arc-Y9Lg6HHg.js",
-    "src": "public/themes/python/bearded-arc.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/bearded-arc-1koHoLq1.webp"
-    ]
-  },
-  "public/themes/python/blossom_light.webp": {
-    "file": "assets/blossom_light-CGaNQu_K.js",
-    "src": "public/themes/python/blossom_light.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/blossom_light-CzkVo-f3.webp"
-    ]
-  },
-  "public/themes/python/catppuccin.webp": {
-    "file": "assets/catppuccin-BBb6DIyZ.js",
-    "src": "public/themes/python/catppuccin.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/catppuccin-ADwx0_sJ.webp"
-    ]
-  },
-  "public/themes/python/chadracula.webp": {
-    "file": "assets/chadracula-BrJcJmHf.js",
-    "src": "public/themes/python/chadracula.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/chadracula-DRp_i6no.webp"
-    ]
-  },
-  "public/themes/python/chadtain.webp": {
-    "file": "assets/chadtain-VTM725pM.js",
-    "src": "public/themes/python/chadtain.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/chadtain-Ciqo4vSn.webp"
-    ]
-  },
-  "public/themes/python/chocolate.webp": {
-    "file": "assets/chocolate-Dz6s_mVn.js",
-    "src": "public/themes/python/chocolate.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/chocolate-DpCavYp8.webp"
-    ]
-  },
-  "public/themes/python/dark_horizon.webp": {
-    "file": "assets/dark_horizon-DHyaLghU.js",
-    "src": "public/themes/python/dark_horizon.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/dark_horizon-72YOhjob.webp"
-    ]
-  },
-  "public/themes/python/decay.webp": {
-    "file": "assets/decay-B0LcErtd.js",
-    "src": "public/themes/python/decay.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/decay-BGTH7eT8.webp"
-    ]
-  },
-  "public/themes/python/doomchad.webp": {
-    "file": "assets/doomchad-DgJ-w2Rh.js",
-    "src": "public/themes/python/doomchad.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/doomchad-CrRWMEsK.webp"
-    ]
-  },
-  "public/themes/python/everblush.webp": {
-    "file": "assets/everblush-DncV1bAT.js",
-    "src": "public/themes/python/everblush.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/everblush-DjJmarmA.webp"
-    ]
-  },
-  "public/themes/python/everforest.webp": {
-    "file": "assets/everforest-CqQVfB1w.js",
-    "src": "public/themes/python/everforest.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/everforest-DWGZzPXE.webp"
-    ]
-  },
-  "public/themes/python/everforest_light.webp": {
-    "file": "assets/everforest_light-DFJx76wf.js",
-    "src": "public/themes/python/everforest_light.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/everforest_light-B_40dzaq.webp"
-    ]
-  },
-  "public/themes/python/falcon.webp": {
-    "file": "assets/falcon-D-I7pcdl.js",
-    "src": "public/themes/python/falcon.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/falcon-B5OU-9WQ.webp"
-    ]
-  },
-  "public/themes/python/gatekeeper.webp": {
-    "file": "assets/gatekeeper-C1-lh6DS.js",
-    "src": "public/themes/python/gatekeeper.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/gatekeeper-xxz7pqpe.webp"
-    ]
-  },
-  "public/themes/python/github_dark.webp": {
-    "file": "assets/github_dark-DIN5sxB3.js",
-    "src": "public/themes/python/github_dark.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/github_dark-BkNymWMJ.webp"
-    ]
-  },
-  "public/themes/python/github_light.webp": {
-    "file": "assets/github_light-Byiu4MmE.js",
-    "src": "public/themes/python/github_light.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/github_light-F833SbyE.webp"
-    ]
-  },
-  "public/themes/python/gruvbox.webp": {
-    "file": "assets/gruvbox-Cbcua4uh.js",
-    "src": "public/themes/python/gruvbox.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/gruvbox-Bu9U57wl.webp"
-    ]
-  },
-  "public/themes/python/gruvbox_light.webp": {
-    "file": "assets/gruvbox_light-DL7YdYER.js",
-    "src": "public/themes/python/gruvbox_light.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/gruvbox_light-DSaH5hnd.webp"
-    ]
-  },
-  "public/themes/python/gruvchad.webp": {
-    "file": "assets/gruvchad-iEPtrBVC.js",
-    "src": "public/themes/python/gruvchad.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/gruvchad-C2vbtKuH.webp"
-    ]
-  },
-  "public/themes/python/jellybeans.webp": {
-    "file": "assets/jellybeans-V0sxQaMG.js",
-    "src": "public/themes/python/jellybeans.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/jellybeans-DLuslQm3.webp"
-    ]
-  },
-  "public/themes/python/kanagawa.webp": {
-    "file": "assets/kanagawa-CKz9OHvk.js",
-    "src": "public/themes/python/kanagawa.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/kanagawa-1F8G6M1n.webp"
-    ]
-  },
-  "public/themes/python/melange.webp": {
-    "file": "assets/melange-CDYd8H6e.js",
-    "src": "public/themes/python/melange.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/melange-CfX91Ph8.webp"
-    ]
-  },
-  "public/themes/python/monekai.webp": {
-    "file": "assets/monekai-C6nbL3iJ.js",
-    "src": "public/themes/python/monekai.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/monekai-B8-Q7Vgx.webp"
-    ]
-  },
-  "public/themes/python/monochrome.webp": {
-    "file": "assets/monochrome-DS6amyha.js",
-    "src": "public/themes/python/monochrome.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/monochrome-A_4Ng790.webp"
-    ]
-  },
-  "public/themes/python/mountain.webp": {
-    "file": "assets/mountain-CQ2OgNe-.js",
-    "src": "public/themes/python/mountain.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/mountain-DYFg3Nol.webp"
-    ]
-  },
-  "public/themes/python/nightfox.webp": {
-    "file": "assets/nightfox-noWzQF9F.js",
-    "src": "public/themes/python/nightfox.webp",
-    "isDynamicEntry": true,
-    "assets": [
-      "assets/nightfox-DapaHliW.webp"
-    ]
-  },
-  "public/themes/python/nightlamp.webp": {
+  "public/themes/nightlamp.webp": {
     "file": "assets/nightlamp-BZ_mlSp0.js",
-    "src": "public/themes/python/nightlamp.webp",
+    "src": "public/themes/nightlamp.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/nightlamp-DNa-5H3T.webp"
     ]
   },
-  "public/themes/python/nightowl.webp": {
+  "public/themes/nightowl.webp": {
     "file": "assets/nightowl-6x1JaVcS.js",
-    "src": "public/themes/python/nightowl.webp",
+    "src": "public/themes/nightowl.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/nightowl-8g812nTh.webp"
     ]
   },
-  "public/themes/python/nord.webp": {
+  "public/themes/nord.webp": {
     "file": "assets/nord-DI5jblu1.js",
-    "src": "public/themes/python/nord.webp",
+    "src": "public/themes/nord.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/nord-DmRE-5do.webp"
     ]
   },
-  "public/themes/python/oceanic-light.webp": {
+  "public/themes/oceanic-light.webp": {
     "file": "assets/oceanic-light-BFk0ZJQm.js",
-    "src": "public/themes/python/oceanic-light.webp",
+    "src": "public/themes/oceanic-light.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/oceanic-light-BuV8ZFZl.webp"
     ]
   },
-  "public/themes/python/oceanic-next.webp": {
+  "public/themes/oceanic-next.webp": {
     "file": "assets/oceanic-next-CkxpBoON.js",
-    "src": "public/themes/python/oceanic-next.webp",
+    "src": "public/themes/oceanic-next.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/oceanic-next-CGMpMuye.webp"
     ]
   },
-  "public/themes/python/one_light.webp": {
+  "public/themes/one_light.webp": {
     "file": "assets/one_light-Bv8Y0BHv.js",
-    "src": "public/themes/python/one_light.webp",
+    "src": "public/themes/one_light.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/one_light-B0-i1QhF.webp"
     ]
   },
-  "public/themes/python/onedark.webp": {
+  "public/themes/onedark.webp": {
     "file": "assets/onedark-DotQcCck.js",
-    "src": "public/themes/python/onedark.webp",
+    "src": "public/themes/onedark.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/onedark-DW5PLld4.webp"
     ]
   },
-  "public/themes/python/onenord.webp": {
+  "public/themes/onenord.webp": {
     "file": "assets/onenord-mvfzAW9b.js",
-    "src": "public/themes/python/onenord.webp",
+    "src": "public/themes/onenord.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/onenord-DHXPZym2.webp"
     ]
   },
-  "public/themes/python/onenord_light.webp": {
+  "public/themes/onenord_light.webp": {
     "file": "assets/onenord_light-BnXzK1uR.js",
-    "src": "public/themes/python/onenord_light.webp",
+    "src": "public/themes/onenord_light.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/onenord_light-7tznEIWw.webp"
     ]
   },
-  "public/themes/python/oxocarbon.webp": {
+  "public/themes/oxocarbon.webp": {
     "file": "assets/oxocarbon-Dq2oWp6j.js",
-    "src": "public/themes/python/oxocarbon.webp",
+    "src": "public/themes/oxocarbon.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/oxocarbon-BFDM-lLS.webp"
     ]
   },
-  "public/themes/python/palenight.webp": {
+  "public/themes/palenight.webp": {
     "file": "assets/palenight-5-EXmUjp.js",
-    "src": "public/themes/python/palenight.webp",
+    "src": "public/themes/palenight.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/palenight-CpGkg6gy.webp"
     ]
   },
-  "public/themes/python/pastelDark.webp": {
+  "public/themes/pastelDark.webp": {
     "file": "assets/pastelDark-CJBkjo82.js",
-    "src": "public/themes/python/pastelDark.webp",
+    "src": "public/themes/pastelDark.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/pastelDark-ImvIwAAJ.webp"
     ]
   },
-  "public/themes/python/pastelbeans.webp": {
+  "public/themes/pastelbeans.webp": {
     "file": "assets/pastelbeans-I_hPxfIj.js",
-    "src": "public/themes/python/pastelbeans.webp",
+    "src": "public/themes/pastelbeans.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/pastelbeans-NEzz6JTS.webp"
     ]
   },
-  "public/themes/python/penumbra_dark.webp": {
+  "public/themes/penumbra_dark.webp": {
     "file": "assets/penumbra_dark-BajsAbjR.js",
-    "src": "public/themes/python/penumbra_dark.webp",
+    "src": "public/themes/penumbra_dark.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/penumbra_dark-DGwA8J32.webp"
     ]
   },
-  "public/themes/python/penumbra_light.webp": {
+  "public/themes/penumbra_light.webp": {
     "file": "assets/penumbra_light-R6vaJ2dR.js",
-    "src": "public/themes/python/penumbra_light.webp",
+    "src": "public/themes/penumbra_light.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/penumbra_light-BPG5AuQN.webp"
     ]
   },
-  "public/themes/python/radium.webp": {
+  "public/themes/poimandres.webp": {
+    "file": "assets/poimandres-CLZX257g.js",
+    "src": "public/themes/poimandres.webp",
+    "isDynamicEntry": true,
+    "assets": [
+      "assets/poimandres-9OX8In2y.webp"
+    ]
+  },
+  "public/themes/radium.webp": {
     "file": "assets/radium-A6e_Futp.js",
-    "src": "public/themes/python/radium.webp",
+    "src": "public/themes/radium.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/radium-MJ0r83Nf.webp"
     ]
   },
-  "public/themes/python/rosepine.webp": {
+  "public/themes/rosepine.webp": {
     "file": "assets/rosepine-BeqDKTOJ.js",
-    "src": "public/themes/python/rosepine.webp",
+    "src": "public/themes/rosepine.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/rosepine-BrEsPx95.webp"
     ]
   },
-  "public/themes/python/rxyhn.webp": {
+  "public/themes/rxyhn.webp": {
     "file": "assets/rxyhn-BILN_knW.js",
-    "src": "public/themes/python/rxyhn.webp",
+    "src": "public/themes/rxyhn.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/rxyhn-B1EcF4cc.webp"
     ]
   },
-  "public/themes/python/solarized_dark.webp": {
+  "public/themes/solarized_dark.webp": {
     "file": "assets/solarized_dark-CX_hDmAR.js",
-    "src": "public/themes/python/solarized_dark.webp",
+    "src": "public/themes/solarized_dark.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/solarized_dark-BdnGNCxr.webp"
     ]
   },
-  "public/themes/python/sweetpastel.webp": {
+  "public/themes/sweetpastel.webp": {
     "file": "assets/sweetpastel-DuilNVoI.js",
-    "src": "public/themes/python/sweetpastel.webp",
+    "src": "public/themes/sweetpastel.webp",
     "isDynamicEntry": true,
     "assets": [
       "assets/sweetpastel-DXQjmak2.webp"
     ]
   },
-  "public/themes/python/tokyodark.webp": {
-    "file": "assets/tokyodark-B0rGJxVM.js",
-    "src": "public/themes/python/tokyodark.webp",
+  "public/themes/tokyodark.webp": {
+    "file": "assets/tokyodark-9KXuYcQd.js",
+    "src": "public/themes/tokyodark.webp",
     "isDynamicEntry": true,
     "assets": [
-      "assets/tokyodark-D-am1Lr4.webp"
+      "assets/tokyodark-BJQsw8UM.webp"
     ]
   },
-  "public/themes/python/tokyonight.webp": {
-    "file": "assets/tokyonight-C8kAh0OR.js",
-    "src": "public/themes/python/tokyonight.webp",
+  "public/themes/tokyonight.webp": {
+    "file": "assets/tokyonight-Mfw0GLhH.js",
+    "src": "public/themes/tokyonight.webp",
     "isDynamicEntry": true,
     "assets": [
-      "assets/tokyonight-C7M6Su18.webp"
+      "assets/tokyonight-ODVnWQ-0.webp"
     ]
   },
-  "public/themes/python/tomorrow_night.webp": {
-    "file": "assets/tomorrow_night-X-vHhsUG.js",
-    "src": "public/themes/python/tomorrow_night.webp",
+  "public/themes/tomorrow_night.webp": {
+    "file": "assets/tomorrow_night-DqXXyyL7.js",
+    "src": "public/themes/tomorrow_night.webp",
     "isDynamicEntry": true,
     "assets": [
-      "assets/tomorrow_night-DZCCvmpk.webp"
+      "assets/tomorrow_night-ZBpm2XHP.webp"
     ]
   },
-  "public/themes/python/tundra.webp": {
-    "file": "assets/tundra-ByKI_YzU.js",
-    "src": "public/themes/python/tundra.webp",
+  "public/themes/tundra.webp": {
+    "file": "assets/tundra-CdYrrmK4.js",
+    "src": "public/themes/tundra.webp",
     "isDynamicEntry": true,
     "assets": [
-      "assets/tundra-w67nK1rt.webp"
+      "assets/tundra-Bt4sTdbt.webp"
     ]
   },
-  "public/themes/python/vscode_dark.webp": {
-    "file": "assets/vscode_dark-CAu7z3vm.js",
-    "src": "public/themes/python/vscode_dark.webp",
+  "public/themes/vscode_dark.webp": {
+    "file": "assets/vscode_dark-kyPxC2nU.js",
+    "src": "public/themes/vscode_dark.webp",
     "isDynamicEntry": true,
     "assets": [
-      "assets/vscode_dark-B1kDkDBF.webp"
+      "assets/vscode_dark-x9FvC9rp.webp"
     ]
   },
-  "public/themes/python/wombat.webp": {
-    "file": "assets/wombat-Lt_hdAqV.js",
-    "src": "public/themes/python/wombat.webp",
+  "public/themes/wombat.webp": {
+    "file": "assets/wombat-DCEv37uW.js",
+    "src": "public/themes/wombat.webp",
     "isDynamicEntry": true,
     "assets": [
-      "assets/wombat-DpHQ_4UE.webp"
+      "assets/wombat-CWdalz9B.webp"
     ]
   },
-  "public/themes/python/yoru.webp": {
-    "file": "assets/yoru-CsEF6dVH.js",
-    "src": "public/themes/python/yoru.webp",
+  "public/themes/yoru.webp": {
+    "file": "assets/yoru-DWL0zvfx.js",
+    "src": "public/themes/yoru.webp",
     "isDynamicEntry": true,
     "assets": [
-      "assets/yoru-qoM7i8zZ.webp"
+      "assets/yoru-Iub-gVj5.webp"
     ]
   },
   "src/routes/[...404].jsx?pick=default&pick=$css": {
-    "file": "assets/_...404_-CeatcFjd.js",
+    "file": "assets/_...404_-BvukfzB5.js",
     "src": "src/routes/[...404].jsx?pick=default&pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_web-DScAkgcG.js"
+      "_web-CBU83r8B.js"
     ]
   },
   "src/routes/docs.tsx?pick=default&pick=$css": {
-    "file": "assets/docs-C7ML8Zxz.js",
+    "file": "assets/docs-BIbSyDld.js",
     "src": "src/routes/docs.tsx?pick=default&pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_web-DScAkgcG.js",
-      "_Sidebar-jYSvShnh.js",
-      "_routing-zmxRfIsI.js",
+      "_web-CBU83r8B.js",
+      "_nextprevPage-C225yNzP.js",
+      "_ContextTitles-D20ffCXR.js",
       "_clipboard-DzJ4oxno.js",
-      "_ContextTitles-D7KWmhEM.js",
-      "_components-B-ztm8Ux.js"
-    ],
-    "css": [
-      "assets/docs-C087NetJ.css"
+      "_components-CVXb4Mrf.js",
+      "_routing-CayKO4ES.js"
     ]
   },
   "src/routes/docs/api.mdx?pick=$css": {
-    "file": "assets/api-DoBxa3aJ.js",
+    "file": "assets/api-DAJi2rPr.js",
     "src": "src/routes/docs/api.mdx?pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_web-DScAkgcG.js",
-      "_index-CYDpJFld.js"
-    ]
-  },
-  "src/routes/docs/config/format_lint.mdx?pick=$css": {
-    "file": "assets/format_lint-FbKnWkIa.js",
-    "src": "src/routes/docs/config/format_lint.mdx?pick=$css",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-CYDpJFld.js",
-      "_web-DScAkgcG.js"
+      "_web-CBU83r8B.js",
+      "_index-C2YDUEaq.js"
     ]
   },
   "src/routes/docs/config/lsp.mdx?pick=$css": {
-    "file": "assets/lsp-B-SQjAsC.js",
+    "file": "assets/lsp-DoBGv2XU.js",
     "src": "src/routes/docs/config/lsp.mdx?pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_web-DScAkgcG.js",
-      "_index-CYDpJFld.js"
+      "_web-CBU83r8B.js",
+      "_index-C2YDUEaq.js"
     ]
   },
   "src/routes/docs/config/mappings.mdx?pick=$css": {
-    "file": "assets/mappings-CckRdMK7.js",
+    "file": "assets/mappings-OGikUwyO.js",
     "src": "src/routes/docs/config/mappings.mdx?pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_web-DScAkgcG.js",
-      "_index-CYDpJFld.js"
+      "_web-CBU83r8B.js",
+      "_index-C2YDUEaq.js"
     ]
   },
   "src/routes/docs/config/nvchad_ui.mdx?pick=$css": {
-    "file": "assets/nvchad_ui-Bjke6_up.js",
+    "file": "assets/nvchad_ui-B43glA-N.js",
     "src": "src/routes/docs/config/nvchad_ui.mdx?pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_web-DScAkgcG.js",
-      "_index-CYDpJFld.js"
+      "_web-CBU83r8B.js",
+      "_index-C2YDUEaq.js"
     ]
   },
   "src/routes/docs/config/plugins.mdx?pick=$css": {
-    "file": "assets/plugins-CUV3QzYb.js",
+    "file": "assets/plugins-Ccrh83mn.js",
     "src": "src/routes/docs/config/plugins.mdx?pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_web-DScAkgcG.js",
-      "_index-CYDpJFld.js"
+      "_index-C2YDUEaq.js",
+      "_web-CBU83r8B.js"
     ]
   },
   "src/routes/docs/config/snippets.mdx?pick=$css": {
-    "file": "assets/snippets-DU22H9An.js",
+    "file": "assets/snippets-B9mS8faA.js",
     "src": "src/routes/docs/config/snippets.mdx?pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_web-DScAkgcG.js",
-      "_index-CYDpJFld.js"
+      "_web-CBU83r8B.js",
+      "_index-C2YDUEaq.js"
     ]
   },
   "src/routes/docs/config/syntax.mdx?pick=$css": {
-    "file": "assets/syntax-DLJKskQ5.js",
+    "file": "assets/syntax-D5NIet03.js",
     "src": "src/routes/docs/config/syntax.mdx?pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_web-DScAkgcG.js",
-      "_index-CYDpJFld.js"
+      "_web-CBU83r8B.js",
+      "_index-C2YDUEaq.js"
     ]
   },
   "src/routes/docs/config/theming.mdx?pick=$css": {
-    "file": "assets/theming--jtx0q77.js",
+    "file": "assets/theming-B4T3vrpH.js",
     "src": "src/routes/docs/config/theming.mdx?pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_web-DScAkgcG.js",
-      "_index-CYDpJFld.js"
+      "_web-CBU83r8B.js",
+      "_index-C2YDUEaq.js"
     ]
   },
   "src/routes/docs/config/walkthrough.mdx?pick=$css": {
-    "file": "assets/walkthrough-DlwWY3or.js",
+    "file": "assets/walkthrough-Dl8Tcykq.js",
     "src": "src/routes/docs/config/walkthrough.mdx?pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_web-DScAkgcG.js",
-      "_index-CYDpJFld.js"
+      "_web-CBU83r8B.js",
+      "_index-C2YDUEaq.js"
     ]
   },
   "src/routes/docs/contribute.mdx?pick=$css": {
-    "file": "assets/contribute-DSlkQxP4.js",
+    "file": "assets/contribute-Dn6fnOPu.js",
     "src": "src/routes/docs/contribute.mdx?pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-CYDpJFld.js",
-      "_web-DScAkgcG.js"
+      "_index-C2YDUEaq.js",
+      "_web-CBU83r8B.js"
     ]
   },
   "src/routes/docs/credits.mdx?pick=$css": {
-    "file": "assets/credits-BboyME3K.js",
+    "file": "assets/credits-jG-LWy6Z.js",
     "src": "src/routes/docs/credits.mdx?pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-CYDpJFld.js",
-      "_web-DScAkgcG.js"
+      "_index-C2YDUEaq.js",
+      "_web-CBU83r8B.js"
     ]
   },
   "src/routes/docs/faq.mdx?pick=$css": {
-    "file": "assets/faq-CAURBtj-.js",
+    "file": "assets/faq-CIubJ5Ie.js",
     "src": "src/routes/docs/faq.mdx?pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-CYDpJFld.js",
-      "_web-DScAkgcG.js"
+      "_index-C2YDUEaq.js",
+      "_web-CBU83r8B.js"
     ]
   },
   "src/routes/docs/features.mdx?pick=$css": {
-    "file": "assets/features-DiqsvIN2.js",
+    "file": "assets/features-ujHc4lkQ.js",
     "src": "src/routes/docs/features.mdx?pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_web-DScAkgcG.js",
-      "_index-CYDpJFld.js"
+      "_web-CBU83r8B.js",
+      "_index-C2YDUEaq.js"
     ]
   },
   "src/routes/docs/index.tsx?pick=default&pick=$css": {
-    "file": "assets/index-uswm4JnG.js",
+    "file": "assets/index-DxBOF8_p.js",
     "src": "src/routes/docs/index.tsx?pick=default&pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_web-DScAkgcG.js",
-      "_routing-zmxRfIsI.js"
+      "_web-CBU83r8B.js",
+      "_routing-CayKO4ES.js"
     ]
   },
   "src/routes/docs/quickstart/install.mdx?pick=$css": {
-    "file": "assets/install-DTdB5yQy.js",
+    "file": "assets/install-DYmJ_Ta5.js",
     "src": "src/routes/docs/quickstart/install.mdx?pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_web-DScAkgcG.js",
-      "_index-CYDpJFld.js",
-      "_install-CGTAEIO3.js",
+      "_web-CBU83r8B.js",
+      "_index-C2YDUEaq.js",
+      "_install-qf_m3P46.js",
       "_clipboard-DzJ4oxno.js"
     ]
   },
   "src/routes/docs/quickstart/learn-lua.mdx?pick=$css": {
-    "file": "assets/learn-lua-DuM9WkKZ.js",
+    "file": "assets/learn-lua-DORsl1kS.js",
     "src": "src/routes/docs/quickstart/learn-lua.mdx?pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-CYDpJFld.js",
-      "_web-DScAkgcG.js"
+      "_index-C2YDUEaq.js",
+      "_web-CBU83r8B.js"
     ]
   },
   "src/routes/docs/quickstart/post-install.mdx?pick=$css": {
-    "file": "assets/post-install-DJ9DPE1O.js",
+    "file": "assets/post-install-Cs-_i2Bq.js",
     "src": "src/routes/docs/quickstart/post-install.mdx?pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-CYDpJFld.js",
-      "_web-DScAkgcG.js"
+      "_index-C2YDUEaq.js",
+      "_web-CBU83r8B.js"
     ]
   },
   "src/routes/index.tsx?pick=default&pick=$css": {
-    "file": "assets/index-jBszOz0y.js",
+    "file": "assets/index-BlQ1vSBQ.js",
     "src": "src/routes/index.tsx?pick=default&pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_web-DScAkgcG.js",
-      "_install-CGTAEIO3.js",
-      "_components-B-ztm8Ux.js",
+      "_footer-BfnOYqFd.js",
+      "_web-CBU83r8B.js",
+      "_install-qf_m3P46.js",
       "_clipboard-DzJ4oxno.js",
-      "_routing-zmxRfIsI.js"
+      "_components-CVXb4Mrf.js",
+      "_routing-CayKO4ES.js"
     ]
   },
   "src/routes/news.tsx?pick=default&pick=$css": {
-    "file": "assets/news-Cqfm2quU.js",
+    "file": "assets/news-KXPhFgX2.js",
     "src": "src/routes/news.tsx?pick=default&pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_web-DScAkgcG.js",
+      "_web-CBU83r8B.js",
+      "_ContextTitles-D20ffCXR.js",
       "_clipboard-DzJ4oxno.js",
-      "_ContextTitles-D7KWmhEM.js",
-      "_routing-zmxRfIsI.js",
-      "_components-B-ztm8Ux.js"
+      "_routing-CayKO4ES.js"
     ]
   },
-  "src/routes/news/index.jsx?pick=default&pick=$css": {
-    "file": "assets/index-BidIMyKS.js",
-    "src": "src/routes/news/index.jsx?pick=default&pick=$css",
+  "src/routes/news/index.tsx?pick=default&pick=$css": {
+    "file": "assets/index-D9p9MK4_.js",
+    "src": "src/routes/news/index.tsx?pick=default&pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_web-DScAkgcG.js",
-      "_index-CYDpJFld.js",
-      "_components-B-ztm8Ux.js",
-      "_routing-zmxRfIsI.js"
+      "_v2.5-Dik7Y-Mt.js",
+      "_web-CBU83r8B.js",
+      "_index-C2YDUEaq.js"
     ]
   },
   "src/routes/news/v2.0.mdx?pick=$css": {
-    "file": "assets/v2.0-CTUM0Wnl.js",
+    "file": "assets/v2.0-BOaz1l1S.js",
     "src": "src/routes/news/v2.0.mdx?pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_web-DScAkgcG.js",
-      "_index-CYDpJFld.js"
+      "_web-CBU83r8B.js",
+      "_index-C2YDUEaq.js"
     ]
   },
   "src/routes/news/v2.0_migration.mdx?pick=$css": {
-    "file": "assets/v2.0_migration-v4UdlhJ9.js",
+    "file": "assets/v2.0_migration-DhV85upU.js",
     "src": "src/routes/news/v2.0_migration.mdx?pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_web-DScAkgcG.js",
-      "_index-CYDpJFld.js"
+      "_web-CBU83r8B.js",
+      "_index-C2YDUEaq.js"
+    ]
+  },
+  "src/routes/news/v2.5.mdx?pick=$css": {
+    "file": "assets/v2.5-Beh3D-il.js",
+    "src": "src/routes/news/v2.5.mdx?pick=$css",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-C2YDUEaq.js",
+      "_web-CBU83r8B.js"
     ]
   },
   "src/routes/themes.tsx?pick=default&pick=$css": {
-    "file": "assets/themes-Dx9HN4b6.js",
+    "file": "assets/themes-Bzp8jHZ9.js",
     "src": "src/routes/themes.tsx?pick=default&pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_preload-helper-xxf5fCYN.js",
-      "_web-DScAkgcG.js"
+      "_web-CBU83r8B.js"
     ],
     "dynamicImports": [
-      "public/themes/python/aquarium.webp",
-      "public/themes/python/ashes.webp",
-      "public/themes/python/ayu_dark.webp",
-      "public/themes/python/ayu_light.webp",
-      "public/themes/python/bearded-arc.webp",
-      "public/themes/python/blossom_light.webp",
-      "public/themes/python/catppuccin.webp",
-      "public/themes/python/chadracula.webp",
-      "public/themes/python/chadtain.webp",
-      "public/themes/python/chocolate.webp",
-      "public/themes/python/dark_horizon.webp",
-      "public/themes/python/decay.webp",
-      "public/themes/python/doomchad.webp",
-      "public/themes/python/everblush.webp",
-      "public/themes/python/everforest.webp",
-      "public/themes/python/everforest_light.webp",
-      "public/themes/python/falcon.webp",
-      "public/themes/python/gatekeeper.webp",
-      "public/themes/python/github_dark.webp",
-      "public/themes/python/github_light.webp",
-      "public/themes/python/gruvbox.webp",
-      "public/themes/python/gruvbox_light.webp",
-      "public/themes/python/gruvchad.webp",
-      "public/themes/python/jellybeans.webp",
-      "public/themes/python/kanagawa.webp",
-      "public/themes/python/melange.webp",
-      "public/themes/python/monekai.webp",
-      "public/themes/python/monochrome.webp",
-      "public/themes/python/mountain.webp",
-      "public/themes/python/nightfox.webp",
-      "public/themes/python/nightlamp.webp",
-      "public/themes/python/nightowl.webp",
-      "public/themes/python/nord.webp",
-      "public/themes/python/oceanic-light.webp",
-      "public/themes/python/oceanic-next.webp",
-      "public/themes/python/one_light.webp",
-      "public/themes/python/onedark.webp",
-      "public/themes/python/onenord.webp",
-      "public/themes/python/onenord_light.webp",
-      "public/themes/python/oxocarbon.webp",
-      "public/themes/python/palenight.webp",
-      "public/themes/python/pastelDark.webp",
-      "public/themes/python/pastelbeans.webp",
-      "public/themes/python/penumbra_dark.webp",
-      "public/themes/python/penumbra_light.webp",
-      "public/themes/python/radium.webp",
-      "public/themes/python/rosepine.webp",
-      "public/themes/python/rxyhn.webp",
-      "public/themes/python/solarized_dark.webp",
-      "public/themes/python/sweetpastel.webp",
-      "public/themes/python/tokyodark.webp",
-      "public/themes/python/tokyonight.webp",
-      "public/themes/python/tomorrow_night.webp",
-      "public/themes/python/tundra.webp",
-      "public/themes/python/vscode_dark.webp",
-      "public/themes/python/wombat.webp",
-      "public/themes/python/yoru.webp",
-      "public/themes/javascript/aquarium.webp",
-      "public/themes/javascript/ashes.webp",
-      "public/themes/javascript/ayu_dark.webp",
-      "public/themes/javascript/ayu_light.webp",
-      "public/themes/javascript/bearded-arc.webp",
-      "public/themes/javascript/blossom_light.webp",
-      "public/themes/javascript/catppuccin.webp",
-      "public/themes/javascript/chadracula.webp",
-      "public/themes/javascript/chadtain.webp",
-      "public/themes/javascript/chocolate.webp",
-      "public/themes/javascript/dark_horizon.webp",
-      "public/themes/javascript/decay.webp",
-      "public/themes/javascript/doomchad.webp",
-      "public/themes/javascript/everblush.webp",
-      "public/themes/javascript/everforest.webp",
-      "public/themes/javascript/everforest_light.webp",
-      "public/themes/javascript/falcon.webp",
-      "public/themes/javascript/gatekeeper.webp",
-      "public/themes/javascript/github_dark.webp",
-      "public/themes/javascript/github_light.webp",
-      "public/themes/javascript/gruvbox.webp",
-      "public/themes/javascript/gruvbox_light.webp",
-      "public/themes/javascript/gruvchad.webp",
-      "public/themes/javascript/jellybeans.webp",
-      "public/themes/javascript/kanagawa.webp",
-      "public/themes/javascript/melange.webp",
-      "public/themes/javascript/monekai.webp",
-      "public/themes/javascript/monochrome.webp",
-      "public/themes/javascript/mountain.webp",
-      "public/themes/javascript/nightfox.webp",
-      "public/themes/javascript/nightlamp.webp",
-      "public/themes/javascript/nightowl.webp",
-      "public/themes/javascript/nord.webp",
-      "public/themes/javascript/oceanic-light.webp",
-      "public/themes/javascript/oceanic-next.webp",
-      "public/themes/javascript/one_light.webp",
-      "public/themes/javascript/onedark.webp",
-      "public/themes/javascript/onenord.webp",
-      "public/themes/javascript/onenord_light.webp",
-      "public/themes/javascript/oxocarbon.webp",
-      "public/themes/javascript/palenight.webp",
-      "public/themes/javascript/pastelDark.webp",
-      "public/themes/javascript/pastelbeans.webp",
-      "public/themes/javascript/penumbra_dark.webp",
-      "public/themes/javascript/penumbra_light.webp",
-      "public/themes/javascript/radium.webp",
-      "public/themes/javascript/rosepine.webp",
-      "public/themes/javascript/rxyhn.webp",
-      "public/themes/javascript/solarized_dark.webp",
-      "public/themes/javascript/sweetpastel.webp",
-      "public/themes/javascript/tokyodark.webp",
-      "public/themes/javascript/tokyonight.webp",
-      "public/themes/javascript/tomorrow_night.webp",
-      "public/themes/javascript/tundra.webp",
-      "public/themes/javascript/vscode_dark.webp",
-      "public/themes/javascript/wombat.webp",
-      "public/themes/javascript/yoru.webp",
-      "public/themes/haskell/aquarium.webp",
-      "public/themes/haskell/ashes.webp",
-      "public/themes/haskell/ayu_dark.webp",
-      "public/themes/haskell/ayu_light.webp",
-      "public/themes/haskell/bearded-arc.webp",
-      "public/themes/haskell/blossom_light.webp",
-      "public/themes/haskell/catppuccin.webp",
-      "public/themes/haskell/chadracula.webp",
-      "public/themes/haskell/chadtain.webp",
-      "public/themes/haskell/chocolate.webp",
-      "public/themes/haskell/dark_horizon.webp",
-      "public/themes/haskell/decay.webp",
-      "public/themes/haskell/doomchad.webp",
-      "public/themes/haskell/everblush.webp",
-      "public/themes/haskell/everforest.webp",
-      "public/themes/haskell/everforest_light.webp",
-      "public/themes/haskell/falcon.webp",
-      "public/themes/haskell/gatekeeper.webp",
-      "public/themes/haskell/github_dark.webp",
-      "public/themes/haskell/github_light.webp",
-      "public/themes/haskell/gruvbox.webp",
-      "public/themes/haskell/gruvbox_light.webp",
-      "public/themes/haskell/gruvchad.webp",
-      "public/themes/haskell/jellybeans.webp",
-      "public/themes/haskell/kanagawa.webp",
-      "public/themes/haskell/melange.webp",
-      "public/themes/haskell/monekai.webp",
-      "public/themes/haskell/monochrome.webp",
-      "public/themes/haskell/mountain.webp",
-      "public/themes/haskell/nightfox.webp",
-      "public/themes/haskell/nightlamp.webp",
-      "public/themes/haskell/nightowl.webp",
-      "public/themes/haskell/nord.webp",
-      "public/themes/haskell/oceanic-light.webp",
-      "public/themes/haskell/oceanic-next.webp",
-      "public/themes/haskell/one_light.webp",
-      "public/themes/haskell/onedark.webp",
-      "public/themes/haskell/onenord.webp",
-      "public/themes/haskell/onenord_light.webp",
-      "public/themes/haskell/oxocarbon.webp",
-      "public/themes/haskell/palenight.webp",
-      "public/themes/haskell/pastelDark.webp",
-      "public/themes/haskell/pastelbeans.webp",
-      "public/themes/haskell/penumbra_dark.webp",
-      "public/themes/haskell/penumbra_light.webp",
-      "public/themes/haskell/radium.webp",
-      "public/themes/haskell/rosepine.webp",
-      "public/themes/haskell/rxyhn.webp",
-      "public/themes/haskell/solarized_dark.webp",
-      "public/themes/haskell/sweetpastel.webp",
-      "public/themes/haskell/tokyodark.webp",
-      "public/themes/haskell/tokyonight.webp",
-      "public/themes/haskell/tomorrow_night.webp",
-      "public/themes/haskell/tundra.webp",
-      "public/themes/haskell/vscode_dark.webp",
-      "public/themes/haskell/wombat.webp",
-      "public/themes/haskell/yoru.webp",
-      "public/themes/c/aquarium.webp",
-      "public/themes/c/ashes.webp",
-      "public/themes/c/ayu_dark.webp",
-      "public/themes/c/ayu_light.webp",
-      "public/themes/c/bearded-arc.webp",
-      "public/themes/c/blossom_light.webp",
-      "public/themes/c/catppuccin.webp",
-      "public/themes/c/chadracula.webp",
-      "public/themes/c/chadtain.webp",
-      "public/themes/c/chocolate.webp",
-      "public/themes/c/dark_horizon.webp",
-      "public/themes/c/decay.webp",
-      "public/themes/c/doomchad.webp",
-      "public/themes/c/everblush.webp",
-      "public/themes/c/everforest.webp",
-      "public/themes/c/everforest_light.webp",
-      "public/themes/c/falcon.webp",
-      "public/themes/c/gatekeeper.webp",
-      "public/themes/c/github_dark.webp",
-      "public/themes/c/github_light.webp",
-      "public/themes/c/gruvbox.webp",
-      "public/themes/c/gruvbox_light.webp",
-      "public/themes/c/gruvchad.webp",
-      "public/themes/c/jellybeans.webp",
-      "public/themes/c/kanagawa.webp",
-      "public/themes/c/melange.webp",
-      "public/themes/c/monekai.webp",
-      "public/themes/c/monochrome.webp",
-      "public/themes/c/mountain.webp",
-      "public/themes/c/nightfox.webp",
-      "public/themes/c/nightlamp.webp",
-      "public/themes/c/nightowl.webp",
-      "public/themes/c/nord.webp",
-      "public/themes/c/oceanic-light.webp",
-      "public/themes/c/oceanic-next.webp",
-      "public/themes/c/one_light.webp",
-      "public/themes/c/onedark.webp",
-      "public/themes/c/onenord.webp",
-      "public/themes/c/onenord_light.webp",
-      "public/themes/c/oxocarbon.webp",
-      "public/themes/c/palenight.webp",
-      "public/themes/c/pastelDark.webp",
-      "public/themes/c/pastelbeans.webp",
-      "public/themes/c/penumbra_dark.webp",
-      "public/themes/c/penumbra_light.webp",
-      "public/themes/c/radium.webp",
-      "public/themes/c/rosepine.webp",
-      "public/themes/c/rxyhn.webp",
-      "public/themes/c/solarized_dark.webp",
-      "public/themes/c/sweetpastel.webp",
-      "public/themes/c/tokyodark.webp",
-      "public/themes/c/tokyonight.webp",
-      "public/themes/c/tomorrow_night.webp",
-      "public/themes/c/tundra.webp",
-      "public/themes/c/vscode_dark.webp",
-      "public/themes/c/wombat.webp",
-      "public/themes/c/yoru.webp",
-      "public/themes/lua/aquarium.webp",
-      "public/themes/lua/ashes.webp",
-      "public/themes/lua/ayu_dark.webp",
-      "public/themes/lua/ayu_light.webp",
-      "public/themes/lua/bearded-arc.webp",
-      "public/themes/lua/blossom_light.webp",
-      "public/themes/lua/catppuccin.webp",
-      "public/themes/lua/chadracula.webp",
-      "public/themes/lua/chadtain.webp",
-      "public/themes/lua/chocolate.webp",
-      "public/themes/lua/dark_horizon.webp",
-      "public/themes/lua/decay.webp",
-      "public/themes/lua/doomchad.webp",
-      "public/themes/lua/everblush.webp",
-      "public/themes/lua/everforest.webp",
-      "public/themes/lua/everforest_light.webp",
-      "public/themes/lua/falcon.webp",
-      "public/themes/lua/gatekeeper.webp",
-      "public/themes/lua/github_dark.webp",
-      "public/themes/lua/github_light.webp",
-      "public/themes/lua/gruvbox.webp",
-      "public/themes/lua/gruvbox_light.webp",
-      "public/themes/lua/gruvchad.webp",
-      "public/themes/lua/jellybeans.webp",
-      "public/themes/lua/kanagawa.webp",
-      "public/themes/lua/melange.webp",
-      "public/themes/lua/monekai.webp",
-      "public/themes/lua/monochrome.webp",
-      "public/themes/lua/mountain.webp",
-      "public/themes/lua/nightfox.webp",
-      "public/themes/lua/nightlamp.webp",
-      "public/themes/lua/nightowl.webp",
-      "public/themes/lua/nord.webp",
-      "public/themes/lua/oceanic-light.webp",
-      "public/themes/lua/oceanic-next.webp",
-      "public/themes/lua/one_light.webp",
-      "public/themes/lua/onedark.webp",
-      "public/themes/lua/onenord.webp",
-      "public/themes/lua/onenord_light.webp",
-      "public/themes/lua/oxocarbon.webp",
-      "public/themes/lua/palenight.webp",
-      "public/themes/lua/pastelDark.webp",
-      "public/themes/lua/pastelbeans.webp",
-      "public/themes/lua/penumbra_dark.webp",
-      "public/themes/lua/penumbra_light.webp",
-      "public/themes/lua/radium.webp",
-      "public/themes/lua/rosepine.webp",
-      "public/themes/lua/rxyhn.webp",
-      "public/themes/lua/solarized_dark.webp",
-      "public/themes/lua/sweetpastel.webp",
-      "public/themes/lua/tokyodark.webp",
-      "public/themes/lua/tokyonight.webp",
-      "public/themes/lua/tomorrow_night.webp",
-      "public/themes/lua/tundra.webp",
-      "public/themes/lua/vscode_dark.webp",
-      "public/themes/lua/wombat.webp",
-      "public/themes/lua/yoru.webp"
+      "public/themes/aquarium.webp",
+      "public/themes/ashes.webp",
+      "public/themes/ayu_dark.webp",
+      "public/themes/ayu_light.webp",
+      "public/themes/bearded-arc.webp",
+      "public/themes/blossom_light.webp",
+      "public/themes/catppuccin.webp",
+      "public/themes/chadracula-evondev.webp",
+      "public/themes/chadracula.webp",
+      "public/themes/chadtain.webp",
+      "public/themes/chocolate.webp",
+      "public/themes/dark_horizon.webp",
+      "public/themes/decay.webp",
+      "public/themes/doomchad.webp",
+      "public/themes/everblush.webp",
+      "public/themes/everforest.webp",
+      "public/themes/everforest_light.webp",
+      "public/themes/falcon.webp",
+      "public/themes/flexoki-light.webp",
+      "public/themes/flexoki.webp",
+      "public/themes/gatekeeper.webp",
+      "public/themes/github_dark.webp",
+      "public/themes/github_light.webp",
+      "public/themes/gruvbox.webp",
+      "public/themes/gruvbox_light.webp",
+      "public/themes/gruvchad.webp",
+      "public/themes/jabuti.webp",
+      "public/themes/jellybeans.webp",
+      "public/themes/kanagawa.webp",
+      "public/themes/melange.webp",
+      "public/themes/mito-laser.webp",
+      "public/themes/monekai.webp",
+      "public/themes/monochrome.webp",
+      "public/themes/mountain.webp",
+      "public/themes/nano-light.webp",
+      "public/themes/nightfox.webp",
+      "public/themes/nightlamp.webp",
+      "public/themes/nightowl.webp",
+      "public/themes/nord.webp",
+      "public/themes/oceanic-light.webp",
+      "public/themes/oceanic-next.webp",
+      "public/themes/one_light.webp",
+      "public/themes/onedark.webp",
+      "public/themes/onenord.webp",
+      "public/themes/onenord_light.webp",
+      "public/themes/oxocarbon.webp",
+      "public/themes/palenight.webp",
+      "public/themes/pastelDark.webp",
+      "public/themes/pastelbeans.webp",
+      "public/themes/penumbra_dark.webp",
+      "public/themes/penumbra_light.webp",
+      "public/themes/poimandres.webp",
+      "public/themes/radium.webp",
+      "public/themes/rosepine.webp",
+      "public/themes/rxyhn.webp",
+      "public/themes/solarized_dark.webp",
+      "public/themes/sweetpastel.webp",
+      "public/themes/tokyodark.webp",
+      "public/themes/tokyonight.webp",
+      "public/themes/tomorrow_night.webp",
+      "public/themes/tundra.webp",
+      "public/themes/vscode_dark.webp",
+      "public/themes/wombat.webp",
+      "public/themes/yoru.webp"
     ]
   },
   "virtual:#vinxi/handler/client": {
-    "file": "assets/client-CYxBOvoX.js",
+    "file": "assets/client-CV7DiOEV.js",
     "src": "virtual:#vinxi/handler/client",
     "isEntry": true,
     "imports": [
       "_preload-helper-xxf5fCYN.js",
-      "_web-DScAkgcG.js",
-      "_Sidebar-jYSvShnh.js",
-      "_routing-zmxRfIsI.js",
-      "_components-B-ztm8Ux.js"
+      "_web-CBU83r8B.js",
+      "_nextprevPage-C225yNzP.js",
+      "_ContextTitles-D20ffCXR.js",
+      "_clipboard-DzJ4oxno.js",
+      "_index-C2YDUEaq.js",
+      "_routing-CayKO4ES.js",
+      "_install-qf_m3P46.js",
+      "_footer-BfnOYqFd.js",
+      "_v2.5-Dik7Y-Mt.js",
+      "_components-CVXb4Mrf.js"
     ],
     "dynamicImports": [
+      "public/themes/aquarium.webp",
+      "public/themes/ashes.webp",
+      "public/themes/ayu_dark.webp",
+      "public/themes/ayu_light.webp",
+      "public/themes/bearded-arc.webp",
+      "public/themes/blossom_light.webp",
+      "public/themes/catppuccin.webp",
+      "public/themes/chadracula-evondev.webp",
+      "public/themes/chadracula.webp",
+      "public/themes/chadtain.webp",
+      "public/themes/chocolate.webp",
+      "public/themes/dark_horizon.webp",
+      "public/themes/decay.webp",
+      "public/themes/doomchad.webp",
+      "public/themes/everblush.webp",
+      "public/themes/everforest.webp",
+      "public/themes/everforest_light.webp",
+      "public/themes/falcon.webp",
+      "public/themes/flexoki-light.webp",
+      "public/themes/flexoki.webp",
+      "public/themes/gatekeeper.webp",
+      "public/themes/github_dark.webp",
+      "public/themes/github_light.webp",
+      "public/themes/gruvbox.webp",
+      "public/themes/gruvbox_light.webp",
+      "public/themes/gruvchad.webp",
+      "public/themes/jabuti.webp",
+      "public/themes/jellybeans.webp",
+      "public/themes/kanagawa.webp",
+      "public/themes/melange.webp",
+      "public/themes/mito-laser.webp",
+      "public/themes/monekai.webp",
+      "public/themes/monochrome.webp",
+      "public/themes/mountain.webp",
+      "public/themes/nano-light.webp",
+      "public/themes/nightfox.webp",
+      "public/themes/nightlamp.webp",
+      "public/themes/nightowl.webp",
+      "public/themes/nord.webp",
+      "public/themes/oceanic-light.webp",
+      "public/themes/oceanic-next.webp",
+      "public/themes/one_light.webp",
+      "public/themes/onedark.webp",
+      "public/themes/onenord.webp",
+      "public/themes/onenord_light.webp",
+      "public/themes/oxocarbon.webp",
+      "public/themes/palenight.webp",
+      "public/themes/pastelDark.webp",
+      "public/themes/pastelbeans.webp",
+      "public/themes/penumbra_dark.webp",
+      "public/themes/penumbra_light.webp",
+      "public/themes/poimandres.webp",
+      "public/themes/radium.webp",
+      "public/themes/rosepine.webp",
+      "public/themes/rxyhn.webp",
+      "public/themes/solarized_dark.webp",
+      "public/themes/sweetpastel.webp",
+      "public/themes/tokyodark.webp",
+      "public/themes/tokyonight.webp",
+      "public/themes/tomorrow_night.webp",
+      "public/themes/tundra.webp",
+      "public/themes/vscode_dark.webp",
+      "public/themes/wombat.webp",
+      "public/themes/yoru.webp",
       "src/routes/[...404].jsx?pick=default&pick=$css",
       "src/routes/docs.tsx?pick=default&pick=$css",
       "src/routes/index.tsx?pick=default&pick=$css",
@@ -2920,10 +1018,10 @@
       "src/routes/docs/faq.mdx?pick=$css",
       "src/routes/docs/features.mdx?pick=$css",
       "src/routes/docs/index.tsx?pick=default&pick=$css",
-      "src/routes/news/index.jsx?pick=default&pick=$css",
+      "src/routes/news/index.tsx?pick=default&pick=$css",
       "src/routes/news/v2.0.mdx?pick=$css",
       "src/routes/news/v2.0_migration.mdx?pick=$css",
-      "src/routes/docs/config/format_lint.mdx?pick=$css",
+      "src/routes/news/v2.5.mdx?pick=$css",
       "src/routes/docs/config/lsp.mdx?pick=$css",
       "src/routes/docs/config/mappings.mdx?pick=$css",
       "src/routes/docs/config/nvchad_ui.mdx?pick=$css",
@@ -2937,7 +1035,7 @@
       "src/routes/docs/quickstart/post-install.mdx?pick=$css"
     ],
     "css": [
-      "assets/client-Dsij3Ws8.css"
+      "assets/client-CDFiys3v.css"
     ]
   }
 }
