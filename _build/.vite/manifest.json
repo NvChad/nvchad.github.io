@@ -840,7 +840,7 @@
     ]
   },
   "src/routes/themes.tsx?pick=default&pick=$css": {
-    "file": "assets/themes-Bzp8jHZ9.js",
+    "file": "assets/themes-DL9FXoih.js",
     "src": "src/routes/themes.tsx?pick=default&pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -916,7 +916,7 @@
     ]
   },
   "virtual:#vinxi/handler/client": {
-    "file": "assets/client-B0BlqDRy.js",
+    "file": "assets/client-C7WILgRC.js",
     "src": "virtual:#vinxi/handler/client",
     "isEntry": true,
     "imports": [
