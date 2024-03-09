@@ -4,7 +4,7 @@ import create_copyIcon from "~/components/doc_comps/clipboard";
 export const osInfos = [
   {
     name: "linux / macos",
-    cmd: "git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim",
+    cmd: "git clone https://github.com/NvChad/starter ~/.config/nvim && nvim",
     icon: "i-mingcute:hashtag-fill",
   },
   {
@@ -15,15 +15,15 @@ export const osInfos = [
         <li>If you're using Command Prompt(CMD)</li>
 
         <pre class="hljs">
-          git clone https://github.com/NvChad/NvChad
-          %USERPROFILE%\AppData\Local\nvim --depth 1 && nvim
+          git clone https://github.com/NvChad/starter
+          %USERPROFILE%\AppData\Local\nvim && nvim
         </pre>
 
         <li>If you're using PowerShell(pwsh)</li>
 
         <pre class="hljs">
-          git clone https://github.com/NvChad/NvChad
-          $ENV:USERPROFILE\AppData\Local\nvim --depth 1 && nvim
+          git clone https://github.com/NvChad/starter
+          $ENV:USERPROFILE\AppData\Local\nvim && nvim
         </pre>
 
         <b>If the above path doesnt work, try any of these paths :</b>
@@ -40,7 +40,7 @@ export const osInfos = [
     icon: "i-nonicons:docker-16",
     cmd: `docker run -w /root -it --rm alpine:latest sh -uelic '
   apk add git nodejs neovim ripgrep build-base wget --update
-  git clone https://github.com/NvChad/NvChad ~/.config/nvim
+  git clone https://github.com/NvChad/starter ~/.config/nvim
   nvim
   '`,
   },

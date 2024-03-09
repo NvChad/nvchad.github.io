@@ -11,16 +11,13 @@ The TSInstall command is used to install treesitter parsers i.e `TSInstall <pars
 ```lua
 TSInstall lua html
 ```
-
 <br/>
 
 But this may be tedious when you have so many parsers to install and you'd have to repeat this step if you're re-installing nvchad with your old custom settings.
 
-## Custom config 
+## Plugin Table 
 
-- So now we'll just override the default config and add our own parser names to it.
 - For knowing correct parser names, do check [nvim-treesitter docs](https://github.com/nvim-treesitter/nvim-treesitter#supported-languages)
-- `custom/plugins.lua`
 
 ```lua
 {

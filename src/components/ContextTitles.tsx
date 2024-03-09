@@ -1,4 +1,4 @@
-import { A, useLocation } from "@solidjs/router";
+import { useLocation } from "@solidjs/router";
 import { createSignal } from "solid-js";
 
 import {
@@ -22,6 +22,8 @@ function generateStyles(x) {
 function ContextTitles() {
   const [contextLabelsShown, toggleContextLabels] = createSignal(false);
 
+  const path = useLocation().pathname;
+
   return (
     <div h-fit mt-6 xl="sticky top-30">
       {/* on this page btn, shows only on small screens*/}
@@ -44,15 +46,13 @@ function ContextTitles() {
         mb-5
       >
         {contextHeadings.map((x) => (
-          <A
-            href={`${useLocation().pathname}#${x[1]
-              .replaceAll(/[ .&]/g, "_")
-              .toLowerCase()}`}
+          <a
+            href={`${path}#${x[1].replaceAll(/[ .&]/g, "_").toLowerCase()}`}
             class={generateStyles(x)}
             onclick={() => setActiveContext_Heading(x[1])}
           >
             {x[1]}
-          </A>
+          </a>
         ))}
       </div>
     </div>

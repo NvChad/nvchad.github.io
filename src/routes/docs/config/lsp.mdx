@@ -1,29 +1,31 @@
 ## Setup lsp server
 
-Before starting, it is strongly recommended that you walk through the LSP configuration: [`lspconfig` repository](https://github.com/neovim/nvim-lspconfig).
+Before starting, it is strongly recommended that you walk through the LSP configuration [lspconfig repository](https://github.com/neovim/nvim-lspconfig).
 
 Then check [server_configurations.md](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md) to make sure your language's LSP server is present there. 
 
-- **custom/plugins.lua**
+- **Plugin table**
 
 ```lua
 -- In order to modify the `lspconfig` configuration:
 {
   "neovim/nvim-lspconfig",
    config = function()
-      require "plugins.configs.lspconfig"
-      require "custom.configs.lspconfig"
+      require("nvchad.configs.lspconfig").defaults()
+      require "configs.lspconfig"
    end,
 },
 ```
 
 <br />
 
-- **custom/configs/lspconfig.lua**
+- **configs/lspconfig.lua**
 
 ```lua
 local configs = require("plugins.configs.lspconfig")
+
 local on_attach = configs.on_attach
+local on_init = configs.on_init
 local capabilities = configs.capabilities
 
 local lspconfig = require "lspconfig"
@@ -31,6 +33,7 @@ local servers = { "html", "cssls", "clangd"}
 
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
+    on_init = on_init,
     on_attach = on_attach,
     capabilities = capabilities,
   }
@@ -50,7 +53,7 @@ end
 ```
 ## Mason.nvim
 
-The `mason.nvim` plugin is used to install LSP servers, formatters, linters, and debug adapters. It's better to list all your required packages in your Mason override config, so they automatically install when running `MasonInstallAll` command.
+The `mason.nvim` plugin is used to download LSP servers, formatters, linters, and debug adapters. It's better to list all your required packages in your Mason override config, so they automatically download when running `MasonInstallAll` command.
 
 You can find the exact name of the LSP packages using `:Mason`, that will open a window.
 
