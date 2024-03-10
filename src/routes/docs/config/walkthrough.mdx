@@ -38,11 +38,38 @@ local result = vim.tbl_deep_extend("force", person, someone)
 -- The list tables wont merge cuz they dont have keys 
 ```
 
+## Main Config Structure
+
+- Here's the config sturcture of the main nvchad repo :
+```lua
+lua
+│
+├── nvchad
+│   ├── autocmds.lua
+│   ├── mappings.lua
+│   ├── options.lua
+│   │
+│   │── plugins
+│   │    ├── init.lua
+│   │    └── ui.lua
+│   │
+│   ├── configs
+│       ├── cmp.lua
+│       ├── more...
+│       
+└── nvconfig.lua
+```
+<br/>
+- example module import, `require "nvchad.options`
+- nvconfig.lua is the list of all options for both ui/base46 repo!
+- The starter config uses the main repo (nvchad/nvchad) as a plugin and imports its plugins, options, mappings etc.
+- So basically you're using nvchad's main repo as a plugin into your config.
+
 ## Chadrc.lua
 
 - This file is meant to have structure of [nvconfig.lua](https://github.com/NvChad/NvChad/blob/starter/lua/nvconfig.lua), check the nvconfig.lua for knowing all supported options.
 - So nvconfig returns a table of config and then merges chadrc's table.
-- For non nvchad users, you can just use nvconfig file ( without chadrc code from it) and put it in your /lua dir
+- And you put this file in your `/lua` folder
 
 ## Themes
 
