@@ -1,4 +1,4 @@
-import{b as n,q as l,k as h,t as c}from"./web-CBU83r8B.js";import{M as t}from"./index-C2YDUEaq.js";var o=c("<br>");const s={title:"NvChad v2.5 released!",desc:"Minor NvChad release with standard neovim config structure, new 11 themes, UI Term module replacing nvterm.",cover:"v2.5.webp"};function i(r){const e={a:"a",blockquote:"blockquote",code:"code",h1:"h1",h2:"h2",h3:"h3",img:"img",li:"li",p:"p",strong:"strong",ul:"ul",...t(),...r.components};return[n(e.h1,{children:"NvChad v2.5 Released!"}),`
+import{b as n,q as l,k as h,t as c}from"./web-CBU83r8B.js";import{M as t}from"./index-C2YDUEaq.js";var a=c("<br>");const s={title:"NvChad v2.5 released!",desc:"Minor NvChad release with standard neovim config structure, new 11 themes, UI Term module replacing nvterm.",cover:"v2.5.webp"};function i(r){const e={a:"a",blockquote:"blockquote",code:"code",h1:"h1",h2:"h2",h3:"h3",img:"img",li:"li",p:"p",strong:"strong",ul:"ul",...t(),...r.components};return[n(e.h1,{children:"NvChad v2.5 Released!"}),`
 `,n(e.p,{get children(){return n(e.img,{src:"/news/v2.5.webp",alt:"v2.5 poster"})}}),`
 `,n(e.blockquote,{get children(){return[`
 `,n(e.p,{children:"This release is a minor release, only major changes in it are new config structure ( no custom config stuff), you will be using nvchad repo as plugin, like LazyVim does with its starter config. NvTerm is replaced by UI's term module"}),`
@@ -56,12 +56,12 @@ rosepine-dawn`}),`
 `]}}),`
 `,n(e.h2,{children:"Migration"}),`
 `,n(e.ul,{get children(){return[`
-`,n(e.li,{get children(){return["Check the ",n(e.a,{href:"http://localhost:3000/docs/config/walkthrough",children:"Quick walkthrough doc"})," for having a basic understanding of how NvChad works now."]}}),`
+`,n(e.li,{get children(){return["Check the ",n(e.a,{href:"/docs/config/walkthrough",children:"Quick walkthrough doc"})," for having a basic understanding of how NvChad works now."]}}),`
 `,n(e.li,{get children(){return["git clone ",n(e.a,{href:"https://github.com/NvChad/starter",children:"starter repo"})," as your nvim config."]}}),`
 `,n(e.li,{get children(){return["Go through the new ",n(e.a,{href:"https://github.com/NvChad/NvChad/tree/v2.5",children:"module structure of nvchad"})," which will be used as your plugin."]}}),`
 `,n(e.li,{get children(){return["You can use this ",n(e.a,{href:"https://gist.github.com/siduck/048bed2e7570569e6b327b35d1715404",children:"shell script"})," ( unix only ) to automate your migration."]}}),`
 `]}}),`
-`,h(o),`
+`,h(a),`
 `,n(e.p,{get children(){return n(e.strong,{children:"For Manual Migration :"})}}),`
 `,n(e.ul,{get children(){return[`
 `,n(e.li,{get children(){return["Move All of your custom dir files to the ",n(e.code,{children:"lua"})," dir of starter config"]}}),`
