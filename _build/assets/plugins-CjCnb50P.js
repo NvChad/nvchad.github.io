@@ -45,7 +45,7 @@ import{M as a}from"./index-C2YDUEaq.js";import{b as e,q as i}from"./web-CBU83r8B
   {
     `,e(n.span,{className:"hljs-string",children:'"nvim-telescope/telescope.nvim"'}),`,
     opts = `,e(n.span,{className:"hljs-function",get children(){return[e(n.span,{className:"hljs-keyword",children:"function"}),e(n.span,{className:"hljs-params",children:"()"})]}}),`
-      `,e(n.span,{className:"hljs-keyword",children:"local"})," conf = ",e(n.span,{className:"hljs-built_in",children:"require"})," ",e(n.span,{className:"hljs-string",children:'"plugins.configs.telescope"'}),`
+      `,e(n.span,{className:"hljs-keyword",children:"local"})," conf = ",e(n.span,{className:"hljs-built_in",children:"require"})," ",e(n.span,{className:"hljs-string",children:'"nvchad.configs.telescope"'}),`
 
       conf.defaults.mappings.i = {
         [`,e(n.span,{className:"hljs-string",children:'"<C-j>"'}),"] = ",e(n.span,{className:"hljs-built_in",children:"require"}),"(",e(n.span,{className:"hljs-string",children:'"telescope.actions"'}),`).move_selection_next,

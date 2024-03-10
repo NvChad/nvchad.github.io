@@ -621,7 +621,7 @@
     ]
   },
   "src/routes/docs/config/lsp.mdx?pick=$css": {
-    "file": "assets/lsp-DoBGv2XU.js",
+    "file": "assets/lsp-BODZIxSQ.js",
     "src": "src/routes/docs/config/lsp.mdx?pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -651,7 +651,7 @@
     ]
   },
   "src/routes/docs/config/plugins.mdx?pick=$css": {
-    "file": "assets/plugins-Ccrh83mn.js",
+    "file": "assets/plugins-CjCnb50P.js",
     "src": "src/routes/docs/config/plugins.mdx?pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -916,7 +916,7 @@
     ]
   },
   "virtual:#vinxi/handler/client": {
-    "file": "assets/client-BY0Xs26f.js",
+    "file": "assets/client-pnjzKWz3.js",
     "src": "virtual:#vinxi/handler/client",
     "isEntry": true,
     "imports": [
