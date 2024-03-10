@@ -1,7 +1,7 @@
 {
-  "_ContextTitles-!~{01u}~.js": {
+  "_ContextTitles-!~{01y}~.js": {
     "file": "assets/ContextTitles-BA5Wlt3K.css",
-    "src": "_ContextTitles-!~{01u}~.js"
+    "src": "_ContextTitles-!~{01y}~.js"
   },
   "_ContextTitles-OsYyIG2h.js": {
     "file": "assets/ContextTitles-OsYyIG2h.js",
@@ -61,8 +61,8 @@
       "_web-CBU83r8B.js"
     ]
   },
-  "_v2.5_release-DM3m2q6J.js": {
-    "file": "assets/v2.5_release-DM3m2q6J.js",
+  "_v2.5_release-DkZgtnS8.js": {
+    "file": "assets/v2.5_release-DkZgtnS8.js",
     "imports": [
       "_web-CBU83r8B.js",
       "_index-C2YDUEaq.js"
@@ -307,6 +307,22 @@
       "assets/kanagawa-iS86xnev.webp"
     ]
   },
+  "public/themes/material-darker.webp": {
+    "file": "assets/material-darker-TW8y9-CB.js",
+    "src": "public/themes/material-darker.webp",
+    "isDynamicEntry": true,
+    "assets": [
+      "assets/material-darker-CC_dsXOM.webp"
+    ]
+  },
+  "public/themes/material-lighter.webp": {
+    "file": "assets/material-lighter-CHOHqfV4.js",
+    "src": "public/themes/material-lighter.webp",
+    "isDynamicEntry": true,
+    "assets": [
+      "assets/material-lighter-CzgBVnrU.webp"
+    ]
+  },
   "public/themes/melange.webp": {
     "file": "assets/melange-ChAk3wcY.js",
     "src": "public/themes/melange.webp",
@@ -499,6 +515,14 @@
       "assets/radium-MJ0r83Nf.webp"
     ]
   },
+  "public/themes/rosepine-dawn.webp": {
+    "file": "assets/rosepine-dawn-kX5cWQaP.js",
+    "src": "public/themes/rosepine-dawn.webp",
+    "isDynamicEntry": true,
+    "assets": [
+      "assets/rosepine-dawn-CzM5aqMN.webp"
+    ]
+  },
   "public/themes/rosepine.webp": {
     "file": "assets/rosepine-BeqDKTOJ.js",
     "src": "public/themes/rosepine.webp",
@@ -521,6 +545,14 @@
     "isDynamicEntry": true,
     "assets": [
       "assets/solarized_dark-BdnGNCxr.webp"
+    ]
+  },
+  "public/themes/solarized_oska.webp": {
+    "file": "assets/solarized_oska-Dk_L9BfH.js",
+    "src": "public/themes/solarized_oska.webp",
+    "isDynamicEntry": true,
+    "assets": [
+      "assets/solarized_oska-CmbsDh5t.webp"
     ]
   },
   "public/themes/sweetpastel.webp": {
@@ -809,12 +841,12 @@
     ]
   },
   "src/routes/news/index.tsx?pick=default&pick=$css": {
-    "file": "assets/index-BtVW9G-V.js",
+    "file": "assets/index-DU7Zn7cn.js",
     "src": "src/routes/news/index.tsx?pick=default&pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_v2.5_release-DM3m2q6J.js",
+      "_v2.5_release-DkZgtnS8.js",
       "_web-CBU83r8B.js",
       "_index-C2YDUEaq.js"
     ]
@@ -830,7 +862,7 @@
     ]
   },
   "src/routes/news/v2.5_release.mdx?pick=$css": {
-    "file": "assets/v2.5_release-jQqjnXe8.js",
+    "file": "assets/v2.5_release-CWXG95SF.js",
     "src": "src/routes/news/v2.5_release.mdx?pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -840,7 +872,7 @@
     ]
   },
   "src/routes/themes.tsx?pick=default&pick=$css": {
-    "file": "assets/themes-DL9FXoih.js",
+    "file": "assets/themes-BDZcYdPS.js",
     "src": "src/routes/themes.tsx?pick=default&pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -878,6 +910,8 @@
       "public/themes/jabuti.webp",
       "public/themes/jellybeans.webp",
       "public/themes/kanagawa.webp",
+      "public/themes/material-darker.webp",
+      "public/themes/material-lighter.webp",
       "public/themes/melange.webp",
       "public/themes/mito-laser.webp",
       "public/themes/monekai.webp",
@@ -902,9 +936,11 @@
       "public/themes/penumbra_light.webp",
       "public/themes/poimandres.webp",
       "public/themes/radium.webp",
+      "public/themes/rosepine-dawn.webp",
       "public/themes/rosepine.webp",
       "public/themes/rxyhn.webp",
       "public/themes/solarized_dark.webp",
+      "public/themes/solarized_oska.webp",
       "public/themes/sweetpastel.webp",
       "public/themes/tokyodark.webp",
       "public/themes/tokyonight.webp",
@@ -916,7 +952,7 @@
     ]
   },
   "virtual:#vinxi/handler/client": {
-    "file": "assets/client-BYwNuLZV.js",
+    "file": "assets/client-D9FZpR9i.js",
     "src": "virtual:#vinxi/handler/client",
     "isEntry": true,
     "imports": [
@@ -929,7 +965,7 @@
       "_routing-CayKO4ES.js",
       "_install-qf_m3P46.js",
       "_footer-BfnOYqFd.js",
-      "_v2.5_release-DM3m2q6J.js",
+      "_v2.5_release-DkZgtnS8.js",
       "_components-CVXb4Mrf.js"
     ],
     "dynamicImports": [
@@ -962,6 +998,8 @@
       "public/themes/jabuti.webp",
       "public/themes/jellybeans.webp",
       "public/themes/kanagawa.webp",
+      "public/themes/material-darker.webp",
+      "public/themes/material-lighter.webp",
       "public/themes/melange.webp",
       "public/themes/mito-laser.webp",
       "public/themes/monekai.webp",
@@ -986,9 +1024,11 @@
       "public/themes/penumbra_light.webp",
       "public/themes/poimandres.webp",
       "public/themes/radium.webp",
+      "public/themes/rosepine-dawn.webp",
       "public/themes/rosepine.webp",
       "public/themes/rxyhn.webp",
       "public/themes/solarized_dark.webp",
+      "public/themes/solarized_oska.webp",
       "public/themes/sweetpastel.webp",
       "public/themes/tokyodark.webp",
       "public/themes/tokyonight.webp",

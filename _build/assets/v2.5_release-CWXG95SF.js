@@ -1,4 +1,4 @@
-import{b as n,q as l,k as c,t as h}from"./web-CBU83r8B.js";import{M as t}from"./index-C2YDUEaq.js";var o=h("<br>");const s={title:"NvChad v2.5 released!",desc:"Minor NvChad release with standard neovim config structure, new 7 themes, UI Term module replacing nvterm.",cover:"v2.5.webp"};function i(r){const e={a:"a",blockquote:"blockquote",code:"code",h1:"h1",h2:"h2",h3:"h3",img:"img",li:"li",p:"p",ul:"ul",...t(),...r.components};return[n(e.h1,{children:"NvChad v2.5 Released!"}),`
+import{b as n,q as l,k as h,t as c}from"./web-CBU83r8B.js";import{M as t}from"./index-C2YDUEaq.js";var a=c("<br>");const s={title:"NvChad v2.5 released!",desc:"Minor NvChad release with standard neovim config structure, new 11 themes, UI Term module replacing nvterm.",cover:"v2.5.webp"};function i(r){const e={a:"a",blockquote:"blockquote",code:"code",h1:"h1",h2:"h2",h3:"h3",img:"img",li:"li",p:"p",ul:"ul",...t(),...r.components};return[n(e.h1,{children:"NvChad v2.5 Released!"}),`
 `,n(e.p,{get children(){return n(e.img,{src:"/news/v2.5.webp",alt:"v2.5 poster"})}}),`
 `,n(e.blockquote,{get children(){return[`
 `,n(e.p,{children:"This release is a minor release, only major changes in it are new config structure ( no custom config stuff), you will be using nvchad repo as plugin, like LazyVim does with its starter config. NvTerm is replaced by UI's term module"}),`
@@ -10,14 +10,18 @@ import{b as n,q as l,k as c,t as h}from"./web-CBU83r8B.js";import{M as t}from"./
 `,n(e.p,{children:"Starter template for NvChad which lets users use NvChad as a plugin, thus not needing custom config stuff."}),`
 `]}}),`
 `,n(e.li,{get children(){return[`
-`,n(e.p,{children:`7 New themes for base46:
+`,n(e.p,{children:`11 New themes for base46:
 flexoki,
 jabuti,
 poimandres,
 mito-laser
 nano-light,
 flexoki-light,
-chadracula-evondev`}),`
+chadracula-evondev,
+material-darker,
+material-lighter,
+solarized_oska,
+rosepine-dawn`}),`
 `]}}),`
 `,n(e.li,{get children(){return[`
 `,n(e.p,{children:"Minimal terminal module which replaces nvterm which lets you created any amount of toggleable terminals , change bg color / highlights of each window etc."}),`
@@ -56,7 +60,7 @@ chadracula-evondev`}),`
 `,n(e.li,{get children(){return["Go through the new ",n(e.a,{href:"https://github.com/NvChad/NvChad/tree/v2.5",children:"module structure of nvchad"})," which will be used as your plugin."]}}),`
 `,n(e.li,{get children(){return["You can use this ",n(e.a,{href:"https://gist.github.com/siduck/048bed2e7570569e6b327b35d1715404",children:"shell script"})," ( unix only ) to automate your migration."]}}),`
 `]}}),`
-`,c(o),`
+`,h(a),`
 `,n(e.ul,{get children(){return[`
 `,n(e.li,{children:"For Manual Migration, do the following:"}),`
 `,n(e.li,{get children(){return["Move All of your custom dir files to the ",n(e.code,{children:"lua"})," dir of starter config"]}}),`
@@ -81,4 +85,12 @@ chadracula-evondev`}),`
 `,n(e.h3,{children:"nano-light"}),`
 `,n(e.p,{get children(){return n(e.img,{src:"/themes/nano-light.webp",alt:"nano-light theme"})}}),`
 `,n(e.h3,{children:"flexoki-light"}),`
-`,n(e.p,{get children(){return n(e.img,{src:"/themes/flexoki-light.webp",alt:"flexoki-light theme"})}})]}function u(r={}){const{wrapper:e}={...t(),...r.components};return e?n(e,l(r,{get children(){return n(i,r)}})):i(r)}export{u as default,s as meta};
+`,n(e.p,{get children(){return n(e.img,{src:"/themes/flexoki-light.webp",alt:"flexoki-light theme"})}}),`
+`,n(e.h3,{children:"Material-darker"}),`
+`,n(e.p,{get children(){return n(e.img,{src:"/themes/material-darker.webp",alt:"material-darker theme"})}}),`
+`,n(e.h3,{children:"Material-lighter"}),`
+`,n(e.p,{get children(){return n(e.img,{src:"/themes/material-lighter.webp",alt:"material-lighter theme"})}}),`
+`,n(e.h3,{children:"Rosepine-dawn"}),`
+`,n(e.p,{get children(){return n(e.img,{src:"/themes/rosepine-dawn.webp",alt:"rosepine-dawn theme"})}}),`
+`,n(e.h3,{children:"Solarized_oska"}),`
+`,n(e.p,{get children(){return n(e.img,{src:"/themes/solarized_oska.webp",alt:"solarized_oska theme"})}})]}function u(r={}){const{wrapper:e}={...t(),...r.components};return e?n(e,l(r,{get children(){return n(i,r)}})):i(r)}export{u as default,s as meta};
