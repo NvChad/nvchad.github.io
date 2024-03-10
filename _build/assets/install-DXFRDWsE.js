@@ -16,7 +16,7 @@ import{b as e,q as s,k as t,t as l}from"./web-CBU83r8B.js";import{M as a}from"./
 `,e(o,{}),`
 `,t(u),`
 `,e(n.ul,{get children(){return[`
-`,e(n.li,{get children(){return["Run ",e(n.code,{children:":MasonInstall"})," command after lazy.nvim finishes downloading plugins."]}}),`
+`,e(n.li,{get children(){return["Run ",e(n.code,{children:":MasonInstallAll"})," command after lazy.nvim finishes downloading plugins."]}}),`
 `]}}),`
 `,e(n.h2,{children:"Update"}),`
 `,e(n.ul,{get children(){return[`
