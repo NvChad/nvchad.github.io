@@ -164,7 +164,7 @@
 #DocContent blockquote {
   padding: 0.7em;
   border-left: 0.25rem solid;
-  margin-left: 1rem;
+  margin-left: 0rem;
   @apply bg-slate-1 dark:bg-dark-3 w-fit rounded-r-lg;
   @apply border-slate-3 dark:border-dark-4;
 }

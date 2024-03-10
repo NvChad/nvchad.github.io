@@ -58,10 +58,6 @@ h2 {
   @apply text-3xl font-bold;
 }
 
-.footerUnderline {
-  text-underline-offset: 1rem;
-}
-
 /* news classes  */
 .news h2 {
   @apply dark:border-dark-4;
@@ -86,15 +82,5 @@ h2 {
 }
 
 img {
-  animation: fadeIn 0.5s ease 0s 1 normal forwards;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
+  @apply animate-fade-in animate-duration-300;
 }
