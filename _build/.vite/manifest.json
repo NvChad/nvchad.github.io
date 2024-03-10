@@ -691,7 +691,7 @@
     ]
   },
   "src/routes/docs/config/walkthrough.mdx?pick=$css": {
-    "file": "assets/walkthrough-Dl8Tcykq.js",
+    "file": "assets/walkthrough-CPWzIkif.js",
     "src": "src/routes/docs/config/walkthrough.mdx?pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -916,7 +916,7 @@
     ]
   },
   "virtual:#vinxi/handler/client": {
-    "file": "assets/client-pnjzKWz3.js",
+    "file": "assets/client-DPQzBxSH.js",
     "src": "virtual:#vinxi/handler/client",
     "isEntry": true,
     "imports": [
