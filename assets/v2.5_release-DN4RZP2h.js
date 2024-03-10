@@ -169,17 +169,17 @@ rosepine-dawn`}),`
 `,n(e.h2,{children:"New Themes"}),`
 `,n(e.h3,{children:"Jabuti"}),`
 `,n(e.p,{get children(){return n(e.img,{src:"/themes/jabuti.webp",alt:"jabuti theme"})}}),`
-`,n(e.h3,{children:"flexoki"}),`
+`,n(e.h3,{children:"Flexoki"}),`
 `,n(e.p,{get children(){return n(e.img,{src:"/themes/flexoki.webp",alt:"flexoki theme"})}}),`
-`,n(e.h3,{children:"poimandres"}),`
+`,n(e.h3,{children:"Poimandres"}),`
 `,n(e.p,{get children(){return n(e.img,{src:"/themes/poimandres.webp",alt:"poimandres theme"})}}),`
-`,n(e.h3,{children:"mito-laser"}),`
+`,n(e.h3,{children:"Mito-laser"}),`
 `,n(e.p,{get children(){return n(e.img,{src:"/themes/mito-laser.webp",alt:"mito-laser theme"})}}),`
-`,n(e.h3,{children:"chadracula-evondev"}),`
+`,n(e.h3,{children:"Chadracula-evondev"}),`
 `,n(e.p,{get children(){return n(e.img,{src:"/themes/chadracula-evondev.webp",alt:"chadracula-evondev theme"})}}),`
-`,n(e.h3,{children:"nano-light"}),`
+`,n(e.h3,{children:"Nano-light"}),`
 `,n(e.p,{get children(){return n(e.img,{src:"/themes/nano-light.webp",alt:"nano-light theme"})}}),`
-`,n(e.h3,{children:"flexoki-light"}),`
+`,n(e.h3,{children:"Flexoki-light"}),`
 `,n(e.p,{get children(){return n(e.img,{src:"/themes/flexoki-light.webp",alt:"flexoki-light theme"})}}),`
 `,n(e.h3,{children:"Material-darker"}),`
 `,n(e.p,{get children(){return n(e.img,{src:"/themes/material-darker.webp",alt:"material-darker theme"})}}),`
