@@ -22,7 +22,6 @@ const defaultMeta = {
 for (const path in routes) {
   let route = path.replace("./routes", "").replace(/\.[^.]+$/, "");
   route = route.replace("index", "");
-
   const moduleMeta = routes[path]?.meta || defaultMeta; // Accessing the meta property of the module
   metaData[route] = moduleMeta;
 }

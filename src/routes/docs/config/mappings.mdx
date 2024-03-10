@@ -30,7 +30,7 @@ map("n", "<leader>ff", ":Telescope <cr>")
 
 -- mapping with a lua function
 map("n", "<A-i>", function()
-  require("nvchad.term").toggle()
+  require("nvchad.term").toggle({ pos = "sp", id ='abc' })
 end, { desc = "Terminal toggle floating" })
 
 
