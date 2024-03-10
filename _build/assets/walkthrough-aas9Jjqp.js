@@ -1,4 +1,4 @@
-import{b as n,q as i,k as s,t as a}from"./web-CBU83r8B.js";import{M as t}from"./index-C2YDUEaq.js";var c=a("<br>"),h=a("<kbd>space");const u={title:"NvChad Walkthrough",desc:"Walkthrough guide for NvChad"};function r(l){const e={a:"a",blockquote:"blockquote",code:"code",h1:"h1",h2:"h2",li:"li",p:"p",pre:"pre",span:"span",ul:"ul",...t(),...l.components};return[n(e.h1,{children:"How does NvChad work?"}),`
+import{b as n,q as i,k as r,t}from"./web-CBU83r8B.js";import{M as a}from"./index-C2YDUEaq.js";var h=t("<br>"),c=t("<kbd>space");const u={title:"NvChad Walkthrough",desc:"Walkthrough guide for NvChad"};function s(l){const e={a:"a",blockquote:"blockquote",code:"code",h1:"h1",h2:"h2",li:"li",p:"p",pre:"pre",span:"span",ul:"ul",...a(),...l.components};return[n(e.h1,{children:"How does NvChad work?"}),`
 `,n(e.h2,{children:"Understanding the basics"}),`
 `,n(e.p,{get children(){return["Before getting into the topic, first you should understand the ",n(e.code,{children:"vim.tbl_deep_extend"})," function which is used for merging tables and their values recursively."]}}),`
 `,n(e.ul,{get children(){return[`
@@ -31,8 +31,11 @@ import{b as n,q as i,k as s,t as a}from"./web-CBU83r8B.js";import{M as t}from"./
 `]}})}}),`
 `,n(e.h2,{children:"Main Config Structure"}),`
 `,n(e.ul,{get children(){return[`
-`,n(e.li,{children:"Here's the config sturcture of the main nvchad repo :"}),`
+`,n(e.li,{get children(){return[n(e.a,{href:"https://github.com/NvChad/NvChad",children:"NvChad/NvChad"})," repo, this contains plugins, options, mappings, autocmds."]}}),`
+`,n(e.li,{get children(){return[n(e.a,{href:"https://github.com/NvChad/starter",children:"NvChad/starter"})," - This is a minimal config which shows how to use the nvchad repo as a plugin."]}}),`
+`,n(e.li,{children:"Users will be using the starter config or can create their own"}),`
 `]}}),`
+`,n(e.p,{children:"config sturcture of the main nvchad repo :"}),`
 `,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",children:`lua
 │
 ├── nvchad
@@ -50,12 +53,10 @@ import{b as n,q as i,k as s,t as a}from"./web-CBU83r8B.js";import{M as t}from"./
 │       
 └── nvconfig.lua
 `})}}),`
-`,s(c),`
+`,r(h),`
 `,n(e.ul,{get children(){return[`
-`,n(e.li,{get children(){return["example module import, ",n(e.code,{children:'require "nvchad.options'})]}}),`
+`,n(e.li,{get children(){return["example module import, ",n(e.code,{children:'require "nvchad.options"'})]}}),`
 `,n(e.li,{children:"nvconfig.lua is the list of all options for both ui/base46 repo!"}),`
-`,n(e.li,{children:"The starter config uses the main repo (nvchad/nvchad) as a plugin and imports its plugins, options, mappings etc."}),`
-`,n(e.li,{children:"So basically you're using nvchad's main repo as a plugin into your config."}),`
 `]}}),`
 `,n(e.h2,{children:"Chadrc.lua"}),`
 `,n(e.ul,{get children(){return[`
@@ -66,11 +67,11 @@ import{b as n,q as i,k as s,t as a}from"./web-CBU83r8B.js";import{M as t}from"./
 `,n(e.h2,{children:"Themes"}),`
 `,n(e.p,{get children(){return["You can see all the themes with the following keymap: ",n(e.code,{children:"<leader> + th"}),"."]}}),`
 `,n(e.blockquote,{get children(){return[`
-`,n(e.p,{get children(){return["The ",n(e.code,{children:"leader"})," key is the  ",s(h),"  in NvChad."]}}),`
+`,n(e.p,{get children(){return["The ",n(e.code,{children:"leader"})," key is the  ",r(c),"  in NvChad."]}}),`
 `]}}),`
 `,n(e.h2,{children:"Mappings"}),`
 `,n(e.p,{children:"If you want to know all the keymaps, you can run the following comands:"}),`
 `,n(e.ul,{get children(){return[`
 `,n(e.li,{get children(){return n(e.code,{children:"NvCheatsheet"})}}),`
 `,n(e.li,{get children(){return n(e.code,{children:"Telescope keymaps"})}}),`
-`]}})]}function m(l={}){const{wrapper:e}={...t(),...l.components};return e?n(e,i(l,{get children(){return n(r,l)}})):r(l)}export{m as default,u as meta};
+`]}})]}function m(l={}){const{wrapper:e}={...a(),...l.components};return e?n(e,i(l,{get children(){return n(s,l)}})):s(l)}export{m as default,u as meta};
