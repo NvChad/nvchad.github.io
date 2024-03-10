@@ -673,7 +673,7 @@
     ]
   },
   "src/routes/docs/config/nvchad_ui.mdx?pick=$css": {
-    "file": "assets/nvchad_ui-B43glA-N.js",
+    "file": "assets/nvchad_ui-BT17I6p0.js",
     "src": "src/routes/docs/config/nvchad_ui.mdx?pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -952,7 +952,7 @@
     ]
   },
   "virtual:#vinxi/handler/client": {
-    "file": "assets/client-CVjFW4rw.js",
+    "file": "assets/client-D1TUx33u.js",
     "src": "virtual:#vinxi/handler/client",
     "isEntry": true,
     "imports": [

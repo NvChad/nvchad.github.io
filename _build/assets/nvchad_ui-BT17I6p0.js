@@ -34,7 +34,7 @@ import{b as n,q as t,k as s,t as c}from"./web-CBU83r8B.js";import{M as i}from"./
 `]}})}}),`
 `,n(e.h2,{children:"Term"}),`
 `,n(e.ul,{get children(){return[`
-`,n(e.li,{children:"The term module exposes the following function expects a table of :"}),`
+`,n(e.li,{children:"The term module exposes the following functions which expect a table of :"}),`
 `]}}),`
 `,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return[`{
   pos = `,n(e.span,{className:"hljs-string",children:'"sp"'}),", ",n(e.span,{className:"hljs-comment",children:"-- sp/vsp/float"}),`
