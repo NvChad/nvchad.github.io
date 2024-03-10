@@ -23,7 +23,7 @@ map(`,e(n.span,{className:"hljs-string",children:'"n"'}),", ",e(n.span,{classNam
 
 `,e(n.span,{className:"hljs-comment",children:"-- mapping with a lua function"}),`
 map(`,e(n.span,{className:"hljs-string",children:'"n"'}),", ",e(n.span,{className:"hljs-string",children:'"<A-i>"'}),", ",e(n.span,{className:"hljs-function",get children(){return[e(n.span,{className:"hljs-keyword",children:"function"}),e(n.span,{className:"hljs-params",children:"()"})]}}),`
-  `,e(n.span,{className:"hljs-built_in",children:"require"}),"(",e(n.span,{className:"hljs-string",children:'"nvchad.term"'}),`).toggle()
+  `,e(n.span,{className:"hljs-built_in",children:"require"}),"(",e(n.span,{className:"hljs-string",children:'"nvchad.term"'}),").toggle({ pos: ",e(n.span,{className:"hljs-string",children:'"sp"'}),", id=",e(n.span,{className:"hljs-string",children:"'abc'"}),` })
 `,e(n.span,{className:"hljs-keyword",children:"end"}),", { desc = ",e(n.span,{className:"hljs-string",children:'"Terminal toggle floating"'}),` })
 
 

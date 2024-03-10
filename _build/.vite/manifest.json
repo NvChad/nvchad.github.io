@@ -663,7 +663,7 @@
     ]
   },
   "src/routes/docs/config/mappings.mdx?pick=$css": {
-    "file": "assets/mappings-OGikUwyO.js",
+    "file": "assets/mappings-BKrP1_kh.js",
     "src": "src/routes/docs/config/mappings.mdx?pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -952,7 +952,7 @@
     ]
   },
   "virtual:#vinxi/handler/client": {
-    "file": "assets/client-D1TUx33u.js",
+    "file": "assets/client-C2meKJCt.js",
     "src": "virtual:#vinxi/handler/client",
     "isEntry": true,
     "imports": [
