@@ -204,10 +204,10 @@ print_num(`,n(s.span,{className:"hljs-number",children:"5"}),") ",n(s.span,{clas
 
 `,n(s.span,{className:"hljs-comment",children:"-- for example in ~/.config/nvim/lua , all dirs and files are accessable via require"}),`
 `,n(s.span,{className:"hljs-comment",children:"-- Do note that all files in that lua folder are in path!"}),`
-`,n(s.span,{className:"hljs-comment",children:"-- ~/.config/nvim/lua/custom "}),`
-`,n(s.span,{className:"hljs-comment",children:"-- ~/.config/nvim/lua/custom/init.lua"}),`
+`,n(s.span,{className:"hljs-comment",children:"-- ~/.config/nvim/lua/abc.lua "}),`
+`,n(s.span,{className:"hljs-comment",children:"-- ~/.config/nvim/lua/abc/init.lua"}),`
 
- `,n(s.span,{className:"hljs-built_in",children:"require"})," ",n(s.span,{className:"hljs-string",children:'"custom"'}),`
+ `,n(s.span,{className:"hljs-built_in",children:"require"})," ",n(s.span,{className:"hljs-string",children:'"abc"'}),`
 
 `,n(s.span,{className:"hljs-comment",children:"-- both do the same thing"}),`
 `]}})}})]}function d(e={}){const{wrapper:s}={...a(),...e.components};return s?n(s,r(e,{get children(){return n(l,e)}})):l(e)}export{d as default,i as meta};

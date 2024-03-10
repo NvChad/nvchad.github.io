@@ -12,7 +12,7 @@ vim.g.vscode_snippets_path = `,n(e.span,{className:"hljs-string",children:'"your
 vim.g.snipmate_snippets_path = `,n(e.span,{className:"hljs-string",children:'"your snippets path"'}),`
 
 `,n(e.span,{className:"hljs-comment",children:"-- lua format "}),`
-vim.g.lua_snippets_path = vim.fn.stdpath `,n(e.span,{className:"hljs-string",children:'"config"'})," .. ",n(e.span,{className:"hljs-string",children:'"/lua/custom/lua_snippets"'}),`
+vim.g.lua_snippets_path = vim.fn.stdpath `,n(e.span,{className:"hljs-string",children:'"config"'})," .. ",n(e.span,{className:"hljs-string",children:'"/lua/lua_snippets"'}),`
 `]}})}}),`
 `,l(o),`
 `,n(e.blockquote,{get children(){return[`

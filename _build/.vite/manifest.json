@@ -661,7 +661,7 @@
     ]
   },
   "src/routes/docs/config/snippets.mdx?pick=$css": {
-    "file": "assets/snippets-B9mS8faA.js",
+    "file": "assets/snippets-DoY67S5r.js",
     "src": "src/routes/docs/config/snippets.mdx?pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -681,7 +681,7 @@
     ]
   },
   "src/routes/docs/config/theming.mdx?pick=$css": {
-    "file": "assets/theming-B4T3vrpH.js",
+    "file": "assets/theming-CVhQ7sKx.js",
     "src": "src/routes/docs/config/theming.mdx?pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -721,7 +721,7 @@
     ]
   },
   "src/routes/docs/faq.mdx?pick=$css": {
-    "file": "assets/faq-CIubJ5Ie.js",
+    "file": "assets/faq-DJ0_yBDI.js",
     "src": "src/routes/docs/faq.mdx?pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -763,7 +763,7 @@
     ]
   },
   "src/routes/docs/quickstart/learn-lua.mdx?pick=$css": {
-    "file": "assets/learn-lua-DORsl1kS.js",
+    "file": "assets/learn-lua-YJ29Jf0R.js",
     "src": "src/routes/docs/quickstart/learn-lua.mdx?pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -916,7 +916,7 @@
     ]
   },
   "virtual:#vinxi/handler/client": {
-    "file": "assets/client-BV7Y-AZs.js",
+    "file": "assets/client-BY0Xs26f.js",
     "src": "virtual:#vinxi/handler/client",
     "isEntry": true,
     "imports": [

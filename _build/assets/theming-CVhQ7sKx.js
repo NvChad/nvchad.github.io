@@ -56,8 +56,8 @@ import{b as n,q as i,k as l,t}from"./web-CBU83r8B.js";import{M as h}from"./index
 `,n(e.li,{get children(){return["Default themes can be found in our ",n(e.a,{href:"https://github.com/NvChad/base46",get children(){return n(e.code,{children:"base46"})}})," repository."]}}),`
 `]}}),`
 `,n(e.p,{children:"Here is the default structure for NvChad themes:"}),`
-`,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return[n(e.span,{className:"hljs-comment",children:"-- place the file in /custom/themes/<theme-name>.lua"}),`
-`,n(e.span,{className:"hljs-comment",children:"-- for example: custom/themes/siduck.lua"}),`
+`,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return[n(e.span,{className:"hljs-comment",children:"-- place the file in /themes/<theme-name>.lua"}),`
+`,n(e.span,{className:"hljs-comment",children:"-- for example: /lua/themes/siduck.lua"}),`
 
 `,n(e.span,{className:"hljs-keyword",children:"local"}),` M = {}
 
