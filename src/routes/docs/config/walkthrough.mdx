@@ -40,7 +40,11 @@ local result = vim.tbl_deep_extend("force", person, someone)
 
 ## Main Config Structure
 
-- Here's the config sturcture of the main nvchad repo :
+ - [NvChad/NvChad](https://github.com/NvChad/NvChad) repo, this contains plugins, options, mappings, autocmds.
+ - [NvChad/starter](https://github.com/NvChad/starter) - This is a minimal config which shows how to use the nvchad repo as a plugin.
+ - Users will be using the starter config or can create their own
+
+ config sturcture of the main nvchad repo :
 ```lua
 lua
 │
@@ -60,10 +64,8 @@ lua
 └── nvconfig.lua
 ```
 <br/>
-- example module import, `require "nvchad.options`
+- example module import, `require "nvchad.options"`
 - nvconfig.lua is the list of all options for both ui/base46 repo!
-- The starter config uses the main repo (nvchad/nvchad) as a plugin and imports its plugins, options, mappings etc.
-- So basically you're using nvchad's main repo as a plugin into your config.
 
 ## Chadrc.lua
 
