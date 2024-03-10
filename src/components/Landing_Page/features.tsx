@@ -38,7 +38,7 @@ const FeatureList = [
     title: "Prettiest themes",
     icon: "i-ph:paint-brush-broad text-red-3",
     description: ` 
-        64 inbuilt beautifully ported & custom themes! All the theme colors are
+        68 inbuilt beautifully ported & custom themes! All the theme colors are
         overridable too.
         `,
   },
