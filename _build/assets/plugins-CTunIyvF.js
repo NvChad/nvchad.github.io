@@ -1,7 +1,8 @@
 import{M as a}from"./index-C2YDUEaq.js";import{b as e,q as i}from"./web-CBU83r8B.js";const r={title:"NvChad Plugins",desc:"Maintain plugins in NvChad"};function l(s){const n={a:"a",code:"code",h2:"h2",li:"li",p:"p",pre:"pre",span:"span",strong:"strong",ul:"ul",...a(),...s.components};return[e(n.h2,{children:"Overview"}),`
 `,e(n.p,{get children(){return["NvChad uses ",e(n.a,{href:"https://github.com/folke/lazy.nvim",children:"lazy.nvim"})," for plugins management. List of ",e(n.a,{href:"https://github.com/NvChad/NvChad/tree/v2.5/lua/nvchad/plugins",children:"default plugins"}),"."]}}),`
 `,e(n.h2,{children:"Lazy loading"}),`
-`,e(n.p,{children:"We lazy load almost 95% of the plugins, so we expect and recommend you to lazy load the plugins as well, as its efficient in reducing startuptime."}),`
+`,e(n.p,{children:`We lazy load almost 95% of the plugins, so we expect and recommend you to lazy load the plugins as well, as it's
+efficient in reducing startup-time.`}),`
 `,e(n.ul,{get children(){return[`
 `,e(n.li,{children:"We don't want users making NvChad slow just because they didn't lazy load plugins they've added."}),`
 `,e(n.li,{get children(){return["Please read the ",e(n.a,{href:"https://github.com/folke/lazy.nvim#-plugin-spec",children:"lazy.nvim plugin specs"})," docs to know what options are available for lazyloading etc."]}}),`

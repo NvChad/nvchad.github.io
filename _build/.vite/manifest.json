@@ -663,7 +663,7 @@
     ]
   },
   "src/routes/docs/config/mappings.mdx?pick=$css": {
-    "file": "assets/mappings-BGgVhAIG.js",
+    "file": "assets/mappings-Cb_P5vtx.js",
     "src": "src/routes/docs/config/mappings.mdx?pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -673,7 +673,7 @@
     ]
   },
   "src/routes/docs/config/nvchad_ui.mdx?pick=$css": {
-    "file": "assets/nvchad_ui-BT17I6p0.js",
+    "file": "assets/nvchad_ui-DLQ1cybd.js",
     "src": "src/routes/docs/config/nvchad_ui.mdx?pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -683,7 +683,7 @@
     ]
   },
   "src/routes/docs/config/plugins.mdx?pick=$css": {
-    "file": "assets/plugins-CjCnb50P.js",
+    "file": "assets/plugins-CTunIyvF.js",
     "src": "src/routes/docs/config/plugins.mdx?pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -713,7 +713,7 @@
     ]
   },
   "src/routes/docs/config/theming.mdx?pick=$css": {
-    "file": "assets/theming-CVhQ7sKx.js",
+    "file": "assets/theming-DKjrpR34.js",
     "src": "src/routes/docs/config/theming.mdx?pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -723,7 +723,7 @@
     ]
   },
   "src/routes/docs/config/walkthrough.mdx?pick=$css": {
-    "file": "assets/walkthrough-aas9Jjqp.js",
+    "file": "assets/walkthrough-YS72n7FA.js",
     "src": "src/routes/docs/config/walkthrough.mdx?pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -753,7 +753,7 @@
     ]
   },
   "src/routes/docs/faq.mdx?pick=$css": {
-    "file": "assets/faq-DJ0_yBDI.js",
+    "file": "assets/faq-Co64Q4kt.js",
     "src": "src/routes/docs/faq.mdx?pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -952,7 +952,7 @@
     ]
   },
   "virtual:#vinxi/handler/client": {
-    "file": "assets/client-p3qDOjn4.js",
+    "file": "assets/client-CrZ9T3qr.js",
     "src": "virtual:#vinxi/handler/client",
     "isEntry": true,
     "imports": [

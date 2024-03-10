@@ -10,7 +10,7 @@ import{b as n,q as t,k as s,t as c}from"./web-CBU83r8B.js";import{M as i}from"./
 `,n(e.ul,{get children(){return[`
 `,n(e.li,{children:"The order is a list of module names from default modules + your modules"}),`
 `,n(e.li,{children:"Removing a word in the order will remove that module"}),`
-`,n(e.li,{children:"modules expects all its keys to be a function that returns a string."}),`
+`,n(e.li,{children:"Modules expect all its keys to be a function that returns a string."}),`
 `]}}),`
 `,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return[`M.ui = {
   tabufline = {

@@ -13,7 +13,7 @@ import{M as i}from"./index-C2YDUEaq.js";import{b as n,q as o}from"./web-CBU83r8B
 `]}}),`
 `,n(e.h2,{children:"Custom local base46 themes"}),`
 `,n(e.ul,{get children(){return[`
-`,n(e.li,{get children(){return["To make a custom local theme thats of the base46 format, you have to create ",n(e.code,{children:"/lua/themes/mytheme.lua"}),". Check ",n(e.a,{href:"https://github.com/NvChad/base46/blob/v2.0/README.md",children:"base46 docs"})," for more info."]}}),`
+`,n(e.li,{get children(){return["To make a custom local theme that's the base46 format, you have to create ",n(e.code,{children:"/lua/themes/mytheme.lua"}),". Check ",n(e.a,{href:"https://github.com/NvChad/base46/blob/v2.0/README.md",children:"base46 docs"})," for more info."]}}),`
 `]}}),`
 `,n(e.h2,{children:"Can I remove base46?"}),`
 `,n(e.ul,{get children(){return[`
@@ -32,7 +32,7 @@ import{M as i}from"./index-C2YDUEaq.js";import{b as n,q as o}from"./web-CBU83r8B
    - { key: I, mods: Control, chars: `,n(e.span,{className:"hljs-string",children:'"\\x1b[105;6u"'}),` }
 `]}})}}),`
 `,n(e.ul,{get children(){return[`
-`,n(e.li,{get children(){return[n(e.strong,{children:"NOTE"}),": keymaps in NvChad are case sensitive, to delete it you need to use lowercase ",n(e.code,{children:"<tab>"}),". Add this to your mappings.lua:"]}}),`
+`,n(e.li,{get children(){return[n(e.strong,{children:"NOTE"}),": keymaps in NvChad are case-sensitive, to delete it you need to use lowercase ",n(e.code,{children:"<tab>"}),". Add this to your mappings.lua:"]}}),`
 `]}}),`
 `,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return[`M.disabled = {
 	n = {

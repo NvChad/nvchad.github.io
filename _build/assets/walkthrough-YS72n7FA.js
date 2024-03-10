@@ -35,7 +35,7 @@ import{b as n,q as i,k as r,t}from"./web-CBU83r8B.js";import{M as a}from"./index
 `,n(e.li,{get children(){return[n(e.a,{href:"https://github.com/NvChad/starter",children:"NvChad/starter"})," - This is a minimal config which shows how to use the nvchad repo as a plugin."]}}),`
 `,n(e.li,{children:"Users will be using the starter config or can create their own"}),`
 `]}}),`
-`,n(e.p,{children:"config sturcture of the main nvchad repo :"}),`
+`,n(e.p,{children:"config structure of the main nvchad repo :"}),`
 `,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",children:`lua
 │
 ├── nvchad
@@ -70,7 +70,7 @@ import{b as n,q as i,k as r,t}from"./web-CBU83r8B.js";import{M as a}from"./index
 `,n(e.p,{get children(){return["The ",n(e.code,{children:"leader"})," key is the  ",r(c),"  in NvChad."]}}),`
 `]}}),`
 `,n(e.h2,{children:"Mappings"}),`
-`,n(e.p,{children:"If you want to know all the keymaps, you can run the following comands:"}),`
+`,n(e.p,{children:"If you want to know all the keymaps, you can run the following commands:"}),`
 `,n(e.ul,{get children(){return[`
 `,n(e.li,{get children(){return n(e.code,{children:"NvCheatsheet"})}}),`
 `,n(e.li,{get children(){return n(e.code,{children:"Telescope keymaps"})}}),`

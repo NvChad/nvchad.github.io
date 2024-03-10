@@ -27,7 +27,7 @@ import{b as n,q as i,k as l,t}from"./web-CBU83r8B.js";import{M as h}from"./index
 }
 `]}})}}),`
 `,l(a),`
-`,n(e.p,{get children(){return["In order to add custom highlights, its the same as above, just use ",n(e.strong,{get children(){return n(e.code,{children:"hl_add"})}}),"."]}}),`
+`,n(e.p,{get children(){return["In order to add custom highlights, it's the same as above, just use ",n(e.strong,{get children(){return n(e.code,{children:"hl_add"})}}),"."]}}),`
 `,n(e.h2,{children:"Customize themes"}),`
 `,n(e.p,{children:"If you just want to customize an already existing theme, you can change the following configuration:"}),`
 `,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return[`M.ui = {

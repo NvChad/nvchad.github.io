@@ -1,5 +1,5 @@
 import{b as e,q as i,k as a,t as l}from"./web-CBU83r8B.js";import{M as c}from"./index-C2YDUEaq.js";var t=l("<kbd>Ctrl"),h=l("<kbd>Space"),d=l("<kbd>alt"),p=l("<kbd>shift");const g={title:"NvChad Mappings",desc:"Manage mappings in nvchad"};function r(s){const n={a:"a",code:"code",h2:"h2",li:"li",p:"p",pre:"pre",span:"span",ul:"ul",...c(),...s.components};return[e(n.h2,{children:"Overview"}),`
-`,e(n.p,{children:"The mapping configuration uses the nvim name shorcuts as:"}),`
+`,e(n.p,{children:"The mapping configuration uses the nvim name shortcuts as:"}),`
 `,e(n.ul,{get children(){return[`
 `,e(n.li,{get children(){return[e(n.code,{children:"<C>"})," -> ",a(t)]}}),`
 `,e(n.li,{get children(){return[e(n.code,{children:"<leader>"})," -> ",a(h)]}}),`
@@ -10,7 +10,7 @@ import{b as e,q as i,k as a,t as l}from"./web-CBU83r8B.js";import{M as c}from"./
 `,e(n.h2,{children:"Mapping format"}),`
 `,e(n.ul,{get children(){return[`
 `,e(n.li,{get children(){return["NvChad uses ",e(n.code,{children:"vim.keymap.set"})," by default, check ",e(n.code,{children:":h vim.keymap.set"})," for detailed docs."]}}),`
-`,e(n.li,{children:"The desc opt is optional. Its only needed for NvCheatsheet to document, First word in desc will be used for group heading."}),`
+`,e(n.li,{children:"The desc opt is optional. It's only needed for NvCheatsheet to document, First word in desc will be used for group heading."}),`
 `]}}),`
 `,e(n.pre,{get children(){return e(n.code,{className:"hljs language-lua",get children(){return[e(n.span,{className:"hljs-keyword",children:"local"}),` map = vim.keymap.set
 
