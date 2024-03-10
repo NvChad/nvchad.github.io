@@ -7,7 +7,7 @@ import{ssr as i,ssrHydrationKey as r,escape as t,createComponent as a,ssrAttribu
         Configuration is written in Lua which integrates well with the Neovim
         lua api & lua plugins.
       `},{title:"Prettiest themes",icon:"i-ph:paint-brush-broad text-red-3",description:` 
-        64 inbuilt beautifully ported & custom themes! All the theme colors are
+        68 inbuilt beautifully ported & custom themes! All the theme colors are
         overridable too.
         `},{title:"Lightweight",icon:"i-ph:feather text-purple-3",description:`
         The config is around 900 ~ LOC. The codebase is kept as clean as possible.

@@ -7,7 +7,7 @@ import{k as a,l as m,m as s,b as u,t as o,n as v,p as f,s as h}from"./web-CBU83r
         Configuration is written in Lua which integrates well with the Neovim
         lua api & lua plugins.
       `},{title:"Prettiest themes",icon:"i-ph:paint-brush-broad text-red-3",description:` 
-        64 inbuilt beautifully ported & custom themes! All the theme colors are
+        68 inbuilt beautifully ported & custom themes! All the theme colors are
         overridable too.
         `},{title:"Lightweight",icon:"i-ph:feather text-purple-3",description:`
         The config is around 900 ~ LOC. The codebase is kept as clean as possible.

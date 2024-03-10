@@ -23,8 +23,8 @@
       "_routing-CayKO4ES.js"
     ]
   },
-  "_footer-BfnOYqFd.js": {
-    "file": "assets/footer-BfnOYqFd.js",
+  "_footer-DMYsG2VY.js": {
+    "file": "assets/footer-DMYsG2VY.js",
     "imports": [
       "_web-CBU83r8B.js",
       "_install-qf_m3P46.js",
@@ -815,12 +815,12 @@
     ]
   },
   "src/routes/index.tsx?pick=default&pick=$css": {
-    "file": "assets/index-BlQ1vSBQ.js",
+    "file": "assets/index-DgZBA0zB.js",
     "src": "src/routes/index.tsx?pick=default&pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_footer-BfnOYqFd.js",
+      "_footer-DMYsG2VY.js",
       "_web-CBU83r8B.js",
       "_install-qf_m3P46.js",
       "_clipboard-DzJ4oxno.js",
@@ -952,7 +952,7 @@
     ]
   },
   "virtual:#vinxi/handler/client": {
-    "file": "assets/client-D9FZpR9i.js",
+    "file": "assets/client-DiD-EVgy.js",
     "src": "virtual:#vinxi/handler/client",
     "isEntry": true,
     "imports": [
@@ -964,7 +964,7 @@
       "_index-C2YDUEaq.js",
       "_routing-CayKO4ES.js",
       "_install-qf_m3P46.js",
-      "_footer-BfnOYqFd.js",
+      "_footer-DMYsG2VY.js",
       "_v2.5_release-DkZgtnS8.js",
       "_components-CVXb4Mrf.js"
     ],
