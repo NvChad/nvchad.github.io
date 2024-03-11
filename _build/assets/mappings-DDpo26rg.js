@@ -1,4 +1,4 @@
-import{b as e,q as i,k as a,t as l}from"./web-CBU83r8B.js";import{M as c}from"./index-C2YDUEaq.js";var t=l("<kbd>Ctrl"),h=l("<kbd>Space"),d=l("<kbd>alt"),p=l("<kbd>shift");const g={title:"NvChad Mappings",desc:"Manage mappings in nvchad"};function r(s){const n={a:"a",code:"code",h2:"h2",li:"li",p:"p",pre:"pre",span:"span",ul:"ul",...c(),...s.components};return[e(n.h2,{children:"Overview"}),`
+import{b as e,q as c,k as a,t as l}from"./web-CBU83r8B.js";import{M as i}from"./index-C2YDUEaq.js";var t=l("<kbd>Ctrl"),h=l("<kbd>Space"),d=l("<kbd>alt"),p=l("<kbd>shift");const g={title:"NvChad Mappings",desc:"Manage mappings in nvchad"};function r(s){const n={a:"a",code:"code",h2:"h2",li:"li",p:"p",pre:"pre",span:"span",ul:"ul",...i(),...s.components};return[e(n.h2,{children:"Overview"}),`
 `,e(n.p,{children:"The mapping configuration uses the nvim name shortcuts as:"}),`
 `,e(n.ul,{get children(){return[`
 `,e(n.li,{get children(){return[e(n.code,{children:"<C>"})," -> ",a(t)]}}),`
@@ -9,8 +9,15 @@ import{b as e,q as i,k as a,t as l}from"./web-CBU83r8B.js";import{M as c}from"./
 `]}}),`
 `,e(n.h2,{children:"Mapping format"}),`
 `,e(n.ul,{get children(){return[`
-`,e(n.li,{get children(){return["NvChad uses ",e(n.code,{children:"vim.keymap.set"})," by default, check ",e(n.code,{children:":h vim.keymap.set"})," for detailed docs."]}}),`
-`,e(n.li,{children:"The desc opt is optional. It's only needed for NvCheatsheet to document, First word in desc will be used for group heading."}),`
+`,e(n.li,{get children(){return[`
+`,e(n.p,{get children(){return["NvChad uses ",e(n.code,{children:"vim.keymap.set"})," by default, check ",e(n.code,{children:":h vim.keymap.set"})," for detailed docs."]}}),`
+`]}}),`
+`,e(n.li,{get children(){return[`
+`,e(n.p,{children:"The desc opt is optional. It's only needed for NvCheatsheet to document, First word in desc will be used for group heading."}),`
+`]}}),`
+`,e(n.li,{get children(){return[`
+`,e(n.p,{children:"NvCheatsheet groups require at least 2 mappings"}),`
+`]}}),`
 `]}}),`
 `,e(n.pre,{get children(){return e(n.code,{className:"hljs language-lua",get children(){return[e(n.span,{className:"hljs-keyword",children:"local"}),` map = vim.keymap.set
 
@@ -32,4 +39,4 @@ map(`,e(n.span,{className:"hljs-string",children:'"n"'}),", ",e(n.span,{classNam
 
 nomap(`,e(n.span,{className:"hljs-string",children:'"i"'}),", ",e(n.span,{className:"hljs-string",children:'"<C-k>"'}),`)
 nomap(`,e(n.span,{className:"hljs-string",children:'"n"'}),", ",e(n.span,{className:"hljs-string",children:'"<C-k>"'}),`)
-`]}})}})]}function u(s={}){const{wrapper:n}={...c(),...s.components};return n?e(n,i(s,{get children(){return e(r,s)}})):r(s)}export{u as default,g as meta};
+`]}})}})]}function u(s={}){const{wrapper:n}={...i(),...s.components};return n?e(n,c(s,{get children(){return e(r,s)}})):r(s)}export{u as default,g as meta};
