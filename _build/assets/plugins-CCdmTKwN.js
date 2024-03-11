@@ -11,7 +11,7 @@ efficient in reducing startup-time.`}),`
 `,e(n.h2,{children:"Manage plugins"}),`
 `,e(n.p,{get children(){return["All NvChad default plugins will have ",e(n.code,{children:"lazy = true"})," set. Therefore, if you want a plugin to be enabled on startup, change it to ",e(n.code,{children:"lazy = false"}),"."]}}),`
 `,e(n.ul,{get children(){return[`
-`,e(n.li,{get children(){return e(n.strong,{children:"plugins.lua"})}}),`
+`,e(n.li,{get children(){return e(n.strong,{children:"plugins/anyname.lua"})}}),`
 `]}}),`
 `,e(n.pre,{get children(){return e(n.code,{className:"hljs language-lua",get children(){return[e(n.span,{className:"hljs-keyword",children:"local"}),` plugins = {
 
