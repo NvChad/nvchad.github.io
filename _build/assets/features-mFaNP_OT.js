@@ -4,7 +4,7 @@ import{b as n,q as a,k as r,t}from"./web-CBU83r8B.js";import{M as o}from"./index
 `]}}),`
 `,n(e.h2,{children:"Base46"}),`
 `,n(e.ul,{get children(){return[`
-`,n(e.li,{children:"Base46 is NvChad's highlight performant theming plugin and has many ported themes ( around 57+ )."}),`
+`,n(e.li,{children:"Base46 is NvChad's highly performant theming plugin and has 68 themes."}),`
 `]}}),`
 `,n(e.h4,{children:"How it works?"}),`
 `,n(e.ul,{get children(){return[`
