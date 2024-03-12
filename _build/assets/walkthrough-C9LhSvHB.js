@@ -60,7 +60,7 @@ import{b as n,q as i,k as r,t}from"./web-CBU83r8B.js";import{M as a}from"./index
 `]}}),`
 `,n(e.h2,{children:"Chadrc.lua"}),`
 `,n(e.ul,{get children(){return[`
-`,n(e.li,{get children(){return["This file is meant to have structure of ",n(e.a,{href:"https://github.com/NvChad/NvChad/blob/starter/lua/nvconfig.lua",children:"nvconfig.lua"}),", check the nvconfig.lua for knowing all supported options."]}}),`
+`,n(e.li,{get children(){return["This file is meant to have structure of ",n(e.a,{href:"https://github.com/NvChad/NvChad/blob/v2.5/lua/nvconfig.lua",children:"nvconfig.lua"}),", check the nvconfig.lua for knowing all supported options."]}}),`
 `,n(e.li,{children:"So nvconfig returns a table of config and then merges chadrc's table."}),`
 `,n(e.li,{get children(){return["And you put this file in your ",n(e.code,{children:"/lua"})," folder"]}}),`
 `]}}),`
