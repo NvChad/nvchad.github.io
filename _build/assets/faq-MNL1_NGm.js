@@ -1,4 +1,4 @@
-import{M as i}from"./index-C2YDUEaq.js";import{b as n,q as o}from"./web-CBU83r8B.js";const l={title:"NvChad Faq ",desc:"NvChad Common Faqs"};function r(t){const e={a:"a",code:"code",h2:"h2",li:"li",p:"p",pre:"pre",span:"span",strong:"strong",ul:"ul",...i(),...t.components};return[n(e.h2,{children:"Icons not working"}),`
+import{M as i}from"./index-C2YDUEaq.js";import{b as n,q as h}from"./web-CBU83r8B.js";const c={title:"NvChad Faq ",desc:"NvChad Common Faqs"};function t(r){const e={a:"a",code:"code",h2:"h2",li:"li",p:"p",pre:"pre",span:"span",strong:"strong",ul:"ul",...i(),...r.components};return[n(e.h2,{children:"Icons not working"}),`
 `,n(e.ul,{get children(){return[`
 `,n(e.li,{get children(){return["Setup a ",n(e.a,{href:"https://www.nerdfonts.com/#home",children:"nerdfont"})," as your terminal's default font."]}}),`
 `]}}),`
@@ -43,4 +43,10 @@ import{M as i}from"./index-C2YDUEaq.js";import{b as n,q as o}from"./web-CBU83r8B
 `,n(e.h2,{children:"NvChad's color is weird"}),`
 `,n(e.ul,{get children(){return[`
 `,n(e.li,{get children(){return["You might be using a terminal that doesn't support true color. This problem is very common for those who use the default MacOS terminal, opt to use ",n(e.a,{href:"https://iterm2.com/",children:"iterm2"})," instead."]}}),`
-`]}})]}function a(t={}){const{wrapper:e}={...i(),...t.components};return e?n(e,o(t,{get children(){return n(r,t)}})):r(t)}export{a as default,l as meta};
+`]}}),`
+`,n(e.h2,{children:"CursorLine not showing"}),`
+`,n(e.ul,{get children(){return[`
+`,n(e.li,{children:"We set it to only number by default, to have cursorline highlight shown, add :"}),`
+`]}}),`
+`,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return["vim.o.cursorlineopt = ",n(e.span,{className:"hljs-string",children:'"number, line"'}),`
+`]}})}})]}function a(r={}){const{wrapper:e}={...i(),...r.components};return e?n(e,h(r,{get children(){return n(t,r)}})):t(r)}export{a as default,c as meta};
