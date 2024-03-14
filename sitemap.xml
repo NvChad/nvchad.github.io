@@ -5,7 +5,7 @@
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
      </url><url>
-     <loc>https://nvchad.com/themes</loc>
+     <loc>https://nvchad.com/[...404]</loc>
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
      </url><url>
@@ -17,19 +17,11 @@
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
      </url><url>
-     <loc>https://nvchad.com/news/v2.0_release</loc>
-     <changefreq>weekly</changefreq>
-     <priority>0.5</priority>
-     </url><url>
      <loc>https://nvchad.com/news/v2.5_release</loc>
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
      </url><url>
-     <loc>https://nvchad.com/docs/faq</loc>
-     <changefreq>weekly</changefreq>
-     <priority>0.5</priority>
-     </url><url>
-     <loc>https://nvchad.com/docs/features</loc>
+     <loc>https://nvchad.com/news/v2.0_release</loc>
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
      </url><url>
@@ -41,7 +33,19 @@
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
      </url><url>
+     <loc>https://nvchad.com/docs/faq</loc>
+     <changefreq>weekly</changefreq>
+     <priority>0.5</priority>
+     </url><url>
      <loc>https://nvchad.com/docs/contribute</loc>
+     <changefreq>weekly</changefreq>
+     <priority>0.5</priority>
+     </url><url>
+     <loc>https://nvchad.com/docs/features</loc>
+     <changefreq>weekly</changefreq>
+     <priority>0.5</priority>
+     </url><url>
+     <loc>https://nvchad.com/docs/quickstart/post-install</loc>
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
      </url><url>
@@ -53,7 +57,7 @@
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
      </url><url>
-     <loc>https://nvchad.com/docs/quickstart/post-install</loc>
+     <loc>https://nvchad.com/docs/config/nvchad_ui</loc>
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
      </url><url>
@@ -61,11 +65,11 @@
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
      </url><url>
-     <loc>https://nvchad.com/docs/config/syntax</loc>
+     <loc>https://nvchad.com/docs/config/theming</loc>
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
      </url><url>
-     <loc>https://nvchad.com/docs/config/snippets</loc>
+     <loc>https://nvchad.com/docs/config/lsp</loc>
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
      </url><url>
@@ -73,19 +77,15 @@
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
      </url><url>
-     <loc>https://nvchad.com/docs/config/theming</loc>
+     <loc>https://nvchad.com/docs/config/snippets</loc>
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
      </url><url>
-     <loc>https://nvchad.com/docs/config/nvchad_ui</loc>
+     <loc>https://nvchad.com/docs/config/syntax</loc>
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
      </url><url>
      <loc>https://nvchad.com/docs/config/walkthrough</loc>
-     <changefreq>weekly</changefreq>
-     <priority>0.5</priority>
-     </url><url>
-     <loc>https://nvchad.com/docs/config/lsp</loc>
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
      </url>

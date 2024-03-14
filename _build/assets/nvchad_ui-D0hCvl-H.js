@@ -38,13 +38,14 @@ import{b as n,q as t,k as s,t as c}from"./web-CBU83r8B.js";import{M as i}from"./
 `]}}),`
 `,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return[`{
   pos = `,n(e.span,{className:"hljs-string",children:'"sp"'}),", ",n(e.span,{className:"hljs-comment",children:"-- sp/vsp/float"}),`
-  cmd* = `,n(e.span,{className:"hljs-string",children:'"neofetch"'})," ",n(e.span,{className:"hljs-comment",children:"-- any command! ( supports function too)"}),`
+  cmd* = `,n(e.span,{className:"hljs-string",children:'"neofetch"'})," ",n(e.span,{className:"hljs-comment",children:"-- any command! (supports function too)"}),`
 
   `,n(e.span,{className:"hljs-comment",children:"-- this will highlight the term window differently"}),`
   hl* = `,n(e.span,{className:"hljs-string",children:'"Normal:term,WinSeparator:WinSeparator"'}),`, 
 
-  id =  `,n(e.span,{className:"hljs-string",children:'"any string"'})," ",n(e.span,{className:"hljs-comment",children:"-- only needed for toggleable term"}),`
+  id =  `,n(e.span,{className:"hljs-string",children:'"any string"'})," ",n(e.span,{className:"hljs-comment",children:"-- needed for toggle/runner func"}),`
   float_opts* = {} `,n(e.span,{className:"hljs-comment",children:"-- floating window options"}),`
+  clear_cmd = `,n(e.span,{className:"hljs-literal",children:"true"})," ",n(e.span,{className:"hljs-comment",children:"-- needed for runner func*"}),`
 }
 `]}})}}),`
 `,s(r),`
@@ -95,6 +96,7 @@ map({ `,n(e.span,{className:"hljs-string",children:'"n"'}),", ",n(e.span,{classN
     pos = `,n(e.span,{className:"hljs-string",children:'"vsp"'}),`,
     cmd = `,n(e.span,{className:"hljs-string",children:'"python test.py"'}),`,
     id = `,n(e.span,{className:"hljs-string",children:'"ekk"'}),`,
+    clear_cmd = `,n(e.span,{className:"hljs-literal",children:"false"}),`
   }
 `]}})}}),`
 `,s(r),`
