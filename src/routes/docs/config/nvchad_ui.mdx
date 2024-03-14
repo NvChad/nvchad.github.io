@@ -47,13 +47,14 @@ M.ui = {
 ```lua
 {
   pos = "sp", -- sp/vsp/float
-  cmd* = "neofetch" -- any command! ( supports function too)
+  cmd* = "neofetch" -- any command! (supports function too)
 
   -- this will highlight the term window differently
   hl* = "Normal:term,WinSeparator:WinSeparator", 
 
-  id =  "any string" -- only needed for toggleable term
+  id =  "any string" -- needed for toggle/runner func
   float_opts* = {} -- floating window options
+  clear_cmd = true -- needed for runner func*
 }
 ```
 
@@ -111,6 +112,7 @@ require("nvchad.term").runner {
     pos = "vsp",
     cmd = "python test.py",
     id = "ekk",
+    clear_cmd = false
   }
 ```
 <br/>
