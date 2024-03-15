@@ -20,7 +20,7 @@ import{b as e,q as s,k as t,t as l}from"./web-CBU83r8B.js";import{M as a}from"./
 `]}}),`
 `,e(n.h2,{children:"Update"}),`
 `,e(n.ul,{get children(){return[`
-`,e(n.li,{get children(){return[e(n.code,{children:"Lazy Sync"})," command"]}}),`
+`,e(n.li,{get children(){return[e(n.code,{children:"Lazy sync"})," command"]}}),`
 `]}}),`
 `,e(n.h2,{children:"Uninstall"}),`
 `,e(n.pre,{get children(){return e(n.code,{className:"hljs language-bash",get children(){return[e(n.span,{className:"hljs-comment",children:"# Linux / Macos (unix)"}),`
