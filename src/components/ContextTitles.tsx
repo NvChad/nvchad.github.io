@@ -32,7 +32,7 @@ function ContextTitles() {
         onclick={() => toggleContextLabels(!contextLabelsShown())}
       >
         Page Contents
-        <div class="i-mdi-chevron-down-circle text-2xl xl:hidden text-slate-7 dark:bg-blue-3"></div>
+        <div class="i-jam-chevron-down xl:hidden text-slate-7 dark:bg-blue-3"></div>
       </button>
 
       {/* labels */}

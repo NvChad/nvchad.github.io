@@ -19,7 +19,7 @@ function NestedLabels(props) {
       {/* collapse btn */}
       <button
         onclick={() => collapseLinks(showLinks() ? false : true)}
-        class="rounded-xl gap-20 bg-sky-1 text-slate-7 dark:bg-dark-3 dark:text-white-2 p-2 w-full"
+        class="rounded-xl gap-20 bg-blue-1 text-slate-7 dark:bg-dark-3 dark:text-white-2 p-2 w-full"
       >
         <div class="vertCentered" font-medium>
           <div class={props.BtnLabel[1]}></div> {props.BtnLabel[0]}
@@ -27,13 +27,13 @@ function NestedLabels(props) {
 
         {/* chevron icons! */}
         <div
-          class={`text-xl bg-slate-6 text-slate-1 dark:bg-dark-4 p-1 rounded-full
+          class={`bg-blue-2 dark:bg-dark-4 p-1 rounded-full
                   ${showLinks() ? "dark:text-red-3" : "dark:text-white-2"}`}
         >
           {showLinks() ? (
-            <div i-octicon:chevron-down-12></div>
+            <div i-jam:chevron-down />
           ) : (
-            <div i-octicon:chevron-right-12></div>
+            <div i-jam:chevron-right />
           )}
         </div>
       </button>
