@@ -48,5 +48,5 @@ import{M as i}from"./index-C2YDUEaq.js";import{b as n,q as h}from"./web-CBU83r8B
 `,n(e.ul,{get children(){return[`
 `,n(e.li,{children:"We set it to only number by default, to have cursorline highlight shown, add :"}),`
 `]}}),`
-`,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return["vim.o.cursorlineopt = ",n(e.span,{className:"hljs-string",children:'"number, line"'}),`
+`,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return["vim.o.cursorlineopt = ",n(e.span,{className:"hljs-string",children:'"both"'}),`
 `]}})}})]}function a(r={}){const{wrapper:e}={...i(),...r.components};return e?n(e,h(r,{get children(){return n(t,r)}})):t(r)}export{a as default,c as meta};
