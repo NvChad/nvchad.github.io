@@ -44,8 +44,8 @@
       "_clipboard-DzJ4oxno.js"
     ]
   },
-  "_nextprevPage-DVEIrke9.js": {
-    "file": "assets/nextprevPage-DVEIrke9.js",
+  "_nextprevPage-B0JWIGm6.js": {
+    "file": "assets/nextprevPage-B0JWIGm6.js",
     "imports": [
       "_web-CBU83r8B.js",
       "_components-CVXb4Mrf.js",
@@ -629,13 +629,13 @@
     ]
   },
   "src/routes/docs.tsx?pick=default&pick=$css": {
-    "file": "assets/docs-s3I3Be3y.js",
+    "file": "assets/docs-eBml5stl.js",
     "src": "src/routes/docs.tsx?pick=default&pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_web-CBU83r8B.js",
-      "_nextprevPage-DVEIrke9.js",
+      "_nextprevPage-B0JWIGm6.js",
       "_ContextTitles-DF58h9kr.js",
       "_clipboard-DzJ4oxno.js",
       "_components-CVXb4Mrf.js",
@@ -952,13 +952,13 @@
     ]
   },
   "virtual:#vinxi/handler/client": {
-    "file": "assets/client-DeV49-6f.js",
+    "file": "assets/client-DRw7B-mK.js",
     "src": "virtual:#vinxi/handler/client",
     "isEntry": true,
     "imports": [
       "_preload-helper-xxf5fCYN.js",
       "_web-CBU83r8B.js",
-      "_nextprevPage-DVEIrke9.js",
+      "_nextprevPage-B0JWIGm6.js",
       "_ContextTitles-DF58h9kr.js",
       "_clipboard-DzJ4oxno.js",
       "_index-C2YDUEaq.js",
@@ -1064,7 +1064,7 @@
       "src/routes/docs/quickstart/post-install.mdx?pick=$css"
     ],
     "css": [
-      "assets/client-B10kXd6Q.css"
+      "assets/client-DU14nFis.css"
     ]
   }
 }
