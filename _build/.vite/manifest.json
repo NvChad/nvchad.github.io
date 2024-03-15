@@ -3,8 +3,8 @@
     "file": "assets/ContextTitles-BA5Wlt3K.css",
     "src": "_ContextTitles-!~{01y}~.js"
   },
-  "_ContextTitles-OsYyIG2h.js": {
-    "file": "assets/ContextTitles-OsYyIG2h.js",
+  "_ContextTitles-DF58h9kr.js": {
+    "file": "assets/ContextTitles-DF58h9kr.js",
     "imports": [
       "_web-CBU83r8B.js",
       "_routing-CayKO4ES.js"
@@ -44,8 +44,8 @@
       "_clipboard-DzJ4oxno.js"
     ]
   },
-  "_nextprevPage-C225yNzP.js": {
-    "file": "assets/nextprevPage-C225yNzP.js",
+  "_nextprevPage-DVEIrke9.js": {
+    "file": "assets/nextprevPage-DVEIrke9.js",
     "imports": [
       "_web-CBU83r8B.js",
       "_components-CVXb4Mrf.js",
@@ -629,14 +629,14 @@
     ]
   },
   "src/routes/docs.tsx?pick=default&pick=$css": {
-    "file": "assets/docs-BUua0VMJ.js",
+    "file": "assets/docs-s3I3Be3y.js",
     "src": "src/routes/docs.tsx?pick=default&pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_web-CBU83r8B.js",
-      "_nextprevPage-C225yNzP.js",
-      "_ContextTitles-OsYyIG2h.js",
+      "_nextprevPage-DVEIrke9.js",
+      "_ContextTitles-DF58h9kr.js",
       "_clipboard-DzJ4oxno.js",
       "_components-CVXb4Mrf.js",
       "_routing-CayKO4ES.js"
@@ -829,13 +829,13 @@
     ]
   },
   "src/routes/news.tsx?pick=default&pick=$css": {
-    "file": "assets/news-D268RYGR.js",
+    "file": "assets/news-DsjfJ8T8.js",
     "src": "src/routes/news.tsx?pick=default&pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_web-CBU83r8B.js",
-      "_ContextTitles-OsYyIG2h.js",
+      "_ContextTitles-DF58h9kr.js",
       "_clipboard-DzJ4oxno.js",
       "_routing-CayKO4ES.js"
     ]
@@ -952,14 +952,14 @@
     ]
   },
   "virtual:#vinxi/handler/client": {
-    "file": "assets/client-C374VK1i.js",
+    "file": "assets/client-DeV49-6f.js",
     "src": "virtual:#vinxi/handler/client",
     "isEntry": true,
     "imports": [
       "_preload-helper-xxf5fCYN.js",
       "_web-CBU83r8B.js",
-      "_nextprevPage-C225yNzP.js",
-      "_ContextTitles-OsYyIG2h.js",
+      "_nextprevPage-DVEIrke9.js",
+      "_ContextTitles-DF58h9kr.js",
       "_clipboard-DzJ4oxno.js",
       "_index-C2YDUEaq.js",
       "_routing-CayKO4ES.js",
@@ -1064,7 +1064,7 @@
       "src/routes/docs/quickstart/post-install.mdx?pick=$css"
     ],
     "css": [
-      "assets/client-KhIqfTqG.css"
+      "assets/client-B10kXd6Q.css"
     ]
   }
 }
