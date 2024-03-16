@@ -1,5 +1,5 @@
 import { useLocation } from "@solidjs/router";
-import sidebar_Items from "./sidebar_Items";
+import { sidebar_Items } from "./Sidebar";
 
 let sorted_lables = [];
 
