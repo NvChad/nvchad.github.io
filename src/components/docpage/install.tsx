@@ -57,6 +57,7 @@ export default () => (
   <div flex="~ wrap" gap-5>
     {osInfos.map((x) => (
       <button
+        capitalize='~'
         onClick={() => setOS(x)}
         class={
           os().name == x.name ? "bg-emerald2 dark:bg-sky3 dark:text-black" : ""

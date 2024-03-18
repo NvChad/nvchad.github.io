@@ -37,7 +37,7 @@ function generateTxt(direction: number, wantLink?: boolean) {
 
 export default () => {
   const btnClass =
-    "!bg-transparent text-blue-6 dark:text-blue-4  p-3 px-5 dark:border-dark-4";
+    "!bg-transparent font-normal text-blue-6 dark:text-blue-4  p-3 px-5 dark:border-dark-4";
   const border = "1 solid slate-2";
 
   return (

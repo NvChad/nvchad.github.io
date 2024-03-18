@@ -26,6 +26,7 @@ export const sidebar_Items = [
   },
 
   ["Features", "features", "i-tabler:server-cog"],
+  ["Recipes", "recipes", "i-mingcute:tool-fill"],
   ["Api Functions", "api", "i-mdi:atom-variant"],
   ["Contributing", "contribute", "i-mdi-github"],
   ["Faq", "faq", "i-octicon:question-16"],
@@ -105,7 +106,7 @@ function SideBar() {
             <A
               href={item[1]}
               class="vertCentered"
-              activeClass="font-medium text-blue-5 dark:text-blue-3"
+              activeClass="font-medium text-blue dark:text-blue-3"
             >
               <div class={item[2]}></div>
               {item[0]}

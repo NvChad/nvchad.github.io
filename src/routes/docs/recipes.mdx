@@ -1,0 +1,82 @@
+export const meta = {
+  title: "NvChad Recipes",
+  desc: "NvChad Recipes & tips and tricks configuration",
+}
+
+# Recipes
+
+This page will contain useful snippets of plugin configs & vim tricks etc shared by the NvChad community.
+
+## Clean Lspconfig syntax 
+
+- If you have multiple servers configured in your lspconfig, then you can just put them in a table & loop through them for a cleaner syntax. 
+
+```lua
+local configs = require "nvchad.configs.lspconfig"
+
+local servers = {
+  html = {},
+  awk_ls = {},
+  bashls = {},
+
+  pyright = {
+    settings = {
+      python = {
+        analysis = {
+          autoSearchPaths = true,
+          typeCheckingMode = "basic",
+        },
+      },
+    },
+  },
+}
+
+for name, opts in pairs(servers) do
+  opts.on_init = configs.on_init
+  opts.on_attach = configs.on_attach
+  opts.capabilities = configs.capabilities
+
+  require("lspconfig")[name].setup(opts)
+end
+```
+
+## Dynamic terminal padding
+
+- Neovim would look bad if terminal has padding as top is covered by bufferline and nvimtree etc with left. 
+- So we can dynamically set padding if nvim's opened or not. So add padding on `VimLeavePre` and remove padding on `VimEnter` events.
+- Below is an example for kitty terminal, you can apply the same logic for other terminals!
+
+```lua
+local autocmd = vim.api.nvim_create_autocmd
+
+autocmd("VimEnter", {
+  command = ":silent !kitty @ set-spacing padding=0 margin=0",
+})
+
+autocmd("VimLeavePre", {
+  command = ":silent !kitty @ set-spacing padding=20 margin=10",
+})
+```
+
+##  Restore cursor position
+
+- This autocmd will restore cursor position on file open
+
+```lua
+local autocmd = vim.api.nvim_create_autocmd
+
+autocmd("BufReadPost", {
+  pattern = "*",
+  callback = function()
+    local line = vim.fn.line "'\""
+    if
+      line > 1
+      and line <= vim.fn.line "$"
+      and vim.bo.filetype ~= "commit"
+      and vim.fn.index({ "xxd", "gitrebase" }, vim.bo.filetype) == -1
+    then
+      vim.cmd 'normal! g`"'
+    end
+  end,
+})
+```

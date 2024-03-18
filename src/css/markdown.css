@@ -411,7 +411,7 @@
 /* codeblocks */
 #DocContent pre {
   @apply bg-dark-4  dark:bg-dark-3 p-0;
-  @apply p-5 rounded-xl  my-0;
+  @apply p4 rounded-xl  my-0;
   @apply shadow-md overflow-x-auto;
 
   /* code content + copy button */
