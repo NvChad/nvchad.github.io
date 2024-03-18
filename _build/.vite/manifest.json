@@ -1,16 +1,16 @@
 {
-  "_ContextTitles-!~{01y}~.js": {
-    "file": "assets/ContextTitles-BA5Wlt3K.css",
-    "src": "_ContextTitles-!~{01y}~.js"
+  "_ContextTitles-!~{01z}~.js": {
+    "file": "assets/ContextTitles-CHlfX0wD.css",
+    "src": "_ContextTitles-!~{01z}~.js"
   },
-  "_ContextTitles-DF58h9kr.js": {
-    "file": "assets/ContextTitles-DF58h9kr.js",
+  "_ContextTitles-W21vwvc5.js": {
+    "file": "assets/ContextTitles-W21vwvc5.js",
     "imports": [
       "_web-CBU83r8B.js",
       "_routing-CayKO4ES.js"
     ],
     "css": [
-      "assets/ContextTitles-BA5Wlt3K.css"
+      "assets/ContextTitles-CHlfX0wD.css"
     ]
   },
   "_clipboard-DzJ4oxno.js": {
@@ -23,11 +23,11 @@
       "_routing-CayKO4ES.js"
     ]
   },
-  "_footer-DMYsG2VY.js": {
-    "file": "assets/footer-DMYsG2VY.js",
+  "_footer-z1zDxD-Q.js": {
+    "file": "assets/footer-z1zDxD-Q.js",
     "imports": [
       "_web-CBU83r8B.js",
-      "_install-qf_m3P46.js",
+      "_install-DI_Cow-H.js",
       "_components-CVXb4Mrf.js"
     ]
   },
@@ -37,15 +37,15 @@
       "_web-CBU83r8B.js"
     ]
   },
-  "_install-qf_m3P46.js": {
-    "file": "assets/install-qf_m3P46.js",
+  "_install-DI_Cow-H.js": {
+    "file": "assets/install-DI_Cow-H.js",
     "imports": [
       "_web-CBU83r8B.js",
       "_clipboard-DzJ4oxno.js"
     ]
   },
-  "_nextprevPage-Q_xzHzod.js": {
-    "file": "assets/nextprevPage-Q_xzHzod.js",
+  "_nextprevPage-CboNgrT-.js": {
+    "file": "assets/nextprevPage-CboNgrT-.js",
     "imports": [
       "_web-CBU83r8B.js",
       "_components-CVXb4Mrf.js",
@@ -629,14 +629,14 @@
     ]
   },
   "src/routes/docs.tsx?pick=default&pick=$css": {
-    "file": "assets/docs-9ILQONL_.js",
+    "file": "assets/docs-Bunczsqo.js",
     "src": "src/routes/docs.tsx?pick=default&pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_web-CBU83r8B.js",
-      "_nextprevPage-Q_xzHzod.js",
-      "_ContextTitles-DF58h9kr.js",
+      "_nextprevPage-CboNgrT-.js",
+      "_ContextTitles-W21vwvc5.js",
       "_clipboard-DzJ4oxno.js",
       "_components-CVXb4Mrf.js",
       "_routing-CayKO4ES.js"
@@ -783,14 +783,14 @@
     ]
   },
   "src/routes/docs/quickstart/install.mdx?pick=$css": {
-    "file": "assets/install-CT8YGIa2.js",
+    "file": "assets/install-DbiHijaS.js",
     "src": "src/routes/docs/quickstart/install.mdx?pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_web-CBU83r8B.js",
       "_index-C2YDUEaq.js",
-      "_install-qf_m3P46.js",
+      "_install-DI_Cow-H.js",
       "_clipboard-DzJ4oxno.js"
     ]
   },
@@ -814,28 +814,38 @@
       "_web-CBU83r8B.js"
     ]
   },
+  "src/routes/docs/recipes.mdx?pick=$css": {
+    "file": "assets/recipes-C4Zzov0T.js",
+    "src": "src/routes/docs/recipes.mdx?pick=$css",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-C2YDUEaq.js",
+      "_web-CBU83r8B.js"
+    ]
+  },
   "src/routes/index.tsx?pick=default&pick=$css": {
-    "file": "assets/index-DgZBA0zB.js",
+    "file": "assets/index-D85Mi3Ah.js",
     "src": "src/routes/index.tsx?pick=default&pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_footer-DMYsG2VY.js",
+      "_footer-z1zDxD-Q.js",
       "_web-CBU83r8B.js",
-      "_install-qf_m3P46.js",
+      "_install-DI_Cow-H.js",
       "_clipboard-DzJ4oxno.js",
       "_components-CVXb4Mrf.js",
       "_routing-CayKO4ES.js"
     ]
   },
   "src/routes/news.tsx?pick=default&pick=$css": {
-    "file": "assets/news-DsjfJ8T8.js",
+    "file": "assets/news-kvjRXRN2.js",
     "src": "src/routes/news.tsx?pick=default&pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_web-CBU83r8B.js",
-      "_ContextTitles-DF58h9kr.js",
+      "_ContextTitles-W21vwvc5.js",
       "_clipboard-DzJ4oxno.js",
       "_routing-CayKO4ES.js"
     ]
@@ -952,19 +962,19 @@
     ]
   },
   "virtual:#vinxi/handler/client": {
-    "file": "assets/client-D0cX04hU.js",
+    "file": "assets/client-M3SA8wPf.js",
     "src": "virtual:#vinxi/handler/client",
     "isEntry": true,
     "imports": [
       "_preload-helper-xxf5fCYN.js",
       "_web-CBU83r8B.js",
-      "_nextprevPage-Q_xzHzod.js",
-      "_ContextTitles-DF58h9kr.js",
+      "_nextprevPage-CboNgrT-.js",
+      "_ContextTitles-W21vwvc5.js",
       "_clipboard-DzJ4oxno.js",
       "_index-C2YDUEaq.js",
       "_routing-CayKO4ES.js",
-      "_install-qf_m3P46.js",
-      "_footer-DMYsG2VY.js",
+      "_install-DI_Cow-H.js",
+      "_footer-z1zDxD-Q.js",
       "_v2.5_release-BiM-hPRn.js",
       "_components-CVXb4Mrf.js"
     ],
@@ -1048,6 +1058,7 @@
       "src/routes/docs/faq.mdx?pick=$css",
       "src/routes/docs/features.mdx?pick=$css",
       "src/routes/docs/index.tsx?pick=default&pick=$css",
+      "src/routes/docs/recipes.mdx?pick=$css",
       "src/routes/news/index.tsx?pick=default&pick=$css",
       "src/routes/news/v2.0_release.mdx?pick=$css",
       "src/routes/news/v2.5_release.mdx?pick=$css",
@@ -1064,7 +1075,7 @@
       "src/routes/docs/quickstart/post-install.mdx?pick=$css"
     ],
     "css": [
-      "assets/client-2QKZVT_7.css"
+      "assets/client-BMD5rlv-.css"
     ]
   }
 }
