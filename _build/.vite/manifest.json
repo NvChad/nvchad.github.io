@@ -763,7 +763,7 @@
     ]
   },
   "src/routes/docs/features.mdx?pick=$css": {
-    "file": "assets/features-mFaNP_OT.js",
+    "file": "assets/features-CR56KPKE.js",
     "src": "src/routes/docs/features.mdx?pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -952,7 +952,7 @@
     ]
   },
   "virtual:#vinxi/handler/client": {
-    "file": "assets/client-Cj7p1Xa-.js",
+    "file": "assets/client-D0cX04hU.js",
     "src": "virtual:#vinxi/handler/client",
     "isEntry": true,
     "imports": [
