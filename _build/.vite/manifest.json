@@ -1,7 +1,7 @@
 {
-  "_ContextTitles-!~{01z}~.js": {
+  "_ContextTitles-!~{01A}~.js": {
     "file": "assets/ContextTitles-CHlfX0wD.css",
-    "src": "_ContextTitles-!~{01z}~.js"
+    "src": "_ContextTitles-!~{01A}~.js"
   },
   "_ContextTitles-W21vwvc5.js": {
     "file": "assets/ContextTitles-W21vwvc5.js",
@@ -219,20 +219,28 @@
       "assets/falcon-CBStHz_3.webp"
     ]
   },
+  "public/themes/flex-light.webp": {
+    "file": "assets/flex-light-BYJjYHrH.js",
+    "src": "public/themes/flex-light.webp",
+    "isDynamicEntry": true,
+    "assets": [
+      "assets/flex-light-C0lY-MfF.webp"
+    ]
+  },
   "public/themes/flexoki-light.webp": {
-    "file": "assets/flexoki-light-C_4Ck3l-.js",
+    "file": "assets/flexoki-light-HcuP983g.js",
     "src": "public/themes/flexoki-light.webp",
     "isDynamicEntry": true,
     "assets": [
-      "assets/flexoki-light-CwA8wSy5.webp"
+      "assets/flexoki-light-BNLLtoBf.webp"
     ]
   },
   "public/themes/flexoki.webp": {
-    "file": "assets/flexoki-BI6yGQur.js",
+    "file": "assets/flexoki-BTfjhOD8.js",
     "src": "public/themes/flexoki.webp",
     "isDynamicEntry": true,
     "assets": [
-      "assets/flexoki-BAVG5kU3.webp"
+      "assets/flexoki-BFqnbkyv.webp"
     ]
   },
   "public/themes/gatekeeper.webp": {
@@ -882,7 +890,7 @@
     ]
   },
   "src/routes/themes.tsx?pick=default&pick=$css": {
-    "file": "assets/themes-BDZcYdPS.js",
+    "file": "assets/themes-Isdrre9L.js",
     "src": "src/routes/themes.tsx?pick=default&pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -909,6 +917,7 @@
       "public/themes/everforest.webp",
       "public/themes/everforest_light.webp",
       "public/themes/falcon.webp",
+      "public/themes/flex-light.webp",
       "public/themes/flexoki-light.webp",
       "public/themes/flexoki.webp",
       "public/themes/gatekeeper.webp",
@@ -962,7 +971,7 @@
     ]
   },
   "virtual:#vinxi/handler/client": {
-    "file": "assets/client-M3SA8wPf.js",
+    "file": "assets/client-CivJj4lg.js",
     "src": "virtual:#vinxi/handler/client",
     "isEntry": true,
     "imports": [
@@ -997,6 +1006,7 @@
       "public/themes/everforest.webp",
       "public/themes/everforest_light.webp",
       "public/themes/falcon.webp",
+      "public/themes/flex-light.webp",
       "public/themes/flexoki-light.webp",
       "public/themes/flexoki.webp",
       "public/themes/gatekeeper.webp",
