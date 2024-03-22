@@ -44,6 +44,33 @@ export const osInfos = [
   nvim
   '`,
   },
+  {
+    name: "persistent docker",
+    icon: "i-nonicons:docker-16",
+    cmds: (
+      <>
+        <li>Clone the repo</li>
+
+        <pre class="hljs">
+          git clone https://github.com/P-Y-R-O-B-O-T/DOCKERIZED_NVCHAD.git && cd DOCKERIZED_NVCHAD
+        </pre>
+
+        <li>Setup things</li>
+
+        <pre class="hljs">
+          chmod +x install.sh && ./install.sh
+        </pre>
+
+        <li>Run It</li>
+
+        <pre class="hljs">
+          doc_nvchad
+        </pre>
+
+        <li>For more help visit https://github.com/P-Y-R-O-B-O-T/DOCKERIZED_NVCHAD</li>
+      </>
+    ),
+  },
 ];
 
 export const [os, setOS] = createSignal(osInfos[0]);
