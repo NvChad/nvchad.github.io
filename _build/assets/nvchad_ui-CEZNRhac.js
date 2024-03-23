@@ -1,4 +1,4 @@
-import{b as n,q as t,k as s,t as c}from"./web-CBU83r8B.js";import{M as i}from"./index-C2YDUEaq.js";var r=c("<br>");const o={title:"NvChad UI Configuration",desc:"Manage NvChad's UI plugin configuration"};function a(l){const e={a:"a",code:"code",h2:"h2",h3:"h3",li:"li",p:"p",pre:"pre",span:"span",strong:"strong",ul:"ul",...i(),...l.components};return[n(e.h2,{children:"Overview"}),`
+import{b as n,q as c,k as s,t}from"./web-CBU83r8B.js";import{M as i}from"./index-C2YDUEaq.js";var r=t("<br>");const o={title:"NvChad UI Configuration",desc:"Manage NvChad's UI plugin configuration"};function a(l){const e={a:"a",code:"code",h2:"h2",h3:"h3",li:"li",p:"p",pre:"pre",span:"span",strong:"strong",ul:"ul",...i(),...l.components};return[n(e.h2,{children:"Overview"}),`
 `,n(e.p,{children:"NvChad's Ui plugin handles the following modules:"}),`
 `,n(e.ul,{get children(){return[`
 `,n(e.li,{children:"Statusline"}),`
@@ -38,7 +38,8 @@ import{b as n,q as t,k as s,t as c}from"./web-CBU83r8B.js";import{M as i}from"./
 `]}}),`
 `,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return[`{
   pos = `,n(e.span,{className:"hljs-string",children:'"sp"'}),", ",n(e.span,{className:"hljs-comment",children:"-- sp/vsp/float"}),`
-  cmd* = `,n(e.span,{className:"hljs-string",children:'"neofetch"'})," ",n(e.span,{className:"hljs-comment",children:"-- any command! (supports function too)"}),`
+  cmd* = `,n(e.span,{className:"hljs-string",children:'"neofetch"'})," ",n(e.span,{className:"hljs-comment",children:"-- any command (supports function too)"}),`
+  size = `,n(e.span,{className:"hljs-number",children:"0.5"})," ",n(e.span,{className:"hljs-comment",children:"-- will work for split windows only"}),`
 
   `,n(e.span,{className:"hljs-comment",children:"-- this will highlight the term window differently"}),`
   hl* = `,n(e.span,{className:"hljs-string",children:'"Normal:term,WinSeparator:WinSeparator"'}),`, 
@@ -131,4 +132,4 @@ map({ `,n(e.span,{className:"hljs-string",children:'"n"'}),", ",n(e.span,{classN
 `,n(e.li,{get children(){return["If you close any terminal window by our close_buffer func i.e ",n(e.code,{children:"<leader>x"})," then it'll just hide it"]}}),`
 `,n(e.li,{get children(){return["You can un-hide them back by using ",n(e.code,{children:"<leader>pt"})," keymap + press enter"]}}),`
 `,n(e.li,{get children(){return["Command ",n(e.code,{children:"Telescope terms"})]}}),`
-`]}})]}function m(l={}){const{wrapper:e}={...i(),...l.components};return e?n(e,t(l,{get children(){return n(a,l)}})):a(l)}export{m as default,o as meta};
+`]}})]}function m(l={}){const{wrapper:e}={...i(),...l.components};return e?n(e,c(l,{get children(){return n(a,l)}})):a(l)}export{m as default,o as meta};
