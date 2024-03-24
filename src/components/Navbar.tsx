@@ -1,4 +1,4 @@
-import { createEffect, createSignal } from "solid-js";
+import { createEffect, createSignal, onMount } from "solid-js";
 import { mobSideBar, setMobSidebar } from "~/components/doc_comps/Sidebar";
 
 import docsearch from "@docsearch/js";
@@ -36,9 +36,12 @@ function Links() {
 }
 
 export const ThemeToggleBtn = (props) => {
-  const [theme, setTheme] = createSignal(
-    (globalThis.localStorage && localStorage.theme) || "light",
-  );
+  const [theme, setTheme] = createSignal("light");
+
+  onMount(() => {
+    const localTheme = localStorage.theme
+    setTheme(localTheme)
+  })
 
   return (
     <button
