@@ -1,20 +1,23 @@
 export const meta = {
   title: "NvChad UI Configuration",
   desc: "Manage NvChad's UI plugin configuration",
-}
+};
 
 ## Overview
+
 NvChad's Ui plugin handles the following modules:
+
 - Statusline
 - Tabufline ( bufferline + tablist )
 - NvDash ( Minimal dashboard )
 - Term ( terminal handling )
 
-## Statusline & tabufline 
+## Tabufline
 
-- The order is a list of module names from default modules + your modules
-- Removing a word in the order will remove that module
+- The order of components shown on the line is a list of module names from default modules + your modules.
 - Modules expect all its keys to be a function that returns a string.
+- To change the order of components, add the new component or override the default ones, you can put all of them in the `modules` param.
+- The `modules` parameters expects a table, which contains all the components that you want to add or to override. Like in this example, the `abc` component is added to the end of the tabufline.
 
 ```lua
 M.ui = {
@@ -30,15 +33,60 @@ M.ui = {
 }
 ```
 
-<br/>
+<br />
 
-- Same goes for statuslines, but check its module order tables at [ui repo](https://github.com/NvChad/ui/blob/v2.5/lua/nvchad/stl/utils.lua)
-- Statusline modules can also have strings!
-- To highlight a string in statusline/tabufline, wrap it with your highlight group:
+- In the other hand, if you want, for example, override the `tabs` component, you can do like this:
+
+```lua
+M.ui = {
+  tabufline = {
+    --  more opts
+    order = { "treeOffset", "buffers", "tabs", "btns", 'abc' },
+    modules = {
+      tabs = function()
+        return "hi"
+      end,
+    }
+  },
+}
+```
+
+## Statusline
+
+- Statuslines has the same way to customize, just like tabuffline. If you want to add or override a component, you just need to declare it on the `modules`, then add its key to `order`. An example is like below:
+
+```lua
+M.ui = {
+  statusline = {
+    theme = "minimal", -- The default theme is default
+    separator_style = "round", -- The default style is based on each theme
+
+    -- The order of each theme also different
+    order = { "mode", "file", "git", "%=", "lsp_msg", "%=", "diagnostics", "lsp", "cursor", "cwd" },
+    modules = {
+      -- The default cursor is override with the custom one from mine
+      cursor = function()
+        return "cursor"
+      end,
+    }
+  }
+}
+```
+
+<br />
+
+- For more information, you should check the source code of its module order tables at [ui repo](https://github.com/NvChad/ui/blob/v2.5/lua/nvchad/stl/utils.lua).
+- Statusline modules can also have strings! - To highlight a string in statusline/tabufline,
+  wrap it with your highlight group:
 
 ```lua
 "%#BruhHl#" .. " bruh " -- the highlight group here is BruhHl
 ```
+
+<br />
+
+- If you just want to use the existed highlight group of each theme, you can
+  too. Remember to check the [source code](https://github.com/NvChad/ui/blob/v2.5/lua/nvchad/stl/) for more details.
 
 ## Term
 
@@ -51,7 +99,7 @@ M.ui = {
   size = 0.5 -- will work for split windows only
 
   -- this will highlight the term window differently
-  hl* = "Normal:term,WinSeparator:WinSeparator", 
+  hl* = "Normal:term,WinSeparator:WinSeparator",
 
   id =  "any string" -- needed for toggle/runner func
   float_opts* = {} -- floating window options
@@ -59,9 +107,9 @@ M.ui = {
 }
 ```
 
-<br/>
+<br />
 
-- *ones are optional
+- \*ones are optional
 - **pos** is required.
 - **id** is needed for toggleable/runner terminals only
 - If the optional opts are not provided then they will be taken from the `ui.term` table of your chadrc.
@@ -70,7 +118,7 @@ M.ui = {
 
 - Create new terminal windows
 
-```lua 
+```lua
 require("nvchad.term").new { pos = "sp", size = 0.3 }
 require("nvchad.term").new { pos = "vsp", cmd = "neofetch"}
 ```
@@ -79,7 +127,7 @@ require("nvchad.term").new { pos = "vsp", cmd = "neofetch"}
 
 - Create toggleable terminal windows
 
-```lua  
+```lua
 require("nvchad.term").toggle({ pos = "float", id = "floatTerm", float_opts = {
       border = "double",
   }})
@@ -89,12 +137,13 @@ require("nvchad.term").toggle { pos = "sp", id = "xyz" }
 require("nvchad.term").toggle { pos = "sp", id = "xyz2" }
 require("nvchad.term").toggle { pos = "vsp", id = "floo" }
 ```
-<br/>
+
+<br />
 
 - Mapping example
-- We are mapping in "t" terminal mode too or else we'd have to go to  normal mode and press `<A-i>` to toggle terminal.
+- We are mapping in "t" terminal mode too or else we'd have to go to normal mode and press `<A-i>` to toggle terminal.
 
-```lua 
+```lua
 local map = vim.keymap.set
 
 map({ "n", "t" }, "<A-i>", function()
@@ -108,7 +157,7 @@ end, { desc = "Terminal Toggle Floating term" })
 - Calling the function again will run the `cmd` in that terminal window
 - This can be seen as a code runner too! Usually useful if you want to see the result of some command
 
-```lua  
+```lua
 require("nvchad.term").runner {
     pos = "vsp",
     cmd = "python test.py",
@@ -116,11 +165,12 @@ require("nvchad.term").runner {
     clear_cmd = false
   }
 ```
-<br/>
+
+<br />
 
 - As Cmd can be a function too, here's a complex example :
 
-```lua  
+```lua
 require("nvchad.term").runner {
   id = "boo",
   pos = "sp",
@@ -149,6 +199,6 @@ These are few telescope extensions present in the UI plugin.
 
 ### Hidden Term picker
 
-- If you close any terminal window by our close_buffer func i.e `<leader>x` then it'll just hide it 
+- If you close any terminal window by our close_buffer func i.e `<leader>x` then it'll just hide it
 - You can un-hide them back by using `<leader>pt` keymap + press enter
 - Command `Telescope terms`
