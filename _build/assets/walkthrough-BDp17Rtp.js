@@ -36,22 +36,18 @@ import{b as n,q as i,k as r,t}from"./web-CBU83r8B.js";import{M as a}from"./index
 `,n(e.li,{children:"Users will be using the starter config or can create their own"}),`
 `]}}),`
 `,n(e.p,{children:"config structure of the main nvchad repo :"}),`
-`,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",children:`lua
-│
-├── nvchad
-│   ├── autocmds.lua
-│   ├── mappings.lua
-│   ├── options.lua
-│   │
-│   │── plugins
-│   │    ├── init.lua
-│   │    └── ui.lua
-│   │
-│   ├── configs
-│       ├── cmp.lua
-│       ├── more...
-│       
-└── nvconfig.lua
+`,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",children:`├── lua/
+│   ├── nvchad/
+│   │   ├── autocmds.lua
+│   │   ├── mappings.lua
+│   │   └── options.lua
+│   ├── plugins/
+│   │   ├── init.lua
+│   │   └── ui.lua
+│   └── configs/
+│       ├── cmp.lua
+│       └── more.. 
+└── nvconfig.lua  
 `})}}),`
 `,r(h),`
 `,n(e.ul,{get children(){return[`
