@@ -14,8 +14,9 @@ NvChad's Ui plugin handles the following modules:
 
 ## Tabufline and Statusline
 
-- The `order` of components shown on the line is a list of modules name from default modules + your modules.
-- Modules contains all the components that you want to add or to override. It expects all its keys to be a function that returns a string. In this example, the `abc` component is added to the end of the tabufline, and the `tabs` is override.
+- The `order` of components shown on the line is a list of modules name from default modules + your modules. Change the modules appear on the line by editing the `order`. 
+- `modules` contains all the components that you want to add or to override. It expects all its keys to be a function that returns a string. 
+- In this example, the `abc` component is added to the end of the tabufline, and the `tabs` is override.
 
 ```lua
 M.ui = {
