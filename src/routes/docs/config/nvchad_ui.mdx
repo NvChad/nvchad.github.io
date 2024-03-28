@@ -12,12 +12,10 @@ NvChad's Ui plugin handles the following modules:
 - NvDash ( Minimal dashboard )
 - Term ( terminal handling )
 
-## Tabufline
+## Tabufline and Statusline
 
-- The order of components shown on the line is a list of module names from default modules + your modules.
-- Modules expect all its keys to be a function that returns a string.
-- To change the order of components, add the new component or override the default ones, you can put all of them in the `modules` param.
-- The `modules` parameters expects a table, which contains all the components that you want to add or to override. Like in this example, the `abc` component is added to the end of the tabufline.
+- The `order` of components shown on the line is a list of modules name from default modules + your modules.
+- Modules contains all the components that you want to add or to override. It expects all its keys to be a function that returns a string. In this example, the `abc` component is added to the end of the tabufline, and the `tabs` is override.
 
 ```lua
 M.ui = {
@@ -25,9 +23,15 @@ M.ui = {
     --  more opts
     order = { "treeOffset", "buffers", "tabs", "btns", 'abc' },
     modules = {
+      -- You can add your custom component
       abc = function()
         return "hi"
       end,
+      -- You can also override the existing one
+      tabs = function()
+        return "hi there"
+      end,
+
     }
   },
 }
@@ -35,25 +39,7 @@ M.ui = {
 
 <br />
 
-- In the other hand, if you want, for example, override the `tabs` component, you can do like this:
-
-```lua
-M.ui = {
-  tabufline = {
-    --  more opts
-    order = { "treeOffset", "buffers", "tabs", "btns", 'abc' },
-    modules = {
-      tabs = function()
-        return "hi"
-      end,
-    }
-  },
-}
-```
-
-## Statusline
-
-- Statuslines has the same way to customize, just like tabuffline. If you want to add or override a component, you just need to declare it on the `modules`, then add its key to `order`. An example is like below:
+- Statusline has the same way to configure, plus some extra field.
 
 ```lua
 M.ui = {
@@ -77,16 +63,12 @@ M.ui = {
 
 - For more information, you should check the source code of its module order tables at [ui repo](https://github.com/NvChad/ui/blob/v2.5/lua/nvchad/stl/utils.lua).
 - Statusline modules can also have strings! - To highlight a string in statusline/tabufline,
-  wrap it with your highlight group:
+  wrap it with your highlight group, or the existing ones from the theme.
 
 ```lua
 "%#BruhHl#" .. " bruh " -- the highlight group here is BruhHl
 ```
 
-<br />
-
-- If you just want to use the existed highlight group of each theme, you can
-  too. Remember to check the [source code](https://github.com/NvChad/ui/blob/v2.5/lua/nvchad/stl/) for more details.
 
 ## Term
 
