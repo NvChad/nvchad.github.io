@@ -14,9 +14,12 @@ NvChad's Ui plugin handles the following modules:
 
 ## Tabufline and Statusline
 
-- The `order` of components shown on the line is a list of modules name from default modules + your modules. Change the modules appear on the line by editing the `order`. 
-- `modules` contains all the components that you want to add or to override. It expects all its keys to be a function that returns a string. 
-- In this example, the `abc` component is added to the end of the tabufline, and the `tabs` is override.
+- Both of the plugins share the same way to customize their appearance.
+- The order is a list of module names from default modules + your modules
+- Removing a word in the order will remove that module
+- Modules expect all its keys to be a function that returns a string.
+- Statusline modules can also have strings! - To highlight a string in statusline/tabufline,
+  wrap it with your highlight group, or the existing ones from the theme.
 
 ```lua
 M.ui = {
@@ -28,33 +31,15 @@ M.ui = {
       abc = function()
         return "hi"
       end,
-      -- You can also override the existing one
-      tabs = function()
-        return "hi there"
-      end,
-
     }
   },
-}
-```
 
-<br />
-
-- Statusline has the same way to configure, plus some extra field.
-
-```lua
-M.ui = {
   statusline = {
-    theme = "minimal", -- The default theme is default
-    separator_style = "round", -- The default style is based on each theme
-
-    -- The order of each theme also different
-    order = { "mode", "file", "git", "%=", "lsp_msg", "%=", "diagnostics", "lsp", "cursor", "cwd" },
+    -- more opts
     modules = {
-      -- The default cursor is override with the custom one from mine
+      -- The default cursor module is override
       cursor = function()
-        return "cursor"
-      end,
+        return "%#BruhHl#" .. " bruh " -- the highlight group here is BruhHl      end,
     }
   }
 }
@@ -62,13 +47,7 @@ M.ui = {
 
 <br />
 
-- For more information, you should check the source code of its module order tables at [ui repo](https://github.com/NvChad/ui/blob/v2.5/lua/nvchad/stl/utils.lua).
-- Statusline modules can also have strings! - To highlight a string in statusline/tabufline,
-  wrap it with your highlight group, or the existing ones from the theme.
-
-```lua
-"%#BruhHl#" .. " bruh " -- the highlight group here is BruhHl
-```
+- For more customization, you should **read carefully** the default default sets of options in the [nvconfig.lua](https://github.com/NvChad/NvChad/blob/6833c60694a626615911e379d201dd723511546d/lua/nvconfig.lua#L21), then check the source code of their module order tables at [ui repo](https://github.com/NvChad/ui/blob/v2.5/lua/nvchad/stl/utils.lua). 
 
 
 ## Term
