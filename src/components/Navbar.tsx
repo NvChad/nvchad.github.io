@@ -36,7 +36,7 @@ function Links() {
 }
 
 export const ThemeToggleBtn = (props) => {
-  const [theme, setTheme] = createSignal("light");
+  const [theme, setTheme] = createSignal("");
 
   onMount(() => {
     const localTheme = localStorage.theme

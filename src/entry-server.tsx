@@ -24,8 +24,10 @@ export default createHandler(() => (
 
           {assets}
 
-          {/* set saved theme  */}
+          {/* Check if a theme is saved in localStorage, if not, set it based on the system's theme preference */}
           <script>
+            if (!localStorage.theme)
+              localStorage.theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
             document.querySelector("html").className = localStorage.theme
           </script>
         </head>
