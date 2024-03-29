@@ -6,7 +6,7 @@ export default createHandler(() => (
       <html lang="en">
         <head>
           <meta charset="utf-8" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
 
           {/* favicon & font */}
           <link rel="icon" type="image/svg+xml" href="/logo.svg" />
@@ -28,7 +28,7 @@ export default createHandler(() => (
           <script>
             if (!localStorage.theme)
               localStorage.theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-            document.querySelector("html").className = localStorage.theme
+            document.querySelector("html").className = localStorage.theme;
           </script>
         </head>
         <body>

@@ -39,9 +39,9 @@ export const ThemeToggleBtn = (props) => {
   const [theme, setTheme] = createSignal("");
 
   onMount(() => {
-    const localTheme = localStorage.theme
-    setTheme(localTheme)
-  })
+    const localTheme = localStorage.theme;
+    setTheme(localTheme);
+  });
 
   return (
     <button
