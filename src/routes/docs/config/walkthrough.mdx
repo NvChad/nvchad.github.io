@@ -46,22 +46,18 @@ local result = vim.tbl_deep_extend("force", person, someone)
 
  config structure of the main nvchad repo :
 ```lua
-lua
-│
-├── nvchad
-│   ├── autocmds.lua
-│   ├── mappings.lua
-│   ├── options.lua
-│   │
-│   │── plugins
-│   │    ├── init.lua
-│   │    └── ui.lua
-│   │
-│   ├── configs
-│       ├── cmp.lua
-│       ├── more...
-│       
-└── nvconfig.lua
+├── lua/
+│   ├── nvchad/
+│   │   ├── autocmds.lua
+│   │   ├── mappings.lua
+│   │   └── options.lua
+│   ├── plugins/
+│   │   ├── init.lua
+│   │   └── ui.lua
+│   └── configs/
+│       ├── cmp.lua
+│       └── more.. 
+└── nvconfig.lua  
 ```
 <br/>
 - example module import, `require "nvchad.options"`
