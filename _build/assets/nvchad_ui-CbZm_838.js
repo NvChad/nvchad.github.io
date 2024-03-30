@@ -1,4 +1,4 @@
-import{b as n,q as c,k as s,t}from"./web-CBU83r8B.js";import{M as i}from"./index-C2YDUEaq.js";var r=t("<br>");const o={title:"NvChad UI Configuration",desc:"Manage NvChad's UI plugin configuration"};function a(l){const e={a:"a",code:"code",h2:"h2",h3:"h3",li:"li",p:"p",pre:"pre",span:"span",strong:"strong",ul:"ul",...i(),...l.components};return[n(e.h2,{children:"Overview"}),`
+import{b as n,q as c,k as l,t}from"./web-CBU83r8B.js";import{M as i}from"./index-C2YDUEaq.js";var r=t("<br>");const o={title:"NvChad UI Configuration",desc:"Manage NvChad's UI plugin configuration"};function a(s){const e={a:"a",code:"code",h2:"h2",h3:"h3",li:"li",p:"p",pre:"pre",span:"span",strong:"strong",ul:"ul",...i(),...s.components};return[n(e.h2,{children:"Overview"}),`
 `,n(e.p,{children:"NvChad's Ui plugin handles the following modules:"}),`
 `,n(e.ul,{get children(){return[`
 `,n(e.li,{children:"Statusline"}),`
@@ -6,32 +6,43 @@ import{b as n,q as c,k as s,t}from"./web-CBU83r8B.js";import{M as i}from"./index
 `,n(e.li,{children:"NvDash ( Minimal dashboard )"}),`
 `,n(e.li,{children:"Term ( terminal handling )"}),`
 `]}}),`
-`,n(e.h2,{children:"Statusline & tabufline"}),`
+`,n(e.h2,{children:"Tabufline and Statusline"}),`
 `,n(e.ul,{get children(){return[`
+`,n(e.li,{children:"Both of the plugins share the same way to customize their appearance."}),`
 `,n(e.li,{children:"The order is a list of module names from default modules + your modules"}),`
 `,n(e.li,{children:"Removing a word in the order will remove that module"}),`
 `,n(e.li,{children:"Modules expect all its keys to be a function that returns a string."}),`
+`,n(e.li,{children:"Statusline modules can also have strings!"}),`
+`,n(e.li,{children:`To highlight a string in statusline/tabufline,
+wrap it with your highlight group, or the existing ones from the theme.`}),`
 `]}}),`
 `,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return[`M.ui = {
   tabufline = {
     `,n(e.span,{className:"hljs-comment",children:"--  more opts"}),`
     order = { `,n(e.span,{className:"hljs-string",children:'"treeOffset"'}),", ",n(e.span,{className:"hljs-string",children:'"buffers"'}),", ",n(e.span,{className:"hljs-string",children:'"tabs"'}),", ",n(e.span,{className:"hljs-string",children:'"btns"'}),", ",n(e.span,{className:"hljs-string",children:"'abc'"}),` },
     modules = {
+      `,n(e.span,{className:"hljs-comment",children:"-- You can add your custom component"}),`
       abc = `,n(e.span,{className:"hljs-function",get children(){return[n(e.span,{className:"hljs-keyword",children:"function"}),n(e.span,{className:"hljs-params",children:"()"})]}}),`
         `,n(e.span,{className:"hljs-keyword",children:"return"})," ",n(e.span,{className:"hljs-string",children:'"hi"'}),`
       `,n(e.span,{className:"hljs-keyword",children:"end"}),`,
     }
   },
+
+  statusline = {
+    `,n(e.span,{className:"hljs-comment",children:"-- more opts"}),`
+    order = {...}, `,n(e.span,{className:"hljs-comment",children:"-- check stl/utils.lua file in ui repo "}),`
+    modules = {
+      `,n(e.span,{className:"hljs-comment",children:"-- The default cursor module is override"}),`
+      cursor = `,n(e.span,{className:"hljs-function",get children(){return[n(e.span,{className:"hljs-keyword",children:"function"}),n(e.span,{className:"hljs-params",children:"()"})]}}),`
+        `,n(e.span,{className:"hljs-keyword",children:"return"})," ",n(e.span,{className:"hljs-string",children:'"%#BruhHl#"'})," .. ",n(e.span,{className:"hljs-string",children:'" bruh "'})," ",n(e.span,{className:"hljs-comment",children:"-- the highlight group here is BruhHl      end,"}),`
+    }
+  }
 }
 `]}})}}),`
-`,s(r),`
+`,l(r),`
 `,n(e.ul,{get children(){return[`
-`,n(e.li,{get children(){return["Same goes for statuslines, but check its module order tables at ",n(e.a,{href:"https://github.com/NvChad/ui/blob/v2.5/lua/nvchad/stl/utils.lua",children:"ui repo"})]}}),`
-`,n(e.li,{children:"Statusline modules can also have strings!"}),`
-`,n(e.li,{children:"To highlight a string in statusline/tabufline, wrap it with your highlight group:"}),`
+`,n(e.li,{get children(){return["For more customization, you should ",n(e.strong,{children:"read carefully"})," the default default sets of options in the ",n(e.a,{href:"https://github.com/NvChad/NvChad/blob/6833c60694a626615911e379d201dd723511546d/lua/nvconfig.lua#L21",children:"nvconfig.lua"}),", then check the source code of their module order tables at ",n(e.a,{href:"https://github.com/NvChad/ui/blob/v2.5/lua/nvchad/stl/utils.lua",children:"ui repo"}),"."]}}),`
 `]}}),`
-`,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return[n(e.span,{className:"hljs-string",children:'"%#BruhHl#"'})," .. ",n(e.span,{className:"hljs-string",children:'" bruh "'})," ",n(e.span,{className:"hljs-comment",children:"-- the highlight group here is BruhHl"}),`
-`]}})}}),`
 `,n(e.h2,{children:"Term"}),`
 `,n(e.ul,{get children(){return[`
 `,n(e.li,{children:"The term module exposes the following functions which expect a table of :"}),`
@@ -42,14 +53,14 @@ import{b as n,q as c,k as s,t}from"./web-CBU83r8B.js";import{M as i}from"./index
   size = `,n(e.span,{className:"hljs-number",children:"0.5"})," ",n(e.span,{className:"hljs-comment",children:"-- will work for split windows only"}),`
 
   `,n(e.span,{className:"hljs-comment",children:"-- this will highlight the term window differently"}),`
-  hl* = `,n(e.span,{className:"hljs-string",children:'"Normal:term,WinSeparator:WinSeparator"'}),`, 
+  hl* = `,n(e.span,{className:"hljs-string",children:'"Normal:term,WinSeparator:WinSeparator"'}),`,
 
   id =  `,n(e.span,{className:"hljs-string",children:'"any string"'})," ",n(e.span,{className:"hljs-comment",children:"-- needed for toggle/runner func"}),`
   float_opts* = {} `,n(e.span,{className:"hljs-comment",children:"-- floating window options"}),`
   clear_cmd = `,n(e.span,{className:"hljs-literal",children:"true"})," ",n(e.span,{className:"hljs-comment",children:"-- needed for runner func*"}),`
 }
 `]}})}}),`
-`,s(r),`
+`,l(r),`
 `,n(e.ul,{get children(){return[`
 `,n(e.li,{children:"*ones are optional"}),`
 `,n(e.li,{get children(){return[n(e.strong,{children:"pos"})," is required."]}}),`
@@ -76,10 +87,10 @@ import{b as n,q as c,k as s,t}from"./web-CBU83r8B.js";import{M as i}from"./index
 `,n(e.span,{className:"hljs-built_in",children:"require"}),"(",n(e.span,{className:"hljs-string",children:'"nvchad.term"'}),").toggle { pos = ",n(e.span,{className:"hljs-string",children:'"sp"'}),", id = ",n(e.span,{className:"hljs-string",children:'"xyz2"'}),` }
 `,n(e.span,{className:"hljs-built_in",children:"require"}),"(",n(e.span,{className:"hljs-string",children:'"nvchad.term"'}),").toggle { pos = ",n(e.span,{className:"hljs-string",children:'"vsp"'}),", id = ",n(e.span,{className:"hljs-string",children:'"floo"'}),` }
 `]}})}}),`
-`,s(r),`
+`,l(r),`
 `,n(e.ul,{get children(){return[`
 `,n(e.li,{children:"Mapping example"}),`
-`,n(e.li,{get children(){return[`We are mapping in "t" terminal mode too or else we'd have to go to  normal mode and press `,n(e.code,{children:"<A-i>"})," to toggle terminal."]}}),`
+`,n(e.li,{get children(){return[`We are mapping in "t" terminal mode too or else we'd have to go to normal mode and press `,n(e.code,{children:"<A-i>"})," to toggle terminal."]}}),`
 `]}}),`
 `,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return[n(e.span,{className:"hljs-keyword",children:"local"}),` map = vim.keymap.set
 
@@ -100,7 +111,7 @@ map({ `,n(e.span,{className:"hljs-string",children:'"n"'}),", ",n(e.span,{classN
     clear_cmd = `,n(e.span,{className:"hljs-literal",children:"false"}),`
   }
 `]}})}}),`
-`,s(r),`
+`,l(r),`
 `,n(e.ul,{get children(){return[`
 `,n(e.li,{children:"As Cmd can be a function too, here's a complex example :"}),`
 `]}}),`
@@ -132,4 +143,4 @@ map({ `,n(e.span,{className:"hljs-string",children:'"n"'}),", ",n(e.span,{classN
 `,n(e.li,{get children(){return["If you close any terminal window by our close_buffer func i.e ",n(e.code,{children:"<leader>x"})," then it'll just hide it"]}}),`
 `,n(e.li,{get children(){return["You can un-hide them back by using ",n(e.code,{children:"<leader>pt"})," keymap + press enter"]}}),`
 `,n(e.li,{get children(){return["Command ",n(e.code,{children:"Telescope terms"})]}}),`
-`]}})]}function m(l={}){const{wrapper:e}={...i(),...l.components};return e?n(e,c(l,{get children(){return n(a,l)}})):a(l)}export{m as default,o as meta};
+`]}})]}function m(s={}){const{wrapper:e}={...i(),...s.components};return e?n(e,c(s,{get children(){return n(a,s)}})):a(s)}export{m as default,o as meta};
