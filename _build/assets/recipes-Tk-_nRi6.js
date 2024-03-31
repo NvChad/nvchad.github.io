@@ -67,4 +67,22 @@ autocmd(`,e(n.span,{className:"hljs-string",children:'"BufReadPost"'}),`, {
     `,e(n.span,{className:"hljs-keyword",children:"end"}),`
   `,e(n.span,{className:"hljs-keyword",children:"end"}),`,
 })
-`]}})}})]}function d(s={}){const{wrapper:n}={...l(),...s.components};return n?e(n,i(s,{get children(){return e(a,s)}})):a(s)}export{d as default,t as meta};
+`]}})}}),`
+`,e(n.h2,{children:"Clipboard in WSL without xclip"}),`
+`,e(n.ul,{get children(){return[`
+`,e(n.li,{children:"This is a WSL specific setting to use the Windows clipboard for + and * registers"}),`
+`,e(n.li,{children:"If you have the default PowerShell, substitute pwsh.exe with powershell.exe"}),`
+`]}}),`
+`,e(n.pre,{get children(){return e(n.code,{className:"hljs language-lua",get children(){return[`vim.g.clipboard = {
+  name = `,e(n.span,{className:"hljs-string",children:"'WslClipboard'"}),`,
+  copy = {
+    [`,e(n.span,{className:"hljs-string",children:"'+'"}),"] = ",e(n.span,{className:"hljs-string",children:"'clip.exe'"}),`,
+    [`,e(n.span,{className:"hljs-string",children:"'*'"}),"] = ",e(n.span,{className:"hljs-string",children:"'clip.exe'"}),`,
+  },
+  paste = {
+    [`,e(n.span,{className:"hljs-string",children:"'+'"}),"] = ",e(n.span,{className:"hljs-string",children:`'pwsh.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("\`r", ""))'`}),`,
+    [`,e(n.span,{className:"hljs-string",children:"'*'"}),"] = ",e(n.span,{className:"hljs-string",children:`'pwsh.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("\`r", ""))'`}),`,
+  },
+  cache_enabled = `,e(n.span,{className:"hljs-number",children:"0"}),`,
+}
+`]}})}})]}function h(s={}){const{wrapper:n}={...l(),...s.components};return n?e(n,i(s,{get children(){return e(a,s)}})):a(s)}export{h as default,t as meta};
