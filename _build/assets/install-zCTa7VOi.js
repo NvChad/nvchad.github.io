@@ -9,7 +9,7 @@ import{b as e,q as o,k as t,t as l}from"./web-CBU83r8B.js";import{M as a}from"./
 `]}}),`
 `,e(n.li,{get children(){return[e(n.a,{href:"https://github.com/BurntSushi/ripgrep",children:"Ripgrep"})," is required for grep searching with Telescope ",t(m),"."]}}),`
 `,e(n.li,{get children(){return["GCC, Windows users must have ",e(n.a,{href:"http://mingw-w64.org/downloads",get children(){return e(n.code,{children:"mingw"})}})," installed and set on path."]}}),`
-`,e(n.li,{get children(){return["Make, Windows users must have ",e(n.a,{href:"https://gnuwin32.sourceforge.net/install.html",get children(){return e(n.code,{children:"GnuWin32"})}})," installed and set on path."]}}),`
+`,e(n.li,{get children(){return["Make, Windows users must have ",e(n.a,{href:"https://sourceforge.net/projects/gnuwin32",get children(){return e(n.code,{children:"GnuWin32"})}})," installed and set on path."]}}),`
 `,e(n.li,{children:"Delete old neovim folders (check commands below)"}),`
 `]}}),`
 `,e(n.h2,{children:"Install"}),`
