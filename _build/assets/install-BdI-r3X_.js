@@ -1,6 +1,6 @@
 import{b as e,q as o,k as t,t as l}from"./web-CBU83r8B.js";import{M as a}from"./index-C2YDUEaq.js";import{O as s}from"./install-DI_Cow-H.js";import"./clipboard-DzJ4oxno.js";var c=l("<strong>Mono"),d=l("<strong>Example : "),h=l("<s>JetbrainsMono Nerd Font Mono"),m=l("<strong>(OPTIONAL)"),u=l("<br>");const w={title:"NvChad Installation",desc:"Install, Update, Uninstall guide for nvchad"};function i(r){const n={a:"a",code:"code",h2:"h2",li:"li",pre:"pre",span:"span",strong:"strong",ul:"ul",...a(),...r.components};return[e(n.h2,{children:"Pre-requisites"}),`
 `,e(n.ul,{get children(){return[`
-`,e(n.li,{get children(){return[e(n.a,{href:"https://github.com/neovim/neovim/releases/tag/v0.9.5",children:"Neovim 0.9.5"}),"."]}}),`
+`,e(n.li,{get children(){return[e(n.a,{href:"https://github.com/neovim/neovim/releases/tag/v0.10.0",children:"Neovim 0.10"}),"."]}}),`
 `,e(n.li,{get children(){return[e(n.a,{href:"https://www.nerdfonts.com/",children:"Nerd Font"})," as your terminal font.",`
 `,e(n.ul,{get children(){return[`
 `,e(n.li,{get children(){return["Make sure the nerd font you set doesn't end with ",t(c)," to prevent small icons."]}}),`
