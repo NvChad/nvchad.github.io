@@ -1,4 +1,4 @@
-import{M as i}from"./index-C2YDUEaq.js";import{b as n,q as h}from"./web-CBU83r8B.js";const c={title:"NvChad Faq ",desc:"NvChad Common Faqs"};function t(r){const e={a:"a",code:"code",h2:"h2",li:"li",p:"p",pre:"pre",span:"span",strong:"strong",ul:"ul",...i(),...r.components};return[n(e.h2,{children:"Icons not working"}),`
+import{M as i}from"./index-C2YDUEaq.js";import{b as n,q as o}from"./web-CBU83r8B.js";const a={title:"NvChad Faq ",desc:"NvChad Common Faqs"};function t(r){const e={a:"a",code:"code",h2:"h2",li:"li",p:"p",pre:"pre",span:"span",strong:"strong",ul:"ul",...i(),...r.components};return[n(e.h2,{children:"Icons not working"}),`
 `,n(e.ul,{get children(){return[`
 `,n(e.li,{get children(){return["Setup a ",n(e.a,{href:"https://www.nerdfonts.com/#home",children:"nerdfont"})," as your terminal's default font."]}}),`
 `]}}),`
@@ -34,11 +34,10 @@ import{M as i}from"./index-C2YDUEaq.js";import{b as n,q as h}from"./web-CBU83r8B
 `,n(e.ul,{get children(){return[`
 `,n(e.li,{get children(){return[n(e.strong,{children:"NOTE"}),": keymaps in NvChad are case-sensitive, to delete it you need to use lowercase ",n(e.code,{children:"<tab>"}),". Add this to your mappings.lua:"]}}),`
 `]}}),`
-`,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return[`M.disabled = {
-	n = {
-		[`,n(e.span,{className:"hljs-string",children:'"<tab>"'}),"] = ",n(e.span,{className:"hljs-string",children:'""'}),`,
-	},
-}
+`,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return[n(e.span,{className:"hljs-comment",children:"-- Disable mappings"}),`
+`,n(e.span,{className:"hljs-keyword",children:"local"}),` nomap = vim.keymap.del
+
+nomap(`,n(e.span,{className:"hljs-string",children:'"n"'}),", ",n(e.span,{className:"hljs-string",children:'"<tab>"'}),`)
 `]}})}}),`
 `,n(e.h2,{children:"NvChad's color is weird"}),`
 `,n(e.ul,{get children(){return[`
@@ -49,4 +48,4 @@ import{M as i}from"./index-C2YDUEaq.js";import{b as n,q as h}from"./web-CBU83r8B
 `,n(e.li,{children:"We set it to only number by default, to have cursorline highlight shown, add :"}),`
 `]}}),`
 `,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return["vim.o.cursorlineopt = ",n(e.span,{className:"hljs-string",children:'"both"'}),`
-`]}})}})]}function a(r={}){const{wrapper:e}={...i(),...r.components};return e?n(e,h(r,{get children(){return n(t,r)}})):t(r)}export{a as default,c as meta};
+`]}})}})]}function c(r={}){const{wrapper:e}={...i(),...r.components};return e?n(e,o(r,{get children(){return n(t,r)}})):t(r)}export{c as default,a as meta};

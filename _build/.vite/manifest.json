@@ -761,7 +761,7 @@
     ]
   },
   "src/routes/docs/faq.mdx?pick=$css": {
-    "file": "assets/faq-BKgxm27V.js",
+    "file": "assets/faq-BcqiWEIL.js",
     "src": "src/routes/docs/faq.mdx?pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -971,7 +971,7 @@
     ]
   },
   "virtual:#vinxi/handler/client": {
-    "file": "assets/client-CnTdvGKI.js",
+    "file": "assets/client-BDZEeA8A.js",
     "src": "virtual:#vinxi/handler/client",
     "isEntry": true,
     "imports": [
