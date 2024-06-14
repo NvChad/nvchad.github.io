@@ -34,7 +34,8 @@ wrap it with your highlight group, or the existing ones from the theme.`}),`
     modules = {
       `,n(e.span,{className:"hljs-comment",children:"-- The default cursor module is override"}),`
       cursor = `,n(e.span,{className:"hljs-function",get children(){return[n(e.span,{className:"hljs-keyword",children:"function"}),n(e.span,{className:"hljs-params",children:"()"})]}}),`
-        `,n(e.span,{className:"hljs-keyword",children:"return"})," ",n(e.span,{className:"hljs-string",children:'"%#BruhHl#"'})," .. ",n(e.span,{className:"hljs-string",children:'" bruh "'})," ",n(e.span,{className:"hljs-comment",children:"-- the highlight group here is BruhHl      end,"}),`
+        `,n(e.span,{className:"hljs-keyword",children:"return"})," ",n(e.span,{className:"hljs-string",children:'"%#BruhHl#"'})," .. ",n(e.span,{className:"hljs-string",children:'" bruh "'})," ",n(e.span,{className:"hljs-comment",children:"-- the highlight group here is BruhHl,"}),`
+      `,n(e.span,{className:"hljs-keyword",children:"end"}),`
     }
   }
 }
