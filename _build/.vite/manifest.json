@@ -1073,7 +1073,7 @@
     ]
   },
   "virtual:$vinxi/handler/client": {
-    "file": "assets/client-DCc8_TB7.js",
+    "file": "assets/client-B9-bVuby.js",
     "name": "client",
     "src": "virtual:$vinxi/handler/client",
     "isEntry": true,
@@ -1188,7 +1188,7 @@
       "src/routes/docs/quickstart/post-install.mdx?pick=$css"
     ],
     "css": [
-      "assets/client-H13bxT65.css"
+      "assets/client-BT65yyK9.css"
     ]
   }
 }
