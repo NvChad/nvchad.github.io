@@ -26,12 +26,12 @@
       "_routing-DSA50eZV.js"
     ]
   },
-  "_footer-DG3TIU4r.js": {
-    "file": "assets/footer-DG3TIU4r.js",
+  "_footer-BAX2-SVN.js": {
+    "file": "assets/footer-BAX2-SVN.js",
     "name": "footer",
     "imports": [
       "_web-uzQsy4d_.js",
-      "_install-CQ1n8RFs.js",
+      "_install-DOTgAu_g.js",
       "_components-BqIYf61k.js"
     ]
   },
@@ -42,8 +42,8 @@
       "_web-uzQsy4d_.js"
     ]
   },
-  "_install-CQ1n8RFs.js": {
-    "file": "assets/install-CQ1n8RFs.js",
+  "_install-DOTgAu_g.js": {
+    "file": "assets/install-DOTgAu_g.js",
     "name": "install",
     "imports": [
       "_web-uzQsy4d_.js",
@@ -883,7 +883,7 @@
     ]
   },
   "src/routes/docs/quickstart/install.mdx?pick=$css": {
-    "file": "assets/install-FAJb8PFG.js",
+    "file": "assets/install-CkAqC9NH.js",
     "name": "install",
     "src": "src/routes/docs/quickstart/install.mdx?pick=$css",
     "isEntry": true,
@@ -891,7 +891,7 @@
     "imports": [
       "_web-uzQsy4d_.js",
       "_index-BosUlz4E.js",
-      "_install-CQ1n8RFs.js",
+      "_install-DOTgAu_g.js",
       "_clipboard-DzJ4oxno.js"
     ]
   },
@@ -929,15 +929,15 @@
     ]
   },
   "src/routes/index.tsx?pick=default&pick=$css": {
-    "file": "assets/index-cDM-wWrs.js",
+    "file": "assets/index-BhQx2ZY1.js",
     "name": "index",
     "src": "src/routes/index.tsx?pick=default&pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_footer-DG3TIU4r.js",
+      "_footer-BAX2-SVN.js",
       "_web-uzQsy4d_.js",
-      "_install-CQ1n8RFs.js",
+      "_install-DOTgAu_g.js",
       "_clipboard-DzJ4oxno.js",
       "_components-BqIYf61k.js",
       "_routing-DSA50eZV.js"
@@ -1073,7 +1073,7 @@
     ]
   },
   "virtual:$vinxi/handler/client": {
-    "file": "assets/client-B9-bVuby.js",
+    "file": "assets/client-B_4_BQ57.js",
     "name": "client",
     "src": "virtual:$vinxi/handler/client",
     "isEntry": true,
@@ -1084,8 +1084,8 @@
       "_clipboard-DzJ4oxno.js",
       "_index-BosUlz4E.js",
       "_routing-DSA50eZV.js",
-      "_install-CQ1n8RFs.js",
-      "_footer-DG3TIU4r.js",
+      "_install-DOTgAu_g.js",
+      "_footer-BAX2-SVN.js",
       "_v2.5_release-CtdpbwKV.js",
       "_preload-helper-N37mDRhq.js",
       "_components-BqIYf61k.js"
@@ -1188,7 +1188,7 @@
       "src/routes/docs/quickstart/post-install.mdx?pick=$css"
     ],
     "css": [
-      "assets/client-BT65yyK9.css"
+      "assets/client-BWV4_svn.css"
     ]
   }
 }
