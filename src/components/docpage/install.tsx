@@ -4,9 +4,34 @@ import create_copyIcon from "~/components/doc_comps/clipboard";
 export const osInfos = [
   {
     name: "linux / macos",
-    cmd: "git clone https://github.com/NvChad/starter ~/.config/nvim && nvim",
+
+    cmds: (
+      <>
+        <pre>
+          <code class="hljs">
+            git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
+          </code>
+        </pre>
+      </>
+    ),
     icon: "i-mingcute:hashtag-fill",
   },
+
+  {
+    name: "flatpak",
+    icon: "i-simple-icons:flatpak",
+    cmds: (
+      <>
+        <pre>
+          <code class="hljs">
+            git clone https://github.com/NvChad/starter ~/.var/app/io.neovim.nvim/config/nvim && flatpak run io.neovim.nvim
+          </code>
+        </pre>
+      </>
+    ),
+  },
+
+  
   {
     name: "windows",
     icon: "i-mdi:windows",
@@ -14,23 +39,34 @@ export const osInfos = [
       <>
         <li>If you're using Command Prompt(CMD)</li>
 
-        <pre class="hljs">
-          git clone https://github.com/NvChad/starter
-          %USERPROFILE%\AppData\Local\nvim && nvim
+        <pre>
+          <code class="hljs">
+            git clone https://github.com/NvChad/starter
+            %USERPROFILE%\AppData\Local\nvim && nvim
+          </code>
         </pre>
 
         <li>If you're using PowerShell(pwsh)</li>
 
-        <pre class="hljs">
-          git clone https://github.com/NvChad/starter
-          $ENV:USERPROFILE\AppData\Local\nvim && nvim
+        <pre>
+          <code class="hljs">
+            git clone https://github.com/NvChad/starter
+            $ENV:USERPROFILE\AppData\Local\nvim && nvim
+          </code>
         </pre>
 
         <b>If the above path doesnt work, try any of these paths :</b>
         <li>For CMD : %LOCALAPPDATA%\nvim </li>
-        <pre class="hljs">C:\Users\%USERNAME%\AppData\Local\nvim</pre>
+
+        <pre>
+          <code class="hljs">C:\Users\%USERNAME%\AppData\Local\nvim </code>
+        </pre>
+
         <li>For PowerShell : $ENV:LocalAppData\nvim </li>
-        <pre class="hljs">C:\Users\$ENV:USERNAME\AppData\Local\nvim</pre>
+
+        <pre>
+          <code class="hljs">C:\Users\$ENV:USERNAME\AppData\Local\nvim </code>
+        </pre>
       </>
     ),
   },
@@ -57,7 +93,7 @@ export default () => (
   <div flex="~ wrap" gap-5>
     {osInfos.map((x) => (
       <button
-        capitalize='~'
+        capitalize="~"
         onClick={() => setOS(x)}
         class={
           os().name == x.name ? "bg-emerald2 dark:bg-sky3 dark:text-black" : ""
