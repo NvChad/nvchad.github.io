@@ -15,13 +15,12 @@ export const sidebar_Items = [
     label: ["Configure", "i-line-md:cog-filled"],
     items: [
       ["Walkthrough", "config/walkthrough"],
-      ["Snippets", "config/snippets"],
       ["Manage Plugins", "config/plugins"],
-      ["Syntax highlighting", "config/syntax"],
       ["LSP Configuration", "config/lsp"],
       ["Mappings", "config/mappings"],
       ["UI Plugin", "config/nvchad_ui"],
-      ["Customize colors", "config/theming"],
+      ["Theming", "config/theming"],
+      ["Snippets", "config/snippets"],
     ],
   },
 

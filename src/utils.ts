@@ -38,7 +38,9 @@ export const assign_heading_ids = () => {
 
   headingElements?.forEach((item) => {
     item.id = item.innerText.replaceAll(/[ .&]/g, "_").toLowerCase();
-    headings.push([item.localName.toLowerCase(), item.innerText]);
+
+    if (item.className != "nosidebar")
+      headings.push([item.localName.toLowerCase(), item.innerText]);
   });
 
   setHeadings(headings);

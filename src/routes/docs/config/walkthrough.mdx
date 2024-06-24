@@ -1,73 +1,21 @@
+import Basics from "~/components/docpage/basic";
+
 export const meta = {
   title: "NvChad Walkthrough",
   desc: "Walkthrough guide for NvChad"
 }
 
-# How does NvChad work? 
+## How does NvChad work? 
 
-## Understanding the basics
+> NvChad's starter repo is the actual config and it uses the main NvChad repo as a plugin
 
-Before getting into the topic, first you should understand the `vim.tbl_deep_extend` function which is used for merging tables and their values recursively.  
-
-- The function `vim.tbl_deep_extend` is normally used to merge 2 tables, and its syntax looks like this: 
-
-```lua
--- table 1
-local person = {
-    name = "joe",
-    age = 19,
-    skills = {"python", "html"},
-}
-
--- table 2
-local someone = {
-    name = "siduck",
-    skills = {"js", "lua"},
-}
-
--- "force" will overwrite equal values from the someone table over the person table
-local result = vim.tbl_deep_extend("force", person, someone)
-
--- result : 
-{
-    name = "siduck",
-    age = 19,
-    skills = {"js", "lua"},
-}
-
--- The list tables wont merge cuz they dont have keys 
-```
-
-## Main Config Structure
-
- - [NvChad/NvChad](https://github.com/NvChad/NvChad) repo, this contains plugins, options, mappings, autocmds.
- - [NvChad/starter](https://github.com/NvChad/starter) - This is a minimal config which shows how to use the nvchad repo as a plugin.
- - Users will be using the starter config or can create their own
-
- config structure of the main nvchad repo :
-```lua
-├── lua/
-│   ├── nvchad/
-│   │   ├── autocmds.lua
-│   │   ├── mappings.lua
-│   │   └── options.lua
-│   ├── plugins/
-│   │   ├── init.lua
-│   │   └── ui.lua
-│   └── configs/
-│       ├── cmp.lua
-│       └── more.. 
-└── nvconfig.lua  
-```
-<br/>
-- example module import, `require "nvchad.options"`
-- nvconfig.lua is the list of all options for both ui/base46 repo!
+<Basics/>
 
 ## Chadrc.lua
 
-- This file is meant to have structure of [nvconfig.lua](https://github.com/NvChad/NvChad/blob/v2.5/lua/nvconfig.lua), check the nvconfig.lua for knowing all supported options.
-- So nvconfig returns a table of config and then merges chadrc's table.
-- And you put this file in your `/lua` folder
+- This file is used to configure ui & base46 plugin
+- Its meant to have structure of [nvconfig.lua](https://github.com/NvChad/ui/blob/v2.5/lua/nvconfig.lua)
+- It should be in your config's `/lua` folder
 
 ## Themes
 
@@ -81,3 +29,4 @@ If you want to know all the keymaps, you can run the following commands:
 
 - `NvCheatsheet`
 - `Telescope keymaps` 
+

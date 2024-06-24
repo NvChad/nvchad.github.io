@@ -25,13 +25,14 @@ All NvChad default plugins will have `lazy = true` set. Therefore, if you want a
 local plugins = {
 
   { "elkowar/yuck.vim" , lazy = false },  -- load a plugin at startup
+  { "folke/which-key.nvim",  enabled = false },
 
   -- You can use any plugin specification from lazy.nvim
   {
     "Pocco81/TrueZen.nvim",
     cmd = { "TZAtaraxis", "TZMinimalist" },
     config = function()
-      require "custom.configs.truezen" -- just an example path
+      require "configs.truezen" -- just an example path
     end,
   },
 
@@ -41,12 +42,7 @@ local plugins = {
     opts = {
       ensure_installed = {"html", "css", "bash"},
     },
-  },
-  
-  {
-    "folke/which-key.nvim",
-    enabled = false,
-  },
+  }, 
 
   -- If your opts uses a function call ex: require*, then make opts spec a function
   -- should return the modified default config as well

@@ -258,3 +258,36 @@ require("path")
 
 -- both do the same thing
 ```
+
+## vim.tbl_deep_extend
+
+This is a neovim function which is used for merging tables and their values recursively. Most plugins use it for merging config tables.  
+
+```lua
+-- table 1
+local person = {
+    name = "joe",
+    age = 19,
+    skills = {"python", "html"},
+}
+
+-- table 2
+local someone = {
+    name = "siduck",
+    skills = {"js", "lua"},
+}
+
+-- "force" will overwrite equal values from the someone table over the person table
+local result = vim.tbl_deep_extend("force", person, someone)
+
+-- result : 
+{
+    name = "siduck",
+    age = 19,
+    skills = {"js", "lua"},
+}
+
+-- The list tables wont merge cuz they dont have keys 
+```
+<br/>
+- check :h vim.tbl_deep_extend for more info

@@ -23,18 +23,15 @@ The mapping configuration uses the nvim name shortcuts as:
 ```lua 
 local map = vim.keymap.set
 
-map("i", "<C-k>", "<Up>", { desc = "Move up" })
+map("n", "<leader>ff", "<cmd> Telescope <cr>")
 
 -- multiple modes 
-map({ "i", "n" }, "<C-k>", "<Up>", { desc = "Move down" })
-
-map("n", "<leader>ff", ":Telescope <cr>")
+map({ "i", "n" }, "<C-k>", "<Up>", { desc = "Move up" })
 
 -- mapping with a lua function
 map("n", "<A-i>", function()
-  require("nvchad.term").toggle({ pos = "sp", id ='abc' })
+   -- do something
 end, { desc = "Terminal toggle floating" })
-
 
 -- Disable mappings
 local nomap = vim.keymap.del
@@ -42,3 +39,7 @@ local nomap = vim.keymap.del
 nomap("i", "<C-k>")
 nomap("n", "<C-k>")
 ```
+
+<br/>
+
+- Do know that lsp & gitsigns mappings wont be overrided by the above methods, because they dont load on startup & are lazy loaded. So put the lsp ones in `LspAttach` autocmd or right after your on_attach
