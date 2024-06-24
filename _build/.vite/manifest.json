@@ -1,10 +1,10 @@
 {
-  "_ContextTitles-!~{01z}~.js": {
+  "_ContextTitles-!~{01y}~.js": {
     "file": "assets/ContextTitles-CHlfX0wD.css",
-    "src": "_ContextTitles-!~{01z}~.js"
+    "src": "_ContextTitles-!~{01y}~.js"
   },
-  "_ContextTitles-C5UJIb4b.js": {
-    "file": "assets/ContextTitles-C5UJIb4b.js",
+  "_ContextTitles-7RuR9GX9.js": {
+    "file": "assets/ContextTitles-7RuR9GX9.js",
     "name": "ContextTitles",
     "imports": [
       "_web-uzQsy4d_.js",
@@ -12,6 +12,13 @@
     ],
     "css": [
       "assets/ContextTitles-CHlfX0wD.css"
+    ]
+  },
+  "_basic-DnNcpRg3.js": {
+    "file": "assets/basic-DnNcpRg3.js",
+    "name": "basic",
+    "imports": [
+      "_web-uzQsy4d_.js"
     ]
   },
   "_clipboard-DzJ4oxno.js": {
@@ -50,8 +57,8 @@
       "_clipboard-DzJ4oxno.js"
     ]
   },
-  "_nextprevPage-BlduWUwr.js": {
-    "file": "assets/nextprevPage-BlduWUwr.js",
+  "_nextprevPage-CE7aRSa7.js": {
+    "file": "assets/nextprevPage-CE7aRSa7.js",
     "name": "nextprevPage",
     "imports": [
       "_web-uzQsy4d_.js",
@@ -714,15 +721,15 @@
     ]
   },
   "src/routes/docs.tsx?pick=default&pick=$css": {
-    "file": "assets/docs-pL5c8s8f.js",
+    "file": "assets/docs-CYSP12OL.js",
     "name": "docs",
     "src": "src/routes/docs.tsx?pick=default&pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_web-uzQsy4d_.js",
-      "_nextprevPage-BlduWUwr.js",
-      "_ContextTitles-C5UJIb4b.js",
+      "_nextprevPage-CE7aRSa7.js",
+      "_ContextTitles-7RuR9GX9.js",
       "_clipboard-DzJ4oxno.js",
       "_components-BqIYf61k.js",
       "_routing-DSA50eZV.js"
@@ -751,7 +758,7 @@
     ]
   },
   "src/routes/docs/config/mappings.mdx?pick=$css": {
-    "file": "assets/mappings-WHMXvhXW.js",
+    "file": "assets/mappings-BPsliLOU.js",
     "name": "mappings",
     "src": "src/routes/docs/config/mappings.mdx?pick=$css",
     "isEntry": true,
@@ -773,7 +780,7 @@
     ]
   },
   "src/routes/docs/config/plugins.mdx?pick=$css": {
-    "file": "assets/plugins-CGeM5x77.js",
+    "file": "assets/plugins-CzdPOH03.js",
     "name": "plugins",
     "src": "src/routes/docs/config/plugins.mdx?pick=$css",
     "isEntry": true,
@@ -794,17 +801,6 @@
       "_index-BosUlz4E.js"
     ]
   },
-  "src/routes/docs/config/syntax.mdx?pick=$css": {
-    "file": "assets/syntax-BaiKI7tQ.js",
-    "name": "syntax",
-    "src": "src/routes/docs/config/syntax.mdx?pick=$css",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_web-uzQsy4d_.js",
-      "_index-BosUlz4E.js"
-    ]
-  },
   "src/routes/docs/config/theming.mdx?pick=$css": {
     "file": "assets/theming-DdI8p1dL.js",
     "name": "theming",
@@ -817,14 +813,15 @@
     ]
   },
   "src/routes/docs/config/walkthrough.mdx?pick=$css": {
-    "file": "assets/walkthrough-FHMentwC.js",
+    "file": "assets/walkthrough-CSYJ2bCy.js",
     "name": "walkthrough",
     "src": "src/routes/docs/config/walkthrough.mdx?pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_web-uzQsy4d_.js",
-      "_index-BosUlz4E.js"
+      "_index-BosUlz4E.js",
+      "_basic-DnNcpRg3.js"
     ]
   },
   "src/routes/docs/contribute.mdx?pick=$css": {
@@ -850,7 +847,7 @@
     ]
   },
   "src/routes/docs/faq.mdx?pick=$css": {
-    "file": "assets/faq-DvK7ysIq.js",
+    "file": "assets/faq-BdWz_dCP.js",
     "name": "faq",
     "src": "src/routes/docs/faq.mdx?pick=$css",
     "isEntry": true,
@@ -896,14 +893,14 @@
     ]
   },
   "src/routes/docs/quickstart/learn-lua.mdx?pick=$css": {
-    "file": "assets/learn-lua-ezCmvg22.js",
+    "file": "assets/learn-lua-CrbjoJwU.js",
     "name": "learn-lua",
     "src": "src/routes/docs/quickstart/learn-lua.mdx?pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-BosUlz4E.js",
-      "_web-uzQsy4d_.js"
+      "_web-uzQsy4d_.js",
+      "_index-BosUlz4E.js"
     ]
   },
   "src/routes/docs/quickstart/post-install.mdx?pick=$css": {
@@ -944,14 +941,14 @@
     ]
   },
   "src/routes/news.tsx?pick=default&pick=$css": {
-    "file": "assets/news-6xBpO7qg.js",
+    "file": "assets/news-BETNO3A1.js",
     "name": "news",
     "src": "src/routes/news.tsx?pick=default&pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_web-uzQsy4d_.js",
-      "_ContextTitles-C5UJIb4b.js",
+      "_ContextTitles-7RuR9GX9.js",
       "_clipboard-DzJ4oxno.js",
       "_routing-DSA50eZV.js"
     ]
@@ -1073,16 +1070,17 @@
     ]
   },
   "virtual:$vinxi/handler/client": {
-    "file": "assets/client-B_4_BQ57.js",
+    "file": "assets/client-BLLEsyUp.js",
     "name": "client",
     "src": "virtual:$vinxi/handler/client",
     "isEntry": true,
     "imports": [
       "_web-uzQsy4d_.js",
-      "_nextprevPage-BlduWUwr.js",
-      "_ContextTitles-C5UJIb4b.js",
+      "_nextprevPage-CE7aRSa7.js",
+      "_ContextTitles-7RuR9GX9.js",
       "_clipboard-DzJ4oxno.js",
       "_index-BosUlz4E.js",
+      "_basic-DnNcpRg3.js",
       "_routing-DSA50eZV.js",
       "_install-DOTgAu_g.js",
       "_footer-BAX2-SVN.js",
@@ -1180,7 +1178,6 @@
       "src/routes/docs/config/nvchad_ui.mdx?pick=$css",
       "src/routes/docs/config/plugins.mdx?pick=$css",
       "src/routes/docs/config/snippets.mdx?pick=$css",
-      "src/routes/docs/config/syntax.mdx?pick=$css",
       "src/routes/docs/config/theming.mdx?pick=$css",
       "src/routes/docs/config/walkthrough.mdx?pick=$css",
       "src/routes/docs/quickstart/install.mdx?pick=$css",
@@ -1188,7 +1185,7 @@
       "src/routes/docs/quickstart/post-install.mdx?pick=$css"
     ],
     "css": [
-      "assets/client-BWV4_svn.css"
+      "assets/client-CIsK8MPE.css"
     ]
   }
 }
