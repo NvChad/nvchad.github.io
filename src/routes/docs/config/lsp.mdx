@@ -58,23 +58,7 @@ end
 ```
 ## Mason.nvim
 
-The `mason.nvim` plugin is used to download LSP servers, formatters, linters, and debug adapters. It's better to list all your required packages in your Mason override config, so they automatically download when running `MasonInstallAll` command.
-
-You can find the exact name of the LSP packages using `:Mason`, that will open a window.
-
-```lua
- {
-   "williamboman/mason.nvim",
-   opts = {
-      ensure_installed = {
-        "lua-language-server",
-        "html-lsp",
-        "prettier",
-        "stylua"
-      },
-    },
-  }
-```
+Run the `MasonInstallAll` command
 
 <br />
 
