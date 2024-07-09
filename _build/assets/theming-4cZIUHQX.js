@@ -53,7 +53,7 @@ import{b as n,q as i,k as l,t}from"./web-uzQsy4d_.js";import{M as h}from"./index
 `,l(c),`
 `]}}),`
 `,n(e.ul,{get children(){return[`
-`,n(e.li,{get children(){return["Default themes can be found in our ",n(e.a,{href:"https://github.com/NvChad/base46",get children(){return n(e.code,{children:"base46"})}})," repository."]}}),`
+`,n(e.li,{get children(){return["Default themes can be found in our ",n(e.a,{href:"https://github.com/NvChad/base46/tree/v2.5/lua/base46/themes",get children(){return n(e.code,{children:"base46"})}})," repository."]}}),`
 `]}}),`
 `,n(e.p,{children:"Here is the default structure for NvChad themes:"}),`
 `,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return[n(e.span,{className:"hljs-comment",children:"-- place the file in /themes/<theme-name>.lua"}),`
