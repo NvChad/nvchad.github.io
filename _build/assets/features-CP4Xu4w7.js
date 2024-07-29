@@ -45,7 +45,7 @@ import{b as n,q as a,k as r,t as i}from"./web-uzQsy4d_.js";import{M as o}from"./
 `,n(e.li,{children:"All of the above functions allow floating, horizontal, vertical windows"}),`
 `,n(e.li,{children:"Each window can have its own cmd/size/cmd/ highlight group"}),`
 `,n(e.li,{get children(){return["Using it with our telescope picker ( :Telescope terms ) to unhide terminal buffers ",r(d),"."]}}),`
-`,n(e.li,{children:"Check (ui plugin docs)[nvchad.com/docs/config/nvchad_ui#term]"}),`
+`,n(e.li,{get children(){return["Check ",n(e.a,{href:"nvchad.com/docs/config/nvchad_ui#term",children:"ui plugin docs"})]}}),`
 `]}}),`
 `,r(u),`
 `,n(e.h2,{children:"Dashboard"}),`
