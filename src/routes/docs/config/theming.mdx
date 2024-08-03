@@ -15,7 +15,7 @@ When modifying the custom highlight groups in your theme file, such as "onedark.
 Although hex colors can also be used in the "fg/bg" field, it is recommended to utilize the variable names (e.g. "blue", "darker_black", "one_bg", etc.) from your theme file as they will provide a better aesthetic. This way, there is no need to manually write the hex colors.
 
 ```lua
-M.ui = {
+M.base46 = {
    hl_override = {
       Pmenu = { bg = "white" },
       -- Pmenu = { bg = "#ffffff" }, this works too
@@ -43,7 +43,7 @@ In order to add custom highlights, it's the same as above, just use **`hl_add`**
 If you just want to customize an already existing theme, you can change the following configuration:
 
 ```lua
-M.ui = {
+M.base46 = {
    changed_themes = {
       onedark = {
          base_16 = {
@@ -94,7 +94,7 @@ return M
 Finally, add your theme in chadrc. 
 
 ```lua
-M.ui = {
+M.base46 = {
    theme = "siduck",
 }
 ```
