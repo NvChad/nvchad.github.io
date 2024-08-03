@@ -802,7 +802,7 @@
     ]
   },
   "src/routes/docs/config/theming.mdx?pick=$css": {
-    "file": "assets/theming-4cZIUHQX.js",
+    "file": "assets/theming-CXbakWTw.js",
     "name": "theming",
     "src": "src/routes/docs/config/theming.mdx?pick=$css",
     "isEntry": true,
@@ -1070,7 +1070,7 @@
     ]
   },
   "virtual:$vinxi/handler/client": {
-    "file": "assets/client-B-V50MXh.js",
+    "file": "assets/client-BRlUzi_l.js",
     "name": "client",
     "src": "virtual:$vinxi/handler/client",
     "isEntry": true,

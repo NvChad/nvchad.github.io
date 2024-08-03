@@ -1,4 +1,4 @@
-import{b as n,q as i,k as l,t}from"./web-uzQsy4d_.js";import{M as h}from"./index-BosUlz4E.js";var a=t("<br>"),c=t("<u>WARNING: Do this at your own risk because you might not be able to make nice nvchad themes like siduck.");const u={title:"NvChad Theming",desc:"Configure base46 themes in Nvchad"};function r(s){const e={a:"a",blockquote:"blockquote",code:"code",h2:"h2",h3:"h3",li:"li",p:"p",pre:"pre",span:"span",strong:"strong",ul:"ul",...h(),...s.components};return[n(e.h2,{children:"Override highlight groups"}),`
+import{b as n,q as i,k as l,t}from"./web-uzQsy4d_.js";import{M as h}from"./index-BosUlz4E.js";var a=t("<br>"),c=t("<u>WARNING: Do this at your own risk because you might not be able to make nice nvchad themes like siduck.");const m={title:"NvChad Theming",desc:"Configure base46 themes in Nvchad"};function r(s){const e={a:"a",blockquote:"blockquote",code:"code",h2:"h2",h3:"h3",li:"li",p:"p",pre:"pre",span:"span",strong:"strong",ul:"ul",...h(),...s.components};return[n(e.h2,{children:"Override highlight groups"}),`
 `,n(e.ul,{get children(){return[`
 `,n(e.li,{children:"Make sure you use a valid highlight group."}),`
 `,n(e.li,{get children(){return["Check your theme colors in the ",n(e.a,{href:"https://github.com/NvChad/base46/tree/v2.0/lua/base46/themes",children:"base46 theme dir"})]}}),`
@@ -7,7 +7,7 @@ import{b as n,q as i,k as l,t}from"./web-uzQsy4d_.js";import{M as h}from"./index
 `]}}),`
 `,n(e.p,{children:'When modifying the custom highlight groups in your theme file, such as "onedark.lua", it is important to note that only the variables from "base_30" can be used for this purpose.'}),`
 `,n(e.p,{children:'Although hex colors can also be used in the "fg/bg" field, it is recommended to utilize the variable names (e.g. "blue", "darker_black", "one_bg", etc.) from your theme file as they will provide a better aesthetic. This way, there is no need to manually write the hex colors.'}),`
-`,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return[`M.ui = {
+`,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return[`M.base46 = {
    hl_override = {
       Pmenu = { bg = `,n(e.span,{className:"hljs-string",children:'"white"'}),` },
       `,n(e.span,{className:"hljs-comment",children:'-- Pmenu = { bg = "#ffffff" }, this works too'}),`
@@ -30,7 +30,7 @@ import{b as n,q as i,k as l,t}from"./web-uzQsy4d_.js";import{M as h}from"./index
 `,n(e.p,{get children(){return["In order to add custom highlights, it's the same as above, just use ",n(e.strong,{get children(){return n(e.code,{children:"hl_add"})}}),"."]}}),`
 `,n(e.h2,{children:"Customize themes"}),`
 `,n(e.p,{children:"If you just want to customize an already existing theme, you can change the following configuration:"}),`
-`,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return[`M.ui = {
+`,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return[`M.base46 = {
    changed_themes = {
       onedark = {
          base_16 = {
@@ -75,7 +75,7 @@ M.`,n(e.span,{className:"hljs-built_in",children:"type"})," = ",n(e.span,{classN
 `]}})}}),`
 `,l(a),`
 `,n(e.p,{children:"Finally, add your theme in chadrc."}),`
-`,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return[`M.ui = {
+`,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return[`M.base46 = {
    theme = `,n(e.span,{className:"hljs-string",children:'"siduck"'}),`,
 }
 `]}})}}),`
@@ -108,4 +108,4 @@ M.`,n(e.span,{className:"hljs-built_in",children:"type"})," = ",n(e.span,{classN
      `,n(e.span,{className:"hljs-built_in",children:"require"}),"(",n(e.span,{className:"hljs-string",children:'"trouble"'}),`).setup()
   `,n(e.span,{className:"hljs-keyword",children:"end"}),`
 }
-`]}})}})]}function m(s={}){const{wrapper:e}={...h(),...s.components};return e?n(e,i(s,{get children(){return n(r,s)}})):r(s)}export{m as default,u as meta};
+`]}})}})]}function u(s={}){const{wrapper:e}={...h(),...s.components};return e?n(e,i(s,{get children(){return n(r,s)}})):r(s)}export{u as default,m as meta};
