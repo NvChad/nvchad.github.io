@@ -1,4 +1,4 @@
-import{b as n,q as c,k as l,t}from"./web-uzQsy4d_.js";import{M as i}from"./index-BosUlz4E.js";var r=t("<br>");const o={title:"NvChad UI Configuration",desc:"Manage NvChad's UI plugin configuration"};function a(s){const e={a:"a",code:"code",h2:"h2",h3:"h3",li:"li",p:"p",pre:"pre",span:"span",strong:"strong",ul:"ul",...i(),...s.components};return[n(e.h2,{children:"Overview"}),`
+import{b as n,q as c,k as l,t}from"./web-uzQsy4d_.js";import{M as i}from"./index-BosUlz4E.js";var a=t("<br>");const o={title:"NvChad UI Configuration",desc:"Manage NvChad's UI plugin configuration"};function r(s){const e={a:"a",code:"code",h2:"h2",h3:"h3",li:"li",p:"p",pre:"pre",span:"span",strong:"strong",ul:"ul",...i(),...s.components};return[n(e.h2,{children:"Overview"}),`
 `,n(e.p,{children:"NvChad's Ui plugin handles the following modules:"}),`
 `,n(e.ul,{get children(){return[`
 `,n(e.li,{children:"Statusline"}),`
@@ -36,11 +36,17 @@ wrap it with your highlight group, or the existing ones from the theme.`}),`
       cursor = `,n(e.span,{className:"hljs-function",get children(){return[n(e.span,{className:"hljs-keyword",children:"function"}),n(e.span,{className:"hljs-params",children:"()"})]}}),`
         `,n(e.span,{className:"hljs-keyword",children:"return"})," ",n(e.span,{className:"hljs-string",children:'"%#BruhHl#"'})," .. ",n(e.span,{className:"hljs-string",children:'" bruh "'})," ",n(e.span,{className:"hljs-comment",children:"-- the highlight group here is BruhHl,"}),`
       `,n(e.span,{className:"hljs-keyword",children:"end"}),`
-    }
+    },
+
+    `,n(e.span,{className:"hljs-comment",children:"-- Separator style and theme"}),`
+    theme = `,n(e.span,{className:"hljs-string",children:'"default"'}),", ",n(e.span,{className:"hljs-comment",children:"-- default, vscode, vscode_colored or minimal"}),`
+    `,n(e.span,{className:"hljs-comment",children:"-- default, round, block, and arrow are supported only by the default statusline theme."}),`
+    `,n(e.span,{className:"hljs-comment",children:"-- the round and block separators are also supported by the minimal theme."}),`
+    separator_style = `,n(e.span,{className:"hljs-string",children:'"default"'}),", ",n(e.span,{className:"hljs-comment",children:"-- default, round, block or arrow"}),`
   }
 }
 `]}})}}),`
-`,l(r),`
+`,l(a),`
 `,n(e.ul,{get children(){return[`
 `,n(e.li,{get children(){return["For more customization, you should ",n(e.strong,{children:"read carefully"})," the default default sets of options in the ",n(e.a,{href:"https://github.com/NvChad/NvChad/blob/6833c60694a626615911e379d201dd723511546d/lua/nvconfig.lua#L21",children:"nvconfig.lua"}),", then check the source code of their module order tables at ",n(e.a,{href:"https://github.com/NvChad/ui/blob/v2.5/lua/nvchad/stl/utils.lua",children:"ui repo"}),"."]}}),`
 `]}}),`
@@ -61,7 +67,7 @@ wrap it with your highlight group, or the existing ones from the theme.`}),`
   clear_cmd = `,n(e.span,{className:"hljs-literal",children:"true"})," ",n(e.span,{className:"hljs-comment",children:"-- needed for runner func*"}),`
 }
 `]}})}}),`
-`,l(r),`
+`,l(a),`
 `,n(e.ul,{get children(){return[`
 `,n(e.li,{children:"*ones are optional"}),`
 `,n(e.li,{get children(){return[n(e.strong,{children:"pos"})," is required."]}}),`
@@ -88,7 +94,7 @@ wrap it with your highlight group, or the existing ones from the theme.`}),`
 `,n(e.span,{className:"hljs-built_in",children:"require"}),"(",n(e.span,{className:"hljs-string",children:'"nvchad.term"'}),").toggle { pos = ",n(e.span,{className:"hljs-string",children:'"sp"'}),", id = ",n(e.span,{className:"hljs-string",children:'"xyz2"'}),` }
 `,n(e.span,{className:"hljs-built_in",children:"require"}),"(",n(e.span,{className:"hljs-string",children:'"nvchad.term"'}),").toggle { pos = ",n(e.span,{className:"hljs-string",children:'"vsp"'}),", id = ",n(e.span,{className:"hljs-string",children:'"floo"'}),` }
 `]}})}}),`
-`,l(r),`
+`,l(a),`
 `,n(e.ul,{get children(){return[`
 `,n(e.li,{children:"Mapping example"}),`
 `,n(e.li,{get children(){return[`We are mapping in "t" terminal mode too or else we'd have to go to normal mode and press `,n(e.code,{children:"<A-i>"})," to toggle terminal."]}}),`
@@ -112,7 +118,7 @@ map({ `,n(e.span,{className:"hljs-string",children:'"n"'}),", ",n(e.span,{classN
     clear_cmd = `,n(e.span,{className:"hljs-literal",children:"false"}),`
   }
 `]}})}}),`
-`,l(r),`
+`,l(a),`
 `,n(e.ul,{get children(){return[`
 `,n(e.li,{children:"As Cmd can be a function too, here's a complex example :"}),`
 `]}}),`
@@ -144,4 +150,4 @@ map({ `,n(e.span,{className:"hljs-string",children:'"n"'}),", ",n(e.span,{classN
 `,n(e.li,{get children(){return["If you close any terminal window by our close_buffer func i.e ",n(e.code,{children:"<leader>x"})," then it'll just hide it"]}}),`
 `,n(e.li,{get children(){return["You can un-hide them back by using ",n(e.code,{children:"<leader>pt"})," keymap + press enter"]}}),`
 `,n(e.li,{get children(){return["Command ",n(e.code,{children:"Telescope terms"})]}}),`
-`]}})]}function m(s={}){const{wrapper:e}={...i(),...s.components};return e?n(e,c(s,{get children(){return n(a,s)}})):a(s)}export{m as default,o as meta};
+`]}})]}function m(s={}){const{wrapper:e}={...i(),...s.components};return e?n(e,c(s,{get children(){return n(r,s)}})):r(s)}export{m as default,o as meta};
