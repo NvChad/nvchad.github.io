@@ -134,7 +134,7 @@ function Navbar(props: Proptypes) {
                 text-lg font-medium  p-4 py-3 max-w-[1700px] mx-auto`;
 
   return (
-    <nav class="sticky top-0 z-50 shadow-md" bg="dark:dark-3">
+    <nav class="sticky top-0 z-50 shadow-md" bg="white-1 dark:dark-3">
       <div class={styles}>
         <div md="flex gap-3 mx-auto" class="grid justify-between w-full gap-5">
           <Links />

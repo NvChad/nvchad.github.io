@@ -5,20 +5,28 @@ const toMeta = (v) =>
   }));
 
 const news = toMeta(import.meta.glob("./*.mdx", { eager: true }));
+news.sort((a, b) => a.order - b.order);
 
 export const meta = {
   title: "NvChad release blogs",
   desc: "List of NvChad version release news / guides",
 };
 
+const jpegImg = (str) => str.replace(/\.\w+$/, ".jpeg");
+
 function News() {
   return (
-    <div m="x-auto"  max="w-[1700px]" >
+    <div m="x-auto" max="w-[1700px]">
       {/* overview cards */}
       <div grid gap5 class="md:grid-cols-2 2xl:grid-cols-4">
         {news.map((x) => (
           <div class=" flex flex-col items-start" bg="slate1 dark:dark-3">
-            <img src={`/news/${x.cover}`} w-full rounded-t-lg loading="lazy" />
+            <img
+              src={`/news/${jpegImg(x.cover)}`}
+              w-full
+              rounded-t-lg
+              loading="lazy"
+            />
 
             <div h-full flex flex-col gap-4 justify-between p-7>
               <div>

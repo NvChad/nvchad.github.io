@@ -17,22 +17,31 @@ const metaData: any = {};
 const defaultMeta = {
   title: "NvChad",
   desc: "Blazing fast Neovim config providing solid defaults and a beautiful UI, enhancing your Neovim experience.",
+  ogimg: "v2.5.jpeg",
 };
 
 for (const path in routes) {
   let route = path.replace("./routes", "").replace(/\.[^.]+$/, "");
   route = route.replace("index", "");
   const moduleMeta = routes[path]?.meta || defaultMeta; // Accessing the meta property of the module
+
+  moduleMeta.ogimg = moduleMeta.cover
+    ? moduleMeta.cover.split(".")[0] + '.jpeg'
+    : defaultMeta.ogimg;
+
   metaData[route] = moduleMeta;
 }
 
 metaData["/themes/"] = metaData["/themes"];
 
 export default function App() {
+
   return (
     <Router
       base={import.meta.env.SERVER_BASE_URL}
-      root={(props) => (
+      root={(props) => {
+
+       return (
         <MetaProvider>
           <Title>{metaData[props.location.pathname]?.title}</Title>
 
@@ -47,18 +56,18 @@ export default function App() {
 
           <Meta
             name="twitter:image:src"
-            content="https://repository-images.githubusercontent.com/345368765/343e772f-d6e9-4a6b-84dc-8936f0c2706d"
+            content={metaData[props.location.pathname]?.ogimg}
           />
 
           <Meta
             property="og:image"
-            content="https://repository-images.githubusercontent.com/345368765/343e772f-d6e9-4a6b-84dc-8936f0c2706d"
+            content={metaData[props.location.pathname]?.ogimg}
           />
 
           <Navbar pathname={props.location.pathname} />
           <Suspense>{props.children}</Suspense>
         </MetaProvider>
-      )}
+      )}}
     >
       <FileRoutes />
     </Router>
