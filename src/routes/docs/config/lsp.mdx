@@ -16,7 +16,6 @@ Then check [server_configurations.md](https://github.com/neovim/nvim-lspconfig/b
 {
   "neovim/nvim-lspconfig",
    config = function()
-      require("nvchad.configs.lspconfig").defaults()
       require "configs.lspconfig"
    end,
 },
@@ -27,33 +26,27 @@ Then check [server_configurations.md](https://github.com/neovim/nvim-lspconfig/b
 - **configs/lspconfig.lua**
 
 ```lua
-local configs = require("nvchad.configs.lspconfig")
-
-local on_attach = configs.on_attach
-local on_init = configs.on_init
-local capabilities = configs.capabilities
-
+local nvlsp = require "nvchad.configs.lspconfig"
 local lspconfig = require "lspconfig"
-local servers = { "html", "cssls", "clangd"}
 
+nvlsp.defaults() -- loads nvchad's defaults
+
+local servers = { "html", "cssls", "clangd" }
+
+-- lsps with default config
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
-    on_init = on_init,
-    on_attach = on_attach,
-    capabilities = capabilities,
+    on_attach = nvlsp.on_attach,
+    on_init = nvlsp.on_init,
+    capabilities = nvlsp.capabilities,
   }
 end
 
 -- Without the loop, you would have to manually set up each LSP 
 -- 
 -- lspconfig.html.setup {
---   on_attach = on_attach,
---   capabilities = capabilities,
--- }
---
--- lspconfig.cssls.setup {
---   on_attach = on_attach,
---   capabilities = capabilities,
+--   on_attach = nvlsp.on_attach,
+--   capabilities = nvlsp.capabilities,
 -- }
 ```
 ## Mason.nvim

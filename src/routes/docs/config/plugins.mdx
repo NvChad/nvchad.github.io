@@ -13,46 +13,30 @@ We lazy load almost 95% of the plugins, so we expect and recommend you to lazy l
 efficient in reducing startup-time.
 
 - We don't want users making NvChad slow just because they didn't lazy load plugins they've added.
-- Please read the [lazy.nvim plugin specs](https://github.com/folke/lazy.nvim#-plugin-spec) docs to know what options are available for lazyloading etc.
+- Please read the [lazy.nvim plugin specs](https://lazy.folke.io/spec) docs to know what options are available for lazyloading etc.
 - Try your best to lazy-load a plugin!
 
 ## Manage plugins
 
 All NvChad default plugins will have `lazy = true` set. Therefore, if you want a plugin to be enabled on startup, change it to `lazy = false`.
+- Read official [lazy doc](https://lazy.folke.io/spec/examples) examples
 - **plugins/anyname.lua**
 
 ```lua
-local plugins = {
-
-  { "elkowar/yuck.vim" , lazy = false },  -- load a plugin at startup
-  { "folke/which-key.nvim",  enabled = false },
-
-  -- You can use any plugin specification from lazy.nvim
-  {
-    "Pocco81/TrueZen.nvim",
-    cmd = { "TZAtaraxis", "TZMinimalist" },
-    config = function()
-      require "configs.truezen" -- just an example path
-    end,
-  },
+return {
+  { "folke/which-key.nvim",  enabled = false }, -- disable a default nvchad plugin
 
   -- this opts will extend the default opts 
   {
     "nvim-treesitter/nvim-treesitter",
-    opts = {
-      ensure_installed = {"html", "css", "bash"},
-    },
+    opts = { ensure_installed = {"html", "css", "bash"} },
   }, 
 
   -- If your opts uses a function call ex: require*, then make opts spec a function
-  -- should return the modified default config as well
-  -- here we just call the default telescope config 
-  -- And edit its mappinsg
+  -- Then modify the opts arg
   {
     "nvim-telescope/telescope.nvim",
-    opts = function()
-      local conf = require "nvchad.configs.telescope"
-
+    opts = function(_, conf)
       conf.defaults.mappings.i = {
         ["<C-j>"] = require("telescope.actions").move_selection_next,
         ["<Esc>"] = require("telescope.actions").close,
@@ -60,11 +44,8 @@ local plugins = {
 
      -- or 
      -- table.insert(conf.defaults.mappings.i, your table)
-
       return conf
     end,
   }
 }
-
-return plugins
 ```

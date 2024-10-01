@@ -1,0 +1,121 @@
+export const meta = {
+  title: "UI plugin v3.0",
+  desc:
+    "NvChad's Base46 and UI plugin can now be used by non nvchad users! docs at :h nvui",
+  cover: "nvui.webp",
+  order: 3,
+}
+
+# NvUI v3.0 ( NvChad's UI + Base46 )
+
+![nvui v3.0](/news/nvui.webp)
+
+## Introduction
+
+NvChad got famous due to its look, which are powered by its Base46 & UI plugin!
+
+- Base46 : Powerful Collection of 68 beautifully crafted themes, extensible and compiled to bytecode
+- UI : Collection of various ui's like statusline, tabline, dashbaord, cheatsheet etc
+
+Now Non NvChad users can use both the plugins! check ui repo's readme for more info.
+
+Note: These are changelogs for entire of NvChad.
+
+## Changelog
+```lua
+## Added
+
+- :h nvui ( docs for ui and base46)
+
+- 3 new modern theme switchers made using volt
+- TailwindCSS & CSS Lsp support in cmp
+- Improved highlighting of Nvdash
+- Minimal colorizer module
+- MasonInstallAll will now pull mason tools from user config
+- Base46 mixing colors syntax
+- New plugins : Volt, Minty, Menu 
+
+## Changed 
+
+- Nvdash button config has been improved
+
+## Removed
+
+- Nvim-colorizer plugin
+- Default gitsigns mappings
+
+```
+<br/>
+
+
+## Docs for nvui
+
+- Proper and complete docs for both have been added at `:h nvui`
+- I urge all NvChad users to read it! same with non nvchad users when they install ui+base46.
+
+## Theme switchers
+
+- With 3 different styles : bordered, compact, flat
+- read `:h nvui.theme-picker`
+
+![image](https://github.com/user-attachments/assets/897e46f1-9ae2-4cc2-8fa2-64eff40a90dd)
+
+## TailwindCSS & CSS Lsp in Cmp
+
+- Read `:h nvui.cmp` to enable it
+- The support was added as it was easy ([barely 20 ~ LOC](https://github.com/NvChad/ui/blob/v3.0/lua/nvchad/cmp/format.lua))
+
+![image](https://github.com/user-attachments/assets/c44e405b-f0f1-4c56-ae58-85c49b9616a0)
+![image](https://github.com/user-attachments/assets/57e88886-7c95-4e77-a252-2021160cd274)
+
+## Improved Nvdash UI
+
+![nvdash](https://github.com/user-attachments/assets/0c7e2c8f-8940-42ea-9c18-7456768d2d05)
+
+Note: Nvdash config has been moved to the root table instead of UI
+
+```lua
+--Before :
+
+M.ui = {
+  nvdash = { ... }
+}
+
+-- Now: 
+M.nvdash = { ... }
+```
+<br/>
+Check the syntax of buttons in [nvconfig file](https://github.com/NvChad/ui/blob/v3.0/lua/nvconfig.lua#L61)
+
+
+## Automatic Mason installation 
+
+- MasonInstallAll command will now capture all the mason tools from your config
+- Supported plugins are : lspconfig, nvim-lint, conform.nvim
+
+- So for example if you have lspconfig like this :
+
+```lua 
+require("lspconfig").html.setup{}
+require("lspconfig").clangd.setup{}
+``` 
+<br/>
+
+Then running MasonInstallAll will install both the mason pkgs 
+
+check `:h nvui.mason` for more info
+
+
+## Volt framework
+
+![volt](/news/volt.webp)
+
+- Plugin to create interactive UI in Neovim, clickable & hoverable!
+
+- This release v3.0 was going to be a huge one as the volt ui framework was being built in this UI plugin itself.
+
+- But for the greater good I decided it to be a standalone plugin and all its helper plugins are standalone plugins.
+
+- So All Neovim users will benefit from it and they're general plugins now!
+
+- Check the [blog post](/news/volt) showcasing volt framework and its plugins.

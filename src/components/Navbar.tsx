@@ -134,13 +134,7 @@ function Navbar(props: Proptypes) {
                 text-lg font-medium  p-4 py-3 max-w-[1700px] mx-auto`;
 
   return (
-    <nav
-      border="0 b solid slate-2 dark:dark-4"
-      bg-white-1
-      class="sticky top-0 z-50"
-      dark:bg-dark-2
-      shadow={props.pathname.includes("docs") ? "" : "lg"}
-    >
+    <nav class="sticky top-0 z-50 shadow-md" bg="white-1 dark:dark-3">
       <div class={styles}>
         <div md="flex gap-3 mx-auto" class="grid justify-between w-full gap-5">
           <Links />

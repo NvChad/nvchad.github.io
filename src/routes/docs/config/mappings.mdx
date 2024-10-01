@@ -16,9 +16,7 @@ The mapping configuration uses the nvim name shortcuts as:
 ## Mapping format
 
 - NvChad uses `vim.keymap.set` by default, check `:h vim.keymap.set` for detailed docs.
-- The desc opt is optional. It's only needed for NvCheatsheet to document, First word in desc will be used for group heading.
-
-- NvCheatsheet groups require at least 2 mappings
+- The desc opt is optional. It's only needed for NvCheatsheet to document
 
 ```lua 
 local map = vim.keymap.set
@@ -27,6 +25,7 @@ map("n", "<leader>ff", "<cmd> Telescope <cr>")
 
 -- multiple modes 
 map({ "i", "n" }, "<C-k>", "<Up>", { desc = "Move up" })
+map({ "i", "n" }, "<C-j>", "<Down>", { desc = "Move down" })
 
 -- mapping with a lua function
 map("n", "<A-i>", function()
@@ -42,4 +41,5 @@ nomap("n", "<C-k>")
 
 <br/>
 
-- Do know that lsp & gitsigns mappings wont be overrided by the above methods, because they dont load on startup & are lazy loaded. So put the lsp ones in `LspAttach` autocmd or right after your on_attach
+- Do know that lsp mappings wont be overrided by the above methods, because they dont load on startup & are lazy loaded.
+- So put the lsp ones in `LspAttach` autocmd or right after your on_attach

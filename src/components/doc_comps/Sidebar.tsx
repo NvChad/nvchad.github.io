@@ -12,21 +12,20 @@ export const sidebar_Items = [
   },
 
   {
-    label: ["Configure", "i-line-md:cog-filled"],
+    label: ["Customize", "i-line-md:cog-filled"],
     items: [
       ["Walkthrough", "config/walkthrough"],
       ["Manage Plugins", "config/plugins"],
       ["LSP Configuration", "config/lsp"],
       ["Mappings", "config/mappings"],
+      ["Snippets", "config/snippets"],
       ["UI Plugin", "config/nvchad_ui"],
       ["Theming", "config/theming"],
-      ["Snippets", "config/snippets"],
     ],
   },
 
   ["Features", "features", "i-tabler:server-cog"],
   ["Recipes", "recipes", "i-mingcute:tool-fill"],
-  ["Api Functions", "api", "i-mdi:atom-variant"],
   ["Contributing", "contribute", "i-mdi-github"],
   ["Faq", "faq", "i-octicon:question-16"],
   ["Credits", "credits", "i-line-md:heart"],
