@@ -105,6 +105,17 @@ Then running MasonInstallAll will install both the mason pkgs
 
 check `:h nvui.mason` for more info
 
+## Mixing colors with base46
+
+Base46 now allows mixing of colors. Check the [PR](https://github.com/NvChad/base46/pull/262) to understand the usecases.
+
+```lua
+M.base46 = {
+  hl_override = {
+     Function = { "blue", "red", 20 }
+  }
+}
+```
 
 ## Volt framework
 
