@@ -18,7 +18,7 @@ import{b as e,q as s,k as t,t as l}from"./web-DqPol8Cv.js";import{M as a}from"./
 `,e(n.ul,{get children(){return[`
 `,e(n.li,{get children(){return["Run ",e(n.code,{children:":MasonInstallAll"})," command after lazy.nvim finishes downloading plugins."]}}),`
 `,e(n.li,{get children(){return["Delete the ",e(n.code,{children:".git"})," folder from nvim folder."]}}),`
-`,e(n.li,{get children(){return["Learn customization of ui & base46 from ",e(n.code,{children:":h nvchad"}),"."]}}),`
+`,e(n.li,{get children(){return["Learn customization of ui & base46 from ",e(n.code,{children:":h nvui"}),"."]}}),`
 `]}}),`
 `,e(n.h2,{children:"Update"}),`
 `,e(n.ul,{get children(){return[`
