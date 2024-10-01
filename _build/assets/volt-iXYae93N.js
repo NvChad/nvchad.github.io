@@ -4,7 +4,7 @@ import{b as n,q as a,k as t,t as i}from"./web-DqPol8Cv.js";import{M as l}from"./
 `,n(e.p,{children:"NvChad got famous due to its look, which are powered by its Base46 & UI plugin!"}),`
 `,n(e.ul,{get children(){return[`
 `,n(e.li,{children:"Base46 : Powerful Collection of 68 beautifully crafted themes, extensible and compiled to bytecode"}),`
-`,n(e.li,{children:"UI : Collection of various ui's like statusline, tabline, dashbaord, cheatsheet etc"}),`
+`,n(e.li,{children:"UI : Collection of various ui's like statusline, tabline, dashboard, cheatsheet etc"}),`
 `]}}),`
 `,n(e.p,{children:"Now Non NvChad users can use both the plugins! check ui repo's readme for more info."}),`
 `,n(e.p,{children:"Note: These are changelogs for entire of NvChad."}),`
