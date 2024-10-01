@@ -1,4 +1,4 @@
-import{b as n,q as s,k as r,t as h}from"./web-DqPol8Cv.js";import{M as a}from"./index-yHsRVhWw.js";var t=h("<br>");const d={title:"UI plugin v3.0",desc:"NvChad's Base46 and UI plugin can now be used by non nvchad users! docs at :h nvui",cover:"nvui.webp",order:3};function i(l){const e={a:"a",code:"code",h1:"h1",h2:"h2",img:"img",li:"li",p:"p",pre:"pre",span:"span",ul:"ul",...a(),...l.components};return[n(e.h1,{children:"NvUI v3.0 ( NvChad's UI + Base46 )"}),`
+import{b as n,q as a,k as r,t as h}from"./web-DqPol8Cv.js";import{M as s}from"./index-yHsRVhWw.js";var t=h("<br>");const d={title:"UI plugin v3.0",desc:"NvChad's Base46 and UI plugin can now be used by non nvchad users! docs at :h nvui",cover:"nvui.webp",order:3};function i(l){const e={a:"a",code:"code",h1:"h1",h2:"h2",img:"img",li:"li",p:"p",pre:"pre",span:"span",ul:"ul",...s(),...l.components};return[n(e.h1,{children:"NvUI v3.0 ( NvChad's UI + Base46 )"}),`
 `,n(e.p,{get children(){return n(e.img,{src:"/news/nvui.webp",alt:"nvui v3.0"})}}),`
 `,n(e.h2,{children:"Introduction"}),`
 `,n(e.p,{children:"NvChad got famous due to its look, which are powered by its Base46 & UI plugin!"}),`
@@ -82,6 +82,14 @@ M.nvdash = { ... }
 `,r(t),`
 `,n(e.p,{children:"Then running MasonInstallAll will install both the mason pkgs"}),`
 `,n(e.p,{get children(){return["check ",n(e.code,{children:":h nvui.mason"})," for more info"]}}),`
+`,n(e.h2,{children:"Mixing colors with base46"}),`
+`,n(e.p,{get children(){return["Base46 now allows mixing of colors. Check the ",n(e.a,{href:"https://github.com/NvChad/base46/pull/262",children:"PR"})," to understand the usecases."]}}),`
+`,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return[`M.base46 = {
+  hl_override = {
+     Function = { `,n(e.span,{className:"hljs-string",children:'"blue"'}),", ",n(e.span,{className:"hljs-string",children:'"red"'}),", ",n(e.span,{className:"hljs-number",children:"20"}),` }
+  }
+}
+`]}})}}),`
 `,n(e.h2,{children:"Volt framework"}),`
 `,n(e.p,{get children(){return n(e.img,{src:"/news/volt.webp",alt:"volt"})}}),`
 `,n(e.ul,{get children(){return[`
@@ -100,4 +108,4 @@ M.nvdash = { ... }
 `,n(e.li,{get children(){return[`
 `,n(e.p,{get children(){return["Check the ",n(e.a,{href:"/news/volt",children:"blog post"})," showcasing volt framework and its plugins."]}}),`
 `]}}),`
-`]}})]}function u(l={}){const{wrapper:e}={...a(),...l.components};return e?n(e,s(l,{get children(){return n(i,l)}})):i(l)}export{u as default,d as meta};
+`]}})]}function u(l={}){const{wrapper:e}={...s(),...l.components};return e?n(e,a(l,{get children(){return n(i,l)}})):i(l)}export{u as default,d as meta};
