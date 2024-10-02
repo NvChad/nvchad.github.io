@@ -26,48 +26,48 @@ for (const path in routes) {
   const moduleMeta = routes[path]?.meta || defaultMeta; // Accessing the meta property of the module
 
   moduleMeta.ogimg = moduleMeta.cover
-    ? moduleMeta.cover.split(".")[0] + '.jpeg'
+    ? moduleMeta.cover.replace("webp", "jpeg")
     : defaultMeta.ogimg;
+
+  if (!moduleMeta.ogimg.includes("news"))
+    moduleMeta.ogimg = "/news/" + moduleMeta.ogimg;
 
   metaData[route] = moduleMeta;
 }
 
-metaData["/themes/"] = metaData["/themes"];
-
 export default function App() {
-
   return (
     <Router
       base={import.meta.env.SERVER_BASE_URL}
       root={(props) => {
+        return (
+          <MetaProvider>
+            <Title>{metaData[props.location.pathname]?.title}</Title>
 
-       return (
-        <MetaProvider>
-          <Title>{metaData[props.location.pathname]?.title}</Title>
+            <Meta property="og:URL" content="https://www.rankmath.com" />
 
-          <Meta property="og:URL" content="https://www.rankmath.com" />
+            <Meta
+              name="description"
+              content={metaData[props.location.pathname]?.desc}
+            />
 
-          <Meta
-            name="description"
-            content={metaData[props.location.pathname]?.desc}
-          />
+            <Meta name="twitter:card" content="summary_large_image" />
 
-          <Meta name="twitter:card" content="summary_large_image" />
+            <Meta
+              name="twitter:image:src"
+              content={metaData[props.location.pathname]?.ogimg}
+            />
 
-          <Meta
-            name="twitter:image:src"
-            content={metaData[props.location.pathname]?.ogimg}
-          />
+            <Meta
+              property="og:image"
+              content={metaData[props.location.pathname]?.ogimg}
+            />
 
-          <Meta
-            property="og:image"
-            content={metaData[props.location.pathname]?.ogimg}
-          />
-
-          <Navbar pathname={props.location.pathname} />
-          <Suspense>{props.children}</Suspense>
-        </MetaProvider>
-      )}}
+            <Navbar pathname={props.location.pathname} />
+            <Suspense>{props.children}</Suspense>
+          </MetaProvider>
+        );
+      }}
     >
       <FileRoutes />
     </Router>
