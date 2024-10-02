@@ -42,4 +42,20 @@ nomap("n", "<C-k>")
 <br/>
 
 - Do know that lsp mappings wont be overrided by the above methods, because they dont load on startup & are lazy loaded.
-- So put the lsp ones in `LspAttach` autocmd or right after your on_attach
+- So put the lsp ones in a custom on_attach function 
+
+```lua
+local ooo = function(client, bufnr)
+  nvlsp.on_attach(client, bufnr)
+  -- map HERE
+  vim.keymap.set("n", "gd", "<cmd> Telescope<cr>", { buffer = bufnr })
+end
+
+for _, lsp in ipairs(servers) do
+  lspconfig[lsp].setup {
+    on_attach = nvlsp.on_attach,
+    on_init = ooo,
+    capabilities = nvlsp.capabilities,
+  }
+end
+```
