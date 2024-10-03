@@ -1,4 +1,4 @@
-import{b as n,q as c,k as l,t as s}from"./web-DqPol8Cv.js";import{M as a}from"./index-yHsRVhWw.js";var h=s('<div class=iframe-container><iframe src="https://www.youtube.com/embed/lhwcaAS66nQ?si=VYvg44IiJB6k9PPU"title="YouTube video player"frameborder=0 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"referrerpolicy=strict-origin-when-cross-origin allowfullscreen>'),i=s("<br>");const u={title:"UI plugin v3.0",desc:"NvChad's Base46 and UI plugin can now be used by non nvchad users! docs at :h nvui",cover:"nvui.webp",order:3};function t(r){const e={a:"a",blockquote:"blockquote",code:"code",h1:"h1",h2:"h2",img:"img",li:"li",p:"p",pre:"pre",span:"span",ul:"ul",...a(),...r.components};return[n(e.h1,{children:"NvUI v3.0 ( NvChad's UI + Base46 )"}),`
+import{b as n,q as c,k as l,t}from"./web-DqPol8Cv.js";import{M as s}from"./index-yHsRVhWw.js";var o=t('<div class=iframe-container><iframe src="https://www.youtube.com/embed/lhwcaAS66nQ?si=VYvg44IiJB6k9PPU"title="YouTube video player"frameborder=0 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"referrerpolicy=strict-origin-when-cross-origin allowfullscreen>'),i=t("<br>"),h=t('<div class=iframe-container><iframe width=560 height=315 src="https://www.youtube.com/embed/eUnDUhYoNJg?si=t9BxDCsA9ru1eXox"title="YouTube video player"frameborder=0 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"referrerpolicy=strict-origin-when-cross-origin allowfullscreen>');const p={title:"UI plugin v3.0",desc:"NvChad's Base46 and UI plugin can now be used by non nvchad users! docs at :h nvui",cover:"nvui.webp",order:3};function a(r){const e={a:"a",blockquote:"blockquote",code:"code",h1:"h1",h2:"h2",img:"img",li:"li",p:"p",pre:"pre",span:"span",ul:"ul",...s(),...r.components};return[n(e.h1,{children:"NvUI v3.0 ( NvChad's UI + Base46 )"}),`
 `,n(e.p,{get children(){return n(e.img,{src:"/news/nvui.webp",alt:"nvui v3.0"})}}),`
 `,n(e.h2,{children:"Introduction"}),`
 `,n(e.p,{children:"NvChad got famous due to its look, which are powered by its Base46 & UI plugin!"}),`
@@ -10,7 +10,7 @@ import{b as n,q as c,k as l,t as s}from"./web-DqPol8Cv.js";import{M as a}from"./
 `,n(e.blockquote,{get children(){return[`
 `,n(e.p,{children:"Video showing setup of nvui on non nvchad configs!"}),`
 `]}}),`
-`,l(h),`
+`,l(o),`
 `,n(e.p,{children:"Note: These are changelogs for entire of NvChad."}),`
 `,n(e.h2,{children:"Changelog"}),`
 `,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return[`## Added
@@ -47,6 +47,7 @@ import{b as n,q as c,k as l,t as s}from"./web-DqPol8Cv.js";import{M as a}from"./
 `,n(e.li,{get children(){return["read ",n(e.code,{children:":h nvui.theme-picker"})]}}),`
 `]}}),`
 `,n(e.p,{get children(){return n(e.img,{src:"https://github.com/user-attachments/assets/897e46f1-9ae2-4cc2-8fa2-64eff40a90dd",alt:"image"})}}),`
+`,l(h),`
 `,n(e.h2,{children:"TailwindCSS & CSS Lsp in Cmp"}),`
 `,n(e.ul,{get children(){return[`
 `,n(e.li,{get children(){return["Read ",n(e.code,{children:":h nvui.cmp"})," to enable it"]}}),`
@@ -68,17 +69,11 @@ M.nvdash = { ... }
 `]}})}}),`
 `,l(i),`
 `,n(e.p,{get children(){return["Check the syntax of buttons in ",n(e.a,{href:"https://github.com/NvChad/ui/blob/v3.0/lua/nvconfig.lua#L61",children:"nvconfig file"})]}}),`
-`,n(e.h2,{children:"Automatic Mason installation"}),`
+`,n(e.h2,{children:"Automatic Mason install"}),`
 `,n(e.ul,{get children(){return[`
-`,n(e.li,{get children(){return[`
-`,n(e.p,{children:"MasonInstallAll command will now capture all the mason tools from your config"}),`
-`]}}),`
-`,n(e.li,{get children(){return[`
-`,n(e.p,{children:"Supported plugins are : lspconfig, nvim-lint, conform.nvim"}),`
-`]}}),`
-`,n(e.li,{get children(){return[`
-`,n(e.p,{children:"So for example if you have lspconfig like this :"}),`
-`]}}),`
+`,n(e.li,{children:"MasonInstallAll command will now capture all the mason tools from your config"}),`
+`,n(e.li,{children:"Supported plugins are : lspconfig, nvim-lint, conform.nvim"}),`
+`,n(e.li,{children:"So for example if you have lspconfig like this :"}),`
 `]}}),`
 `,n(e.pre,{get children(){return n(e.code,{className:"hljs language-lua",get children(){return[n(e.span,{className:"hljs-built_in",children:"require"}),"(",n(e.span,{className:"hljs-string",children:'"lspconfig"'}),`).html.setup{}
 `,n(e.span,{className:"hljs-built_in",children:"require"}),"(",n(e.span,{className:"hljs-string",children:'"lspconfig"'}),`).clangd.setup{}
@@ -112,4 +107,4 @@ M.nvdash = { ... }
 `,n(e.li,{get children(){return[`
 `,n(e.p,{get children(){return["Check the ",n(e.a,{href:"/news/volt",children:"blog post"})," showcasing volt framework and its plugins."]}}),`
 `]}}),`
-`]}})]}function g(r={}){const{wrapper:e}={...a(),...r.components};return e?n(e,c(r,{get children(){return n(t,r)}})):t(r)}export{g as default,u as meta};
+`]}})]}function g(r={}){const{wrapper:e}={...s(),...r.components};return e?n(e,c(r,{get children(){return n(a,r)}})):a(r)}export{g as default,p as meta};
