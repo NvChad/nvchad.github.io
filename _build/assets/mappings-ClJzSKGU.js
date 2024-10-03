@@ -44,8 +44,8 @@ nomap(`,e(n.span,{className:"hljs-string",children:'"n"'}),", ",e(n.span,{classN
 
 `,e(n.span,{className:"hljs-keyword",children:"for"})," _, lsp ",e(n.span,{className:"hljs-keyword",children:"in"})," ",e(n.span,{className:"hljs-built_in",children:"ipairs"}),"(servers) ",e(n.span,{className:"hljs-keyword",children:"do"}),`
   lspconfig[lsp].setup {
-    on_attach = nvlsp.on_attach,
-    on_init = ooo,
+    on_attach = ooo,
+    on_init = nvlsp.on_init,
     capabilities = nvlsp.capabilities,
   }
 `,e(n.span,{className:"hljs-keyword",children:"end"}),`

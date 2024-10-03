@@ -747,7 +747,7 @@
     ]
   },
   "src/routes/docs/config/mappings.mdx?pick=$css": {
-    "file": "assets/mappings-Bbv554HR.js",
+    "file": "assets/mappings-ClJzSKGU.js",
     "name": "mappings",
     "src": "src/routes/docs/config/mappings.mdx?pick=$css",
     "isEntry": true,
@@ -1081,7 +1081,7 @@
     ]
   },
   "virtual:$vinxi/handler/client": {
-    "file": "assets/client-DJXq-uri.js",
+    "file": "assets/client-s91ijwNu.js",
     "name": "client",
     "src": "virtual:$vinxi/handler/client",
     "isEntry": true,
