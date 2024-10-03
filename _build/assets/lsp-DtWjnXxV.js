@@ -1,6 +1,6 @@
 import{b as e,q as o,k as l,t as i,m as h}from"./web-DqPol8Cv.js";import{M as t}from"./index-yHsRVhWw.js";var r=i("<br>"),d=i("<u>");const u={title:"NvChad Lsp Configuration",desc:"Manage lsp servers & mason.nvim in NvChad"};function c(s){const n={a:"a",blockquote:"blockquote",code:"code",h2:"h2",li:"li",p:"p",pre:"pre",span:"span",strong:"strong",ul:"ul",...t(),...s.components};return[e(n.h2,{children:"Setup lsp server"}),`
 `,e(n.p,{get children(){return["Before starting, it is strongly recommended that you walk through the LSP configuration ",e(n.a,{href:"https://github.com/neovim/nvim-lspconfig",children:"lspconfig repository"}),"."]}}),`
-`,e(n.p,{get children(){return["Then check ",e(n.a,{href:"https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md",children:"server_configurations.md"})," to make sure your language's LSP server is present there."]}}),`
+`,e(n.p,{get children(){return["Then check ",e(n.a,{href:"https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md",children:"configs.md"})," to make sure your language's LSP server is present there."]}}),`
 `,e(n.ul,{get children(){return[`
 `,e(n.li,{get children(){return e(n.strong,{children:"Plugin table"})}}),`
 `]}}),`
