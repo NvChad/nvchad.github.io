@@ -29,8 +29,9 @@ export const meta = {
 
 - A theme switcher with telescope.nvim that reloads themes on the fly using the base46 plugin + plenary.nvim.
 
-<div class="iframe-container">
- <iframe  src="https://www.youtube.com/embed/wt7IX8ojMrs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allow="fullscreen;"></iframe>
+
+<div class='iframe-container'>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eUnDUhYoNJg?si=t9BxDCsA9ru1eXox" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 ## Statusline 
@@ -72,7 +73,7 @@ export const meta = {
 - Nvdash is NvChad's minimal dashboard module, It's very simple at this stage and will get more features in the future!
 - Command to run it `Nvdash`, its disabled on startup, check the nvconfig.lua for its syntax and override it from chadrc.
 
-![nvdash](/features/nvdash.webp)
+![nvdash](https://github.com/user-attachments/assets/072c8733-8a44-4cf3-8732-e5fa7eb9459e)
 
 ## NvCheatsheet
 
@@ -86,6 +87,54 @@ export const meta = {
 <div class="iframe-container">
 <iframe src="https://www.youtube.com/embed/IljDD4cjgKc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allow='fullscreen;'></iframe>
 </div>
+
+## Colorify
+
+- Colors hex color on buffer and lsp colors on the buffer, like tailwind etc
+
+![image](https://github.com/user-attachments/assets/c5f3dc55-7810-48ae-879e-25453ab16b71)
+
+## Lsp Signature
+
+- Minimal signature window ( [50 LOC ~](https://github.com/NvChad/ui/blob/v3.0/lua/nvchad/lsp/signature.lua)), just uses `vim.lsp.buf.signature_help` on some autocmds.
+
+![image](https://github.com/user-attachments/assets/b2db5cd1-a81b-41a7-a132-7d2dc15edf39)
+
+## Lsp Variable Renamer
+
+- Used for renaming
+
+![image](https://github.com/user-attachments/assets/c90c1de4-3f42-4bc4-9392-766ca989e4ea)
+
+## Nvim-cmp styling
+
+- [`nvim-cmp`](https://github.com/hrsh7th/nvim-cmp) is a completion plugin for Neovim coded in Lua.
+- Below are some cmp styles in nvchad 
+
+![image](https://github.com/user-attachments/assets/661bbc0f-7073-4b4c-81cb-7cf035e29d6f)
+![image](https://github.com/user-attachments/assets/0557e479-2735-4a86-b23a-eafa540ab4a5)
+![image](https://github.com/user-attachments/assets/5b445b45-4802-4851-a8a4-1de051d58ade)
+![image](https://github.com/user-attachments/assets/3fdbbaa7-a212-499a-a291-0609c72b6f96)
+![image](https://github.com/user-attachments/assets/28775c0c-ce85-45cd-8c76-bdd97344f5b4)
+![image](https://github.com/user-attachments/assets/c44e405b-f0f1-4c56-ae58-85c49b9616a0)
+![image](https://github.com/user-attachments/assets/57e88886-7c95-4e77-a252-2021160cd274)
+
+## Automating Mason installation 
+
+- MasonInstallAll command will now capture all the mason tools from your config
+- Supported plugins are : lspconfig, nvim-lint, conform.nvim
+
+- So for example if you have lspconfig like this :
+
+```lua 
+require("lspconfig").html.setup{}
+require("lspconfig").clangd.setup{}
+``` 
+<br/>
+
+Then running MasonInstallAll will install both the mason pkgs 
+
+check `:h nvui.mason` for more info
 
 # General Neovim plugins
 
@@ -103,14 +152,6 @@ export const meta = {
 - [`nvim-tree.lua`](https://github.com/kyazdani42/nvim-tree.lua) is a file explorer tree for Neovim written in Lua.
 
 ![nvim tree](https://raw.githubusercontent.com/siduck/dotfiles/all/rice%20flex/nvimtree.png)
-
-
-## Nvim-cmp
-
-- [`nvim-cmp`](https://github.com/hrsh7th/nvim-cmp) is a completion plugin for Neovim coded in Lua.
-- Below are some cmp styles in nvchad 
-
-![nvim-cmp](/features/cmp.webp)
 
 - Note that that's just the cmp look in everblush theme, there are more 57 themes! You can hide cmp icons, cmpkind txt etc from the user config ( chadrc ) itself! 
 
