@@ -41,8 +41,7 @@ nomap("n", "<C-k>")
 
 <br/>
 
-- Do know that lsp mappings wont be overrided by the above methods, because they dont load on startup & are lazy loaded.
-- So put the lsp ones in a custom on_attach function 
+- Please note that the above methods won't override LSP mappings because they are lazily loaded and don't load on startup. 
 
 ```lua
 local ooo = function(client, bufnr)
