@@ -33,8 +33,7 @@ nomap(`,e(n.span,{className:"hljs-string",children:'"n"'}),", ",e(n.span,{classN
 `]}})}}),`
 `,a(m),`
 `,e(n.ul,{get children(){return[`
-`,e(n.li,{children:"Do know that lsp mappings wont be overrided by the above methods, because they dont load on startup & are lazy loaded."}),`
-`,e(n.li,{children:"So put the lsp ones in a custom on_attach function"}),`
+`,e(n.li,{children:"Please note that the above methods won't override LSP mappings because they are lazily loaded and don't load on startup."}),`
 `]}}),`
 `,e(n.pre,{get children(){return e(n.code,{className:"hljs language-lua",get children(){return[e(n.span,{className:"hljs-keyword",children:"local"})," ooo = ",e(n.span,{className:"hljs-function",get children(){return[e(n.span,{className:"hljs-keyword",children:"function"}),e(n.span,{className:"hljs-params",children:"(client, bufnr)"})]}}),`
   nvlsp.on_attach(client, bufnr)
