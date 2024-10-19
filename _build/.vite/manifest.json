@@ -77,8 +77,8 @@
       "_web-DqPol8Cv.js"
     ]
   },
-  "_volt-DRPaMAJJ.js": {
-    "file": "assets/volt-DRPaMAJJ.js",
+  "_volt-IoEx7JO9.js": {
+    "file": "assets/volt-IoEx7JO9.js",
     "name": "volt",
     "imports": [
       "_web-DqPol8Cv.js",
@@ -943,19 +943,19 @@
     ]
   },
   "src/routes/news/index.tsx?pick=default&pick=$css": {
-    "file": "assets/index-DoecuyXa.js",
+    "file": "assets/index-BZGsWVN6.js",
     "name": "index",
     "src": "src/routes/news/index.tsx?pick=default&pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_volt-DRPaMAJJ.js",
+      "_volt-IoEx7JO9.js",
       "_web-DqPol8Cv.js",
       "_index-yHsRVhWw.js"
     ]
   },
   "src/routes/news/nvui.mdx?pick=$css": {
-    "file": "assets/nvui-ChFZl4x1.js",
+    "file": "assets/nvui-Bfnsb5V_.js",
     "name": "nvui",
     "src": "src/routes/news/nvui.mdx?pick=$css",
     "isEntry": true,
@@ -1081,7 +1081,7 @@
     ]
   },
   "virtual:$vinxi/handler/client": {
-    "file": "assets/client-C9Xhy9pg.js",
+    "file": "assets/client-BmIF_I6L.js",
     "name": "client",
     "src": "virtual:$vinxi/handler/client",
     "isEntry": true,
@@ -1095,7 +1095,7 @@
       "_routing-DcatNxz_.js",
       "_install--B_PrzSr.js",
       "_footer-CuqGC_6L.js",
-      "_volt-DRPaMAJJ.js",
+      "_volt-IoEx7JO9.js",
       "_preload-helper-N37mDRhq.js",
       "_components-COKvKDkd.js"
     ],

@@ -28,6 +28,7 @@ import{b as n,q as a,k as t,t as i}from"./web-DqPol8Cv.js";import{M as l}from"./
 ## Changed 
 
 - Nvdash button `,n(e.span,{className:"hljs-built_in",children:"config"}),` has been improved
+- All theme related optins have been moved to base46 `,n(e.span,{className:"hljs-built_in",children:"table"}),", ",n(e.span,{className:"hljs-keyword",children:"do"})," ",n(e.span,{className:"hljs-keyword",children:"not"})," use M.ui ",n(e.span,{className:"hljs-keyword",children:"for"}),` them.
 
 ## Removed
 
@@ -317,4 +318,4 @@ rosepine-dawn`}),`
 `,n(e.p,{get children(){return["Extensible menu & sub-menus creator . ",n(e.a,{href:"https://github.com/NvChad/menu",children:"repo url"})]}}),`
 `,n(e.p,{get children(){return[n(e.img,{src:"https://github.com/user-attachments/assets/c8402279-b86d-432f-ad11-14a76c887ab1",alt:"image"}),`
 `,n(e.img,{src:"https://github.com/user-attachments/assets/d70430e1-74d2-40dd-ba60-0b8919d53af6",alt:"image"})]}}),`
-`,t(j)]}function I(r={}){const{wrapper:e}={...l(),...r.components};return e?n(e,a(r,{get children(){return n(u,r)}})):u(r)}const D=Object.freeze(Object.defineProperty({__proto__:null,default:I,meta:x},Symbol.toStringTag,{value:"Module"}));export{$ as _,z as a,U as b,D as c};
+`,t(j)]}function I(r={}){const{wrapper:e}={...l(),...r.components};return e?n(e,a(r,{get children(){return n(u,r)}})):u(r)}const A=Object.freeze(Object.defineProperty({__proto__:null,default:I,meta:x},Symbol.toStringTag,{value:"Module"}));export{$ as _,z as a,U as b,A as c};
