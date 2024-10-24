@@ -100,3 +100,16 @@ vim.g.clipboard = {
   cache_enabled = 0,
 }
 ```
+
+## I want comments to be more visible/contrasting
+
+- You can easily modify the colour of comments altering file `chardc.lua`, in this example cyan
+
+```lua
+M.base46 = {
+  hl_override = {
+    Comment = { fg = "cyan" },
+    ["@comment"] = { fg = "cyan" },
+  },
+}
+```
