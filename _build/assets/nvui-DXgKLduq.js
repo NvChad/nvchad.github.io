@@ -28,7 +28,7 @@ import{b as n,q as c,k as r,t}from"./web-DqPol8Cv.js";import{M as a}from"./index
 ## Changed 
 
 - Nvdash button `,n(e.span,{className:"hljs-built_in",children:"config"}),` has been improved
-- All theme related optins have been moved to base46 `,n(e.span,{className:"hljs-built_in",children:"table"}),", ",n(e.span,{className:"hljs-keyword",children:"do"})," ",n(e.span,{className:"hljs-keyword",children:"not"})," use M.ui ",n(e.span,{className:"hljs-keyword",children:"for"}),` them.
+- All theme related options have been moved to base46 `,n(e.span,{className:"hljs-built_in",children:"table"}),", ",n(e.span,{className:"hljs-keyword",children:"do"})," ",n(e.span,{className:"hljs-keyword",children:"not"})," use M.ui ",n(e.span,{className:"hljs-keyword",children:"for"}),` them.
 
 ## Removed
 
