@@ -847,7 +847,7 @@
     ]
   },
   "src/routes/docs/features.mdx?pick=$css": {
-    "file": "assets/features-BAw-Ppri.js",
+    "file": "assets/features-Dqge-CFJ.js",
     "name": "features",
     "src": "src/routes/docs/features.mdx?pick=$css",
     "isEntry": true,
@@ -1081,7 +1081,7 @@
     ]
   },
   "virtual:$vinxi/handler/client": {
-    "file": "assets/client-Bc1R_7AL.js",
+    "file": "assets/client-D4C3G85b.js",
     "name": "client",
     "src": "virtual:$vinxi/handler/client",
     "isEntry": true,
