@@ -34,7 +34,7 @@ function Communities() {
         {links.map((x) => {
           return (
             <a Capitalize href={x[2]} aria-label={x[0]} vertCentered>
-              <div class={x[1]} text-2xl rounded-none></div>
+              <div class={x[1]} text-2xl rounded-none hover:opacity-70></div>
             </a>
           );
         })}
