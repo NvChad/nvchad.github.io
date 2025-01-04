@@ -100,3 +100,18 @@ vim.g.clipboard = {
   cache_enabled = 0,
 }
 ```
+
+## Show Nvdash when all buffers are closed
+
+- You can use nvim_list_bufs() too but vim.t.bufs has only listed bufs
+
+```lua
+vim.api.nvim_create_autocmd("BufDelete", {
+  callback = function()
+    local bufs = vim.t.bufs
+    if #bufs == 1 and vim.api.nvim_buf_get_name(bufs[1]) == "" then
+      vim.cmd "Nvdash"
+    end
+  end,
+})
+```
