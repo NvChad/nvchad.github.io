@@ -85,4 +85,17 @@ autocmd(`,e(n.span,{className:"hljs-string",children:'"BufReadPost"'}),`, {
   },
   cache_enabled = `,e(n.span,{className:"hljs-number",children:"0"}),`,
 }
+`]}})}}),`
+`,e(n.h2,{children:"Show Nvdash when all buffers are closed"}),`
+`,e(n.ul,{get children(){return[`
+`,e(n.li,{children:"You can use nvim_list_bufs() too but vim.t.bufs has only listed bufs"}),`
+`]}}),`
+`,e(n.pre,{get children(){return e(n.code,{className:"hljs language-lua",get children(){return["vim.api.nvim_create_autocmd(",e(n.span,{className:"hljs-string",children:'"BufDelete"'}),`, {
+  callback = `,e(n.span,{className:"hljs-function",get children(){return[e(n.span,{className:"hljs-keyword",children:"function"}),e(n.span,{className:"hljs-params",children:"()"})]}}),`
+    `,e(n.span,{className:"hljs-keyword",children:"local"}),` bufs = vim.t.bufs
+    `,e(n.span,{className:"hljs-keyword",children:"if"})," #bufs == ",e(n.span,{className:"hljs-number",children:"1"})," ",e(n.span,{className:"hljs-keyword",children:"and"})," vim.api.nvim_buf_get_name(bufs[",e(n.span,{className:"hljs-number",children:"1"}),"]) == ",e(n.span,{className:"hljs-string",children:'""'})," ",e(n.span,{className:"hljs-keyword",children:"then"}),`
+      vim.cmd `,e(n.span,{className:"hljs-string",children:'"Nvdash"'}),`
+    `,e(n.span,{className:"hljs-keyword",children:"end"}),`
+  `,e(n.span,{className:"hljs-keyword",children:"end"}),`,
+})
 `]}})}})]}function h(s={}){const{wrapper:n}={...l(),...s.components};return n?e(n,i(s,{get children(){return e(a,s)}})):a(s)}export{h as default,t as meta};

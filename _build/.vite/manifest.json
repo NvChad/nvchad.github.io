@@ -904,7 +904,7 @@
     ]
   },
   "src/routes/docs/recipes.mdx?pick=$css": {
-    "file": "assets/recipes-BF2u2IH9.js",
+    "file": "assets/recipes-Bpux1UYd.js",
     "name": "recipes",
     "src": "src/routes/docs/recipes.mdx?pick=$css",
     "isEntry": true,
@@ -1081,7 +1081,7 @@
     ]
   },
   "virtual:$vinxi/handler/client": {
-    "file": "assets/client-D_hfcKno.js",
+    "file": "assets/client-CmToRlSm.js",
     "name": "client",
     "src": "virtual:$vinxi/handler/client",
     "isEntry": true,
