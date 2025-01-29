@@ -3,9 +3,9 @@ export const meta = {
   desc: "Manage custom snippets in NvChad"
 }
 
-## Luasnip 
+## Luasnip
 
-NvChad uses `luasnip` plugin for handling snippets, by default it uses `friendly-snippets` plugin which provides snippets for many languages . 
+NvChad uses `luasnip` plugin for handling snippets, by default it uses `friendly-snippets` plugin which provides snippets for many languages .
 
 - But you would want to extend or add your own snippets so read [luasnip docs](https://github.com/L3MON4D3/LuaSnip/blob/master/DOC.md#loaders).
 
@@ -13,14 +13,17 @@ NvChad uses `luasnip` plugin for handling snippets, by default it uses `friendly
 
 These are the globals you can use to include the path of your snippets.
 
-```lua 
+```lua
 -- vscode format i.e json files
 vim.g.vscode_snippets_path = "your snippets path"
 
--- snipmate format 
+-- using with vscode extensions. i.e ~/.vscode/extensions/deinsoftware.vitest-snippets-1.8.0
+vim.g.vscode_snippets_path = "path to your vscode snippet extension directory"
+
+-- snipmate format
 vim.g.snipmate_snippets_path = "your snippets path"
 
--- lua format 
+-- lua format
 vim.g.lua_snippets_path = vim.fn.stdpath "config" .. "/lua/lua_snippets"
 ```
 <br/>
