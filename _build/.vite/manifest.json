@@ -780,7 +780,7 @@
     ]
   },
   "src/routes/docs/config/snippets.mdx?pick=$css": {
-    "file": "assets/snippets-BcuSX8iJ.js",
+    "file": "assets/snippets-Jacadxfh.js",
     "name": "snippets",
     "src": "src/routes/docs/config/snippets.mdx?pick=$css",
     "isEntry": true,
@@ -1081,7 +1081,7 @@
     ]
   },
   "virtual:$vinxi/handler/client": {
-    "file": "assets/client-CmToRlSm.js",
+    "file": "assets/client-BsF3UNjp.js",
     "name": "client",
     "src": "virtual:$vinxi/handler/client",
     "isEntry": true,
