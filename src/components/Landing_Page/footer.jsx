@@ -76,7 +76,7 @@ function Footer() {
             <img src="/logo.svg" alt="nvchad logo" w="33px" h="33px" />
             NvChad
           </div>
-          <span dark:text-white-2>Copyright © 2024 Siduck™</span>
+          <span dark:text-white-2>Copyright © 2025 Siduck™</span>
         </div>
       </div>
     </div>
