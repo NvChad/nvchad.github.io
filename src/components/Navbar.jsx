@@ -8,22 +8,57 @@ import "@docsearch/css";
 // for toggling menu links, btns on mobile
 const [linksShown, showLinks] = createSignal(false);
 
+// Add new signal for scroll state
+const [isScrolled, setIsScrolled] = createSignal(false);
+
+// Add scroll listener
+createEffect(() => {
+  const handleScroll = () => {
+    setIsScrolled(window.scrollY > 20);
+  };
+  window.addEventListener('scroll', handleScroll);
+  return () => window.removeEventListener('scroll', handleScroll);
+});
+
+// Add this near the top, after imports
+const NAVBAR_HEIGHT = "calc(72px + 2rem)"; // 72px for navbar + 2rem (32px) for top spacing
+
 function Links() {
   return (
-    <div grid md:flex gap-5>
+    <div class="grid md:flex w-full items-center">
       {/* Brand logo */}
       <A
         href="/"
-        class="vertCentered !gap-3 font-bold text-grey-4 dark:text-white-2"
+        class="vertCentered !gap-3 font-bold text-grey-4 dark:text-white-2 md:absolute md:left-1/2 md:-translate-x-1/2 transition-all duration-300"
+        classList={{
+          'scale-125 md:scale-150': !isScrolled(),
+          'scale-100': isScrolled()
+        }}
       >
-        <img src="/logo.svg" alt="nvchad logo" w="26px" h="26px" />
-        NvChad
+        <img 
+          src="/logo.svg" 
+          alt="nvchad logo" 
+          class="transition-all duration-300"
+          classList={{
+            'w-[40px] h-[40px]': !isScrolled(),
+            'w-[26px] h-[26px]': isScrolled()
+          }}
+        />
+        <span 
+          class="transition-all duration-300"
+          classList={{
+            'text-2xl': !isScrolled(),
+            'text-lg': isScrolled()
+          }}
+        >
+          NvChad
+        </span>
       </A>
 
       {/* route links */}
       <div
         text="slate-7 dark:slate-4"
-        class={`grid md:vertCentered md:!gap-5 gap-5 ${
+        class={`grid md:vertCentered md:!gap-8 gap-5 ${
           linksShown() ? "" : "hidden"
         }`}
       >
@@ -164,17 +199,35 @@ function Searchbar() {
 function Navbar() {
   const styles = `
                 flex md:vertCentered gap-5 justify-between 
-                text-lg font-medium  p-4 py-3 max-w-[1700px] mx-auto`;
+                text-lg font-medium p-4 py-3 max-w-[1700px] mx-auto`;
+
+  // Add this useEffect to inject the CSS variable
+  createEffect(() => {
+    document.documentElement.style.setProperty('--navbar-height', NAVBAR_HEIGHT);
+  });
 
   return (
     <nav
-      border="0 b solid slate-2 dark:dark-4"
-      sticky
-      top-0
+      class="fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-[1700px] rounded-2xl transition-all duration-300"
+      style={{
+        "backdrop-filter": isScrolled() ? "blur(10px)" : "blur(0px)",
+        "background": isScrolled() 
+          ? "rgba(255, 255, 255, 0.8)" 
+          : "rgba(255, 255, 255, 0)",
+        "border": `1px solid ${isScrolled() 
+          ? "rgba(255, 255, 255, 0.18)" 
+          : "rgba(255, 255, 255, 0.08)"}`,
+        "box-shadow": isScrolled()
+          ? "0 8px 32px 0 rgba(31, 38, 135, 0.15)"
+          : "none"
+      }}
+      classList={{
+        "dark:bg-dark-2/80": isScrolled(),
+        "dark:bg-transparent": !isScrolled(),
+        "dark:border-dark-4/50": isScrolled(),
+        "dark:border-dark-4/10": !isScrolled(),
+      }}
       z-50
-      bg-white-1
-      dark:bg-dark-2
-      shadow={useLocation().pathname.includes("docs") ? "" : "lg"}
     >
       <div class={styles}>
         <div
