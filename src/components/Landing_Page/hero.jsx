@@ -46,7 +46,7 @@ function Hero() {
 
   return (
     <div
-      class={`grid shadow-md p-10 pb-15 pt-0 justify-center rounded-none ${blueGradient} dark:${redGradient}`}
+      class={`grid shadow-md p-10 pb-15 pt-28 md:pt-32 justify-center rounded-none ${blueGradient} dark:${redGradient}`}
     >
       <HeroText />
 
