@@ -1,0 +1,5 @@
+
+/* Add this to your global styles */
+main, .main-content {
+  padding-top: var(--navbar-height);
+}
