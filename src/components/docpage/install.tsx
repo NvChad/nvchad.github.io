@@ -3,7 +3,7 @@ import create_copyIcon from "~/components/doc_comps/clipboard";
 
 export const osInfos = [
   {
-    name: "linux / macos",
+    name: "Linux",
 
     cmds: (
       <>
@@ -14,7 +14,21 @@ export const osInfos = [
         </pre>
       </>
     ),
-    icon: "i-mingcute:hashtag-fill",
+    icon: "i-uil:linux",
+  },
+
+  {
+    name: "MacOS",
+    icon: "i-wpf:macos",
+    cmds: (
+      <>
+        <pre>
+          <code class="hljs">
+            git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
+          </code>
+        </pre>
+      </>
+    ),
   },
 
   {

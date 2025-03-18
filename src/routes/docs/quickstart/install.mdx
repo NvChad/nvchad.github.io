@@ -4,10 +4,12 @@ export const meta = {
 };
 
 import OS_Selector from "~/components/docpage/install";
+import Neovim_Installl from "~/components/docpage/neovim-install";
 
 ## Pre-requisites
 
-- [Neovim 0.10](https://github.com/neovim/neovim/releases/tag/v0.10.0).
+- Git, For cloning NvChad repository.
+- [Neovim >= 0.10](https://github.com/neovim/neovim/tags).
 - [Nerd Font](https://www.nerdfonts.com/) as your terminal font.
   - Make sure the nerd font you set doesn't end with <strong>Mono</strong> to prevent small icons. 
   - <strong>Example : </strong> JetbrainsMono Nerd Font and not **<s>JetbrainsMono Nerd Font Mono</s>**
@@ -16,7 +18,11 @@ import OS_Selector from "~/components/docpage/install";
 - Make, Windows users must have [`GnuWin32`](https://sourceforge.net/projects/gnuwin32) installed and set on path.
 - Delete old neovim folders (check commands below)
 
-## Install
+## Install Neovim
+
+<Neovim_Installl/>
+
+## Install NvChad
 
 <OS_Selector/>
 
@@ -25,11 +31,11 @@ import OS_Selector from "~/components/docpage/install";
 - Delete the `.git` folder from nvim folder.
 - Learn customization of ui & base46 from `:h nvui`.
 
-## Update
+## Update NvChad
 
 - `Lazy sync` command
 
-## Uninstall
+## Uninstall NvChad
 
 ```bash
 # Linux / MacOS (unix)
