@@ -9,7 +9,7 @@ export const osInfos = [
       <>
         <pre>
           <code class="hljs">
-            git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
+            git clone https://github.com/NvChad/starter "${XDG_CONFIG_HOME:-$HOME/.config}/nvim" && nvim
           </code>
         </pre>
       </>
