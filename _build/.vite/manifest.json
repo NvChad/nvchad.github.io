@@ -869,7 +869,7 @@
     ]
   },
   "src/routes/docs/quickstart/install.mdx?pick=$css": {
-    "file": "assets/install-BjVsSwFg.js",
+    "file": "assets/install-DpHdNME0.js",
     "name": "install",
     "src": "src/routes/docs/quickstart/install.mdx?pick=$css",
     "isEntry": true,
@@ -1081,7 +1081,7 @@
     ]
   },
   "virtual:$vinxi/handler/client": {
-    "file": "assets/client-CUJAwtzx.js",
+    "file": "assets/client-DdoELdBW.js",
     "name": "client",
     "src": "virtual:$vinxi/handler/client",
     "isEntry": true,
