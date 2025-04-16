@@ -32,11 +32,11 @@ local servers = {
 }
 
 for name, opts in pairs(servers) do
+  vim.lsp.enable(name)  -- nvim v0.11.0 or above required
   opts.on_init = configs.on_init
   opts.on_attach = configs.on_attach
   opts.capabilities = configs.capabilities
-
-  require("lspconfig")[name].setup(opts)
+  vim.lsp.config(name, opts) -- nvim v0.11.0 or above required
 end
 ```
 
