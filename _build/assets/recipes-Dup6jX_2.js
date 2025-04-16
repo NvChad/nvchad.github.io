@@ -1,12 +1,10 @@
-import{M as l}from"./index-yHsRVhWw.js";import{b as e,q as i}from"./web-DqPol8Cv.js";const h={title:"NvChad Recipes",desc:"NvChad Recipes & tips and tricks configuration"};function a(s){const n={code:"code",h1:"h1",h2:"h2",li:"li",p:"p",pre:"pre",span:"span",ul:"ul",...l(),...s.components};return[e(n.h1,{children:"Recipes"}),`
+import{M as l}from"./index-yHsRVhWw.js";import{b as e,q as r}from"./web-DqPol8Cv.js";const h={title:"NvChad Recipes",desc:"NvChad Recipes & tips and tricks configuration"};function a(s){const n={code:"code",h1:"h1",h2:"h2",li:"li",p:"p",pre:"pre",span:"span",ul:"ul",...l(),...s.components};return[e(n.h1,{children:"Recipes"}),`
 `,e(n.p,{children:"This page will contain useful snippets of plugin configs & vim tricks etc shared by the NvChad community."}),`
 `,e(n.h2,{children:"Clean Lspconfig syntax"}),`
 `,e(n.ul,{get children(){return[`
 `,e(n.li,{children:"If you have multiple servers configured in your lspconfig, then you can just put them in a table & loop through them for a cleaner syntax."}),`
 `]}}),`
-`,e(n.pre,{get children(){return e(n.code,{className:"hljs language-lua",get children(){return[e(n.span,{className:"hljs-keyword",children:"local"})," configs = ",e(n.span,{className:"hljs-built_in",children:"require"})," ",e(n.span,{className:"hljs-string",children:'"nvchad.configs.lspconfig"'}),`
-
-`,e(n.span,{className:"hljs-keyword",children:"local"}),` servers = {
+`,e(n.pre,{get children(){return e(n.code,{className:"hljs language-lua",get children(){return[e(n.span,{className:"hljs-keyword",children:"local"}),` servers = {
   html = {},
   awk_ls = {},
   bashls = {},
@@ -95,4 +93,4 @@ autocmd(`,e(n.span,{className:"hljs-string",children:'"BufReadPost"'}),`, {
     `,e(n.span,{className:"hljs-keyword",children:"end"}),`
   `,e(n.span,{className:"hljs-keyword",children:"end"}),`,
 })
-`]}})}})]}function t(s={}){const{wrapper:n}={...l(),...s.components};return n?e(n,i(s,{get children(){return e(a,s)}})):a(s)}export{t as default,h as meta};
+`]}})}})]}function t(s={}){const{wrapper:n}={...l(),...s.components};return n?e(n,r(s,{get children(){return e(a,s)}})):a(s)}export{t as default,h as meta};
