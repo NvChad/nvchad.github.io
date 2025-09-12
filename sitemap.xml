@@ -5,7 +5,7 @@
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
      </url><url>
-     <loc>https://nvchad.com/[...404]</loc>
+     <loc>https://nvchad.com/docs</loc>
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
      </url><url>
@@ -13,23 +13,11 @@
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
      </url><url>
-     <loc>https://nvchad.com/docs</loc>
+     <loc>https://nvchad.com/themes</loc>
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
      </url><url>
-     <loc>https://nvchad.com/news/volt</loc>
-     <changefreq>weekly</changefreq>
-     <priority>0.5</priority>
-     </url><url>
-     <loc>https://nvchad.com/news/v2.5_release</loc>
-     <changefreq>weekly</changefreq>
-     <priority>0.5</priority>
-     </url><url>
-     <loc>https://nvchad.com/news/nvui</loc>
-     <changefreq>weekly</changefreq>
-     <priority>0.5</priority>
-     </url><url>
-     <loc>https://nvchad.com/news/v2.0_release</loc>
+     <loc>https://nvchad.com/docs/contribute</loc>
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
      </url><url>
@@ -41,10 +29,6 @@
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
      </url><url>
-     <loc>https://nvchad.com/docs/contribute</loc>
-     <changefreq>weekly</changefreq>
-     <priority>0.5</priority>
-     </url><url>
      <loc>https://nvchad.com/docs/faq</loc>
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
@@ -53,31 +37,7 @@
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
      </url><url>
-     <loc>https://nvchad.com/docs/config/mappings</loc>
-     <changefreq>weekly</changefreq>
-     <priority>0.5</priority>
-     </url><url>
-     <loc>https://nvchad.com/docs/config/nvchad_ui</loc>
-     <changefreq>weekly</changefreq>
-     <priority>0.5</priority>
-     </url><url>
-     <loc>https://nvchad.com/docs/config/walkthrough</loc>
-     <changefreq>weekly</changefreq>
-     <priority>0.5</priority>
-     </url><url>
-     <loc>https://nvchad.com/docs/config/lsp</loc>
-     <changefreq>weekly</changefreq>
-     <priority>0.5</priority>
-     </url><url>
-     <loc>https://nvchad.com/docs/config/plugins</loc>
-     <changefreq>weekly</changefreq>
-     <priority>0.5</priority>
-     </url><url>
-     <loc>https://nvchad.com/docs/config/theming</loc>
-     <changefreq>weekly</changefreq>
-     <priority>0.5</priority>
-     </url><url>
-     <loc>https://nvchad.com/docs/config/snippets</loc>
+     <loc>https://nvchad.com/docs/quickstart/learn-lua</loc>
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
      </url><url>
@@ -89,7 +49,47 @@
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
      </url><url>
-     <loc>https://nvchad.com/docs/quickstart/learn-lua</loc>
+     <loc>https://nvchad.com/docs/config/lsp</loc>
+     <changefreq>weekly</changefreq>
+     <priority>0.5</priority>
+     </url><url>
+     <loc>https://nvchad.com/docs/config/theming</loc>
+     <changefreq>weekly</changefreq>
+     <priority>0.5</priority>
+     </url><url>
+     <loc>https://nvchad.com/docs/config/walkthrough</loc>
+     <changefreq>weekly</changefreq>
+     <priority>0.5</priority>
+     </url><url>
+     <loc>https://nvchad.com/docs/config/mappings</loc>
+     <changefreq>weekly</changefreq>
+     <priority>0.5</priority>
+     </url><url>
+     <loc>https://nvchad.com/docs/config/plugins</loc>
+     <changefreq>weekly</changefreq>
+     <priority>0.5</priority>
+     </url><url>
+     <loc>https://nvchad.com/docs/config/snippets</loc>
+     <changefreq>weekly</changefreq>
+     <priority>0.5</priority>
+     </url><url>
+     <loc>https://nvchad.com/docs/config/nvchad_ui</loc>
+     <changefreq>weekly</changefreq>
+     <priority>0.5</priority>
+     </url><url>
+     <loc>https://nvchad.com/news/volt</loc>
+     <changefreq>weekly</changefreq>
+     <priority>0.5</priority>
+     </url><url>
+     <loc>https://nvchad.com/news/v2.5_release</loc>
+     <changefreq>weekly</changefreq>
+     <priority>0.5</priority>
+     </url><url>
+     <loc>https://nvchad.com/news/v2.0_release</loc>
+     <changefreq>weekly</changefreq>
+     <priority>0.5</priority>
+     </url><url>
+     <loc>https://nvchad.com/news/nvui</loc>
      <changefreq>weekly</changefreq>
      <priority>0.5</priority>
      </url>

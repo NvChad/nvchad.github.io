@@ -1,4 +1,4 @@
-import{M as l}from"./index-yHsRVhWw.js";import{b as e,q as r}from"./web-DqPol8Cv.js";const h={title:"NvChad Recipes",desc:"NvChad Recipes & tips and tricks configuration"};function a(s){const n={code:"code",h1:"h1",h2:"h2",li:"li",p:"p",pre:"pre",span:"span",ul:"ul",...l(),...s.components};return[e(n.h1,{children:"Recipes"}),`
+import{M as a}from"./index-yHsRVhWw.js";import{b as e,q as i}from"./web-DqPol8Cv.js";const h={title:"NvChad Recipes",desc:"NvChad Recipes & tips and tricks configuration"};function l(s){const n={code:"code",h1:"h1",h2:"h2",li:"li",p:"p",pre:"pre",span:"span",ul:"ul",...a(),...s.components};return[e(n.h1,{children:"Recipes"}),`
 `,e(n.p,{children:"This page will contain useful snippets of plugin configs & vim tricks etc shared by the NvChad community."}),`
 `,e(n.h2,{children:"Clean Lspconfig syntax"}),`
 `,e(n.ul,{get children(){return[`
@@ -22,9 +22,12 @@ import{M as l}from"./index-yHsRVhWw.js";import{b as e,q as r}from"./web-DqPol8Cv
 }
 
 `,e(n.span,{className:"hljs-keyword",children:"for"})," name, opts ",e(n.span,{className:"hljs-keyword",children:"in"})," ",e(n.span,{className:"hljs-built_in",children:"pairs"}),"(servers) ",e(n.span,{className:"hljs-keyword",children:"do"}),`
-  vim.lsp.enable(name)  `,e(n.span,{className:"hljs-comment",children:"-- nvim v0.11.0 or above required"}),`
-  vim.lsp.`,e(n.span,{className:"hljs-built_in",children:"config"}),"(name, opts) ",e(n.span,{className:"hljs-comment",children:"-- nvim v0.11.0 or above required"}),`
+  vim.lsp.`,e(n.span,{className:"hljs-built_in",children:"config"}),`(name, opts)
+  vim.lsp.enable(name)
 `,e(n.span,{className:"hljs-keyword",children:"end"}),`
+
+`,e(n.span,{className:"hljs-comment",children:"-- if you dont want to call the enable method in the loop"}),`
+`,e(n.span,{className:"hljs-comment",children:"-- vim.lsp.enable(vim.tbl_keys(servers))"}),`
 `]}})}}),`
 `,e(n.h2,{children:"Dynamic terminal padding"}),`
 `,e(n.ul,{get children(){return[`
@@ -93,4 +96,4 @@ autocmd(`,e(n.span,{className:"hljs-string",children:'"BufReadPost"'}),`, {
     `,e(n.span,{className:"hljs-keyword",children:"end"}),`
   `,e(n.span,{className:"hljs-keyword",children:"end"}),`,
 })
-`]}})}})]}function t(s={}){const{wrapper:n}={...l(),...s.components};return n?e(n,r(s,{get children(){return e(a,s)}})):a(s)}export{t as default,h as meta};
+`]}})}})]}function t(s={}){const{wrapper:n}={...a(),...s.components};return n?e(n,i(s,{get children(){return e(l,s)}})):l(s)}export{t as default,h as meta};
