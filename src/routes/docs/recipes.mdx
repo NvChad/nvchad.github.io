@@ -30,9 +30,12 @@ local servers = {
 }
 
 for name, opts in pairs(servers) do
-  vim.lsp.enable(name)  -- nvim v0.11.0 or above required
-  vim.lsp.config(name, opts) -- nvim v0.11.0 or above required
+  vim.lsp.config(name, opts)
+  vim.lsp.enable(name)
 end
+
+-- if you dont want to call the enable method in the loop
+-- vim.lsp.enable(vim.tbl_keys(servers))
 ```
 
 ## Dynamic terminal padding
