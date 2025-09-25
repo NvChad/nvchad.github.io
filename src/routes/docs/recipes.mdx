@@ -34,8 +34,9 @@ for name, opts in pairs(servers) do
   vim.lsp.enable(name)
 end
 
--- if you dont want to call the enable method in the loop
+-- if you dont want to call the enable method in the loop, just pass a table.
 -- vim.lsp.enable(vim.tbl_keys(servers))
+-- vim.lsp.enable({"pyright", "clangd"})
 ```
 
 ## Dynamic terminal padding
