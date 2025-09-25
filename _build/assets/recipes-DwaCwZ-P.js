@@ -26,8 +26,9 @@ import{M as a}from"./index-yHsRVhWw.js";import{b as e,q as i}from"./web-DqPol8Cv
   vim.lsp.enable(name)
 `,e(n.span,{className:"hljs-keyword",children:"end"}),`
 
-`,e(n.span,{className:"hljs-comment",children:"-- if you dont want to call the enable method in the loop"}),`
+`,e(n.span,{className:"hljs-comment",children:"-- if you dont want to call the enable method in the loop, just pass a table."}),`
 `,e(n.span,{className:"hljs-comment",children:"-- vim.lsp.enable(vim.tbl_keys(servers))"}),`
+`,e(n.span,{className:"hljs-comment",children:'-- vim.lsp.enable({"pyright", "clangd"})'}),`
 `]}})}}),`
 `,e(n.h2,{children:"Dynamic terminal padding"}),`
 `,e(n.ul,{get children(){return[`
