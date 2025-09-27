@@ -13,7 +13,7 @@ import{M as i}from"./index-yHsRVhWw.js";import{b as n,q as h}from"./web-DqPol8Cv
 `]}}),`
 `,n(e.h2,{children:"Custom local base46 themes"}),`
 `,n(e.ul,{get children(){return[`
-`,n(e.li,{get children(){return["To make a custom local theme that's the base46 format, you have to create ",n(e.code,{children:"/lua/themes/mytheme.lua"}),". Check ",n(e.a,{href:"https://github.com/NvChad/base46/blob/v2.0/README.md",children:"base46 docs"})," for more info."]}}),`
+`,n(e.li,{get children(){return["To make a custom local theme that's the base46 format, you have to create ",n(e.code,{children:"/lua/themes/mytheme.lua"}),". Check ",n(e.a,{href:"https://github.com/NvChad/base46/blob/v3.0/README.md",children:"base46 docs"})," for more info."]}}),`
 `]}}),`
 `,n(e.h2,{children:"Can I remove base46?"}),`
 `,n(e.ul,{get children(){return[`
