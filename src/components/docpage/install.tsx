@@ -51,7 +51,7 @@ export const osInfos = [
         <pre>
           <code class="hljs">
             git clone https://github.com/NvChad/starter
-            $ENV:USERPROFILE\AppData\Local\nvim && nvim
+            $ENV:USERPROFILE\AppData\Local\nvim; nvim
           </code>
         </pre>
 
