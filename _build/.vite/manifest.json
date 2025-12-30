@@ -33,12 +33,12 @@
       "_routing-DcatNxz_.js"
     ]
   },
-  "_footer-CUgDjLri.js": {
-    "file": "assets/footer-CUgDjLri.js",
+  "_footer-ChNYchkY.js": {
+    "file": "assets/footer-ChNYchkY.js",
     "name": "footer",
     "imports": [
       "_web-DqPol8Cv.js",
-      "_install--B_PrzSr.js",
+      "_install-C6Fa3z_f.js",
       "_components-COKvKDkd.js"
     ]
   },
@@ -49,8 +49,8 @@
       "_web-DqPol8Cv.js"
     ]
   },
-  "_install--B_PrzSr.js": {
-    "file": "assets/install--B_PrzSr.js",
+  "_install-C6Fa3z_f.js": {
+    "file": "assets/install-C6Fa3z_f.js",
     "name": "install",
     "imports": [
       "_web-DqPol8Cv.js",
@@ -869,7 +869,7 @@
     ]
   },
   "src/routes/docs/quickstart/install.mdx?pick=$css": {
-    "file": "assets/install-xEDpkayo.js",
+    "file": "assets/install-CnGrzful.js",
     "name": "install",
     "src": "src/routes/docs/quickstart/install.mdx?pick=$css",
     "isEntry": true,
@@ -877,7 +877,7 @@
     "imports": [
       "_web-DqPol8Cv.js",
       "_index-yHsRVhWw.js",
-      "_install--B_PrzSr.js",
+      "_install-C6Fa3z_f.js",
       "_clipboard-DzJ4oxno.js"
     ]
   },
@@ -915,15 +915,15 @@
     ]
   },
   "src/routes/index.tsx?pick=default&pick=$css": {
-    "file": "assets/index-BcJhSlic.js",
+    "file": "assets/index-Cggq1jQl.js",
     "name": "index",
     "src": "src/routes/index.tsx?pick=default&pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_footer-CUgDjLri.js",
+      "_footer-ChNYchkY.js",
       "_web-DqPol8Cv.js",
-      "_install--B_PrzSr.js",
+      "_install-C6Fa3z_f.js",
       "_clipboard-DzJ4oxno.js",
       "_components-COKvKDkd.js",
       "_routing-DcatNxz_.js"
@@ -1081,7 +1081,7 @@
     ]
   },
   "virtual:$vinxi/handler/client": {
-    "file": "assets/client-BEKa20aP.js",
+    "file": "assets/client-BefmyOId.js",
     "name": "client",
     "src": "virtual:$vinxi/handler/client",
     "isEntry": true,
@@ -1093,8 +1093,8 @@
       "_index-yHsRVhWw.js",
       "_basic-SBzF2FJM.js",
       "_routing-DcatNxz_.js",
-      "_install--B_PrzSr.js",
-      "_footer-CUgDjLri.js",
+      "_install-C6Fa3z_f.js",
+      "_footer-ChNYchkY.js",
       "_volt-BiiTbH_s.js",
       "_preload-helper-N37mDRhq.js",
       "_components-COKvKDkd.js"
