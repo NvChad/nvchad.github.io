@@ -1,10 +1,10 @@
-import{b as e,q as s,k as t,t as l}from"./web-DqPol8Cv.js";import{M as a}from"./index-yHsRVhWw.js";import{O as o}from"./install-C6Fa3z_f.js";import"./clipboard-DzJ4oxno.js";var c=l("<strong>Mono"),h=l("<strong>Example : "),d=l("<s>JetbrainsMono Nerd Font Mono"),m=l("<strong>(OPTIONAL)"),u=l("<br>");const b={title:"NvChad Installation",desc:"Install, Update, Uninstall guide for nvchad"};function i(r){const n={a:"a",code:"code",h2:"h2",li:"li",pre:"pre",span:"span",strong:"strong",ul:"ul",...a(),...r.components};return[e(n.h2,{children:"Pre-requisites"}),`
+import{b as e,q as s,k as t,t as l}from"./web-DqPol8Cv.js";import{M as a}from"./index-yHsRVhWw.js";import{O as o}from"./install-C6Fa3z_f.js";import"./clipboard-DzJ4oxno.js";var c=l("<strong>Mono"),d=l("<strong>Example : "),h=l("<s>JetbrainsMono Nerd Font Mono"),m=l("<strong>(OPTIONAL)"),u=l("<br>");const b={title:"NvChad Installation",desc:"Install, Update, Uninstall guide for nvchad"};function i(r){const n={a:"a",code:"code",h2:"h2",li:"li",pre:"pre",span:"span",strong:"strong",ul:"ul",...a(),...r.components};return[e(n.h2,{children:"Pre-requisites"}),`
 `,e(n.ul,{get children(){return[`
 `,e(n.li,{get children(){return[e(n.a,{href:"https://github.com/neovim/neovim/releases/tag/stable",children:"Neovim 0.11"}),"."]}}),`
 `,e(n.li,{get children(){return[e(n.a,{href:"https://www.nerdfonts.com/",children:"Nerd Font"})," as your terminal font.",`
 `,e(n.ul,{get children(){return[`
 `,e(n.li,{get children(){return["Make sure the nerd font you set doesn't end with ",t(c)," to prevent small icons."]}}),`
-`,e(n.li,{get children(){return[t(h)," JetbrainsMono Nerd Font and not ",e(n.strong,{get children(){return t(d)}})]}}),`
+`,e(n.li,{get children(){return[t(d)," JetbrainsMono Nerd Font and not ",e(n.strong,{get children(){return t(h)}})]}}),`
 `,e(n.li,{children:"The *Mono fonts would work too but icons will slightly look smaller."}),`
 `]}}),`
 `]}}),`
@@ -18,7 +18,7 @@ import{b as e,q as s,k as t,t as l}from"./web-DqPol8Cv.js";import{M as a}from"./
 `,e(o,{}),`
 `,t(u),`
 `,e(n.ul,{get children(){return[`
-`,e(n.li,{get children(){return["Run ",e(n.code,{children:":MasonInstallAll"})," command after lazy.nvim finishes downloading plugins."]}}),`
+`,e(n.li,{get children(){return["Run ",e(n.code,{children:":MasonInstallAll"})," and ",e(n.code,{children:":TSInstallAll"})," command after lazy.nvim finishes downloading plugins."]}}),`
 `,e(n.li,{get children(){return["Delete the ",e(n.code,{children:".git"})," folder from nvim folder."]}}),`
 `,e(n.li,{get children(){return["Learn customization of ui & base46 from ",e(n.code,{children:":h nvui"}),"."]}}),`
 `]}}),`
